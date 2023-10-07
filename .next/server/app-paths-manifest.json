@@ -1,0 +1,9 @@
+{
+  "/not-found": "app/not-found.js",
+  "/[lng]/page": "app/[lng]/page.js",
+  "/api/cab/route": "app/api/cab/route.js",
+  "/[lng]/home/cab/page": "app/[lng]/home/cab/page.js",
+  "/[lng]/flight/booking/booking-now/page": "app/[lng]/flight/booking/booking-now/page.js",
+  "/[lng]/home/hotels/classic/page": "app/[lng]/home/hotels/classic/page.js",
+  "/[lng]/cab/listing/list-view/left-sidebar/page": "app/[lng]/cab/listing/list-view/left-sidebar/page.js"
+}

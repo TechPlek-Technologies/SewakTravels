@@ -51,9 +51,7 @@ const LatestFilters: FC<IFiltersProps> = ({ filterStyle, type, value }) => {
               <>
                 <CabTypeFilter />
                 <StarCategoryFilter />
-                <PriceFilter />
                 <Capacity />
-                <CabOptionFilter />
               </>
             ) : type === "restaurant" ? (
               <>
