@@ -2,7 +2,6 @@
 import { FC } from "react";
 import FormTwo from "@/components/common/booking-form/form2";
 import { BookNow, GreatJourneyBegins } from "@/constant/constant";
-import Button from "@/components/common/btn";
 import Link from 'next/link';
 
 const HomeBanner: FC = () => {
@@ -28,7 +27,7 @@ const HomeBanner: FC = () => {
                     <li>suv</li>
                     <li>luxury</li>
                   </ul>
-                  <Link href="/cab/booking" className="btn btn-solid">book now</Link>
+                  <Link href="/cab/listing/list-view/left-sidebar" className="btn btn-solid">book now</Link>
                 </div>
               </div>
             </div>

@@ -7,8 +7,6 @@ import DropdownMenu from "./dropdown";
 const Sidebar: React.FC = () => {
   const [toggleSideBar, setToggleSideBar] = useState(false)
   const [isOpen, setIsOpen] = useState([]);
-  const [isOpenChild, setIsOpenChild] = useState();
-  const [isOpenNestedChild, setIsOpenNestedChild] = useState();
 
 
   return (
