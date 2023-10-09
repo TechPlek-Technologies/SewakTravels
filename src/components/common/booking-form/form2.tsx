@@ -1,21 +1,34 @@
 "use client";
-import { FC, Fragment, useState } from "react";
+import { FC, Fragment, SetStateAction, useState } from "react";
 import DatePickerComponent from "../date-picker";
 import TimePicker from "../time-picker";
+import Autocomplete from "@/components/myComponents/autocomplete";
 
 const FormTwo: FC = () => {
   const [startDate, setStartDate] = useState(new Date());
+  const [fromValue, setFromValue] = useState<string>("");
+  const [toValue, setToValue] = useState<string>("");
+
+  // Callback function to update 'fromValue' in the parent component
+  const handleFromValueChange = (value: string) => {
+    setFromValue(value);
+  };
+
+  // Callback function to update 'toValue' in the parent component
+  const handleToValueChange = (value: string) => {
+    setToValue(value);
+  };
+
   return (
     <Fragment>
       <form onSubmit={(event: React.FormEvent<HTMLFormElement>)=>event.preventDefault()}>
         <div className="form-group">
-          <input type="email" className="form-control" id="exampleInputEmail1" placeholder="from" />
-          <img src="/assets/images/icon/from.png" className="img-fluid" alt="" />
+        <Autocomplete
+        onFromValueChange={handleFromValueChange}
+        onToValueChange={handleToValueChange}
+      />
         </div>
-        <div className="form-group">
-          <input type="email" className="form-control" id="exampleInputEmail" placeholder="to" />
-          <img src="/assets/images/icon/location.png" className="img-fluid" alt="" />
-        </div>
+        
         <div className="form-group row cab-modern-form">
           <div className="col form-control">
             <DatePickerComponent setStart={setStartDate} start={startDate} />

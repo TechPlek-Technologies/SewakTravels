@@ -10,7 +10,7 @@ interface ICabSearchProps {
   searchBarOpen?:boolean
 
 }
-const CabSearch: FC<ICabSearchProps> = ({ resClass,setSearchBarOpen, searchBarOpen }) => {
+const  CabSearch: FC<ICabSearchProps> = ({ resClass,setSearchBarOpen, searchBarOpen }) => {
   return (
     <div className="flight-search">
       <div className={`flight-search-detail ${searchBarOpen?"show":""} ${resClass ? resClass : ''}`}>
