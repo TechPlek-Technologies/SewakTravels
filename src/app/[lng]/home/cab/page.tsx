@@ -10,10 +10,13 @@ import CabAbout from "@/components/home/cab/modern/about";
 import AppCab from "@/components/home/cab/modern/app-cab";
 import Blog from "@/components/home/cab/modern/blog";
 import LogoCab from "@/components/home/cab/modern/logo-cab";
+import SearchContextProvider from "@/context/searchContext";
 
 const Modern: FC = () => {
   return (
+   
     <CustomLayout coupon={true} userBgClass="user user-light rounded5">
+      <SearchContextProvider>
       <HomeBanner />
       <OurVehicleComponent />
       <VehicleVideo />
@@ -23,6 +26,8 @@ const Modern: FC = () => {
       <AppCab />
       <Blog btnClass="btn btn-curve" />
       <LogoCab />
+      </SearchContextProvider>
+      
     </CustomLayout>
   );
 };

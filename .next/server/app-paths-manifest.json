@@ -1,4 +1,5 @@
 {
+  "/not-found": "app/not-found.js",
   "/[lng]/termsAndconditions/page": "app/[lng]/termsAndconditions/page.js",
   "/[lng]/home/cab/page": "app/[lng]/home/cab/page.js"
 }
