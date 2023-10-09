@@ -1,61 +1,26 @@
 {
   "pages": {
-    "/[lng]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/page.js"
-    ],
     "/[lng]/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/[lng]/layout.css",
       "static/chunks/app/[lng]/layout.js"
     ],
-    "/[lng]/home/hotels/classic/page": [
+    "/[lng]/termsAndconditions/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/[lng]/home/hotels/classic/page.css",
-      "static/chunks/app/[lng]/home/hotels/classic/page.js"
-    ],
-    "/[lng]/cab/listing/list-view/left-sidebar/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/[lng]/cab/listing/list-view/left-sidebar/page.css",
-      "static/chunks/app/[lng]/cab/listing/list-view/left-sidebar/page.js"
-    ],
-    "/[lng]/home/tour/trending/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/[lng]/home/tour/trending/page.css",
-      "static/chunks/app/[lng]/home/tour/trending/page.js"
-    ],
-    "/[lng]/home/flight/modern/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/[lng]/home/flight/modern/page.css",
-      "static/chunks/app/[lng]/home/flight/modern/page.js"
-    ],
-    "/[lng]/cab/booking/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/cab/booking/page.js"
-    ],
-    "/[lng]/cab/single-detail/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/[lng]/cab/single-detail/page.css",
-      "static/chunks/app/[lng]/cab/single-detail/page.js"
-    ],
-    "/[lng]/flight/booking/booking-now/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/flight/booking/booking-now/page.js"
+      "static/chunks/app/[lng]/termsAndconditions/page.js"
     ],
     "/[lng]/home/cab/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/[lng]/home/cab/page.css",
       "static/chunks/app/[lng]/home/cab/page.js"
+    ],
+    "/[lng]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[lng]/page.js"
     ],
     "/not-found": [
       "static/chunks/webpack.js",
