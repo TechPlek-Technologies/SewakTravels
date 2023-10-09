@@ -1,66 +1,56 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from 'react';
+import { SearchContext } from '@/context/searchContext';
 
-interface AutocompleteProps {
-    onFromValueChange: (value: string) => void;
-    onToValueChange: (value: string) => void;
-  }
-  
-  const citiesInIndia = [
-    "Delhi",
-    "Mumbai",
-    "Bangalore",
-    // Add more cities here
-  ];
-  
-  const Autocomplete: React.FC<AutocompleteProps> = ({
-    onFromValueChange,
-    onToValueChange,
-  }) => {
-    const [fromInput, setFromInput] = useState<string>("");
-    const [toInput, setToInput] = useState<string>("");
-    const [fromSuggestions, setFromSuggestions] = useState<string[]>([]);
-    const [toSuggestions, setToSuggestions] = useState<string[]>([]);
-  
-    const handleFromInputChange = (
-      event: React.ChangeEvent<HTMLInputElement>
-    ) => {
-      const value = event.target.value;
-      setFromInput(value);
-  
-      // Filter cities based on input
-      const suggestions = citiesInIndia.filter((city) =>
-        city.toLowerCase().includes(value.toLowerCase())
-      );
-  
-      setFromSuggestions(suggestions);
-      onFromValueChange(value); // Update parent component's 'fromValue'
-    };
-  
-    const handleToInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      const value = event.target.value;
-      setToInput(value);
-  
-      // Filter cities based on input
-      const suggestions = citiesInIndia.filter((city) =>
-        city.toLowerCase().includes(value.toLowerCase())
-      );
-  
-      setToSuggestions(suggestions);
-      onToValueChange(value); // Update parent component's 'toValue'
-    };
-  
-    const handleFromSuggestionClick = (suggestion: string) => {
-      setFromInput(suggestion);
-      setFromSuggestions([]);
-      onFromValueChange(suggestion); // Update parent component's 'fromValue'
-    };
-  
-    const handleToSuggestionClick = (suggestion: string) => {
-      setToInput(suggestion);
-      setToSuggestions([]);
-      onToValueChange(suggestion); // Update parent component's 'toValue'
-    };
-  
+const citiesInIndia = [
+  'Delhi',
+  'Mumbai',
+  'Bangalore',
+  // Add more cities here
+];
+
+const Autocomplete = () => {
+  const [fromInput, setFromInput] = useState('');
+  const [toInput, setToInput] = useState('');
+  const [fromSuggestions, setFromSuggestions] = useState<string[]>([]);
+  const [toSuggestions, setToSuggestions] = useState<string[]>([]);
+  const searchContext = useContext(SearchContext);
+
+  const handleFromInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    setFromInput(value);
+
+    // Filter cities based on input
+    const suggestions = citiesInIndia.filter(city =>
+      city.toLowerCase().includes(value.toLowerCase())
+    );
+
+    setFromSuggestions(suggestions);
+  };
+
+  const handleToInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    setToInput(value);
+
+    // Filter cities based on input
+    const suggestions = citiesInIndia.filter(city =>
+      city.toLowerCase().includes(value.toLowerCase())
+    );
+
+    setToSuggestions(suggestions);
+  };
+
+  const handleFromSuggestionClick = (suggestion: string) => {
+    setFromInput(suggestion);
+    setFromSuggestions([]);
+    searchContext?.setToAndFrom(fromInput, suggestion);
+  };
+
+  const handleToSuggestionClick = (suggestion: string) => {
+    setToInput(suggestion);
+    setToSuggestions([]);
+    searchContext?.setToAndFrom(toInput, suggestion);
+
+  };
 
   return (
     <div>
@@ -72,7 +62,6 @@ interface AutocompleteProps {
           value={fromInput}
           onChange={handleFromInputChange}
         />
-        <img src="/assets/images/icon/from.png" className="img-fluid" alt="" />
         {/* Display suggestions */}
         <ul>
           {fromSuggestions.map((suggestion, index) => (
@@ -93,7 +82,6 @@ interface AutocompleteProps {
           value={toInput}
           onChange={handleToInputChange}
         />
-        <img src="/assets/images/icon/from.png" className="img-fluid" alt="" />
         {/* Display suggestions */}
         <ul>
           {toSuggestions.map((suggestion, index) => (
