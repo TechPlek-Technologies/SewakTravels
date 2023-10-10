@@ -4,19 +4,19 @@ import DatePickerComponent from "../date-picker";
 import TimePicker from "../time-picker";
 import Autocomplete from "@/components/myComponents/autocomplete";
 
-const FormTwo: FC = () => {
+interface FormTwoProps {
+  onSelection: (from: string, to: string) => void;
+}
+
+
+const FormTwo: FC<FormTwoProps> = ({ onSelection }) => {
   const [startDate, setStartDate] = useState(new Date());
-  const [fromValue, setFromValue] = useState<string>("");
-  const [toValue, setToValue] = useState<string>("");
+  const [fromValue, setFromValue] = useState('');
+  const [toValue, setToValue] = useState('');
 
-  // Callback function to update 'fromValue' in the parent component
-  const handleFromValueChange = (value: string) => {
-    setFromValue(value);
-  };
-
-  // Callback function to update 'toValue' in the parent component
-  const handleToValueChange = (value: string) => {
-    setToValue(value);
+  const handleSelection = (from: string, to: string) => {
+    setFromValue(from);
+    setToValue(to);
   };
 
   return (
@@ -27,8 +27,9 @@ const FormTwo: FC = () => {
         }
       >
         <div className="form-group">
-          <Autocomplete />
+          <Autocomplete onSelection={handleSelection}/>
         </div>
+        
 
         <div className="form-group row cab-modern-form">
           <div className="col form-control">

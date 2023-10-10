@@ -1,10 +1,19 @@
 "use client";
-import { FC } from "react";
+import { FC, useState } from "react";
 import FormTwo from "@/components/common/booking-form/form2";
-import { BookNow, GreatJourneyBegins } from "@/constant/constant";
+import { GreatJourneyBegins } from "@/constant/constant";
 import Link from 'next/link';
 
 const HomeBanner: FC = () => {
+
+  const [fromValue, setFromValue] = useState('');
+  const [toValue, setToValue] = useState('');
+
+  const handleSelection = (from: string, to: string) => {
+    setFromValue(from);
+    setToValue(to);
+  };
+
   return (
     <section className="cab-section p-0">
       <div className="container">
@@ -20,14 +29,15 @@ const HomeBanner: FC = () => {
                 </div>
                 <h2>{GreatJourneyBegins}</h2>
                 <h3>Upto 25% off on first booking through your app</h3>
-                <FormTwo />
+                <FormTwo onSelection={handleSelection} />
                 <div className="car-select">
                   <ul>
                     <li className="active">classic</li>
                     <li>suv</li>
                     <li>luxury</li>
                   </ul>
-                  <Link href="/cab/listing/list-view/left-sidebar" className="btn btn-solid">book now</Link>
+                  {/* Use the fromValue and toValue variables from HomeBanner */}
+                  <Link href={`/cab/booking?from=${encodeURIComponent(fromValue)}&to=${encodeURIComponent(toValue)}`} className="btn btn-solid">book now</Link>
                 </div>
               </div>
             </div>

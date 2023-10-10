@@ -8,7 +8,12 @@ const citiesInIndia = [
   // Add more cities here
 ];
 
-const Autocomplete = () => {
+
+interface AutocompleteProps {
+  onSelection: (from: string, to: string) => void;
+}
+
+const Autocomplete: React.FC<AutocompleteProps> = ({ onSelection }) => {
   const [fromInput, setFromInput] = useState('');
   const [toInput, setToInput] = useState('');
   const [fromSuggestions, setFromSuggestions] = useState<string[]>([]);
@@ -19,7 +24,6 @@ const Autocomplete = () => {
     const value = event.target.value;
     setFromInput(value);
 
-    // Filter cities based on input
     const suggestions = citiesInIndia.filter(city =>
       city.toLowerCase().includes(value.toLowerCase())
     );
@@ -31,7 +35,6 @@ const Autocomplete = () => {
     const value = event.target.value;
     setToInput(value);
 
-    // Filter cities based on input
     const suggestions = citiesInIndia.filter(city =>
       city.toLowerCase().includes(value.toLowerCase())
     );
@@ -42,14 +45,13 @@ const Autocomplete = () => {
   const handleFromSuggestionClick = (suggestion: string) => {
     setFromInput(suggestion);
     setFromSuggestions([]);
-    searchContext?.setToAndFrom(fromInput, suggestion);
+    onSelection(suggestion, toInput);
   };
 
   const handleToSuggestionClick = (suggestion: string) => {
     setToInput(suggestion);
     setToSuggestions([]);
-    searchContext?.setToAndFrom(toInput, suggestion);
-
+    onSelection(fromInput, suggestion);
   };
 
   return (

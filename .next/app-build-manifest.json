@@ -22,23 +22,6 @@
       "static/chunks/main-app.js",
       "static/css/app/[lng]/cab/listing/list-view/left-sidebar/page.css",
       "static/chunks/app/[lng]/cab/listing/list-view/left-sidebar/page.js"
-    ],
-    "/[lng]/cab/booking/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[lng]/cab/booking/page.js"
-    ],
-    "/[lng]/home/tour/trending/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/[lng]/home/tour/trending/page.css",
-      "static/chunks/app/[lng]/home/tour/trending/page.js"
-    ],
-    "/[lng]/home/hotels/classic/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/[lng]/home/hotels/classic/page.css",
-      "static/chunks/app/[lng]/home/hotels/classic/page.js"
     ]
   }
 }
