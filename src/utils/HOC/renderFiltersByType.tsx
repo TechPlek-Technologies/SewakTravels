@@ -1,3 +1,4 @@
+import MemoizedCabOptionFilter from "@/components/cab/listing/filters/cab-option";
 import MemorizedCabTypeFilter from "@/components/cab/listing/filters/cab-type";
 import MemoizedCapacity from "@/components/cab/listing/filters/capacity";
 import MemoizedAirlinesFilter from "@/components/flight/sidebar/filters/airlines-filter";
@@ -52,7 +53,9 @@ export function renderFiltersByType(type: string | undefined, minPrice: IPricePr
       return (
         <>
           <MemorizedCabTypeFilter />
+          <MemoizedCabOptionFilter />
           <MemoizedStarCategoryFilter />
+          <PriceRange min={minPrice?.price} max={maxPrice?.price} />
           <MemoizedCapacity />
         </>
       );

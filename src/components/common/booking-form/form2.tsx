@@ -1,24 +1,26 @@
 "use client";
-import { FC, Fragment, SetStateAction, useState } from "react";
+import { FC, Fragment, useContext, useState } from "react";
 import DatePickerComponent from "../date-picker";
 import TimePicker from "../time-picker";
-import Autocomplete from "@/components/myComponents/autocomplete";
+import { CabContext } from "@/context/CabContext";
 
-interface FormTwoProps {
-  onSelection: (from: string, to: string) => void;
-}
-
-
-const FormTwo: FC<FormTwoProps> = ({ onSelection }) => {
+const FormTwo: FC = () => {
   const [startDate, setStartDate] = useState(new Date());
-  const [fromValue, setFromValue] = useState('');
-  const [toValue, setToValue] = useState('');
+  const context = useContext(CabContext);
 
-  const handleSelection = (from: string, to: string) => {
-    setFromValue(from);
-    setToValue(to);
+  if (!context) {
+    throw new Error("CabContext is not provided");
+  }
+
+  const { setPickupLocation, setDropLocation } = context;
+
+  const handleDropChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setDropLocation(event.target.value);
   };
 
+  const handlePickupChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPickupLocation(event.target.value);
+  };
   return (
     <Fragment>
       <form
@@ -27,10 +29,33 @@ const FormTwo: FC<FormTwoProps> = ({ onSelection }) => {
         }
       >
         <div className="form-group">
-          <Autocomplete onSelection={handleSelection}/>
+          <input
+            type="email"
+            className="form-control"
+            id="exampleInputEmail1"
+            placeholder="from"
+            onChange={handlePickupChange}
+          />
+          <img
+            src="/assets/images/icon/from.png"
+            className="img-fluid"
+            alt=""
+          />
         </div>
-        
-
+        <div className="form-group">
+          <input
+            type="email"
+            className="form-control"
+            id="exampleInputEmail"
+            placeholder="to"
+            onChange={handleDropChange}
+          />
+          <img
+            src="/assets/images/icon/location.png"
+            className="img-fluid"
+            alt=""
+          />
+        </div>
         <div className="form-group row cab-modern-form">
           <div className="col form-control">
             <DatePickerComponent setStart={setStartDate} start={startDate} />

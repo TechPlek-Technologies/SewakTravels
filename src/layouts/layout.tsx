@@ -31,25 +31,25 @@ const CustomLayout: React.FC<CustomLayoutProps> = ({ children, title, logo, foot
   return (
     <>
       {loader === "food" ? (
-        <LoaderFood loaderTimeout={5000} />
+        <LoaderFood loaderTimeout={3000} />
       ) : loader === "pre" ? (
-        <PreLoader loaderTimeout={5000} side={"left"} />
+        <PreLoader loaderTimeout={3000} side={"left"} />
       ) : loader === "right" ? (
-        <PreLoader loaderTimeout={5000} side={"right"} />
+        <PreLoader loaderTimeout={3000} side={"right"} />
       ) : loader === "no-sidebar" ? (
-        <PreLoader loaderTimeout={5000} side={"no"} />
+        <PreLoader loaderTimeout={3000} side={"no"} />
       ) : loader === "map-loader" ? (
-        <MapLoader loaderTimeout={5000} side={"right"} />
+        <MapLoader loaderTimeout={3000} side={"right"} />
       ) : loader === "map-left" ? (
-        <MapLoader loaderTimeout={5000} side={"left"} />
+        <MapLoader loaderTimeout={3000} side={"left"} />
       ) : loader === "good" ? (
-        <GoodLoader loaderTimeout={5000} />
+        <GoodLoader loaderTimeout={3000} />
       ) : loader === "flight" ? (
-        <LoaderFlight loaderTimeout={5000} />
+        <LoaderFlight loaderTimeout={3000} />
       ) : loader === "no" ? (
         ""
       ) : (
-        <Loader loaderTimeout={5000} />
+        <Loader loaderTimeout={3000} />
       )}
       <header className={title}>
         <div className="container">

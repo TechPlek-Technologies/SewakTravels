@@ -1,19 +1,28 @@
 "use client";
-import { FC, useState } from "react";
+import { FC, useContext } from "react";
 import FormTwo from "@/components/common/booking-form/form2";
-import { GreatJourneyBegins } from "@/constant/constant";
+import { BookNow, GreatJourneyBegins } from "@/constant/constant";
 import Link from 'next/link';
+import { CabContext } from "@/context/CabContext";
 
 const HomeBanner: FC = () => {
 
-  const [fromValue, setFromValue] = useState('');
-  const [toValue, setToValue] = useState('');
+  
 
-  const handleSelection = (from: string, to: string) => {
-    setFromValue(from);
-    setToValue(to);
+  const context = useContext(CabContext);
+  console.log(context)
+  
+  
+
+  const href = `/cab/listing`;
+
+  const handleLinkClick = () => {
+    // Convert the context data to a JSON string
+    const contextDataString = JSON.stringify(context);
+    // Save the context data to local storage
+    localStorage.setItem('cabContextData', contextDataString);
   };
-
+  
   return (
     <section className="cab-section p-0">
       <div className="container">
@@ -29,15 +38,14 @@ const HomeBanner: FC = () => {
                 </div>
                 <h2>{GreatJourneyBegins}</h2>
                 <h3>Upto 25% off on first booking through your app</h3>
-                <FormTwo onSelection={handleSelection} />
+                <FormTwo />
                 <div className="car-select">
                   <ul>
                     <li className="active">classic</li>
                     <li>suv</li>
                     <li>luxury</li>
                   </ul>
-                  {/* Use the fromValue and toValue variables from HomeBanner */}
-                  <Link href={`/cab/booking?from=${encodeURIComponent(fromValue)}&to=${encodeURIComponent(toValue)}`} className="btn btn-solid">book now</Link>
+                  <Link onClick={handleLinkClick} href={href} className="btn btn-solid">book now</Link>
                 </div>
               </div>
             </div>

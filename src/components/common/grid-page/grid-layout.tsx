@@ -1,4 +1,4 @@
-import { FC, useEffect } from "react";
+import { FC, useContext, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import ProductBox from "../elements/product-box/product-box";
 import ListPage from "../elements/product-box/list-product-box";
@@ -26,6 +26,8 @@ const GridLayout: FC<IGridLayoutProps> = ({ value, grid, type, view, trip }) => 
   useEffect(() => {
     dispatch({ type: "productCount", payload: showProduct?.length });
   }, [dispatch, showProduct]);
+
+  
 
   return (
     <>

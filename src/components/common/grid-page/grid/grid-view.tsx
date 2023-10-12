@@ -3,7 +3,6 @@ import { FC, useCallback, useEffect, useState } from "react";
 import GridList from "@/components/common/grid-page/grid-list";
 import GridLayout from "@/components/common/grid-page/grid-layout";
 import Filters from "../../../hotels/filters/page";
-import FilterTags from "../../../hotels/filters/filter-tags";
 import { useDispatch, useSelector } from "react-redux";
 import FlightTopSchedule from "@/components/flight/sidebar/common/flight-top-schedule";
 import TopFilter from "@/components/flight/sidebar/filters/top-filter";
@@ -82,7 +81,6 @@ const [showDropDown, setShowDropDown] = useState(false)
             <h5>latest filter</h5>
             <img src="/assets/images/icon/adjust.png" className="img-fluid blur-up lazyloaded" alt="" />
             </a>}
-            <FilterTags />
             {schedule && <FlightTopSchedule setShowFilter={setShowSidebar} showFilter={showSidebar} />}
             <GridLayout grid={grid} value={filteredMenu} type={type} view={view} trip={trip} />
           </div>

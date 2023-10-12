@@ -1,5 +1,4 @@
 {
   "/[lng]/page": "app/[lng]/page.js",
-  "/[lng]/home/cab/page": "app/[lng]/home/cab/page.js",
-  "/[lng]/cab/listing/list-view/left-sidebar/page": "app/[lng]/cab/listing/list-view/left-sidebar/page.js"
+  "/[lng]/home/cab/page": "app/[lng]/home/cab/page.js"
 }

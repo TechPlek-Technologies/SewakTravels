@@ -1,8 +1,9 @@
 import { Search } from "@/constant/constant";
 import DateTimePickerComp from "../date-time-picker";
 import Img from "@/utils/BackgroundImageRatio";
-import { FC } from "react";
 import Link from 'next/link';
+import { FC, useContext} from "react";
+import { CabContext } from "@/context/CabContext";
 
 interface ICabSearchProps {
   resClass?: string;
@@ -10,22 +11,39 @@ interface ICabSearchProps {
   searchBarOpen?:boolean
 
 }
-const  CabSearch: FC<ICabSearchProps> = ({ resClass,setSearchBarOpen, searchBarOpen }) => {
+const CabSearch: FC<ICabSearchProps> = ({ resClass,setSearchBarOpen, searchBarOpen }) => {
+
+  const context = useContext(CabContext);
+  
+    
+    // Retrieve the data from local storage
+    const storedContextData = localStorage.getItem('cabContextData');
+
+    const drop=storedContextData ? JSON.parse(storedContextData).dropLocation : "Drop";
+    const pick=storedContextData ? JSON.parse(storedContextData).pickupLocation : "Pick up"
+
+    context?.setPickupLocation(pick);
+    context?.setDropLocation(drop);
+    console.log(context);
+
+    
+    
+  
   return (
     <div className="flight-search">
       <div className={`flight-search-detail ${searchBarOpen?"show":""} ${resClass ? resClass : ''}`}>
         <form className="row m-0" >
           <div className="col">
             <div className="form-group">
-              <label className="font-xs-white">pick up location</label>
-              <input type="text" className="form-control open-select" id="exampleInputEmail1" placeholder="pick up" />
+              <label className="font-xs-white">Pick Up</label>
+              <input type="text" className="form-control open-select" id="exampleInputEmail1" placeholder="pick up" value={pick} />
               <Img src="/assets/images/icon/from.png" className="img-fluid " alt="" />
             </div>
           </div>
           <div className="col">
             <div className="form-group">
-              <label className="font-xs-white">drop off location</label>
-              <input type="text" className="form-control open-select" placeholder="drop off" />
+              <label className="font-xs-white">Drop off</label>
+              <input type="text" className="form-control open-select" placeholder="drop off" value={drop} />
               <Img src="/assets/images/icon/location.png" className="img-fluid " alt="" />
             </div>
           </div>

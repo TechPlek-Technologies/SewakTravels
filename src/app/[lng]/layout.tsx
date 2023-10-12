@@ -4,7 +4,7 @@ import { languages } from "../i18n/settings";
 
 export const metadata = {
   title: "Sewak Travels",
-  description: "Sewak Travels",
+  description: "themes.pixelstrap.com",
 };
 
 export async function generateStaticParams() {

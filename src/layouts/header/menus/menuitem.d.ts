@@ -2,24 +2,18 @@ interface IMenuItemProps {
   path?: string;
   title: string;
   type: string;
-  megaMenu?: boolean;
-  children?: IMenuChildProps[];
 }
 
 interface IMenuChildProps {
   path?: string;
   title?: string;
   type?: string;
-  megaMenu?: boolean;
-  children?: IMenuChildProps[];
 }
 
 interface IMenuListProps {
   path?: string;
   title?: string;
   type?: string;
-  megaMenu?: boolean;
-  children?: IMenuChildProps[];
 }
 
 interface IPropsMenuList {

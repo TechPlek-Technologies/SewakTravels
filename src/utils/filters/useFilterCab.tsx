@@ -46,10 +46,7 @@ const useFilterCab = ({ value }: IFilterProductsProps) => {
       params.append("capacity", capacity);
     });
 
-    if (!isNaN(priceStatus.min) && !isNaN(priceStatus.max)) {
-      params.set("min", `${priceStatus.min}`);
-      params.set("max", `${priceStatus.max}`);
-    }
+  
     rateStatus.forEach((rate: string) => {
       params.append("rate", rate);
     });
