@@ -1,3 +1,0 @@
-interface ILogoProps {
-  logo?: string;
-}

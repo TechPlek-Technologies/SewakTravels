@@ -24,7 +24,7 @@ header {
         padding-bottom: 30px;
         > a {
           display: block;
-          color: $white-1;
+          color: white;
           font-size: 14px;
           font-weight: 900;
           line-height: 23px;
@@ -41,7 +41,7 @@ header {
           z-index: 4;
           box-shadow: 0 1px 5px 0 rgba(90, 90, 90, 0.20);
           padding: 15px 0 15px 0;
-          background: $white-1;
+          background: white;
           li {
             border: 0;
             float: none;
@@ -61,15 +61,13 @@ header {
               line-height: 1.9;
               transition: all 0.5s ease;
               position: relative;
-              &.menu-title {
-                &:after {
-                  position: absolute;
-                  content: "\f105";
-                  font-family: "Font Awesome 5 Free";
-                  font-weight: 900;
-                  right: 18px;
-                  opacity: 1;
-                }
+              &:after {
+                position: absolute;
+                content: "\f105";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                right: 18px;
+                opacity: 0;
               }
               &.arrow-cls {
                 &:after {
@@ -78,7 +76,7 @@ header {
               }
               &:hover {
                 margin-left: 3px;
-                color: rgba(var(--theme-color1),1);
+                color: $theme-color1;
               }
             }
             .nav-sub-childmenu {
@@ -86,7 +84,7 @@ header {
               width: 200px;
               right: -200px;
               top: 0;
-              background: $white-1;
+              background: #fff;
               border: none;
               padding: 15px 0 15px 0;
               box-shadow: 0 0 1px 0 #ebebeb;
@@ -97,8 +95,9 @@ header {
           position: absolute;
           left: 0;
           z-index: 4;
+          box-shadow: 0 1px 5px 0 rgba(90, 90, 90, 0.20);
           padding: 30px;
-          background: $white-1;
+          background: white;
           width: 100%;
           border-radius: 4px;
           .mega-box {
@@ -138,13 +137,13 @@ header {
                       position: relative;
                       &:hover {
                         margin-left: 4px;
-                        color: rgba(var(--theme-color1),1);
+                        color: $theme-color1;
                       }
                     }
                     &.highlight-link {
                       position: relative;
                       i {
-                        color: rgba(var(--theme-color1),1);
+                        color: $theme-color1;
                       }
                     }
                   }
@@ -177,8 +176,8 @@ header {
         > li {
           .nav-link{
             &.active {
-              background-color: $white-1;
-              color: rgba(var(--theme-color2),1);
+              background-color: white;
+              color: $theme-color2;
             }
           }
         }
@@ -198,7 +197,7 @@ header {
   cursor: pointer;
   i {
     font-size: 24px;
-    color: $white-1;
+    color: white;
   }
 }
 .mega-box {
@@ -220,8 +219,8 @@ header {
         position: absolute;
         top: -8px;
         right: 0;
-        color: $white-1;
-        background-color: rgba(var(--theme-color1),1);
+        color: white;
+        background-color: $theme-color1;
         padding: 2px 7px;
         text-transform: uppercase;
         font-size: 9px;
@@ -317,7 +316,6 @@ header {
               visibility: visible;
               margin-top: 30px;
               transition: all 0.5s ease;
-              display: block !important;
             }
           }
         }
@@ -347,7 +345,7 @@ header {
     .main-navbar {
       .nav-menu {
         position: fixed;
-        background-color: $white-1;
+        background-color: #fff;
         width: 300px;
         border-radius: 0;
         border: 1px solid #eee;
@@ -357,7 +355,6 @@ header {
         z-index: 99;
         transition: all 0.3s ease;
         overflow: scroll;
-        overflow-x: hidden;
         &.opennav {
           right: 0;
         }
@@ -376,11 +373,6 @@ header {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            i{
-              &::before{
-                vertical-align: 3px;
-              }
-            }
           }
         }
         > li {
@@ -466,7 +458,6 @@ header {
               display: block;
             }
             .mega-box {
-              cursor: pointer;
               width: 100%;
               padding: 0;
               .link-section {
@@ -515,7 +506,7 @@ header {
               color: $grey-darker;
               transition: all 0.5s ease;
               &:hover {
-                color: rgba(var(--theme-color1),1);
+                color: $theme-color1;
                 transition: all 0.5s ease;
               }
             }

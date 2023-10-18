@@ -46,7 +46,7 @@
 	width: 0;
 	height: 4px;
 	top: 33px;
-	background: rgba(var(--theme-color1),1);
+	background: $theme-color1;
 }
 .irs-bar-edge {
 	position: absolute;
@@ -82,7 +82,7 @@
 	top: 30px;
 	width: 8px;
 	height: 12px;
-	background: rgba(var(--theme-color1),1);
+	background: $theme-color1;
 	cursor: pointer;
 	&.type_last {
 		z-index: 2;
@@ -219,7 +219,7 @@
 	background: #999;
 }
 .irs-to {
-	background-color: rgba(var(--theme-color1),1);
-	color: $white-1;
+	background-color: $theme-color1;
+	color: white;
 	padding: 3px;
 }

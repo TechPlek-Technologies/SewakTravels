@@ -1,7 +1,5 @@
-:root{
-    --theme-color1: 239, 63, 62; //#ef3f3e
-    --theme-color2: 0, 162, 247; //#00a2f7
-}
+$theme-color1:#ef3f3e;
+$theme-color2: #00a2f7;
 //fonts
 $font_0: Nunito;
 $font_1: sans-serif;
@@ -40,7 +38,7 @@ $youtube-red: #d62423;
 $box-shadow:#dedede;
 $grey-darker: #222222;
 $light_grey: #f5f5f5;
-$inner-bg:#f9f9f9;
+$inner-bg:#fafafa;
 // radious 
 $radious5: 5px;
 $radious10: 10px;

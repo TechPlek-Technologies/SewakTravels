@@ -1,3 +1,0 @@
-interface ICabBookingProps {
-  isSameLocation?: boolean;
-}

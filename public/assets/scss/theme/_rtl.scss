@@ -29,7 +29,7 @@ body.rtl {
   }
   .special-section.grid-box .special-box .special-content.restaurant-detail ul li {
     padding-right: 15px;
-    &:after {
+    &:after{      
       left: unset;
       right: 0;
     }
@@ -50,114 +50,6 @@ body.rtl {
   .effect-cls-up {
     &:before {
       right: 0;
-    }
-  }
-  .flight-form-input, .cab-form-input{
-    .form-control{
-      .react-datepicker__input-container{
-        text-align: right;
-      }
-    }
-  }
-  .modal{
-    .modal-dialog{
-      &.video-modal{
-        .modal-header{
-          .modal-title{
-            .btn-close{
-              right: unset;
-              left: 25px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .flight-detail{
-    .flight-box{
-      .middle-section{
-        .flight-info{
-          &::after{
-            right: unset;
-            left: 0;
-          }
-        }
-      }
-    }
-  }
-  .price-section{
-    .price-box{
-      .price-img{
-        .label{
-          left: unset;
-          right: 20px;
-        }
-      }
-    }
-  }
-  .detail-section{
-    .detail-box{
-      .upper-part{
-        &::after{
-          right: unset;
-          left: 0;
-        }
-      }
-    }
-  }
-  .selector-box-flight{
-    .flight-class{
-      .form-check-label{
-        margin-right: 5px;
-      }
-    }
-  }
-  .selector-box{
-    ul{
-      li{
-        span{
-          right: unset;
-          left: 10px;
-        }
-      }
-    }
-  }
-  .left-sidebar{
-    .middle-part{
-      div{
-        img{
-          &.me-1{
-            margin-right: unset !important;
-            margin-left: 0.25rem !important;
-          }
-        }
-      }
-    }
-  }
-  .menu-section{
-    .menu-box{
-      .bottom-bar{
-        .menu-bar{
-          .content{
-            h6{
-              del{
-                margin-right: unset;
-                margin-left: 5px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .classic-section{
-    .slick-prev{
-      left: 30px;
-      right: unset;
-    }
-    .slick-next{
-      left: 0;
-      right: unset;
     }
   }
 
@@ -188,7 +80,7 @@ body.rtl {
         .front-setting {
           select {
             padding: 5px 10px 4px 28px;
-            background: url(../../images/icon/down.png) no-repeat 20%;
+            background: url(../images/icon/down.png) no-repeat 20%;
           }
         }
       }
@@ -212,7 +104,7 @@ body.rtl {
             li {
               a {
                 &:after {
-                  right: unset;
+                  right:unset;
                   left: 18px;
                   transform: rotate(180deg);
                 }
@@ -268,18 +160,6 @@ body.rtl {
       }
     }
   }
-  .category-sec{
-    .category-box{
-      .content-category{
-        .top{
-          h3{
-            margin-right: unset;
-            margin-left: 15px;
-          }
-        }
-      }
-    }
-  }
 
   // demo section
   .home_section {
@@ -295,7 +175,7 @@ body.rtl {
       .home-content {
         .package-detail {
           li {
-            padding-right: 0;
+            padding-right:0;
             padding-left: 10px;
             i {
               margin-right: 0;
@@ -306,7 +186,7 @@ body.rtl {
       }
     }
   }
-  .book-table {
+  .book-table  {
     .table-form {
       form {
         .form-group {
@@ -336,8 +216,7 @@ body.rtl {
         }
       }
       form {
-        .gj-datepicker,
-        .gj-timepicker {
+        .gj-datepicker, .gj-timepicker {
           button {
             border-left: none !important;
             border-right: 1px solid #e5e5e5 !important;
@@ -391,8 +270,7 @@ body.rtl {
         }
       }
     }
-    .slick-prev,
-    .slick-next {
+    .slick-prev, .slick-next {
       left: 40px;
       right: unset;
     }
@@ -403,65 +281,6 @@ body.rtl {
       .ticket-box {
         .ticket-title {
           left: -9%;
-        }
-      }
-    }
-  }
-  .single-page-classic{
-    .form-control{
-      text-align: right;
-    }
-  }
-  .special-section{
-    &.grid-box{
-      .special-box{
-        .special-content{
-          .tour-detail{
-            h6{
-              i{
-                &.me-3{
-                  margin-right: unset !important;
-                  margin-left: 1rem !important;
-                }
-                &.ms-3{
-                  margin-left: unset !important;
-                  margin-right: 1rem !important;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .default-accordion{
-    .accordion{
-      .accordion-button{
-        &::after{
-          margin-left: unset;
-          margin-right: auto;
-        }
-      }
-    }
-  }
-  .breadcrumb-item + .breadcrumb-item::before{
-    float: right;
-  }
-  .review-section{
-    .review_box{
-      .flight_detail{
-        &.payment-gateway{
-          form{
-            &.wallet-section{
-              .row{
-                .form-check{
-                  .form-check-label{
-                    margin-right: 5px;
-                  }
-                }
-              }
-            }
-          }
         }
       }
     }
@@ -481,35 +300,6 @@ body.rtl {
       }
     }
   }
-  .btn-group-showcase{
-    .btn + .btn{
-      margin-left: unset;
-      margin-right: 15px;
-    }
-  }
-  .service-section{
-    .service-box{
-      .lower-section{
-        h6{
-          margin-left: unset;
-          margin-right: 12px;
-        }
-      }
-    }
-  }
-  .account-sign-in{
-    form{
-      .form-group{
-        &.form-check{
-          padding-right: 0;
-          .form-check-input{
-            margin-right: unset;
-            margin-left: 5px;
-          }
-        }
-      }
-    }
-  }
   .app-section {
     .app-image {
       .image {
@@ -525,8 +315,8 @@ body.rtl {
         span {
           &:after {
             right: unset;
-            left: -35px;
-            background: linear-gradient(to left, rgba($white-1, 0.25) 0%, rgba($white-1, 0.05) 100%);
+            left: -65px;
+            background: linear-gradient(to left, rgba($theme-color1, 0.25) 0%, rgba($theme-color1, 0.05) 100%);
           }
         }
       }
@@ -606,14 +396,12 @@ body.rtl {
       margin-left: calc(5px + (18 - 5) * ((100vw - 320px) / (1920 - 320)));
       padding-right: 0;
     }
-    [type="radio"]:checked,
-    [type="radio"]:not(:checked) {
+    [type="radio"]:checked, [type="radio"]:not(:checked) {
       left: unset;
       right: -9999px;
     }
-    [type="radio"]:checked + label,
-    [type="radio"]:not(:checked) + label {
-      padding-left: 0;
+    [type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
+      padding-left:0;
       padding-right: 28px;
       &:before {
         right: 0;
@@ -627,7 +415,7 @@ body.rtl {
         .cab_detail {
           text-align: right;
         }
-        .text-end {
+        .text-right {
           text-align: left !important;
         }
       }
@@ -713,8 +501,7 @@ body.rtl {
     }
   }
   .zig-zag-effect {
-    &:after,
-    &:before {
+    &:after, &:before {
       right: 0;
     }
   }
@@ -725,7 +512,7 @@ body.rtl {
       .bottom-bar {
         .menu-bar {
           img {
-            margin-right: 0;
+            margin-right:0;
             margin-left: 30px;
           }
           .content {
@@ -915,7 +702,7 @@ body.rtl {
     }
     .subscribe-detail {
       text-align: left;
-      padding-right: 0;
+      padding-right:0;
       padding-left: 60px;
       span {
         left: unset;
@@ -931,82 +718,6 @@ body.rtl {
     .slick-dots {
       right: unset;
       left: 50px;
-    }
-  }
-  header.light_header{
-    .menu{
-      .header-right{
-        .front-setting{
-          select{
-            background: url(../../images/icon/down-black.png) no-repeat 20%;
-          }
-        }
-      }
-    }
-  }
-  .special-section{
-    .special-box{
-      .special-img{
-        .label{
-          h3{
-            del{
-              margin-right: unset;
-              margin-left: 3px;
-            }
-          }
-        }
-      }
-    }
-  }
-  .process-steps{
-    .step-bg{
-      .popular-section{
-        .step-box{
-          .popular-box{
-            .special-content{
-              .bottom-section{
-                .price del{
-                  margin-right: unset;
-                  margin-left: 10px;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  footer{
-    .footer{
-      .footer-content{
-        .contact-detail{
-          .contact-list{
-            li{
-              i{
-                margin-right: unset;
-                margin-left: 5px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .cab-modern-form{
-    .col.form-control{
-      margin-left: unset;
-      margin-right: 12px;
-      text-align: right;
-    }
-  }
-  .cab-section{
-    .cab-content{
-      .radio-form{
-        label{
-          margin-right: unset;
-          margin-left: 20px;
-        }
-      }
     }
   }
   .category-sec {
@@ -1033,7 +744,8 @@ body.rtl {
         }
         h6 {
           span {
-            float: left;
+            margin-left: 0;
+            margin-right: 25px;
           }
         }
       }
@@ -1045,7 +757,7 @@ body.rtl {
       right: 40px;
     }
     .view-cls {
-      right: unset;
+      right:unset;
       left: 40px;
     }
   }
@@ -1115,7 +827,7 @@ body.rtl {
     .price-box {
       direction: rtl;
       .price-img {
-        border-radius: 0 25px 25px 0;
+        border-radius: 0 25px 25px 0 ;
       }
       .price-content {
         border-radius: 25px 0 0 25px;
@@ -1153,8 +865,7 @@ body.rtl {
         border-left: none;
         border-right: 1px dashed #dddddd;
         text-align: right;
-        &:before,
-        &:after {
+        &:before, &:after {
           left: unset;
           right: -3px;
         }
@@ -1192,7 +903,7 @@ body.rtl {
   }
   .order-food-section {
     .order-food {
-      .book-table {
+      .book-table{
         &.single-table {
           .table-form {
             form {
@@ -1224,7 +935,7 @@ body.rtl {
       padding-left: 0;
       padding-right: 0.5rem;
       &:before {
-        padding-right: 0;
+        padding-right:0;
         padding-left: 0.5rem;
       }
     }
@@ -1383,7 +1094,7 @@ body.rtl {
       }
       .search-bar {
         input {
-          padding: 14px 50px 14px 14px;
+          padding: 14px 50px 14px 14px ;
         }
         i {
           left: unset;
@@ -1420,13 +1131,12 @@ body.rtl {
         .comment-box {
           .media {
             .media-body {
-              margin-left: 0;
+              margin-left:0;
               margin-right: calc(6px + (15 - 6) * ((100vw - 320px) / (1920 - 320)));
               .title {
-                .comment-user,
-                .comment-date {
+                .comment-user , .comment-date {
                   i {
-                    margin-right: 0;
+                    margin-right:0;
                     margin-left: 7px;
                   }
                 }
@@ -1437,15 +1147,14 @@ body.rtl {
               }
               .reply-btn {
                 text-align: left;
-                .pe-2,
-                .px-2 {
+                .pr-2, .px-2 {
                   padding-right: 0 !important;
                   padding-left: 0.5rem !important;
                 }
               }
             }
             &.inner-comment {
-              margin-left: 0;
+              margin-left:0;
               margin-right: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
             }
           }
@@ -1464,7 +1173,7 @@ body.rtl {
             i {
               margin-left: 12px;
               margin-right: 0;
-              &.ms-2 {
+              &.ml-2 {
                 margin-right: 6px !important;
               }
             }
@@ -1482,8 +1191,9 @@ body.rtl {
               text-align: right;
               h6 {
                 i {
-                  &.ms-2 {
-                    margin-left: 4px !important;
+                  margin-right:0;
+                  margin-left: 12px;
+                  &.ml-2 {
                     margin-right: 6px;
                   }
                 }
@@ -1496,7 +1206,7 @@ body.rtl {
   }
   .video-modal {
     .modal-body {
-      .btn-close {
+      .close {
         right: unset;
         left: -30px;
       }
@@ -1519,13 +1229,13 @@ body.rtl {
     margin-left: 0;
     margin-right: -1px;
   }
-  .modal-footer > :not(:first-child) {
+  .modal-footer > :not(:first-child){
     margin-left: 0;
-    margin-right: 0.25rem;
+    margin-right: .25rem;
   }
   .modal-footer > :not(:last-child) {
     margin-right: 0;
-    margin-left: 0.25rem;
+    margin-left: .25rem;
   }
   .filter-panel {
     .left-filter {
@@ -1547,7 +1257,7 @@ body.rtl {
       padding-right: 15px;
       .filter-select {
         li {
-          margin-left: 0 !important;
+          margin-left: 0;
           margin-right: 4px;
         }
       }
@@ -1573,13 +1283,13 @@ body.rtl {
         }
       }
       .btn {
-        &.me-2 {
+        &.mr-2 {
           margin-right: 0 !important;
           margin-left: 0.5rem !important;
         }
       }
       .button_bottom {
-        &.text-end {
+        &.text-right {
           text-align: left !important;
         }
       }
@@ -1590,9 +1300,8 @@ body.rtl {
     padding-right: 1.5rem;
     text-align: right;
   }
-  .form-check-label {
-    &:before,
-    &:after {
+  .custom-control-label {
+    &:before, &:after {
       left: unset;
       right: -1.5rem;
     }
@@ -1600,9 +1309,9 @@ body.rtl {
   .left-sidebar {
     .middle-part {
       .filter-block {
-        .form-check-label {
+        .custom-control-label {
           margin-right: 5px;
-          margin-left: 0;
+          margin-left:0;
           &:before {
             left: unset;
             right: -29px;
@@ -1611,8 +1320,7 @@ body.rtl {
             left: unset;
             right: -29px;
           }
-          .ms-1,
-          .mx-1 {
+          .ml-1, .mx-1 {
             margin-left: 0 !important;
             margin-right: 0.25rem !important;
           }
@@ -1650,23 +1358,12 @@ body.rtl {
       right: 0;
     }
   }
-  .range-slider{
-    direction: ltr;
-  }
-  .product-filter-tags{
-    li{
-      .filter-tag{
-        margin-right: unset;
-        margin-left: 8px;
-      }
-    }
-  }
   .special-section {
     .special-box {
       .special-img {
         .top-icon {
           left: 8px;
-          right: unset;
+          right: 0;
         }
       }
     }
@@ -1694,11 +1391,11 @@ body.rtl {
             }
             .price {
               del {
-                margin-right: 0;
+                margin-right:0;
                 margin-left: 10px;
               }
               .facility-detail {
-                margin-left: 0;
+                margin-left:0;
                 margin-right: 7px;
               }
             }
@@ -1706,11 +1403,11 @@ body.rtl {
           .tour-detail {
             h6 {
               i {
-                &.ms-2 {
+                &.ml-2 {
                   margin-left: 0 !important;
                   margin-right: 0.5rem !important;
                 }
-                &.me-2 {
+                &.mr-2 {
                   margin-right: 0 !important;
                   margin-left: 0.5rem !important;
                 }
@@ -1768,7 +1465,7 @@ body.rtl {
             ul {
               li {
                 img {
-                  margin-right: 0;
+                  margin-right:0;
                   margin-left: 5px;
                 }
               }
@@ -1787,10 +1484,10 @@ body.rtl {
           .airport-progress {
             i {
               transform: scaleX(-1);
-              &.float-start {
+              &.float-left {
                 float: right !important;
               }
-              &.float-end {
+              &.float-right {
                 float: left !important;
               }
             }
@@ -1834,7 +1531,7 @@ body.rtl {
         text-align: right;
         .logo-sec {
           img {
-            margin-right: 0;
+            margin-right:0;
             margin-left: 10px;
           }
         }
@@ -1842,10 +1539,10 @@ body.rtl {
           .airport-progress {
             i {
               transform: scaleX(-1);
-              &.float-start {
+              &.float-left {
                 float: right !important;
               }
-              &.float-end {
+              &.float-right {
                 float: left !important;
               }
             }
@@ -1927,8 +1624,7 @@ body.rtl {
             right: unset;
             left: 0;
           }
-          &.non-veg,
-          &.veg {
+          &.non-veg, &.veg {
             h6 {
               padding-left: 0;
               padding-right: 25px;
@@ -1967,13 +1663,12 @@ body.rtl {
       }
     }
   }
-  .iti--allow-dropdown,
-  .iti--separate-dial-code {
+  .iti--allow-dropdown, .iti--separate-dial-code {
     .iti__flag-container {
       left: auto;
       right: unset;
     }
-    input[type="tel"] {
+    input[type=tel] {
       padding-left: 6px;
       padding-right: 52px;
     }
@@ -2032,7 +1727,7 @@ body.rtl {
         }
         .selector {
           select {
-            background: url(/images/icon/down-black.png) no-repeat 5%;
+            background: url(../images/icon/down-black.png) no-repeat 5%;
           }
         }
         .rooms-section {
@@ -2045,20 +1740,20 @@ body.rtl {
                   margin-right: 0;
                 }
                 .input-group {
-                  margin-left: 0;
+                  margin-left:0;
                   margin-right: auto;
                 }
               }
             }
             .bottom-part {
               .btn {
-                margin-left: 0;
+                margin-left:0;
                 margin-right: auto;
               }
             }
           }
         }
-        div.text-end {
+        div.text-right {
           text-align: left !important;
         }
       }
@@ -2073,8 +1768,7 @@ body.rtl {
       .order-cart {
         .cart-items {
           .items {
-            &.veg,
-            &.non-veg {
+            &.veg, &.non-veg {
               h6 {
                 padding-left: 0;
                 padding-right: 25px;
@@ -2083,7 +1777,7 @@ body.rtl {
                   right: 3px;
                 }
                 &:after {
-                  left: unset;
+                  left:unset;
                   right: 0;
                 }
               }
@@ -2127,7 +1821,7 @@ body.rtl {
               .facility-detail {
                 li {
                   img {
-                    margin-right: 0;
+                    margin-right:0;
                     margin-left: 8px;
                   }
                   i {
@@ -2173,7 +1867,7 @@ body.rtl {
           }
           &.facility {
             ul {
-              margin-left: 0;
+              margin-left:0;
               margin-right: 10px;
               li {
                 i {
@@ -2278,28 +1972,12 @@ body.rtl {
       .nav-item {
         .nav-link {
           &.active {
-            border-left: 2px solid rgba(var(--theme-color1),1);
+            border-left: 2px solid $theme-color1;
             border-right: none;
           }
         }
       }
     }
-  }
-  .dashboard-section{
-    .dashboard-box{
-      .dashboard-detail{
-        ul{
-          li{
-            .details{
-              .left{
-                margin-right: unset;
-                margin-left: 15px;
-              }
-            }
-          }
-        }
-      }
-    } 
   }
   .faq-content {
     .tab-pane {
@@ -2344,8 +2022,7 @@ body.rtl {
   }
   .top-filter-section {
     ul {
-      .onclick-title,
-      .filter-title {
+      .onclick-title, .filter-title {
         border-right: 1px solid #e0e0e0;
         border-left: none;
         h6 {
@@ -2356,7 +2033,7 @@ body.rtl {
           }
         }
         .onclick-content {
-          left: unset;
+          left:unset;
           right: 30px;
         }
         &:nth-child(-n + 3) {
@@ -2401,12 +2078,12 @@ body.rtl {
   }
   .MicrosoftMap {
     .infobox-close {
-      right: unset;
+      right:unset;
       left: 5px;
     }
   }
   .left-filter {
-    &.ms-auto {
+    &.ml-auto {
       margin-left: unset !important;
       margin-right: auto !important;
     }
@@ -2415,23 +2092,23 @@ body.rtl {
     .list-box {
       .list-content {
         text-align: right;
-        margin-left: 0;
+        margin-left:0;
         margin-right: 25px;
         h6 {
           i {
-            &.me-2 {
-              margin-right: 0 !important;
+            &.mr-2 {
+              margin-right:0 !important;
               margin-left: 0.5rem !important;
             }
-            &.ms-2 {
-              margin-left: 0 !important;
+            &.ml-2 {
+              margin-left:0 !important;
               margin-right: 0.5rem !important;
             }
           }
         }
         .price {
           del {
-            margin-right: 0;
+            margin-right:0;
             margin-left: 10px;
           }
         }
@@ -2445,14 +2122,14 @@ body.rtl {
         }
         .rating {
           span {
-            margin-left: 0;
+            margin-left:0;
             margin-right: 18px;
           }
         }
         .facility-icon {
           .facility-box {
             + .facility-box {
-              margin-left: 0;
+              margin-left:0;
               margin-right: 15px;
             }
           }
@@ -2512,7 +2189,7 @@ body.rtl {
           text-align: right;
           .top {
             .rating {
-              margin-left: 0;
+              margin-left:0;
               margin-right: 15px;
             }
             .share-buttons {
@@ -2537,7 +2214,7 @@ body.rtl {
         text-align: right;
         .top {
           .rating {
-            margin-left: 0;
+            margin-left:0;
             margin-right: 15px;
           }
           .share-buttons {
@@ -2561,7 +2238,7 @@ body.rtl {
       .login-social {
         .boxes {
           h6 {
-            margin-left: 0;
+            margin-left:0;
             margin-right: 20px;
           }
         }
@@ -2624,8 +2301,6 @@ body.rtl {
                 &:first-child {
                   border-right: none;
                   border-left: 1px solid #dddddd;
-                  margin-right: unset;
-                  margin-left: 5%;
                 }
               }
             }
@@ -2634,19 +2309,7 @@ body.rtl {
       }
     }
   }
-  .header-tabs{
-    .mix-pills{
-      &.nav-pills{
-        .nav-link{
-          svg{
-            margin-right: unset;
-            margin-left: 8px;
-          }
-        }
-      }
-    }
-  }
-  .edit-profile-modal {
+  .edit-profile-modal  {
     .modal-body {
       text-align: right;
       .gj-datepicker {
@@ -2662,12 +2325,12 @@ body.rtl {
     }
   }
   .modal-header {
-    .btn-close {
-      margin: -1rem auto -1rem -1rem;
+    .close {
+      margin: -1rem auto -1rem -1rem ;
     }
   }
   .map-modal {
-    .btn-close {
+    .close {
       right: unset;
       left: 10px;
     }
@@ -2688,31 +2351,6 @@ body.rtl {
   .customized {
     .size-option {
       text-align: right;
-    }
-  }
-  .size-option{
-    .form-check-label{
-      margin-right: 5px;
-    }
-  }
-  .portfolio-creative{
-    &.odd-even-con{
-      .container{
-        .row{
-          .content-sec{
-            p{
-              margin-right: auto;
-            }
-          }
-          &:nth-child(even){
-            .content-sec{
-              p{
-                margin-right: unset;
-              }
-            }
-          }
-        }
-      }
     }
   }
   .top-title-bar {
@@ -2896,6 +2534,7 @@ body.rtl {
     }
   }
 
+
   // footer
   footer {
     .footer {
@@ -2903,7 +2542,7 @@ body.rtl {
         h5 {
           text-align: right;
         }
-        .according-menu {
+        .according-menu{
           right: unset;
           left: 15px;
         }
@@ -3052,7 +2691,7 @@ body.rtl {
         .cab-search-box {
           .btn-solid {
             margin-right: -15px;
-            margin-left: 0;
+            margin-left:0;
           }
         }
       }
@@ -3257,7 +2896,7 @@ body.rtl {
       .responsive-detail {
         text-align: right;
         .modify-search {
-          right: unset;
+          right:unset;
           left: 25px;
         }
       }
@@ -3287,8 +2926,7 @@ body.rtl {
     }
     .top-filter-section {
       ul {
-        .onclick-title,
-        .filter-title {
+        .onclick-title, .filter-title {
           border-right: none;
           h6 {
             text-align: right;
@@ -3296,14 +2934,6 @@ body.rtl {
           }
           .onclick-content {
             right: 0;
-            .form-check{
-              .form-check-label{
-                .me-1{
-                  margin-right: unset !important;
-                  margin-left: 0.25rem !important;
-                }
-              }
-            }
           }
         }
       }
@@ -3319,8 +2949,7 @@ body.rtl {
           right: 0;
         }
       }
-      .slick-next,
-      .slick-prev {
+      .slick-next, .slick-prev {
         left: unset;
         right: 10px;
       }
@@ -3379,13 +3008,6 @@ body.rtl {
     }
   }
   @media (max-width: 767px) {
-    .view-map{
-      .arrow{
-        &::after{
-          transform: rotate(317deg);
-        }
-      }
-    }
     header {
       .mix-pills {
         .nav-item {
@@ -3395,7 +3017,7 @@ body.rtl {
     }
     .home_section {
       .home {
-        .home-content {
+        .home-content{
           &.mix-layout {
             &.smaller-content {
               .search-panel {
@@ -3605,16 +3227,6 @@ body.rtl {
     }
   }
   @media (max-width: 576px) {
-    .product-filter-tags{
-      li{
-        .filter-tag{
-          .btn-close{
-            margin-left: unset;
-            margin-right: auto;
-          }
-        }
-      }
-    }
     header {
       .menu {
         nav {
@@ -3691,8 +3303,7 @@ body.rtl {
     }
     .top-title-bar {
       .hotel_title_section {
-        .left-part,
-        h6 {
+        .left-part, h6 {
           text-align: center;
         }
       }
@@ -3767,7 +3378,7 @@ body.rtl {
               margin-right: 0;
             }
           }
-          .bottom {
+          .bottom  {
             .coupon-code {
               margin-right: 0;
             }
@@ -3910,15 +3521,6 @@ body.rtl {
     }
   }
   @media (max-width: 420px) {
-    .selector-box{
-      ul{
-        li{
-          span{
-            left: 5px;
-          }
-        }
-      }
-    }
     .single-section {
       .description-section {
         .description-details {
@@ -3970,7 +3572,7 @@ body.rtl {
       margin-left: unset;
     }
   }
-  @media (min-width: 992px) {
+  @media (min-width: 992px){
     .offset-lg-1 {
       margin-right: 8.33333%;
       margin-left: 0;
@@ -3984,7 +3586,7 @@ body.rtl {
       margin-right: 25%;
     }
     .offset-lg-2 {
-      margin-left: unset;
+      margin-left:unset;
       margin-right: 16.66667%;
     }
   }
@@ -4028,10 +3630,7 @@ body.rtl {
           .blog-wrap {
             .blog-details {
               &.text-md-right {
-                h6,
-                h5,
-                p,
-                span {
+                h6, h5, p, span {
                   margin-right: auto;
                   margin-left: unset;
                 }
