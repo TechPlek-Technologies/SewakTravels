@@ -1,9 +1,38 @@
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import DatePickerComponent from "../Common/DatePickerComponent";
 import TimePickerComponent from "../Common/TimePickerComponent";
 
 function CabSearch() {
-    const [startDate, setStartDate] = useState(new Date());
+
+
+  const [startDate, setStartDate] = useState(new Date());
+
+
+  // Start of google place API
+  const autoCompleteRef = useRef();
+  const inputRef = useRef();
+
+
+  const options = {
+    componentRestrictions: { country: "in" },
+    fields: ["address_components", "geometry", "icon", "name"],
+    types: ["establishment"],
+  };
+
+  useEffect(() => {
+  autoCompleteRef.current = new window.google.maps.places.Autocomplete(
+   inputRef.current,
+   options
+  );
+  autoCompleteRef.current.addListener("place_changed", async function () {
+   const place = await autoCompleteRef.current.getPlace();
+   console.log({ place });
+  });
+ }, []);
+
+
+//  END
+
   return (
     <Fragment>
       <form onSubmit={(event) => event.preventDefault()}>
@@ -13,6 +42,7 @@ function CabSearch() {
             className="form-control"
             id="exampleInputEmail1"
             placeholder="from"
+            ref={inputRef}
           />
           <img
             src="/assets/images/icon/from.png"
@@ -26,6 +56,7 @@ function CabSearch() {
             className="form-control"
             id="exampleInputEmail"
             placeholder="to"
+            ref={inputRef}
           />
           <img
             src="/assets/images/icon/location.png"
