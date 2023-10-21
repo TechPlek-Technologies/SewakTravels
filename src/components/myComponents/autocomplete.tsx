@@ -98,6 +98,7 @@ interface AutocompleteProps {
         <ul>
           {toSuggestions.map((suggestion, index) => (
             <li
+            
               key={index}
               onClick={() => handleToSuggestionClick(suggestion)} // Handle click
             >
