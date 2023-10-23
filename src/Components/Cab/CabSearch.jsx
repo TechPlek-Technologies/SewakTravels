@@ -8,30 +8,39 @@ function CabSearch() {
   const [startDate, setStartDate] = useState(new Date());
 
 
-  // Start of google place API
-  const autoCompleteRef = useRef();
-  const inputRef = useRef();
+// Start of google place API
+const fromAutoCompleteRef = useRef();
+const toAutoCompleteRef = useRef();
+const fromInputRef = useRef();
+const toInputRef = useRef();
 
+const options = {
+  componentRestrictions: { country: "in" },
+  fields: ["address_components", "geometry", "icon", "name"],
+  types: ["establishment"],
+};
 
-  const options = {
-    componentRestrictions: { country: "in" },
-    fields: ["address_components", "geometry", "icon", "name"],
-    types: ["establishment"],
-  };
-
-  useEffect(() => {
-  autoCompleteRef.current = new window.google.maps.places.Autocomplete(
-   inputRef.current,
-   options
+useEffect(() => {
+  fromAutoCompleteRef.current = new window.google.maps.places.Autocomplete(
+    fromInputRef.current,
+    options
   );
-  autoCompleteRef.current.addListener("place_changed", async function () {
-   const place = await autoCompleteRef.current.getPlace();
-   console.log({ place });
+
+  toAutoCompleteRef.current = new window.google.maps.places.Autocomplete(
+    toInputRef.current,
+    options
+  );
+
+  fromAutoCompleteRef.current.addListener("place_changed", async function () {
+    const place = await fromAutoCompleteRef.current.getPlace();
   });
- }, []);
 
+  toAutoCompleteRef.current.addListener("place_changed", async function () {
+    const place = await toAutoCompleteRef.current.getPlace();
+  });
+}, []);
 
-//  END
+// END
 
   return (
     <Fragment>
@@ -42,7 +51,7 @@ function CabSearch() {
             className="form-control"
             id="exampleInputEmail1"
             placeholder="from"
-            ref={inputRef}
+            ref={fromInputRef}
           />
           <img
             src="/assets/images/icon/from.png"
@@ -56,7 +65,7 @@ function CabSearch() {
             className="form-control"
             id="exampleInputEmail"
             placeholder="to"
-            ref={inputRef}
+            ref={toInputRef}
           />
           <img
             src="/assets/images/icon/location.png"

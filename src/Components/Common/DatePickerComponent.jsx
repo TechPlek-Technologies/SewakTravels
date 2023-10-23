@@ -1,13 +1,12 @@
-import ReactDateAndTimePicker from 'react-date-and-time-picker';
 import DatePicker from 'react-date-picker';
-
+import 'react-date-picker/dist/DatePicker.css';
+import 'react-calendar/dist/Calendar.css';
 
 function DatePickerComponent({ setStart, start }){
     console.log(start)
 
 return(
-    <ReactDateAndTimePicker selected={start} onChange={(Date) => setStart(Date)} id="datepicker" className="datepicker-main" dateFormat="dd MMMM" />
-    
+<DatePicker  value={start} onChange={(date) => setStart(date)} id="datepicker" className="datepicker-main" dateFormat="dd MMMM"  />  
 )
 }
 
