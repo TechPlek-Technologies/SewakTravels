@@ -10,6 +10,7 @@ function ListingView({ data }) {
     setFilteredMenu(data);
   }, [data]);
 
+ 
   return (
     <section className="xs-section bg-inner">
       <div className="container">
@@ -17,7 +18,6 @@ function ListingView({ data }) {
           <div className={`col-lg-3`}>
             <Filters
               value={data}
-              setShowFilter={setShowSidebar}
               showFilter={showSidebar}
             />
           </div>
@@ -35,7 +35,11 @@ function ListingView({ data }) {
                 alt=""
               />
             </a>
-            <ProductLayout value={filteredMenu} />
+            <ProductLayout
+              
+              value={filteredMenu}
+              
+            />
           </div>
         </div>
       </div>

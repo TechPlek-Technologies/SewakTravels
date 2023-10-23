@@ -5,7 +5,7 @@ function Filters(setShowFilter,showFilter){
     const [show, setShow] = useState(false);
     return (
         <div className="left-sidebar" style={{left:showFilter?"-1px":""}}>
-        <div className="back-btn" onClick={()=>setShowFilter &&setShowFilter(!showFilter)}>back</div>
+        <div className="back-btn" onClick={()=>setShowFilter(!showFilter)}>back</div>
         
         <div className={`middle-part collection-collapse-block ${show ? "" : "open"}`} >
           { (
