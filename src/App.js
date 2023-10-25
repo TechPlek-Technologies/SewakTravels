@@ -8,7 +8,7 @@ function App() {
   
   const routes = useRoutes([
     { path: '/', element: <Home /> },
-    { path: '/cab/listing', element: <CabListing/> },
+    { path: '/cab/listing/:source?/:destination?', element: <CabListing/> },
     {path: '/cab/date', element: <DatePickerComponent/>}
 ]);
 

@@ -2,7 +2,7 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import DatePickerComponent from "../Common/DatePickerComponent";
 import TimePickerComponent from "../Common/TimePickerComponent";
 
-function CabSearch() {
+function CabSearch({setPickup,setDestination}) {
 
 
   const [startDate, setStartDate] = useState(new Date());
@@ -24,6 +24,7 @@ useEffect(() => {
   fromAutoCompleteRef.current = new window.google.maps.places.Autocomplete(
     fromInputRef.current,
     options
+    
   );
 
   toAutoCompleteRef.current = new window.google.maps.places.Autocomplete(
@@ -33,11 +34,17 @@ useEffect(() => {
 
   fromAutoCompleteRef.current.addListener("place_changed", async function () {
     const place = await fromAutoCompleteRef.current.getPlace();
+    const pickup=place.name.trim().replace(/\s+/g, '_')
+    setPickup(pickup);
   });
 
   toAutoCompleteRef.current.addListener("place_changed", async function () {
     const place = await toAutoCompleteRef.current.getPlace();
+    const destination=place.name.trim().replace(/\s+/g, '_')
+    setDestination(destination);
   });
+
+  
 }, []);
 
 // END

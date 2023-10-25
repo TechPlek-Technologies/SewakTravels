@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import CabSearch from "./CabSearch";
+import { useState } from "react";
 
 function HomeBanner() {
+  const [pickup,setPickup]=useState("");
+  const [destination,setDestination]=useState("");
   return (
     <section className="cab-section p-0">
       <div className="container">
@@ -17,14 +20,14 @@ function HomeBanner() {
                 </div>
                 <h2>Great Journey Begins</h2>
                 <h3>Upto 25% off on first booking through your app</h3>
-                <CabSearch />
+                <CabSearch setPickup={setPickup} setDestination={setDestination}/>
                 <div className="car-select">
                   <ul>
                     <li className="active">classic</li>
                     <li>suv</li>
                     <li>luxury</li>
                   </ul>
-                  <Link to="/cab/listing" className="btn btn-solid">
+                  <Link to={`/cab/listing?source=${pickup}?destination=${destination}`} className="btn btn-solid">
                     book now
                   </Link>
                 </div>
