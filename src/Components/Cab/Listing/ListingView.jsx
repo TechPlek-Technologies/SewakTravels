@@ -19,6 +19,7 @@ function ListingView({ data }) {
             <Filters
               value={data}
               showFilter={showSidebar}
+              setShowFilter={setShowSidebar}
             />
           </div>
 

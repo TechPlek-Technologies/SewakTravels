@@ -1,7 +1,7 @@
 import { useState } from "react";
 import renderFiltersByType from "../../../HOC/renderFiltersByType";
 
-function Filters(setShowFilter,showFilter){
+function Filters({setShowFilter,showFilter}){
     const [show, setShow] = useState(false);
     return (
         <div className="left-sidebar" style={{left:showFilter?"-1px":""}}>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import { carOptionData } from "../../../../Data/CabData";
 
 function CabOption(){
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
     return (
       <div
@@ -12,7 +12,7 @@ function CabOption(){
         setShow(!show);
       }}>
       <div className={`collection-collapse-block ${show ? "open" : ""}`}>
-        <h6 className="collapse-block-title">Cab Type</h6>
+        <h6 className="collapse-block-title">Cab Options</h6>
         <div className={`collection-collapse-block-content ${!show ? "d-none" : ""} `}>
           <div className="collection-brand-filter">
             {carOptionData.map((data,index) => {
@@ -32,4 +32,4 @@ function CabOption(){
       );
 }
 
-export const MemorizedCabTypeFilter=memo(CabOption);
+export const MemorizedCabOptionFilter=memo(CabOption);

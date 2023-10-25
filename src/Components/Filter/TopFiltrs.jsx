@@ -1,4 +1,5 @@
-function TopFilters(){
+function TopFilters({value,setShowFilter,showFilter}){
+
 
 }
 
