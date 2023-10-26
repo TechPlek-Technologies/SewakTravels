@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import Img from "../../Common/Img";
 
 function ListingBanner() {
   return (
     <section className="breadcrumb-section flight-sec pt-0">
-      <img
+      <Img
         src="/assets/images/cab/breadcrumb.jpg"
         className="bg-img img-fluid"
         alt=""

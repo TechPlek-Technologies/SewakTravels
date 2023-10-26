@@ -3,6 +3,8 @@ import ListingBanner from "../Components/Cab/Listing/ListingBanner"
 import ListingView from "../Components/Cab/Listing/ListingView"
 import Layout from "../Layout/Layout"
 import { carData } from "../Data/CabData";
+import ListSearch from "../Components/Cab/Listing/ListSearch";
+import FooterComponent from "../Components/Common/FooterComponent";
 function CabListing(){
  
 const data=carData;
@@ -19,7 +21,9 @@ const data=carData;
         <>
         <Layout title="light_header"/>
         <ListingBanner title={"cab search"}/>
+        <ListSearch/>
         <ListingView data={data}/>
+        <FooterComponent/>
       </>
     )
 }

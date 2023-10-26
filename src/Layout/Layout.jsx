@@ -16,6 +16,7 @@ function Layout({ children, title }) {
         </div>
        
       </header>
+     
       {children}
       
     </>

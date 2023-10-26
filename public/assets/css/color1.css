@@ -44,6 +44,12 @@ Author URI: https://themeforest.net/user/pixelstrap
 /* 31. RTL CSS */
 /* 32. Dark CSS */
 /* 33. Responsiveenu CSS */
+
+
+/*=====================
+00. Custom css start
+==========================*/
+
 /*=====================
 01. General css start
 ==========================*/
@@ -1027,7 +1033,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh; }
+  height: 110vh; }
   .cab-section .cab-content {
     height: 100vh;
     padding-top: 75px;

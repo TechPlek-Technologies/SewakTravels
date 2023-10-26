@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useRef, useState } from "react";
-import DatePickerComponent from "../Common/DatePickerComponent";
-import TimePickerComponent from "../Common/TimePickerComponent";
+import DatePickerComponent from "../../Common/DatePickerComponent";
+import TimePickerComponent from "../../Common/TimePickerComponent";
 
 function CabSearch({setPickup,setDestination}) {
 
@@ -49,6 +49,7 @@ useEffect(() => {
 
 // END
 
+
   return (
     <Fragment>
       <form onSubmit={(event) => event.preventDefault()}>
@@ -81,7 +82,7 @@ useEffect(() => {
           />
         </div>
         <div className="form-group row cab-modern-form">
-          <div className="col form-control">
+          <div className="col form-control" >
             <DatePickerComponent setStart={setStartDate} start={startDate} />
           </div>
           <div className="col">

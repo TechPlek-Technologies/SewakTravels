@@ -10,8 +10,8 @@ function Navbar() {
       title: "Home",
     },
     {
-      path: "/cab",
-      title: "About",
+      path: "/blogs",
+      title: "Blogs",
     },
     {
       path: "/contact",

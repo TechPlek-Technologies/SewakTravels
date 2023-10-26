@@ -1,12 +1,9 @@
-import DatePicker from 'react-date-picker';
-import 'react-date-picker/dist/DatePicker.css';
-import 'react-calendar/dist/Calendar.css';
+import ReactDatePicker from 'react-datepicker';
+import "react-datepicker/dist/react-datepicker.css";
 
-function DatePickerComponent({ setStart, start }){
 
-return(
-<DatePicker  value={start} onChange={(date) => setStart(date)} id="datepicker" className="datepicker-main" dateFormat="dd MMMM"  />  
-)
-}
-
-export default DatePickerComponent;
+const DatePickerComponent = ({ setStart, start }) => {
+    return <ReactDatePicker selected={start} onChange={(date) => setStart(date)} id="datepicker" className="datepicker-main" dateFormat="dd MMMM" />;
+  };
+  
+  export default DatePickerComponent;

@@ -1,4 +1,8 @@
-import HomeBanner from "../Components/Cab/HomeBanner";
+import CabOffers from "../Components/Cab/Home/CabOffers";
+import CallService from "../Components/Cab/Home/CallService";
+import HomeBanner from "../Components/Cab/Home/HomeBanner";
+import OurVehicleComponent from "../Components/Cab/Home/OurvehicleComponent";
+import FooterComponent from "../Components/Common/FooterComponent";
 import Navbar from "../Components/Common/Navbar";
 
 function Home() {
@@ -8,6 +12,10 @@ function Home() {
         <Navbar />
       </header>
       <HomeBanner />
+      <CallService/>
+      <CabOffers/>
+      <OurVehicleComponent/>
+      <FooterComponent/>
     </>
   );
 }
