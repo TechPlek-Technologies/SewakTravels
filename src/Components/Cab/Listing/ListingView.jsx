@@ -10,7 +10,6 @@ function ListingView({ data }) {
     setFilteredMenu(data);
   }, [data]);
 
- 
   return (
     <section className="xs-section bg-inner">
       <div className="container">
@@ -36,11 +35,7 @@ function ListingView({ data }) {
                 alt=""
               />
             </a>
-            <ProductLayout
-              
-              value={filteredMenu}
-              
-            />
+            <ProductLayout value={filteredMenu} />
           </div>
         </div>
       </div>

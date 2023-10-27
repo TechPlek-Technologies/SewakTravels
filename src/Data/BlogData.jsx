@@ -13,13 +13,31 @@ export const blogsData = [
     desc_three:`Another thing to consider when planning a trip is to find out the transportation options in your chosen destination. Will you need to book a rental car or pre-purchase any transportation passes online? Is there a train or bus service? Are there taxis or Uber? Can you simply walk to most places?`,
     desc_four:`When you plan a trip you’ll want to know what are the must-visit tourist attractions and the best free things to do in your chosen destination. As much as we like to just show up, some trip planning is a good idea especially if you are visiting a popular destination in the peak travel season.`,
     author:`Deepak Sharma`,
-    comment_count:``,
-    like_count:``,
-    comments:{
-      comment1:``,
-      comment2:``,
-      comment3:``
-    }
+    comment_count:`5`,
+    like_count:`5`,
+    comments:[
+      {
+        id: 1,
+        avatar: "/assets/images/avtar/1.jpg",
+        name: "That Guy",
+        date: "Dec 16, 2023",
+        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+      {
+        id: 2,
+        avatar: "/assets/images/avtar/3.jpg",
+        name: "That Guy",
+        date: "Dec 16, 2023",
+        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      },
+      {
+        id: 3,
+        avatar: "/assets/images/avtar/2.jpg",
+        name: "That Guy",
+        date: "Dec 16, 2023",
+        content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      },
+    ]
 
   },
   {

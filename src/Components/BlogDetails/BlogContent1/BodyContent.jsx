@@ -19,7 +19,7 @@ function BodyContent ({ side,data}) {
                 <div className="top-image">{<Img src="/assets/images/portfolio/13.jpg" alt="" className="img-fluid " />}</div>
                 <PostDetail data={data}/>
                 <DetailPart data={data}/>
-                <CommentContent />
+                <CommentContent data={data}/>
               </div>
             </div>
           </div>

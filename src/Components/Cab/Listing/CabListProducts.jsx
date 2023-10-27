@@ -47,7 +47,7 @@ function CabListProducts({data}){
                   </div>
                   <div className="col-md-3">
                     <div className="book-flight">
-                      <Link href="/cab/booking"><Button btnClass="btn btn-solid color1" name="book now" /></Link>
+                      <Link to={`/cab-details?car=${item.id}`} ><Button btnClass="btn btn-solid color1" name="book now" /></Link>
                     </div>
                   </div>
                 </div>

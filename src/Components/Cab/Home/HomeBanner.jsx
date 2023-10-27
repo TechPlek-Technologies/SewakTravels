@@ -1,10 +1,22 @@
 import { Link } from "react-router-dom";
 import CabSearch from "./CabSearch";
 import { useState } from "react";
+import { useContext } from "react";
+import { AppContext } from "../../../Context/JourneyContext";
 
 function HomeBanner() {
   const [pickup,setPickup]=useState("");
   const [destination,setDestination]=useState("");
+
+  const context= useContext(AppContext);
+  const {journeyData,setJourneyData}=context;
+
+  const updateContext = () => {
+    // Create a new object with the updated value
+    const updatedObject = { ...journeyData, pickup: pickup,dropoff:destination };
+    setJourneyData(updatedObject);
+  };
+
   return (
     <section className="cab-section p-0">
       <div className="container">
@@ -27,7 +39,7 @@ function HomeBanner() {
                     <li>suv</li>
                     <li>luxury</li>
                   </ul>
-                  <Link to={`/cab/listing?source=${pickup}?destination=${destination}`} className="btn btn-solid">
+                  <Link onClick={updateContext} to={`/cab/listing?source=${pickup}?destination=${destination}`} className="btn btn-solid">
                     book now
                   </Link>
                 </div>

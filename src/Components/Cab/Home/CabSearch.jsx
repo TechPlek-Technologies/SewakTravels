@@ -2,10 +2,12 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import DatePickerComponent from "../../Common/DatePickerComponent";
 import TimePickerComponent from "../../Common/TimePickerComponent";
 
+
 function CabSearch({setPickup,setDestination}) {
 
 
   const [startDate, setStartDate] = useState(new Date());
+
 
 
 // Start of google place API
@@ -48,6 +50,7 @@ useEffect(() => {
 }, []);
 
 // END
+
 
 
   return (

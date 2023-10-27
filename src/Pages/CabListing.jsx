@@ -5,7 +5,14 @@ import Layout from "../Layout/Layout"
 import { carData } from "../Data/CabData";
 import ListSearch from "../Components/Cab/Listing/ListSearch";
 import FooterComponent from "../Components/Common/FooterComponent";
+import { useContext } from "react";
+import { AppContext } from "../Context/JourneyContext";
 function CabListing(){
+
+  const context= useContext(AppContext);
+  const {journeyData}=context;
+
+  console.log(journeyData);
  
 const data=carData;
   useEffect(() => {
