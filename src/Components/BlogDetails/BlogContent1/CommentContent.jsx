@@ -1,4 +1,4 @@
-import { commentsData } from "../../../Data/CommentData";
+// import { commentsData } from "../../../Data/CommentData";
 import Img from "../../Common/Img";
 
 function CommentContent({data}){

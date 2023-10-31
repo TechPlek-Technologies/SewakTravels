@@ -11,7 +11,7 @@ function Home() {
       <header>
         <Navbar />
       </header>
-      <HomeBanner />
+      <HomeBanner /> 
       <CallService/>
       <CabOffers/>
       <OurVehicleComponent/>

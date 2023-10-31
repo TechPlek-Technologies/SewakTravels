@@ -1,25 +1,22 @@
-import React,{ useState } from "react";
+import React, { useState, createContext } from "react";
 
+export const AppContext = createContext();
+const { Provider } = AppContext;
 
-export const AppContext=React.createContext();
-const {Provider} =AppContext;
+export default function ApplicationContextProvider(props) {
+  const initialData = {
+    tripType: "",
+    pickup: "",
+    dropoff: "",
+    pickupDate: "",
+    pickupTime: ""
+  };
 
+  const [journeyData, setJourneyData] = useState(initialData);
 
-export default function ApplicationContextProvider(props){
-    const initalData={
-        pickup:"",
-        dropoff:"",
-        pickupDate:"",
-        pickupTime:""
-    }
-
-    const [journeyData,setJourneyData]= useState(initalData);
-
-    
-    return(
-        <Provider value={{journeyData:journeyData,setJourneyData:setJourneyData}}>
-            {props.children}
-        </Provider>
-    )
+  return (
+    <Provider value={{ journeyData, setJourneyData }}>
+      {props.children}
+    </Provider>
+  );
 }
-

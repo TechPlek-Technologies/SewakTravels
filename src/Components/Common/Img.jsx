@@ -11,7 +11,7 @@ const Img= (props) => {
         const src = props.src;
   
         var regex = /bg-bottom/g;
-        var match = props.className?.match(regex);
+        var match = props?.className?.match(regex);
   
         parentElement.classList.add("bg-size");
         image.style.display = "none";

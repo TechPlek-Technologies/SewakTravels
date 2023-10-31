@@ -4,7 +4,7 @@ import ProductLayout from "./ProductLayout";
 
 function ListingView({ data }) {
   const [filteredMenu, setFilteredMenu] = useState(data);
-  const [showSidebar, setShowSidebar] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false); 
 
   useEffect(() => {
     setFilteredMenu(data);

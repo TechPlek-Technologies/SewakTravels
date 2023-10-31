@@ -4,10 +4,9 @@ import SingleDetailPage from "../Components/CabDetails/SingleDetailPage";
 import FooterComponent from "../Components/Common/FooterComponent";
 import { carData } from "../Data/CabData";
 import Layout from "../Layout/Layout";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 
 function CabDetails() {
-  const data = carData;
   useEffect(() => {
     document.documentElement.style.setProperty(
       "--theme-color1",
@@ -28,7 +27,7 @@ function CabDetails() {
   }, []);
 
  
-  const param = useParams();
+  // const param = useParams();
 
   // const targetId = param.id;
   const desiredcar = carData.find(car => car.id === 1);
@@ -38,7 +37,7 @@ function CabDetails() {
   return (
     <>
       <Layout title="light_header" />
-      <ListingBanner title={"cab Detail"} />
+      {/* <ListingBanner title={"cab Detail"} /> */}
       <SingleDetailPage desiredcar={desiredcar} />
 
       <FooterComponent />

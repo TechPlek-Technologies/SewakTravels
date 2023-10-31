@@ -9,7 +9,17 @@
     border: 0;
     padding: 0;
   }
+
   
   .cab-modern-form input:focus-visible {
     outline: 0;
   }
+
+
+  /* 
+  tab items
+  
+  */
+  li.nav-item:hover {
+    cursor: pointer;
+}

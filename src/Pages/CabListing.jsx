@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import ListingBanner from "../Components/Cab/Listing/ListingBanner"
 import ListingView from "../Components/Cab/Listing/ListingView"
 import Layout from "../Layout/Layout"
 import { carData } from "../Data/CabData";
@@ -27,7 +26,6 @@ const data=carData;
     return(
         <>
         <Layout title="light_header"/>
-        <ListingBanner title={"cab search"}/>
         <ListSearch/>
         <ListingView data={data}/>
         <FooterComponent/>

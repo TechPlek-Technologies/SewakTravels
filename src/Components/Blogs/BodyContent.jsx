@@ -5,7 +5,7 @@ const BodyContent= ({ data, view }) => {
     return (
       <>
         <div className={`blog-wrap wow fadeInUp`}>
-          <div className={`blog-image ${view === "creative" ? (data.id % 2 == 0 ? "order-md-1" : "") : ""}`}>
+          <div className={`blog-image ${view === "creative" ? (data.id % 2 === 0 ? "order-md-1" : "") : ""}`}>
             <Img src={data.img} className=" bg-img" alt="" />
             <div className={`blog-label`}>
               <div>
