@@ -16,7 +16,7 @@ const CabSearch = ({ resClass, setSearchBarOpen, searchBarOpen,setPickup,setDest
   const toAutoCompleteRef = useRef();
   const fromInputRef = useRef();
   const toInputRef = useRef();
-  const pickupDate = new Date(journeyData?.pickupDate);
+  const pickupDate = new Date(journeyData?.pickupDate)|| null;
 
   const options = {
     componentRestrictions: { country: "in" },
@@ -114,7 +114,7 @@ const CabSearch = ({ resClass, setSearchBarOpen, searchBarOpen,setPickup,setDest
             <div className="form-group">
               <label className="font-xs-white">Pickup Date</label>
               <div className="input-group">
-                <DatePickerComponent start={pickupDate} setStart={setStartDate} />
+                {/* <DatePickerComponent start={pickupDate} setStart={setStartDate} /> */}
               </div>
             </div>
           </div>

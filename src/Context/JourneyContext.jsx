@@ -9,13 +9,17 @@ export default function ApplicationContextProvider(props) {
     pickup: "",
     dropoff: "",
     pickupDate: "",
-    pickupTime: ""
+    pickupTime: "",
+    distance:"",
+    time:""
   };
 
   const [journeyData, setJourneyData] = useState(initialData);
+  const [traveltime,setTravelTime]=useState("")
+  const [travelDistance,setTravelDistance]=useState("")
 
   return (
-    <Provider value={{ journeyData, setJourneyData }}>
+    <Provider value={{ journeyData, setJourneyData,traveltime,setTravelTime,travelDistance,travelDistance }}>
       {props.children}
     </Provider>
   );

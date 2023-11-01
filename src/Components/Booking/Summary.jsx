@@ -1,10 +1,9 @@
+import Button from "../Common/Button"
 
 function Summary () {
     return (
         <div className="review_box">
-            <div className="title-top">
-                <h5>{"Booking Summary"}</h5>
-            </div>
+            
             <div className="flight_detail">
                 <div className="summery_box">
                     <table className="table table-borderless">
@@ -30,6 +29,9 @@ function Summary () {
                     <div className="grand_total">
                         <h5>grand total: <span>$2500</span></h5>
                     </div>
+                    
+          <Button name="proceed to pay" btnClass="btn btn-solid" />
+
                 </div>
             </div>
         </div>

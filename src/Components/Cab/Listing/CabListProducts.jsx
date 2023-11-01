@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import Button from "../../Common/Button";
+import { useContext } from "react";
+import { AppContext } from "../../../Context/JourneyContext";
 
 function CabListProducts({data}){
+  const {journeyData}= useContext(AppContext);
     return (
         <div className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar">
@@ -22,7 +25,7 @@ function CabListProducts({data}){
                           <img src="/assets/images/cab/icon/seat.png" className="img-fluid" alt="" /> {item.capacity} seater
                         </li>
                         <li>
-                          <img src="/assets/images/cab/icon/luggage.png" className="img-fluid" alt="" /> {item.luggage}
+                          <img src="/assets/images/icon/location.png" className="img-fluid" alt="" /> {journeyData?.distance}
                         </li>
                       </ul>
                       <ul>
@@ -30,7 +33,7 @@ function CabListProducts({data}){
                           <img src="/assets/images/cab/icon/snowflake.png" className="img-fluid" alt="" /> AC
                         </li>
                         <li>
-                          <img src="/assets/images/cab/icon/settings.png" className="img-fluid" alt="" /> {item.option}
+                          <img src="/assets/images/cab/icon/settings.png" className="img-fluid" alt="" /> {journeyData?.time}Hrs
                         </li>
                       </ul>
                     </div>

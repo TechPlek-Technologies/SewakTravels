@@ -8,6 +8,7 @@ const OutStationSearch = ({
   setPickup,
   setDestination,
   setPickupDate,
+  setPickupTime,
   pickupDate,
   handleRadioChange,
   selectedValue,
@@ -54,7 +55,7 @@ const OutStationSearch = ({
       <form id="outStationSearch" onSubmit={(event) => event.preventDefault()}>
         <div className="form-group">
           <input
-            type="email"
+            type="text"
             className="form-control"
             id="exampleInputEmail1"
             placeholder="from"
@@ -68,7 +69,7 @@ const OutStationSearch = ({
         </div>
         <div className="form-group">
           <input
-            type="email"
+            type="text"
             className="form-control"
             id="exampleInputEmail"
             placeholder="to"
@@ -85,7 +86,7 @@ const OutStationSearch = ({
             <DatePickerComponent setStart={setPickupDate} start={pickupDate} />
           </div>
           <div className="col">
-            <TimePickerComponent />
+            <TimePickerComponent setPickupTime={setPickupTime}/>
           </div>
         </div>
       </form>

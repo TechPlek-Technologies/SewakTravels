@@ -5,7 +5,6 @@ import CabListing from './Pages/CabListing';
 import Blogs from './Pages/Blogs';
 import BlogDetails1 from './Pages/BlogDetails/BlogDetails1';
 import CabDetails from './Pages/CabDetails';
-import Booking from './Pages/Booking';
 // import './scss/globals.scss'
 function App() {
   
@@ -14,7 +13,6 @@ function App() {
     {path: '/blogs', element: <Blogs/>},
     {path: '/blogs/:id', element: <BlogDetails1/>},
     {path: '/cab-details/:page?', element: <CabDetails/>},
-    {path: '/cab/booking', element: <Booking/>},
     { path: '/cab/listing/:source?/:destination?', element: <CabListing/> }
 ]);
 

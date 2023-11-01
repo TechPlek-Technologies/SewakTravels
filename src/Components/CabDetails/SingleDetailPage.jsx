@@ -1,35 +1,48 @@
-import { imagesection1, imagesection2, imagesection3 } from "../../Data/CabData";
-import CabBookingForm from "./CabBookingForm";
+import Payment from "../Booking/Payment";
+import GuestDetailPage from "../Booking/GuestDetailPage";
+import InformationPage from "../Booking/InformationPage";
+import Summary from "../Booking/Summary";
+import Img from "../Common/Img";
 import CarDetailPage from "./CarDetailPage";
 import ContactInfo from "./ContactInfo";
-import ImageSection from "./ImageSection";
 
-function SingleDetailPage({desiredcar}){
-    return (
-      <section className="single-section small-section bg-inner">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-9 col-lg-8">
-            <ImageSection imagesection1={imagesection1} imagesection2={imagesection2} imagesection3={imagesection3} />
-  
-              <CarDetailPage desiredcar={desiredcar} />
+function SingleDetailPage({ desiredcar }) {
+  return (
+    <section className="single-section small-section bg-inner">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-8">
+            <div className="review-section">
+              <div className="review_box">
+                <div className="review_box">
+                  <div className="title-top">
+                    <h5>{"Cab Details"}</h5>
+                  </div>
+                  <CarDetailPage desiredcar={desiredcar} />
+                </div>
+                <div className="title-top">
+                  <h5>{"Contact Details"}</h5>
+                </div>
+                <GuestDetailPage />
+              </div>
             </div>
-            <div className="col-xl-3 col-lg-4 ">
-              <div className="single-sidebar">
-                <div className="selection-section flight-search">
-                  <h4 className="title">{"Book Your Ride"}</h4>
-                  <div className="flight-search-detail cab-form-input">
-                    <CabBookingForm />
+          </div>
+          <div className="col-lg-4 booking-order res-margin">
+                <div className="review-section">
+                  <Payment />
+                  <div className="review_box">
+                    <Img
+                      src="/assets/images/cab/advertise.jpg"
+                      className="img-fluid"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
-              <ContactInfo />
-            </div>
-          </div>
         </div>
-      </section>
-    );
-  };
-  
-  export default SingleDetailPage;
-  
+      </div>
+    </section>
+  );
+}
+
+export default SingleDetailPage;

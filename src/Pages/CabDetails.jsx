@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import ListingBanner from "../Components/Cab/Listing/ListingBanner";
 import SingleDetailPage from "../Components/CabDetails/SingleDetailPage";
 import FooterComponent from "../Components/Common/FooterComponent";
 import { carData } from "../Data/CabData";
@@ -38,7 +37,7 @@ function CabDetails() {
     <>
       <Layout title="light_header" />
       {/* <ListingBanner title={"cab Detail"} /> */}
-      <SingleDetailPage desiredcar={desiredcar} />
+      <SingleDetailPage desiredcar={desiredcar} /> 
 
       <FooterComponent />
     </>

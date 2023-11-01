@@ -11,6 +11,7 @@ import OutStationSearch from "./BannerSearch/OutStationSearch";
 function HomeBanner() {
   const [selectedValue, setSelectedValue] = useState("One Way"); // Set the initial selected value
   const [activeTab, setActiveTab] = useState("1");
+  const [showPopup, setShowPopup] = useState(false);
   const callback = useCallback(
     (tab) => {
       setActiveTab(tab);
@@ -22,27 +23,55 @@ function HomeBanner() {
   const [pickup, setPickup] = useState("");
   const [pickupDate, setPickupDate] = useState(tomorrow);
   const [destination, setDestination] = useState("");
-
   const context = useContext(AppContext);
   const { journeyData, setJourneyData } = context;
 
   const updateContext = () => {
     // Create a new object with the updated values
-
-    const updatedObject = {
-      ...journeyData,
-      pickup: pickup,
-      dropoff: destination,
-      pickupDate: pickupDate,
-      tripType:selectedValue
-    };
-    setJourneyData(updatedObject);
+    calculateDistanceAndDuration(pickup, destination);
   };
 
-
-  
   const handleRadioChange = (event) => {
     setSelectedValue(event.target.value); // Update the selected value when a radio button is changed
+  };
+
+  const calculateDistanceAndDuration = (pickup, destination) => {
+    const directionsService = new window.google.maps.DirectionsService();
+    const request = {
+      origin: pickup,
+      destination: destination,
+      travelMode: window.google.maps.TravelMode.DRIVING,
+    };
+
+    directionsService.route(request, (response, status) => {
+      if (status === "OK") {
+        const route = response.routes[0];
+        const leg = route.legs[0];
+        const distance = leg.distance.text;
+        const duration = leg.duration.text;
+
+        const daysAndHours = duration.match(/\d+/g).map(Number);
+
+        // Calculate the duration in hours
+        const durationInHours = daysAndHours[0] * 24 + daysAndHours[1];
+        console.log(durationInHours);
+        console.log(duration);
+        console.log(distance);
+
+        const updatedObject = {
+          ...journeyData,
+          pickup: pickup,
+          dropoff: destination,
+          pickupDate: pickupDate,
+          tripType: selectedValue,
+          distance: distance,
+          time: daysAndHours,
+        };
+        setJourneyData(updatedObject);
+      } else {
+        console.log("Error");
+      }
+    });
   };
 
   return (
@@ -98,17 +127,26 @@ function HomeBanner() {
 
                 <div className="car-select">
                   <ul>
-                    <li className="active">classic</li>
-                    <li>suv</li>
-                    <li>luxury</li>
+                    <li className="active">Sedan</li>
+                    <li>SUV</li>
+                    <li>Cresta</li>
                   </ul>
                   <Link
-                    onClick={updateContext}
+                    onClick={(e) => {
+                      if (pickup === "" || destination === "") {
+                        // e.preventDefault(); // Prevent the link from navigating
+                        // alert("Input fields are required"); // Show the popup
+                      } else {
+                        updateContext();
+                      }
+                    }}
                     to="/cab/listing"
-                    className="btn btn-solid"
+                    className={`btn btn-solid `}
+                    
                   >
-                    book now
+                    Book now
                   </Link>
+                  
                 </div>
               </div>
             </div>

@@ -11100,7 +11100,9 @@ section .black-layer:before {
     .flight-detail-sec.cab-detail-sec .detail-bar .detail-wrap .car-details ul li {
       display: block;
       text-transform: capitalize;
-      color: #3e3e3e; }
+      color: #3e3e3e;
+      width: 100px;
+    }
       .flight-detail-sec.cab-detail-sec .detail-bar .detail-wrap .car-details ul li img {
         margin-right: 5px;
         width: 16px; }
