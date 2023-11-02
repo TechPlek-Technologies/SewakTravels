@@ -10,7 +10,7 @@ function CarDetailPage({desiredcar}){
         <div className="title-car">
           <h5>{desiredcar?.name}</h5>
           <h6>
-            fare/km : <span>₹{desiredcar?.price}</span>
+            fare/km : <span>₹{desiredcar?.fare}</span>
           </h6>
         </div>
         <p className="description">{desiredcar?.cabType}</p>

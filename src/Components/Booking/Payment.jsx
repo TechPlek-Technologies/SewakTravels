@@ -1,12 +1,17 @@
+import { useContext } from "react";
 import Button from "../Common/Button";
+import { AppContext } from "../../Context/JourneyContext";
+import { useState } from "react";
 
-function Payment() {
+function Payment({desiredcar}) {
+  const{journeyData}= useContext(AppContext)
+  const [payment,setPayment]=useState(desiredcar.fare*journeyData?.distance);
   return (
     <div className="review_box">
       <div className="flight_detail">
         <div className="promo-section">
         <div className="grand_total">
-                        <h5>Grand total: <span>$2500</span></h5>
+                        <h5>Grand total: <span>₹{payment}</span></h5>
                     </div>
             <Button name="proceed to pay" btnClass="btn btn-solid" />
           

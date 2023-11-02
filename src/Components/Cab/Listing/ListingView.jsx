@@ -3,17 +3,11 @@ import Filters from "./Filters";
 import ProductLayout from "./ProductLayout";
 
 function ListingView({ data }) {
-  const [filteredMenu, setFilteredMenu] = useState(data);
+  const [filteredData, setFilteredData] = useState(data);
   const [showSidebar, setShowSidebar] = useState(false);
-
-  useEffect(() => {
-    setFilteredMenu(data);
-  }, [data]);
-
-  // Callback function to update filteredMenu based on user selections in Filters
-  const updateFilteredMenu = (newFilteredMenu) => {
-    setFilteredMenu(newFilteredMenu);
-  };
+console.log("hee")
+console.log(filteredData)
+  
 
   return (
     <section className="xs-section bg-inner">
@@ -23,8 +17,8 @@ function ListingView({ data }) {
             <Filters
               showFilter={showSidebar}
               setShowFilter={setShowSidebar}
-              updateFilteredMenu={updateFilteredMenu}
-              data={data} // You can also pass data to Filters if needed
+              setFilteredData={setFilteredData}
+              filteredData={filteredData}
             />
           </div>
 
@@ -41,7 +35,7 @@ function ListingView({ data }) {
                 alt=""
               />
             </a>
-            <ProductLayout value={filteredMenu} />
+            <ProductLayout value={filteredData} />
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import SearchTabs from "./BannerSearch/SearchTabs";
 import { useCallback } from "react";
 import { TabContent, TabPane } from "reactstrap";
 import OutStationSearch from "./BannerSearch/OutStationSearch";
+import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 
 function HomeBanner() {
   const [selectedValue, setSelectedValue] = useState("One Way"); // Set the initial selected value
@@ -26,53 +27,17 @@ function HomeBanner() {
   const context = useContext(AppContext);
   const { journeyData, setJourneyData } = context;
 
-  const updateContext = () => {
-    // Create a new object with the updated values
-    calculateDistanceAndDuration(pickup, destination);
-  };
-
+  
   const handleRadioChange = (event) => {
     setSelectedValue(event.target.value); // Update the selected value when a radio button is changed
   };
 
-  const calculateDistanceAndDuration = (pickup, destination) => {
-    const directionsService = new window.google.maps.DirectionsService();
-    const request = {
-      origin: pickup,
-      destination: destination,
-      travelMode: window.google.maps.TravelMode.DRIVING,
-    };
 
-    directionsService.route(request, (response, status) => {
-      if (status === "OK") {
-        const route = response.routes[0];
-        const leg = route.legs[0];
-        const distance = leg.distance.text;
-        const duration = leg.duration.text;
-
-        const daysAndHours = duration.match(/\d+/g).map(Number);
-
-        // Calculate the duration in hours
-        const durationInHours = daysAndHours[0] * 24 + daysAndHours[1];
-        console.log(durationInHours);
-        console.log(duration);
-        console.log(distance);
-
-        const updatedObject = {
-          ...journeyData,
-          pickup: pickup,
-          dropoff: destination,
-          pickupDate: pickupDate,
-          tripType: selectedValue,
-          distance: distance,
-          time: daysAndHours,
-        };
-        setJourneyData(updatedObject);
-      } else {
-        console.log("Error");
-      }
-    });
+  const updateContext = () => {
+    calculateDistanceAndDuration(pickup, destination, pickupDate, selectedValue, journeyData, setJourneyData);
   };
+
+ 
 
   return (
     <section className="cab-section p-0">

@@ -29,7 +29,7 @@ function SingleDetailPage({ desiredcar }) {
           </div>
           <div className="col-lg-4 booking-order res-margin">
                 <div className="review-section">
-                  <Payment />
+                  <Payment desiredcar={desiredcar}/>
                   <div className="review_box">
                     <Img
                       src="/assets/images/cab/advertise.jpg"

@@ -58,7 +58,7 @@ const OutStationSearch = ({
             type="text"
             className="form-control"
             id="exampleInputEmail1"
-            placeholder="from"
+            placeholder="Source"
             ref={fromInputRef}
           />
           <img
@@ -72,7 +72,7 @@ const OutStationSearch = ({
             type="text"
             className="form-control"
             id="exampleInputEmail"
-            placeholder="to"
+            placeholder="Destination"
             ref={toInputRef}
           />
           <img
@@ -83,7 +83,7 @@ const OutStationSearch = ({
         </div>
         <div className="form-group row cab-modern-form">
           <div className="col form-control">
-            <DatePickerComponent setStart={setPickupDate} start={pickupDate} />
+            <DatePickerComponent setStart={setPickupDate}/>
           </div>
           <div className="col">
             <TimePickerComponent setPickupTime={setPickupTime}/>

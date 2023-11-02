@@ -18,11 +18,6 @@ function TimePickerComponent() {
     }));
   }, [setJourneyData]);
 
-  useEffect(() => {
-    if (inputValue === "10:00 PM") {
-      alert("You selected 10:00 PM");
-    }
-  }, [inputValue]);
 
   useEffect(() => {
     const tm = tmRef.current;

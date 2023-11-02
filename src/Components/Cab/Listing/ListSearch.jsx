@@ -12,8 +12,8 @@ function ListSearch() {
 
   const [searchBarOpen, setSearchBarOpen] = useState(false);
   const [selectedValue, setSelectedValue] = useState("in city"); 
-  const [pickup,setPickup]= useState(journeyData?.pickup||"Delhi")
-  const [destination,setDestination]= useState(journeyData?.dropoff||"Shimla")
+  const [pickup,setPickup]= useState(journeyData?.pickup)
+  const [destination,setDestination]= useState(journeyData?.dropoff)
 
   // Create a Date object from your pickup date string
   const pickupDate = new Date(journeyData?.pickupDate);

@@ -6,23 +6,45 @@ import TimePickerComponent from "../../Common/TimePickerComponent";
 import { AppContext } from "../../../Context/JourneyContext";
 import { useRef } from "react";
 import { useEffect } from "react";
+import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 
-const CabSearch = ({ resClass, setSearchBarOpen, searchBarOpen,setPickup,setDestination,pickup,destination }) => {
-  const [startDate, setStartDate] = useState(new Date());
-
+const CabSearch = ({
+  resClass,
+  setSearchBarOpen,
+  searchBarOpen,
+  setPickup,
+  setDestination,
+  selectedValue,
+  destination,
+  pickup,
+}) => {
   const context = useContext(AppContext);
   const { journeyData, setJourneyData } = context;
-  const fromAutoCompleteRef = useRef();
-  const toAutoCompleteRef = useRef();
-  const fromInputRef = useRef();
-  const toInputRef = useRef();
-  const pickupDate = new Date(journeyData?.pickupDate)|| null;
+
+  const [startDate, setStartDate] = useState(new Date(journeyData?.pickupDate));
+
+  const updateChanges = () => {
+    calculateDistanceAndDuration(
+      pickup,
+      destination,
+      journeyData?.pickupDate,
+      selectedValue,
+      journeyData,
+      setJourneyData
+    );
+    console.log(journeyData);
+  };
 
   const options = {
     componentRestrictions: { country: "in" },
     fields: ["address_components", "geometry", "icon", "name"],
     types: ["establishment"],
   };
+
+  const fromAutoCompleteRef = useRef();
+  const toAutoCompleteRef = useRef();
+  const fromInputRef = useRef();
+  const toInputRef = useRef();
 
   useEffect(() => {
     fromAutoCompleteRef.current = new window.google.maps.places.Autocomplete(
@@ -40,18 +62,18 @@ const CabSearch = ({ resClass, setSearchBarOpen, searchBarOpen,setPickup,setDest
       const pickupName = place.name.trim();
       setPickup(pickupName);
     });
-    
+
     toAutoCompleteRef.current.addListener("place_changed", async function () {
       const place = await toAutoCompleteRef.current.getPlace();
       const destinationName = place.name.trim();
       setDestination(destinationName);
     });
   }, []);
- 
+
   return (
     <div className="flight-search">
       <div
-        className={`flight-search-detail ${searchBarOpen ? "show" : ""} ${ 
+        className={`flight-search-detail ${searchBarOpen ? "show" : ""} ${
           resClass ? resClass : ""
         }`}
       >
@@ -64,10 +86,16 @@ const CabSearch = ({ resClass, setSearchBarOpen, searchBarOpen,setPickup,setDest
                 className="form-control open-select"
                 id="exampleInputEmail1"
                 placeholder="pick up"
-                
               >
-                <option value="option1">{journeyData?.tripType =="Round Trip" ? "Round Trip" : "One Way"} </option>
-                <option value="option2">{journeyData?.tripType=="One Way" ? "One Way" : "Round Trip"}</option>
+                <option value="option1">
+                  {journeyData?.tripType||"One Way"}
+                </option>
+                <option value="option2">
+                  One Way
+                </option>
+                <option value="option3">
+                  RoundTrip
+                </option>
               </select>
 
               {/* <Img
@@ -84,7 +112,8 @@ const CabSearch = ({ resClass, setSearchBarOpen, searchBarOpen,setPickup,setDest
                 type="text"
                 className="form-control open-select"
                 id="exampleInputEmail1"
-                placeholder={pickup}
+                defaultValue={journeyData?.pickup}
+                placeholder="Source"
                 ref={fromInputRef}
               />
               {/* <Img
@@ -100,7 +129,8 @@ const CabSearch = ({ resClass, setSearchBarOpen, searchBarOpen,setPickup,setDest
               <input
                 type="text"
                 className="form-control open-select"
-                placeholder={destination}
+                defaultValue={journeyData?.dropoff}
+                placeholder="Destination"
                 ref={toInputRef}
               />
               {/* <Img
@@ -113,8 +143,8 @@ const CabSearch = ({ resClass, setSearchBarOpen, searchBarOpen,setPickup,setDest
           <div className="col">
             <div className="form-group">
               <label className="font-xs-white">Pickup Date</label>
-              <div className="input-group">
-                {/* <DatePickerComponent start={pickupDate} setStart={setStartDate} /> */}
+              <div className="input-group customdate">
+                <DatePickerComponent setStart={setStartDate} />
               </div>
             </div>
           </div>
@@ -133,6 +163,7 @@ const CabSearch = ({ resClass, setSearchBarOpen, searchBarOpen,setPickup,setDest
               <Link
                 href="/cab/listing/list-view/left-sidebar"
                 className="btn btn-solid color1"
+                onClick={updateChanges}
               >
                 {"Update"}
               </Link>

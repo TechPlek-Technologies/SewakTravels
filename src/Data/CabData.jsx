@@ -16,7 +16,7 @@ export const carData = [
     luggage: "2 luggage",
     option: "manual",
     price: 1100,
-    fare: "25",
+    fare: 25,
   },
   {
     id: 1,
@@ -34,7 +34,7 @@ export const carData = [
     luggage: "4 luggage",
     option: "manual",
     price: 1100,
-    fare: "25",
+    fare: 25,
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ export const carData = [
     luggage: "2 luggage",
     option: "automatic",
     price: 2000,
-    fare: "25",
+    fare: 25,
   },
   {
     id: 5,
@@ -189,4 +189,32 @@ export const carOverview = [
 export const carFeatures = [
   { src: "/assets/images/cab/icon/snowflake.png", text: "AC" },
   { src: "/assets/images/cab/icon/settings.png", text: "automatic" },
+];
+export const FleetData = [
+  {
+    id: 1,
+    img: "/assets/images/hotel/video-image.jpg",
+    price: 450,
+    per: "/ per night",
+    title: "family room 5",
+    shortDescription: "family",
+    shortDescriptionSpan: "room",
+    description: "Lorem Ipsum is the simply dummy text of the printing is of and type the setting the industry. Lorem Ipsum of is has since the..........",
+    btn: "book now",
+    responsiveDesc: "see rooms",
+    icon: "fas fa-key",
+  },
+  {
+    id: 2,
+    img: "/assets/images/hotel/video-image1.jpg",
+    price: 450,
+    per: "/ per night",
+    title: "family room 5",
+    shortDescription: "family",
+    shortDescriptionSpan: "room",
+    description: "Lorem Ipsum is the simply dummy text of the printing is of and type the setting the industry. Lorem Ipsum of is has since the..........",
+    btn: "book now",
+    responsiveDesc: "see rooms",
+    icon: "fas fa-key",
+  },
 ];

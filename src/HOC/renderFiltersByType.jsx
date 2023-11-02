@@ -1,13 +1,13 @@
-import { MemorizedCabCapacityFilter } from "../Components/Cab/Listing/Filters/CabCapacity";
-import { MemorizedCabOptionFilter } from "../Components/Cab/Listing/Filters/CabOption";
+// import { MemorizedCabCapacityFilter } from "../Components/Cab/Listing/Filters/CabCapacity";
+// import { MemorizedCabOptionFilter } from "../Components/Cab/Listing/Filters/CabOption";
 import CabType from "../Components/Cab/Listing/Filters/CabType";
 
-function renderFiltersByType() {
+function renderFiltersByType(setFilteredData) {
   return (
     <>
-      <CabType />
-      <MemorizedCabOptionFilter />
-      <MemorizedCabCapacityFilter />
+      <CabType setFilteredData={setFilteredData}/>
+      {/* <MemorizedCabOptionFilter /> */}
+      {/* <MemorizedCabCapacityFilter /> */}
     </>
   );
 }

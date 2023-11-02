@@ -4,22 +4,24 @@ export const AppContext = createContext();
 const { Provider } = AppContext;
 
 export default function ApplicationContextProvider(props) {
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+
   const initialData = {
     tripType: "",
     pickup: "",
     dropoff: "",
-    pickupDate: "",
+    pickupDate: tomorrow,
     pickupTime: "",
     distance:"",
     time:""
   };
 
   const [journeyData, setJourneyData] = useState(initialData);
-  const [traveltime,setTravelTime]=useState("")
-  const [travelDistance,setTravelDistance]=useState("")
+
 
   return (
-    <Provider value={{ journeyData, setJourneyData,traveltime,setTravelTime,travelDistance,travelDistance }}>
+    <Provider value={{ journeyData, setJourneyData}}>
       {props.children}
     </Provider>
   );

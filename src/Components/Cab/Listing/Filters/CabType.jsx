@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { carTypeData } from "../../../../Data/CabData";
+import { carData, carTypeData } from "../../../../Data/CabData";
 
-function CabType() {
+function CabType({setFilteredData}) {
   const [show, setShow] = useState(true);
   const [selectedLabels, setSelectedLabels] = useState([]); // State to store selected labels
 
@@ -18,6 +18,20 @@ function CabType() {
     // Use the selectedLabels to filter data and perform your filtering logic here
     // For example, you can filter your data based on the selected labels and update the results accordingly.
     // You can also pass the selectedLabels up to the parent component for global filtering.
+     // Function to apply filtering logic
+ 
+    if (selectedLabels.length === 0) {
+      console.log(carData)
+      setFilteredData(carData); // No filtering, return all data
+    }else{
+      const newFilteredData=carData.filter((item) => selectedLabels.includes(item.category))
+      
+      console.log(newFilteredData)
+      // Filter the carData based on selected car types
+     setFilteredData(newFilteredData);
+    }
+    
+  
     console.log("Selected Labels: ", selectedLabels);
   }, [selectedLabels]);
 

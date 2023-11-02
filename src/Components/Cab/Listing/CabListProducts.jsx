@@ -25,7 +25,7 @@ function CabListProducts({data}){
                           <img src="/assets/images/cab/icon/seat.png" className="img-fluid" alt="" /> {item.capacity} seater
                         </li>
                         <li>
-                          <img src="/assets/images/icon/location.png" className="img-fluid" alt="" /> {journeyData?.distance}
+                          <img src="/assets/images/icon/location.png" className="img-fluid" alt="" /> {journeyData?.distance} km
                         </li>
                       </ul>
                       <ul>
@@ -41,9 +41,9 @@ function CabListProducts({data}){
                   <div className="col-md-2">
                     <div className="price">
                       <div>
-                        <h4>${item.price}</h4>
+                        <h4>₹{item.fare*journeyData?.distance}</h4>
                         <h6>
-                          fare/km : <span>${item.rate}</span>
+                          fare/km : <span>₹{item.fare}</span>
                         </h6>
                       </div>
                     </div>
