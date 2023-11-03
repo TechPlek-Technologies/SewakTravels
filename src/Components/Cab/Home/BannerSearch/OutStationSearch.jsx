@@ -74,6 +74,7 @@ const OutStationSearch = ({
             id="exampleInputEmail"
             placeholder="Destination"
             ref={toInputRef}
+            required={true}
           />
           <img
             src="/assets/images/icon/location.png"

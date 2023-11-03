@@ -63,4 +63,17 @@
   font-size: 20px;
 }
 
+/* Contact us section */
 
+.contact_section > .container > .row > .row{
+  width: 100%;
+}
+
+
+/* FAQ */
+.other-faq .product_img_scroll .card-title {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ef3f3e;
+}

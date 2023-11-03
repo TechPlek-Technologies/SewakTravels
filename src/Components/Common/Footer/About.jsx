@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 
 const About = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
     return (
       <div className="col-xl-2 col-md-3">
         <div className="footer-space">
@@ -11,21 +14,19 @@ const About = () => {
             <div className="footer-links">
               <ul>
                 <li>
-                  <Link href="/pages/other-pages/about-us-1">About us</Link>
+                  <Link onClick={scrollToTop} to={"/about"}>About us</Link>
                 </li>
                 <li>
-                  <Link href="/pages/other-pages/faq">FAQ</Link>
-                </li>
-                
-                
-                <li>
-                  <Link href="/pages/other-pages/user-dashboard">Terms & condition</Link>
+                  <Link onClick={scrollToTop} to={"/FAQ"}>FAQ</Link>
                 </li>
                 <li>
-                  <Link href="/pages/other-pages/user-dashboard">Privacy</Link>
+                  <Link onClick={scrollToTop} to={"/terms-and-conditon"}>Terms & condition</Link>
                 </li>
                 <li>
-                  <Link href="https://support.pixelstrap.com/">Support</Link>
+                  <Link onClick={scrollToTop} to={"/privacy-policy"}>Privacy</Link>
+                </li>
+                <li>
+                  <Link onClick={scrollToTop} to={"/refund-policy"}>Refund Policy</Link>
                 </li>
               </ul>
             </div>

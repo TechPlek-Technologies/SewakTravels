@@ -1,6 +1,6 @@
 import Navbar from "../Components/Common/Navbar";
 
-function Layout({ children, title }) {
+function Layout({  title }) {
   return (
     <>
       <header className={title}>
@@ -16,7 +16,7 @@ function Layout({ children, title }) {
         </div>
        
       </header>
-      {children}
+      
       
     </>
   );

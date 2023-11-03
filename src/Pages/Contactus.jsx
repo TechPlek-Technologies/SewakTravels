@@ -1,36 +1,22 @@
-import AddressContent from "../Components/Contactus/AddressContent";
-import ContactForm from "../Components/Contactus/ContactForm";
-import GoogleMapComponent from "../Components/Contactus/GoogleMapComponent";
+// import Breadcrumb from "../Components/Common/Breadcrumb";
+import FooterComponent from "../Components/Common/FooterComponent";
+import ContactusContent from "../Components/Contactus/ContactUsContent";
+import Layout from "../Layout/Layout";
 
-const Contactus= () => {
-    return (
-      <>
-        <section className="contact_section small-section pb-0">
-          <div className="container">
-            <div className="row">
-              <AddressContent colClass="col-lg-3 col-sm-6" />
-            </div>
-          </div>
-        </section>
-        <section className="small-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="get-in-touch">
-                  <h3>{"Get In Touch"}</h3>
-                  <ContactForm />
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="contact-map">
-                  <GoogleMapComponent />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </>
-    );
-  };
-  export default Contactus;
-  
+const Contactus = () => {
+  return (
+    <>
+      <Layout title="light_header" userBgClass="user user-light" />
+      {/* <Breadcrumb
+        title={"home"}
+        subTitle={"about us"}
+        bannerImg={"/assets/images/inner-bg.jpg"}
+      /> */}
+
+      <ContactusContent />
+      <FooterComponent/>
+    </>
+  );
+};
+
+export default Contactus;

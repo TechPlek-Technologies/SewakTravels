@@ -10,6 +10,14 @@ function Navbar() {
       title: "Home",
     },
     {
+      path: "/about",
+      title: "About Us",
+    },
+    {
+      path:"/service",
+      title:"Services"
+    },
+    {
       path: "/blogs",
       title: "Blogs",
     },
@@ -18,9 +26,9 @@ function Navbar() {
       title: "Contact",
     },
     {
-      path: "/user",
-      title: "Users",
-    },
+      path: "/FAQ",
+      title: "FAQ",
+    }
   ];
 
   return (
