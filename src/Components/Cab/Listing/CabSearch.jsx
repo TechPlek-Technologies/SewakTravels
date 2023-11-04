@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import DatePickerComponent from "../../Common/DatePickerComponent";
-import Img from "../../Common/Img";
+// import Img from "../../Common/Img";
 import { useContext, useState } from "react";
 import TimePickerComponent from "../../Common/TimePickerComponent";
 import { AppContext } from "../../../Context/JourneyContext";
@@ -17,6 +17,7 @@ const CabSearch = ({
   selectedValue,
   destination,
   pickup,
+  setValidate
 }) => {
   const context = useContext(AppContext);
   const { journeyData, setJourneyData } = context;
@@ -32,7 +33,6 @@ const CabSearch = ({
       journeyData,
       setJourneyData
     );
-    console.log(journeyData);
   };
 
   const options = {
@@ -68,6 +68,7 @@ const CabSearch = ({
       const destinationName = place.name.trim();
       setDestination(destinationName);
     });
+    setValidate(true);
   }, []);
 
   return (
@@ -115,6 +116,7 @@ const CabSearch = ({
                 defaultValue={journeyData?.pickup}
                 placeholder="Source"
                 ref={fromInputRef}
+                required
               />
               {/* <Img
                 src="/assets/images/icon/from.png"

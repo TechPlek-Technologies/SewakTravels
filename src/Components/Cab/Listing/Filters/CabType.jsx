@@ -21,7 +21,6 @@ function CabType({setFilteredData}) {
      // Function to apply filtering logic
  
     if (selectedLabels.length === 0) {
-      console.log(carData)
       setFilteredData(carData); // No filtering, return all data
     }else{
       const newFilteredData=carData.filter((item) => selectedLabels.includes(item.category))
@@ -32,7 +31,6 @@ function CabType({setFilteredData}) {
     }
     
   
-    console.log("Selected Labels: ", selectedLabels);
   }, [selectedLabels]);
 
   return (

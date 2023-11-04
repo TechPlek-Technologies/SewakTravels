@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { AppContext } from "../../../Context/JourneyContext";
 import { Link } from "react-router-dom";
 
-function ListSearch() {
+function ListSearch({setValidate}) {
 
   const context = useContext(AppContext);
   const { journeyData } = context;
@@ -57,19 +57,19 @@ function ListSearch() {
     <div className="bg-inner small-section pb-0">
       <div className="container">
         <div className="flight-search">
-          <div className="responsive-detail">
+          <div className="responsive-detail" >
             <div className="destination">
               <span>{journeyData?.tripType || "One Way"}</span>
             </div>
             <div className="destination">
               <span>
-                {pickup}
+                {journeyData?.pickup}
               </span>
               <span>
                 <i className="fas fa-long-arrow-alt-right"></i>
               </span>
               <span>
-                {destination}
+                {journeyData?.dropoff}
               </span>
             </div>
             <div className="details">
@@ -102,6 +102,7 @@ function ListSearch() {
             setPickup={setPickup}
             destination={destination}
             pickup={pickup}
+            setValidate={setValidate}
           />
         </div>
       </div>

@@ -4,10 +4,11 @@ import Layout from "../Layout/Layout"
 import { carData } from "../Data/CabData";
 import ListSearch from "../Components/Cab/Listing/ListSearch";
 import FooterComponent from "../Components/Common/FooterComponent";
+import { useState } from "react";
 
 function CabListing(){
 
-
+const [validate,setValidate]=useState(false)
  
   useEffect(() => {
     document.documentElement.style.setProperty("--theme-color1", "233, 179, 14");
@@ -21,8 +22,8 @@ function CabListing(){
     return(
         <>
         <Layout title="light_header"/>
-        <ListSearch/>
-        <ListingView data={carData}/>
+        <ListSearch setValidate={setValidate}/>
+        <ListingView data={carData} validate={validate}/>
         <FooterComponent/>
       </>
     )

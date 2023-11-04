@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Filters from "./Filters";
 import ProductLayout from "./ProductLayout";
 
-function ListingView({ data }) {
+function ListingView({ data,validate }) {
   const [filteredData, setFilteredData] = useState(data);
   const [showSidebar, setShowSidebar] = useState(false);
-console.log("hee")
-console.log(filteredData)
+
   
 
   return (
@@ -35,7 +34,7 @@ console.log(filteredData)
                 alt=""
               />
             </a>
-            <ProductLayout value={filteredData} />
+            <ProductLayout value={filteredData} validate={validate} />
           </div>
         </div>
       </div>

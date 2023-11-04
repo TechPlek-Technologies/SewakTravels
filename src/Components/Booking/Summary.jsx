@@ -2,8 +2,16 @@ import { Link } from "react-router-dom";
 import Img from "../Common/Img";
 import { useContext } from "react";
 import { AppContext } from "../../Context/JourneyContext";
+import { useState } from "react";
 
 const Summary = ({ desiredcar }) => {
+
+  const { journeyData } = useContext(AppContext);
+
+  const pickupDate = new Date(journeyData?.pickupDate);
+
+  const pay=journeyData?.distance*desiredcar.fare;
+  const [payableAmount,setpayableAmount]=useState(pay)
   const dateStringConverter = (pickupDate) => {
     const newpickupDate = new Date(pickupDate);
 
@@ -52,10 +60,16 @@ const Summary = ({ desiredcar }) => {
     location: 'Mina Road, Bur Dubai, Dubai',
   };
 
-  const { journeyData } = useContext(AppContext);
-
-  const pickupDate = new Date(journeyData?.pickupDate);
-
+ 
+  
+  const updateAmount=(e)=>{
+    if(e.target.value==="oneThirdPayment"){
+      setpayableAmount(pay/3);
+    }
+    if(e.target.value==="fullPayment"){
+      setpayableAmount(pay);
+    }
+  }
   
   return (
     <div className="col-lg-5 booking-order">
@@ -125,15 +139,48 @@ const Summary = ({ desiredcar }) => {
           <div className="payment-details">
             <table>
               <tbody>
+              <tr>
+            <td>Payment Option:</td>
+            <td>
+            <select
+                type="text"
+                className="form-control open-select"
+                id="exampleInputEmail1"
+                placeholder="pick up"
+                onChange={updateAmount}
+              >
+                <option value="fullPayment">
+                  Full Payment
+                </option>
+                <option value="oneThirdPayment">
+                  One Third Payment
+                </option>
+                
+              </select>
+            </td>
+        </tr>
                 <tr>
                   <td>payable amount</td>
                   <td className="amount">
-                    $
-                    {journeyData.distance*desiredcar.fare}
+                  ₹
+                    {payableAmount}
                   </td>
                 </tr>
               </tbody>
             </table>
+            <div className="submit-btn">
+            <Link href="/hotel/booking/checkout">
+              <button
+                className="btn btn-solid"
+                type="submit"
+                onClick={() => {
+                  alert("payment Initiated");
+                }}
+              >
+                {"Book Now"}
+              </button>
+            </Link>
+          </div>
           </div>
         </div>
       </div>

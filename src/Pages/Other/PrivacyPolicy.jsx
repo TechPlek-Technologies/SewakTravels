@@ -6,7 +6,7 @@ return(
     <>
     <Layout title="light_header" userBgClass="user user-light" />
     <div>
-    <div><h1 style={{"text-align":"center"}}>Privacy Policy</h1></div>
+    <div><h1 style={{"textAlign":"center"}}>Privacy Policy</h1></div>
 
       <div className="card">
         <div className="card-header">

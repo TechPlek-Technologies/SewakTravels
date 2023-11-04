@@ -3,7 +3,7 @@ import Button from "../../Common/Button";
 import { useContext } from "react";
 import { AppContext } from "../../../Context/JourneyContext";
 
-function CabListProducts({data}){
+function CabListProducts({data,validate}){
   const {journeyData}= useContext(AppContext);
     return (
         <div className="flight-detail-sec cab-detail-sec">
@@ -43,14 +43,14 @@ function CabListProducts({data}){
                       <div>
                         <h4>₹{item.fare*journeyData?.distance}</h4>
                         <h6>
-                          fare/km : <span>₹{item.fare}</span>
+                          fare/km : <span style={{"textAlign":"left"}}>₹{item.fare}</span>
                         </h6>
                       </div>
                     </div>
                   </div>
                   <div className="col-md-3">
                     <div className="book-flight">
-                      <Link to={`/journey-details?id=${item.id}`} ><Button btnClass="btn btn-solid color1" name="book now" /></Link>
+                      {validate&&<Link to={`/journey-details?id=${item.id}`} ><Button btnClass="btn btn-solid color1" name="book now" /></Link>}
                     </div>
                   </div>
                 </div>

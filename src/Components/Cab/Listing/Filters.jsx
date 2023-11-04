@@ -15,7 +15,7 @@ function Filters({ setShowFilter, showFilter, setFilteredData}) {
         <>
           <div className="d-flex align-items-center justify-content-between">
             <h5>Latest Filter</h5>
-            <img src="/assets/images/icon/adjust.png" className="img-fluid" alt="" />
+            <img  src="/assets/images/icon/adjust.png" className="img-fluid" alt="" />
           </div>
           <div onClick={() => setShow(!show)} className={`collection-collapse-block-content ${show ? "hide-content" : ""}`}>
             {renderFiltersByType(setFilteredData)}

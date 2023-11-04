@@ -6,7 +6,7 @@ return(
     <>
     <Layout title="light_header" userBgClass="user user-light" />
     <div>
-        <div><h1 style={{"text-align":"center"}}>Terms And Condition</h1></div>
+        <div><h1 style={{"textAlign":"center"}}>Terms And Condition</h1></div>
       <div className="card">
         <div className="card-header">
           <h5>The standard Lorem Ipsum passage, used since the 1500s</h5>
