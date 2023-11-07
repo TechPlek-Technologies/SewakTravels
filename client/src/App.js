@@ -17,26 +17,11 @@ import About from './Pages/About';
 import Outstation from './Pages/Services/Outstation';
 import Airport from './Pages/Services/Airport';
 import Corporate from './Pages/Services/Corporate';
-import { useEffect } from 'react';
-import axios from 'axios';
+
 // import './scss/globals.scss'
 function App() {
 
-  useEffect(() => {
-    // Define the API endpoint
-    const apiUrl = 'http://localhost:5000/api';
 
-    // Make the API call
-    axios.get(apiUrl)
-      .then(response => {
-        // Handle the API response data here
-        console.log('API Response:', response.data);
-      })
-      .catch(error => {
-        // Handle API call errors here
-        console.error('API Error:', error);
-      });
-  }, []);
   
   const routes = useRoutes([
     { path: '/', element: <Home /> },

@@ -1,24 +1,31 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ListingView from "../Components/Cab/Listing/ListingView"
 import Layout from "../Layout/Layout"
-import { carData } from "../Data/CabData";
 import ListSearch from "../Components/Cab/Listing/ListSearch";
 import FooterComponent from "../Components/Common/FooterComponent";
-import { useState } from "react";
+
+import axios from 'axios';
 
 function CabListing(){
 
 const [validate,setValidate]=useState(false)
- 
-  useEffect(() => {
-    document.documentElement.style.setProperty("--theme-color1", "233, 179, 14");
-    document.documentElement.style.setProperty("--theme-color2", "239, 63, 62");
+const [carData,setCarData]=useState([]);
+useEffect(() => {
+  // Define the API endpoint
+  const apiUrl = 'http://localhost:5000/api';
 
-    return () => {
-      document.documentElement.style.setProperty("--theme-color1","239, 63, 62");
-      document.documentElement.style.setProperty("--theme-color2","0, 162, 247");
-    };
-  }, []);
+  // Make the API call
+  axios.get(apiUrl)
+    .then(response => {
+      // Handle the API response data here
+      console.log('API Response:', response.data);
+      setCarData(response.data)
+    })
+    .catch(error => {
+      // Handle API call errors here
+      console.error('API Error:', error);
+    });
+}, []);
     return(
         <>
         <Layout title="light_header"/>

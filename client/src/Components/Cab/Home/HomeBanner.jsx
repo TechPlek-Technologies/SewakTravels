@@ -39,17 +39,7 @@ function HomeBanner() {
     calculateDistanceAndDuration(pickup, destination, pickupDate, selectedValue, journeyData, setJourneyData);
   };
 
-  useEffect(() => {
-    // Make the API request when the component mounts
-    axios.get('/api/data')
-      .then((response) => {
-        setData(response.data);
-        console.log(data)
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-      });
-  }, []);
+
 
   
 

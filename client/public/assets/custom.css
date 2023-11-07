@@ -77,3 +77,11 @@
   font-weight: 600;
   color: #ef3f3e;
 }
+
+
+/* viewFairDetails */
+
+.viewFairDetails:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}

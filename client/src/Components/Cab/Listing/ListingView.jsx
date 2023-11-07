@@ -17,7 +17,6 @@ function ListingView({ data,validate }) {
               showFilter={showSidebar}
               setShowFilter={setShowSidebar}
               setFilteredData={setFilteredData}
-              filteredData={filteredData}
             />
           </div>
 

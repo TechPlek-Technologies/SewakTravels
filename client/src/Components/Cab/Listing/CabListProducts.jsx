@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Button from "../../Common/Button";
 import { useContext } from "react";
 import { AppContext } from "../../../Context/JourneyContext";
+import CarDetailPage from "../../CabDetails/CarDetailPage";
 
 function CabListProducts({data,validate}){
   const {journeyData}= useContext(AppContext);
@@ -43,10 +44,15 @@ function CabListProducts({data,validate}){
                       <div>
                         <h4>₹{item.fare*journeyData?.distance}</h4>
                         <h6>
-                          fare/km : <span style={{"textAlign":"left"}}>₹{item.fare}</span>
+                          fare/km:₹{item.fare}
                         </h6>
+                        <h6 className="viewFairDetails">
+                          view details
+                        </h6>
+                        {/* <CarDetailPage/> */}
                       </div>
                     </div>
+                    
                   </div>
                   <div className="col-md-3">
                     <div className="book-flight">

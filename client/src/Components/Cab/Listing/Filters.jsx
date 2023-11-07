@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { carData, carTypeData } from "../../../Data/CabData";
 import renderFiltersByType from "../../../HOC/renderFiltersByType";
 
 function Filters({ setShowFilter, showFilter, setFilteredData}) {
