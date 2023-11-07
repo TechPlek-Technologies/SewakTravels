@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import CabSearch from "./CabSearch";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useContext } from "react";
 import { AppContext } from "../../../Context/JourneyContext";
 import SearchTabs from "./BannerSearch/SearchTabs";
@@ -8,6 +7,8 @@ import { useCallback } from "react";
 import { TabContent, TabPane } from "reactstrap";
 import OutStationSearch from "./BannerSearch/OutStationSearch";
 import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
+import AirportSearch from "./BannerSearch/AirportSearch";
+import axios from "axios";
 
 function HomeBanner() {
   const [selectedValue, setSelectedValue] = useState("One Way"); // Set the initial selected value
@@ -26,6 +27,7 @@ function HomeBanner() {
   const [destination, setDestination] = useState("");
   const context = useContext(AppContext);
   const { journeyData, setJourneyData } = context;
+  const {data,setData}=useState([]);
 
   
   const handleRadioChange = (event) => {
@@ -37,7 +39,19 @@ function HomeBanner() {
     calculateDistanceAndDuration(pickup, destination, pickupDate, selectedValue, journeyData, setJourneyData);
   };
 
- 
+  useEffect(() => {
+    // Make the API request when the component mounts
+    axios.get('/api/data')
+      .then((response) => {
+        setData(response.data);
+        console.log(data)
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
+  
 
   return (
     <section className="cab-section p-0">
@@ -74,33 +88,43 @@ function HomeBanner() {
                       </div>
                     </TabPane>
                     <TabPane tabId="2">
-                      <CabSearch />
-                    </TabPane>
-                    <TabPane tabId="3">
-                      <div className="mix-demo-flight">
-                        <CabSearch />
+                    <div className="mix-demo-classic">
+                        <AirportSearch
+                          pickup={pickup}
+                          pickupDate={pickupDate}
+                          setPickupDate={setPickupDate}
+                          setPickup={setPickup}
+                          setDestination={setDestination}
+                          selectedValue={selectedValue}
+                          handleRadioChange={handleRadioChange}
+                        />
                       </div>
                     </TabPane>
-                    <TabPane tabId="4">
-                      <CabSearch />
+
+                    <TabPane tabId="3">
+                    <div className="mix-demo-classic">
+                        <AirportSearch
+                          pickup={pickup}
+                          pickupDate={pickupDate}
+                          setPickupDate={setPickupDate}
+                          setPickup={setPickup}
+                          setDestination={setDestination}
+                          selectedValue={selectedValue}
+                          handleRadioChange={handleRadioChange}
+                        />
+                      </div>
                     </TabPane>
-                    <TabPane tabId="5">
-                      <CabSearch />
-                    </TabPane>
+                   
                   </TabContent>
                 </div>
 
                 <div className="car-select">
-                  <ul>
-                    <li className="active">Sedan</li>
-                    <li>SUV</li>
-                    <li>Cresta</li>
-                  </ul>
+                 
                   <Link
                     onClick={(e) => {
                       if (pickup === "" || destination === "") {
-                        // e.preventDefault(); // Prevent the link from navigating
-                        // alert("Input fields are required"); // Show the popup
+                        e.preventDefault(); // Prevent the link from navigating
+                        alert("Source and destination are required"); // Show the popup
                       } else {
                         updateContext();
                       }
