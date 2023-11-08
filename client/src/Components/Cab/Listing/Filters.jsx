@@ -28,22 +28,4 @@ function Filters({ setShowFilter, showFilter, setFilteredData}) {
 
 export default Filters;
 
-// Function to render car type filter options based on carTypeData and selected car types
-function renderCarTypeFilterOptions(carTypeData, selectedCarTypes, handleCarTypeSelection) {
-  return (
-    <div>
-      {carTypeData?.map((item) => (
-        <div key={item.id}>
-          <label>
-            <input
-              type="checkbox"
-              checked={selectedCarTypes.includes(item.type)}
-              onChange={() => handleCarTypeSelection(item.type)}
-            />
-            {item.type}
-          </label>
-        </div>
-      ))}
-    </div>
-  );
-}
+ 

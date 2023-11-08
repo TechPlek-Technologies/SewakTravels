@@ -4,6 +4,8 @@ import { useContext } from "react";
 import { AppContext } from "../../Context/JourneyContext";
 import { useState } from "react";
 
+import axios from "axios";
+
 const Summary = ({ desiredcar }) => {
 
   const { journeyData } = useContext(AppContext);
@@ -12,6 +14,7 @@ const Summary = ({ desiredcar }) => {
 
   const pay=journeyData?.distance*desiredcar.fare;
   const [payableAmount,setpayableAmount]=useState(pay)
+
   const dateStringConverter = (pickupDate) => {
     const newpickupDate = new Date(pickupDate);
 
@@ -54,6 +57,7 @@ const Summary = ({ desiredcar }) => {
       </h5>
     );
   };
+
   const hotelData = {
     imageSrc: '/assets/images/hotel/room/1.jpg',
     name: 'sea view hotel',
@@ -64,12 +68,52 @@ const Summary = ({ desiredcar }) => {
   
   const updateAmount=(e)=>{
     if(e.target.value==="oneThirdPayment"){
-      setpayableAmount(pay/3);
+      setpayableAmount(Math.ceil(pay/3));
     }
     if(e.target.value==="fullPayment"){
       setpayableAmount(pay);
     }
   }
+
+
+
+
+async function displayRazorpay() {
+  
+  // Post the order details in database
+  // const result = await axios.post("http://localhost:5000/payment/orders");
+
+  // if (!result) {
+  //     alert("Server error. Are you online?");
+  //     return;
+  // }
+  // Getting the order details back
+  // const { amount, id: order_id, currency } = result.data;
+
+  const  options = {
+    "key": "rzp_test_hX6SQgVEX8tr9g",
+    "amount": 100, // 2000 paise = INR 20, amount in paisa
+    "name": "Merchant Name",
+    "description": "Purchase Description",
+    "image": "/your_logo.png",
+    "handler": function (response){
+      alert(response.razorpay_payment_id);
+    },
+    "prefill": {
+      "name": "Harshil Mathur",
+      "email": "harshil@razorpay.com"
+    },
+    "notes": {
+      "address": "Hello World"
+    },
+    "theme": {
+      "color": "#FFFFFF"
+    }
+  };
+
+  const paymentObject = new window.Razorpay(options);
+  paymentObject.open();
+}
   
   return (
     <div className="col-lg-5 booking-order">
@@ -140,7 +184,7 @@ const Summary = ({ desiredcar }) => {
             <table>
               <tbody>
               <tr>
-            <td>Payment Option:</td>
+            
             <td>
             <select
                 type="text"
@@ -171,11 +215,9 @@ const Summary = ({ desiredcar }) => {
             <div className="submit-btn">
             <Link href="/hotel/booking/checkout">
               <button
-                className="btn btn-solid"
+                className="btn btn-solid App-link"
                 type="submit"
-                onClick={() => {
-                  alert("payment Initiated");
-                }}
+                onClick={displayRazorpay}
               >
                 {"Book Now"}
               </button>

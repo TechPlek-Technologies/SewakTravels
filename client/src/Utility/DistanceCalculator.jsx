@@ -22,7 +22,6 @@ const calculateDistanceAndDuration = (pickup, destination, pickupDate, selectedV
   
         // Calculate the duration in hours
         const durationInHours = daysAndHours[0] * 24 + daysAndHours[1];
-        console.log(durationInHours);
         const updatedObject = {
           ...journeyData,
           pickup: pickup,

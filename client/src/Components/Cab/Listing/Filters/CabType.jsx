@@ -25,7 +25,6 @@ function CabType({setFilteredData}) {
     }else{
       const newFilteredData=carData.filter((item) => selectedLabels.includes(item.category))
       
-      console.log(newFilteredData)
       // Filter the carData based on selected car types
      setFilteredData(newFilteredData);
     }

@@ -5,7 +5,6 @@ function MixTopContent({data}) {
 
   const desiredBlog = data.find(blog => blog.id === 1);
 
-  console.log(desiredBlog);
     return (
       <div className="row">
         <div className="col-12">

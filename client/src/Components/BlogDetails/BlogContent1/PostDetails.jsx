@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 function PostDetail({data}) {
-  console.log(data);
     return (
       <div className="title-part">
         <ul className="post-detail">

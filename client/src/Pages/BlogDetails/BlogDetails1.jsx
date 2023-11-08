@@ -9,7 +9,6 @@ function BlogDetails1(){
     // const targetId = param.id;
     const desiredBlog = blogsData.find(blog => blog.id === 1);
 
-    console.log(desiredBlog?.comments);
     
     return(
         <>
