@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import DatePickerComponent from "../../Common/DatePickerComponent";
 // import Img from "../../Common/Img";
-import { useContext, useState } from "react";
+import { useContext, useState} from "react";
 import TimePickerComponent from "../../Common/TimePickerComponent";
 import { AppContext } from "../../../Context/JourneyContext";
 import { useRef } from "react";
-import { useEffect } from "react";
 import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
+import useAutocomplete from "../../../Utility/Autocomplete";
 
 const CabSearch = ({
   resClass,
@@ -14,16 +14,21 @@ const CabSearch = ({
   searchBarOpen,
   setPickup,
   setDestination,
-  selectedValue,
   destination,
   pickup,
-  setValidate
 }) => {
+
+
   const context = useContext(AppContext);
   const { journeyData, setJourneyData } = context;
+  // console.log("jouenryData:"+ journeyData)
 
-  const [startDate, setStartDate] = useState(new Date(journeyData?.pickupDate));
+  const [selectedValue, setSelectedValue] = useState(journeyData?.tripType|| "One Way"); 
 
+
+  const handleTripTypeChange = (e) => {
+    setSelectedValue(e.target.value);
+  };
   const updateChanges = () => {
     calculateDistanceAndDuration(
       pickup,
@@ -35,41 +40,14 @@ const CabSearch = ({
     );
   };
 
-  const options = {
-    componentRestrictions: { country: "in" },
-    fields: ["address_components", "geometry", "icon", "name"],
-    types: ["establishment"],
-  };
+ 
 
-  const fromAutoCompleteRef = useRef();
-  const toAutoCompleteRef = useRef();
   const fromInputRef = useRef();
   const toInputRef = useRef();
 
-  useEffect(() => {
-    fromAutoCompleteRef.current = new window.google.maps.places.Autocomplete(
-      fromInputRef.current,
-      options
-    );
+  useAutocomplete(fromInputRef, setPickup);
+  useAutocomplete(toInputRef, setDestination);
 
-    toAutoCompleteRef.current = new window.google.maps.places.Autocomplete(
-      toInputRef.current,
-      options
-    );
-
-    fromAutoCompleteRef.current.addListener("place_changed", async function () {
-      const place = await fromAutoCompleteRef.current.getPlace();
-      const pickupName = place.name.trim();
-      setPickup(pickupName);
-    });
-
-    toAutoCompleteRef.current.addListener("place_changed", async function () {
-      const place = await toAutoCompleteRef.current.getPlace();
-      const destinationName = place.name.trim();
-      setDestination(destinationName);
-    });
-    setValidate(true);
-  }, []);
 
   return (
     <div className="flight-search">
@@ -87,14 +65,15 @@ const CabSearch = ({
                 className="form-control open-select"
                 id="exampleInputEmail1"
                 placeholder="pick up"
+                onChange={handleTripTypeChange}
               >
-                <option value="option1">
-                  {journeyData?.tripType||"One Way"}
+                <option value={selectedValue} >
+                  {selectedValue} 
                 </option>
-                <option value="option2">
+                <option value="One Way">
                   One Way
                 </option>
-                <option value="option3">
+                <option value="RoundTrip">
                   RoundTrip
                 </option>
               </select>
@@ -146,7 +125,7 @@ const CabSearch = ({
             <div className="form-group">
               <label className="font-xs-white">Pickup Date</label>
               <div className="input-group customdate">
-                <DatePickerComponent setStart={setStartDate} />
+                <DatePickerComponent  />
               </div>
             </div>
           </div>

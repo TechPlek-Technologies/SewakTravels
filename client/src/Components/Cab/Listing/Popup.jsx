@@ -1,7 +1,7 @@
 import { Modal, ModalBody } from "reactstrap";
 
 const Popup = ({ car, modal, toggle }) => {
-  console.log(car)
+  // console.log(car)
   const includeInPrice = [
     "cancellation",
     "theft protection",

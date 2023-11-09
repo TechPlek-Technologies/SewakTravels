@@ -80,11 +80,11 @@ function CabListProducts({ data, validate }) {
               </div>
               <div className="col-md-3">
                 <div className="book-flight">
-                  {validate && (
+                  
                     <Link to={`/journey-details?id=${item.id}`}>
                       <Button btnClass="btn btn-solid color1" name="book now" />
                     </Link>
-                  )}
+                 
                 </div>
               </div>
             </div>

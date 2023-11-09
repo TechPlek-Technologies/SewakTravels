@@ -5,7 +5,7 @@
   }
   
   .cab-modern-form input {
-    color: #a7a7a7;
+    color: #495057;
     border: 0;
     padding: 0;
   }
@@ -32,13 +32,6 @@
     cursor: pointer;
 }
 
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 20px;
-}
 
 /* Contact us section */
 
@@ -63,6 +56,7 @@
   cursor: pointer;
 }
 
+
 .video-modal .modal-body .btn-close {
   position: absolute;
   right: -30px;
@@ -78,4 +72,9 @@
   text-shadow: none;
   color: #fff;
   font-size: 26px;
+}
+
+
+.flight-detail-sec {
+  margin:  0;
 }

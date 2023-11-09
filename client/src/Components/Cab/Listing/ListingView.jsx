@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Filters from "./Filters";
 import ProductLayout from "./ProductLayout";
+import { carData } from "../../../Data/CabData";
 
-function ListingView({ data,validate }) {
-  const [filteredData, setFilteredData] = useState(data);
+function ListingView() {
+  const [filteredData, setFilteredData] = useState(carData);
   const [showSidebar, setShowSidebar] = useState(false);
 
   
@@ -33,7 +34,7 @@ function ListingView({ data,validate }) {
                 alt=""
               />
             </a>
-            <ProductLayout value={filteredData} validate={validate} />
+            <ProductLayout value={filteredData}  />
           </div>
         </div>
       </div>

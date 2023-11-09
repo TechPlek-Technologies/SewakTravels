@@ -4,14 +4,13 @@ import { useContext } from "react";
 import { AppContext } from "../../../Context/JourneyContext";
 import { Link } from "react-router-dom";
 
-function ListSearch({setValidate}) {
+function ListSearch() {
 
   const context = useContext(AppContext);
   const { journeyData } = context;
 
 
   const [searchBarOpen, setSearchBarOpen] = useState(false);
-  const [selectedValue, setSelectedValue] = useState("in city"); 
   const [pickup,setPickup]= useState(journeyData?.pickup)
   const [destination,setDestination]= useState(journeyData?.dropoff)
 
@@ -59,7 +58,7 @@ function ListSearch({setValidate}) {
         <div className="flight-search">
           <div className="responsive-detail" >
             <div className="destination">
-              <span>{journeyData?.tripType || "One Way"}</span>
+              <span>{journeyData?.tripType}</span>
             </div>
             <div className="destination">
               <span>
@@ -97,12 +96,10 @@ function ListSearch({setValidate}) {
             resClass="res-cab"
             setSearchBarOpen={setSearchBarOpen}
             searchBarOpen={searchBarOpen}
-            setSelectedValue={setSelectedValue}
             setDestination={setDestination}
             setPickup={setPickup}
             destination={destination}
             pickup={pickup}
-            setValidate={setValidate}
           />
         </div>
       </div>

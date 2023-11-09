@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { useContext } from "react";
 import { AppContext } from "../../../Context/JourneyContext";
 import SearchTabs from "./BannerSearch/SearchTabs";
@@ -8,17 +8,15 @@ import { TabContent, TabPane } from "reactstrap";
 import OutStationSearch from "./BannerSearch/OutStationSearch";
 import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 import AirportSearch from "./BannerSearch/AirportSearch";
-import axios from "axios";
 
 function HomeBanner() {
   const [selectedValue, setSelectedValue] = useState("One Way"); // Set the initial selected value
   const [activeTab, setActiveTab] = useState("1");
-  const [showPopup, setShowPopup] = useState(false);
   const callback = useCallback(
     (tab) => {
       setActiveTab(tab);
     },
-    [activeTab]
+    []
   );
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
@@ -27,7 +25,6 @@ function HomeBanner() {
   const [destination, setDestination] = useState("");
   const context = useContext(AppContext);
   const { journeyData, setJourneyData } = context;
-  const {data,setData}=useState([]);
 
   
   const handleRadioChange = (event) => {
@@ -114,7 +111,7 @@ function HomeBanner() {
                     onClick={(e) => {
                       if (pickup === "" || destination === "") {
                         e.preventDefault(); // Prevent the link from navigating
-                        alert("Source and destination are required"); // Show the popup
+                        alert("fill the input boxes"); // Show the popup
                       } else {
                         updateContext();
                       }

@@ -1,8 +1,8 @@
 import TimePickerComponent from "../../../Common/TimePickerComponent";
 import DatePickerComponent from "../../../Common/DatePickerComponent";
 import { useRef } from "react";
-import { useEffect } from "react";
 import { Fragment } from "react";
+import useAutocomplete from "../../../../Utility/Autocomplete";
 
 const OutStationSearch = ({
   setPickup,
@@ -13,42 +13,12 @@ const OutStationSearch = ({
   handleRadioChange,
   selectedValue,
 }) => {
-  const fromAutoCompleteRef = useRef();
-  const toAutoCompleteRef = useRef();
   const fromInputRef = useRef();
   const toInputRef = useRef();
 
-  const options = {
-    componentRestrictions: { country: "in" },
-    fields: ["address_components", "geometry", "icon", "name"],
-    types: ["establishment"],
-  };
 
-  useEffect(() => {
-    fromAutoCompleteRef.current = new window.google.maps.places.Autocomplete(
-      fromInputRef.current,
-      options
-    );
-
-    toAutoCompleteRef.current = new window.google.maps.places.Autocomplete(
-      toInputRef.current,
-      options
-    );
-
-    fromAutoCompleteRef.current.addListener("place_changed", async function () {
-      const place = await fromAutoCompleteRef.current.getPlace();
-      const pickup = place.name.trim();
-      setPickup(pickup);
-    });
-
-    toAutoCompleteRef.current.addListener("place_changed", async function () {
-      const place = await toAutoCompleteRef.current.getPlace();
-      const destination = place.name.trim();
-      setDestination(destination);
-    });
-  }, []);
-
-  // END
+useAutocomplete(fromInputRef, setPickup);
+useAutocomplete(toInputRef, setDestination);
 
   return (
     <Fragment>
@@ -84,7 +54,7 @@ const OutStationSearch = ({
         </div>
         <div className="form-group row cab-modern-form">
           <div className="col form-control">
-            <DatePickerComponent setStart={setPickupDate}/>
+            <DatePickerComponent start={pickupDate} setStart={setPickupDate}/>
           </div>
           <div className="col">
             <TimePickerComponent setPickupTime={setPickupTime}/>

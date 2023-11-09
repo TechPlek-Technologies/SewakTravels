@@ -18,11 +18,7 @@ import Outstation from './Pages/Services/Outstation';
 import Airport from './Pages/Services/Airport';
 import Corporate from './Pages/Services/Corporate';
 
-// import './scss/globals.scss'
 function App() {
-
-
-  
   const routes = useRoutes([
     { path: '/', element: <Home /> },
     {path: '/blogs', element: <ComingSoon/>},
@@ -39,6 +35,8 @@ function App() {
     { path: '/privacy-policy', element: <PrivacyPolicy/> },
     { path: '/terms-and-conditon', element: <TermsAndCondition/> },
     { path: '/refund-policy', element: <RefundPolicy/> },
+    { path: '/*', element: <NotFoundPage/> },
+
 ]);
 
   return routes;

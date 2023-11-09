@@ -1,5 +1,7 @@
 
-const TravelInfo = () => {
+const TravelInfo = ({isValid,contactRef,emailRef,lastNameRef,firstNameRef,requestRef}) => {
+
+  
   return (
     <div className="col-lg-7">
       <div className="guest-detail">
@@ -14,8 +16,9 @@ const TravelInfo = () => {
                   id="firstName"
                   className="form-control"
                   placeholder="First name"
-                  required={true}
+                  ref={firstNameRef}
                 />
+                {!isValid && <div style={{"color":"red"}}>Required field.</div>}
               </div>
               <div className="col">
                 <label>{"Last Name"}</label>
@@ -24,8 +27,9 @@ const TravelInfo = () => {
                   id="lastName"
                   className="form-control"
                   placeholder="Last name"
-                  required={true}
+                  ref={lastNameRef}
                 />
+                {!isValid && <div style={{"color":"red"}}>Required field.</div>}
               </div>
             </div>
           </div>
@@ -35,15 +39,17 @@ const TravelInfo = () => {
               type="email"
               className="form-control"
               placeholder="Enter email"
-              required={true}
+              ref={emailRef}
             />
+            {!isValid && <div style={{"color":"red"}}>Required field.</div>}
             <small id="emailHelp" className="form-text text-muted">
               Booking confirmation will be sent to this email ID.
             </small>
           </div>
           <div className="form-group">
             <label>{"Contact Info"}</label>
-            <input id="mobile-no" type="tel" className="form-control" />
+            <input id="mobile-no" type="tel" className="form-control" ref={contactRef}/>
+            {!isValid && <div style={{"color":"red"}}>Required field.</div>}
           </div>
           <div className="form-group">
             <label htmlFor="exampleFormControlTextarea1">
@@ -54,6 +60,7 @@ const TravelInfo = () => {
               id="exampleFormControlTextarea1"
               rows={3}
               placeholder="e.g.. early check-in, airport transfer"
+              ref={requestRef}
             ></textarea>
           </div>
           <div className="form-group">

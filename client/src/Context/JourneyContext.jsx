@@ -14,7 +14,7 @@ export default function ApplicationContextProvider(props) {
     pickupDate: tomorrow,
     pickupTime: "",
     distance:"",
-    time:""
+    time:"",
   };
 
   const [journeyData, setJourneyData] = useState(initialData);

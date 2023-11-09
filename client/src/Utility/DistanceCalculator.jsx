@@ -19,17 +19,28 @@ const calculateDistanceAndDuration = (pickup, destination, pickupDate, selectedV
         const duration = leg.duration.text;
   
         const daysAndHours = duration.match(/\d+/g).map(Number);
-  
-        // Calculate the duration in hours
+
+        let totalDistance=distanceNumeric;
+
+        
         const durationInHours = daysAndHours[0] * 24 + daysAndHours[1];
+
+        let totalTime=durationInHours
+        
+  if(selectedValue==="RoundTrip"){
+    totalDistance=parseInt(distanceNumeric)*2;
+    totalTime=parseInt(durationInHours)*2;
+  }
+        // Calculate the duration in hours
+        
         const updatedObject = {
           ...journeyData,
           pickup: pickup,
           dropoff: destination,
           pickupDate: pickupDate,
           tripType: selectedValue,
-          distance: distanceNumeric,
-          time: durationInHours,
+          distance: totalDistance,
+          time: totalTime,
         };
         setJourneyData(updatedObject);
       } else {

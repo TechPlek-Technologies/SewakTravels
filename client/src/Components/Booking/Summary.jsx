@@ -4,15 +4,15 @@ import { useContext } from "react";
 import { AppContext } from "../../Context/JourneyContext";
 import { useState } from "react";
 
-import axios from "axios";
 
-const Summary = ({ desiredcar }) => {
+const Summary = ({ desiredcar,handleButtonClick,isValid }) => {
 
   const { journeyData } = useContext(AppContext);
 
   const pickupDate = new Date(journeyData?.pickupDate);
 
   const pay=journeyData?.distance*desiredcar.fare;
+  
   const [payableAmount,setpayableAmount]=useState(pay)
 
   const dateStringConverter = (pickupDate) => {
@@ -57,15 +57,11 @@ const Summary = ({ desiredcar }) => {
       </h5>
     );
   };
-
   const hotelData = {
     imageSrc: '/assets/images/hotel/room/1.jpg',
     name: 'sea view hotel',
     location: 'Mina Road, Bur Dubai, Dubai',
   };
-
- 
-  
   const updateAmount=(e)=>{
     if(e.target.value==="oneThirdPayment"){
       setpayableAmount(Math.ceil(pay/3));
@@ -75,46 +71,6 @@ const Summary = ({ desiredcar }) => {
     }
   }
 
-
-
-
-async function displayRazorpay() {
-  
-  // Post the order details in database
-  // const result = await axios.post("http://localhost:5000/payment/orders");
-
-  // if (!result) {
-  //     alert("Server error. Are you online?");
-  //     return;
-  // }
-  // Getting the order details back
-  // const { amount, id: order_id, currency } = result.data;
-
-  const  options = {
-    "key": "rzp_test_hX6SQgVEX8tr9g",
-    "amount": 100, // 2000 paise = INR 20, amount in paisa
-    "name": "Merchant Name",
-    "description": "Purchase Description",
-    "image": "/your_logo.png",
-    "handler": function (response){
-      alert(response.razorpay_payment_id);
-    },
-    "prefill": {
-      "name": "Harshil Mathur",
-      "email": "harshil@razorpay.com"
-    },
-    "notes": {
-      "address": "Hello World"
-    },
-    "theme": {
-      "color": "#FFFFFF"
-    }
-  };
-
-  const paymentObject = new window.Razorpay(options);
-  paymentObject.open();
-}
-  
   return (
     <div className="col-lg-5 booking-order">
       <div className="summery-box">
@@ -164,16 +120,16 @@ async function displayRazorpay() {
             <table>
               <tbody>
                 <tr>
-                  <td>base price</td>
-                  <td>${desiredcar.fare}</td>
+                  <td>Base price</td>
+                  <td>₹{payableAmount}</td>
                 </tr>
                 <tr>
-                  <td>promo discount</td>
-                  <td>${desiredcar.option}</td>
+                  <td>Driver Charges</td>
+                  <td>+ ₹{0}</td>
                 </tr>
                 <tr>
                   <td>tax & service fees</td>
-                  <td>+ ${desiredcar.price}</td>
+                  <td>+ ₹{0}</td>
                 </tr>
               </tbody>
             </table>
@@ -217,7 +173,7 @@ async function displayRazorpay() {
               <button
                 className="btn btn-solid App-link"
                 type="submit"
-                onClick={displayRazorpay}
+                onClick={handleButtonClick}
               >
                 {"Book Now"}
               </button>
