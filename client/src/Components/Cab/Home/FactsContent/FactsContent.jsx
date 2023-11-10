@@ -10,11 +10,11 @@ const FactsContent= () => {
         { icon: "/assets/images/icon/facts/4.png", counter: 180, label: "tour country" },
       ];
     return (
-      <section className="facts-section animated-section section-b-space">
-        <Img src="/assets/images/cab/grey-bg.jpg" alt="" className="img-fluid bg-img" />
+      <section className="testimonial-section  animated-section">
         <Animation />
         <div className="container">
           <TitleComponent title={"Sewak"} subTitle={"no stories, facts only"} span={"Customer"} titleClass={"title-3"} />
+         
           <div className="row">
             {factsData.map((fact, index) => (
               <div key={index} className="col-lg-3 col-6">

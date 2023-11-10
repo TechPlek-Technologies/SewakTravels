@@ -1028,7 +1028,7 @@ header {
 ==========================*/
 .cab-section {
   position: relative;
-  background-image: url("../images/cab-bg.jpg");
+  background-image: url("../img/banner/1.jpg");
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
@@ -1253,7 +1253,7 @@ header {
                 justify-content: center;
         height: 100%; }
   .cab-section.flight-section {
-    background-image: url("../images/bg-flight.png"); }
+    background-image: url("../images/home/banner/1.png"); }
     .cab-section.flight-section .cloud {
       height: 100%;
       bottom: 0;
@@ -1966,7 +1966,7 @@ section .black-layer:before {
 
 .home_effect .effect_image {
   position: relative;
-  background: url(../images/tour/background/1.jpg);
+  background: url(../images/home/banner/1.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

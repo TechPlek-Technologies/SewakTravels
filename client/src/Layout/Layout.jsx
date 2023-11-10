@@ -1,3 +1,4 @@
+import Logo from "../Components/Common/Logo/Logo";
 import Navbar from "../Components/Common/Navbar";
 
 function Layout({  title }) {
@@ -8,6 +9,7 @@ function Layout({  title }) {
           <div className="row">
             <div className="col">
               <div className="menu">
+                <Logo/>
                 <Navbar />
               </div>
               

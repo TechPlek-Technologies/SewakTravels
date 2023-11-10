@@ -11,13 +11,12 @@ import Testimonials from "../Components/Cab/Home/Testimonials/Testimonials";
 import Video from "../Components/Cab/Home/VideoComponent/Video";
 import FooterComponent from "../Components/Common/FooterComponent";
 import Navbar from "../Components/Common/Navbar";
+import Layout from "../Layout/Layout";
 
 function Home() {
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
+      <Layout title="overlay-black"/>
       <HomeBanner /> 
       <CabOffers2/>
       <FactsContent/>

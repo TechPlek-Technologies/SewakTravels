@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "./Logo/Logo";
 
 function Navbar() {
   const [toggleSideBar, setToggleSideBar] = useState(false);
@@ -33,6 +34,8 @@ function Navbar() {
 
   return (
     <div className="menu">
+      
+
       <nav>
         <div className="main-navbar">
           <div id="main-nav">
@@ -58,7 +61,6 @@ function Navbar() {
                   <i aria-hidden="true" className="fa fa-angle-right ps-2"></i>
                 </div>
               </li>
-
               {paths.map((link) => (
                 <li  key={link.path}>
                   <NavLink to={link.path}>

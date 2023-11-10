@@ -8,7 +8,7 @@ const Video= () => {
   
     return (
       <>
-        <BackgroundSection titleClass="video-section parallax-img" img="/assets/images/hotel/background.jpg" imgWidth={1905} imgHeight={548} position="center">
+        <BackgroundSection titleClass="video-section parallax-img" img="/assets/img/homevideo.png" imgWidth={1905} imgHeight={548} position="center">
           <div className="container">
             <div className="row">
               <div className="col">
