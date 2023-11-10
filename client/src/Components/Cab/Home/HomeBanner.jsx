@@ -50,7 +50,7 @@ function HomeBanner() {
                 <div className="call-section">
                   <div className="call">
                     <i className="fas fa-phone-alt"></i>
-                    <h2>+91-800-355-7800</h2>
+                    <h2>+91-800-355-1111</h2>
                   </div>
                 </div>
 
