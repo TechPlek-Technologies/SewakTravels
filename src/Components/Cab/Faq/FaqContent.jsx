@@ -2,6 +2,7 @@ import { useState } from "react";
 import NewsLetterContent from "./NewsLetterContent";
 import BodyContent from "./BodyContent";
 import { tabs } from "../../../Data/FaqContent";
+import { Link } from "react-router-dom";
 
 const FaqContent = () => {
  
@@ -21,15 +22,15 @@ const FaqContent = () => {
                 <ul className="nav nav-tabs" id="top-tab" role="tablist">
                   {tabs.map((tab, index) => (
                     <li className="nav-item" key={index}>
-                      <a
-                        href="#"
+                      <Link
+                        to="#"
                         className={`nav-link ${
                           activeTab === tab.id ? "active" : ""
                         }`}
                         onClick={() => handleTabClick(tab.id)}
                       >
                         {tab.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
