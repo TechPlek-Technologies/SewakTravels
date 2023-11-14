@@ -1,5 +1,4 @@
 import Slider from "react-slick";
-import TitleComponent from "../../Common/TitleComponent";
 import Img from "../../Common/Img";
 import { Link } from "react-router-dom";
 

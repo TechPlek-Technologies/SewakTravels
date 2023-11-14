@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 // import SingleDetailPage from "../Components/CabDetails/SingleDetailPage";
 import FooterComponent from "../Components/Common/FooterComponent";
 import { carData } from "../Data/CabData";

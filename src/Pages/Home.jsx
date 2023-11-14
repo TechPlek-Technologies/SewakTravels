@@ -10,7 +10,6 @@ import HomeBanner from "../Components/Cab/Home/HomeBanner";
 import Testimonials from "../Components/Cab/Home/Testimonials/Testimonials";
 import Video from "../Components/Cab/Home/VideoComponent/Video";
 import FooterComponent from "../Components/Common/FooterComponent";
-import Navbar from "../Components/Common/Navbar";
 import Layout from "../Layout/Layout";
 
 function Home() {

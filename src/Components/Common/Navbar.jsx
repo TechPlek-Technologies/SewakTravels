@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "./Logo/Logo";
 
 function Navbar() {
   const [toggleSideBar, setToggleSideBar] = useState(false);
