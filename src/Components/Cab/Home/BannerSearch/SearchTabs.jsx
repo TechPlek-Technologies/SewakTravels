@@ -15,7 +15,7 @@ function SearchTabs({ callbackActive, svg }) {
                 callbackActive("1");
               }}>
               {svg}
-              OutStation
+              Cabs
             </NavLink>
             <div className="material-border"></div>
           </NavItem>
@@ -27,7 +27,7 @@ function SearchTabs({ callbackActive, svg }) {
                 callbackActive("2");
               }}>
               {svg }
-              Rental
+              Flight
             </NavLink>
             <div className="material-border"></div>
           </NavItem>
@@ -39,7 +39,19 @@ function SearchTabs({ callbackActive, svg }) {
                 callbackActive("3");
               }}>
               {svg}
-              Airport
+              Hotel
+            </NavLink>
+            <div className="material-border"></div>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              className={activeTab === "4" ? "active" : ""}
+              onClick={() => {
+                setActiveTab("4");
+                callbackActive("4");
+              }}>
+              {svg}
+              Tour
             </NavLink>
             <div className="material-border"></div>
           </NavItem>

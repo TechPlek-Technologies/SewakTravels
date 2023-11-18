@@ -19,7 +19,7 @@ const DatePickerComponent = () => {
       onChange={(date) => setStartDate(date)}
       id="datepicker"
       className="datepicker-main"
-      dateFormat="dd-MM-yyyy"
+      dateFormat="dd MMMM"
       placeholderText="Pickup Date"
     />
   );

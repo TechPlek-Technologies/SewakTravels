@@ -1363,6 +1363,8 @@ section .black-layer:before {
   position: relative;
   overflow: hidden; }
   .home_section .home {
+  background: url(../images/home/banner/1.png);
+
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -1743,18 +1745,7 @@ section .black-layer:before {
     .search-section .search-box input:focus {
       -webkit-box-shadow: none;
               box-shadow: none; }
-    .search-section .search-box .left-part {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 100%;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      .search-section .search-box .left-part .search-body {
+         .search-section .search-box .left-part .search-body {
         display: inline-block;
         text-align: center;
         padding: 40px;

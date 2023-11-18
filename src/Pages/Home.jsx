@@ -4,7 +4,7 @@ import CallService from "../Components/Cab/Home/CallService";
 import FactsContent from "../Components/Cab/Home/FactsContent/FactsContent";
 import FleetCars from "../Components/Cab/Home/FleetCars";
 import Instagram from "../Components/Cab/Home/Gallery/Instagram";
-import HomeBanner from "../Components/Cab/Home/HomeBanner";
+import NewHomeBanner from "../Components/Cab/Home/NewHomeBanner";
 // import OurVehicleComponent from "../Components/Cab/Home/OurvehicleComponent";
 // import ServicesComponent from "../Components/Cab/Home/Service/ServicesComponent";
 import Testimonials from "../Components/Cab/Home/Testimonials/Testimonials";
@@ -16,7 +16,7 @@ function Home() {
   return (
     <>
       <Layout title="overlay-black"/>
-      <HomeBanner /> 
+      <NewHomeBanner/>
       <CabOffers2/>
       <FactsContent/>
       <Testimonials/>

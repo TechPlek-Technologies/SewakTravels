@@ -8,6 +8,7 @@ import { TabContent, TabPane } from "reactstrap";
 import OutStationSearch from "./BannerSearch/OutStationSearch";
 import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 import AirportSearch from "./BannerSearch/AirportSearch";
+import SearchComponent from "./BannerSearch/SearchComponent";
 
 function HomeBanner() {
   const [selectedValue, setSelectedValue] = useState("One Way"); // Set the initial selected value
@@ -44,87 +45,36 @@ function HomeBanner() {
     <section className="cab-section p-0">
       <div className="container">
         <div className="row">
-          <div className="col-xl-5 col-lg-6">
+                    <SearchTabs callbackActive={callback} />
+          <div className="col-xl-10 m-auto">
             <div className="cab-content">
-              <div>
-                <div className="call-section">
-                  <div className="call">
-                    <i className="fas fa-phone-alt"></i>
-                    <h2>+91-800-355-1111</h2>
+            <div className="home-content mix-layout smaller-content">
+                  <div className="bg-transparent">
+                    <h1>Where Do You Want Go ?</h1>
+                    <h3>Experience world class services trip in Japan featured</h3>
+                    <TabContent activeTab={activeTab} className="tab-content" id="pills-tabContent">
+                      <TabPane tabId="1">
+                        <div className="mix-demo-classic">
+                          <SearchComponent />
+                        </div>
+                      </TabPane>
+                      <TabPane tabId="2">
+                        {/* <TourSearch /> */}
+                      </TabPane>
+                      <TabPane tabId="3">
+                        <div className="mix-demo-flight">
+                          {/* <FlightSearch /> */}
+                        </div>  
+                      </TabPane>
+                      <TabPane tabId="4">
+                        {/* <CabSearch /> */}
+                      </TabPane>
+                      <TabPane tabId="5">
+                        {/* <FoodSearch /> */}
+                      </TabPane>
+                    </TabContent>
                   </div>
                 </div>
-
-                <div className="bg-transparent">
-                  <SearchTabs callbackActive={callback} />
-                  <TabContent
-                    activeTab={activeTab}
-                    className="tab-content"
-                    id="pills-tabContent"
-                  >
-                    <TabPane tabId="1">
-                      <div className="mix-demo-classic">
-                        <OutStationSearch
-                          pickup={pickup}
-                          pickupDate={pickupDate}
-                          setPickupDate={setPickupDate}
-                          setPickup={setPickup}
-                          setDestination={setDestination}
-                          selectedValue={selectedValue}
-                          handleRadioChange={handleRadioChange}
-                        />
-                      </div>
-                    </TabPane>
-                    <TabPane tabId="2">
-                    <div className="mix-demo-classic">
-                        <AirportSearch
-                          pickup={pickup}
-                          pickupDate={pickupDate}
-                          setPickupDate={setPickupDate}
-                          setPickup={setPickup}
-                          setDestination={setDestination}
-                          selectedValue={selectedValue}
-                          handleRadioChange={handleRadioChange}
-                        />
-                      </div>
-                    </TabPane>
-
-                    <TabPane tabId="3">
-                    <div className="mix-demo-classic">
-                        <AirportSearch
-                          pickup={pickup}
-                          pickupDate={pickupDate}
-                          setPickupDate={setPickupDate}
-                          setPickup={setPickup}
-                          setDestination={setDestination}
-                          selectedValue={selectedValue}
-                          handleRadioChange={handleRadioChange}
-                        />
-                      </div>
-                    </TabPane>
-                   
-                  </TabContent>
-                </div>
-
-                <div className="car-select">
-                 
-                  <Link
-                    onClick={(e) => {
-                      if (pickup === "" || destination === "") {
-                        e.preventDefault(); // Prevent the link from navigating
-                        alert("fill the input boxes"); // Show the popup
-                      } else {
-                        updateContext();
-                      }
-                    }}
-                    to="/cab/listing"
-                    className={`btn btn-solid `}
-                    
-                  >
-                    Book now
-                  </Link>
-                  
-                </div>
-              </div>
             </div>
           </div>
         </div>
