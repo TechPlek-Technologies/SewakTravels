@@ -95,10 +95,16 @@ ul#top-tab{
 
 .search-section .search-box .left-part  {
   margin: 0px ;
+  margin-bottom: 30px;
 
 }
-input#datepicker, input.form-control {
-max-width: 150px !important;
+input#datepicker {
+max-width: 180px !important;
+}
+input.form-control.pac-target-input {
+  width: 180px;
+max-width: 180px !important;
+
 }
 
 input:focus #datepicker {
@@ -108,7 +114,7 @@ input:focus #datepicker {
 }
 
 .search-body,.title-hotel,.search-input,.col-2{
-  min-width: max-content;
+  max-width: max-content;
 }
 
 .search-panel .search-section .search-box .left-part .search-body h6{
@@ -155,11 +161,13 @@ border:none !important
   width: 100%;
   display: flex;
   gap: 30px;
+  border-radius: 0.5rem;
+
   font-weight: 800;
 }
 
 .search-box{
-  border-radius: 9px !important;
+  border-radius: 0.5rem;
   flex-direction: column;
 }
 
@@ -169,4 +177,9 @@ border:none !important
 
 .radio-label{
   margin-left: 5px;
+}
+
+.searchButton{
+margin: auto;
+margin-top: -17px;
 }

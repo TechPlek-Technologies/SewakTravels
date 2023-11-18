@@ -1252,8 +1252,7 @@ header {
             -ms-flex-pack: center;
                 justify-content: center;
         height: 100%; }
-  .cab-section.flight-section {
-    background-image: url("../images/home/banner/1.png"); }
+  
     .cab-section.flight-section .cloud {
       height: 100%;
       bottom: 0;
@@ -1363,7 +1362,6 @@ section .black-layer:before {
   position: relative;
   overflow: hidden; }
   .home_section .home {
-  background: url(../images/home/banner/1.png);
 
     background-position: center;
     background-size: cover;
@@ -1957,7 +1955,6 @@ section .black-layer:before {
 
 .home_effect .effect_image {
   position: relative;
-  background: url(../images/home/banner/1.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;

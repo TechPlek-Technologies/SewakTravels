@@ -3,6 +3,7 @@ import SearchTabs from "./BannerSearch/SearchTabs";
 import { TabContent, TabPane } from "reactstrap";
 import OutStationSearch from "./BannerSearch/OutStationSearch";
 import SearchComponent from "./BannerSearch/SearchComponent";
+import { Link } from "react-router-dom";
 
 const NewHomeBanner = () => {
   const [activeTab, setActiveTab] = useState("1");
@@ -34,7 +35,6 @@ const NewHomeBanner = () => {
                       className="tab-content"
                       id="pills-tabContent"
                     >
-                      
                       <TabPane tabId="1">
                         <div className="mix-demo-classic">
                           <SearchComponent />
@@ -49,6 +49,16 @@ const NewHomeBanner = () => {
                       <TabPane tabId="4">{/* <CabSearch /> */}</TabPane>
                       <TabPane tabId="5">{/* <FoodSearch /> */}</TabPane>
                     </TabContent>
+                    <div className="btn-search col-2 searchButton">
+                      
+                        <Link
+                          href="/hotel/single-page/left-sidebar"
+                          className="btn btn-solid "
+                        >
+                          {"Search"}
+                        </Link>
+                      
+                    </div>
                   </div>
                 </div>
               </div>
