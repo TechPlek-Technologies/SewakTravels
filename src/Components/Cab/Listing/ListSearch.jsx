@@ -3,6 +3,7 @@ import CabSearch from "./CabSearch";
 import { useContext } from "react";
 import { AppContext } from "../../../Context/JourneyContext";
 import { Link } from "react-router-dom";
+import SearchComponent from "../Home/BannerSearch/SearchComponent";
 
 function ListSearch() {
 
@@ -92,15 +93,7 @@ function ListSearch() {
               </Link>
             </div>
           </div>
-          <CabSearch
-            resClass="res-cab"
-            setSearchBarOpen={setSearchBarOpen}
-            searchBarOpen={searchBarOpen}
-            setDestination={setDestination}
-            setPickup={setPickup}
-            destination={destination}
-            pickup={pickup}
-          />
+          {/* <SearchComponent/> */}
         </div>
       </div>
     </div>

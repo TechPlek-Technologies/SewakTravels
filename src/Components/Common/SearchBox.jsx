@@ -14,7 +14,7 @@ const SearchBox = () => {
 
   const [startDate, setStartDate] = useState(tomorrow);
   const [returnDate, setReturnDate] = useState(dayAfterTomorrow);
-  const [selectedValue, setSelectedValue] = useState("Outstation one-way"); // Set the initial selected value
+  const [selectedValue, setSelectedValue] = useState("Outstation One-Way"); // Set the initial selected value
   const [source, setSource] = useState("");
   const [destination, setDestination] = useState("");
   const sourceInputRef = useRef();
@@ -31,15 +31,15 @@ const SearchBox = () => {
   return (
     <>
       <div className={`search-box `}>
-        <div className="journeyType">
+        <div className="journeyType responsive-btn">
           <div>
             <input
               id="radio-1"
               type="radio"
               name="journeyType"
-              value="Outstation one-way"
+              value="Outstation One-Way"
               onChange={handleRadioChange}
-              checked={selectedValue === "Outstation one-way"}
+              checked={selectedValue === "Outstation One-Way"}
             />
             <label htmlFor="radio-1" className="radio-label">
               Outstation One-Way
@@ -87,7 +87,7 @@ const SearchBox = () => {
           </div>
         </div>
 
-        {selectedValue === "Outstation one-way" ||
+        {selectedValue === "Outstation One-Way" ||
         selectedValue === "Outstation Round-Trip" ? (
           <OutStationSearch
             sourceInputRef={sourceInputRef}

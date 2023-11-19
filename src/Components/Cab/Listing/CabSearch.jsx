@@ -7,159 +7,146 @@ import { AppContext } from "../../../Context/JourneyContext";
 import { useRef } from "react";
 import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 import useAutocomplete from "../../../Utility/Autocomplete";
+import OutStationSearch from "../Home/BannerSearch/OutStationSearch";
+import AirportSearch from "../Home/BannerSearch/AirportSearch";
+import RentalSearch from "../Home/BannerSearch/RentalSearch";
 
 const CabSearch = ({
   resClass,
   setSearchBarOpen,
   searchBarOpen,
   setPickup,
-  setDestination,
-  destination,
   pickup,
 }) => {
 
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
 
-  const context = useContext(AppContext);
-  const { journeyData, setJourneyData } = context;
-  // console.log("jouenryData:"+ journeyData)
+  const dayAfterTomorrow = new Date();
+  dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 3);
 
-  const [selectedValue, setSelectedValue] = useState(journeyData?.tripType|| "One Way"); 
+  const [startDate, setStartDate] = useState(tomorrow);
+  const [returnDate, setReturnDate] = useState(dayAfterTomorrow);
+  const [selectedValue, setSelectedValue] = useState("Outstation one-way"); // Set the initial selected value
+  const [source, setSource] = useState("");
+  const [destination, setDestination] = useState("");
+  const sourceInputRef = useRef();
+  const destinationInputRef = useRef();
 
+  useAutocomplete(sourceInputRef, setSource);
+  useAutocomplete(destinationInputRef, setDestination);
 
-  const handleTripTypeChange = (e) => {
-    setSelectedValue(e.target.value);
+  const handleRadioChange = (event) => {
+    setSelectedValue(event.target.value);
+    // Update the selected value when a radio button is changed
   };
-  const updateChanges = () => {
-    calculateDistanceAndDuration(
-      pickup,
-      destination,
-      journeyData?.pickupDate,
-      selectedValue,
-      journeyData,
-      setJourneyData
-    );
-  };
-
- 
-
-  const fromInputRef = useRef();
-  const toInputRef = useRef();
-
-  useAutocomplete(fromInputRef, setPickup);
-  useAutocomplete(toInputRef, setDestination);
-
 
   return (
-    <div className="flight-search">
-      <div
-        className={`flight-search-detail ${searchBarOpen ? "show" : ""} ${
-          resClass ? resClass : ""
-        }`}
-      >
-        <form className="row m-0">
-          <div className="col">
-            <div className="form-group">
-              <label className="font-xs-white">Trip Type</label>
-              <select
-                type="text"
-                className="form-control open-select"
-                id="exampleInputEmail1"
-                placeholder="pick up"
-                onChange={handleTripTypeChange}
-              >
-                <option value={selectedValue} >
-                  {selectedValue} 
-                </option>
-                <option value="One Way">
-                  One Way
-                </option>
-                <option value="RoundTrip">
-                  RoundTrip
-                </option>
-              </select>
+    <>
+      <div className={`search-box `}>
+        <div className="journeyType">
+          <div>
+            <input
+              id="radio-1"
+              type="radio"
+              name="journeyType"
+              value="Outstation One-Way"
+              onChange={handleRadioChange}
+              checked={selectedValue === "Outstation One-Way"}
+            />
+            <label htmlFor="radio-1" className="radio-label">
+              Outstation One-Way
+            </label>
+          </div>
+          <div>
+            <input
+              id="radio-2"
+              type="radio"
+              name="journeyType"
+              onChange={handleRadioChange}
+              checked={selectedValue === "Outstation Round-Trip"}
+              value="Outstation Round-Trip"
+            />
+            <label htmlFor="radio-2" className="radio-label">
+              Outstation Round-Trip
+            </label>
+          </div>
+          
+          <div>
+            <input
+              id="radio-4"
+              type="radio"
+              name="journeyType"
+              value="Airport Transfer"
+              checked={selectedValue === "Airport Transfer"}
+              onChange={handleRadioChange}
+            />
+            <label htmlFor="radio-4" className="radio-label">
+              Airport Transfer
+            </label>
+          </div>
+          <div>
+            <input
+              id="radio-3"
+              type="radio"
+              name="journeyType"
+              value="Hourly Rentals"
+              checked={selectedValue === "Hourly Rentals"}
+              onChange={handleRadioChange}
+            />
+            <label htmlFor="radio-3" className="radio-label">
+              Hourly Rentals
+            </label>
+          </div>
+        </div>
 
-              {/* <Img
-                src="/assets/images/icon/table-no.png"
-                className="img-fluid "
-                alt=""
-              /> */}
-            </div>
-          </div>
-          <div className="col">
-            <div className="form-group">
-              <label className="font-xs-white">Pickup Location</label>
-              <input
-                type="text"
-                className="form-control open-select"
-                id="exampleInputEmail1"
-                defaultValue={journeyData?.pickup}
-                placeholder="Source"
-                ref={fromInputRef}
-                required
-              />
-              {/* <Img
-                src="/assets/images/icon/from.png"
-                className="img-fluid "
-                alt=""
-              /> */}
-            </div>
-          </div>
-          <div className="col">
-            <div className="form-group">
-              <label className="font-xs-white">Drop off Location</label>
-              <input
-                type="text"
-                className="form-control open-select"
-                defaultValue={journeyData?.dropoff}
-                placeholder="Destination"
-                ref={toInputRef}
-              />
-              {/* <Img
-                src="/assets/images/icon/location.png"
-                className="img-fluid "
-                alt=""
-              /> */}
-            </div>
-          </div>
-          <div className="col">
-            <div className="form-group">
-              <label className="font-xs-white">Pickup Date</label>
-              <div className="input-group customdate">
-                <DatePickerComponent  />
-              </div>
-            </div>
-          </div>
-          <div id="dropdate" className="col">
-            <div className="form-group">
-              <label className="font-xs-white">Pickup Time</label>
-              <div className="input-group">
-                {/* <DatePickerComponent setStart={setStartDate} start={startDate} />
-                 */}
-                <TimePickerComponent />
-              </div>
-            </div>
-          </div>
-          <div className="col search-col">
-            <div className="search-btn">
-              <Link
-                href="/cab/listing/list-view/left-sidebar"
-                className="btn btn-solid color1"
-                onClick={updateChanges}
-              >
-                {"Update"}
-              </Link>
-            </div>
-          </div>
-          <div
-            className="responsive-close"
-            onClick={() => setSearchBarOpen && setSearchBarOpen(!searchBarOpen)}
-          >
-            <i className="far fa-times-circle" />
-          </div>
-        </form>
+        {selectedValue === "Outstation one-way" ||
+        selectedValue === "Outstation Round-Trip" ? (
+          <OutStationSearch
+            sourceInputRef={sourceInputRef}
+            destinationInputRef={destinationInputRef}
+            startDate={startDate}
+            setStartDate={setStartDate}
+            selectedValue={selectedValue}
+            setSelectedValue={setSelectedValue}
+            returnDate={returnDate}
+            setReturnDate={setReturnDate}
+            source={source}
+            destination={destination}
+            setSource={setSource}
+            setDestination={setDestination}
+          />
+        ) : selectedValue === "Airport Transfer" ? (
+          <AirportSearch
+            sourceInputRef={sourceInputRef}
+            destinationInputRef={destinationInputRef}
+            startDate={startDate}
+            setStartDate={setStartDate}
+            selectedValue={selectedValue}
+            setSelectedValue={setSelectedValue}
+            returnDate={returnDate}
+            setReturnDate={setReturnDate}
+            source={source}
+            destination={destination}
+            setSource={setSource}
+            setDestination={setDestination}
+          />
+        ) :(<RentalSearch sourceInputRef={sourceInputRef}
+          destinationInputRef={destinationInputRef}
+          startDate={startDate}
+          setStartDate={setStartDate}
+          selectedValue={selectedValue}
+          setSelectedValue={setSelectedValue}
+          returnDate={returnDate}
+          setReturnDate={setReturnDate}
+          source={source}
+          destination={destination}
+          setSource={setSource}
+          setDestination={setDestination}
+          />)
+          }
       </div>
-    </div>
+    </>
   );
 };
-
 export default CabSearch;

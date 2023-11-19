@@ -1,7 +1,6 @@
 import { useCallback, useState } from "react";
 import SearchTabs from "./BannerSearch/SearchTabs";
 import { TabContent, TabPane } from "reactstrap";
-import OutStationSearch from "./BannerSearch/OutStationSearch";
 import SearchComponent from "./BannerSearch/SearchComponent";
 import { Link } from "react-router-dom";
 
@@ -55,7 +54,7 @@ const NewHomeBanner = () => {
                     </TabContent>
                     <div className="btn-search col-2 searchButton">
                       <Link
-                        href="/hotel/single-page/left-sidebar"
+                        to="/cab/listing"
                         className="btn btn-solid searchButton"
                       >
                         {"Search"}

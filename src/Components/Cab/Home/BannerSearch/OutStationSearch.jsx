@@ -20,17 +20,22 @@ const OutStationSearch = ({
     <div className="left-part row">
       <div className="search-body title-hotel col-2">
         <h6>{"From"}</h6>
-        <input
-          type="text"
-          name="text"
-          placeholder="source"
-          className="form-control "
-          ref={sourceInputRef}
-        />
+        
+       <input
+       style={selectedValue === "Outstation Round-Trip" ? { width: "100px" } : null}
+       type="text"
+       name="text"
+       placeholder="source"
+       className="form-control"
+       ref={sourceInputRef}
+     />
+     
       </div>
       <div className="search-body title-hotel col-2">
-        <h6>{"to"}</h6>
+        <h6>{"To"}</h6>
         <input
+       style={selectedValue === "Outstation Round-Trip" ? { width: "130px" } : null}
+
           type="text"
           name="text"
           placeholder="destination"
@@ -39,11 +44,17 @@ const OutStationSearch = ({
         />
       </div>
       <div className="search-body col-2 search-input">
-        <h6>{"pickup date"}</h6>
-        <DatePickerComponent start={startDate} setStart={setStartDate} />
+        <h6>{"Pickup Date"}</h6>
+        <DatePickerComponent start={startDate} setStart={setStartDate} 
+        />
+      </div>
+     
+      <div className="search-body col-2 search-input">
+        <h6>{"Pickup Time"}</h6>
+        <TimePickerComponent />
       </div>
       <div className="search-body col-2 search-input">
-        <h6>{"Return"}</h6>
+        <h6>{"Return Date"}</h6>
         {selectedValue === "Outstation Round-Trip" ? (
           <DatePickerComponent start={returnDate} setStart={setReturnDate} />
         ) : (
@@ -52,10 +63,15 @@ const OutStationSearch = ({
           </h6>
         )}
       </div>
-      <div className="search-body col-2 search-input">
-        <h6>{"pickup-Time"}</h6>
+      {
+        selectedValue==="Outstation Round-Trip"?(
+          <div className="search-body col-2 search-input">
+        <h6>{"Drop Time"}</h6>
         <TimePickerComponent />
       </div>
+        ):null
+      }
+   
     </div>
   );
 };
