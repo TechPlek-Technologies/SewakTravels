@@ -1,20 +1,16 @@
-
-  
-  /* 
+/* 
   tab items
   
   */
-  li.nav-item:hover {
-    cursor: pointer;
+li.nav-item:hover {
+  cursor: pointer;
 }
-
 
 /* Contact us section */
 
-.contact_section > .container > .row > .row{
+.contact_section > .container > .row > .row {
   width: 100%;
 }
-
 
 /* FAQ */
 .other-faq .product_img_scroll .card-title {
@@ -24,14 +20,12 @@
   color: #ef3f3e;
 }
 
-
 /* viewFairDetails */
 
-.viewFairDetails:hover{
+.viewFairDetails:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-
 
 .video-modal .modal-body .btn-close {
   position: absolute;
@@ -43,42 +37,41 @@
   border: none;
 }
 
-
 .video-modal .modal-body .btn-close span {
   text-shadow: none;
   color: #fff;
   font-size: 26px;
 }
 
-
 .flight-detail-sec {
-  margin:  0;
+  margin: 0;
 }
 
 .cab-section .cab-content .call-section {
   margin-top: 30px;
 }
 
-a.btn.btn-solid{
+a.btn.btn-solid {
   width: auto !important;
 }
-.service-box{
+.service-box {
   min-height: 400px;
 }
 
-.col-lg-3.col-6{text-align: center;}
-
-.home_section{
-  background:  url("./img/banner/1.jpg");
+.col-lg-3.col-6 {
+  text-align: center;
 }
 
-ul#top-tab{
+.home_section {
+  background: url("./img/banner/1.jpg");
+}
+
+ul#top-tab {
   display: flex;
   justify-content: center;
   /* list-style: none; Remove default list styles */
   padding: 0;
   margin-bottom: 0px !important;
-
 }
 
 .mix-pills.nav-pills .nav-link {
@@ -88,76 +81,107 @@ ul#top-tab{
   /* width:25% */
 }
 
-.nav .mix-pills .nav-pills .mb-3 .nav .nav-tabs{
+.nav .mix-pills .nav-pills .mb-3 .nav .nav-tabs {
   margin-left: 0 !important;
-  margin-right:0 !important;
+  margin-right: 0 !important;
 }
 
-.search-section .search-box .left-part  {
-  margin: 0px ;
+.search-section .search-box .left-part {
+  margin: 0px;
   margin-bottom: 30px;
-
 }
 input#datepicker {
-max-width: 180px !important;
+  max-width: 160px !important;
 }
 input.form-control.pac-target-input {
-  width: 180px;
-max-width: 180px !important;
-
+  width: 170px;
+  max-width: 170px !important;
 }
 
 input:focus #datepicker {
   outline: none !important; /* Remove the default outline */
-  border: none !important;  /* Remove the border */
+  border: none !important; /* Remove the border */
   /* Add any additional styling you need for the active state */
 }
 
-.search-body,.title-hotel,.search-input,.col-2{
+.search-body,
+.title-hotel,
+.search-input,
+.col-2 {
   max-width: max-content;
 }
 
-.search-panel .search-section .search-box .left-part .search-body h6{
+.search-panel .search-section .search-box .left-part .search-body h6 {
   text-align: left;
-  font-size: calc(12px + 3*(100vw - 320px)/1600) !important;
+  font-size: calc(12px + 3 * (100vw - 320px) / 1600) !important;
 }
 /* datepicker */
-.home_section .home .home-content.mix-layout.smaller-content .mix-demo-flight .search-panel .search-section .search-box .left-part .search-body .datepicker-main {
+.home_section
+  .home
+  .home-content.mix-layout.smaller-content
+  .mix-demo-flight
+  .search-panel
+  .search-section
+  .search-box
+  .left-part
+  .search-body
+  .datepicker-main {
   width: 100%;
 }
 
-
-.search-section .datepicker-main, .home_section .home .home-content.mix-layout.smaller-content .search-section .search-box .left-part .search-body .form-control {
+.search-section .datepicker-main,
+.home_section
+  .home
+  .home-content.mix-layout.smaller-content
+  .search-section
+  .search-box
+  .left-part
+  .search-body
+  .form-control {
   border: none;
   padding: 0;
   text-align: left;
-  font-size: calc(16px + (26 - 16) * ((100vw - 320px) / (1920 - 320))) !important; 
+  font-size: calc(
+    16px + (26 - 16) * ((100vw - 320px) / (1920 - 320))
+  ) !important;
 
   color: #000;
   text-transform: capitalize;
   font-weight: 800;
+  border: none;
+  outline: none;
 }
 
-
-
-
-.react-datepicker-time__header, .react-datepicker-year-header, .react-datepicker__current-month {
+.react-datepicker-time__header,
+.react-datepicker-year-header,
+.react-datepicker__current-month {
   color: #ef3f3e !important;
 }
 
-.react-datepicker__day--in-range, .react-datepicker__day--in-selecting-range, .react-datepicker__day--selected, .react-datepicker__month-text--in-range, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--selected, .react-datepicker__quarter-text--in-range, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--selected, .react-datepicker__year-text--in-range, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--selected {
-    border-radius: 0.3rem;
-    background-color: #ef3f3e !important;
-    color: #fff;
+.react-datepicker__day--in-range,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--selected,
+.react-datepicker__month-text--in-range,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__year-text--in-range,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--selected {
+  border-radius: 0.3rem;
+  background-color: #ef3f3e !important;
+  color: #fff;
 }
 
-.datepicker-main .react-datepicker-ignore-onclickoutside{
-border:none !important
+.datepicker-main .react-datepicker-ignore-onclickoutside {
+  border: none !important;
 }
 
-.journeyType{
+.journeyType {
   background: white;
-  padding:30px 30px 0px 30px;
+  padding: 30px 30px 0px 30px;
   width: 100%;
   display: flex;
   gap: 30px;
@@ -166,7 +190,7 @@ border:none !important
   font-weight: 800;
 }
 
-.search-box{
+.search-box {
   border-radius: 0.5rem;
   flex-direction: column;
 }
@@ -175,11 +199,28 @@ border:none !important
   border-bottom: 0px solid #dee2e6 !important;
 }
 
-.radio-label{
+.radio-label {
   margin-left: 5px;
 }
 
-.searchButton{
-margin: auto;
-margin-top: -17px;
+.searchButton {
+  margin: auto;
+  margin-top: -10px;
 }
+
+a.btn.btn-solid.searchButton {
+  width: 200px !important;
+}
+
+a.nav-link {
+  width: 150px;
+}
+
+
+  .col-xl-10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+

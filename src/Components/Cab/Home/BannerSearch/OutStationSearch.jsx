@@ -1,91 +1,62 @@
 import TimePickerComponent from "../../../Common/TimePickerComponent";
 import DatePickerComponent from "../../../Common/DatePickerComponent";
-import { useRef } from "react";
-import { Fragment } from "react";
 import useAutocomplete from "../../../../Utility/Autocomplete";
 
 const OutStationSearch = ({
-  setPickup,
-  setDestination,
-  setPickupDate,
-  setPickupTime,
-  pickupDate,
-  handleRadioChange,
+  sourceInputRef,
+  destinationInputRef,
+  startDate,
+  setStartDate,
   selectedValue,
+  setSelectedValue,
+  returnDate,
+  setReturnDate,
+  setSource,
+  setDestination
 }) => {
-  const fromInputRef = useRef();
-  const toInputRef = useRef();
-
-
-useAutocomplete(fromInputRef, setPickup);
-useAutocomplete(toInputRef, setDestination);
-
+  useAutocomplete(sourceInputRef, setSource);
+  useAutocomplete(destinationInputRef, setDestination);
   return (
-    <Fragment>
-      <form id="outStationSearch" onSubmit={(event) => event.preventDefault()}>
-        <div className="form-group">
-          <input
-            type="text"
-            className="form-control"
-            id="exampleInputEmail1"
-            placeholder="Source"
-            ref={fromInputRef}
-          />
-          <img
-            src="/assets/images/icon/from.png"
-            className="img-fluid"
-            alt=""
-          />
-        </div>
-        <div className="form-group">
-          <input
-            type="text"
-            className="form-control"
-            id="exampleInputEmail"
-            placeholder="Destination"
-            ref={toInputRef}
-            required={true}
-          />
-          <img
-            src="/assets/images/icon/location.png"
-            className="img-fluid"
-            alt=""
-          />
-        </div>
-        <div className="form-group row cab-modern-form">
-          <div className="col form-control">
-            <DatePickerComponent start={pickupDate} setStart={setPickupDate}/>
-          </div>
-          <div className="col">
-            <TimePickerComponent setPickupTime={setPickupTime}/>
-          </div>
-        </div>
-      </form>
-      <form className="radio-form" onSubmit={(event) => event.preventDefault()}>
+    <div className="left-part row">
+      <div className="search-body title-hotel col-2">
+        <h6>{"From"}</h6>
         <input
-          id="radio-1"
-          type="radio"
-          name="gender"
-          value="One Way"
-          onChange={handleRadioChange}
-          defaultChecked={selectedValue === "One Way"}
+          type="text"
+          name="text"
+          placeholder="source"
+          className="form-control "
+          ref={sourceInputRef}
         />
-        <label htmlFor="radio-1" className="radio-label">
-          One Way
-        </label>
+      </div>
+      <div className="search-body title-hotel col-2">
+        <h6>{"to"}</h6>
         <input
-          id="radio-2"
-          type="radio"
-          name="gender"
-          value="RoundTrip"
-          onChange={handleRadioChange}
-          defaultChecked={selectedValue === "Round Trip"}
+          type="text"
+          name="text"
+          placeholder="destination"
+          className="form-control "
+          ref={destinationInputRef}
         />
-        <label htmlFor="radio-2" className="radio-label">
-          Round Trip
-        </label>
-      </form>
-    </Fragment>
+      </div>
+      <div className="search-body col-2 search-input">
+        <h6>{"pickup date"}</h6>
+        <DatePickerComponent start={startDate} setStart={setStartDate} />
+      </div>
+      <div className="search-body col-2 search-input">
+        <h6>{"Return"}</h6>
+        {selectedValue === "Outstation Round-Trip" ? (
+          <DatePickerComponent start={returnDate} setStart={setReturnDate} />
+        ) : (
+          <h6 onClick={() => setSelectedValue("Outstation Round-Trip")}>
+            Tap to add a return date
+          </h6>
+        )}
+      </div>
+      <div className="search-body col-2 search-input">
+        <h6>{"pickup-Time"}</h6>
+        <TimePickerComponent />
+      </div>
+    </div>
   );
 };
 

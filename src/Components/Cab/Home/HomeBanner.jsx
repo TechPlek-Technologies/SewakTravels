@@ -108,14 +108,6 @@ function HomeBanner() {
                 <div className="car-select">
                  
                   <Link
-                    onClick={(e) => {
-                      if (pickup === "" || destination === "") {
-                        e.preventDefault(); // Prevent the link from navigating
-                        alert("fill the input boxes"); // Show the popup
-                      } else {
-                        updateContext();
-                      }
-                    }}
                     to="/cab/listing"
                     className={`btn btn-solid `}
                     

@@ -1,8 +1,9 @@
 import { useState } from "react";
-import DatePickerComponent from "./DatePickerComponent";
-import TimePickerComponent from "./TimePickerComponent";
 import { useRef } from "react";
 import useAutocomplete from "../../Utility/Autocomplete";
+import OutStationSearch from "../Cab/Home/BannerSearch/OutStationSearch";
+import AirportSearch from "../Cab/Home/BannerSearch/AirportSearch";
+import RentalSearch from "../Cab/Home/BannerSearch/RentalSearch";
 
 const SearchBox = () => {
   const tomorrow = new Date();
@@ -23,9 +24,7 @@ const SearchBox = () => {
   useAutocomplete(destinationInputRef, setDestination);
 
   const handleRadioChange = (event) => {
-    console.log(selectedValue);
     setSelectedValue(event.target.value);
-    console.log(selectedValue);
     // Update the selected value when a radio button is changed
   };
 
@@ -59,19 +58,7 @@ const SearchBox = () => {
               Outstation Round-Trip
             </label>
           </div>
-          <div>
-            <input
-              id="radio-3"
-              type="radio"
-              name="journeyType"
-              value="Hourly Rentals"
-              checked={selectedValue === "Hourly Rentals"}
-              onChange={handleRadioChange}
-            />
-            <label htmlFor="radio-3" className="radio-label">
-              Hourly Rentals
-            </label>
-          </div>
+          
           <div>
             <input
               id="radio-4"
@@ -85,50 +72,66 @@ const SearchBox = () => {
               Airport Transfer
             </label>
           </div>
-        </div>
-
-        <div className="left-part row">
-          <div className="search-body title-hotel col-2">
-            <h6>{"From"}</h6>
+          <div>
             <input
-              type="text"
-              name="text"
-              placeholder="source"
-              className="form-control "
-              ref={sourceInputRef}
+              id="radio-3"
+              type="radio"
+              name="journeyType"
+              value="Hourly Rentals"
+              checked={selectedValue === "Hourly Rentals"}
+              onChange={handleRadioChange}
             />
-          </div>
-          <div className="search-body title-hotel col-2">
-            <h6>{"to"}</h6>
-            <input
-              type="text"
-              name="text"
-              placeholder="destination"
-              className="form-control "
-              ref={destinationInputRef}
-            />
-          </div>
-          <div className="search-body col-2 search-input">
-            <h6>{"Departure"}</h6>
-            <DatePickerComponent start={startDate} setStart={setStartDate} />
-          </div>
-          <div className="search-body col-2 search-input">
-            <h6>{"Return"}</h6>
-            {selectedValue === "Outstation Round-Trip" ? (
-              <DatePickerComponent start={returnDate} setStart={setReturnDate} />
-            ) : (
-              <h6 onClick={() => setSelectedValue("Outstation Round-Trip")}>
-                Tap to add a return date
-              </h6>
-            )}
-          </div>
-          <div className="search-body col-2 search-input">
-            <h6>{"pickup-Time"}</h6>
-            <TimePickerComponent />
+            <label htmlFor="radio-3" className="radio-label">
+              Hourly Rentals
+            </label>
           </div>
         </div>
 
-       
+        {selectedValue === "Outstation one-way" ||
+        selectedValue === "Outstation Round-Trip" ? (
+          <OutStationSearch
+            sourceInputRef={sourceInputRef}
+            destinationInputRef={destinationInputRef}
+            startDate={startDate}
+            setStartDate={setStartDate}
+            selectedValue={selectedValue}
+            setSelectedValue={setSelectedValue}
+            returnDate={returnDate}
+            setReturnDate={setReturnDate}
+            source={source}
+            destination={destination}
+            setSource={setSource}
+            setDestination={setDestination}
+          />
+        ) : selectedValue === "Airport Transfer" ? (
+          <AirportSearch
+            sourceInputRef={sourceInputRef}
+            destinationInputRef={destinationInputRef}
+            startDate={startDate}
+            setStartDate={setStartDate}
+            selectedValue={selectedValue}
+            setSelectedValue={setSelectedValue}
+            returnDate={returnDate}
+            setReturnDate={setReturnDate}
+            source={source}
+            destination={destination}
+            setSource={setSource}
+            setDestination={setDestination}
+          />
+        ) :(<RentalSearch sourceInputRef={sourceInputRef}
+          destinationInputRef={destinationInputRef}
+          startDate={startDate}
+          setStartDate={setStartDate}
+          selectedValue={selectedValue}
+          setSelectedValue={setSelectedValue}
+          returnDate={returnDate}
+          setReturnDate={setReturnDate}
+          source={source}
+          destination={destination}
+          setSource={setSource}
+          setDestination={setDestination}
+          />)
+          }
       </div>
     </>
   );

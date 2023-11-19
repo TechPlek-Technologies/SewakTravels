@@ -15,7 +15,7 @@ const DatePickerComponent = ({start,setStart}) => {
       onChange={(date) => setStart(date)}
       id="datepicker"
       className="datepicker-main"
-      dateFormat="dd MMMM yy"
+      dateFormat="dd MMMM"
       placeholderText="Pickup Date"
     />
   );

@@ -40,24 +40,26 @@ const NewHomeBanner = () => {
                           <SearchComponent />
                         </div>
                       </TabPane>
-                      <TabPane tabId="2">{/* <TourSearch /> */}</TabPane>
+                      <TabPane tabId="2">
+                        <div className="mix-demo-flight">
+                          {/* <OutStationSearch /> */}
+                        </div>
+                      </TabPane>
                       <TabPane tabId="3">
                         <div className="mix-demo-flight">
-                          <OutStationSearch />
+                          {/* <OutStationSearch /> */}
                         </div>
                       </TabPane>
                       <TabPane tabId="4">{/* <CabSearch /> */}</TabPane>
                       <TabPane tabId="5">{/* <FoodSearch /> */}</TabPane>
                     </TabContent>
                     <div className="btn-search col-2 searchButton">
-                      
-                        <Link
-                          href="/hotel/single-page/left-sidebar"
-                          className="btn btn-solid "
-                        >
-                          {"Search"}
-                        </Link>
-                      
+                      <Link
+                        href="/hotel/single-page/left-sidebar"
+                        className="btn btn-solid searchButton"
+                      >
+                        {"Search"}
+                      </Link>
                     </div>
                   </div>
                 </div>
