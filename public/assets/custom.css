@@ -92,6 +92,12 @@ ul#top-tab {
 }
 input#datepicker {
   max-width: 150px ;
+  
+}
+.form-group input#datepicker input#exampleInputEmail1  {
+  border: 1px solid #e5e5e5;
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
 }
 input.form-control.pac-target-input {
   width: 170px;
@@ -116,18 +122,7 @@ input:focus #datepicker {
   font-size: calc(12px + 3 * (100vw - 320px) / 1600) !important;
 }
 /* datepicker */
-.home_section
-  .home
-  .home-content.mix-layout.smaller-content
-  .mix-demo-flight
-  .search-panel
-  .search-section
-  .search-box
-  .left-part
-  .search-body
-  .datepicker-main {
-  width: 100%;
-}
+
 
 .search-section .datepicker-main,
 .home_section
@@ -212,23 +207,14 @@ a.btn.btn-solid.searchButton {
   width: 200px !important;
 }
 
-a.nav-link {
-  width: 150px;
+
+
+
+.col-xl-10 {
+padding-left: 0 !important;
+padding-right: 0 !important;
 }
 
-
-  .col-xl-10 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  @media (min-width: 1200px){
-  .search-box {
-    min-width: 1200px
-  }
-}
 
 header .menu {
   display: -webkit-box;
@@ -240,3 +226,31 @@ header .menu {
   align-items: center;
   justify-content: space-between;
 }
+
+/* Listing page */
+
+.flight-search .flight-search-detail {
+  background-color: #1b1b1b;
+  padding: 30px 0px;
+  color: #ef3f3e;
+}
+.small-section {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+/* Video Banner Home Page */
+.video_section .offer-text h6 span {
+  margin-right: 7px;
+  position: relative;
+  display: inline-block;
+  animation: ani 1s cubic-bezier(.86,0,.07,1) infinite alternate;
+}
+
+.full-banner .offer-text h6 span {
+  margin-right: 7px;
+  position: relative;
+  display: inline-block;
+  animation: ani 1s cubic-bezier(.86,0,.07,1) infinite alternate;
+}
+

@@ -1,15 +1,14 @@
 import TimePickerComponent from "../../../Common/TimePickerComponent";
 import DatePickerComponent from "../../../Common/DatePickerComponent";
-import useAutocomplete from "../../../../Utility/Autocomplete";
+import OutstationDataState from "../../../../Hooks/OutstationDataState";
 
 const RentalSearch = ({
-  sourceInputRef,
-  startDate,
-  setStartDate,
-  setSource,
 }) => {
-  // END
-  useAutocomplete(sourceInputRef, setSource);
+  const {
+    startDate,
+    setStartDate,
+    sourceInputRef,
+  } = OutstationDataState();
 
   return (
     <div className="left-part row">
@@ -28,7 +27,7 @@ const RentalSearch = ({
 
       <div className="search-body col-2 search-input">
         <h6>{"pickup date"}</h6>
-        <DatePickerComponent start={startDate} setStart={setStartDate} />
+        <DatePickerComponent startDate={new Date(startDate)} setStartDate={setStartDate} />
       </div>
 
       <div className="search-body col-2 search-input">

@@ -1,14 +1,24 @@
 import { useCallback, useState } from "react";
-import SearchTabs from "./BannerSearch/SearchTabs";
+import SearchTabs from "./CabSearch/SearchTabs";
 import { TabContent, TabPane } from "reactstrap";
-import SearchComponent from "./BannerSearch/SearchComponent";
 import { Link } from "react-router-dom";
+import FlightSearch from "./FlightSearch/FlightSearch";
+import HotelSearch from "./HotelSearch/HotelSearch";
+import CabSearch from "./CabSearch/CabSearch";
+
 
 const NewHomeBanner = () => {
+
+
+
   const [activeTab, setActiveTab] = useState("1");
   const callback = useCallback((tab) => {
     setActiveTab(tab);
   }, []);
+
+
+
+
   return (
     <section className="home_section p-0">
       <div>
@@ -36,23 +46,24 @@ const NewHomeBanner = () => {
                     >
                       <TabPane tabId="1">
                         <div className="mix-demo-classic">
-                          <SearchComponent />
+                          <CabSearch />
                         </div>
                       </TabPane>
                       <TabPane tabId="2">
                         <div className="mix-demo-flight">
-                          {/* <OutStationSearch /> */}
+                        <FlightSearch />
                         </div>
                       </TabPane>
                       <TabPane tabId="3">
                         <div className="mix-demo-flight">
-                          {/* <OutStationSearch /> */}
+                        <HotelSearch/>
                         </div>
                       </TabPane>
                       <TabPane tabId="4">{/* <CabSearch /> */}</TabPane>
                       <TabPane tabId="5">{/* <FoodSearch /> */}</TabPane>
                     </TabContent>
-                    <div className="btn-search col-2 searchButton">
+                    <div className="btn-search col-2 searchButton"
+                 >
                       <Link
                         to="/cab/listing"
                         className="btn btn-solid searchButton"

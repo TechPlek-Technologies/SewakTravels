@@ -1,19 +1,17 @@
 import TimePickerComponent from "../../../Common/TimePickerComponent";
 import DatePickerComponent from "../../../Common/DatePickerComponent";
 import { useState } from "react";
-import useAutocomplete from "../../../../Utility/Autocomplete";
+import OutstationDataState from "../../../../Hooks/OutstationDataState";
 
-const AirportSearch = ({
-  sourceInputRef,
-  destinationInputRef,
-  startDate,
-  setStartDate,
-  setSource,
-  setDestination
-}) => {
-  // END
-  useAutocomplete(sourceInputRef, setSource);
-  useAutocomplete(destinationInputRef, setDestination);
+
+const AirportSearch = () => {
+
+  const {
+    startDate,
+    setStartDate,
+    sourceInputRef,
+    destinationInputRef,
+  } = OutstationDataState();
 
   const [pickupType, setPickupType] = useState("fromAirport");
 
@@ -88,7 +86,7 @@ const AirportSearch = ({
 
       <div className="search-body col-2 search-input">
         <h6>{"Pickup date"}</h6>
-        <DatePickerComponent start={startDate} setStart={setStartDate} />
+        <DatePickerComponent startDate={new Date(startDate)} setStartDate={setStartDate} />
       </div>
 
       <div className="search-body col-2 search-input">

@@ -1,23 +1,19 @@
-import { useContext, useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { TimepickerUI } from "timepicker-ui";
-import { AppContext } from "../../Context/JourneyContext";
 
-function TimePickerComponent() {
-  const { journeyData, setJourneyData } = useContext(AppContext); // Correct the typo here
+function TimePickerComponent({ updateTimeCallback }) {
   const tmRef = useRef(null);
-  const [inputValue, setInputValue] = useState(journeyData.pickupTime || "12:00 PM"); // Set initial value from journeyData
+  const [inputValue, setInputValue] = useState("12:00 PM"); // Set initial value from journeyData
 
   const testHandler = useCallback(({ detail: { hour, minutes, type } }) => {
     const newTime = `${hour}:${minutes} ${type}`;
     setInputValue(newTime);
 
-    // Update the time in the context
-    setJourneyData((prevData) => ({
-      ...prevData,
-      pickupTime: newTime,
-    }));
-  }, [setJourneyData]);
-
+    // Update the time in the context or state
+    if (updateTimeCallback) {
+      updateTimeCallback(newTime);
+    }
+  }, [updateTimeCallback]);
 
   useEffect(() => {
     const tm = tmRef.current;

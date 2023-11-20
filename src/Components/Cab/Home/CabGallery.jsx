@@ -1,8 +1,9 @@
 import Slider from "react-slick";
 import Img from "../../Common/Img";
 import { Link } from "react-router-dom";
+import TitleComponent from "../../Common/TitleComponent";
 
-const CabOffers2 = () => {
+const CabGallery = () => {
   const offers = [
     {
       id: 1,
@@ -74,7 +75,7 @@ const CabOffers2 = () => {
   return (
     <section className={`ratio3_2 pt-0`}>
       <div className="container-fluid ">
-        {/* <TitleComponent title={"Our"} subTitle={"Offers"} span={"Offers"} titleClass={"title-3"} /> */}
+        <TitleComponent title={"Our"} subTitle={"Gallery"} span={"Gallery"} titleClass={"title-3"} />
         <div className="row">
           <div className="col p-0">
             <div className="slide-4 no-arrow">
@@ -103,4 +104,4 @@ const CabOffers2 = () => {
   );
 };
 
-export default CabOffers2;
+export default CabGallery;

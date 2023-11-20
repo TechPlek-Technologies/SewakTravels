@@ -1,6 +1,6 @@
-import SearchBox from "../../../Common/SearchBox";
+import SearchBox from "./SearchBox";
 
-const SearchComponent= () => {
+const CabSearch= () => {
     
     return (
       <div className="search-panel">
@@ -8,7 +8,6 @@ const SearchComponent= () => {
           <div className="row">
             <div className="col-xl-10 ">
               <div className="search-panel shadow" id="searchBar">
-                
                 <div className="search-section ">
                   <SearchBox />
                 </div>
@@ -20,4 +19,4 @@ const SearchComponent= () => {
       </div>
     );
   };
-  export default SearchComponent;
+  export default CabSearch;

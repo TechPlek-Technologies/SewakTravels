@@ -1,5 +1,9 @@
+import OutstationDataState from "../Hooks/OutstationDataState";
+
 // distanceCalculator.js
-const calculateDistanceAndDuration = (pickup, destination, pickupDate, selectedValue, journeyData, setJourneyData) => {
+const calculateDistanceAndDuration = (pickup, destination) => {
+  const {setTravelTime,setTotalDistance
+  } = OutstationDataState();
   try {
     const directionsService = new window.google.maps.DirectionsService();
     const request = {
@@ -20,31 +24,11 @@ const calculateDistanceAndDuration = (pickup, destination, pickupDate, selectedV
   
         const daysAndHours = duration.match(/\d+/g).map(Number);
 
-        let totalDistance=distanceNumeric;
-
+        setTotalDistance(distanceNumeric);
         
         const durationInHours = daysAndHours[0] * 24 + daysAndHours[1];
 
-        let totalTime=durationInHours
-        
-  if(selectedValue==="RoundTrip"){
-    totalDistance=parseInt(distanceNumeric)*2;
-    totalTime=parseInt(durationInHours)*2;
-  }
-        // Calculate the duration in hours
-        
-        const updatedObject = {
-          ...journeyData,
-          pickup: pickup,
-          dropoff: destination,
-          pickupDate: pickupDate,
-          tripType: selectedValue,
-          distance: totalDistance,
-          time: totalTime,
-        };
-        setJourneyData(updatedObject);
-      } else {
-        alert("Pick Valid Source and Destination");
+        setTravelTime(durationInHours)
       }
     });
   } catch (error) {
