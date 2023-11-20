@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import FlightSearch from "./FlightSearch/FlightSearch";
 import HotelSearch from "./HotelSearch/HotelSearch";
 import CabSearch from "./CabSearch/CabSearch";
+import TourSearch from "./TourSearch/TourSearch";
 
 
 const NewHomeBanner = () => {
@@ -59,14 +60,15 @@ const NewHomeBanner = () => {
                         <HotelSearch/>
                         </div>
                       </TabPane>
-                      <TabPane tabId="4">{/* <CabSearch /> */}</TabPane>
-                      <TabPane tabId="5">{/* <FoodSearch /> */}</TabPane>
+                      <TabPane tabId="4"> <div className="mix-demo-flight">
+                        <TourSearch/>
+                        </div></TabPane>
                     </TabContent>
                     <div className="btn-search col-2 searchButton"
                  >
                       <Link
                         to="/cab/listing"
-                        className="btn btn-solid searchButton"
+                        className= "btn btn-rounded color1 searchButton"
                       >
                         {"Search"}
                       </Link>

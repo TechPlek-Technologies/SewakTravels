@@ -77,7 +77,7 @@ const SearchBox = () => {
 
         {selectedValue === "Outstation One-Way" ||
         selectedValue === "Outstation Round-Trip" ? (
-            <OutStationSearch selectedValue={selectedValue}/>
+            <OutStationSearch selectedValue={selectedValue} setSelectedValue={setSelectedValue}/>
           ) : selectedValue === "Airport Transfer" ? (
           <AirportSearch />
         ) : (

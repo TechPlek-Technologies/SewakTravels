@@ -15,7 +15,7 @@ const FooterContent= () => {
               <About />
               <Location />
               <Links />
-              <Updates />
+              {/* <Updates /> */}
             </div>
           </div>
         </div>

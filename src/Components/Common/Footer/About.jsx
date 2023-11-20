@@ -5,7 +5,7 @@ const About = () => {
     window.scrollTo(0, 0);
   };
     return (
-      <div className="col-xl-2 col-md-3">
+      <div className="col-xl-3 col-md-4">
         <div className="footer-space">
           <div className="footer-title">
             <h5>{"About"}</h5>

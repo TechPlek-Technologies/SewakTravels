@@ -1,17 +1,20 @@
-const Location= () => {
-    return (
-      <div className="col-xl-3 col-md-6">
-        <div className="footer-title">
-          <h5>{"Our Location"}</h5>
-        </div>
-        <div className="footer-content">
-          <div className="footer-map">
-            <iframe title="map Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.1583091352!2d-74.11976373946229!3d40.69766374859258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1563449626439!5m2!1sen!2sin" allowFullScreen></iframe>
-          </div>
+const Location = () => {
+  return (
+    <div className="col-xl-3 col-md-6">
+      <div className="footer-title">
+        <h5>{"Our Location"}</h5>
+      </div>
+      <div className="footer-content">
+        <div className="footer-map">
+          <iframe
+            title="map Location"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sewak%20Travels,%20FF-10,%20Spanish%20Court,%20Bajghera%20Rd,%20Sector%202,%20Palam%20Vihar,%20Gurugram,%20Haryana%20122017+(sewak%20travels)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
-    );
-  };
-  
-  export default Location;
-  
+    </div>
+  );
+};
+
+export default Location;

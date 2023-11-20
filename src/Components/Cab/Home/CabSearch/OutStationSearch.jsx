@@ -2,7 +2,7 @@ import TimePickerComponent from "../../../Common/TimePickerComponent";
 import DatePickerComponent from "../../../Common/DatePickerComponent";
 import OutstationDataState from "../../../../Hooks/OutstationDataState";
 
-const OutStationSearch = ({selectedValue}) => {
+const OutStationSearch = ({selectedValue,setSelectedValue}) => {
 
   const {
     startDate,
@@ -10,7 +10,6 @@ const OutStationSearch = ({selectedValue}) => {
     setStartDate,
     setReturnDate,
     setTime,
-    setSelectedValue,
     sourceInputRef,
     destinationInputRef,
   } = OutstationDataState();

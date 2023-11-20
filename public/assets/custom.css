@@ -89,6 +89,8 @@ ul#top-tab {
 .search-section .search-box .left-part {
   margin: 0px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 input#datepicker {
   max-width: 150px ;

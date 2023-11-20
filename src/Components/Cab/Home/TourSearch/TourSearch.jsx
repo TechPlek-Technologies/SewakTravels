@@ -1,6 +1,6 @@
 import OutstationDataState from "../../../../Hooks/OutstationDataState";
 import DatePickerComponent from "../../../Common/DatePickerComponent";
-const FlightSearch = () => {
+const TourSearch = () => {
   const {
     startDate,
     returnDate,
@@ -19,7 +19,7 @@ const FlightSearch = () => {
               <input
                 type="text"
                 name="text"
-                placeholder="source"
+                placeholder="Starting From"
                 className="form-control"
                 ref={sourceInputRef}
               />
@@ -29,7 +29,7 @@ const FlightSearch = () => {
               <input
                 type="text"
                 name="text"
-                placeholder="destination"
+                placeholder="Going To"
                 className="form-control "
                 ref={destinationInputRef}
               />
@@ -59,4 +59,4 @@ const FlightSearch = () => {
   );
 };
 
-export default FlightSearch;
+export default TourSearch;
