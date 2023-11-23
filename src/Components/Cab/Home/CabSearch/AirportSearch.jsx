@@ -4,15 +4,19 @@ import { useState } from "react";
 import OutstationDataState from "../../../../Hooks/OutstationDataState";
 
 
-const AirportSearch = () => {
+const AirportSearch = ({setSource,setDestination}) => {
 
   const {
+    source,
+    destination,
     startDate,
     setStartDate,
     sourceInputRef,
     destinationInputRef,
   } = OutstationDataState();
 
+  setSource(source)
+  setDestination(destination)
   const [pickupType, setPickupType] = useState("fromAirport");
 
   const handlePickupTypeChange = (event) => {

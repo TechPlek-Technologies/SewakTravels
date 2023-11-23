@@ -14,9 +14,9 @@ const About=()=>{
         <Layout title="light_header" userBgClass="user user-light" />
         <AboutUsContent/>
         <ServicesComponent2/>
-        <OurTeamContent/>
+        {/* <OurTeamContent/> */}
         <ServiceComponent/>
-        <ChooseUs/>
+        {/* <ChooseUs/> */}
         <Testimonials/>
         <Instagram/>
         <FooterComponent/>

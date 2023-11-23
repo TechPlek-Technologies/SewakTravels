@@ -1,9 +1,85 @@
-export const carData = [
- 
+export const cabOffers = [
+
+  {
+    id: 1,
+    img: "/assets/images/hotel/gallery/1.jpg",
+    desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    price: 1100,
+    offer: "20%",
+  },
   {
     id: 2,
+    img: "/assets/images/hotel/gallery/1.jpg",
+    desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    price: 1200,
+    offer: "20%",
+  },
+  {
+    id: 3,
+    img: "/assets/images/hotel/gallery/1.jpg",
+    desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    price: 1300,
+    offer: "20%",
+  },
+  {
+    id: 4,
+    img: "/assets/images/hotel/gallery/1.jpg",
+    desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    price: 1400,
+    offer: "20%",
+  },
+  {
+    id: 5,
+    img: "/assets/images/hotel/gallery/1.jpg",
+    desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    price: 1100,
+    offer: "20%",
+  },
+  {
+    id: 6,
+    img: "/assets/images/hotel/gallery/1.jpg",
+    desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    price: 1100,
+    offer: "20%",
+  },
+  {
+    id: 7,
+    img: "/assets/images/hotel/gallery/1.jpg",
+    desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    price: 1100,
+    offer: "20%",
+  },
+  {
+    id: 8,
+    img: "/assets/images/hotel/gallery/1.jpg",
+    desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    price: 1100,
+    offer: "20%",
+  },
+  {
+    id: 9,
+    img: "/assets/images/hotel/gallery/1.jpg",
+    desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    price: 1100,
+    offer: "20%",
+  },
+  {
+    id: 10,
+    img: "/assets/images/hotel/gallery/1.jpg",
+    desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    price: 1100,
+    offer: "20%",
+  }
+  
+];
+
+
+export const carData = [
+ 
+ {
+    id: 2,
     name: "Hatchback",
-    img: "/assets/images/cab/car/6.png",
+    img: "/assets/images/cab/car/5.png",
     gridImg: "/assets/images/cab/car/13.jpg",
     sliderImg: [
       { img: "/assets/images/cab/car/13.jpg" },

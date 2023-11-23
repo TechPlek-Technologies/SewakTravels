@@ -1564,8 +1564,8 @@ section .black-layer:before {
         letter-spacing: 0.06em;
         font-weight: 600;
         line-height: 1.2; }
-      .home_section .home .home-content.mix-layout.smaller-content .search-panel .search-section .search-box .left-part .search-body {
-        padding: 30px 30px; }
+      /* .home_section .home .home-content.mix-layout.smaller-content .search-panel .search-section .search-box .left-part .search-body {
+        padding: 30px 30px; } */
       .home_section .home .home-content.mix-layout.smaller-content .search-panel .search-section.search-fixed {
         position: fixed;
         left: 0;
@@ -1817,7 +1817,7 @@ section .black-layer:before {
           top: -5px; }
         .search-section .search-box .left-part .search-body .input-group-append {
           display: none; }
-        .search-section .search-box .left-part .search-body:after {
+        /* .search-section .search-box .left-part .search-body:after {
           content: "";
           width: 1px;
           height: 40px;
@@ -1826,7 +1826,7 @@ section .black-layer:before {
           right: 0;
           top: 50%;
           -webkit-transform: translateY(-50%);
-                  transform: translateY(-50%); }
+                  transform: translateY(-50%); } */
         .search-section .search-box .left-part .search-body:last-child:after {
           display: none; }
     .search-section .search-box .right-part {
@@ -2602,7 +2602,7 @@ section .black-layer:before {
 
 .service_section .service-wrap {
   text-align: center;
-  padding: 50px 30px;
+  padding: 25px 15px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border-radius: 15px; }
@@ -5008,7 +5008,7 @@ section .black-layer:before {
     margin-left: -15px;
     margin-right: -15px; }
   .category-bg .category-block {
-    padding: 90px 50px 50px;
+    padding: 45px 25px 25px;
     background-color: white;
     border-radius: 25px;
     margin: 35px 0 10px;
@@ -5018,12 +5018,12 @@ section .black-layer:before {
     text-align: center;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
-    .category-bg .category-block .category-img {
+    /* .category-bg .category-block .category-img {
       position: absolute;
       top: -35px;
       left: 50%;
       -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
+              transform: translateX(-50%); } */
       .category-bg .category-block .category-img img {
         -webkit-animation: none;
                 animation: none;
@@ -17790,9 +17790,9 @@ body.dark {
     background-color: rgba(255, 255, 255, 0.14); }
     .dark header.light_header .menu .header-right .setting i {
       color: white; }
-  .dark header.light_header .menu .brand-logo img {
+  /* .dark header.light_header .menu .brand-logo img {
     -webkit-filter: invert(0);
-            filter: invert(0); }
+            filter: invert(0); } */
   .dark header.light_header .toggle-nav i {
     color: white; }
 
@@ -20382,18 +20382,18 @@ body.dark {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1; }
-  .arrow-classic .slick-prev,
+  /* .arrow-classic .slick-prev,
   .arrow-classic .slick-next {
-    display: none !important; }
+    display: none !important; } */
     .arrow-classic .slick-prev:before,
     .arrow-classic .slick-next:before {
       padding: 6px;
       font-size: 14px;
       border-radius: 4px; }
-  .arrow-classic .slick-prev {
+  /* .arrow-classic .slick-prev {
     left: -50px; }
   .arrow-classic .slick-next {
-    right: -45px; }
+    right: -45px; } */
   .app-section .order-cls > div:first-child {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -22132,9 +22132,9 @@ body.dark {
       padding: 7px 15px; }
     .cab-section.flight-section .cab-content .top-cls {
       display: none; }
-  .arrow-classic .slick-next,
+  /* .arrow-classic .slick-next,
   .arrow-classic .slick-prev {
-    display: none !important; }
+    display: none !important; } */
   .app-section .app-content .app-buttons a {
     padding: 6px 8px; }
   .app-section .app-content .label span {

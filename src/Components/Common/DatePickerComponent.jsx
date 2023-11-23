@@ -1,7 +1,7 @@
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const DatePickerComponent = ({startDate,setStartDate}) => {
+const DatePickerComponent = ({startDate,setStartDate,newClass}) => {
 
   // Calculate tomorrow's date
   const tomorrow = new Date();
@@ -13,8 +13,8 @@ const DatePickerComponent = ({startDate,setStartDate}) => {
       minDate={tomorrow}
       selected={startDate}
       onChange={(date) => setStartDate(new Date(date.setUTCHours(0, 0, 0, 0)))}
-      id="datepicker"
-      className="datepicker-main"
+      id={`datepicker`}
+      className={`datepicker-main ${newClass? "dateClass":""}`}
       dateFormat="dd MMMM"
       placeholderText="Select Date"
     />

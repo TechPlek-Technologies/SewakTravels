@@ -3,14 +3,13 @@ import RentalSearch from "./RentalSearch";
 import OutstationDataState from "../../../../Hooks/OutstationDataState";
 import OutStationSearch from "./OutStationSearch";
 
-const SearchBox = () => {
+const SearchBox = ({setSource1,setDestination1}) => {
   const { selectedValue,setSelectedValue} = OutstationDataState();
 
   const handleRadioChange=(event)=>{
     setSelectedValue(event.target.value)
   }
 
-  console.log("Rendering with selectedValue:", selectedValue);
 
 
   return (
@@ -77,11 +76,11 @@ const SearchBox = () => {
 
         {selectedValue === "Outstation One-Way" ||
         selectedValue === "Outstation Round-Trip" ? (
-            <OutStationSearch selectedValue={selectedValue} setSelectedValue={setSelectedValue}/>
+            <OutStationSearch setSource={setSource1} setDestination={setDestination1} selectedValue={selectedValue} setSelectedValue={setSelectedValue}/>
           ) : selectedValue === "Airport Transfer" ? (
-          <AirportSearch />
+          <AirportSearch setSource={setSource1} setDestination={setDestination1}/>
         ) : (
-          <RentalSearch />
+          <RentalSearch setSource={setSource1} setDestination={setDestination1} />
         )}
       </div>
     </>

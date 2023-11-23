@@ -2,9 +2,11 @@ import TimePickerComponent from "../../../Common/TimePickerComponent";
 import DatePickerComponent from "../../../Common/DatePickerComponent";
 import OutstationDataState from "../../../../Hooks/OutstationDataState";
 
-const OutStationSearch = ({selectedValue,setSelectedValue}) => {
+const OutStationSearch = ({setSource,setDestination,selectedValue,setSelectedValue}) => {
 
   const {
+    source,
+    destination,
     startDate,
     returnDate,
     setStartDate,
@@ -13,18 +15,26 @@ const OutStationSearch = ({selectedValue,setSelectedValue}) => {
     sourceInputRef,
     destinationInputRef,
   } = OutstationDataState();
-  console.log("Rendering with selectedValue:", selectedValue);
 
+  console.log("Rendering with selectedValue:", selectedValue);
+  console.log("source:", source);
+  setSource(source)
+  console.log("destination:", destination);
+  setDestination(destination)
+  const additionalClass = selectedValue === 'Outstation Round-Trip' ? 'sixColumnSearch' : '';
+
+ 
   return (
-    <div className="left-part row">
+   <div className={`left-part row ${additionalClass}`}>
       <div className="search-body title-hotel col-2">
         <h6>{"From"}</h6>
 
         <input
           type="text"
           name="outstationSource"
-          placeholder="source"
+          placeholder="Source"
           className="form-control"
+          id="outstationSourceField"
           ref={sourceInputRef}
         />
       </div>
@@ -34,7 +44,7 @@ const OutStationSearch = ({selectedValue,setSelectedValue}) => {
 
           type="text"
           name="outStationDestination"
-          placeholder="destination"
+          placeholder="Destination"
           className="form-control "
           ref={destinationInputRef}
         />
@@ -54,18 +64,19 @@ const OutStationSearch = ({selectedValue,setSelectedValue}) => {
           <DatePickerComponent startDate={new Date(returnDate)} setStartDate={setReturnDate} />
         ) : (
           <h6 onClick={() => setSelectedValue("Outstation Round-Trip")}>
-            Tap to add a return date
+            click to add
           </h6>
         )}
+       
       </div>
-      {/* {
+      {
         selectedValue==="Outstation Round-Trip"?(
           <div className="search-body col-2 search-input">
         <h6>{"Drop Time"}</h6>
         <TimePickerComponent />
       </div>
         ):null
-      } */}
+      }
     </div>
   );
 };

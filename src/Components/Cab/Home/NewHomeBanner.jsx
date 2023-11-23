@@ -6,19 +6,46 @@ import FlightSearch from "./FlightSearch/FlightSearch";
 import HotelSearch from "./HotelSearch/HotelSearch";
 import CabSearch from "./CabSearch/CabSearch";
 import TourSearch from "./TourSearch/TourSearch";
-
+import OutstationDataState from "../../../Hooks/OutstationDataState";
+import { useContext } from "react";
+import { AppContext } from "../../../Context/JourneyContext";
 
 const NewHomeBanner = () => {
+  const {
+    selectedValue,
+    source,
+    destination,
+    startDate,
+    startTime,
+    returnDate,
+    returnTime,
+  } = OutstationDataState();
+  console.log("source:", source)
 
-
-
+  const [source1, setSource1] = useState(source);
+  const [destination1, setDestination1] = useState(destination);
+  const { journeyData, setJourneyData } = useContext(AppContext);
   const [activeTab, setActiveTab] = useState("1");
   const callback = useCallback((tab) => {
     setActiveTab(tab);
   }, []);
 
+  const handleSearch = () => {
+    // Modify the state using the setJourneyData function
+    setJourneyData({
+      selectedValue,
+      source1,
+      destination1,
+      startDate,
+      startTime,
+      returnDate,
+      returnTime,
+    });
 
+    console.log("journeyData:", journeyData)
+  };
 
+  const isButtonDisabled = source1 === "" || destination1 === "";
 
   return (
     <section className="home_section p-0">
@@ -36,9 +63,7 @@ const NewHomeBanner = () => {
                 <div className="home-content mix-layout smaller-content">
                   <div className="bg-transparent">
                     <h1>Where Do You Want Go ?</h1>
-                    <h3>
-                      Experience world class services trip in Japan featured
-                    </h3>
+                    <h3>Experience world class services trip in India</h3>
                     <SearchTabs callbackActive={callback} />
                     <TabContent
                       activeTab={activeTab}
@@ -47,28 +72,42 @@ const NewHomeBanner = () => {
                     >
                       <TabPane tabId="1">
                         <div className="mix-demo-classic">
-                          <CabSearch />
+                          <CabSearch
+                            setSource1={setSource1}
+                            setDestination1={setDestination1}
+                          />
                         </div>
                       </TabPane>
                       <TabPane tabId="2">
                         <div className="mix-demo-flight">
-                        <FlightSearch />
+                          <FlightSearch />
                         </div>
                       </TabPane>
                       <TabPane tabId="3">
                         <div className="mix-demo-flight">
-                        <HotelSearch/>
+                          <HotelSearch />
                         </div>
                       </TabPane>
-                      <TabPane tabId="4"> <div className="mix-demo-flight">
-                        <TourSearch/>
-                        </div></TabPane>
+                      <TabPane tabId="4">
+                        {" "}
+                        <div className="mix-demo-flight">
+                          <TourSearch />
+                        </div>
+                      </TabPane>
                     </TabContent>
-                    <div className="btn-search col-2 searchButton"
-                 >
+                    <div className="btn-search col-2 searchButton">
                       <Link
-                        to="/cab/listing"
-                        className= "btn btn-rounded color1 searchButton"
+                        to={
+                          isButtonDisabled
+                            ? "/" // Link to a placeholder if the button is disabled
+                            : `/cab/listing/${encodeURIComponent(
+                                source1
+                              )}/${encodeURIComponent(destination1)}`
+                        }
+                        className={`btn btn-rounded color1 searchButton ${
+                          isButtonDisabled ? "disabled" : ""
+                        }`}
+                        onClick={isButtonDisabled ? "" : handleSearch}
                       >
                         {"Search"}
                       </Link>

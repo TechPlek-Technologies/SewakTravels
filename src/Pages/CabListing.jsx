@@ -10,7 +10,7 @@ function CabListing(){
     return(
         <>
         <Layout title="light_header"/>
-        <ListSearch />
+        <ListSearch/>
         <ListingView/>
         <FooterComponent/>
       </>

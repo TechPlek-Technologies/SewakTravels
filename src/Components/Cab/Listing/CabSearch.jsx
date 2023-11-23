@@ -22,7 +22,7 @@ const CabSearch = ({
   // console.log("jouenryData:"+ journeyData)
 
   const [selectedValue, setSelectedValue] = useState(
-    journeyData?.tripType || "One Way"
+    journeyData.selectedValue
   );
 
   const handleTripTypeChange = (e) => {
@@ -59,8 +59,6 @@ const CabSearch = ({
               
                 <select
                   className="form-control open-select"
-                  value={selectedValue}
-                  placeholder="pick up"
                   onChange={handleTripTypeChange}
                   style={{width:"180px"}}
                 >
@@ -86,7 +84,7 @@ const CabSearch = ({
                 type="text"
                 className="form-control open-select"
                 id="exampleInputEmail1"
-                defaultValue={journeyData?.pickup}
+                defaultValue={pickup}
                 placeholder="Source"
                 ref={fromInputRef}
                 required
@@ -104,7 +102,7 @@ const CabSearch = ({
               <input
                 type="text"
                 className="form-control open-select"
-                defaultValue={journeyData?.dropoff}
+                defaultValue={destination}
                 placeholder="Destination"
                 ref={toInputRef}
               />
@@ -119,7 +117,7 @@ const CabSearch = ({
             <div className="form-group">
               <label className="font-xs-white">Pickup Date</label>
               <div className="input-group customdate">
-                <DatePickerComponent />
+                <DatePickerComponent  newClass={true} />
               </div>
             </div>
           </div>
@@ -127,7 +125,7 @@ const CabSearch = ({
             <div className="form-group">
               <label className="font-xs-white">Return Date</label>
               <div className="input-group customdate">
-                <DatePickerComponent />
+                <DatePickerComponent  newClass={true} />
               </div>
             </div>
           </div>

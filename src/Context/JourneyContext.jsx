@@ -2,22 +2,28 @@ import React, { useState, createContext } from "react";
 
 export const AppContext = createContext();
 const { Provider } = AppContext;
-
+ 
 export default function ApplicationContextProvider(props) {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
 
-  const initialData = {
-    tripType: "",
-    pickup: "",
-    dropoff: "",
-    pickupDate: tomorrow,
-    pickupTime: "",
-    distance:"",
-    time:"",
-  };
+  const dayAfterTomorrow=new Date()
+  dayAfterTomorrow.setDate(tomorrow.getDate() + 3);
 
-  const [journeyData, setJourneyData] = useState(initialData);
+  const initialState={
+    TabSelection:"",
+    selectedValue:"",
+    source:"",
+    destination:"",
+    startDate:tomorrow,
+    startTime:"",
+    returnDate:dayAfterTomorrow,
+    returnTime:"",
+    travelDistance:"",
+    travelTime:""
+  }
+
+  const [journeyData, setJourneyData] = useState(initialState);
 
 
   return (

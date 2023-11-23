@@ -13,7 +13,40 @@ const FlightSearch = () => {
     <div className="search-panel">
       <div className="search-section">
         <div className="search-box">
-          <div className="left-part">
+        <div className="journeyType ">
+          <div>
+            <input
+              id="radio-1"
+              type="radio"
+              name="journeyType"
+              value="One-Way"
+              // onChange={handleRadioChange}
+              // checked={selectedValue === "One-Way"}
+            />
+            <label htmlFor="radio-1" className="radio-label">
+             One-Way
+            </label>
+          </div>
+
+          <div>
+            <input
+              id="radio-2"
+              type="radio"
+              name="journeyType"
+              // onChange={handleRadioChange}
+              // checked={selectedValue === "Round-Trip"}
+              value=" Round-Trip"
+            />
+            <label htmlFor="radio-2" className="radio-label">
+              Round-Trip
+            </label>
+          </div>
+
+        
+
+          
+        </div>
+          <div className="left-part fourColumnSearch">
             <div className="search-body title-hotel col-2">
               <h6>{"From"}</h6>
               <input
@@ -34,14 +67,14 @@ const FlightSearch = () => {
                 ref={destinationInputRef}
               />
             </div>
-            <div className="search-body">
+            <div className="search-body col-2 search-input">
               <h6>{"Departure"}</h6>
               <DatePickerComponent
                 startDate={new Date(startDate)}
                 setStartDate={setStartDate}
               />
             </div>
-            <div className="search-body">
+            <div className="search-body col-2 search-input">
               <h6>{"Return"}</h6>
               <DatePickerComponent
                 startDate={new Date(returnDate)}

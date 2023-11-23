@@ -1,3 +1,19 @@
+
+.dateClass {
+  
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
 /* 
   tab items
   
@@ -89,11 +105,27 @@ ul#top-tab {
 .search-section .search-box .left-part {
   margin: 0px;
   margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-content: start;
+  grid-template-columns: repeat(5, 1fr);
+ padding: 0.6rem;
+ min-height: max-content;
+}
+
+.sixColumnSearch {
+ 
+  grid-template-columns: repeat(6, 1fr) !important ;
+
+}
+
+.fourColumnSearch{
+  display: grid;
+  justify-content: start;
+  grid-template-columns: repeat(4, 1fr) !important;
+  /* margin-top: 1rem !important; */
 }
 input#datepicker {
-  max-width: 150px ;
+  width: inherit ;
   
 }
 .form-group input#datepicker input#exampleInputEmail1  {
@@ -113,7 +145,7 @@ input:focus #datepicker {
 .title-hotel,
 .search-input,
 .col-2 {
-  max-width: max-content;
+  max-width: 100%;
 }
 
 .search-panel .search-section .search-box .left-part .search-body h6 {
@@ -121,6 +153,9 @@ input:focus #datepicker {
   font-size: calc(12px + 3 * (100vw - 320px) / 1600) !important;
 }
 /* datepicker */
+
+
+
 
 
 .search-section .datepicker-main,
@@ -173,14 +208,18 @@ input:focus #datepicker {
   border: none !important;
 }
 
+.searchRow{
+  justify-content: center;
+}
 .journeyType {
   background: white;
   padding: 30px 30px 0px 30px;
   width: 100%;
+  height: min-content;
   display: flex;
   gap: 30px;
   border-radius: 0.5rem;
-
+  /* justify-content: center; */
   font-weight: 800;
 }
 
@@ -253,3 +292,71 @@ header .menu {
   animation: ani 1s cubic-bezier(.86,0,.07,1) infinite alternate;
 }
 
+.search-body.title-hotel.col-2,.search-body.col-2.search-input {
+  border: 1px solid #e8e8e8;
+  border-radius: 0.6rem;
+  
+}
+.search-body.title-hotel.col-2,.search-body.col-2.search-input{
+  border: 1px solid #e8e8e8;
+  border-radius: 0.6rem;
+  padding: 10px 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+/* Cab Offers */
+.category-block {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  
+  gap: 0.6rem;
+  margin: 1.5rem;
+}
+.category-block>div{
+  min-height: max-content;
+  text-align: left;
+}
+
+.caboffers h2{
+  padding-bottom: 0 !important;
+}
+.offerButton{
+  display: flex;
+  justify-content: end;
+}
+
+.slick-prev, .slick-next {
+
+  top: 52.5% !important;
+ z-index: 5;
+}
+
+/* VideoBanner */
+.video_section .video-content .bottom-section{
+  min-width: max-content;
+}
+
+/* listing search bar */
+
+form.row.m-0 {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+
+@media(max-width:1000px){
+  form.row.m-0 {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(7);
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}

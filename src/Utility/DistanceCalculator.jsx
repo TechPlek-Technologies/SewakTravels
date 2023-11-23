@@ -1,9 +1,8 @@
 import OutstationDataState from "../Hooks/OutstationDataState";
 
 // distanceCalculator.js
-const calculateDistanceAndDuration = (pickup, destination) => {
-  const {setTravelTime,setTotalDistance
-  } = OutstationDataState();
+const calculateDistanceAndDuration = (pickup, destination,setTotalDistance,setTravelTime) => {
+
   try {
     const directionsService = new window.google.maps.DirectionsService();
     const request = {

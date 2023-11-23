@@ -11,11 +11,11 @@ function ListSearch() {
 
 
   const [searchBarOpen, setSearchBarOpen] = useState(false);
-  const [pickup,setPickup]= useState(journeyData?.pickup)
-  const [destination,setDestination]= useState(journeyData?.dropoff)
+  const [pickup,setPickup]= useState(journeyData.source1)
+  const [destination,setDestination]= useState(journeyData.destination1)
 
   // Create a Date object from your pickup date string
-  const pickupDate = new Date(journeyData?.pickupDate);
+  const pickupDate = new Date(journeyData.startDate);
 
   // Get the day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
 
@@ -58,17 +58,17 @@ function ListSearch() {
         <div className="flight-search">
           <div className="responsive-detail" >
             <div className="destination">
-              <span>{journeyData?.tripType}</span>
+              <span>{journeyData.selectedValue}</span>
             </div>
             <div className="destination">
               <span>
-                {journeyData?.pickup}
+                {journeyData.source1}
               </span>
               <span>
                 <i className="fas fa-long-arrow-alt-right"></i>
               </span>
               <span>
-                {journeyData?.dropoff}
+                {journeyData.destination1}
               </span>
             </div>
             <div className="details">
@@ -79,7 +79,7 @@ function ListSearch() {
 
               <span>
                 {"Pickup Time: "}
-                {journeyData?.pickupTime || "12.00PM"}
+                {journeyData.startTime}
               </span>
             </div>
             <div className="modify-search">

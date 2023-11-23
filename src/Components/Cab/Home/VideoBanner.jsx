@@ -23,9 +23,9 @@ const VideoBanner = () => {
                     It's limited seating! <span>Hurry up!!</span>
                   </h5>
                   <h2>
-                    {"Honeymoon"} <span>$500</span>{" "}
+                    {"Manali"} <span>₹500</span>{" "}
                   </h2>
-                  <p>Special honeymoon in May, Discover Thailand for 50 Customers with Discount 30%</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolore!</p>
                   <div className='timer'>
                   <ul>
                     <li>
