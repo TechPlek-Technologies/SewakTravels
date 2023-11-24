@@ -3,10 +3,10 @@ import DatePickerComponent from "../../Common/DatePickerComponent";
 // import Img from "../../Common/Img";
 import { useContext, useState } from "react";
 import TimePickerComponent from "../../Common/TimePickerComponent";
-import { AppContext } from "../../../Context/JourneyContext";
 import { useRef } from "react";
 import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 import useAutocomplete from "../../../Utility/Autocomplete";
+import retrieveDataFromLocalStorage from "../../../Utility/RetrieveDataFromLocalStorage";
 
 const CabSearch = ({
   resClass,
@@ -17,27 +17,15 @@ const CabSearch = ({
   destination,
   pickup,
 }) => {
-  const context = useContext(AppContext);
-  const { journeyData, setJourneyData } = context;
-  // console.log("jouenryData:"+ journeyData)
+  const journeyData = retrieveDataFromLocalStorage();
 
-  const [selectedValue, setSelectedValue] = useState(
-    journeyData.selectedValue
-  );
+  const [selectedValue, setSelectedValue] = useState(journeyData.selectedValue);
 
+  console.log("sele:", selectedValue)
   const handleTripTypeChange = (e) => {
     setSelectedValue(e.target.value);
   };
-  const updateChanges = () => {
-    calculateDistanceAndDuration(
-      pickup,
-      destination,
-      journeyData?.pickupDate,
-      selectedValue,
-      journeyData,
-      setJourneyData
-    );
-  };
+  const updateChanges = () => {};
 
   const fromInputRef = useRef();
   const toInputRef = useRef();
@@ -56,19 +44,18 @@ const CabSearch = ({
           <div className="col">
             <div className="form-group">
               <label className="font-xs-white">Trip Type</label>
-              
-                <select
-                  className="form-control open-select"
-                  onChange={handleTripTypeChange}
-                  style={{width:"180px"}}
-                >
-                  <option value="Outstation One-Way"> One-Way</option>
-                  <option value="Outstation Round-Trip">Round-Trip</option>
-                  <option value="Airport Transfer">Airport Transfer</option>
-                  <option value="Hourly Rentals">Hourly Rentals</option>
-                </select>
 
-                
+              <select
+                className="form-control open-select"
+                onChange={handleTripTypeChange}
+                value={selectedValue}
+                style={{ width: "180px" }}
+              >
+                <option value="Outstation One-Way"> One-Way</option>
+                <option value="Outstation Round-Trip">Round-Trip</option>
+                <option value="Airport Transfer">Airport Transfer</option>
+                <option value="Hourly Rentals">Hourly Rentals</option>
+              </select>
 
               {/* <Img
                 src="/assets/images/icon/table-no.png"
@@ -117,7 +104,7 @@ const CabSearch = ({
             <div className="form-group">
               <label className="font-xs-white">Pickup Date</label>
               <div className="input-group customdate">
-                <DatePickerComponent  newClass={true} />
+                <DatePickerComponent startDate={new Date(journeyData.startDate)} newClass={true} />
               </div>
             </div>
           </div>
@@ -125,7 +112,7 @@ const CabSearch = ({
             <div className="form-group">
               <label className="font-xs-white">Return Date</label>
               <div className="input-group customdate">
-                <DatePickerComponent  newClass={true} />
+                <DatePickerComponent startDate={new Date(journeyData.returnDate)} newClass={true} />
               </div>
             </div>
           </div>

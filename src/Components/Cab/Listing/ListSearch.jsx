@@ -1,18 +1,22 @@
 import { useState } from "react";
 import CabSearch from "./CabSearch";
-import { useContext } from "react";
-import { AppContext } from "../../../Context/JourneyContext";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
+import retrieveDataFromLocalStorage from "../../../Utility/RetrieveDataFromLocalStorage";
 
 function ListSearch() {
 
-  const context = useContext(AppContext);
-  const { journeyData } = context;
+ const journeyData=retrieveDataFromLocalStorage();
+const location=useLocation();
+console.log(location.state)
 
 
   const [searchBarOpen, setSearchBarOpen] = useState(false);
-  const [pickup,setPickup]= useState(journeyData.source1)
-  const [destination,setDestination]= useState(journeyData.destination1)
+
+  const params= useParams();
+
+
+  const [pickup,setPickup]= useState(params.source)
+  const [destination,setDestination]= useState(params.destination)
 
   // Create a Date object from your pickup date string
   const pickupDate = new Date(journeyData.startDate);

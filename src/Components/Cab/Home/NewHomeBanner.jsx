@@ -6,46 +6,49 @@ import FlightSearch from "./FlightSearch/FlightSearch";
 import HotelSearch from "./HotelSearch/HotelSearch";
 import CabSearch from "./CabSearch/CabSearch";
 import TourSearch from "./TourSearch/TourSearch";
-import OutstationDataState from "../../../Hooks/OutstationDataState";
+import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 import { useContext } from "react";
 import { AppContext } from "../../../Context/JourneyContext";
 
 const NewHomeBanner = () => {
-  const {
-    selectedValue,
-    source,
-    destination,
-    startDate,
-    startTime,
-    returnDate,
-    returnTime,
-  } = OutstationDataState();
-  console.log("source:", source)
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const dayAfterTomorrow = new Date();
+  dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 3);
 
-  const [source1, setSource1] = useState(source);
-  const [destination1, setDestination1] = useState(destination);
-  const { journeyData, setJourneyData } = useContext(AppContext);
+  const [startDate, setStartDate] = useState(new Date(tomorrow));
+  const [returnDate, setReturnDate] = useState(new Date(dayAfterTomorrow));
+
+  const [startTime, setStartTime] = useState("12:00 PM");
+  const [returnTime, setReturnTime] = useState("12:00 PM");
+
+  const [selectedValue, setSelectedValue] = useState("Outstation One-Way");
+
+  const [source, setSource] = useState("");
+  const [destination, setDestination] = useState("");
   const [activeTab, setActiveTab] = useState("1");
   const callback = useCallback((tab) => {
     setActiveTab(tab);
   }, []);
 
+  const { journeyData, setJourneyData } = useContext(AppContext);
   const handleSearch = () => {
     // Modify the state using the setJourneyData function
-    setJourneyData({
+    console.log("sele:", selectedValue);
+    calculateDistanceAndDuration(
+      source,
+      destination,
       selectedValue,
-      source1,
-      destination1,
+      journeyData,
+      setJourneyData,
       startDate,
-      startTime,
       returnDate,
-      returnTime,
-    });
-
-    console.log("journeyData:", journeyData)
+      startTime,
+      returnTime
+    );
   };
 
-  const isButtonDisabled = source1 === "" || destination1 === "";
+  const isButtonDisabled = source === "" || destination === "";
 
   return (
     <section className="home_section p-0">
@@ -73,8 +76,14 @@ const NewHomeBanner = () => {
                       <TabPane tabId="1">
                         <div className="mix-demo-classic">
                           <CabSearch
-                            setSource1={setSource1}
-                            setDestination1={setDestination1}
+                            setSource={setSource}
+                            setDestination={setDestination}
+                            selectedValue={selectedValue}
+                            setSelectedValue={setSelectedValue}
+                            setStartDate={setStartDate}
+                            setReturnDate={setReturnDate}
+                            setStartTime={setStartTime}
+                            setReturnTime={setReturnTime}
                           />
                         </div>
                       </TabPane>
@@ -100,9 +109,12 @@ const NewHomeBanner = () => {
                         to={
                           isButtonDisabled
                             ? "/" // Link to a placeholder if the button is disabled
-                            : `/cab/listing/${encodeURIComponent(
-                                source1
-                              )}/${encodeURIComponent(destination1)}`
+                            : {
+                                pathname: `/cab/listing/${encodeURIComponent(
+                                  source
+                                )}/${encodeURIComponent(destination)}`,
+                                state: { journeyData },
+                              }
                         }
                         className={`btn btn-rounded color1 searchButton ${
                           isButtonDisabled ? "disabled" : ""

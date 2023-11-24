@@ -1,8 +1,15 @@
-import OutstationDataState from "../Hooks/OutstationDataState";
-
 // distanceCalculator.js
-const calculateDistanceAndDuration = (pickup, destination,setTotalDistance,setTravelTime) => {
-
+const calculateDistanceAndDuration = (
+  pickup,
+  destination,
+  selectedValue,
+  journeyData,
+  setJourneyData,
+  startDate,
+  returnDate,
+  startTime,
+  returnTime
+) => {
   try {
     const directionsService = new window.google.maps.DirectionsService();
     const request = {
@@ -10,24 +17,43 @@ const calculateDistanceAndDuration = (pickup, destination,setTotalDistance,setTr
       destination: destination,
       travelMode: window.google.maps.TravelMode.DRIVING,
     };
-  
+
     directionsService.route(request, (response, status) => {
       if (status === "OK") {
         const route = response.routes[0];
         const leg = route.legs[0];
         const distance = leg.distance.text;
-  
-        const distanceNumeric = parseFloat(distance.replace(/,/g, '').replace(' Km', ''));
-  
+
+        const distanceNumeric = parseFloat(
+          distance.replace(/,/g, "").replace(" Km", "")
+        );
+
         const duration = leg.duration.text;
-  
+
         const daysAndHours = duration.match(/\d+/g).map(Number);
 
-        setTotalDistance(distanceNumeric);
-        
+        let totalDistance = distanceNumeric;
+
         const durationInHours = daysAndHours[0] * 24 + daysAndHours[1];
 
-        setTravelTime(durationInHours)
+        let totalTime = durationInHours;
+
+        // Calculate the duration in hours
+
+        const updatedObject = {
+          ...journeyData,
+          selectedValue: selectedValue,
+          travelDistance: totalDistance,
+          travelTime: totalTime,
+          startDate: startDate,
+          returnDate: returnDate,
+          startTime:startTime,
+          returnTime:returnTime
+        };
+        setJourneyData(updatedObject);
+        // console.log(totalDistance,totalTime)
+      } else {
+        alert("Pick Valid Source and Destination");
       }
     });
   } catch (error) {
@@ -35,8 +61,6 @@ const calculateDistanceAndDuration = (pickup, destination,setTotalDistance,setTr
     console.error("An error occurred:", error);
     // You can also display an error message to the user, e.g., alert("An error occurred. Please try again.");
   }
-  
-  };
-  
-  export { calculateDistanceAndDuration };
-  
+};
+
+export { calculateDistanceAndDuration };

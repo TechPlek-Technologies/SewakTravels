@@ -13,7 +13,12 @@ const AirportSearch = ({setSource,setDestination}) => {
     setStartDate,
     sourceInputRef,
     destinationInputRef,
+    selectedValue
   } = OutstationDataState();
+
+ 
+
+  console.log(selectedValue)
 
   setSource(source)
   setDestination(destination)

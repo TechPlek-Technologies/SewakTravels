@@ -13,14 +13,12 @@ export default function ApplicationContextProvider(props) {
   const initialState={
     TabSelection:"",
     selectedValue:"",
-    source:"",
-    destination:"",
     startDate:tomorrow,
     startTime:"",
     returnDate:dayAfterTomorrow,
     returnTime:"",
     travelDistance:"",
-    travelTime:""
+    travelTime:"" 
   }
 
   const [journeyData, setJourneyData] = useState(initialState);

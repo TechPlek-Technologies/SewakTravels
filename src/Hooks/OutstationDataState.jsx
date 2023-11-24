@@ -64,12 +64,15 @@ const OutstationDataState = () => {
     setState((prevState) => ({ ...prevState, travelTime: time }));
   };
 
-  const setTime = (time) => {
-    setState((prevState) => ({ ...prevState, time: time }));
+  const setStartTime = (time) => {
+    setState((prevState) => ({ ...prevState, startTime: time }));
+  };
+  const setReturnTime = (time) => {
+    setState((prevState) => ({ ...prevState, returnTime: time }));
   };
 
-  const sourceInputRef = useRef();
-  const destinationInputRef = useRef();
+  const sourceInputRef = useRef(null);
+  const destinationInputRef = useRef(null);
 
   useAutocomplete(sourceInputRef, setSource);
   useAutocomplete(destinationInputRef, setDestination);
@@ -88,7 +91,8 @@ const OutstationDataState = () => {
     setDestination,
     setTotalDistance,
     setTravelTime,
-    setTime,
+    setStartTime,
+    setReturnTime,
     sourceInputRef,
     destinationInputRef,
     handleRadioChange,
