@@ -5,15 +5,15 @@ import { AppContext } from "../../Context/JourneyContext";
 import { useState } from "react";
 
 
-const Summary = ({ desiredcar,handleButtonClick,isValid }) => {
+const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount}) => {
 
   const { journeyData } = useContext(AppContext);
 
-  const pickupDate = new Date(journeyData?.pickupDate);
+  const pickupDate = new Date(journeyData?.startDate);
+  // console.log(typeof(journeyData?.travelDistance))
 
-  const pay=journeyData?.distance*desiredcar.fare;
-  
-  const [payableAmount,setpayableAmount]=useState(pay)
+  const pay=(journeyData?.travelDistance)*desiredcar.fare;
+  // console.log(pay)
 
   const dateStringConverter = (pickupDate) => {
     const newpickupDate = new Date(pickupDate);
@@ -93,7 +93,7 @@ const Summary = ({ desiredcar,handleButtonClick,isValid }) => {
               </div>
               <div className="down">
                 <h6>Pickup Time</h6>
-                <h5>{journeyData.pickupTime}</h5>
+                <h5>{journeyData.startTime}</h5>
               </div>
             </div>
             <div className="right">
@@ -109,7 +109,7 @@ const Summary = ({ desiredcar,handleButtonClick,isValid }) => {
           </div>
         </div>
         <div className="summery-section">
-          <h5 className="mb-0">{journeyData.tripType}</h5>
+          <h5 className="mb-0">{journeyData.selectedValue}</h5>
           <Link to={"/cab/listing/"} className="edit-cls">
             {"Edit"}
           </Link>
@@ -121,7 +121,7 @@ const Summary = ({ desiredcar,handleButtonClick,isValid }) => {
               <tbody>
                 <tr>
                   <td>Base price</td>
-                  <td>₹{payableAmount}</td>
+                  <td>₹{pay}</td>
                 </tr>
                 <tr>
                   <td>Driver Charges</td>

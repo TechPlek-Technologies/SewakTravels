@@ -6,10 +6,15 @@ import { carData } from "../Data/CabData";
 import { AppContext } from "../Context/JourneyContext";
 
 const Booking = () => {
+
+  
+
   const { journeyData } = useContext(AppContext);
   // const targetId = param.id;
   const desiredcar = carData.find((car) => car.id === 1);
 
+  const totalFare=journeyData?.travelDistance*desiredcar.fare;
+  console.log(totalFare)
   const initialData = {
     firstName: "",
     LastName: "",
@@ -26,6 +31,8 @@ const Booking = () => {
     paymentRemaining:0
   };
 
+  const [payableAmount,setpayableAmount]= useState(totalFare)
+
   const [paymentData, setPaymentData] = useState(initialData);
 
   const firstNameRef = useRef(null);
@@ -36,10 +43,12 @@ const Booking = () => {
 
   const [isValid, setIsValid] = useState(false);
 
+  
+
   async function displayRazorpay() {
     const options = {
       key: "rzp_test_hX6SQgVEX8tr9g",
-      amount: 100, // 2000 paise = INR 20, amount in paisa
+      amount: payableAmount*100, // 2000 paise = INR 20, amount in paisa
       name: "Merchant Name",
       description: "Purchase Description",
       image: "/your_logo.png",
@@ -113,11 +122,15 @@ const Booking = () => {
             lastNameRef={lastNameRef}
             firstNameRef={firstNameRef}
             requestRef={requestRef}
+            desiredcar={desiredcar}
+            payableAmount={payableAmount}
           />
           <Summary
             isValid={isValid}
             handleButtonClick={handleButtonClick}
             desiredcar={desiredcar}
+            payableAmount={payableAmount}
+            setpayableAmount={setpayableAmount}
           />
         </div>
       </div>

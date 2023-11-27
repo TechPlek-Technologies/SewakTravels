@@ -4,7 +4,7 @@ import useAutocomplete from "../Utility/Autocomplete";
 const tomorrow = new Date();
 tomorrow.setDate(tomorrow.getDate() + 1);
 const dayAfterTomorrow = new Date();
-dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 3);
+dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 2);
 
 const initialState = {
   startDate: new Date(tomorrow),

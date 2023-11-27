@@ -4,9 +4,8 @@ import DatePickerComponent from "../../Common/DatePickerComponent";
 import { useContext, useState } from "react";
 import TimePickerComponent from "../../Common/TimePickerComponent";
 import { useRef } from "react";
-import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 import useAutocomplete from "../../../Utility/Autocomplete";
-import retrieveDataFromLocalStorage from "../../../Utility/RetrieveDataFromLocalStorage";
+import { AppContext } from "../../../Context/JourneyContext";
 
 const CabSearch = ({
   resClass,
@@ -17,11 +16,9 @@ const CabSearch = ({
   destination,
   pickup,
 }) => {
-  const journeyData = retrieveDataFromLocalStorage();
-
+  const {journeyData} = useContext(AppContext);
+  
   const [selectedValue, setSelectedValue] = useState(journeyData.selectedValue);
-
-  console.log("sele:", selectedValue)
   const handleTripTypeChange = (e) => {
     setSelectedValue(e.target.value);
   };
@@ -104,18 +101,24 @@ const CabSearch = ({
             <div className="form-group">
               <label className="font-xs-white">Pickup Date</label>
               <div className="input-group customdate">
-                <DatePickerComponent startDate={new Date(journeyData.startDate)} newClass={true} />
+                <DatePickerComponent startDate={journeyData.startDate} newClass={true} />
               </div>
             </div>
           </div>
-          <div className="col">
+         
+         {
+          selectedValue==="Outstation Round-Trip"?
+          (
+            <div className="col">
             <div className="form-group">
               <label className="font-xs-white">Return Date</label>
               <div className="input-group customdate">
-                <DatePickerComponent startDate={new Date(journeyData.returnDate)} newClass={true} />
+                <DatePickerComponent startDate={journeyData.returnDate} newClass={true} />
               </div>
             </div>
           </div>
+          ):null
+         }
           <div id="dropdate" className="col">
             <div className="form-group">
               <label className="font-xs-white">Pickup Time</label>
@@ -126,6 +129,7 @@ const CabSearch = ({
               </div>
             </div>
           </div>
+         
           <div className="col search-col">
             <div className="search-btn">
               <Link

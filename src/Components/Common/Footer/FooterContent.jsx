@@ -2,7 +2,6 @@ import About from "./About";
 import Contact from "./Contact";
 import Links from "./Links";
 import Location from "./Location";
-import Updates from "./Updates";
 
 
 const FooterContent= () => {

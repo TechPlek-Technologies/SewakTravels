@@ -15,7 +15,7 @@ const calculateDistanceAndDuration = (
     const request = {
       origin: pickup,
       destination: destination,
-      travelMode: window.google.maps.TravelMode.DRIVING,
+      travelMode:"DRIVING",
     };
 
     directionsService.route(request, (response, status) => {
@@ -30,13 +30,10 @@ const calculateDistanceAndDuration = (
 
         const duration = leg.duration.text;
 
-        const daysAndHours = duration.match(/\d+/g).map(Number);
-
+   
         let totalDistance = distanceNumeric;
 
-        const durationInHours = daysAndHours[0] * 24 + daysAndHours[1];
 
-        let totalTime = durationInHours;
 
         // Calculate the duration in hours
 
@@ -44,14 +41,13 @@ const calculateDistanceAndDuration = (
           ...journeyData,
           selectedValue: selectedValue,
           travelDistance: totalDistance,
-          travelTime: totalTime,
+          travelTime: duration,
           startDate: startDate,
           returnDate: returnDate,
           startTime:startTime,
           returnTime:returnTime
         };
         setJourneyData(updatedObject);
-        // console.log(totalDistance,totalTime)
       } else {
         alert("Pick Valid Source and Destination");
       }

@@ -1,20 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
-import ApplicationContextProvider from './Context/JourneyContext';
-import PaymentContextProvider from './Context/PaymentContext';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import ApplicationContextProvider from "./Context/JourneyContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ApplicationContextProvider>
-   
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
-  
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </ApplicationContextProvider>
   </React.StrictMode>
 );

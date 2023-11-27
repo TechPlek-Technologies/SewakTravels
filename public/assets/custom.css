@@ -79,7 +79,7 @@ a.btn.btn-solid {
 }
 
 .home_section {
-  background: url("./img/banner/1.jpg");
+  background: url("./img/banner/home-landing.webp");
 }
 
 ul#top-tab {
@@ -360,3 +360,9 @@ form.row.m-0 {
     align-items: center;
   }
 }
+
+.flight-detail-sec.cab-detail-sec .detail-bar .detail-wrap .car-details ul li {
+
+  width: max-content;
+}
+

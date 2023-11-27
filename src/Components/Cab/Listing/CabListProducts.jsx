@@ -43,7 +43,7 @@ function CabListProducts({ data, validate }) {
                         className="img-fluid"
                         alt=""
                       />{" "}
-                      {journeyData?.totalDistance} km
+                      {journeyData?.travelDistance} km
                     </li>
                   </ul>
                   <ul>
@@ -61,7 +61,7 @@ function CabListProducts({ data, validate }) {
                         className="img-fluid"
                         alt=""
                       />{" "}
-                      {journeyData?.travelTime}Hrs
+                      {journeyData?.travelTime}
                     </li>
                   </ul>
                 </div>
@@ -69,7 +69,7 @@ function CabListProducts({ data, validate }) {
               <div className="col-md-2">
                 <div className="price">
                   <div>
-                    <h4>₹{item.fare * journeyData?.totalDistance}</h4>
+                    <h4>₹{item.fare * journeyData?.travelDistance}</h4>
                     <h6>fare/km:₹{item.fare}</h6>
                     <h6 onClick={toggleDetails} className="viewFairDetails">
                       view details

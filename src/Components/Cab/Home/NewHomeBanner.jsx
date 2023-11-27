@@ -34,7 +34,6 @@ const NewHomeBanner = () => {
   const { journeyData, setJourneyData } = useContext(AppContext);
   const handleSearch = () => {
     // Modify the state using the setJourneyData function
-    console.log("sele:", selectedValue);
     calculateDistanceAndDuration(
       source,
       destination,

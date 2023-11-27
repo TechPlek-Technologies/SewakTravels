@@ -1,60 +1,22 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import CabSearch from "./CabSearch";
-import { Link, useLocation, useParams } from "react-router-dom";
-import retrieveDataFromLocalStorage from "../../../Utility/RetrieveDataFromLocalStorage";
+import { Link, useParams } from "react-router-dom";
+import { AppContext } from "../../../Context/JourneyContext";
 
 function ListSearch() {
 
- const journeyData=retrieveDataFromLocalStorage();
-const location=useLocation();
-console.log(location.state)
 
 
   const [searchBarOpen, setSearchBarOpen] = useState(false);
 
   const params= useParams();
 
+  const {journeyData}=useContext(AppContext)
 
   const [pickup,setPickup]= useState(params.source)
   const [destination,setDestination]= useState(params.destination)
 
-  // Create a Date object from your pickup date string
-  const pickupDate = new Date(journeyData.startDate);
-
-  // Get the day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
-
-  let dayOfWeek = null;
-  if (pickupDate) {
-    dayOfWeek = pickupDate.getDay();
-  } else {
-    dayOfWeek = "week";
-  }
-
-  // Get the month (0 = January, 1 = February, ..., 11 = December)
-  const month = pickupDate.getMonth() || "mm";
-
-  // Get the date (day of the month)
-  const date = pickupDate.getDate() || "DD";
-
-  // Get the year
-  const year = pickupDate.getFullYear() || "YYYY";
-
-  // Convert the numerical values to human-readable strings
-  const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
+  
 
   return (
     <div className="bg-inner small-section pb-0">
@@ -66,26 +28,16 @@ console.log(location.state)
             </div>
             <div className="destination">
               <span>
-                {journeyData.source1}
+                {pickup}
               </span>
               <span>
                 <i className="fas fa-long-arrow-alt-right"></i>
               </span>
               <span>
-                {journeyData.destination1}
+                {destination}
               </span>
             </div>
-            <div className="details">
-              <span>
-                {daysOfWeek[dayOfWeek]}, {date} {months[month]} {year}
-              </span>
-              <span className="divider">|</span>
-
-              <span>
-                {"Pickup Time: "}
-                {journeyData.startTime}
-              </span>
-            </div>
+        
             <div className="modify-search">
               <Link
                 to={"#"}

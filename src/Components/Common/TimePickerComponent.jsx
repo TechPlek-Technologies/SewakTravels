@@ -1,22 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { TimepickerUI } from "timepicker-ui";
-import OutstationDataState from "../../Hooks/OutstationDataState";
 
 function TimePickerComponent({ updateTimeCallback }) {
   const tmRef = useRef(null);
   const [inputValue, setInputValue] = useState("12:00 PM"); // Set initial value from journeyData
 
-  const {
-    setStartTime,
-    destination,
-    startDate,
-    returnDate,
-    setStartDate,
-    setReturnDate,
-    setTime,
-    sourceInputRef,
-    destinationInputRef,
-  } = OutstationDataState();
+
   const testHandler = useCallback(({ detail: { hour, minutes, type } }) => {
     const newTime = `${hour}:${minutes} ${type}`;
     setInputValue(newTime);

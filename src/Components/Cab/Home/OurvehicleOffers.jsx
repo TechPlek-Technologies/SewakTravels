@@ -45,7 +45,7 @@ const OurVehicleOffers = () => {
   return (
     <BackgroundSection
       titleClass={"section-b-space dark-cls category-bg"}
-      img={"/assets/images/cab/grey-bg.jpg"}
+      // img={"/assets/images/cab/grey-bg.jpg"}
       imgWidth={0}
       imgHeight={0}
       position={""}
@@ -69,17 +69,20 @@ const OurVehicleOffers = () => {
                     </div>
                     <div>
                       <h6>
-                        Now Grab up to <span>{data.offer} off</span>
+                        {data.from} <span>{data.to}</span>
                       </h6>
                       <h5>{data.desc}</h5>
                       <div className="offerButton">
-                      <Link
-                        href="/cab/booking"
-                        className="btn btn-lower btn-curve"
-                      >
-                        {"Book"} {symbol}
-                        {data.price.toFixed(0)}
-                      </Link>
+                        <Link
+                          to={`/cab/listing/${encodeURIComponent(
+                            data.fromSearch
+                          )}/${encodeURIComponent(data.toSearch)}`}
+                          className="btn btn-lower btn-curve"
+                          onClick={() => {}}
+                        >
+                          {"Book"} {symbol}
+                          {data.price.toFixed(0)}
+                        </Link>
                       </div>
                     </div>
                   </div>
