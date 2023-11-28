@@ -49,7 +49,7 @@ const InstaSlider = ({ instagramData }) => {
         <Slider {...slide6}>
           {instagramData.map((image,index) => (
             <div key={index}>
-              <Link href="/pages/portfolio/grid-2">
+              <Link to="https://www.instagram.com/sewaktravelsservice" target="_blank">
                 <div className="instagram-box">
                   <Img src={image.src} alt="" className="img-fluid bg-img" />
                   <div className="overlay">

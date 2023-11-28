@@ -11,7 +11,7 @@ const SearchBox = () => {
     <div className={`search-box `}>
       
       <div className="journeyType ">
-          <div>
+          <div className="selectBox">
             <input
               id="radio-1"
               type="radio"
@@ -25,7 +25,7 @@ const SearchBox = () => {
             </label>
           </div>
 
-          <div>
+          <div className="selectBox">
             <input
               id="radio-2"
               type="radio"

@@ -14,7 +14,7 @@ const Video= () => {
               <div className="col">
                 <div className="basic-section">
                   <h2>{"Relax And Enjoy"}</h2>
-                  <h4>{"Something Catchy"}</h4>
+                  <h4>{"Unwind and Revel in our Premium Cab Services"}</h4>
                   <div className="video-icon" onClick={toggle}>
                     <span />
                     <div className="animation-circle-inverse">

@@ -1,6 +1,6 @@
 // distanceCalculator.js
 const calculateDistanceAndDuration = (
-  pickup,
+  source,
   destination,
   selectedValue,
   journeyData,
@@ -13,7 +13,7 @@ const calculateDistanceAndDuration = (
   try {
     const directionsService = new window.google.maps.DirectionsService();
     const request = {
-      origin: pickup,
+      origin: source,
       destination: destination,
       travelMode:"DRIVING",
     };
@@ -39,6 +39,8 @@ const calculateDistanceAndDuration = (
 
         const updatedObject = {
           ...journeyData,
+          source:source,
+          destination:destination,
           selectedValue: selectedValue,
           travelDistance: totalDistance,
           travelTime: duration,

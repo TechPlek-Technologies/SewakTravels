@@ -46,7 +46,7 @@ function App() {
     { path: "/", element: <Home /> },
     { path: "/blogs", element: <ComingSoon /> },
     // {path: '/blogs/:id', element: <BlogDetails1/>},
-    { path: "/journey-details/:page?", element: <CabDetails /> },
+    { path: "/journey-details/:id", element: <CabDetails /> },
     { path: "/cab/listing/:source/:destination", element: <CabListing /> },
     { path: "/contact", element: <Contactus /> },
     { path: "/about", element: <About /> },

@@ -108,7 +108,7 @@ export const carData = [
     ],
     name: "SUV",
     category: "SUV",
-    cabType: "Ertiga",
+    cabType: "Ertiga,Innova",
     rate: "1",
     capacity: "2",
     luggage: "2 luggage",
@@ -132,7 +132,7 @@ export const carData = [
     luggage: "2 luggage",
     option: "manual",
     price: 1100,
-    fare: "25",
+    fare: 25,
   }
 ];
 

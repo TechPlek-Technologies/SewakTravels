@@ -18,10 +18,9 @@ const AirportSearch = ({setSource,setDestination}) => {
 
  
 
-  console.log(selectedValue)
 
-  setSource(source)
-  setDestination(destination)
+
+
   const [pickupType, setPickupType] = useState("fromAirport");
 
   const handlePickupTypeChange = (event) => {

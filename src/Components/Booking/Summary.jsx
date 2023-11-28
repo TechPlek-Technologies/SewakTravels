@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Img from "../Common/Img";
 import { useContext } from "react";
 import { AppContext } from "../../Context/JourneyContext";
-import { useState } from "react";
 
 
 const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount}) => {
@@ -99,11 +98,11 @@ const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount})
             <div className="right">
               <div className="up">
                 <h6>Source</h6>
-                <h5>{journeyData.pickup}</h5>
+                <h5>{journeyData.source}</h5>
               </div>
               <div className="down">
                 <h6>Destination</h6>
-                <h5>{journeyData.dropoff}</h5>
+                <h5>{journeyData.destination}</h5>
               </div>
             </div>
           </div>

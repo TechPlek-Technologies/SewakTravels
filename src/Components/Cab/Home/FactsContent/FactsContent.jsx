@@ -1,29 +1,26 @@
 import Animation from "../../../Common/Animation";
-import Img from "../../../Common/Img";
 import TitleComponent from "../../../Common/TitleComponent";
 
 const FactsContent= () => {
     const factsData = [
-        { icon: "/assets/images/icon/facts/1.png", counter: 2745, label: "happy client" },
-        { icon: "/assets/images/icon/facts/2.png", counter: 953, label: "complete tour" },
-        { icon: "/assets/images/icon/facts/3.png", counter: 450, label: "guiders" },
-        { icon: "/assets/images/icon/facts/4.png", counter: 180, label: "tour country" },
+        { icon: "/assets/images/icon/facts/1.png", counter: 2745, label: "Happy Client" },
+        { icon: "/assets/images/icon/facts/2.png", counter: 953, label: "Complete Tour" },
+        { icon: "/assets/images/icon/facts/3.png", counter: 450, label: "Guiders" },
+        { icon: "/assets/images/icon/facts/4.png", counter: 29, label: "Tour States" },
       ];
     return (
       <section className="testimonial-section  animated-section">
         <Animation />
         <div className="container">
-          <TitleComponent title={"Sewak"} subTitle={"no stories, facts only"} span={"Customer"} titleClass={"title-3"} />
+          <TitleComponent title={"Sewak"} subTitle={"no stories, facts only"} span={"Portfolio"} titleClass={"title-3"} />
          
           <div className="row">
             {factsData.map((fact, index) => (
               <div key={index} className="col-lg-3 col-6">
                 <div className="facts-box">
                   <div>
-                    <div className="img">
-                      <Img src={fact.icon} className="img-fluid" alt="" />
-                    </div>
-                    <h3 className="counter">{fact.counter}</h3>
+                    
+                    <h1 className="counter" style={{color:"#ef3f3e"}}>{fact.counter}</h1>
                     <h6>{fact.label}</h6>
                   </div>
                 </div>

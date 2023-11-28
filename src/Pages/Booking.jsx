@@ -14,7 +14,6 @@ const Booking = () => {
   const desiredcar = carData.find((car) => car.id === 1);
 
   const totalFare=journeyData?.travelDistance*desiredcar.fare;
-  console.log(totalFare)
   const initialData = {
     firstName: "",
     LastName: "",

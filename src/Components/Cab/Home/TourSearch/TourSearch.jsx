@@ -14,7 +14,7 @@ const TourSearch = () => {
       <div className="search-section">
         <div className="search-box">
         <div className="journeyType ">
-          <div>
+          <div className="selectBox">
             <input
               id="radio-1"
               type="radio"
@@ -28,7 +28,7 @@ const TourSearch = () => {
             </label>
           </div>
 
-          <div>
+          <div className="selectBox">
             <input
               id="radio-2"
               type="radio"

@@ -5,10 +5,17 @@ import { AppContext } from "../../../Context/JourneyContext";
 import { useState } from "react";
 import Popup from "./Popup";
 
-function CabListProducts({ data, validate }) {
+function CabListProducts({ data }) {
   const { journeyData } = useContext(AppContext);
   console.log("journeyData:",journeyData)
   const [showDetails, setShowDetails] = useState(false);
+
+  let travelDistance=journeyData.travelDistance;
+
+  
+  if(journeyData.selectedValue==="Outstation Round-Trip"){
+    travelDistance=travelDistance*2;
+  }
 
   const toggleDetails = () => {
     setShowDetails(!showDetails);
@@ -43,7 +50,7 @@ function CabListProducts({ data, validate }) {
                         className="img-fluid"
                         alt=""
                       />{" "}
-                      {journeyData?.travelDistance} km
+                      {travelDistance} km
                     </li>
                   </ul>
                   <ul>

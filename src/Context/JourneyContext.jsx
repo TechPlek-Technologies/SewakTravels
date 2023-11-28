@@ -12,7 +12,9 @@ export default function ApplicationContextProvider(props) {
 
   const initialState={
     TabSelection:"",
-    selectedValue:"",
+    source:"Delhi, India",
+    destination:"Chandigarh, India",
+    selectedValue:"Outstation One-Way",
     startDate:tomorrow,
     startTime:"",
     returnDate:dayAfterTomorrow,

@@ -147,7 +147,7 @@ button:focus,
 
 section,
 .section-t-space {
-  padding-top: 100px; }
+  padding-top: 20px; }
 
 .section_space {
   padding-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1920 - 320))); }
@@ -805,10 +805,10 @@ header {
       background-color: #f3f3f5; }
       header.light_header .menu .header-right .setting i {
         color: black; }
-    header.light_header .menu .brand-logo img {
+    /* header.light_header .menu .brand-logo img {
       -webkit-filter: invert(1);
               filter: invert(1);
-      width: 75%; }
+      width: 75%; } */
     header.light_header .main-navbar .nav-menu > li {
       padding-top: 20px;
       padding-bottom: 20px; }
@@ -3658,7 +3658,7 @@ section .black-layer:before {
             transform: scale(1.4); } }
 
 .video_section {
-  padding: 138px 0;
+  padding: 88px 0;
   position: relative;
   overflow: hidden; }
   .video_section .video-image {
@@ -5471,7 +5471,7 @@ section .black-layer:before {
 17. full banner section css
 ==========================*/
 .full-banner {
-  padding: 120px 0;
+  padding: 80px 0;
   position: relative;
   overflow: hidden; }
   .full-banner .banner-content {
@@ -8410,8 +8410,7 @@ section .black-layer:before {
       margin: 0 50px; }
     .search-panel .search-section .search-box .left-part .search-body {
       padding: 30px 40px;
-      -webkit-transition: all 0.5s ease;
-      transition: all 0.5s ease; }
+      }
       .search-panel .search-section .search-box .left-part .search-body:last-child:after {
         display: block; }
       .search-panel .search-section .search-box .left-part .search-body h6 {
@@ -19508,7 +19507,7 @@ body.dark {
     text-align: center; }
   section,
   .section-t-space {
-    padding-top: 90px; }
+    padding-top: 20px; }
   .section-b-space {
     padding-bottom: 90px; }
   .arrow-classic .slick-prev {
@@ -19538,7 +19537,7 @@ body.dark {
     .service-part .service-wrapper p {
       margin-bottom: 24px; }
   .testimonial-section .testimonial {
-    padding-bottom: 90px; }
+    padding-bottom: 30px; }
   .subscribe-section .input-group .btn {
     padding: 14px; }
   .about-section .about-text {
@@ -19581,7 +19580,7 @@ body.dark {
 @media (max-width: 1199px) {
   section,
   .section-t-space {
-    padding-top: 80px; }
+    padding-top: 20px; }
   .footer {
     padding-top: 100px; }
   .section-b-space {
@@ -20211,7 +20210,7 @@ body.dark {
     height: 13px; }
   section,
   .section-t-space {
-    padding-top: 60px; }
+    padding-top: 20px; }
   .section-b-space {
     padding-bottom: 60px; }
   .medium-section {
@@ -21125,7 +21124,7 @@ body.dark {
 @media (max-width: 767px) {
   section,
   .section-t-space {
-    padding-top: 50px; }
+    padding-top: 20px; }
   .section-b-space {
     padding-bottom: 50px; }
   .breadcrumb-section {
@@ -21945,7 +21944,7 @@ body.dark {
 @media (max-width: 576px) {
   section,
   .section-t-space {
-    padding-top: 40px; }
+    padding-top: 20px; }
   .section-b-space {
     padding-bottom: 40px; }
   .medium-section {
@@ -22767,7 +22766,7 @@ body.dark {
 @media (max-width: 480px) {
   section,
   .section-t-space {
-    padding-top: 30px; }
+    padding-top: 20px; }
   .section-b-space {
     padding-bottom: 30px; }
   .top-category .top_box {

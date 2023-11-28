@@ -9,12 +9,11 @@ function ListSearch() {
 
   const [searchBarOpen, setSearchBarOpen] = useState(false);
 
-  const params= useParams();
 
   const {journeyData}=useContext(AppContext)
 
-  const [pickup,setPickup]= useState(params.source)
-  const [destination,setDestination]= useState(params.destination)
+  const [pickup,setPickup]= useState(journeyData.source)
+  const [destination,setDestination]= useState(journeyData.destination)
 
   
 

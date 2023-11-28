@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Testimonials from "../../Components/Cab/Home/Testimonials/Testimonials";
 import FooterComponent from "../../Components/Common/FooterComponent";
 import ChooseUs from "../../Components/Services/Corporate/ChooseUs";
@@ -6,6 +7,10 @@ import CorporateContent from "../../Components/Services/Corporate/CorporateConte
 import Layout from "../../Layout/Layout";
 
 const Corporate=()=>{
+    useEffect(() => {
+        // Scroll to the top of the page when the component mounts
+        window.scrollTo(0, 0);
+      }, []);
     return(<>
         <Layout title="light_header" userBgClass="user user-light" />
         <CorporateContent/>

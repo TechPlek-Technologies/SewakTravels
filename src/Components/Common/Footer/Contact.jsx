@@ -28,7 +28,7 @@ const Contact = () => {
               Bajghera Rd, Sector 2, Palam Vihar, Gurugram, Haryana 122017
             </li>
             <li>
-              <i className="fas fa-phone-alt"></i>837 - 782 - 8828
+              <i className="fas fa-phone-alt"></i>+91-837-782-8828
             </li>
             <li>
               <i className="fas fa-envelope"></i> booking@sewaktravels.com

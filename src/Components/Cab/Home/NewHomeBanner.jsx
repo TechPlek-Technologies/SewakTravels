@@ -24,13 +24,14 @@ const NewHomeBanner = () => {
 
   const [selectedValue, setSelectedValue] = useState("Outstation One-Way");
 
-  const [source, setSource] = useState("");
-  const [destination, setDestination] = useState("");
+  const [source, setSource] = useState("Delhi, India");
+  const [destination, setDestination] = useState("Chandigarh, India");
   const [activeTab, setActiveTab] = useState("1");
   const callback = useCallback((tab) => {
     setActiveTab(tab);
   }, []);
 
+  console.log(selectedValue)
   const { journeyData, setJourneyData } = useContext(AppContext);
   const handleSearch = () => {
     // Modify the state using the setJourneyData function
@@ -50,7 +51,7 @@ const NewHomeBanner = () => {
   const isButtonDisabled = source === "" || destination === "";
 
   return (
-    <section className="home_section p-0">
+    <section className="home_section slide-1 p-0">
       <div>
         <div
           className="home home-mobile"
@@ -59,6 +60,15 @@ const NewHomeBanner = () => {
           data-vide-bg="/assets/video/city.mp4"
           data-vide-options="position: 0% 50%, loop: true"
         >
+          <video
+            width="100%"
+            height="100%"
+            controls={false}
+            autoPlay
+            className="video-mixed"
+          >
+            <source src="/assets/video/city.mp4" type="video/mp4" />
+          </video>
           <div className="container custom-container mix-layout-section">
             <div className="row">
               <div className="col-xl-10 m-auto">
@@ -75,11 +85,15 @@ const NewHomeBanner = () => {
                       <TabPane tabId="1">
                         <div className="mix-demo-classic">
                           <CabSearch
+                            source={source}
+                            destination={destination}
                             setSource={setSource}
                             setDestination={setDestination}
                             selectedValue={selectedValue}
                             setSelectedValue={setSelectedValue}
+                            startDate={startDate}
                             setStartDate={setStartDate}
+                            returnDate={returnDate}
                             setReturnDate={setReturnDate}
                             setStartTime={setStartTime}
                             setReturnTime={setReturnTime}
@@ -88,7 +102,10 @@ const NewHomeBanner = () => {
                       </TabPane>
                       <TabPane tabId="2">
                         <div className="mix-demo-flight">
-                          <FlightSearch />
+                          <FlightSearch
+                            selectedValue={selectedValue}
+                            setSelectedValue={setSelectedValue}
+                          />
                         </div>
                       </TabPane>
                       <TabPane tabId="3">

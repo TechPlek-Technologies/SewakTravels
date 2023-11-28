@@ -22,16 +22,8 @@ const BannerContent = () => {
         <h2>
           {"Discount"} <span>20-30%</span>
         </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolorum mollitia obcaecati exercitationem magnam eum quidem vel eveniet nesciunt excepturi officia, harum repellat facere! Quae aut dicta reiciendis necessitatibus autem.
-        </p>
-        <h2 className="price">
-          
-            <del>
-              { "₹"}
-              {( 600).toFixed(0)}
-            </del>
-           {"   ₹"}{(420).toFixed(0)}
-        </h2>
+        
+       
         <div className="bottom-section">
           <Link href="/tour/booking/booking-page" className="btn btn-rounded btn-sm color1">
             {"Buy Now"}

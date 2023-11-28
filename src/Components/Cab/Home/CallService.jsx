@@ -19,7 +19,8 @@ const CallService=() => {
       <section className="section-b-space animated-section about-section">
         <CabAnimation />
         <div className="container">
-          <TitleComponent titleClass="title-1" title={"Best"} subTitle={"Emergency Call"} />
+          <TitleComponent title={"new"} subTitle={"Emergency Call"} span={"Service"} titleClass={"title-3"} />
+         
           <div className="row">
             <div className="col-lg-7">
               <div className="image-section">

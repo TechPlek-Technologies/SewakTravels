@@ -20,12 +20,11 @@ const VideoBanner = () => {
               <div className="video-content">
                 <div>
                   <h5>
-                    It's limited seating! <span>Hurry up!!</span>
+                    Limited time offer <span>Hurry up!!</span>
                   </h5>
                   <h2>
-                    {"Manali"} <span>₹500</span>{" "}
+                    {"Delhi to Manali"} 
                   </h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolore!</p>
                   <div className='timer'>
                   <ul>
                     <li>
@@ -43,12 +42,12 @@ const VideoBanner = () => {
                   </ul>
                 </div>
                   <div className="bottom-section">
-                    <Link href="/tour/booking/booking-page"><Button btnClass="btn btn-rounded btn-sm color1" name={`${"BookNow"} !!`} /></Link>
+                    <Link href="/tour/booking/booking-page"><Button btnClass="btn btn-rounded btn-sm color1" name={`${"Book Now"} !!`} /></Link>
                     <div className="info-btn">
                       <h6>7 days &nbsp; | &nbsp; 8 nights</h6>
                     </div>
                     <div className="info-btn red-info">
-                      <h6>2 person</h6>
+                      <h6>4 person</h6>
                     </div>
                   </div>
                 </div>

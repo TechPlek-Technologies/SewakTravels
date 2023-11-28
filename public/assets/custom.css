@@ -78,9 +78,7 @@ a.btn.btn-solid {
   text-align: center;
 }
 
-.home_section {
-  background: url("./img/banner/home-landing.webp");
-}
+
 
 ul#top-tab {
   display: flex;
@@ -93,7 +91,7 @@ ul#top-tab {
 .mix-pills.nav-pills .nav-link {
   color: black;
   background: white;
-  margin-left: 5px;
+  /* margin-left: 5px; */
   /* width:25% */
 }
 
@@ -239,11 +237,12 @@ input:focus #datepicker {
 .searchButton {
   margin: auto;
   margin-top: -10px;
+  width: 300px;
+  /* height: 100px; */
+  font-size: larger;
 }
 
-a.btn.btn-solid.searchButton {
-  width: 200px !important;
-}
+
 
 
 
@@ -297,12 +296,16 @@ header .menu {
   border-radius: 0.6rem;
   
 }
+.search-body.title-hotel.col-2.hoverbox:hover,
+.search-body.col-2.search-input:hover,
+.search-body.title-hotel.col-2:hover{
+  border: 3px solid #000000;
+  
+}
 .search-body.title-hotel.col-2,.search-body.col-2.search-input{
   border: 1px solid #e8e8e8;
   border-radius: 0.6rem;
   padding: 10px 20px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 
@@ -366,3 +369,71 @@ form.row.m-0 {
   width: max-content;
 }
 
+.search-panel .search-section .search-box .left-part .search-body{
+  padding: 15px 30px 
+}
+.search-body:hover
+{
+
+}
+
+ul#top-tab {
+  width: fit-content;
+  margin: auto;
+  background: white;
+  border-top-right-radius: .8rem;
+  border-top-left-radius:.8rem;
+}
+.activetab{
+  /* -webkit-filter: invert(4); */
+  /* filter: invert(1); */
+}
+/* .title-3{
+  display: inline-block;
+} */
+.packageButton{
+  margin-top: 10px;
+}
+
+.nav-link >h6{
+  margin-top: 10px;
+}
+
+li.nav-item {
+  width: 120px;
+}
+.selectBox{
+  /* border: 1px solid; */
+  padding: 8px 8px 0 8px;
+  border-radius: 2rem;
+  /* background-color: #ef3e3e1c; */
+}
+.selectBox:hover{
+  scale:1.1;
+}
+.additionalClass {
+  /* Add your custom styles for the checked state here */
+  background-color: #ef3e3e1c; /* Change this to your desired background color */
+  /* Add any other styles you want to apply */
+}
+
+.additionalClass>input[type='radio'] {
+  accent-color: #ef3f3e;
+}
+
+.video-mixed {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 576px){
+.home_section .home .home-content.mix-layout.smaller-content .search-panel .search-section .search-box .left-part .search-body {
+    padding: 6px 6px;
+    width: fit-content;
+    margin: 0;
+}
+}

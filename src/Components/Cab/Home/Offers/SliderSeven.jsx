@@ -42,8 +42,8 @@ const SliderSeven = ({ slideData }) => {
                 to={`/cab/listing/${encodeURIComponent(
                   data.source
                 )}/${encodeURIComponent(data.destination)}`}
-                onClick={()=>{
-                  searchBetweenPlaces(data.source,data.destination)
+                onClick={() => {
+                  searchBetweenPlaces(data.source, data.destination);
                 }}
               >
                 <Img
@@ -52,7 +52,6 @@ const SliderSeven = ({ slideData }) => {
                   className="img-fluid  "
                   width={230}
                   height={230}
-                  
                 />
               </Link>
               <div className="side-effect"></div>
@@ -64,35 +63,29 @@ const SliderSeven = ({ slideData }) => {
                     to={`/cab/listing/${encodeURIComponent(
                       data.source
                     )}/${encodeURIComponent(data.destination)}`}
-                    onClick={()=>{
-                      searchBetweenPlaces(data.source,data.destination)
+                    onClick={() => {
+                      searchBetweenPlaces(data.source, data.destination);
                     }}
                   >
                     <h3>{data.title}</h3>
                   </Link>
-                  <h6>{data.badge}</h6>
-                  {data.classIcon && (
-                    <div className="like-cls">
-                      <i className="fas fa-heart">
-                        <span className="effect"></span>
-                      </i>
-                    </div>
-                  )}
                 </div>
                 <Rating />
-                <p>{data.desc}</p>
                 <div className="bottom">
-                  <h3>
-                    <del>
-                      {"₹"}
-                      {data.price.toFixed(0)}
-                    </del>
-                    {"₹"}
-                    {data.disc.toFixed(0)}
-                  </h3>
                   <h6 className="coupon-code">
                     Coupon code: <span>{data.couponCode}</span>
                   </h6>
+                  <Link
+                    className={`btn btn-rounded color1 packageButton`}
+                    to={`/cab/listing/${encodeURIComponent(
+                      data.source
+                    )}/${encodeURIComponent(data.destination)}`}
+                    onClick={() => {
+                      searchBetweenPlaces(data.source, data.destination);
+                    }}
+                  >
+                    {"Book Now"}
+                  </Link>
                 </div>
               </div>
             </div>
