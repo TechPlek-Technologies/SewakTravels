@@ -44,7 +44,7 @@ function SearchTabs({ callbackActive, svg }) {
           >
             {
               <img
-              className={activeTab === "2" ? "activetab" : ""}
+              className={activeTab === "2" ? "active" : ""}
               src="assets/svg/flght2.svg"
               height={"25px"}
               />

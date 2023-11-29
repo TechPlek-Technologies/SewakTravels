@@ -470,6 +470,11 @@ li.nav-item {
 
     grid-template-rows: repeat(6, 1fr) !important;
 }
+.fourColumnSearch{
+  display: grid !important;
+
+  grid-template-rows: repeat(4, 1fr) !important;
+}
 
 .left-part.row>div{
  width: 100% !important;
@@ -491,6 +496,26 @@ li.nav-item {
  }
  .react-datepicker__input-container>input{
   text-align: center !important;
+ }
+
+ .journeyType {
+  min-height: fit-content;
+ }
+
+ .selectBox>.radio-label {
+  font-size: x-small;
+ }
+
+ #top-tab{
+  display: none !important;
+ }
+ .bg-transparent{
+  margin-top: 90px !important;
+ }
+
+ .home_section .home {
+
+  height: 100vh !important;
  }
 
 }
