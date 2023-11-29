@@ -18,9 +18,10 @@ import Outstation from "./Pages/Services/Outstation";
 import Airport from "./Pages/Services/Airport";
 import Corporate from "./Pages/Services/Corporate";
 import { useState } from "react";
+import PaymentSuccess from "./Pages/Payment";
+import Payment from "./Pages/Payment";
 
 function App() {
-
   // const tomorrow = new Date();
   // tomorrow.setDate(tomorrow.getDate() + 1);
   // const dayAfterTomorrow = new Date();
@@ -40,8 +41,6 @@ function App() {
 
   // const [airportSelection, setAirportSelection] = useState("");
 
- 
-
   const routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/blogs", element: <ComingSoon /> },
@@ -58,6 +57,7 @@ function App() {
     { path: "/privacy-policy", element: <PrivacyPolicy /> },
     { path: "/terms-and-conditon", element: <TermsAndCondition /> },
     { path: "/refund-policy", element: <RefundPolicy /> },
+    { path: "/payment/:transactionId?", element: <Payment /> },
     { path: "/*", element: <NotFoundPage /> },
   ]);
 

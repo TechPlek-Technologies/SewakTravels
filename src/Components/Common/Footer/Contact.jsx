@@ -9,7 +9,7 @@ const Contact = () => {
           <div className="footer-logo">
             <a href="/">
               <img
-                src="/assets/images/icon/footer-logo.png"
+                src="/assets/img/footerLogo.png"
                 alt=""
                 className="img-fluid"
                 width={139}

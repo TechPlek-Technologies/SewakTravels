@@ -50,9 +50,9 @@ const Booking = ({desiredcar}) => {
       amount: payableAmount*100, // 2000 paise = INR 20, amount in paisa
       name: "Merchant Name",
       description: "Purchase Description",
-      image: "/your_logo.png",
+      image: "/assets/img/logo.png",
       handler: function (response) {
-        alert(response.razorpay_payment_id);
+        window.location.href = `/payment/${response.razorpay_payment_id}`
       },
       prefill: {
         name: "Harshil Mathur",
