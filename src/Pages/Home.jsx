@@ -34,7 +34,7 @@ function Home() {
       <Video />
       {/* <CallService /> */}
       <CallService />
-      <Instagram />
+      {/* <Instagram /> */}
       <FooterComponent />
     </>
   );

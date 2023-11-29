@@ -5,19 +5,19 @@ import TitleComponent from "../../Common/TitleComponent";
 const AirportContent = ({ side }) => {
     const imageData = [
         {
-            src: "/assets/images/inner-pages/about/1.jpg",
+            src: "/assets/img/about/1.jpg",
             title: "OutStation",
             subTitle: "water fall",
             path:"/service/outstation"
           },
           {
-            src: "/assets/images/inner-pages/about/2.jpg",
+            src: "/assets/img/about/2.jpg",
             title: "Airport",
             subTitle: "paragliding",
             path:"/service/airport"
           },
           {
-            src: "/assets/images/inner-pages/about/3.jpg",
+            src: "/assets/img/about/3.jpg",
             title: "Corporate",
             subTitle: "River Front",
             path:"/service/corporate"

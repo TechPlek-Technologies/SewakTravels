@@ -1,7 +1,7 @@
 export const packageData = [
   {
     id: 1,
-    img: "/assets/images/tour/tour/4.jpg",
+    img: "/assets/img/offers/chandigarh.jpg",
     title: "Delhi to Chandigarh",
     source: "Delhi, India",
     destination: "Chandigarh, India",
@@ -13,7 +13,7 @@ export const packageData = [
   },
   {
     id: 2,
-    img: "/assets/images/tour/tour/5.jpg",
+    img: "/assets/img/offers/haridwar.jpg",
     source: "Delhi, India",
     destination: "Haridwar, Uttarakhand, India",
     title: "Delhi to Haridwar",
@@ -25,7 +25,7 @@ export const packageData = [
   },
   {
     id: 3,
-    img: "/assets/images/tour/tour/6.jpg",
+    img: "/assets/img/offers/dehradun.jpg",
     source: "Delhi, India",
     destination: "Dehradun, Uttarakhand, India",
     title: "Delhi to Dehradun",
@@ -37,7 +37,7 @@ export const packageData = [
   },
   {
     id: 4,
-    img: "/assets/images/tour/tour/5.jpg",
+    img: "/assets/img/offers/agra.jpg",
     source: "Delhi, India",
     destination: "Agra, Uttar Pradesh, India",
     title: "Delhi to Agra",
@@ -49,7 +49,7 @@ export const packageData = [
   },
   {
     id: 5,
-    img: "/assets/images/tour/tour/5.jpg",
+    img: "/assets/img/offers/jaipur.jpg",
     source: "Delhi, India",
     destination: "Jaipur, Rajasthan, India",
     title: "Delhi to Jaipur",

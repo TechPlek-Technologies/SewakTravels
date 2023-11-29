@@ -65,7 +65,7 @@ export const carData = [
  {
     id: 2,
     name: "Hatchback",
-    img: "/assets/images/cab/car/5.png",
+    img: "/assets/img/listing/hatchback.jpg",
     gridImg: "/assets/images/cab/car/13.jpg",
     sliderImg: [
       { img: "/assets/images/cab/car/13.jpg" },
@@ -82,7 +82,7 @@ export const carData = [
   },
   {
     id: 1,
-    img: "/assets/images/cab/car/7.png",
+    img: "/assets/img/listing/sedan.jpg",
     gridImg: "/assets/images/cab/car/14.jpg",
     sliderImg: [
       { img: "/assets/images/cab/car/14.jpg" },
@@ -100,7 +100,7 @@ export const carData = [
   },
   {
     id: 3,
-    img: "/assets/images/cab/car/8.png",
+    img: "/assets/img/listing/suv.jpg",
     gridImg: "/assets/images/cab/car/15.jpg",
     sliderImg: [
       { img: "/assets/images/cab/car/15.jpg" },
@@ -118,7 +118,7 @@ export const carData = [
   },
   {
     id: 5,
-    img: "/assets/images/cab/car/9.png",
+    img: "/assets/img/listing/suv.jpg",
     gridImg: "/assets/images/cab/car/16.jpg",
     sliderImg: [
       { img: "/assets/images/cab/car/16.jpg" },

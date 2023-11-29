@@ -406,6 +406,7 @@ li.nav-item {
   /* border: 1px solid; */
   padding: 8px 8px 0 8px;
   border-radius: 2rem;
+  font-weight: 700;
   /* background-color: #ef3e3e1c; */
 }
 .selectBox:hover{
@@ -415,6 +416,7 @@ li.nav-item {
   /* Add your custom styles for the checked state here */
   background-color: #ef3e3e1c; /* Change this to your desired background color */
   /* Add any other styles you want to apply */
+  font-weight: bolder;
 }
 
 .additionalClass>input[type='radio'] {

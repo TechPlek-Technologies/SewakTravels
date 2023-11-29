@@ -1,9 +1,14 @@
 // import Breadcrumb from "../Components/Common/Breadcrumb";
+import { useEffect } from "react";
 import FooterComponent from "../Components/Common/FooterComponent";
 import ContactusContent from "../Components/Contactus/ContactUsContent";
 import Layout from "../Layout/Layout";
 
 const Contactus = () => {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Layout title="light_header" userBgClass="user user-light" />

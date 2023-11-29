@@ -21,7 +21,7 @@ const About=()=>{
         <ServiceComponent/>
         {/* <ChooseUs/> */}
         <Testimonials/>
-        <Instagram/>
+        {/* <Instagram/> */}
         <FooterComponent/>
         </>
     )
