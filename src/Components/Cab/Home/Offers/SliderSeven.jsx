@@ -75,17 +75,20 @@ const SliderSeven = ({ slideData }) => {
                   <h6 className="coupon-code">
                     Coupon code: <span>{data.couponCode}</span>
                   </h6>
-                  <Link
-                    className={`btn btn-rounded color1 packageButton`}
-                    to={`/cab/listing/${encodeURIComponent(
-                      data.source
-                    )}/${encodeURIComponent(data.destination)}`}
-                    onClick={() => {
-                      searchBetweenPlaces(data.source, data.destination);
-                    }}
-                  >
-                    {"Book Now"}
-                  </Link>
+
+                  <div className="new-line-container">
+                    <Link
+                      className={`btn btn-rounded color1 packageButton`}
+                      to={`/cab/listing/${encodeURIComponent(
+                        data.source
+                      )}/${encodeURIComponent(data.destination)}`}
+                      onClick={() => {
+                        searchBetweenPlaces(data.source, data.destination);
+                      }}
+                    >
+                      {"Book Now"}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

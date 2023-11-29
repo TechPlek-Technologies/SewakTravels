@@ -56,11 +56,7 @@ const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount})
       </h5>
     );
   };
-  const hotelData = {
-    imageSrc: '/assets/images/hotel/room/1.jpg',
-    name: 'sea view hotel',
-    location: 'Mina Road, Bur Dubai, Dubai',
-  };
+ 
   const updateAmount=(e)=>{
     if(e.target.value==="oneThirdPayment"){
       setpayableAmount(Math.ceil(pay/3));
@@ -76,7 +72,7 @@ const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount})
         <h2>{"Booking Summary"}</h2>
         <div className="hotel-section">
           <div className="hotel-img">
-            <Img src={hotelData.imageSrc} className="img-fluid" alt="" />
+            <Img src={desiredcar.img} className="img-fluid" alt="" />
           </div>
           <div className="hotel-detail">
             <h6>{desiredcar.name}</h6>
@@ -109,7 +105,9 @@ const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount})
         </div>
         <div className="summery-section">
           <h5 className="mb-0">{journeyData.selectedValue}</h5>
-          <Link to={"/cab/listing/"} className="edit-cls">
+          <Link to={`/cab/listing/${encodeURIComponent(
+                                  journeyData.source
+                                )}/${encodeURIComponent(journeyData.destination)}`} className="edit-cls">
             {"Edit"}
           </Link>
         </div>

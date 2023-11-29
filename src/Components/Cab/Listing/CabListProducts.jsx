@@ -7,7 +7,6 @@ import Popup from "./Popup";
 
 function CabListProducts({ data }) {
   const { journeyData } = useContext(AppContext);
-  console.log("journeyData:",journeyData)
   const [showDetails, setShowDetails] = useState(false);
 
   let travelDistance=journeyData.travelDistance;
@@ -89,7 +88,7 @@ function CabListProducts({ data }) {
               <div className="col-md-3">
                 <div className="book-flight">
                   
-                    <Link to={`/journey-details?id=${item.id}`}>
+                <Link to={`/journey-details/${item.id}`}>
                       <Button btnClass="btn btn-solid color1" name="book now" />
                     </Link>
                  

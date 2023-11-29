@@ -4,39 +4,38 @@ import { Link, useParams } from "react-router-dom";
 import { AppContext } from "../../../Context/JourneyContext";
 
 function ListSearch() {
-
-
-
   const [searchBarOpen, setSearchBarOpen] = useState(false);
 
+  const { journeyData } = useContext(AppContext);
 
-  const {journeyData}=useContext(AppContext)
+  const [source, setSource] = useState(journeyData.source);
+  const [destination, setDestination] = useState(journeyData.destination);
+  const [startDate, setStartDate] = useState(new Date(journeyData.startDate));
+  const [returnDate, setReturnDate] = useState(
+    new Date(journeyData.returnDate)
+  );
 
-  const [pickup,setPickup]= useState(journeyData.source)
-  const [destination,setDestination]= useState(journeyData.destination)
+  const [startTime, setStartTime] = useState(journeyData.startTime);
+  const [returnTime, setReturnTime] = useState(journeyData.returnTime);
 
-  
+  const [selectedValue, setSelectedValue] = useState(journeyData.selectedValue);
 
   return (
     <div className="bg-inner small-section pb-0">
       <div className="container">
         <div className="flight-search">
-          <div className="responsive-detail" >
+          <div className="responsive-detail">
             <div className="destination">
               <span>{journeyData.selectedValue}</span>
             </div>
             <div className="destination">
-              <span>
-                {pickup}
-              </span>
+              <span>{source}</span>
               <span>
                 <i className="fas fa-long-arrow-alt-right"></i>
               </span>
-              <span>
-                {destination}
-              </span>
+              <span>{destination}</span>
             </div>
-        
+
             <div className="modify-search">
               <Link
                 to={"#"}
@@ -49,15 +48,25 @@ function ListSearch() {
           </div>
         </div>
       </div>
-          <CabSearch
-            resClass="res-cab"
-            setSearchBarOpen={setSearchBarOpen}
-            searchBarOpen={searchBarOpen}
-            setDestination={setDestination}
-            setPickup={setPickup}
-            destination={destination}
-            pickup={pickup}
-          />
+      <CabSearch
+        resClass="res-cab"
+        setSearchBarOpen={setSearchBarOpen}
+        searchBarOpen={searchBarOpen}
+        source={source}
+        destination={destination}
+        setSource={setSource}
+        setDestination={setDestination}
+        selectedValue={selectedValue}
+        setSelectedValue={setSelectedValue}
+        startDate={startDate}
+        setStartDate={setStartDate}
+        returnDate={returnDate}
+        setReturnDate={setReturnDate}
+        setStartTime={setStartTime}
+        setReturnTime={setReturnTime}
+        startTime={startTime}
+        returnTime={returnTime}
+      />
     </div>
   );
 }

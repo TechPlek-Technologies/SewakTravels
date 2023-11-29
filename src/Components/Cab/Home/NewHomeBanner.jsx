@@ -31,7 +31,6 @@ const NewHomeBanner = () => {
     setActiveTab(tab);
   }, []);
 
-  console.log(selectedValue)
   const { journeyData, setJourneyData } = useContext(AppContext);
   const handleSearch = () => {
     // Modify the state using the setJourneyData function
@@ -74,7 +73,7 @@ const NewHomeBanner = () => {
               <div className="col-xl-10 m-auto">
                 <div className="home-content mix-layout smaller-content">
                   <div className="bg-transparent">
-                    <h1>Where Do You Want Go ?</h1>
+                    <h1>Where Do You Want to Go?</h1>
                     <h3>Experience world class services trip in India</h3>
                     <SearchTabs callbackActive={callback} />
                     <TabContent

@@ -6,28 +6,50 @@ import TimePickerComponent from "../../Common/TimePickerComponent";
 import { useRef } from "react";
 import useAutocomplete from "../../../Utility/Autocomplete";
 import { AppContext } from "../../../Context/JourneyContext";
+import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 
 const CabSearch = ({
   resClass,
   setSearchBarOpen,
   searchBarOpen,
-  setPickup,
-  setDestination,
+  source,
   destination,
-  pickup,
+  setSource,
+  setDestination,
+  selectedValue,
+  setSelectedValue,
+  startDate,
+  setStartDate,
+  returnDate,
+  setReturnDate,
+  setStartTime,
+  returnTime,
+  startTime,
 }) => {
-  const {journeyData} = useContext(AppContext);
-  
-  const [selectedValue, setSelectedValue] = useState(journeyData.selectedValue);
   const handleTripTypeChange = (e) => {
     setSelectedValue(e.target.value);
   };
-  const updateChanges = () => {};
+  const { journeyData, setJourneyData } = useContext(AppContext);
+
+  const updateChanges = () => {
+    calculateDistanceAndDuration(
+      source,
+      destination,
+      selectedValue,
+      journeyData,
+      setJourneyData, 
+      startDate,
+      returnDate,
+      startTime,
+      returnTime
+    );
+    alert("changes Updated")
+  };
 
   const fromInputRef = useRef();
   const toInputRef = useRef();
 
-  useAutocomplete(fromInputRef, setPickup);
+  useAutocomplete(fromInputRef, setSource);
   useAutocomplete(toInputRef, setDestination);
 
   return (
@@ -68,7 +90,7 @@ const CabSearch = ({
                 type="text"
                 className="form-control open-select"
                 id="exampleInputEmail1"
-                defaultValue={pickup}
+                defaultValue={source}
                 placeholder="Source"
                 ref={fromInputRef}
                 required
@@ -101,35 +123,40 @@ const CabSearch = ({
             <div className="form-group">
               <label className="font-xs-white">Pickup Date</label>
               <div className="input-group customdate">
-                <DatePickerComponent startDate={journeyData.startDate} newClass={true} />
+                <DatePickerComponent
+                  startDate={startDate}
+                  setStartDate={setStartDate}
+                  newClass={true}
+                />
               </div>
             </div>
           </div>
-         
-         {
-          selectedValue==="Outstation Round-Trip"?
-          (
+
+          {selectedValue === "Outstation Round-Trip" ? (
             <div className="col">
-            <div className="form-group">
-              <label className="font-xs-white">Return Date</label>
-              <div className="input-group customdate">
-                <DatePickerComponent startDate={journeyData.returnDate} newClass={true} />
+              <div className="form-group">
+                <label className="font-xs-white">Return Date</label>
+                <div className="input-group customdate">
+                  <DatePickerComponent
+                    startDate={returnDate}
+                    setStartDate={setReturnDate}
+                    newClass={true}
+                  />
+                </div>
               </div>
             </div>
-          </div>
-          ):null
-         }
+          ) : null}
           <div id="dropdate" className="col">
             <div className="form-group">
               <label className="font-xs-white">Pickup Time</label>
               <div className="input-group">
                 {/* <DatePickerComponent setStart={setStartDate} start={startDate} />
                  */}
-                <TimePickerComponent />
+                <TimePickerComponent updateTimeCallback={setStartTime} />
               </div>
             </div>
           </div>
-         
+
           <div className="col search-col">
             <div className="search-btn">
               <Link

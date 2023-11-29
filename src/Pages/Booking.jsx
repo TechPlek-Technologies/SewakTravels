@@ -5,13 +5,13 @@ import Animation from "../Components/Common/Animation";
 import { carData } from "../Data/CabData";
 import { AppContext } from "../Context/JourneyContext";
 
-const Booking = () => {
+const Booking = ({desiredcar}) => {
 
   
 
   const { journeyData } = useContext(AppContext);
   // const targetId = param.id;
-  const desiredcar = carData.find((car) => car.id === 1);
+
 
   const totalFare=journeyData?.travelDistance*desiredcar.fare;
   const initialData = {

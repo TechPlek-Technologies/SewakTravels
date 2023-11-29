@@ -108,6 +108,7 @@ ul#top-tab {
   grid-template-columns: repeat(5, 1fr);
  padding: 0.6rem;
  min-height: max-content;
+ min-width: min-content;
 }
 
 .sixColumnSearch {
@@ -297,10 +298,12 @@ header .menu {
   
 }
 .search-body.title-hotel.col-2.hoverbox:hover,
-.search-body.col-2.search-input:hover,
 .search-body.title-hotel.col-2:hover{
   border: 3px solid #000000;
-  
+}
+.search-body.col-2.search-input:hover{
+  outline:3px solid #000000 ;
+  z-index: 3;
 }
 .search-body.title-hotel.col-2,.search-body.col-2.search-input{
   border: 1px solid #e8e8e8;
@@ -372,10 +375,7 @@ form.row.m-0 {
 .search-panel .search-section .search-box .left-part .search-body{
   padding: 15px 30px 
 }
-.search-body:hover
-{
 
-}
 
 ul#top-tab {
   width: fit-content;
@@ -384,15 +384,10 @@ ul#top-tab {
   border-top-right-radius: .8rem;
   border-top-left-radius:.8rem;
 }
-.activetab{
-  /* -webkit-filter: invert(4); */
-  /* filter: invert(1); */
-}
-/* .title-3{
-  display: inline-block;
-} */
-.packageButton{
-  margin-top: 10px;
+
+.new-line-container {
+  display: block !important;
+  margin-top: 10px; /* Adjust the margin as needed */
 }
 
 .nav-link >h6{
@@ -422,6 +417,10 @@ li.nav-item {
 .additionalClass>input[type='radio'] {
   accent-color: #ef3f3e;
 }
+.active> svg{
+  filter: invert(1);
+  font-weight: bolder;
+}
 
 .video-mixed {
   position: absolute;
@@ -439,3 +438,13 @@ li.nav-item {
     margin: 0;
 }
 }
+
+
+
+@media (min-width: 2800px){
+.col-xl-10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}}
