@@ -1,13 +1,19 @@
+import { Link } from "react-router-dom";
+import { tabs } from "../../Data/FaqContent";
+
 const TitleComponent = ({ title, subTitle, titleClass, span, h2Class }) => {
-    return (
+  return (
+    <div className="">
       <div className={titleClass}>
-        {/* <span className="title-label">{title}</span> */}
+        {titleClass==="title-3 our-Testimonial"?"":<span className="title-label">{title}</span>}
         <h2 className={`${h2Class && h2Class}`}>
           {subTitle}
           {span && <span>{span}</span>}
         </h2>
       </div>
-    );
-  };
-  
-  export default TitleComponent;
+    
+    </div>
+  );
+};
+
+export default TitleComponent;

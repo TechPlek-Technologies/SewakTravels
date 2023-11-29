@@ -32,7 +32,7 @@ const AirportSearch = ({setSource,setDestination}) => {
       <div className="search-body title-hotel col-2">
         <h6>{"Pickup Type"}</h6>
         <select
-          style={{ width: "170px" }}
+          // style={{ width: "170px" }}
           className="form-control"
           value={pickupType}
           onChange={handlePickupTypeChange}
@@ -47,7 +47,7 @@ const AirportSearch = ({setSource,setDestination}) => {
           <div className="search-body title-hotel col-2">
             <h6>{"Airport"}</h6>
             <input
-              style={{ width: "160px" }}
+              // style={{ width: "160px" }}
               type="text"
               name="text"
               placeholder="Select Airport"

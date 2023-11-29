@@ -10,7 +10,7 @@ import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculato
 import { useContext } from "react";
 import { AppContext } from "../../../Context/JourneyContext";
 
-const NewHomeBanner = () => {
+const NewHomeBanner = ({activeTab,callback}) => {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   const dayAfterTomorrow = new Date();
@@ -26,10 +26,7 @@ const NewHomeBanner = () => {
 
   const [source, setSource] = useState("Delhi, India");
   const [destination, setDestination] = useState("Chandigarh, India");
-  const [activeTab, setActiveTab] = useState("1");
-  const callback = useCallback((tab) => {
-    setActiveTab(tab);
-  }, []);
+  
 
   const { journeyData, setJourneyData } = useContext(AppContext);
   const handleSearch = () => {
@@ -73,8 +70,7 @@ const NewHomeBanner = () => {
               <div className="col-xl-10 m-auto">
                 <div className="home-content mix-layout smaller-content">
                   <div className="bg-transparent">
-                    <h1>Where Do You Want to Go?</h1>
-                    <h3>Experience world class services trip in India</h3>
+                
                     <SearchTabs callbackActive={callback} />
                     <TabContent
                       activeTab={activeTab}

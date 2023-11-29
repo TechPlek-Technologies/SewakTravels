@@ -20,6 +20,9 @@ import Corporate from "./Pages/Services/Corporate";
 import { useState } from "react";
 import PaymentSuccess from "./Pages/Payment";
 import Payment from "./Pages/Payment";
+import Flight from "./Pages/Flight";
+import Hotel from "./Pages/Hotel";
+import Tour from "./Pages/Tour";
 
 function App() {
   // const tomorrow = new Date();
@@ -43,6 +46,9 @@ function App() {
 
   const routes = useRoutes([
     { path: "/", element: <Home /> },
+    { path: "/flight", element: <Flight /> },
+    { path: "/hotel", element: <Hotel /> },
+    { path: "/tour", element: <Tour /> },
     { path: "/blogs", element: <ComingSoon /> },
     // {path: '/blogs/:id', element: <BlogDetails1/>},
     { path: "/journey-details/:id", element: <CabDetails /> },

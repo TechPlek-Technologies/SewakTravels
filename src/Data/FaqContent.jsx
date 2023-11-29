@@ -46,36 +46,53 @@ export const tabs = [
           content:
             "Local car rental fares constitute of various components as below",
         },
+        {
+          heading: "How is the total fare/price calculated for an Airport Pick Up / Drop??",
+          content:
+            "For Airport Pick Up / Drop, we charge fixed cost for this as mentioned on our website inclusive of service tax but exclusive of parking charges.",
+        },
       ],
     },
     {
-      id: "payment",
-      label: "payment1",
+      id: "Registration Related",
+      label: "Registration Related",
       content: [
         {
-          heading: "Hello World",
+          heading: "Do I need to register to avail the service?",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "No, you are not required to register yourself for just booking a cab. But we need your contact number, pick up address and other basic details to serve you better so once you provide these details your account is created automatically and next time you can choose existing customer option.",
         },
-        {
-          heading: "Section 1.10.32 of , written by Cicero in 45 BC",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-        },
+       
       ],
     },{
-      id: "Others",
-      label: "others",
+      id: "Payments Related",
+      label: "Payments Related",
       content: [
         {
-          heading: "Hello World",
+          heading: "How do I pay for the service ?",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "You can pay an advance or full amount online (generally 10% of the estimated cost) by Net Banking, Debit / Credit card or Wallet and the rest if any you can pay directly to the driver after completion of the trip.",
         },
         {
-          heading: "Section 1.10.32 of , written by Cicero in 45 BC",
+          heading: "Is the online payment secure?",
           content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+            "Yes, the online payment done on sewaktravels.com is completely safe and secure. We have tied up with CCAvenue (India's leading online payment gateway) which uses Verisign certified security infrastructure to ensure that your online payment is completely safe. As a company policy we don't store any card details.",
+        },
+      ],
+    },
+    {
+      id: "Others",
+      label: "Others",
+      content: [
+        {
+          heading: "Does sewaktravels.com offer services to corporates?",
+          content:
+            "Yes, we offer car rental services to corporate. Please send your corporate queries to info@sewakcabs.com and we will revert at the earliest .",
+        },
+        {
+          heading: "Does sewaktravels.com offer services to travel agents?",
+          content:
+            "Yes, we offer car rental services to travel agents. Travel agents can register with us to book car rental services for their customers through sewaktravels.com. Please mail us at info@sewakcabs.com and we will revert at the earliest .",
         },
       ],
     },

@@ -19,7 +19,7 @@ const FaqContent = () => {
           <div className="col-lg-3">
             <div className="pro_sticky_info" data-sticky_column>
               <div className="faq-tab">
-                <ul className="nav nav-tabs" id="top-tab" role="tablist">
+                <ul className="nav nav-tabs"  role="tablist">
                   {tabs.map((tab, index) => (
                     <li className="nav-item" key={index}>
                       <Link

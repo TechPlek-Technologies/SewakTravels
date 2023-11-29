@@ -36,7 +36,7 @@ const RentalSearch = ({}) => {
             </div>
             <div className="search-body title-hotel col-2">
               <h6>{"Select Package"}</h6>
-              <select style={{ width: "170px" }} className="form-control">
+              <select  className="form-control">
                 <option value="1hrs10km">1hrs 10km</option>
                 <option value="2hrs20km">2hrs 20km</option>
                 <option value="3hrs30km">3hrs 30km</option>

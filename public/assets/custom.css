@@ -431,13 +431,6 @@ li.nav-item {
   object-fit: cover;
 }
 
-@media (max-width: 576px){
-.home_section .home .home-content.mix-layout.smaller-content .search-panel .search-section .search-box .left-part .search-body {
-    padding: 6px 6px;
-    width: fit-content;
-    margin: 0;
-}
-}
 
 
 
@@ -448,3 +441,56 @@ li.nav-item {
     flex: 0 0 83.33333%;
     max-width: 83.33333%;
 }}
+
+.faq-tab li.nav-item {
+  width: auto;
+}
+
+.packageSetting{
+  display: flex;
+}
+
+.our-Testimonial> h2> span{
+  left:50% !important;
+}
+
+@media (max-width: 800px) {
+
+  .left-part.row{
+    display: grid !important;
+    grid-template-rows: repeat(5, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .home_section .home .home-content{
+    height: 100vh;
+  }
+  .sixColumnSearch {
+    display: grid !important;
+
+    grid-template-rows: repeat(6, 1fr) !important;
+}
+
+.left-part.row>div{
+ width: 100% !important;
+ text-align: center;
+}
+.left-part.row>div>h6{
+  text-align: center !important;
+ }
+ .left-part.row>div>input{
+  text-align: center !important;
+  margin: 0;
+ }
+ .left-part.row>div>select{
+  text-align: center !important;
+  margin: 0;
+ }
+ .left-part.row>div>div>input{
+  text-align: center !important;
+ }
+ .react-datepicker__input-container>input{
+  text-align: center !important;
+ }
+
+}

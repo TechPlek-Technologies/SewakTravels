@@ -25,11 +25,11 @@ function SearchTabs({ callbackActive, svg }) {
               <img
                 className={activeTab === "1" ? "activetab" : ""}
                 src="assets/svg/cab.svg"
-                height={"40px"}
+                height={"25px"}
               />
             } */}
-            {/* <CarSvg height={"40px"}/> */}
-            {<BookingSvg height={"40px"}/>}
+            {/* <CarSvg height={"25px"}/> */}
+            {<BookingSvg height={"25px"}/>}
             <h6>Cabs</h6>
             
           </NavLink>
@@ -46,7 +46,7 @@ function SearchTabs({ callbackActive, svg }) {
               <img
               className={activeTab === "2" ? "activetab" : ""}
               src="assets/svg/flght2.svg"
-              height={"40px"}
+              height={"25px"}
               />
             }
             <h6>Flight</h6>
@@ -69,7 +69,7 @@ function SearchTabs({ callbackActive, svg }) {
                 height={"35px"}
               />
             } */}
-            <HotelSvg height={"40px"} />
+            <HotelSvg height={"25px"} />
 
             <h6>Hotel</h6>
 
@@ -91,7 +91,7 @@ function SearchTabs({ callbackActive, svg }) {
                 height={"35px"}
               />
             } */}
-            <Booking  height={"40px"} />
+            <Booking  height={"25px"} />
             <h6>Tour</h6>
           </NavLink>
           <div className="material-border"></div>

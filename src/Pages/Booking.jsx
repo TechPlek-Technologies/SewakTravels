@@ -1,4 +1,4 @@
-import { useContext, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import Summary from "../Components/Booking/Summary";
 import TravelInfo from "../Components/Booking/TravelInfo";
 import Animation from "../Components/Common/Animation";
@@ -7,6 +7,10 @@ import { AppContext } from "../Context/JourneyContext";
 
 const Booking = ({desiredcar}) => {
 
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   
 
   const { journeyData } = useContext(AppContext);

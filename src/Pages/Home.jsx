@@ -12,30 +12,37 @@ import Layout from "../Layout/Layout";
 import VideoBanner from "../Components/Cab/Home/VideoBanner";
 import FullBanner from "../Components/Cab/Home/FullBanner";
 import Package from "../Components/Cab/Home/Offers/Package";
+import { useState } from "react";
+import { useCallback } from "react";
 // import TopCategory from "../Components/Cab/Home/TopCategory";
 // import CabOffers from "../Components/Cab/Home/Offers/CabOffers";
 
 function Home() {
+
+  const [activeTab, setActiveTab] = useState("1");
+  const callback = useCallback((tab) => {
+    setActiveTab(tab);
+  }, []);
+  
   return (
     <>
       <Layout title="overlay-black" />
-      <NewHomeBanner />
+      <NewHomeBanner activeTab={activeTab} callback={callback} />
       {/* <OurVehicleOffers/> */}
       {/* <TopCategory titleClass="top-category margin-cls radius-cls" /> */}
       {/* <FleetCars /> */}
       {/* <CabOffers/> */}
       {/* <CabGallery /> */}
-      <Package/>
-      <VideoBanner />
-      <FactsContent />
-      <Testimonials />
-      <FullBanner />
-      <ServicesComponent />
-      <Video />
-      {/* <CallService /> */}
-      <CallService />
+      {activeTab==="1"&& <Package/>}
+      {activeTab==="1"&& <VideoBanner />}
+      {activeTab==="1"&& <FactsContent />}
+      {activeTab==="1"&& <Testimonials />}
+      {activeTab==="1"&& <FullBanner />}
+      {activeTab==="1"&& <ServicesComponent />}
+      {activeTab==="1"&& <Video />}
+      {activeTab==="1"&& <CallService />}
       {/* <Instagram /> */}
-      <FooterComponent />
+      {<FooterComponent />}
     </>
   );
 }
