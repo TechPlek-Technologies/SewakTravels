@@ -374,7 +374,8 @@ ul#top-tab {
 }
 
 .nav-link > h6 {
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 0 !important;
 }
 
 li.nav-item {
@@ -442,6 +443,11 @@ li.nav-item {
 
 }
 
+/* .title-3 h2{
+  margin-top:5px !important;
+  margin-bottom:10px !important;
+} */
+
 @media (min-width: 2800px) {
   .col-xl-10 {
     -webkit-box-flex: 0;
@@ -476,7 +482,7 @@ li.nav-item {
     margin-top: 50px;
   }
   .home_section .home {
-    height: 100vh !important;
+    height: 75vh !important;
     /* position: fixed; */
 
   }

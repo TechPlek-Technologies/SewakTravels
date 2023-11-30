@@ -163,8 +163,8 @@ section,
   padding-top: 70px;
   padding-bottom: 70px; }
 
-.xs-section {
-  padding: 30px 0; }
+/* .xs-section {
+  padding: 30px 0; } */
 
 .parallax-img {
   background-attachment: fixed; }
@@ -1365,7 +1365,7 @@ section .black-layer:before {
 
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 70vh;
     overflow: hidden; }
     .home_section .home.black-layer:before {
       content: "";
@@ -1466,12 +1466,12 @@ section .black-layer:before {
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
+              align-items: start;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      height: 100vh;
-      /* padding-top: 30px; */
+      height: 70vh;
+      padding-top: 80px;
       width: 100%;
       text-align: center; }
       .home_section .home .home-content .package-detail {
@@ -4830,7 +4830,7 @@ section .black-layer:before {
     margin-bottom: 40px; }
   .category-wrapper .category-wrap {
     position: relative;
-    margin: 30px 0; }
+    margin: 0 0; }
     .category-wrapper .category-wrap .category-img {
       position: absolute;
       left: 0;
@@ -15290,8 +15290,8 @@ header {
         float: left;
         display: block;
         margin-right: 25px;
-        padding-top: 30px;
-        padding-bottom: 30px; }
+        padding-top: 10px;
+        padding-bottom: 10px; }
         header .main-navbar .nav-menu > li > a {
           display: block;
           color: white;

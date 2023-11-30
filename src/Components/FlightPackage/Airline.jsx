@@ -8,7 +8,7 @@ const Airline = ({ type }) => {
   const slide4 = {
     infinite: true,
     speed: 300,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
@@ -37,7 +37,7 @@ const Airline = ({ type }) => {
     ],
   };
   return (
-    <section className="pt-0 detail-section no-bg-detail category-wrapper section-b-space">
+    <section className=" detail-section no-bg-detail category-wrapper  section-b-space deals ratio3_2">
       <div className="xs-section">
         <div className="container-fluid container">
           <TitleComponent

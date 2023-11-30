@@ -17,6 +17,7 @@ import { useCallback } from "react";
 import ExplorePackages from "../Components/TourPackage/ExplorePackages";
 import Airline from "../Components/FlightPackage/Airline";
 import ImportantLinks from "../Components/Common/ImportantLinks";
+import OfferComponent from "../Components/HotelPackage/OfferComponent";
 // import TopCategory from "../Components/Cab/Home/TopCategory";
 // import CabOffers from "../Components/Cab/Home/Offers/CabOffers";
 
@@ -38,7 +39,7 @@ function Home() {
       {/* <CabGallery /> */}
       {activeTab==="1"&& <Package type="Cab Offers"/>}
       {activeTab==="2"&& <Airline type="Flight Offers"/>}
-      {activeTab==="3"&& <Package type="Hotel Offers"/>}
+      {activeTab==="3"&& <OfferComponent type="Hotel Offers"/>}
       {activeTab==="4"&& <ExplorePackages type="Tour Offers"/>}
       {activeTab==="4"&&<ImportantLinks/>}
       {activeTab==="1"&& <VideoBanner />}

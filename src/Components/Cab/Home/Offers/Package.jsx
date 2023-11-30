@@ -1,20 +1,9 @@
-import { useState } from "react";
-import { cabOfferData, hotelOffers } from "../../../../Data/Offers";
+import { cabOfferData } from "../../../../Data/Offers";
 import TitleComponent from "../../../Common/TitleComponent";
 import SliderSeven from "./SliderSeven";
-import { useEffect } from "react";
 
 const Package = ({type}) => {
 
-  const [offersData,setOffersData]= useState([]);
-
-  useEffect(() => {
-    if (type === "Cab Offers") {
-      setOffersData(cabOfferData);
-    } else if(type === "Hotel Offers"){
-      setOffersData(hotelOffers)
-    }
-  }, [type]);
 
   return (
     <section className="category-wrapper section-b-space">
@@ -24,7 +13,7 @@ const Package = ({type}) => {
          
         <div className="row">
           <div className="col">
-            <SliderSeven type={type} slideData={offersData} /> 
+            <SliderSeven type={type} slideData={cabOfferData} /> 
           </div>
         </div>
       </div>
