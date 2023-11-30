@@ -14,6 +14,9 @@ import FullBanner from "../Components/Cab/Home/FullBanner";
 import Package from "../Components/Cab/Home/Offers/Package";
 import { useState } from "react";
 import { useCallback } from "react";
+import ExplorePackages from "../Components/TourPackage/ExplorePackages";
+import Airline from "../Components/FlightPackage/Airline";
+import ImportantLinks from "../Components/Common/ImportantLinks";
 // import TopCategory from "../Components/Cab/Home/TopCategory";
 // import CabOffers from "../Components/Cab/Home/Offers/CabOffers";
 
@@ -33,14 +36,18 @@ function Home() {
       {/* <FleetCars /> */}
       {/* <CabOffers/> */}
       {/* <CabGallery /> */}
-      {activeTab==="1"&& <Package/>}
+      {activeTab==="1"&& <Package type="Cab Offers"/>}
+      {activeTab==="2"&& <Airline type="Flight Offers"/>}
+      {activeTab==="3"&& <Package type="Hotel Offers"/>}
+      {activeTab==="4"&& <ExplorePackages type="Tour Offers"/>}
+      {activeTab==="4"&&<ImportantLinks/>}
       {activeTab==="1"&& <VideoBanner />}
-      {activeTab==="1"&& <FactsContent />}
-      {activeTab==="1"&& <Testimonials />}
+      {<FactsContent />}
+      { <Testimonials />}
       {activeTab==="1"&& <FullBanner />}
-      {activeTab==="1"&& <ServicesComponent />}
-      {activeTab==="1"&& <Video />}
-      {activeTab==="1"&& <CallService />}
+      {<ServicesComponent />}
+      {<Video />}
+      {<CallService />}
       {/* <Instagram /> */}
       {<FooterComponent />}
     </>

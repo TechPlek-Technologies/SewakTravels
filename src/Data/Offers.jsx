@@ -1,4 +1,4 @@
-export const packageData = [
+export const cabOfferData = [
   {
     id: 1,
     img: "/assets/img/offers/chandigarh.jpg",
@@ -58,5 +58,130 @@ export const packageData = [
     price: 4800,
     disc: 4200,
     couponCode: "EDR45",
+  },
+];
+
+
+export const flightOffers = [
+  {
+    id: 1,
+    title: " airlines",
+    desc: "student new offer",
+  },
+  {
+    id: 2,
+    title: "airlines",
+    desc: "10% bonus cashback",
+  },
+  {
+    id: 3,
+    title: "airlines",
+    desc: "student new offer",
+  },
+  {
+    id: 4,
+    title: "airlines",
+    desc: "10% bonus cashback",
+  },
+  {
+    id: 5,
+    title: "airlines",
+    desc: "student new offer",
+  },
+];
+
+export const hotelOffers = [
+  {
+    id: 1,
+    img: "/assets/img/offers/chandigarh.jpg",
+    title: "Hotels in Delhi",
+    source: "Delhi, India",
+    destination: "Chandigarh, India",
+    badge: "group",
+    desc: `Lorem Ipsum is simply dummy text of the printing and setting industry. Lorem Ipsum has been the industry's since....`,
+    price: 4000,
+    disc: 3600,
+    couponCode: "EDR45",
+  },
+  {
+    id: 2,
+    img: "/assets/img/offers/haridwar.jpg",
+    source: "Delhi, India",
+    destination: "Haridwar, Uttarakhand, India",
+    title: "Hotels in haridwar",
+    badge: "group",
+    desc: `Lorem Ipsum is simply dummy text of the printing and setting industry. Lorem Ipsum has been the industry's since....`,
+    price: 4200,
+    disc: 3200,
+    couponCode: "EDR45",
+  },
+  {
+    id: 3,
+    img: "/assets/img/offers/dehradun.jpg",
+    source: "Delhi, India",
+    destination: "Dehradun, Uttarakhand, India",
+    title: "Hotels in Dehradun",
+    badge: "group",
+    desc: `Lorem Ipsum is simply dummy text of the printing and setting industry. Lorem Ipsum has been the industry's since....`,
+    price: 4240,
+    disc: 3800,
+    couponCode: "EDR45",
+  },
+  {
+    id: 4,
+    img: "/assets/img/offers/agra.jpg",
+    source: "Delhi, India",
+    destination: "Agra, Uttar Pradesh, India",
+    title: "Hotels in Agra",
+    badge: "group",
+    desc: `Lorem Ipsum is simply dummy text of the printing and setting industry. Lorem Ipsum has been the industry's since....`,
+    price: 3500,
+    disc: 4200,
+    couponCode: "EDR45",
+  },
+  {
+    id: 5,
+    img: "/assets/img/offers/jaipur.jpg",
+    source: "Delhi, India",
+    destination: "Jaipur, Rajasthan, India",
+    title: "Hotels in Jaipur",
+    badge: "group",
+    desc: `Lorem Ipsum is simply dummy text of the printing and setting industry. Lorem Ipsum has been the industry's since....`,
+    price: 4800,
+    disc: 4200,
+    couponCode: "EDR45",
+  },
+];
+
+export const tourOffers = [
+  {
+    id: 1,
+    img: "/assets/images/tour/background/4.jpg",
+    title: "Adventure freaks",
+    desc: "starting from $5000",
+  },
+  {
+    id: 2,
+    img: "/assets/images/tour/background/8.jpg",
+    title: "city tour",
+    desc: "starting from $5000",
+  },
+  {
+    id: 3,
+    img: "/assets/images/tour/background/6.jpg",
+    title: "historical place",
+    desc: "starting from $5000",
+  },
+  {
+    id: 4,
+    img: "/assets/images/tour/background/5.jpg",
+    title: "beach lover",
+    desc: "starting from $5000",
+  },
+  {
+    id: 5,
+    img: "/assets/images/tour/background/7.jpg",
+    title: "desert all over",
+    desc: "starting from $5000",
   },
 ];

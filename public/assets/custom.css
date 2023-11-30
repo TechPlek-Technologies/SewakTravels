@@ -426,6 +426,22 @@ li.nav-item {
   left: 50% !important;
 }
 
+.detail-section.no-bg-detail .slick-prev {
+  top: -25px !important;
+  
+}
+.detail-section.no-bg-detail .slick-next {
+  top: -25px !important;
+  
+}
+
+
+
+.menu-box{
+  width: 400px;
+
+}
+
 @media (min-width: 2800px) {
   .col-xl-10 {
     -webkit-box-flex: 0;

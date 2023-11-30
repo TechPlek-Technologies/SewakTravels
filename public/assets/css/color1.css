@@ -495,7 +495,7 @@ section,
   .title-3 h2 {
     font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
     margin-top: 20px;
-    margin-bottom: 90px;
+    margin-bottom: 45px;
     font-weight: 800;
     position: relative; }
     .title-3 h2 span {
@@ -2773,7 +2773,7 @@ section .black-layer:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 100px; }
+  padding-bottom: 50px; }
   .testimonial-section .testimonial .left-part {
     display: inline-block;
     position: relative; }
@@ -19493,7 +19493,7 @@ body.dark {
     .highlight-section .highlight-box .content-sec p {
       width: 90%; }
   .title-3 h2 {
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
   .menu-section .menu-box .bottom-bar .menu-bar {
     padding-bottom: 20px;
     margin-bottom: 20px; }
@@ -19600,7 +19600,7 @@ body.dark {
   .title-2 p {
     margin-bottom: 50px; }
   .title-3 h2 {
-    margin-bottom: 70px; }
+    margin-bottom: 30px; }
   .title-3.detail-title p {
     max-width: 90%; }
   header.light_header .main-navbar .nav-menu > li {

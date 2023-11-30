@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 import Rating from "../Testimonials/Rating";
 import useSearchBetweenPlaces from "../../../../Utility/SearchFromPlace";
 
-const SliderSeven = ({ slideData }) => {
+const SliderSeven = ({ type,slideData }) => {
   const slide2 = {
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1200,
@@ -39,12 +39,14 @@ const SliderSeven = ({ slideData }) => {
           <div className="category-wrap">
             <div className="category-img">
               <Link
+
+               onClick={() => {
+                searchBetweenPlaces(data.source, data.destination);
+              }}
                 to={`/cab/listing/${encodeURIComponent(
                   data.source
                 )}/${encodeURIComponent(data.destination)}`}
-                onClick={() => {
-                  searchBetweenPlaces(data.source, data.destination);
-                }}
+               
               >
                 <Img
                   src={data.img}
@@ -72,9 +74,7 @@ const SliderSeven = ({ slideData }) => {
                 </div>
                 <Rating />
                 <div className="bottom">
-                  <h6 className="coupon-code">
-                    Coupon code: <span>{data.couponCode}</span>
-                  </h6>
+                  
 
                   <div className="new-line-container">
                     <Link

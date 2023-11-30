@@ -19,7 +19,7 @@ const CallService=() => {
       <section className="section-b-space animated-section about-section">
         <CabAnimation />
         <div className="container">
-          <TitleComponent title={"new"} subTitle={"Emergency Call"} span={"Service"} titleClass={"title-3"} />
+          <TitleComponent title={"new"} subTitle={"Emergency Call"} span={"Call Service"} titleClass={"title-3"} />
          
           <div className="row">
             <div className="col-lg-7">

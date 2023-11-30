@@ -11,7 +11,7 @@ const SuccessPage= ({ title, img,transacionID }) => {
           <div className="col">
             <Img src={img} className="img-fluid" alt="" />
             <h2>{title}</h2>
-            <p>thank you for you payment. we have received your payment successfully. your transaction ID is {transacionID}, you will get an email invoice soon!</p>
+            <p>thank you for you payment. we have received your payment successfully. your transaction ID is<h3> {transacionID}</h3> you will get an email invoice soon!</p>
             <Button btnClass="btn btn-solid color1" name={"Download Invoice"} />
           </div>
         </div>

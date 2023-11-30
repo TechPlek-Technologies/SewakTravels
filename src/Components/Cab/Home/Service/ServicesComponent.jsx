@@ -8,7 +8,7 @@ const ServicesComponent = () => {
       <section className="section-b-space animated-section">
         <Animation />
         <div className="container">
-          <TitleComponent title={"Sewak Travels"} subTitle={"Awesome Service"} span={"Service"} titleClass={"title-3"} />
+          <TitleComponent title={"Sewak Travels"} subTitle={"Awesome Services"} span={"Services"} titleClass={"title-3"} />
           <ServiceOne serviceData={services} />
         </div>
       </section>

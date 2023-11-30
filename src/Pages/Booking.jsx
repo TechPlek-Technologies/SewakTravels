@@ -52,15 +52,15 @@ const Booking = ({desiredcar}) => {
     const options = {
       key: "rzp_test_hX6SQgVEX8tr9g",
       amount: payableAmount*100, // 2000 paise = INR 20, amount in paisa
-      name: "Merchant Name",
+      name: "Sewak Travels",
       description: "Purchase Description",
       image: "/assets/img/logo.png",
       handler: function (response) {
         window.location.href = `/payment/${response.razorpay_payment_id}`
       },
       prefill: {
-        name: "Harshil Mathur",
-        email: "harshil@razorpay.com",
+        name: firstNameRef.current.value,
+        email: emailRef.current.value,
       },
       notes: {
         address: "Hello World",

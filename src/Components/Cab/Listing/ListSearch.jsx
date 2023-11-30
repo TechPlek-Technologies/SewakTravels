@@ -2,23 +2,33 @@ import { useContext, useState } from "react";
 import CabSearch from "./CabSearch";
 import { Link, useParams } from "react-router-dom";
 import { AppContext } from "../../../Context/JourneyContext";
+import { useEffect } from "react";
 
 function ListSearch() {
   const [searchBarOpen, setSearchBarOpen] = useState(false);
 
   const { journeyData } = useContext(AppContext);
 
-  const [source, setSource] = useState(journeyData.source);
-  const [destination, setDestination] = useState(journeyData.destination);
-  const [startDate, setStartDate] = useState(new Date(journeyData.startDate));
-  const [returnDate, setReturnDate] = useState(
-    new Date(journeyData.returnDate)
-  );
+  const [source, setSource] = useState("");
+  const [destination, setDestination] = useState("");
+  const [startDate, setStartDate] = useState(new Date());
+  const [returnDate, setReturnDate] = useState(new Date());
 
-  const [startTime, setStartTime] = useState(journeyData.startTime);
-  const [returnTime, setReturnTime] = useState(journeyData.returnTime);
+  const [startTime, setStartTime] = useState();
+  const [returnTime, setReturnTime] = useState();
 
-  const [selectedValue, setSelectedValue] = useState(journeyData.selectedValue);
+  const [selectedValue, setSelectedValue] = useState();
+
+  useEffect(() => {
+    // Your useEffect code here
+    setSource(journeyData.source);
+    setDestination(journeyData.destination);
+    setStartDate(new Date(journeyData.startDate));
+    setReturnDate(new Date(journeyData.returnDate));
+    setStartTime(journeyData.startTime);
+    setReturnTime(journeyData.returnTime);
+    setSelectedValue(journeyData.selectedValue);
+  }, [journeyData]);
 
   return (
     <div className="bg-inner small-section pb-0">
