@@ -64,5 +64,10 @@
   },
   "devDependencies": {
     "netlify-cli": "^17.5.1"
+  },
+  "devServer": {
+    "historyApiFallback": {
+      "index": "index.html"
+    }
   }
 }
