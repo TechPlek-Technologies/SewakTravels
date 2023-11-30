@@ -71,9 +71,11 @@ const OutStationSearch = ({
             setStartDate={setReturnDate}
           />
         ) : (
-          <h6 onClick={() => setSelectedValue("Outstation Round-Trip")}>
+          <div className="clickToAdd">
+            <h6  onClick={() => setSelectedValue("Outstation Round-Trip")}>
             click to add
           </h6>
+            </div>
         )}
       </div>
       {selectedValue === "Outstation Round-Trip" ? (

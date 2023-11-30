@@ -62,7 +62,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": ".",
   "devDependencies": {
     "netlify-cli": "^17.5.1"
   }

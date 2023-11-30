@@ -1,6 +1,4 @@
-
 .dateClass {
-  
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -9,10 +7,13 @@
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
 }
 /* 
   tab items
@@ -78,8 +79,6 @@ a.btn.btn-solid {
   text-align: center;
 }
 
-
-
 ul#top-tab {
   display: flex;
   justify-content: center;
@@ -106,33 +105,29 @@ ul#top-tab {
   display: grid;
   justify-content: start;
   grid-template-columns: repeat(5, 1fr);
- padding: 0.6rem;
- min-height: max-content;
- min-width: min-content;
+  padding: 0.6rem;
+  min-height: max-content;
+  min-width: min-content;
 }
 
 .sixColumnSearch {
- 
   grid-template-columns: repeat(6, 1fr) !important ;
-
 }
 
-.fourColumnSearch{
+.fourColumnSearch {
   display: grid;
   justify-content: start;
   grid-template-columns: repeat(4, 1fr) !important;
   /* margin-top: 1rem !important; */
 }
 input#datepicker {
-  width: inherit ;
-  
+  width: inherit;
 }
-.form-group input#datepicker input#exampleInputEmail1  {
+.form-group input#datepicker input#exampleInputEmail1 {
   border: 1px solid #e5e5e5;
   font-size: 1rem;
   padding: 0.375rem 0.75rem;
 }
-
 
 input:focus #datepicker {
   outline: none !important; /* Remove the default outline */
@@ -152,10 +147,6 @@ input:focus #datepicker {
   font-size: calc(12px + 3 * (100vw - 320px) / 1600) !important;
 }
 /* datepicker */
-
-
-
-
 
 .search-section .datepicker-main,
 .home_section
@@ -207,7 +198,7 @@ input:focus #datepicker {
   border: none !important;
 }
 
-.searchRow{
+.searchRow {
   justify-content: center;
 }
 .journeyType {
@@ -243,16 +234,10 @@ input:focus #datepicker {
   font-size: larger;
 }
 
-
-
-
-
-
 .col-xl-10 {
-padding-left: 0 !important;
-padding-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
-
 
 header .menu {
   display: -webkit-box;
@@ -282,65 +267,65 @@ header .menu {
   margin-right: 7px;
   position: relative;
   display: inline-block;
-  animation: ani 1s cubic-bezier(.86,0,.07,1) infinite alternate;
+  animation: ani 1s cubic-bezier(0.86, 0, 0.07, 1) infinite alternate;
 }
 
 .full-banner .offer-text h6 span {
   margin-right: 7px;
   position: relative;
   display: inline-block;
-  animation: ani 1s cubic-bezier(.86,0,.07,1) infinite alternate;
+  animation: ani 1s cubic-bezier(0.86, 0, 0.07, 1) infinite alternate;
 }
 
-.search-body.title-hotel.col-2,.search-body.col-2.search-input {
+.search-body.title-hotel.col-2,
+.search-body.col-2.search-input {
   border: 1px solid #e8e8e8;
   border-radius: 0.6rem;
-  
 }
 .search-body.title-hotel.col-2.hoverbox:hover,
-.search-body.title-hotel.col-2:hover{
+.search-body.title-hotel.col-2:hover {
   border: 3px solid #000000;
 }
-.search-body.col-2.search-input:hover{
-  outline:3px solid #000000 ;
+.search-body.col-2.search-input:hover {
+  outline: 3px solid #000000;
   z-index: 3;
 }
-.search-body.title-hotel.col-2,.search-body.col-2.search-input{
+.search-body.title-hotel.col-2,
+.search-body.col-2.search-input {
   border: 1px solid #e8e8e8;
   border-radius: 0.6rem;
   padding: 10px 20px;
 }
 
-
 /* Cab Offers */
 .category-block {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  
+  grid-template-columns: repeat(2, 1fr);
+
   gap: 0.6rem;
   margin: 1.5rem;
 }
-.category-block>div{
+.category-block > div {
   min-height: max-content;
   text-align: left;
 }
 
-.caboffers h2{
+.caboffers h2 {
   padding-bottom: 0 !important;
 }
-.offerButton{
+.offerButton {
   display: flex;
   justify-content: end;
 }
 
-.slick-prev, .slick-next {
-
+.slick-prev,
+.slick-next {
   top: 52.5% !important;
- z-index: 5;
+  z-index: 5;
 }
 
 /* VideoBanner */
-.video_section .video-content .bottom-section{
+.video_section .video-content .bottom-section {
   min-width: max-content;
 }
 
@@ -348,16 +333,16 @@ header .menu {
 
 form.row.m-0 {
   display: grid;
-  grid-template-columns: repeat(7,1fr);
+  grid-template-columns: repeat(7, 1fr);
   gap: 0;
   padding: 0;
   margin: 0;
 }
 
-@media(max-width:1000px){
+@media (max-width: 1000px) {
   form.row.m-0 {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7);
     gap: 0;
     padding: 0;
@@ -368,21 +353,19 @@ form.row.m-0 {
 }
 
 .flight-detail-sec.cab-detail-sec .detail-bar .detail-wrap .car-details ul li {
-
   width: max-content;
 }
 
-.search-panel .search-section .search-box .left-part .search-body{
-  padding: 15px 30px 
+.search-panel .search-section .search-box .left-part .search-body {
+  padding: 15px 30px;
 }
-
 
 ul#top-tab {
   width: fit-content;
   margin: auto;
   background: white;
-  border-top-right-radius: .8rem;
-  border-top-left-radius:.8rem;
+  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
 }
 
 .new-line-container {
@@ -390,22 +373,22 @@ ul#top-tab {
   margin-top: 10px; /* Adjust the margin as needed */
 }
 
-.nav-link >h6{
+.nav-link > h6 {
   margin-top: 10px;
 }
 
 li.nav-item {
   width: 120px;
 }
-.selectBox{
+.selectBox {
   /* border: 1px solid; */
   padding: 8px 8px 0 8px;
   border-radius: 2rem;
   font-weight: 700;
   /* background-color: #ef3e3e1c; */
 }
-.selectBox:hover{
-  scale:1.1;
+.selectBox:hover {
+  scale: 1.1;
 }
 .additionalClass {
   /* Add your custom styles for the checked state here */
@@ -414,10 +397,10 @@ li.nav-item {
   font-weight: bolder;
 }
 
-.additionalClass>input[type='radio'] {
+.additionalClass > input[type="radio"] {
   accent-color: #ef3f3e;
 }
-.active> svg{
+.active > svg {
   filter: invert(1);
   font-weight: bolder;
 }
@@ -431,91 +414,121 @@ li.nav-item {
   object-fit: cover;
 }
 
-
-
-
-@media (min-width: 2800px){
-.col-xl-10 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 83.33333%;
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%;
-}}
-
 .faq-tab li.nav-item {
   width: auto;
 }
 
-.packageSetting{
+.packageSetting {
   display: flex;
 }
 
-.our-Testimonial> h2> span{
-  left:50% !important;
+.our-Testimonial > h2 > span {
+  left: 50% !important;
+}
+
+@media (min-width: 2800px) {
+  .col-xl-10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
 }
 
 @media (max-width: 800px) {
-
-  .left-part.row{
+  /* .overlay-black{
+    height: 2rem;
+  } */
+  .left-part.row {
     display: grid !important;
     grid-template-rows: repeat(5, 1fr) !important;
     grid-template-columns: repeat(1, 1fr) !important;
   }
 
+  .home_section .home .home-content {
+    
+  }
+  video{
+    display: none;
+  }
+  .bg-transparent {
+  
+  }
+
   .home_section .home .home-content{
-    height: 100vh;
+    align-items: flex-start;
+    margin-top: 50px;
+  }
+  .home_section .home {
+    height: 100vh !important;
+    /* position: fixed; */
+
+  }
+
+  #top-tab {
+    width: 100vw !important;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   border-top-right-radius: 0rem !important;
+   border-top-left-radius: 0rem !important;
+  }
+  li.nav-item{
+    width:80px
   }
   .sixColumnSearch {
     display: grid !important;
 
     grid-template-rows: repeat(6, 1fr) !important;
-}
-.fourColumnSearch{
-  display: grid !important;
+  }
+ 
 
-  grid-template-rows: repeat(4, 1fr) !important;
-}
+  .left-part.row > div {
+    width: 100% !important;
+    text-align: center;
+  }
+  .left-part.row > div > h6 {
+    text-align: center !important;
+  }
+  .left-part.row > div > input {
+    text-align: center !important;
+    margin: 0;
+  }
+  .left-part.row > div > select {
+    text-align: center !important;
+    margin: 0;
+  }
+  .left-part.row > div > div > input {
+    text-align: center !important;
+  }
+  .react-datepicker__input-container > input {
+    text-align: center !important;
+  }
 
-.left-part.row>div{
- width: 100% !important;
- text-align: center;
-}
-.left-part.row>div>h6{
-  text-align: center !important;
- }
- .left-part.row>div>input{
-  text-align: center !important;
-  margin: 0;
- }
- .left-part.row>div>select{
-  text-align: center !important;
-  margin: 0;
- }
- .left-part.row>div>div>input{
-  text-align: center !important;
- }
- .react-datepicker__input-container>input{
-  text-align: center !important;
- }
+  .journeyType {
+    min-height: fit-content;
+  }
 
- .journeyType {
-  min-height: fit-content;
- }
+  .selectBox > .radio-label {
+    font-size: x-small;
+  }
 
- .selectBox>.radio-label {
-  font-size: x-small;
- }
+  .fourColumnSearch{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(4,1fr);
+  }
+  .fourColumnSearch>div{
+    width: 100% !important;
+  }
 
- #top-tab{
-  display: none !important;
- }
- .bg-transparent{
-  margin-top: 90px !important;
- }
-
- .home_section .home {
-
-  height: 100vh !important;
- }
-
+  .search-body>h6,.search-body>input,.input-group>input{
+    text-align: center !important;
+  }
+  .clickToAdd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ 
 }
