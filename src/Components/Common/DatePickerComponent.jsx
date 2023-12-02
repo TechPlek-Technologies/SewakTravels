@@ -17,6 +17,7 @@ const DatePickerComponent = ({startDate,setStartDate,newClass}) => {
       className={`datepicker-main ${newClass? "dateClass":""}`}
       dateFormat="dd MMMM"
       placeholderText="Select Date"
+      popperPlacement="right"
     />
   );
 };

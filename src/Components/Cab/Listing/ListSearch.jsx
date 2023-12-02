@@ -1,8 +1,7 @@
-import { useContext, useState } from "react";
-import CabSearch from "./CabSearch";
-import { Link, useParams } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { AppContext } from "../../../Context/JourneyContext";
-import { useEffect } from "react";
+import CabSearch from "./CabSearch";
 
 function ListSearch() {
   const [searchBarOpen, setSearchBarOpen] = useState(false);

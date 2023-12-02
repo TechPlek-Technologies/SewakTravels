@@ -2,14 +2,13 @@ import TimePickerComponent from "../../../Common/TimePickerComponent";
 import DatePickerComponent from "../../../Common/DatePickerComponent";
 import OutstationDataState from "../../../../Hooks/OutstationDataState";
 
-const RentalSearch = ({}) => {
+const RentalSearch = () => {
   const { startDate, setStartDate, sourceInputRef } = OutstationDataState();
 
   return (
     <div className="search-panel">
       <div className="search-section">
         <div className="search-box">
-          
           <div className="left-part row fourColumnSearch">
             <div className="search-body title-hotel col-2">
               <h6>{"Source"}</h6>
@@ -36,7 +35,7 @@ const RentalSearch = ({}) => {
             </div>
             <div className="search-body title-hotel col-2">
               <h6>{"Select Package"}</h6>
-              <select  className="form-control">
+              <select className="form-control">
                 <option value="1hrs10km">1hrs 10km</option>
                 <option value="2hrs20km">2hrs 20km</option>
                 <option value="3hrs30km">3hrs 30km</option>

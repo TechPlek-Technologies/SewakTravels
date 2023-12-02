@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const NewsLetterContent = ({ titleClass }) => {
     return (
       <div className={titleClass}>
@@ -8,9 +10,9 @@ const NewsLetterContent = ({ titleClass }) => {
             <form onSubmit={(event)=>event.preventDefault()}>
               <input type="email" id="email1" className="form-control" placeholder="Enter your email" required />
               <div className="button">
-                <a href="#" className="btn btn-solid ">
+                <Link to="#" className="btn btn-solid ">
                   be the first
-                </a>
+                </Link>
               </div>
             </form>
           </div>

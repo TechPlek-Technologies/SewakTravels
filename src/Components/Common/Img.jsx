@@ -26,7 +26,7 @@ const Img= (props) => {
           `,
         );
       }
-    }, [props.src]);
+    }, [props.src,props.className]);
   
     return <img ref={bgImg} {...props} alt="" />;
   };

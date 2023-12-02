@@ -21,13 +21,7 @@ function SearchTabs({ callbackActive, svg }) {
               callbackActive("1");
             }}
           >
-            {/* {
-              <img
-                className={activeTab === "1" ? "activetab" : ""}
-                src="assets/svg/cab.svg"
-                height={"25px"}
-              />
-            } */}
+       
             {/* <CarSvg height={"25px"}/> */}
             {<BookingSvg height={"25px"}/>}
             <h6>Cabs</h6>
@@ -47,6 +41,7 @@ function SearchTabs({ callbackActive, svg }) {
               className={activeTab === "2" ? "active" : ""}
               src="assets/svg/flght2.svg"
               height={"25px"}
+              alt=""
               />
             }
             <h6>Flight</h6>

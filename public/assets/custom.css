@@ -554,3 +554,9 @@ li.nav-item {
   
  
 }
+
+.react-datepicker-popper{
+  position: absolute !important;
+  z-index: 20000000000000000000;
+  overflow: visible !important;
+}

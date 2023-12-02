@@ -1,11 +1,10 @@
 import { useEffect } from "react";
 import AboutUsContent from "../Components/AboutUs/AboutUsContent";
-import Instagram from "../Components/Cab/Home/Gallery/Instagram";
+import ServicesComponent from "../Components/Cab/Home/Service/ServicesComponent";
 import Testimonials from "../Components/Cab/Home/Testimonials/Testimonials";
 import ServiceComponent from "../Components/Cab/Service/ServiceComponent";
 import FooterComponent from "../Components/Common/FooterComponent";
 import Layout from "../Layout/Layout";
-import ServicesComponent from "../Components/Cab/Home/Service/ServicesComponent";
 
 
 const About=()=>{

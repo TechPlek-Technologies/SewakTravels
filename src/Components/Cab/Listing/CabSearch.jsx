@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import DatePickerComponent from "../../Common/DatePickerComponent";
 // import Img from "../../Common/Img";
-import { useContext, useState } from "react";
-import TimePickerComponent from "../../Common/TimePickerComponent";
-import { useRef } from "react";
-import useAutocomplete from "../../../Utility/Autocomplete";
+import { useContext, useRef } from "react";
 import { AppContext } from "../../../Context/JourneyContext";
+import useAutocomplete from "../../../Utility/Autocomplete";
 import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
+import TimePickerComponent from "../../Common/TimePickerComponent";
 
 const CabSearch = ({
   resClass,

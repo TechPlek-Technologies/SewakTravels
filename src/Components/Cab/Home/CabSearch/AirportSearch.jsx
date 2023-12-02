@@ -1,19 +1,18 @@
-import TimePickerComponent from "../../../Common/TimePickerComponent";
-import DatePickerComponent from "../../../Common/DatePickerComponent";
 import { useState } from "react";
 import OutstationDataState from "../../../../Hooks/OutstationDataState";
+import DatePickerComponent from "../../../Common/DatePickerComponent";
+import TimePickerComponent from "../../../Common/TimePickerComponent";
 
 
-const AirportSearch = ({setSource,setDestination}) => {
+const AirportSearch = () => {
 
   const {
-    source,
-    destination,
+
     startDate,
     setStartDate,
     sourceInputRef,
     destinationInputRef,
-    selectedValue
+
   } = OutstationDataState();
 
  
