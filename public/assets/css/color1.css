@@ -1470,8 +1470,8 @@ section .black-layer:before {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      height: 70vh;
-      padding-top: 80px;
+      height: 75vh;
+      padding-top: 8%;
       width: 100%;
       text-align: center; }
       .home_section .home .home-content .package-detail {
