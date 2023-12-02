@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import { tabs } from "../../Data/FaqContent";
 
 const TitleComponent = ({ title, subTitle, titleClass, span, h2Class }) => {
   return (

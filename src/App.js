@@ -2,8 +2,6 @@ import { useRoutes } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
 import CabListing from "./Pages/CabListing";
-// import Blogs from './Pages/Blogs';
-// import BlogDetails1 from './Pages/BlogDetails/BlogDetails1';
 import CabDetails from "./Pages/CabDetails";
 import Contactus from "./Pages/Contactus";
 import Faq from "./Pages/Faq";
@@ -17,20 +15,12 @@ import About from "./Pages/About";
 import Outstation from "./Pages/Services/Outstation";
 import Airport from "./Pages/Services/Airport";
 import Corporate from "./Pages/Services/Corporate";
-import { useState } from "react";
-import PaymentSuccess from "./Pages/Payment";
 import Payment from "./Pages/Payment";
-import Flight from "./Pages/Flight";
-import Hotel from "./Pages/Hotel";
-import Tour from "./Pages/Tour";
 
 function App() {
 
   const routes = useRoutes([
     { path: "/", element: <Home /> },
-    { path: "/flight", element: <Flight /> },
-    { path: "/hotel", element: <Hotel /> },
-    { path: "/tour", element: <Tour /> },
     { path: "/blogs", element: <ComingSoon /> },
     { path: "/journey-details/:id", element: <CabDetails /> },
     { path: "/cab/listing/:source/:destination", element: <CabListing /> },

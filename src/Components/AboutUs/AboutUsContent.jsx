@@ -4,9 +4,9 @@ import TitleComponent from "../Common/TitleComponent";
 
 const AboutUsContent = ({ side }) => {
     const imageData = [
-        { src: "/assets/img/about/1.jpg", title: "OutStation", subTitle: "water fall" },
-        { src: "/assets/img/about/2.jpg", title: "Airport", subTitle: "paragliding" },
-        { src: "/assets/img/about/3.jpg", title: "Corporate", subTitle: "River Front" },
+        { src: "/assets/img/about/1.webp", title: "OutStation", subTitle: "water fall" },
+        { src: "/assets/img/about/2.webp", title: "Airport", subTitle: "paragliding" },
+        { src: "/assets/img/about/3.webp", title: "Corporate", subTitle: "River Front" },
       ];
     return (
       <section className="about-section three-image about_page animated-section section-b-space">

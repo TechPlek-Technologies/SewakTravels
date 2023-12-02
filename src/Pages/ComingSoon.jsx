@@ -16,7 +16,7 @@ const ComingSoon= () => {
                       <Img src="/assets/images/icon/footer-logo.png" alt="" className="img-fluid " />
                     </Link>
                   </div>
-                  <h2>Will be Opening Soon!</h2>
+                  <h2>Will be Coming Soon!</h2>
                   <form onSubmit={(event)=>event.preventDefault()} className="theme-form w-100">
                     <label>Enter your email:</label>
                     <input type="text" name="password" id="name" className="form-control" autoFocus={true} />

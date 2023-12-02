@@ -1,5 +1,3 @@
-import Button from "../Common/Button";
-import Img from "../Common/Img";
 
 function CarDetailPage({car, toggleDetails,showDetails }) {
   const includeInPrice = [

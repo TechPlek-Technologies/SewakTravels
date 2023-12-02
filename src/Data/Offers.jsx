@@ -1,7 +1,7 @@
 export const cabOfferData = [
   {
     id: 1,
-    img: "/assets/img/offers/chandigarh.jpg",
+    img: "/assets/img/offers/chandigarh.webp",
     title: "Delhi to Chandigarh",
     source: "Delhi, India",
     destination: "Chandigarh, India",
@@ -13,7 +13,7 @@ export const cabOfferData = [
   },
   {
     id: 2,
-    img: "/assets/img/offers/haridwar.jpg",
+    img: "/assets/img/offers/haridwar.webp",
     source: "Delhi, India",
     destination: "Haridwar, Uttarakhand, India",
     title: "Delhi to Haridwar",
@@ -25,7 +25,7 @@ export const cabOfferData = [
   },
   {
     id: 3,
-    img: "/assets/img/offers/dehradun.jpg",
+    img: "/assets/img/offers/dehradun.webp",
     source: "Delhi, India",
     destination: "Dehradun, Uttarakhand, India",
     title: "Delhi to Dehradun",
@@ -37,7 +37,7 @@ export const cabOfferData = [
   },
   {
     id: 4,
-    img: "/assets/img/offers/agra.jpg",
+    img: "/assets/img/offers/agra.webp",
     source: "Delhi, India",
     destination: "Agra, Uttar Pradesh, India",
     title: "Delhi to Agra",
@@ -49,7 +49,7 @@ export const cabOfferData = [
   },
   {
     id: 5,
-    img: "/assets/img/offers/jaipur.jpg",
+    img: "/assets/img/offers/jaipur.webp",
     source: "Delhi, India",
     destination: "Jaipur, Rajasthan, India",
     title: "Delhi to Jaipur",
@@ -93,31 +93,31 @@ export const flightOffers = [
 export const HotelOffers = [
   {
     id: 1,
-    img: "/assets/images/offer/1.jpg",
+    img: "/assets/images/offer/1.webp",
     title: "hotel booking",
     desc: "Avail Hot Deals On Hotel Booking To Any Place",
   },
   {
     id: 2,
-    img: "/assets/images/offer/2.jpg",
+    img: "/assets/images/offer/2.webp",
     title: "upto $400",
     desc: "instant discount on domestic hotels",
   },
   {
     id: 3,
-    img: "/assets/images/offer/3.jpg",
+    img: "/assets/images/offer/3.webp",
     title: "holiday booking",
     desc: "weekend sale for holiday bookings",
   },
   {
     id: 4,
-    img: "/assets/images/offer/4.jpg",
+    img: "/assets/images/offer/4.webp",
     title: "food order",
     desc: "complimantary breakfast. use code RICAFOOD",
   },
   {
     id: 5,
-    img: "/assets/images/offer/5.jpg",
+    img: "/assets/images/offer/5.webp",
     title: "50% cashback",
     desc: "50% cashback on every cab bookings",
   },
@@ -126,19 +126,19 @@ export const HotelOffers = [
 export const tourOffers = [
   {
     id: 1,
-    img: "/assets/images/tour/background/4.jpg",
+    img: "/assets/images/tour/background/4.webp",
     title: "Adventure freaks",
     desc: "starting from $5000",
   },
   {
     id: 2,
-    img: "/assets/images/tour/background/8.jpg",
+    img: "/assets/images/tour/background/8.webp",
     title: "city tour",
     desc: "starting from $5000",
   },
   {
     id: 3,
-    img: "/assets/images/tour/background/6.jpg",
+    img: "/assets/images/tour/background/6.webp",
     title: "historical place",
     desc: "starting from $5000",
   },

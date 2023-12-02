@@ -2,8 +2,9 @@ import { useContext, useEffect, useRef, useState } from "react";
 import Summary from "../Components/Booking/Summary";
 import TravelInfo from "../Components/Booking/TravelInfo";
 import Animation from "../Components/Common/Animation";
-import { carData } from "../Data/CabData";
 import { AppContext } from "../Context/JourneyContext";
+import { getAuthToken, sendSMS } from "../Utility/SendSMS";
+
 
 const Booking = ({desiredcar}) => {
 
@@ -56,23 +57,49 @@ const Booking = ({desiredcar}) => {
       description: "Purchase Description",
       image: "/assets/img/logo.png",
       handler: function (response) {
+       
         window.location.href = `/payment/${response.razorpay_payment_id}`
       },
       prefill: {
-        name: firstNameRef.current.value,
+        name: firstNameRef.current.value, 
         email: emailRef.current.value,
       },
       notes: {
         address: "Hello World",
       },
       theme: {
-        color: "#FFFFFF",
+        color: "#ef3f3e",
       },
     };
 
     const paymentObject = new window.Razorpay(options);
     paymentObject.open();
   }
+
+
+  async function sendSmsWithDynamicSchedule() {
+    try {
+      const authToken = await getAuthToken();
+  
+      // Use the authToken to send SMS
+      const response = await sendSMS(
+        authToken,
+        '9993557535',
+        'Your SMS text here',
+        'YourSenderID',
+        'YourDLRUrl',
+        '2/12/2023 04:50 PM',
+        'YourPE',
+        'YourTemplateId'
+      );
+  
+      console.log('SMS sent successfully:', response);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+  
+  // Call the function to send SMS with dynamic schedule
 
   const handleButtonClick = () => {
     // Validation logic for GuestDetailPage
@@ -92,6 +119,9 @@ const Booking = ({desiredcar}) => {
     }else{
       setIsValid(true);
     }
+
+    
+    sendSmsWithDynamicSchedule();
 
     
 

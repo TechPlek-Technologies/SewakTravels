@@ -1,8 +1,6 @@
 import { carData } from "../../Data/CabData";
 import CarDetailPage from "../CabDetails/CarDetailPage";
 import ContactInfo from "../CabDetails/ContactInfo";
-import Img from "../Common/Img";
-import Coupon from "./Coupan";
 import GuestDetailPage from "./GuestDetailPage";
 import InformationPage from "./InformationPage";
 import Summary from "./Summary";

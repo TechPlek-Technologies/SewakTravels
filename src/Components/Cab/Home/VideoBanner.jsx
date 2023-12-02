@@ -56,7 +56,7 @@ const VideoBanner = () => {
             <div className="col-xl-6 offset-xl-1 col-lg-6 order-cls">
               <div className="video-image">
                 <div className="side-effect"></div>
-                <Img src="/assets/images/mix/video-image.jpg" className="img-fluid " alt="" />
+                <Img src="/assets/img/home/video-image.webp" className="img-fluid " alt="" />
                 <div data-bs-toggle="modal" onClick={toggle} data-bs-target="#video" className="video-icon">
                   <span></span>
                 </div>

@@ -1,14 +1,13 @@
-import { useCallback, useState } from "react";
-import SearchTabs from "./CabSearch/SearchTabs";
-import { TabContent, TabPane } from "reactstrap";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { TabContent, TabPane } from "reactstrap";
+import { AppContext } from "../../../Context/JourneyContext";
+import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
+import CabSearch from "./CabSearch/CabSearch";
+import SearchTabs from "./CabSearch/SearchTabs";
 import FlightSearch from "./FlightSearch/FlightSearch";
 import HotelSearch from "./HotelSearch/HotelSearch";
-import CabSearch from "./CabSearch/CabSearch";
 import TourSearch from "./TourSearch/TourSearch";
-import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
-import { useContext } from "react";
-import { AppContext } from "../../../Context/JourneyContext";
 
 const NewHomeBanner = ({activeTab,callback}) => {
   const tomorrow = new Date();

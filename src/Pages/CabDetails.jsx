@@ -1,9 +1,8 @@
-// import SingleDetailPage from "../Components/CabDetails/SingleDetailPage";
+import { useParams } from "react-router-dom";
 import FooterComponent from "../Components/Common/FooterComponent";
 import { carData } from "../Data/CabData";
 import Layout from "../Layout/Layout";
 import Booking from "./Booking";
-import { useLocation, useParams } from "react-router-dom";
 
 function CabDetails() {
  

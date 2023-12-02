@@ -166,12 +166,15 @@ const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount})
               </tbody>
             </table>
             <div className="submit-btn">
-            <Link href="/hotel/booking/checkout">
+            <Link>
               <button
                 className="btn btn-solid App-link"
                 type="submit"
                 onClick={handleButtonClick}
               >
+
+
+
                 {"Book Now"}
               </button>
             </Link>
