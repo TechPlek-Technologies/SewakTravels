@@ -25,24 +25,6 @@ import Hotel from "./Pages/Hotel";
 import Tour from "./Pages/Tour";
 
 function App() {
-  // const tomorrow = new Date();
-  // tomorrow.setDate(tomorrow.getDate() + 1);
-  // const dayAfterTomorrow = new Date();
-  // dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 3);
-
-  // const [tabSelection,settabSelection]=useState("");
-  // const [cabType,setCabType]= useState("Outstation One-Way")
-
-  // const [source, setSource] = useState("");
-  // const [destination, setDestination] = useState("");
-
-  // const [startDate, setStartDate] = useState(new Date(tomorrow));
-  // const [returnDate, setReturnDate] = useState(new Date(dayAfterTomorrow));
-
-  // const [startTme, setStartTime] = useState("12:00 PM");
-  // const [returnTime, setReturnTime] = useState("12:00 PM");
-
-  // const [airportSelection, setAirportSelection] = useState("");
 
   const routes = useRoutes([
     { path: "/", element: <Home /> },
@@ -50,7 +32,6 @@ function App() {
     { path: "/hotel", element: <Hotel /> },
     { path: "/tour", element: <Tour /> },
     { path: "/blogs", element: <ComingSoon /> },
-    // {path: '/blogs/:id', element: <BlogDetails1/>},
     { path: "/journey-details/:id", element: <CabDetails /> },
     { path: "/cab/listing/:source/:destination", element: <CabListing /> },
     { path: "/contact", element: <Contactus /> },
