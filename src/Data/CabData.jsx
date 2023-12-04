@@ -66,11 +66,7 @@ export const carData = [
     id: 2,
     name: "Hatchback",
     img: "/assets/img/listing/hatchback.jpg",
-    gridImg: "/assets/images/cab/car/13.jpg",
-    sliderImg: [
-      { img: "/assets/images/cab/car/13.jpg" },
-      { img: "/assets/images/cab/car/14.jpg" },
-    ],
+   
     cabType: "Indica, Swift",
     category: "Hatchback",
     rate: "3",
@@ -83,11 +79,7 @@ export const carData = [
   {
     id: 1,
     img: "/assets/img/listing/sedan.jpg",
-    gridImg: "/assets/images/cab/car/14.jpg",
-    sliderImg: [
-      { img: "/assets/images/cab/car/14.jpg" },
-      { img: "/assets/images/cab/car/15.jpg" },
-    ],
+   
     name: "Sedan",
     category: "Sedan",
     rate: "2",
@@ -101,11 +93,7 @@ export const carData = [
   {
     id: 3,
     img: "/assets/img/listing/suv.jpg",
-    gridImg: "/assets/images/cab/car/15.jpg",
-    sliderImg: [
-      { img: "/assets/images/cab/car/15.jpg" },
-      { img: "/assets/images/cab/car/16.jpg" },
-    ],
+   
     name: "SUV",
     category: "SUV",
     cabType: "Ertiga,Innova",
@@ -119,14 +107,10 @@ export const carData = [
   {
     id: 5,
     img: "/assets/img/listing/suv.jpg",
-    gridImg: "/assets/images/cab/car/16.jpg",
-    sliderImg: [
-      { img: "/assets/images/cab/car/16.jpg" },
-      { img: "/assets/images/cab/car/17.jpg" },
-    ],
+  
     name: "Prime SUV",
     rate: "3",
-    category: "Prime SUV",
+    category: "Innova",
     cabType: "Innova Crysta",
     capacity: "7",
     luggage: "2 luggage",
@@ -207,41 +191,8 @@ export const imagesection1 = [
   },
 ];
 
-export const imagesection2 = [
-  {
-    id: 1,
-    img: "/assets/images/cab/car/24.jpg",
-    title: "interior images",
-  },
-  {
-    id: 2,
-    img: "/assets/images/cab/car/22.jpg",
-    title: "interior images",
-  },
-  {
-    id: 3,
-    img: "/assets/images/cab/car/25.jpg",
-    title: "interior images",
-  },
-];
 
-export const imagesection3 = [
-  {
-    id: 1,
-    img: "/assets/images/cab/car/22.jpg",
-    title: "exterior images",
-  },
-  {
-    id: 2,
-    img: "/assets/images/cab/car/24.jpg",
-    title: "exterior images",
-  },
-  {
-    id: 3,
-    img: "/assets/images/cab/car/25.jpg",
-    title: "exterior images",
-  },
-];
+
 
 export const carOverview = [
   { src: "/assets/images/cab/icon/seat.png", text: "5 seater" },

@@ -93,31 +93,31 @@ export const flightOffers = [
 export const HotelOffers = [
   {
     id: 1,
-    img: "/assets/images/offer/1.webp",
+    img: "/assets/images/offer/1.jpg",
     title: "hotel booking",
     desc: "Avail Hot Deals On Hotel Booking To Any Place",
   },
   {
     id: 2,
-    img: "/assets/images/offer/2.webp",
+    img: "/assets/images/offer/2.jpg",
     title: "upto $400",
     desc: "instant discount on domestic hotels",
   },
   {
     id: 3,
-    img: "/assets/images/offer/3.webp",
+    img: "/assets/images/offer/3.jpg",
     title: "holiday booking",
     desc: "weekend sale for holiday bookings",
   },
   {
     id: 4,
-    img: "/assets/images/offer/4.webp",
+    img: "/assets/images/offer/4.jpg",
     title: "food order",
     desc: "complimantary breakfast. use code RICAFOOD",
   },
   {
     id: 5,
-    img: "/assets/images/offer/5.webp",
+    img: "/assets/images/offer/5.jpg",
     title: "50% cashback",
     desc: "50% cashback on every cab bookings",
   },
@@ -126,19 +126,19 @@ export const HotelOffers = [
 export const tourOffers = [
   {
     id: 1,
-    img: "/assets/images/tour/background/4.webp",
+    img: "/assets/images/tour/background/4.jpg",
     title: "Adventure freaks",
     desc: "starting from $5000",
   },
   {
     id: 2,
-    img: "/assets/images/tour/background/8.webp",
+    img: "/assets/images/tour/background/8.jpg",
     title: "city tour",
     desc: "starting from $5000",
   },
   {
     id: 3,
-    img: "/assets/images/tour/background/6.webp",
+    img: "/assets/images/tour/background/6.jpg",
     title: "historical place",
     desc: "starting from $5000",
   },

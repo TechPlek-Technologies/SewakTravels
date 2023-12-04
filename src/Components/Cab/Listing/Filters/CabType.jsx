@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { carData, carTypeData } from "../../../../Data/CabData";
 
 function CabType({setFilteredData}) {
@@ -14,23 +14,22 @@ function CabType({setFilteredData}) {
     }
   };
 
-  useEffect(() => {
-    // Use the selectedLabels to filter data and perform your filtering logic here
-    // For example, you can filter your data based on the selected labels and update the results accordingly.
-    // You can also pass the selectedLabels up to the parent component for global filtering.
-     // Function to apply filtering logic
- 
+  const applyFiltering = useCallback(() => {
     if (selectedLabels.length === 0) {
       setFilteredData(carData); // No filtering, return all data
-    }else{
-      const newFilteredData=carData.filter((item) => selectedLabels.includes(item.category))
-      
+    } else {
+      const newFilteredData = carData.filter((item) => selectedLabels.includes(item.category));
+
       // Filter the carData based on selected car types
-     setFilteredData(newFilteredData);
+      setFilteredData(newFilteredData);
     }
-    
-  
-  }, [selectedLabels]);
+  }, [selectedLabels, setFilteredData]);
+
+  // Call the memoized filtering function initially
+  useEffect(() => {
+    applyFiltering();
+  }, [applyFiltering]);
+
 
   return (
     <div className="filter-block">
