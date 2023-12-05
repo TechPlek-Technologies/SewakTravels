@@ -62,21 +62,7 @@ export const cabOffers = [
 
 export const carData = [
  
- {
-    id: 2,
-    name: "Hatchback",
-    img: "/assets/img/listing/hatchback.jpg",
-   
-    cabType: "Indica, Swift",
-    category: "Hatchback",
-    capacity: "4",
-    fare: 25,
-    outstationOneWay:0,
-    outstattionRoundTrip:0,
-    rentals1:0,
-    rentals2:0,
-    Airport:0,
-  },
+
   {
     id: 1,
     img: "/assets/img/listing/sedan.jpg",
@@ -94,7 +80,7 @@ export const carData = [
   
   },
   {
-    id: 3,
+    id: 2,
     img: "/assets/img/listing/suv.jpg",
    
     name: "SUV",
@@ -109,18 +95,18 @@ export const carData = [
     Airport:60.00,
   },
   {
-    id: 5,
+    id: 3,
     img: "/assets/img/listing/suv.jpg",
   
     name: "Prime SUV",
     category: "Innova",
     cabType: "Innova Crysta",
     capacity: "6",
-    outstationOneWay:0,
-    outstattionRoundTrip:0,
-    rentals1:0,
-    rentals2:0,
-    Airport:0,
+    outstationOneWay:28.00,
+    outstattionRoundTrip:24.00,
+    rentals1:22.00,
+    rentals2:22.00,
+    Airport:65.00,
   }
 ];
 

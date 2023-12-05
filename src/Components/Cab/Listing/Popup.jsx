@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import { Modal, ModalBody } from "reactstrap";
+import { AppContext } from "../../../Context/JourneyContext";
 
 const Popup = ({ car, modal, toggle }) => {
-  // console.log(car)
+
+  const {jounrneyData} =useContext(AppContext)
+  console.log("car",car)
   const includeInPrice = [
     "cancellation",
     "theft protection",
@@ -38,7 +42,20 @@ const Popup = ({ car, modal, toggle }) => {
             <div className="popup-header">
               <h5>{car?.name}</h5>
               <h6>
-                Fare/km: <span>₹{car.fare}</span>
+                Outstation One-Way Fare/km: <span>₹{car.outstationOneWay}</span>
+               
+              </h6>
+              <h6>
+              Outstation Round-Trip Fare/km: <span>₹{car.outstattionRoundTrip}</span>
+               
+              </h6>
+              <h6>
+               Airport Transfer Fare/km: <span>₹{car.Airport}</span>
+               
+              </h6>
+              <h6>
+                Hourly Rentals Fare/km: <span>₹{car.rentals2}</span>
+               
               </h6>
             </div>
             <p className="popup-description">{car?.cabType}</p>

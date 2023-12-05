@@ -29,7 +29,7 @@ const ChooseUs= () => {
         <div className="container">
           <div className="title-1 detail-title">
             <h2>why choose Sewak Travels?</h2>
-            <p>{"Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Adipisci Alias Aperiam At, Aut Commodi Corporis Dolorum Ducimus Labore Magnam Mollitia Natus Porro Possimus Quae Sit Tenetur Veniam Veritatis Voluptate Voluptatem!"}</p>
+            <p>{"At Sewak Travels, we have a mission to exceed our customers' expectations through professional, courteous, and timely ground transportation solutions. We want to create business opportunities for our drivers and ideal work culture for our employees."}</p>
           </div>
           <div className="highlight-section">
             <div className="row">

@@ -8,17 +8,21 @@ import Popup from "./Popup";
 function CabListProducts({ data }) {
   const { journeyData } = useContext(AppContext);
   const [showDetails, setShowDetails] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
-  let travelDistance=journeyData.travelDistance;
+  console.log(data)
 
-  
-  if(journeyData.selectedValue==="Outstation Round-Trip"){
-    travelDistance=travelDistance*2;
+  let travelDistance = journeyData.travelDistance;
+
+  if (journeyData.selectedValue === "Outstation Round-Trip") {
+    travelDistance = travelDistance * 2;
   }
 
-  const toggleDetails = () => {
+  const toggleDetails = (item) => {
     setShowDetails(!showDetails);
+    setSelectedItem(item);
   };
+
   return (
     <div className="flight-detail-sec cab-detail-sec">
       <div className="detail-bar">
@@ -75,23 +79,51 @@ function CabListProducts({ data }) {
               <div className="col-md-2">
                 <div className="price">
                   <div>
-                    <h4>₹{item.fare * journeyData?.travelDistance}</h4>
-                    <h6>fare/km:₹{item.fare}</h6>
-                    <h6 onClick={toggleDetails} className="viewFairDetails">
-                      view details
-                    </h6>
-                   
-                    <Popup car={item} modal={showDetails} toggle={toggleDetails} />
+                    {journeyData.selectedValue === "Outstation One-Way" && (
+                      <>
+                        <h4>
+                          ₹{item.outstationOneWay * journeyData?.travelDistance}
+                        </h4>
+                        <h6>fare/km:₹{item.outstationOneWay}</h6>
+                      </>
+                    )}
+                    {journeyData.selectedValue === "Outstation Round-Trip" && (
+                      <>
+                        <h4>
+                          ₹
+                          {item.outstattionRoundTrip *
+                            journeyData?.travelDistance}
+                        </h4>
+                        <h6>fare/km:₹{item.outstattionRoundTrip}</h6>
+                      </>
+                    )}
+                    {journeyData.selectedValue === "Hourly Rentals" && (
+                      <>
+                        <h4>₹{item.rentals1 * journeyData?.travelDistance}</h4>
+                        <h6>fare/km:₹{item.rentals2}</h6>
+                      </>
+                    )}
+                    {journeyData.selectedValue === "Airport Transfer" && (
+                      <>
+                        <h4>₹{item.Airport * journeyData?.travelDistance}</h4>
+                        <h6>fare/km:₹{item.Airport}</h6>
+                      </>
+                    )}
+                    <h6 onClick={() => toggleDetails(item)} className="viewFairDetails">
+            view details
+          </h6>
+
+          {showDetails && selectedItem && (
+        <Popup car={selectedItem} modal={showDetails} toggle={() => toggleDetails(null)} />
+      )}
                   </div>
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="book-flight">
-                  
-                <Link to={`/journey-details/${item.id}`}>
-                      <Button btnClass="btn btn-solid color1" name="book now" />
-                    </Link>
-                 
+                  <Link to={`/journey-details/${item.id}`}>
+                    <Button btnClass="btn btn-solid color1" name="book now" />
+                  </Link>
                 </div>
               </div>
             </div>
