@@ -77,6 +77,10 @@ export const carData = [
     rentals1:22.00,
     rentals2:18.00,
     Airport:35.00,
+    additionalFarePerKM:16.00,
+    additionalRideTimeFare:20.00,
+    driverAllowance:250.00,
+    nightCharges:250.00
   
   },
   {
@@ -93,6 +97,10 @@ export const carData = [
     rentals1:22.00,
     rentals2:22.00,
     Airport:60.00,
+    additionalFarePerKM:18.00,
+    additionalRideTimeFare:30.00,
+    driverAllowance:250.00,
+    nightCharges:250.00
   },
   {
     id: 3,
@@ -107,6 +115,10 @@ export const carData = [
     rentals1:22.00,
     rentals2:22.00,
     Airport:65.00,
+    additionalFarePerKM:18.00,
+    additionalRideTimeFare:30.00,
+    driverAllowance:250.00,
+    nightCharges:250.00
   }
 ];
 

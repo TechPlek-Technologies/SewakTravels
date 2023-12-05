@@ -28,12 +28,12 @@ const calculateDistanceAndDuration = (
           distance.replace(/,/g, "").replace(" Km", "")
         );
 
-        const duration = leg.duration.text;
+       
 
    
         let totalDistance = distanceNumeric;
 
-
+        const duration = leg.duration.text;
 
         // Calculate the duration in hours
 

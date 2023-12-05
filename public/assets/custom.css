@@ -564,3 +564,22 @@ li.nav-item {
 .isValidFalse{
   display: block;
 }
+
+.popup-header{
+  display: flex;
+  justify-content: space-between;
+}
+.popup-header img{
+  height: 80px;
+}
+
+.tableStructure{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 20px;
+}
+.tableStructure>div{
+  border: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: center;
+}

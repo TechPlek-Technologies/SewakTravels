@@ -4,14 +4,14 @@ import { useContext } from "react";
 import { AppContext } from "../../Context/JourneyContext";
 
 
-const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount}) => {
+const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount,paymentData}) => {
 
   const { journeyData } = useContext(AppContext);
 
   const pickupDate = new Date(journeyData?.startDate);
   // console.log(typeof(journeyData?.travelDistance))
 
-  const pay=(journeyData?.travelDistance)*desiredcar.fare;
+  const pay=(paymentData.totalFare);
   // console.log(pay)
 
   const dateStringConverter = (pickupDate) => {
@@ -118,15 +118,15 @@ const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount})
               <tbody>
                 <tr>
                   <td>Base price</td>
-                  <td>₹{pay}</td>
+                  <td>₹{pay-paymentData.driverAllowance-paymentData.nightCharges}</td>
                 </tr>
                 <tr>
                   <td>Driver Charges</td>
-                  <td>+ ₹{0}</td>
+                  <td>+ ₹{paymentData.driverAllowance}</td>
                 </tr>
                 <tr>
-                  <td>tax & service fees</td>
-                  <td>+ ₹{0}</td>
+                  <td>Night Charges</td>
+                  <td>+ ₹{paymentData.nightCharges}</td>
                 </tr>
               </tbody>
             </table>

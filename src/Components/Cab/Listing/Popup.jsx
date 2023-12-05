@@ -1,23 +1,18 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Modal, ModalBody } from "reactstrap";
 import { AppContext } from "../../../Context/JourneyContext";
 
-const Popup = ({ car, modal, toggle }) => {
-
-  const {jounrneyData} =useContext(AppContext)
-  console.log("car",car)
+const Popup = ({ selectedValue, travelDistance, car, modal, toggle }) => {
   const includeInPrice = [
-    "cancellation",
-    "theft protection",
-    "local taxes",
-    "Prices are inclusive of all the taxes",
-    "fuel charges",
-    "driver allowance",
+    "Theft protection",
+    "Driver allowance",
+    "Night Allowance",
   ];
 
   const excludeInPrice = [
     "late return charges",
-    "Night Allowance",
+    "Fuel charges",
+    "Cancellation",
     "Parking",
     "toll / state tax",
   ];
@@ -40,41 +35,48 @@ const Popup = ({ car, modal, toggle }) => {
         >
           <div className="popup-content">
             <div className="popup-header">
-              <h5>{car?.name}</h5>
-              <h6>
-                Outstation One-Way Fare/km: <span>₹{car.outstationOneWay}</span>
-               
-              </h6>
-              <h6>
-              Outstation Round-Trip Fare/km: <span>₹{car.outstattionRoundTrip}</span>
-               
-              </h6>
-              <h6>
-               Airport Transfer Fare/km: <span>₹{car.Airport}</span>
-               
-              </h6>
-              <h6>
-                Hourly Rentals Fare/km: <span>₹{car.rentals2}</span>
-               
-              </h6>
+              <div>
+                <h5>{car?.name}</h5>
+
+                <p className="popup-description">{car?.cabType}</p>
+              </div>
+              <div>
+                <img src={car?.img} alt="" />
+              </div>
             </div>
-            <p className="popup-description">{car?.cabType}</p>
             <div className="popup-overview">
-              <h6>Car Overview</h6>
-              <ul>
-                {car?.carOverview?.map((item, index) => (
-                  <li key={index}>
-                    <img src={item.src} className="img-fluid" alt="" />{" "}
-                    {item.text}
-                  </li>
-                ))}
-              </ul>
+              <h6>Fare Details</h6>
+              <div className="tableStructure">
+                <div>Journey Type </div>
+                <div>{selectedValue}</div>
+                <div>Package (Per Day KM) </div>
+                <div>
+                 250
+                </div>
+                <div>Per KM Charges </div>
+                <div> {selectedValue === "Outstation One-Way"
+                    ? car.outstationOneWay
+                    : selectedValue === "Outstation One-Way"
+                    ? car.outstattionRoundTrip
+                    : selectedValue === "Airport Transfer"
+                    ? car.Airport
+                    : car.rentals2}</div>
+                <div>Total Distance</div>{" "}
+                <div>{travelDistance } KM</div>
+                <div>Number of days</div>{" "}
+                <div>{Math.ceil(travelDistance / 250)}</div>
+                <div>Night time allowance (11:00 PM - 06:00 AM) </div>
+                <div> ₹ 300/night</div>
+                <div>Driver Allowances per Day</div>
+                <div> ₹ 300</div>
+           
+              </div>
               <ul>
                 {car?.carFeatures?.map((item, index) => (
-                  <li key={index}>
-                    <img src={item.src} className="img-fluid" alt="" />{" "}
+                  <ul key={index}>
+                    <img src={item.img} className="img-fluid" alt="" />{" "}
                     {item.text}
-                  </li>
+                  </ul>
                 ))}
               </ul>
             </div>
@@ -83,7 +85,7 @@ const Popup = ({ car, modal, toggle }) => {
                 <h6>Included in this price:</h6>
                 <ul>
                   {includeInPrice.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <ul key={index}>{item}</ul>
                   ))}
                 </ul>
               </div>
@@ -91,7 +93,7 @@ const Popup = ({ car, modal, toggle }) => {
                 <h6>Excluded from this price:</h6>
                 <ul>
                   {excludeInPrice.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <ul key={index}>{item}</ul>
                   ))}
                 </ul>
               </div>

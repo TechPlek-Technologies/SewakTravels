@@ -7,7 +7,7 @@ export default function PaymentContextProvider(props) {
   
   const initialData = {
     firstName: "",
-    LastName: "",
+    lastName: "",  // Fix: Change "LastName" to "lastName"
     email: "",
     contact: "",
     request:"",
@@ -16,16 +16,15 @@ export default function PaymentContextProvider(props) {
     tripType:"",
     time:"",
     date:"",
-    totalPayment:0,
-    paymentDone:0,
-    paymentRemaining:0
+    totalPayment: 0,
+    paymentDone: 0,
+    paymentRemaining: 0
   };
 
   const [paymentData, setPaymentData] = useState(initialData);
 
-
   return (
-    <Provider value={{ paymentData, setPaymentData}}>
+    <Provider value={{ paymentData, setPaymentData }}>
       {props.children}
     </Provider>
   );

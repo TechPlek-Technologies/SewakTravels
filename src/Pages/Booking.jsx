@@ -4,6 +4,7 @@ import TravelInfo from "../Components/Booking/TravelInfo";
 import Animation from "../Components/Common/Animation";
 import { AppContext } from "../Context/JourneyContext";
 import { getAuthToken, sendSMS } from "../Utility/SendSMS";
+import { PaymentContext } from "../Context/PaymentContext";
 
 
 const Booking = ({desiredcar}) => {
@@ -15,10 +16,11 @@ const Booking = ({desiredcar}) => {
   
 
   const { journeyData } = useContext(AppContext);
+  const {paymentData}=useContext(PaymentContext);
   // const targetId = param.id;
 
 
-  const totalFare=journeyData?.travelDistance*desiredcar.fare;
+  const totalFare=paymentData.totalFare;
   const initialData = {
     firstName: "",
     LastName: "",
@@ -37,7 +39,7 @@ const Booking = ({desiredcar}) => {
 
   const [payableAmount,setpayableAmount]= useState(totalFare)
 
-  const [paymentData, setPaymentData] = useState(initialData);
+
 
   const firstNameRef = useRef(null);
   const lastNameRef = useRef(null);
@@ -125,19 +127,7 @@ const Booking = ({desiredcar}) => {
 
     
 
-    setPaymentData({
-      ...paymentData,
-      firstName: firstNameRef.current.value,
-      LastName: lastNameRef.current.value,
-      email: emailRef.current.value,
-      contact: contactRef.current.value,
-      request: requestRef.current.value,
-      source: journeyData.pickup,
-      destination: journeyData.dropoff,
-      tripType: journeyData.tripType,
-      time: journeyData.pickupTime,
-      date: journeyData.pickupDate,
-  });
+   
 
     displayRazorpay();
     console.log(paymentData)
@@ -159,6 +149,7 @@ const Booking = ({desiredcar}) => {
             payableAmount={payableAmount}
           />
           <Summary
+          paymentData={paymentData}
             isValid={isValid}
             handleButtonClick={handleButtonClick}
             desiredcar={desiredcar}

@@ -5,16 +5,17 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import ApplicationContextProvider from "./Context/JourneyContext";
 import FlightContextProvider from "./Context/FlightContext";
+import PaymentContextProvider from "./Context/PaymentContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ApplicationContextProvider>
-      <FlightContextProvider>
+      <PaymentContextProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-      </FlightContextProvider>
+      </PaymentContextProvider>
     </ApplicationContextProvider>
   </React.StrictMode>
 );
