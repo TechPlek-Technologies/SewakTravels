@@ -93,31 +93,31 @@ export const flightOffers = [
 export const HotelOffers = [
   {
     id: 1,
-    img: "/assets/images/offer/1.jpg",
+    img: "/assets/img/hotelOffers/1.webp",
     title: "hotel booking",
     desc: "Avail Hot Deals On Hotel Booking To Any Place",
   },
   {
     id: 2,
-    img: "/assets/images/offer/2.jpg",
+    img: "/assets/img/hotelOffers/2.webp",
     title: "upto $400",
     desc: "instant discount on domestic hotels",
   },
   {
     id: 3,
-    img: "/assets/images/offer/3.jpg",
+    img: "/assets/img/hotelOffers/3.webp",
     title: "holiday booking",
     desc: "weekend sale for holiday bookings",
   },
   {
     id: 4,
-    img: "/assets/images/offer/4.jpg",
+    img: "/assets/img/hotelOffers/4.webp",
     title: "food order",
     desc: "complimantary breakfast. use code RICAFOOD",
   },
   {
     id: 5,
-    img: "/assets/images/offer/5.jpg",
+    img: "/assets/img/hotelOffers/5.webp",
     title: "50% cashback",
     desc: "50% cashback on every cab bookings",
   },

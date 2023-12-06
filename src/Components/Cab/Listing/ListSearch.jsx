@@ -35,9 +35,9 @@ function ListSearch({setisValid}) {
 
    
       if (!journeyData.travelDistance) {
-        setisValid(false); // Replace "/" with the actual path of your home page
+        setisValid("notValid"); // Replace "/" with the actual path of your home page
       }else{
-        setisValid(true)
+        setisValid("")
       }
     
 
