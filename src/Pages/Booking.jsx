@@ -8,34 +8,25 @@ import { PaymentContext } from "../Context/PaymentContext";
 
 
 const Booking = ({desiredcar}) => {
+  const { journeyData } = useContext(AppContext);
+  const {paymentData,setPaymentData}=useContext(PaymentContext);
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
     window.scrollTo(0, 0);
-  }, []);
-  
 
-  const { journeyData } = useContext(AppContext);
-  const {paymentData}=useContext(PaymentContext);
+    // Redirect to home page if source or destination is empty
+    if (!paymentData.totalFare) {
+      window.location.href = "/";; // Replace "/" with the actual path of your home page
+    }
+  }, [ journeyData.source, journeyData.destination]);
+
+ 
   // const targetId = param.id;
 
 
   const totalFare=paymentData.totalFare;
-  const initialData = {
-    firstName: "",
-    LastName: "",
-    email: "",
-    contact: "",
-    request:"",
-    source: "",
-    destination:"",
-    tripType:"",
-    time:"",
-    date:"",
-    totalPayment:0,
-    paymentDone:0,
-    paymentRemaining:0
-  };
+ 
 
   const [payableAmount,setpayableAmount]= useState(totalFare)
 
@@ -59,7 +50,10 @@ const Booking = ({desiredcar}) => {
       description: "Purchase Description",
       image: "/assets/img/logo.png",
       handler: function (response) {
-       
+        sendSmsWithDynamicSchedule()
+
+      
+
         window.location.href = `/payment/${response.razorpay_payment_id}`
       },
       prefill: {
@@ -122,16 +116,32 @@ const Booking = ({desiredcar}) => {
       setIsValid(true);
     }
 
-    
-    sendSmsWithDynamicSchedule();
-
-    
-
-   
+    const updatedObject = {
+      firstName:firstNameRef.current.value,
+      lastName:lastNameRef.current.value,
+      email: emailRef.current.value,
+      contact: contactRef.current.value,
+      request: requestRef.current.value||"",
+      source: journeyData.source,
+      destination: journeyData.destination,
+      tripType:journeyData.selectedValue,
+      startDate:journeyData.startDate,
+      returnDate:journeyData.returnDate,
+      startTime:journeyData.startTime,
+      returnTime:journeyData.returnTime,
+      totalPayment:totalFare,
+      paymentDone:payableAmount,
+      paymentRemaining:totalFare-payableAmount,
+    };
+    setPaymentData(updatedObject);
+ 
 
     displayRazorpay();
-    console.log(paymentData)
+ 
+
   };
+
+
 
   return (
     <section className="section-b-space bg-inner animated-section">

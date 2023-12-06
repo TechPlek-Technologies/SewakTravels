@@ -1,20 +1,19 @@
-import { useState } from "react";
-import OutstationDataState from "../../../../Hooks/OutstationDataState";
+import { useRef, useState } from "react";
 import DatePickerComponent from "../../../Common/DatePickerComponent";
 import TimePickerComponent from "../../../Common/TimePickerComponent";
+import useAutocomplete from "../../../../Utility/Autocomplete";
+import useAutocompleteFlight from "../../../../Utility/AutoCompleteFlight";
+// import useAutocomplete from "../../../../Utility/AutoCompleteFlight";
 
 
-const AirportSearch = () => {
+const AirportSearch = ({setSource,setDestination,startDate,setStartDate,setStartTime}) => {
 
-  const {
+ 
+  const sourceInputRef = useRef(null);
+  const destinationInputRef = useRef(null);
 
-    startDate,
-    setStartDate,
-    sourceInputRef,
-    destinationInputRef,
-
-  } = OutstationDataState();
-
+  useAutocompleteFlight(sourceInputRef, setSource);
+  useAutocomplete(destinationInputRef, setDestination);
  
 
 
@@ -51,7 +50,7 @@ const AirportSearch = () => {
               name="text"
               placeholder="Select Airport"
               className="form-control"
-              ref={destinationInputRef}
+              ref={sourceInputRef}
             />
           </div>
           <div className="search-body title-hotel col-2">
@@ -61,7 +60,7 @@ const AirportSearch = () => {
               name="text"
               placeholder="Select City"
               className="form-control"
-              ref={sourceInputRef}
+              ref={destinationInputRef}
             />
           </div>
         </>
@@ -74,7 +73,7 @@ const AirportSearch = () => {
               name="text"
               placeholder="Select City"
               className="form-control"
-              ref={sourceInputRef}
+              ref={destinationInputRef}
             />
           </div>
           <div className="search-body title-hotel col-2">
@@ -85,7 +84,7 @@ const AirportSearch = () => {
               name="text"
               placeholder="Select Airport"
               className="form-control"
-              ref={destinationInputRef}
+              ref={sourceInputRef}
             />
           </div>
         </>
@@ -98,7 +97,7 @@ const AirportSearch = () => {
 
       <div className="search-body col-2 search-input">
         <h6>{"pickup-Time"}</h6>
-        <TimePickerComponent />
+        <TimePickerComponent  updateTimeCallback={setStartTime}/>
       </div>
     </div>
   );

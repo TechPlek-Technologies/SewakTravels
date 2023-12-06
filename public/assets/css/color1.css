@@ -11791,7 +11791,7 @@ section .black-layer:before {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    height: 100vh;
+    height: 80vh;
     width: 100%; }
     .coming-soon .coming-soon-detail > div {
       width: 100%; }
@@ -11887,9 +11887,9 @@ section .black-layer:before {
               align-items: flex-end;
       padding-bottom: 60px;
       z-index: 1; }
-      .coming-soon.travel .coming-soon-detail .logo img {
+      /* .coming-soon.travel .coming-soon-detail .logo img {
         -webkit-filter: invert(1);
-                filter: invert(1); }
+                filter: invert(1); } */
       .coming-soon.travel .coming-soon-detail h2 {
         color: black; }
       .coming-soon.travel .coming-soon-detail form label {

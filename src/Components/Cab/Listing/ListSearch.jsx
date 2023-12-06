@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../../../Context/JourneyContext";
 import CabSearch from "./CabSearch";
 
-function ListSearch() {
+function ListSearch({setisValid}) {
   const [searchBarOpen, setSearchBarOpen] = useState(false);
 
   const { journeyData } = useContext(AppContext);
+
 
   const [source, setSource] = useState("");
   const [destination, setDestination] = useState("");
@@ -15,6 +16,8 @@ function ListSearch() {
 
   const [startTime, setStartTime] = useState();
   const [returnTime, setReturnTime] = useState();
+  const [rentals, setRentals] = useState();
+
 
   const [selectedValue, setSelectedValue] = useState();
 
@@ -27,6 +30,19 @@ function ListSearch() {
     setStartTime(journeyData.startTime);
     setReturnTime(journeyData.returnTime);
     setSelectedValue(journeyData.selectedValue);
+    setRentals(journeyData.rentalPackage)
+  
+
+   
+      if (!journeyData.travelDistance) {
+        setisValid(false); // Replace "/" with the actual path of your home page
+      }else{
+        setisValid(true)
+      }
+    
+
+
+    
   }, [journeyData]);
 
   return (
@@ -75,6 +91,8 @@ function ListSearch() {
         setReturnTime={setReturnTime}
         startTime={startTime}
         returnTime={returnTime}
+        rentals={rentals}
+        setRentals={setRentals}
       />
     </div>
   );

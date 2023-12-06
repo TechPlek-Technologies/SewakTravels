@@ -3,15 +3,19 @@ import Img from "../Common/Img";
 import { useContext } from "react";
 import { AppContext } from "../../Context/JourneyContext";
 
-
-const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount,paymentData}) => {
-
+const Summary = ({
+  desiredcar,
+  handleButtonClick,
+  payableAmount,
+  setpayableAmount,
+  paymentData,
+}) => {
   const { journeyData } = useContext(AppContext);
 
   const pickupDate = new Date(journeyData?.startDate);
   // console.log(typeof(journeyData?.travelDistance))
 
-  const pay=(paymentData.totalFare);
+  const pay = paymentData.totalFare;
   // console.log(pay)
 
   const dateStringConverter = (pickupDate) => {
@@ -56,15 +60,15 @@ const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount,p
       </h5>
     );
   };
- 
-  const updateAmount=(e)=>{
-    if(e.target.value==="oneThirdPayment"){
-      setpayableAmount(Math.ceil(pay/3));
+
+  const updateAmount = (e) => {
+    if (e.target.value === "oneThirdPayment") {
+      setpayableAmount(Math.ceil((pay * 15) / 100));
     }
-    if(e.target.value==="fullPayment"){
+    if (e.target.value === "fullPayment") {
       setpayableAmount(pay);
     }
-  }
+  };
 
   return (
     <div className="col-lg-5 booking-order">
@@ -96,18 +100,28 @@ const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount,p
                 <h6>Source</h6>
                 <h5>{journeyData.source}</h5>
               </div>
-              <div className="down">
-                <h6>Destination</h6>
-                <h5>{journeyData.destination}</h5>
-              </div>
+              {journeyData.selectedValue === "Hourly Rentals" && (
+                <div className="down">
+                  <h6>Package</h6>
+                  <h5>{journeyData.rentalPackage}</h5>
+                </div>
+              ) || (
+                <div className="down">
+                  <h6>Destination</h6>
+                  <h5>{journeyData.destination}</h5>
+                </div>
+              )}
             </div>
           </div>
         </div>
         <div className="summery-section">
           <h5 className="mb-0">{journeyData.selectedValue}</h5>
-          <Link to={`/cab/listing/${encodeURIComponent(
-                                  journeyData.source
-                                )}/${encodeURIComponent(journeyData.destination)}`} className="edit-cls">
+          <Link
+            to={`/cab/listing/${encodeURIComponent(
+              journeyData.source
+            )}/${encodeURIComponent(journeyData.destination)}`}
+            className="edit-cls"
+          >
             {"Edit"}
           </Link>
         </div>
@@ -118,7 +132,12 @@ const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount,p
               <tbody>
                 <tr>
                   <td>Base price</td>
-                  <td>₹{pay-paymentData.driverAllowance-paymentData.nightCharges}</td>
+                  <td>
+                    ₹
+                    {pay -
+                      paymentData.driverAllowance -
+                      paymentData.nightCharges}
+                  </td>
                 </tr>
                 <tr>
                   <td>Driver Charges</td>
@@ -136,49 +155,40 @@ const Summary = ({ desiredcar,handleButtonClick,payableAmount,setpayableAmount,p
           <div className="payment-details">
             <table>
               <tbody>
-              <tr>
-            
-            <td>
-            <select
-                type="text"
-                className="form-control open-select"
-                id="exampleInputEmail1"
-                placeholder="pick up"
-                onChange={updateAmount}
-              >
-                <option value="fullPayment">
-                  Full Payment
-                </option>
-                <option value="oneThirdPayment">
-                  One Third Payment
-                </option>
-                
-              </select>
-            </td>
-        </tr>
+                <tr>
+                  <td>
+                    <select
+                      type="text"
+                      className="form-control open-select"
+                      id="exampleInputEmail1"
+                      placeholder="pick up"
+                      onChange={updateAmount}
+                    >
+                      <option value="fullPayment">Make Full Payment Now</option>
+                      <option value="oneThirdPayment">
+                        Make Part Payment Now
+                      </option>
+                    </select>
+                  </td>
+                </tr>
+                {/* {<tr>Pay Rest To Driver</tr>}   */}
                 <tr>
                   <td>payable amount</td>
-                  <td className="amount">
-                  ₹
-                    {payableAmount}
-                  </td>
+                  <td className="amount">₹{payableAmount}</td>
                 </tr>
               </tbody>
             </table>
             <div className="submit-btn">
-            <Link>
-              <button
-                className="btn btn-solid App-link"
-                type="submit"
-                onClick={handleButtonClick}
-              >
-
-
-
-                {"Book Now"}
-              </button>
-            </Link>
-          </div>
+              <Link>
+                <button
+                  className="btn btn-solid App-link"
+                  type="submit"
+                  onClick={handleButtonClick}
+                >
+                  {"Book Now"}
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

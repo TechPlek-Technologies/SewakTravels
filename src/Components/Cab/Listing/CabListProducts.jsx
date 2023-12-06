@@ -6,7 +6,7 @@ import { useState } from "react";
 import Popup from "./Popup";
 import { PaymentContext } from "../../../Context/PaymentContext";
 
-function CabListProducts({ data }) {
+function CabListProducts({ data,isValid }) {
   const { journeyData } = useContext(AppContext);
   const [showDetails, setShowDetails] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
@@ -169,6 +169,7 @@ function CabListProducts({ data }) {
                     <h6
                       onClick={() => toggleDetails(item)}
                       className="viewFairDetails"
+                      
                     >
                       view details
                     </h6>
@@ -187,8 +188,8 @@ function CabListProducts({ data }) {
               </div>
               <div onClick={() => bookNow(item)} className="col-md-3">
                 <div className="book-flight">
-                  <Link to={`/journey-details/${item.id}`}>
-                    <Button btnClass="btn btn-solid color1" name="book now" />
+                  <Link  to={`/journey-details/${item.id}`}>
+                    <Button isValid={isValid}  btnClass="btn btn-solid color1" name="book now" />
                   </Link>
                 </div>
               </div>

@@ -24,9 +24,15 @@ const CabSearch = ({
   setStartTime,
   returnTime,
   startTime,
+  rentals,
+  setRentals
 }) => {
   const handleTripTypeChange = (e) => {
     setSelectedValue(e.target.value);
+  };
+
+  const handlerentalsPackage = (e) => {
+    setRentals(e.target.value);
   };
   const { journeyData, setJourneyData } = useContext(AppContext);
 
@@ -40,7 +46,7 @@ const CabSearch = ({
       startDate,
       returnDate,
       startTime,
-      returnTime
+      returnTime,rentals
     );
     alert("changes Updated")
   };
@@ -101,7 +107,27 @@ const CabSearch = ({
               /> */}
             </div>
           </div>
-          <div className="col">
+          {selectedValue==="Hourly Rentals"? <div className="col">
+            <div className="form-group">
+              <label className="font-xs-white">Package</label>
+
+              <select
+                className="form-control open-select"
+                onChange={handlerentalsPackage}
+                value={rentals}
+                style={{ width: "180px" }}
+              >
+                <option value="4hrs40km"> 4hrs 40km</option>
+                <option value="8hrs80km">8hrs 80km</option>
+              </select>
+
+              {/* <Img
+                src="/assets/images/icon/table-no.png"
+                className="img-fluid "
+                alt=""
+              /> */}
+            </div>
+          </div>:<div className="col">
             <div className="form-group">
               <label className="font-xs-white">Destination</label>
               <input
@@ -117,7 +143,7 @@ const CabSearch = ({
                 alt=""
               /> */}
             </div>
-          </div>
+          </div>}
           <div className="col">
             <div className="form-group">
               <label className="font-xs-white">Pickup Date</label>

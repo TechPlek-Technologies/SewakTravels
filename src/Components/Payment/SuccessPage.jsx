@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../Common/Button";
 import Img from "../Common/Img";
 
@@ -12,7 +13,10 @@ const SuccessPage= ({ title, img,transacionID }) => {
             <Img src={img} className="img-fluid" alt="" />
             <h2>{title}</h2>
             <p>thank you for you payment. we have received your payment successfully. your transaction ID is<h3> {transacionID}</h3> you will get an email invoice soon!</p>
-            <Button btnClass="btn btn-solid color1" name={"Download Invoice"} />
+            <Link to="/">
+            <Button btnClass="btn btn-solid color1" name={"Home"} />
+            
+            </Link>
           </div>
         </div>
       </div>

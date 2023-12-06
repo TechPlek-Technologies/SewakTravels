@@ -1,6 +1,7 @@
 import AirportSearch from "./AirportSearch";
 import RentalSearch from "./RentalSearch";
 import OutStationSearch from "./OutStationSearch";
+import { useState } from "react";
 
 const SearchBox = ({
   source,
@@ -14,19 +15,24 @@ const SearchBox = ({
   returnDate,
   setReturnDate,
   setStartTime,
-  setReturnTime
+  setReturnTime,
+  setRentals
 }) => {
   const handleRadioChange = (event) => {
     setSelectedValue(event.target.value);
   };
 
-  
 
   return (
     <>
       <div className={`search-box `}>
         <div className="journeyType ">
-          <div onClick={() => setSelectedValue("Outstation One-Way")} className={`selectBox ${selectedValue === "Outstation One-Way" ? 'additionalClass' : ''}`}>
+          <div
+            onClick={() => setSelectedValue("Outstation One-Way")}
+            className={`selectBox ${
+              selectedValue === "Outstation One-Way" ? "additionalClass" : ""
+            }`}
+          >
             <input
               id="radio-1"
               type="radio"
@@ -40,7 +46,12 @@ const SearchBox = ({
             </label>
           </div>
 
-          <div onClick={() => setSelectedValue("Outstation Round-Trip")}  className={`selectBox ${selectedValue === 'Outstation Round-Trip' ? 'additionalClass' : ''}`}>
+          <div
+            onClick={() => setSelectedValue("Outstation Round-Trip")}
+            className={`selectBox ${
+              selectedValue === "Outstation Round-Trip" ? "additionalClass" : ""
+            }`}
+          >
             <input
               id="radio-2"
               type="radio"
@@ -54,7 +65,12 @@ const SearchBox = ({
             </label>
           </div>
 
-          <div onClick={() => setSelectedValue("Airport Transfer")} className={`selectBox ${selectedValue === 'Airport Transfer' ? 'additionalClass' : ''}`}>
+          <div
+            onClick={() => setSelectedValue("Airport Transfer")}
+            className={`selectBox ${
+              selectedValue === "Airport Transfer" ? "additionalClass" : ""
+            }`}
+          >
             <input
               id="radio-3"
               type="radio"
@@ -68,14 +84,18 @@ const SearchBox = ({
             </label>
           </div>
 
-          <div onClick={() => setSelectedValue("Hourly Rentals")} className={`selectBox ${selectedValue === 'Hourly Rentals' ? 'additionalClass' : ''}`}>
+          <div
+            onClick={() => setSelectedValue("Hourly Rentals")}
+            className={`selectBox ${
+              selectedValue === "Hourly Rentals" ? "additionalClass" : ""
+            }`}
+          >
             <input
               id="radio-4"
               type="radio"
               name="journeyType"
               value="Hourly Rentals"
               onChange={handleRadioChange}
-              
               checked={selectedValue === "Hourly Rentals"}
             />
             <label htmlFor="radio-4" className="radio-label">
@@ -87,8 +107,8 @@ const SearchBox = ({
         {selectedValue === "Outstation One-Way" ||
         selectedValue === "Outstation Round-Trip" ? (
           <OutStationSearch
-          source={source}
-          destination={destination}
+            source={source}
+            destination={destination}
             setSource={setSource}
             setDestination={setDestination}
             selectedValue={selectedValue}
@@ -104,9 +124,17 @@ const SearchBox = ({
           <AirportSearch
             setSource={setSource}
             setDestination={setDestination}
+            startDate={startDate}
+            setStartDate={setStartDate}
+            setStartTime={setStartTime}
           />
         ) : (
-          <RentalSearch setSource={setSource} setDestination={setDestination} />
+          <RentalSearch
+            setSource={setSource}
+            setDestination={setDestination}
+            setRentals={setRentals}
+            
+          />
         )}
       </div>
     </>

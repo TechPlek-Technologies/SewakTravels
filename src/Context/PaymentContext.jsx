@@ -6,7 +6,7 @@ const { Provider } = PaymentContext;
 export default function PaymentContextProvider(props) {
   
   const initialData = {
-    firstName: "",
+    firstName: "", 
     lastName: "",  // Fix: Change "LastName" to "lastName"
     email: "",
     contact: "",
@@ -14,8 +14,10 @@ export default function PaymentContextProvider(props) {
     source: "",
     destination:"",
     tripType:"",
-    time:"",
-    date:"",
+    startDate:"",
+    returnDate:"",
+    startTime:"",
+    returnTime:"",
     totalPayment: 0,
     paymentDone: 0,
     paymentRemaining: 0

@@ -3,7 +3,7 @@ import Filters from "./Filters";
 import ProductLayout from "./ProductLayout";
 import { carData } from "../../../Data/CabData";
 
-function ListingView() {
+function ListingView({isValid}) {
   const [filteredData, setFilteredData] = useState(carData);
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -34,7 +34,7 @@ function ListingView() {
                 alt=""
               />
             </a>
-            <ProductLayout value={filteredData}  />
+            <ProductLayout value={filteredData} isValid={isValid}  />
           </div>
         </div>
       </div>

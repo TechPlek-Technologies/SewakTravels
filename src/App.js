@@ -10,18 +10,18 @@ import PrivacyPolicy from "./Pages/Other/PrivacyPolicy";
 import TermsAndCondition from "./Pages/Other/TermsAndCondition";
 import RefundPolicy from "./Pages/Other/RefundPolicy";
 import Service from "./Pages/Services/Service";
-import ComingSoon from "./Pages/ComingSoon";
 import About from "./Pages/About";
 import Outstation from "./Pages/Services/Outstation";
 import Airport from "./Pages/Services/Airport";
 import Corporate from "./Pages/Services/Corporate";
 import Payment from "./Pages/Payment";
+import Blogs from "./Pages/Blogs";
 
 function App() {
 
   const routes = useRoutes([
     { path: "/", element: <Home /> },
-    { path: "/blogs", element: <ComingSoon /> },
+    { path: "/blogs", element: <Blogs /> },
     { path: "/journey-details/:id", element: <CabDetails /> },
     { path: "/cab/listing/:source/:destination", element: <CabListing /> },
     { path: "/contact", element: <Contactus /> },

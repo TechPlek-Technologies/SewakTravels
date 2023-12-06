@@ -13,6 +13,7 @@ const CabSearch = ({
   setReturnDate,
   setStartTime,
   setReturnTime,
+  setRentals
 }) => {
   return (
     <div className="search-panel">
@@ -34,6 +35,7 @@ const CabSearch = ({
                   setReturnDate={setReturnDate}
                   setStartTime={setStartTime}
                   setReturnTime={setReturnTime}
+                  setRentals={setRentals}
                 />
               </div>
             </div>

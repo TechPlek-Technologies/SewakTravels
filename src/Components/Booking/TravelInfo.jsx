@@ -48,7 +48,7 @@ const TravelInfo = ({isValid,contactRef,emailRef,lastNameRef,firstNameRef,reques
       </div>
       <div className="form-group">
         <label>{"Contact Info"}</label>
-        <input id="mobile-no" type="tel" className="form-control" ref={contactRef} />
+        <input id="mobile-no" type="number" className="form-control" ref={contactRef} />
         {!isValid && <div className={isValid ? "isValidFalse":""} style={{ color: "red", display: "none" }}>Required field.</div>}
       </div>
       <div className="form-group">

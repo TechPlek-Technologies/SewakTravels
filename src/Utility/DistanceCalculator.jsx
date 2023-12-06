@@ -8,7 +8,7 @@ const calculateDistanceAndDuration = (
   startDate,
   returnDate,
   startTime,
-  returnTime
+  returnTime,rentals
 ) => {
   try {
     const directionsService = new window.google.maps.DirectionsService();
@@ -47,7 +47,8 @@ const calculateDistanceAndDuration = (
           startDate: startDate,
           returnDate: returnDate,
           startTime:startTime,
-          returnTime:returnTime
+          returnTime:returnTime,
+          rentalPackage:rentals
         };
         setJourneyData(updatedObject);
       } else {
