@@ -9,7 +9,7 @@ const Package = ({type}) => {
     <section className="category-wrapper section-b-space">
       <div className="container">
         
-        <TitleComponent title={"New Offers"} subTitle={"Famous Destinations"} span={"Cab Booking"} titleClass={"title-3 "} />
+        <TitleComponent title={"New Offers"} subTitle={"Famous Destinations"} span={"Cab Offers"} titleClass={"title-3 "} />
          
         <div className="row">
           <div className="col">

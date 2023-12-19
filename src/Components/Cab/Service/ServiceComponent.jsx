@@ -12,7 +12,7 @@ const ServiceComponent= () => {
       id: 1,
       svg: <BookingSvg />,
       title: "OutStation",
-      desc: "Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum the has been standard dummy text ever 1500s..",
+      desc: "SewakTravels.com: Your go-to for Car & Coach rentals in Gurugram, Delhi & NCR. Choose from Compact, Mini Van, Luxury, and more. Reliable service, expert drivers.",
       price: "15% discount",
       path:"/service/outstation"
     },
@@ -20,7 +20,7 @@ const ServiceComponent= () => {
       id: 2,
       svg: <CabSvg1 />,
       title: "Airport Pick & Drop",
-      desc: "Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum the has been standard dummy text ever 1500s..",
+      desc: "At Sewak Travels, we guarantee hassle-free Airport Taxi services in Gurgaon and Delhi, NCR. Call us anytime for instant bookings and choose from various options. Connect with our consultants effortlessly.",
       price: "15% discount",
       path:"/service/airport"
 
@@ -30,7 +30,7 @@ const ServiceComponent= () => {
       svg: <CarSvg />,
 
       title: "Corporate Booking",
-      desc: "Lorem Ipsum is simply dummy text of the typesetting industry. Lorem Ipsum the has been standard dummy text ever 1500s..",
+      desc: "Leading employee transport service in Delhi, NCR, offering seamless solutions with routing, tracking, and enhanced security features. Tailored for corporate excellence.",
       price: "15% discount",
       path:"/service/corporate"
 

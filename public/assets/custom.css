@@ -584,3 +584,6 @@ li.nav-item {
   justify-content: center;
 }
 
+section.small-section{
+  margin-bottom: 40px;
+}

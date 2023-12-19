@@ -65,7 +65,7 @@ export const carData = [
 
   {
     id: 1,
-    img: "/assets/img/listing/sedan.jpg",
+    img: "/assets/img/listing/sedan.webp",
    
     name: "Sedan",
     category: "Sedan",
@@ -85,7 +85,7 @@ export const carData = [
   },
   {
     id: 2,
-    img: "/assets/img/listing/suv.jpg",
+    img: "/assets/img/listing/suv.webp",
    
     name: "SUV",
     category: "SUV",
@@ -104,10 +104,10 @@ export const carData = [
   },
   {
     id: 3,
-    img: "/assets/img/listing/suv.jpg",
+    img: "/assets/img/listing/suv-premium.webp",
   
     name: "Prime SUV",
-    category: "Innova",
+    category: "Prime Suv",
     cabType: "Innova Crysta",
     capacity: "6",
     outstationOneWay:28.00,
@@ -159,17 +159,14 @@ export const carTypeData = [
     id: 1,
     type: "Sedan",
   },
-  {
-    id: 2,
-    type: "Hatchback",
-  },
+ 
   {
     id: 3,
     type: "SUV",
   },
   {
     id: 4,
-    type: "Innova",
+    type: "Prime Suv",
   },
 ];
 

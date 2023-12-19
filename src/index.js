@@ -12,9 +12,7 @@ root.render(
   <React.StrictMode>
     <ApplicationContextProvider>
       <PaymentContextProvider>
-      <BrowserRouter>
         <App />
-      </BrowserRouter>
       </PaymentContextProvider>
     </ApplicationContextProvider>
   </React.StrictMode>

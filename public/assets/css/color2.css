@@ -116,7 +116,7 @@ li {
 p {
   font-size: 14px;
   line-height: 18px;
-  color: #bcbcbc;
+  color: #505050;
   letter-spacing: 0.03em; }
 
 a {
@@ -448,7 +448,7 @@ section,
   .title-1.detail-title p {
     max-width: 60%;
     margin: 0 auto;
-    color: rgba(0, 0, 0, 0.41);
+    color: #505050;
     text-transform: capitalize;
     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
     line-height: 1.7; }
@@ -511,7 +511,7 @@ section,
   .title-3.detail-title p {
     max-width: 60%;
     margin: 0 auto;
-    color: rgba(0, 0, 0, 0.41);
+    color: #505050;
     text-transform: capitalize;
     font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
     line-height: 1.7;
@@ -2228,7 +2228,7 @@ section .black-layer:before {
       line-height: 1.5; }
     .blog-section .blog-box .blog-content h6 {
       font-size: 14px;
-      color: #999999;
+      color: #505050;
       font-weight: 600;
       margin-bottom: 20px; }
 
@@ -2569,7 +2569,7 @@ section .black-layer:before {
     margin-bottom: 15px; }
   .service-section .service-box p {
     text-align: center;
-    color: #999999;
+    color: #505050;
     line-height: 1.7;
     margin-bottom: 8px; }
   .service-section .service-box .lower-section {
@@ -2629,7 +2629,7 @@ section .black-layer:before {
     letter-spacing: 0.001em; }
   .service_section .service-wrap p {
     font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
-    color: #b3b3b3;
+    color: #505050;
     margin-bottom: -6px;
     line-height: 1.5;
     letter-spacing: 0.01em; }
@@ -2824,7 +2824,7 @@ section .black-layer:before {
     .testimonial-section .testimonial .right-part p {
       margin-top: 14px;
       font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
-      color: #707070;
+      color: #505050;
       line-height: 1.6;
       margin-bottom: 25px; }
     .testimonial-section .testimonial .right-part .detail {
@@ -3116,23 +3116,23 @@ section .black-layer:before {
     -webkit-box-shadow: 2.5px 4.33px 20px 0px rgba(0, 0, 0, 0.1);
             box-shadow: 2.5px 4.33px 20px 0px rgba(0, 0, 0, 0.1); }
   .subscribe_section .input-section ::-webkit-input-placeholder {
-    color: #bcbcbc;
+    color: #505050;
     opacity: 1;
     font-weight: 600; }
   .subscribe_section .input-section ::-moz-placeholder {
-    color: #bcbcbc;
+    color: #505050;
     opacity: 1;
     font-weight: 600; }
   .subscribe_section .input-section :-ms-input-placeholder {
-    color: #bcbcbc;
+    color: #505050;
     opacity: 1;
     font-weight: 600; }
   .subscribe_section .input-section ::-ms-input-placeholder {
-    color: #bcbcbc;
+    color: #505050;
     opacity: 1;
     font-weight: 600; }
   .subscribe_section .input-section ::placeholder {
-    color: #bcbcbc;
+    color: #505050;
     opacity: 1;
     font-weight: 600; }
   .subscribe_section .input-section .btn {
@@ -4148,7 +4148,7 @@ section .black-layer:before {
       margin-top: -7px; }
     .special-section .special-box .special-content p {
       font-size: 14px;
-      color: #999999;
+      color: #505050;
       font-weight: 600;
       line-height: 1.5;
       margin-bottom: 15px; }
@@ -5845,7 +5845,7 @@ section .black-layer:before {
   letter-spacing: 0.06em;
   text-align: left;
   margin-bottom: -7px;
-  color: rgba(0, 0, 0, 0.68); }
+  color: #505050; }
 
 .deals {
   overflow: hidden; }
@@ -6411,7 +6411,7 @@ section .black-layer:before {
               margin-right: 8px;
               font-weight: 800; }
           .menu-section .menu-box .bottom-bar .menu-bar .content p {
-            color: rgba(0, 0, 0, 0.68);
+            color: #505050;
             text-transform: capitalize;
             margin-bottom: 6px;
             font-size: 14px;

@@ -8,7 +8,7 @@ const SliderSeven = ({ type,slideData }) => {
   const slide2 = {
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,

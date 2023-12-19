@@ -5,7 +5,7 @@ const TitleComponent = ({ title, subTitle, titleClass, span, h2Class }) => {
       <div className={titleClass}>
         <h2 className={`${h2Class && h2Class}`}>
           {subTitle}
-          {span && <span>{"offers"}</span>}
+          { <span>{span}</span>}
         </h2>
       </div>
     

@@ -41,7 +41,7 @@ function CabType({setFilteredData}) {
       >
         <h6 className="collapse-block-title">Cab Type</h6>
         <div
-          className={`collection-collapse-block-content ${!show ? "d-none" : ""} `}
+          className={`collection-collapse-block-content  `}
         >
           <div className="collection-brand-filter">
             {carTypeData.map((data, index) => {

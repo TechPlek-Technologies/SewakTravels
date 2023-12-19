@@ -1,44 +1,78 @@
-import { useRoutes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./Pages/Home";
-import CabListing from "./Pages/CabListing";
-import CabDetails from "./Pages/CabDetails";
-import Contactus from "./Pages/Contactus";
-import Faq from "./Pages/Faq";
-import NotFoundPage from "./Components/Common/NotFoundPage";
-import PrivacyPolicy from "./Pages/Other/PrivacyPolicy";
-import TermsAndCondition from "./Pages/Other/TermsAndCondition";
-import RefundPolicy from "./Pages/Other/RefundPolicy";
-import Service from "./Pages/Services/Service";
-import About from "./Pages/About";
-import Outstation from "./Pages/Services/Outstation";
-import Airport from "./Pages/Services/Airport";
-import Corporate from "./Pages/Services/Corporate";
-import Payment from "./Pages/Payment";
-import Blogs from "./Pages/Blogs";
+
+
+import { Suspense, lazy, useState } from "react";
+import Img from "./Components/Common/Img";
+
+
+const Home = lazy(() => import("./Pages/Home"));
+
+const CabListing = lazy(() => import("./Pages/CabListing"));
+
+const CabDetails = lazy(() => import("./Pages/CabDetails"));
+
+const Contactus = lazy(() => import("./Pages/Contactus"));
+
+const Faq = lazy(() => import("./Pages/Faq"));
+
+const NotFoundPage = lazy(() => import("./Components/Common/NotFoundPage"));
+
+const PrivacyPolicy = lazy(() => import("./Pages/Other/PrivacyPolicy"));
+
+const TermsAndCondition = lazy(() => import("./Pages/Other/TermsAndCondition"));
+
+const RefundPolicy = lazy(() => import("./Pages/Other/RefundPolicy"));
+
+const Service = lazy(() => import("./Pages/Services/Service"));
+
+const About = lazy(() => import("./Pages/About"));
+
+const Outstation = lazy(() => import("./Pages/Services/Outstation"));
+
+const Airport = lazy(() => import("./Pages/Services/Airport"));
+
+const Corporate = lazy(() => import("./Pages/Services/Corporate"));
+
+const Payment = lazy(() => import("./Pages/Payment"));
+
+const Blogs = lazy(() => import("./Pages/Blogs"));
+
 
 function App() {
+  const [show, setShow] = useState(true);
 
-  const routes = useRoutes([
-    { path: "/", element: <Home /> },
-    { path: "/blogs", element: <Blogs /> },
-    { path: "/journey-details/:id", element: <CabDetails /> },
-    { path: "/cab/listing/:source/:destination", element: <CabListing /> },
-    { path: "/contact", element: <Contactus /> },
-    { path: "/about", element: <About /> },
-    { path: "/service", element: <Service /> },
-    { path: "/service/outstation", element: <Outstation /> },
-    { path: "/service/airport", element: <Airport /> },
-    { path: "/service/corporate", element: <Corporate /> },
-    { path: "/FAQ", element: <Faq /> },
-    { path: "/privacy-policy", element: <PrivacyPolicy /> },
-    { path: "/terms-and-conditon", element: <TermsAndCondition /> },
-    { path: "/refund-policy", element: <RefundPolicy /> },
-    { path: "/payment/:transactionId?", element: <Payment /> },
-    { path: "/*", element: <NotFoundPage /> },
-  ]);
-
-  return routes;
+ 
+  return (
+    <BrowserRouter>
+        <Suspense
+          fallback={
+            <div className={`loader-wrapper img-gif ${show ? "" : "loaderhide"}`}>
+            <Img src={'/assets/images/loader.gif'} alt="Animated GIF" width={300} height={200} />
+          </div>
+          }
+        >
+          <Routes>
+            <Route path={"/"} element={<Home />} />
+            <Route path={"/contact"} element={<Contactus />} />
+            <Route path={"/about"} element={<About />} />
+            <Route path={"/blogs"} element={<Blogs />} />
+            <Route path={"/service"} element={<Service />} />
+            <Route path={"/service/outstation"} element={<Outstation />} />
+            <Route path={"/service/airport"} element={<Airport />} />
+            <Route path={"/service/corporate"} element={<Corporate />} />
+            <Route path={"/cab/listing/:source/:destination"} element={<CabListing />} />
+            <Route path={"/journey-details/:id"} element={<CabDetails />} />
+            <Route path={"/FAQ"} element={<Faq />} />
+            <Route path={"/payment/:transactionId?"} element={<Payment />} />
+            <Route path={"/terms-and-condition"} element={<TermsAndCondition />} />
+            <Route path={"/refund-policy"} element={<RefundPolicy />} />
+            <Route path={"/privacy-policy"} element={<PrivacyPolicy/>} />
+            <Route path={"/*"} element={<NotFoundPage/>} />
+          </Routes>
+        </Suspense>
+    </BrowserRouter>
+  );
 }
 
 export default App;

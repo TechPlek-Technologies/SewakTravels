@@ -64,6 +64,9 @@ function CabListProducts({ data,isValid }) {
 
   useEffect(()=>{
     console.log(paymentData)
+    if(travelDistance===""){
+      // window.location.href = "/";
+    }
         },[paymentData])
 
   return (
