@@ -2,8 +2,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 
-import { Suspense, lazy, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import Img from "./Components/Common/Img";
+import Loader from "./Layout/Loader";
+import axios from "axios";
 
 
 const Home = lazy(() => import("./Pages/Home"));
@@ -40,23 +42,41 @@ const Blogs = lazy(() => import("./Pages/Blogs"));
 
 
 function App() {
-  const [show, setShow] = useState(true);
 
- 
+  const [blogsData, setBlogsData] = useState([]);
+
+  // const targetId = param.id;
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const result = (await axios.get(`http://localhost:5000/blogs`)).data;
+
+      console.log(result);
+      setBlogsData(result);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+
   return (
     <BrowserRouter>
         <Suspense
           fallback={
-            <div className={`loader-wrapper img-gif ${show ? "" : "loaderhide"}`}>
-            <Img src={'/assets/images/loader.gif'} alt="Animated GIF" width={300} height={200} />
-          </div>
+            
+              <Loader loaderTimeout={5000}/>
+             
           }
         >
           <Routes>
             <Route path={"/"} element={<Home />} />
             <Route path={"/contact"} element={<Contactus />} />
             <Route path={"/about"} element={<About />} />
-            <Route path={"/blogs"} element={<Blogs />} />
+            <Route path={"/blogs"} element={<Blogs blogsData={blogsData} />} />
             <Route path={"/service"} element={<Service />} />
             <Route path={"/service/outstation"} element={<Outstation />} />
             <Route path={"/service/airport"} element={<Airport />} />

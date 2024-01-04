@@ -2,15 +2,29 @@ import { Link } from "react-router-dom";
 import Img from "../Common/Img";
 
 const BodyContent= ({ data, view }) => {
+
+  function formatMySQLDate(mysqlDate) {
+    const date = new Date(mysqlDate);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
+  }
+  
+
+  function formatMySQLDateMonth(mysqlDate) {
+    const date = new Date(mysqlDate);
+    const options = { month: 'long', day: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
+  }
+  
     return (
       <>
         <div className={`blog-wrap wow fadeInUp`}>
           <div className={`blog-image ${view === "creative" ? (data.id % 2 === 0 ? "order-md-1" : "") : ""}`}>
-            <Img src={data.img} className=" bg-img" alt="" />
+            <Img src={"./ca_admin/assets/blogs/"+data.banner_image} className=" bg-img" alt="" />
             <div className={`blog-label`}>
               <div>
                 <h3>{data.date}</h3>
-                <h6>{data.month}</h6>
+                <h6>{formatMySQLDateMonth(data.creation_date)}</h6>
               </div>
             </div>
           </div>
@@ -18,13 +32,13 @@ const BodyContent= ({ data, view }) => {
             <div>
               <h6>
                 <i className={`fas fa-map-marker-alt`}></i>
-                {data.location}
-                {view === "creative" && <i className="fas fa-clock ms-2"> 20 april, 2023</i>}
+                {"Delhi, India  "}
+                {view === "creative" && <i className="fas fa-clock ms-2"> {formatMySQLDate(data.creation_date)}</i>}
               </h6>
               <Link href="/pages/blog-detail/left-sidebar">
-                <h5>{data.title}</h5>
+                <h5>{data.blog_title}</h5>
               </Link>
-              <p>{data.desc}</p>
+              <p>{data.short_description}</p>
               {view === "creative" && "list" && (
                 <h6 className="link">
                   <Link href="/pages/blog-detail/left-sidebar">read more</Link>

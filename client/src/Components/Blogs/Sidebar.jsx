@@ -1,7 +1,6 @@
 import PopularPostPage from "./Sidebar/PopularPostPage";
-import PopularTagPage from "./Sidebar/PopularTagPage";
 
-function Sidebar(){
+function Sidebar({value}){
     return (
       <div className="sticky-cls-top">
         <div className="blog-sidebar">
@@ -11,8 +10,8 @@ function Sidebar(){
               <i className="fas fa-search"></i>
             </div>
           </div>
-          <PopularPostPage />
-          <PopularTagPage />
+          <PopularPostPage value={value} />
+          {/* <PopularTagPage /> */}
         </div>
       </div>
     );

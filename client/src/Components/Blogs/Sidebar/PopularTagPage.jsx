@@ -1,4 +1,4 @@
-import { popularTags } from "../../../Data/BlogData";
+// import { popularTags } from "../../../Data/BlogData";
 
 const PopularTagpage= () => {
    
@@ -10,11 +10,11 @@ const PopularTagpage= () => {
         </div>
         <div className="sidebar-content">
           <ul className="tags">
-            {popularTags.map((tag, index) => (
+            {/* {popularTags.map((tag, index) => (
               <li key={index}>
                 <a href="#">{tag}</a>
               </li>
-            ))}
+            ))} */}
           </ul>
         </div>
       </div>

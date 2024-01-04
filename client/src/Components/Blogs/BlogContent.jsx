@@ -9,7 +9,7 @@ const BlogContent = ({ value, side, view}) => {
           <div className="row">
             {side !== "no" && (
               <div className={`col-lg-3`}>
-                <Sidebar />
+                <Sidebar value={value} />
               </div>
             )}
             <div className={`${side === "no" ? "col-lg-12" : "col-lg-9"}`}>
