@@ -12,7 +12,12 @@ async function getAll() {
 }
 
 async function getById(id) {
-    return await db.tbl_blogs(id);
+    try {
+        const blog = await db.tbl_blogs.findByPk(id);
+        return blog;
+    } catch (error) {
+        throw error;
+    }
 }
 
 module.exports = {

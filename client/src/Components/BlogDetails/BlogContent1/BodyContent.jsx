@@ -1,17 +1,18 @@
 import Sidebar from "../../Blogs/Sidebar";
 import Img from "../../Common/Img";
-import CommentContent from "./CommentContent";
 import DetailPart from "./DetailPart";
 import PostDetail from "./PostDetails";
 
-function BodyContent ({ side,data}) {
+function BodyContent ({blogsData, side,data}) {
+
+  console.log(data)
     return (
       <section className="section-b-space bg-white">
         <div className="container">
           <div className="row">
             {side !== "no" && (
               <div className={`col-lg-3`}>
-                <Sidebar />
+                <Sidebar value={blogsData} />
               </div>
             )}
             <div className={"col-lg-9"}>
@@ -19,7 +20,6 @@ function BodyContent ({ side,data}) {
                 <div className="top-image">{<Img src="/assets/images/portfolio/13.jpg" alt="" className="img-fluid " />}</div>
                 <PostDetail data={data}/>
                 <DetailPart data={data}/>
-                <CommentContent data={data}/>
               </div>
             </div>
           </div>

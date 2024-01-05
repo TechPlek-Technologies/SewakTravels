@@ -40,6 +40,7 @@ const Payment = lazy(() => import("./Pages/Payment"));
 
 const Blogs = lazy(() => import("./Pages/Blogs"));
 
+const BlogDetails = lazy(() => import("./Pages/BlogDetails/BlogDetails"));
 
 function App() {
 
@@ -53,7 +54,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const result = (await axios.get(`http://localhost:5000/blogs`)).data;
+      const result = (await axios.get(`https://sewaktravels.com:5000/blogsdata`)).data;
 
       console.log(result);
       setBlogsData(result);
@@ -61,6 +62,8 @@ function App() {
       console.log(err);
     }
   };
+
+  
 
 
   return (
@@ -77,6 +80,7 @@ function App() {
             <Route path={"/contact"} element={<Contactus />} />
             <Route path={"/about"} element={<About />} />
             <Route path={"/blogs"} element={<Blogs blogsData={blogsData} />} />
+            <Route path={"/blogs/:id"} element={<BlogDetails blogsData={blogsData} />} />
             <Route path={"/service"} element={<Service />} />
             <Route path={"/service/outstation"} element={<Outstation />} />
             <Route path={"/service/airport"} element={<Airport />} />

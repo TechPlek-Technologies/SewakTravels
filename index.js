@@ -2,6 +2,7 @@ require("rootpath")();
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const path = require("path");
 const bodyParser = require("body-parser");
 const errorHandler = require("_middleware/error-handler");
 
@@ -9,8 +10,17 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-// api routes
-app.use("/blogs", require("./blogs/blogs.controller"));
+app.use(express.static(path.join("./client/build")))
+
+// Catch all requests that don't match any route
+app.get("*", (req, res) => {
+  res.sendFile(
+    path.join(__dirname, "../client/build/index.html")
+    );
+  });
+  
+  // api routes
+app.use("/blogsdata", require("./blogs/blogs.controller"));
 
 // global error handler
 app.use(errorHandler);
