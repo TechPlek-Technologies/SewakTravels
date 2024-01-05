@@ -10,15 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
 
-app.use(express.static(path.join("./client/build")))
 
-// Catch all requests that don't match any route
-app.get("*", (req, res) => {
-  res.sendFile(
-    path.join(__dirname, "../client/build/index.html")
-    );
-  });
-  
   // api routes
 app.use("/blogsdata", require("./blogs/blogs.controller"));
 

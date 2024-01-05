@@ -54,7 +54,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const result = (await axios.get(`https://sewaktravels.com:5000/blogsdata`)).data;
+      const result = (await axios.get(`http://localhost:5000/blogsdata`)).data;
 
       console.log(result);
       setBlogsData(result);
