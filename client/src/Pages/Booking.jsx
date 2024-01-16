@@ -44,7 +44,7 @@ const Booking = ({desiredcar}) => {
 
   async function displayRazorpay() {
     const options = {
-      key: "rzp_test_hX6SQgVEX8tr9g",
+      key: "rzp_live_EeRnadU1BUMdxW",
       amount: payableAmount*100, // 2000 paise = INR 20, amount in paisa
       name: "Sewak Travels",
       description: "Purchase Description",
