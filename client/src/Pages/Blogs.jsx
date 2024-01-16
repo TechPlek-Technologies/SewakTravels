@@ -7,6 +7,8 @@ import BlogContent from "../Components/Blogs/BlogContent";
 
 function Blogs({blogsData}) {
  
+  console.log("blogsData",blogsData.blogs)
+
   return (
     <>
       <Layout title="light_header" />

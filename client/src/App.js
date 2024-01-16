@@ -42,27 +42,34 @@ const Blogs = lazy(() => import("./Pages/Blogs"));
 
 const BlogDetails = lazy(() => import("./Pages/BlogDetails/BlogDetails"));
 
-function App() {
 
+const fetchData = async () => {
+  try {
+    const result = (await axios.get(`https://new.sewaktravels.com/blogsData`)).data;
+    return result;
+  } catch (err) {
+    console.log(err);
+    throw err; // Rethrow the error so it can be caught in the component
+  }
+};
+
+
+function App() {
   const [blogsData, setBlogsData] = useState([]);
 
-  // const targetId = param.id;
-
   useEffect(() => {
-    fetchData();
-  }, []);
+    const fetchBlogsData = async () => {
+      try {
+        const data = await fetchData();
+        setBlogsData(data.blogs);
+      } catch (error) {
+        // Handle error, e.g., show an error message
+        console.error('Error fetching data:', error);
+      }
+    };
 
-  const fetchData = async () => {
-    try {
-      const result = (await axios.get(`https://new.sewaktravels.com/blogsData`)).data;
-      setBlogsData(result);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  
-
+    fetchBlogsData();
+  }, []); // Empty dependency array means this effect runs only once when the component mounts
 
   return (
     <BrowserRouter>
