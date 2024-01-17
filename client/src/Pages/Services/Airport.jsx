@@ -14,10 +14,7 @@ const Airport = () => {
   return (
     <>
       <Helmet>
-        <title>
-          {" "}
-          Budget-friendly Airport Transfers | Book Airports Cabs/Taxi Online{" "}
-        </title>
+      <title> Affordable Airport Transfers | Book Airports Cabs/Taxi Online. </title>
         <meta
           name="description"
           content=" Airport Transfer service |Airports Taxi Transfers. Book airport cabs services at lowest price and make your Journey safe & hassle free experience, Choose a reliable Airport transportation service at Sewak Travels."

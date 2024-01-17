@@ -9,10 +9,7 @@ function Blogs({ blogsData }) {
   return (
     <>
       <Helmet>
-        <title>
-          {" "}
-          Discover India: Sewak Travels Blogs- Tips, Insights, and Travel Guides
-        </title>
+      <title> Explore India: Sewak Travels Blogs-Tips, Insights, Travel Guides. </title>
         <meta
           name="description"
           content=" Explore India through Sewak Travels Blog - your source for travel tips, insights, and inspiration. Discover tailored travel guides for family trips and business travel adventures."

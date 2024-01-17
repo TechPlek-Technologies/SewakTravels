@@ -49,7 +49,7 @@ const NewHomeBanner = ({activeTab,callback}) => {
   const isButtonDisabled = source === "" || destination === "";
 
   return (
-    <section className="home_section slide-1 p-0">
+    <section className="home_section slide-1 p-0" id="home">
       <div>
         <div
           className="home home-mobile"

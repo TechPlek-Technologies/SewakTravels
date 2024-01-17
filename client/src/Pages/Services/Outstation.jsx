@@ -14,11 +14,7 @@ const Outstation = () => {
   return (
     <>
       <Helmet>
-        <title>
-          {" "}
-          Online Cab & Taxi services - Book Outstation Cabs and Taxi at Best
-          Prices{" "}
-        </title>
+      <title> Book Online Outstation Cabs & Taxis Service at Best Prices. </title>
         <meta
           name="description"
           content=" Now book cabs online at best price from Sewak Travels. Get all types of taxi booking services at lowest fare. Find best cabs booking deals on SUVs, Sedan and Hatchbacks.  Clean Cars, Easy to Book "

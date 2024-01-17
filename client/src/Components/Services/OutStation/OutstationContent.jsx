@@ -8,19 +8,19 @@ const OutstationContent = ({ side }) => {
       src: "/assets/img/about/1.webp",
       title: "OutStation",
       subTitle: "water fall",
-      path:"/service/outstation"
+      path:"/outstation-cab-taxi-service"
     },
     {
       src: "/assets/img/about/2.webp",
       title: "Airport",
       subTitle: "paragliding",
-      path:"/service/airport"
+      path:"/airport-cab-taxi-transport-service"
     },
     {
       src: "/assets/img/about/3.webp",
       title: "Corporate",
       subTitle: "River Front",
-      path:"/service/corporate"
+      path:"/employee-cab-taxi-transport-service"
     },
   ];
   return (
@@ -73,7 +73,7 @@ const OutstationContent = ({ side }) => {
                   alt=""
                 />
                 <div className="buttons-about">
-                  <Link to="/cab/listing" className="btn btn-lower btn-curve">
+                  <Link to="/#home" className="btn btn-lower btn-curve">
                     Book Now
                   </Link>
                   <Link

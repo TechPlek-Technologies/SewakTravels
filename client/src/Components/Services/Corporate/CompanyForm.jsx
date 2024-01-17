@@ -10,7 +10,7 @@ const CompanyForm = () => {
       imgHeight={348}
       position="center"
     >
-      <div className="container">
+      <div className="container" id="corporate-booking">
         <TitleComponent
           title={"Company fleets"}
           subTitle={"Manage Your Corporate Travel"}

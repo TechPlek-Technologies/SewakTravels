@@ -27,11 +27,7 @@ function Home() {
     <>
       <Layout title="overlay-black" />
       <Helmet>
-        <title>
-          {" "}
-          Sewak Travels - Best Travel Website. Book Hotels, Flights, and Cabs
-          Online.{" "}
-        </title>
+      <title> Sewak Travels: Travel Website for Booking Hotels, Flights, Cabs. </title>
         <meta
           name="description"
           content=" Get best deals on all your online travel bookings. Book  
