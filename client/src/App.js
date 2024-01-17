@@ -87,9 +87,9 @@ function App() {
             <Route path={"/blogs"} element={<Blogs blogsData={blogsData} />} />
             <Route path={"/blogs/:id"} element={<BlogDetails blogsData={blogsData} />} />
             <Route path={"/service"} element={<Service />} />
-            <Route path={"/service/outstation"} element={<Outstation />} />
-            <Route path={"/service/airport"} element={<Airport />} />
-            <Route path={"/service/corporate"} element={<Corporate />} />
+            <Route path={"/outstation-cab-taxi-service"} element={<Outstation />} />
+            <Route path={"/airport-cab-taxi-transport-service"} element={<Airport />} />
+            <Route path={"/employee-cab-taxi-transport-service"} element={<Corporate />} />
             <Route path={"/cab/listing/:source/:destination"} element={<CabListing />} />
             <Route path={"/journey-details/:id"} element={<CabDetails />} />
             <Route path={"/FAQ"} element={<Faq />} />

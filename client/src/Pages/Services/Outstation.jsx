@@ -4,20 +4,38 @@ import FooterComponent from "../../Components/Common/FooterComponent";
 import ChooseUs from "../../Components/Services/OutStation/ChooseUs";
 import OutstationContent from "../../Components/Services/OutStation/OutstationContent";
 import Layout from "../../Layout/Layout";
+import { Helmet } from "react-helmet";
 
-const Outstation=()=>{
-    useEffect(() => {
-        // Scroll to the top of the page when the component mounts
-        window.scrollTo(0, 0);
-      }, []);
-    return(<>
-        <Layout title="light_header" userBgClass="user user-light" />
-        <OutstationContent/>
-        <ChooseUs/>
-        <Testimonials/>
-        <FooterComponent/>
-        </>
-    )
-}
+const Outstation = () => {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <>
+      <Helmet>
+        <title>
+          {" "}
+          Online Cab & Taxi services - Book Outstation Cabs and Taxi at Best
+          Prices{" "}
+        </title>
+        <meta
+          name="description"
+          content=" Now book cabs online at best price from Sewak Travels. Get all types of taxi booking services at lowest fare. Find best cabs booking deals on SUVs, Sedan and Hatchbacks.  Clean Cars, Easy to Book "
+        />
+        <meta
+          name="keywords"
+          content="outstation cab booking, taxi service in delhi for outstation, outstation cab service, one-way cab booking, book car rental online, car booking, online cab booking, taxi booking, online taxi booking, book outstation cab, cab booking, car booking, rental cab, outstation cab, airport cab, hourly cab, cab booking online"
+        />
+      </Helmet>
+
+      <Layout title="light_header" userBgClass="user user-light" />
+      <OutstationContent />
+      <ChooseUs />
+      <Testimonials />
+      <FooterComponent />
+    </>
+  );
+};
 
 export default Outstation;

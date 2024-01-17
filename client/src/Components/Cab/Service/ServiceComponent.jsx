@@ -14,7 +14,7 @@ const ServiceComponent= () => {
       title: "OutStation",
       desc: "SewakTravels.com: Your go-to for Car & Coach rentals in Gurugram, Delhi & NCR. Choose from Compact, Mini Van, Luxury, and more. Reliable service, expert drivers.",
       price: "15% discount",
-      path:"/service/outstation"
+      path:"/outstation-cab-taxi-service"
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const ServiceComponent= () => {
       title: "Airport Pick & Drop",
       desc: "At Sewak Travels, we guarantee hassle-free Airport Taxi services in Gurgaon and Delhi, NCR. Call us anytime for instant bookings and choose from various options. Connect with our consultants effortlessly.",
       price: "15% discount",
-      path:"/service/airport"
+      path:"/airport-cab-taxi-transport-service"
 
     },
     {
@@ -32,7 +32,7 @@ const ServiceComponent= () => {
       title: "Corporate Booking",
       desc: "Leading employee transport service in Delhi, NCR, offering seamless solutions with routing, tracking, and enhanced security features. Tailored for corporate excellence.",
       price: "15% discount",
-      path:"/service/corporate"
+      path:"/employee-cab-taxi-transport-service"
 
     },
   ];

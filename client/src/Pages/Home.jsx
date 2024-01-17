@@ -18,31 +18,46 @@ import OfferComponent from "../Components/HotelPackage/OfferComponent";
 import { Helmet } from "react-helmet";
 
 function Home() {
-
   const [activeTab, setActiveTab] = useState("1");
   const callback = useCallback((tab) => {
     setActiveTab(tab);
   }, []);
-  
+
   return (
     <>
       <Layout title="overlay-black" />
-      <Helmet/>
+      <Helmet>
+        <title>
+          {" "}
+          Sewak Travels - Best Travel Website. Book Hotels, Flights, and Cabs
+          Online.{" "}
+        </title>
+        <meta
+          name="description"
+          content=" Get best deals on all your online travel bookings. Book  
+Online flights, hotels, cabs & Taxi services. Make your travel dreams a reality with Sewak Travels!"
+        />
+        <meta
+          name="keywords"
+          content=" India travel, travel in India, cheap air tickets, cheap flights, flight, hotels, hotel, holidays, air travel, air tickets, holiday packages, travel packages, online booking, cab services, taxi services, online cab booking, car rental in delhi with driver, book car rental online, cab service in delhi ncr, sewak travels"
+        />
+      </Helmet>
+
       <NewHomeBanner activeTab={activeTab} callback={callback} />
       {/* <OurVehicleOffers/> */}
       {/* <TopCategory titleClass="top-category margin-cls radius-cls" /> */}
       {/* <FleetCars /> */}
       {/* <CabOffers/> */}
       {/* <CabGallery /> */}
-      {activeTab==="1"&& <Package type="Cab Offers"/>}
-      {activeTab==="2"&& <Airline type="Flight Offers"/>}
-      {activeTab==="3"&& <OfferComponent type="Hotel Offers"/>}
-      {activeTab==="4"&& <ExplorePackages type="Tour Offers"/>}
-      {activeTab==="4"&&<ImportantLinks/>}
+      {activeTab === "1" && <Package type="Cab Offers" />}
+      {activeTab === "2" && <Airline type="Flight Offers" />}
+      {activeTab === "3" && <OfferComponent type="Hotel Offers" />}
+      {activeTab === "4" && <ExplorePackages type="Tour Offers" />}
+      {activeTab === "4" && <ImportantLinks />}
       {<VideoBanner />}
       {<FactsContent />}
-      { <Testimonials />}
-      {activeTab==="1"&& <FullBanner />}
+      {<Testimonials />}
+      {activeTab === "1" && <FullBanner />}
       {<ServicesComponent />}
       {<Video />}
       {<CallService />}
