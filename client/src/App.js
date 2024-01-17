@@ -76,7 +76,7 @@ function App() {
         <Suspense
           fallback={
             
-              <Loader loaderTimeout={5000}/>
+              <Loader loaderTimeout={1000}/>
              
           }
         >
