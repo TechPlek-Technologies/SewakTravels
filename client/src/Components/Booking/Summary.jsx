@@ -164,10 +164,11 @@ const Summary = ({
                       placeholder="pick up"
                       onChange={updateAmount}
                     >
-                      <option value="fullPayment">Make Full Payment Now</option>
                       <option value="oneThirdPayment">
                         Make Part Payment Now
                       </option>
+                      <option value="fullPayment">Make Full Payment Now</option>
+                      
                     </select>
                   </td>
                 </tr>
