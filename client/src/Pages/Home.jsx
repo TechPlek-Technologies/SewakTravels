@@ -15,6 +15,7 @@ import ExplorePackages from "../Components/TourPackage/ExplorePackages";
 import Airline from "../Components/FlightPackage/Airline";
 import ImportantLinks from "../Components/Common/ImportantLinks";
 import OfferComponent from "../Components/HotelPackage/OfferComponent";
+import { Helmet } from "react-helmet";
 
 function Home() {
 
@@ -26,6 +27,7 @@ function Home() {
   return (
     <>
       <Layout title="overlay-black" />
+      <Helmet/>
       <NewHomeBanner activeTab={activeTab} callback={callback} />
       {/* <OurVehicleOffers/> */}
       {/* <TopCategory titleClass="top-category margin-cls radius-cls" /> */}
