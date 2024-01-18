@@ -28,7 +28,7 @@ const Booking = ({desiredcar}) => {
   const totalFare=paymentData.totalFare;
  
 
-  const [payableAmount,setpayableAmount]= useState(totalFare)
+  const [payableAmount,setpayableAmount]= useState(Math.ceil((totalFare * 15) / 100))
 
 
 
