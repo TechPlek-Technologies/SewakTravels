@@ -6,11 +6,13 @@ import { useParams } from "react-router-dom";
 function BlogDetails({blogsData}){  
 
 
+    console.log("blogsData",blogsData)
 
     const param = useParams();
-    const desiredBlog = blogsData.find(blog => blog.id === parseInt(param.id));
+    console.log(param)
+    const desiredBlog = blogsData.find(blog => blog?.blog_title.replace(/ /g, '-') ===param.blog_title);
 
-    console.log("blogsData",blogsData)
+    console.log("blogsData2",desiredBlog)
 
     return(
         <>

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 const PopularPostPage = ({value}) => {
 
-  console.log("value",value)
   function formatMySQLDate(mysqlDate) {
     const date = new Date(mysqlDate);
     const options = { year: 'numeric', month: 'numeric', day: 'numeric' };
@@ -17,7 +16,7 @@ const PopularPostPage = ({value}) => {
         <div className="sidebar-content">
           <ul className="blog-post">
             {value?.map((post, index) => ( 
-             <Link to={`/blogs/${post.id}`}>
+             <Link to={`/blogs/${post.blog_title.replace(/ /g, '-')}`}>
                <li key={index} style={{"marginBottom": "20px"}}>
                 <div className="media">
                   <img className="img-fluid" src={"../ca_admin/assets/blogs/"+post.banner_image} alt="Generic placeholder image" />

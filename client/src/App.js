@@ -85,7 +85,7 @@ function App() {
             <Route path={"/contact"} element={<Contactus />} />
             <Route path={"/about"} element={<About />} />
             <Route path={"/blogs"} element={<Blogs blogsData={blogsData} />} />
-            <Route path={"/blogs/:id"} element={<BlogDetails blogsData={blogsData} />} />
+            <Route path={"/blogs/:blog_title"} element={<BlogDetails blogsData={blogsData} />} />
             <Route path={"/service"} element={<Service />} />
             <Route path={"/outstation-cab-taxi-service"} element={<Outstation />} />
             <Route path={"/airport-cab-taxi-transport-service"} element={<Airport />} />

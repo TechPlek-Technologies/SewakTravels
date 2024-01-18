@@ -4,7 +4,6 @@ import BlogContent from "../Components/Blogs/BlogContent";
 import { Helmet } from "react-helmet";
 
 function Blogs({ blogsData }) {
-  console.log("blogsData", blogsData.blogs);
 
   return (
     <>

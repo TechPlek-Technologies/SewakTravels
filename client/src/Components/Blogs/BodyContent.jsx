@@ -35,13 +35,14 @@ const BodyContent= ({ data, view }) => {
                 {"Delhi, India  "}
                 {view === "creative" && <i className="fas fa-clock ms-2"> {formatMySQLDate(data.creation_date)}</i>}
               </h6>
-              <Link to={`/blogs/${data.id}`}>
+             
+              <Link to={`/blogs/${data.blog_title.replace(/ /g, '-')}`}>
                 <h5>{data.blog_title}</h5>
               </Link>
               <p>{data.short_description}</p>
               {view === "creative" && "list" && (
                 <h6 className="link">
-                  <Link to={`/blogs/${data.id}`}>read more</Link>
+                  <Link to={`/blogs/${data.blog_title.replace(/ /g, '-')}`}>read more</Link>
                 </h6>
               )}
             </div>

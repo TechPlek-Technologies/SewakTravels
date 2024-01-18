@@ -16,7 +16,7 @@ console.log("desiredBlog",desiredBlog)
         <div className="col-12">
           <div className="blog-wrap">
             <div className="blog-image">
-            <Link to={`/blogs/${desiredBlog?.id}`}>
+            <Link to={`/blogs/${desiredBlog?.blog_title.replace(/ /g, '-')}`}>
                 <img width={"100%"}  src={"./ca_admin/assets/blogs/"+desiredBlog?.banner_image}  className="img-fluid" alt="" />
               </Link>
             </div>
@@ -26,12 +26,12 @@ console.log("desiredBlog",desiredBlog)
                   <i className="fas fa-map-marker-alt"></i> Delhi, India {" "}
                   <i className="fas fa-clock ms-2"></i> {formatMySQLDate(desiredBlog?.creation_date)}
                 </h6>
-                <Link to={`/blogs/${desiredBlog?.id}`}>
+                <Link  to={`/blogs/${desiredBlog?.blog_title.replace(/ /g, '-')}`}>
                   <h5>{desiredBlog?.blog_title} </h5>
                 </Link>
                 <p>{desiredBlog?.short_description}</p>
                 <h6 className="link">
-                <Link to={`/blogs/${desiredBlog?.id}`}>read more</Link>
+                <Link to={`/blogs/${desiredBlog?.blog_title}`}>read more</Link>
                 </h6>
               </div>
             </div>
