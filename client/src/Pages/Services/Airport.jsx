@@ -23,6 +23,9 @@ const Airport = () => {
           name="keywords"
           content="Airport transfer, airport taxi, airport cab, airport taxi booking, airport taxi service, airport cab service, airport cab booking, cabs from airport, taxi from airport"
         />
+    <link rel="canonical" href="https://www.sewaktravels.com/airport-cab-taxi-transport-service" />
+
+
       </Helmet>
 
       <Layout title="light_header" userBgClass="user user-light" />

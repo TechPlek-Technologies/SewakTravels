@@ -21,6 +21,8 @@ const About = () => {
           content=" Sewak Travels is India's premier car rentals offering reliable & safe cabs and taxi. We offer Oneways, OutStation Roundtrips, Hourly Rentals, Employee Transportation & Airport Transfer."
         />
         <meta name="keywords" content=" " />
+  <link rel="canonical" href="https://www.sewaktravels.com/about" />
+
       </Helmet>
 
       <Layout title="light_header" userBgClass="user user-light" />

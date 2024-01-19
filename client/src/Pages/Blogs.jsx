@@ -31,6 +31,8 @@ function Blogs() {
           name="description"
           content=" Explore India through Sewak Travels Blog - your source for travel tips, insights, and inspiration. Discover tailored travel guides for family trips and business travel adventures."
         />
+  <link rel="canonical" href="https://www.sewaktravels.com/blogs" />
+
       </Helmet>
       {blogsData.length ===0 ? <Loader loaderTimeout={1000}/> : <> <Layout title="light_header" />
 

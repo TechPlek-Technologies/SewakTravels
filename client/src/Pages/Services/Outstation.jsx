@@ -23,6 +23,8 @@ const Outstation = () => {
           name="keywords"
           content="outstation cab booking, taxi service in delhi for outstation, outstation cab service, one-way cab booking, book car rental online, car booking, online cab booking, taxi booking, online taxi booking, book outstation cab, cab booking, car booking, rental cab, outstation cab, airport cab, hourly cab, cab booking online"
         />
+  <link rel="canonical" href="https://www.sewaktravels.com/outstation-cab-taxi-service" />
+
       </Helmet>
 
       <Layout title="light_header" userBgClass="user user-light" />

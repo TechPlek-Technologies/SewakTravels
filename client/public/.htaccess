@@ -7,7 +7,16 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
-  RewriteCond %{HTTP_HOST} !^www\. [NC]
-  RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+ 
 
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Redirect to www if not already present
+  RewriteCond %{HTTP_HOST} ^.sewaktravels.com [NC]
+  RewriteRule ^(.*)$ http://www..sewaktravels.com/$1 [R=301,L]
+
+  # Other rewrite rules...
 </IfModule>

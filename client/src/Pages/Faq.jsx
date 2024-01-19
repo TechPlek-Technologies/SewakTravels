@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import FaqContent from "../Components/Cab/Faq/FaqContent";
 import FooterComponent from "../Components/Common/FooterComponent";
 import Layout from "../Layout/Layout";
@@ -5,9 +6,12 @@ import Layout from "../Layout/Layout";
 const Faq = () => {
   return (
     <>
+      <Helmet>
+        <link rel="canonical" href="https://www.sewaktravels.com/FAQ" />
+      </Helmet>
       <Layout title="light_header" userBgClass="user user-light" />
       <FaqContent />
-      <FooterComponent/>
+      <FooterComponent />
     </>
   );
 };

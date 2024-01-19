@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import FooterComponent from "../Components/Common/FooterComponent";
 import ContactusContent from "../Components/Contactus/ContactUsContent";
 import Layout from "../Layout/Layout";
+import { Helmet } from "react-helmet";
 
 const Contactus = () => {
   useEffect(() => {
@@ -11,6 +12,9 @@ const Contactus = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <link rel="canonical" href="https://www.sewaktravels.com/contact" />
+      </Helmet>
       <Layout title="light_header" userBgClass="user user-light" />
       {/* <Breadcrumb
         title={"home"}
@@ -19,7 +23,7 @@ const Contactus = () => {
       /> */}
 
       <ContactusContent />
-      <FooterComponent/>
+      <FooterComponent />
     </>
   );
 };

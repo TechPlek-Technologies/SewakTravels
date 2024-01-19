@@ -26,6 +26,8 @@ const Service = () => {
           content=" Outstation cab service, Employee transportation, Airport  
          Cab Services "
         />
+  <link rel="canonical" href="https://www.sewaktravels.com/service" />
+
       </Helmet>
 
       <ServiceComponent />
