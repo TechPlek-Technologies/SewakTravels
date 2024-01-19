@@ -72,7 +72,7 @@ function App() {
             <Route path={"/journey-details/:id"} element={<CabDetails />} />
             <Route path={"/FAQ"} element={<Faq />} />
             <Route path={"/payment/:transactionId?"} element={<Payment />} />
-            <Route path={"/terms-and-condition"} element={<TermsAndCondition />} />
+            <Route path={"/terms-and-conditions"} element={<TermsAndCondition />} />
             <Route path={"/refund-policy"} element={<RefundPolicy />} />
             <Route path={"/privacy-policy"} element={<PrivacyPolicy/>} />
             <Route path={"/*"} element={<NotFoundPage/>} />

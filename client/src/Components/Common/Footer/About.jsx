@@ -20,7 +20,7 @@ const About = () => {
                   <Link onClick={scrollToTop} to={"/FAQ"}>FAQ</Link>
                 </li>
                 <li>
-                  <Link onClick={scrollToTop} to={"/terms-and-condition"}>Terms & condition</Link>
+                  <Link onClick={scrollToTop} to={"/terms-and-conditions"}>Terms & condition</Link>
                 </li>
                 <li>
                   <Link onClick={scrollToTop} to={"/privacy-policy"}>Privacy</Link>
