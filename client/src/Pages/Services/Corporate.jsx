@@ -24,7 +24,7 @@ const Corporate = () => {
           name="keywords"
           content=" Employee Transportation, Employee Transportation Services, Employee Transportation Company, Staff Transportation, Staff Transportation Services, Staff Transportation Company, Employee Transportation Solutions, Corporate Employee Transport, Corporate Transportation, Employee Transportation System, employee transportation services in Gurgaon"
         />
-  <link rel="canonical" href="https://www.sewaktravels.com/employee-cab-taxi-transport-service" />
+  <link rel="canonical" href="https://sewaktravels.com/employee-cab-taxi-transport-service" />
 
       </Helmet>
 

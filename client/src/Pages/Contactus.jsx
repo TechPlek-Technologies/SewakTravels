@@ -13,7 +13,7 @@ const Contactus = () => {
   return (
     <>
       <Helmet>
-        <link rel="canonical" href="https://www.sewaktravels.com/contact" />
+        <link rel="canonical" href="https://sewaktravels.com/contact" />
       </Helmet>
       <Layout title="light_header" userBgClass="user user-light" />
       {/* <Breadcrumb

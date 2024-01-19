@@ -7,7 +7,7 @@ const Faq = () => {
   return (
     <>
       <Helmet>
-        <link rel="canonical" href="https://www.sewaktravels.com/FAQ" />
+        <link rel="canonical" href="https://sewaktravels.com/FAQ" />
       </Helmet>
       <Layout title="light_header" userBgClass="user user-light" />
       <FaqContent />
