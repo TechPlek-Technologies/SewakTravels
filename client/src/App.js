@@ -43,33 +43,11 @@ const Blogs = lazy(() => import("./Pages/Blogs"));
 const BlogDetails = lazy(() => import("./Pages/BlogDetails/BlogDetails"));
 
 
-const fetchData = async () => {
-  try {
-    const result = (await axios.get(`https://new.sewaktravels.com/blogsData`)).data;
-    return result;
-  } catch (err) {
-    console.log(err);
-    throw err; // Rethrow the error so it can be caught in the component
-  }
-};
+
 
 
 function App() {
-  const [blogsData, setBlogsData] = useState([]);
-
-  useEffect(() => {
-    const fetchBlogsData = async () => {
-      try {
-        const data = await fetchData();
-        setBlogsData(data.blogs);
-      } catch (error) {
-        // Handle error, e.g., show an error message
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchBlogsData();
-  }, []); // Empty dependency array means this effect runs only once when the component mounts
+  
 
   return (
     <BrowserRouter>
@@ -84,8 +62,8 @@ function App() {
             <Route path={"/"} element={<Home />} />
             <Route path={"/contact"} element={<Contactus />} />
             <Route path={"/about"} element={<About />} />
-            <Route path={"/blogs"} element={<Blogs blogsData={blogsData} />} />
-            <Route path={"/blogs/:blog_title"} element={<BlogDetails blogsData={blogsData} />} />
+            <Route path={"/blogs"} element={<Blogs />} />
+            <Route path={"/blogs/:blog_title"} element={<BlogDetails />} />
             <Route path={"/service"} element={<Service />} />
             <Route path={"/outstation-cab-taxi-service"} element={<Outstation />} />
             <Route path={"/airport-cab-taxi-transport-service"} element={<Airport />} />

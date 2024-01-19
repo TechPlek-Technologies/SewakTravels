@@ -2,9 +2,27 @@
 import Layout from "../Layout/Layout";
 import BlogContent from "../Components/Blogs/BlogContent";
 import { Helmet } from "react-helmet";
+import { useEffect, useState } from "react";
+import { fetchData } from "../Utility/ca_admin";
+import Loader from "../Layout/Loader";
 
-function Blogs({ blogsData }) {
 
+function Blogs() {
+  const [blogsData, setBlogsData] = useState([]);
+
+  useEffect(() => {
+    const fetchBlogsData = async () => {
+      try {
+        const data = await fetchData();
+        setBlogsData(data.blogs);
+      } catch (error) {
+        // Handle error, e.g., show an error message
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchBlogsData();
+  }, [blogsData]); // Empty dependency array means this effect runs only once when the component mounts
   return (
     <>
       <Helmet>
@@ -14,10 +32,11 @@ function Blogs({ blogsData }) {
           content=" Explore India through Sewak Travels Blog - your source for travel tips, insights, and inspiration. Discover tailored travel guides for family trips and business travel adventures."
         />
       </Helmet>
+      {blogsData.length ===0 ? <Loader loaderTimeout={1000}/> : <> <Layout title="light_header" />
 
-      <Layout title="light_header" />
+<BlogContent value={blogsData} side="left" view={"creative"} /></>}
 
-      <BlogContent value={blogsData} side="left" view={"creative"} />
+     
 
       {/* <ComingSoon/> */}
     </>
