@@ -51,7 +51,7 @@ function BlogDetails() {
             />
             <link
               rel="canonical"
-              href={`https://www.sewaktravels.com/${desiredBlog.slug}`}
+              href={`https://sewaktravels.com/${desiredBlog.slug}`}
             />
           </Helmet>
           <Layout title="light_header" />
