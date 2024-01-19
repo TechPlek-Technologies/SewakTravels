@@ -4,12 +4,10 @@ import Layout from "../../Layout/Layout";
 import { useParams } from "react-router-dom";
 import { fetchData } from "../../Utility/ca_admin";
 import Loader from "../../Layout/Loader";
+import { Helmet } from "react-helmet";
 
-
-
-function BlogDetails(){  
-
-    const [blogsData, setBlogsData] = useState([]);
+function BlogDetails() {
+  const [blogsData, setBlogsData] = useState([]);
 
   useEffect(() => {
     const fetchBlogsData = async () => {
@@ -18,24 +16,49 @@ function BlogDetails(){
         setBlogsData(data.blogs);
       } catch (error) {
         // Handle error, e.g., show an error message
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
 
     fetchBlogsData();
-  }, [blogsData]); // Empty dependency array means this effect runs only once when the component mounts
+  }, []); // Empty dependency array means this effect runs only once when the component mounts
 
+  const param = useParams();
+  const desiredBlog = blogsData.find(
+    (blog) => blog?.blog_title.replace(/ /g, "-") === param.blog_title
+  );
 
-    const param = useParams();
-    const desiredBlog = blogsData.find(blog => blog?.blog_title.replace(/ /g, '-') ===param.blog_title);
+  console.log(desiredBlog);
 
-
-    return(
+  return (
+    <>
+      {blogsData.length === 0 ? (
+        <Loader loaderTimeout={1000} />
+      ) : (
         <>
-        {blogsData.length ===0 ? <Loader loaderTimeout={1000}/> : <><Layout title="light_header"/>
-        <BodyContent side="left" blogsData={blogsData} data={desiredBlog}/></>}
-        
+          <Helmet>
+            <title>
+              {" "}
+              {desiredBlog.blog_title}{" "}
+            </title>
+            <meta
+              name="description"
+              content={desiredBlog.meta_description}
+            />
+            <meta
+              name="keywords"
+              content={desiredBlog.meta_keywords}
+            />
+            <link
+              rel="canonical"
+              href={`https://www.sewaktravels.com/${desiredBlog.slug}`}
+            />
+          </Helmet>
+          <Layout title="light_header" />
+          <BodyContent side="left" blogsData={blogsData} data={desiredBlog} />
         </>
-    )
-    }
-    export default BlogDetails;
+      )}
+    </>
+  );
+}
+export default BlogDetails;

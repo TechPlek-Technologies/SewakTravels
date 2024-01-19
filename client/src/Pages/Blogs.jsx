@@ -22,7 +22,7 @@ function Blogs() {
     };
 
     fetchBlogsData();
-  }, [blogsData]); // Empty dependency array means this effect runs only once when the component mounts
+  }, []); // Empty dependency array means this effect runs only once when the component mounts
   return (
     <>
       <Helmet>
