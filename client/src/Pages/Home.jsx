@@ -38,7 +38,7 @@ Online flights, hotels, cabs & Taxi services. Make your travel dreams a reality 
           content=" India travel, travel in India, cheap air tickets, cheap flights, flight, hotels, hotel, holidays, air travel, air tickets, holiday packages, travel packages, online booking, cab services, taxi services, online cab booking, car rental in delhi with driver, book car rental online, cab service in delhi ncr, sewak travels"
           
         />
-        <link rel="canonical" href="https://www.sewaktravels.com/" />
+        <link rel="canonical" href="https://sewaktravels.com/" />
       </Helmet>
 
       <NewHomeBanner activeTab={activeTab} callback={callback} />
