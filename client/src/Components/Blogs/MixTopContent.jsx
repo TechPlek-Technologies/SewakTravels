@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
-import Img from "../Common/Img";
 
 function MixTopContent({data}) {
   const desiredBlog = data[0];
-console.log("desiredBlog",desiredBlog)
 
   function formatMySQLDate(mysqlDate) {
     const date = new Date(mysqlDate);
@@ -16,7 +14,7 @@ console.log("desiredBlog",desiredBlog)
         <div className="col-12">
           <div className="blog-wrap">
             <div className="blog-image">
-            <Link to={`/blogs/${desiredBlog?.blog_title.replace(/ /g, '-')}`}>
+            <Link to={`/blogs/${desiredBlog?.slug}`}>
                 <img width={"100%"}  src={"./ca_admin/assets/blogs/"+desiredBlog?.banner_image}  className="img-fluid" alt="" />
               </Link>
             </div>
@@ -26,12 +24,12 @@ console.log("desiredBlog",desiredBlog)
                   <i className="fas fa-map-marker-alt"></i> Delhi, India {" "}
                   <i className="fas fa-clock ms-2"></i> {formatMySQLDate(desiredBlog?.creation_date)}
                 </h6>
-                <Link  to={`/blogs/${desiredBlog?.blog_title.replace(/ /g, '-')}`}>
+                <Link  to={`/blogs/${desiredBlog?.slug}`}>
                   <h5>{desiredBlog?.blog_title} </h5>
                 </Link>
                 <p>{desiredBlog?.short_description}</p>
                 <h6 className="link">
-                <Link to={`/blogs/${desiredBlog?.blog_title}`}>read more</Link>
+                <Link to={`/blogs/${desiredBlog?.slug}`}>read more</Link>
                 </h6>
               </div>
             </div>

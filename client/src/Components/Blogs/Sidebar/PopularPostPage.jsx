@@ -16,7 +16,7 @@ const PopularPostPage = ({value}) => {
         <div className="sidebar-content">
           <ul className="blog-post">
             {value?.map((post, index) => ( 
-             <Link to={`/blogs/${post.blog_title.replace(/ /g, '-')}`}>
+             <Link to={`/blogs/${post.slug}`}>
                <li key={index} style={{"marginBottom": "20px"}}>
                 <div className="media">
                   <img className="img-fluid" src={"../ca_admin/assets/blogs/"+post.banner_image} alt="Generic placeholder image" />

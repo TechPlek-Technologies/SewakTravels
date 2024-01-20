@@ -25,7 +25,7 @@ function BlogDetails() {
 
   const param = useParams();
   const desiredBlog = blogsData.find(
-    (blog) => blog?.blog_title.replace(/ /g, "-") === param.blog_title
+    (blog) => blog?.slug === param.blog_title
   );
 
   console.log(desiredBlog);

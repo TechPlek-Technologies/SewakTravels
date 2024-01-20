@@ -16,6 +16,7 @@ const BodyContent= ({ data, view }) => {
     return date.toLocaleDateString('en-US', options);
   }
   
+  console.log("data",data)
     return (
       <>
         <div className={`blog-wrap wow fadeInUp`}>
@@ -36,13 +37,13 @@ const BodyContent= ({ data, view }) => {
                 {view === "creative" && <i className="fas fa-clock ms-2"> {formatMySQLDate(data.creation_date)}</i>}
               </h6>
              
-              <Link to={`/blogs/${data.blog_title.replace(/ /g, '-')}`}>
+              <Link to={`/blogs/${data.slug}`}>
                 <h5>{data.blog_title}</h5>
               </Link>
               <p>{data.short_description}</p>
               {view === "creative" && "list" && (
                 <h6 className="link">
-                  <Link to={`/blogs/${data.blog_title.replace(/ /g, '-')}`}>read more</Link>
+                  <Link to={`/blogs/${data.slug}`}>read more</Link>
                 </h6>
               )}
             </div>
