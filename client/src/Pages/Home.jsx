@@ -39,7 +39,6 @@ Online flights, hotels, cabs & Taxi services. Make your travel dreams a reality 
           
         />
         <link rel="canonical" href="https://sewaktravels.com/" />
-        <meta name="google-site-verification" content="gikxD6kTK1HBVER4qSw3AdrXTTs4xoxOVH6DOZDtGA8" />
       </Helmet>
 
       <NewHomeBanner activeTab={activeTab} callback={callback} />
