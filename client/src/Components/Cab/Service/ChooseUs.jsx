@@ -5,31 +5,31 @@ const ChooseUs= () => {
     const startData = [
         {
           svg: <Capa2 />,
-          title: "4500 + exclusive hotels",
-          desc: "4500 + exclusive hotels are included in Sewak Travels hotel.",
+          title: "24/7 Customer Support",
+          desc: "Our commitment to round-the-clock customer support ensures assistance whenever you need it. Whether booking, inquiries, or addressing concerns, our team is here, to ensure a seamless experience throughout your journey.",
         },
         {
           svg: <HappyClient />,
-          title: "3,00,000 happy client",
-          desc: "Sewak Travels cab has more than 3 lakhs happy customer",
+          title: "Good Quality Cars",
+          desc: "We pride ourselves on a fleet of top-notch, well-maintained vehicles, promising a comfortable and reliable ride every time. From sedans to SUVs, each car undergoes rigorous checks for your safety and satisfaction.",
         },
         {
           svg: <Location />,
-          title: "4500 + exclusive hotels",
-          desc: "Sewak Travels cab has more than 45k location at different countries",
+          title: "Experienced Drivers",
+          desc: "Our drivers are more than just chauffeurs; they are professionals committed to your safety and comfort. Vetted for expertise and courteous service, they ensure a smooth and enjoyable ride, prioritizing your well-being at every turn.",
         },
         {
           svg: <Booking />,
-          title: "1.5m bookings",
-          desc: "Sewak Travels hotels has more than 1.5 hotel bookings.",
+          title: "Attractive Offers",
+          desc: "We believe in offering value. Our array of enticing deals, discounts, and packages cater to diverse needs, providing cost-effective solutions without compromising on quality or comfort.",
         },
       ];
     return (
       <section className="about-section pt-0 section-b-space bg-white">
         <div className="container">
           <div className="title-1 detail-title">
-            <h2>why choose Sewak Travels?</h2>
-            <p>{"At Sewak Travels, we have a mission to exceed our customers' expectations through professional, courteous, and timely ground transportation solutions. We want to create business opportunities for our drivers and ideal work culture for our employees."}</p>
+            <h2>Why Choose Sewak Travels?</h2>
+            <p>{"Customer's Choice: Reasons for Choosing Us!"}</p>
           </div>
           <div className="highlight-section">
             <div className="row">

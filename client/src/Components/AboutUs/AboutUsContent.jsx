@@ -30,14 +30,14 @@ const AboutUsContent = ({ side }) => {
               <div className="about-text">
                 <div>
                   <div className="title-3">
-                    <span className="title-label">introduction</span>
+                    <span className="title-label">Introduction</span>
                   </div>
                   <h5>
-                    <span>multipurpose booking site</span>
+                    <span>Multipurpose Booking Site</span>
                   </h5>
-                  <h2>welcome to sewaktravels.com</h2>
-                  <p>SewakTravels.com is an Integrated Travel company with the objective of servicing all Travel verticals through its unmatched spread at most economical price.</p>
-                  <img src="/assets/images/mix/signature.png" className="img-fluid" alt="" />
+                  <h2>Welcome to Sewaktravels.com</h2>
+                  <p>Sewak Travels is an Integrated Travel Company aimed at catering to all aspects of travel with its extensive network at the most economical price.</p>
+                  {/* <img src="/assets/images/mix/signature.png" className="img-fluid" alt="" /> */}
                   <div className="buttons-about">
                     <Link to="/#" className="btn btn-lower btn-curve">
                       book now

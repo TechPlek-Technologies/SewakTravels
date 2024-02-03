@@ -61,17 +61,15 @@ const AirportContent = ({ side }) => {
               <div className="col-xl-5">
                 <div className="about-text">
                   <div>
-                    <h2> airport Services</h2>
+                    <h2>Airport Services</h2>
                     <p>
-                      Lorem Ipsum is the simply dummy text of the printing is of and
-                      type the setting the industry. Lorem Ipsum of is has since the
-                      1500s, Lorem Ipsum has been the.....
+                    Let Sewak Travels take the stress out of airport transfers. With our dependable and punctual airport cab services, enjoy a seamless journey to and from the airport. Book now for a comfortable and hassle-free travel experience!
                     </p>
-                    <img
+                    {/* <img
                       src="/assets/images/mix/signature.png"
                       className="img-fluid"
                       alt=""
-                    />
+                    /> */}
                     <div className="buttons-about">
                       <Link to="/cab/listing" className="btn btn-lower btn-curve">
                         Book Now
@@ -80,7 +78,7 @@ const AirportContent = ({ side }) => {
                         to={"/contact"}
                         className="btn btn-lower black-btn btn-curve"
                       >
-                        contact us
+                        Contact Us
                       </Link>
                     </div>
                   </div>

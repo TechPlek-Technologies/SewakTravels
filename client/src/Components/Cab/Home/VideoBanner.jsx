@@ -42,7 +42,7 @@ const VideoBanner = () => {
                   </ul>
                 </div>
                   <div className="bottom-section">
-                    <Link href="/tour/booking/booking-page"><Button btnClass="btn btn-rounded btn-sm color1" name={`${"Book Now"} !!`} /></Link>
+                    <Link href="/tour/booking/booking-page"><Button btnClass="btn btn-rounded btn-sm color1" name={`${"Call Now"} !!`} /></Link>
                     <div className="info-btn">
                       <h6>7 days &nbsp; | &nbsp; 8 nights</h6>
                     </div>

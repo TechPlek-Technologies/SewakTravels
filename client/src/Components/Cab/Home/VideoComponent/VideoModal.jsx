@@ -7,7 +7,7 @@ const VideoModal= ({ modal, toggle }) => {
           <button onClick={toggle} type="button" className="btn-close">
             <span>×</span>
           </button>
-          <iframe title="youtubeVideo" src="https://www.youtube.com/embed/ezuKIzXJuz8" allowFullScreen></iframe>
+          <iframe title="youtubeVideo" src="/assets/video/logo.mp4" allowFullScreen></iframe>
         </ModalBody>
       </Modal>
     );

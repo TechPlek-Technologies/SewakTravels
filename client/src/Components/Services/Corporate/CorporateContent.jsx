@@ -61,17 +61,15 @@ const CorporateContent = ({ side }) => {
               <div className="col-xl-5">
                 <div className="about-text">
                   <div>
-                    <h2> corporate Services</h2>
+                    <h2> Corporate Services</h2>
                     <p>
-                      Lorem Ipsum is the simply dummy text of the printing is of and
-                      type the setting the industry. Lorem Ipsum of is has since the
-                      1500s, Lorem Ipsum has been the.....
+                    Sewak Travels offers efficient employee transport solutions for businesses. With our reliable corporate cab services, ensure punctual and comfortable transportation for your employees, fostering productivity and convenience. Reach out to us for tailored employee transport services!
                     </p>
-                    <img
+                    {/* <img
                       src="/assets/images/mix/signature.png"
                       className="img-fluid"
                       alt=""
-                    />
+                    /> */}
                     <div className="buttons-about">
                       <Link to="/employee-cab-taxi-transport-service/#corporate-booking" className="btn btn-lower btn-curve">
                         Book Now
@@ -80,7 +78,7 @@ const CorporateContent = ({ side }) => {
                         to={"/contact"}
                         className="btn btn-lower black-btn btn-curve"
                       >
-                        contact us
+                        Contact Us
                       </Link>
                     </div>
                   </div>

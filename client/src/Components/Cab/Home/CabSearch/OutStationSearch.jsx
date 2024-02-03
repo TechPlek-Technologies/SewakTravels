@@ -35,8 +35,8 @@ const OutStationSearch = ({
         <input
           type="text"
           name="outstationSource"
-          placeholder={source}
-          className="form-control"
+          placeholder="From"
+          className="form-control" 
           id="outstationSourceField"
           ref={sourceInputRef}
         />
@@ -46,7 +46,7 @@ const OutStationSearch = ({
         <input
           type="text"
           name="outStationDestination"
-          placeholder={destination}
+          placeholder="To"
           className="form-control "
           ref={destinationInputRef}
         />

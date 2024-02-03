@@ -61,17 +61,15 @@ const OutstationContent = ({ side }) => {
           <div className="col-xl-5">
             <div className="about-text">
               <div>
-                <h2> outstation Services</h2>
+                <h2> Outstation Services</h2>
                 <p>
-                  Lorem Ipsum is the simply dummy text of the printing is of and
-                  type the setting the industry. Lorem Ipsum of is has since the
-                  1500s, Lorem Ipsum has been the.....
+                Explore hassle-free outstation cab services with Sewak Travels. Whether it's a weekend getaway or a business trip, our diverse fleet of vehicles and reliable rides ensure a smooth journey to your destination. Book now for an unforgettable travel experience!
                 </p>
-                <img
+                {/* <img
                   src="/assets/images/mix/signature.png"
                   className="img-fluid"
                   alt=""
-                />
+                /> */}
                 <div className="buttons-about">
                   <Link to="/#home" className="btn btn-lower btn-curve">
                     Book Now
@@ -80,7 +78,7 @@ const OutstationContent = ({ side }) => {
                     to={"/contact"}
                     className="btn btn-lower black-btn btn-curve"
                   >
-                    contact us
+                    Contact Us
                   </Link>
                 </div>
               </div>

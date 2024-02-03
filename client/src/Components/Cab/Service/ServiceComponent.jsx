@@ -40,7 +40,7 @@ const ServiceComponent= () => {
       <BackgroundSection titleClass={"section-b-space dark-cls animated-section"}  imgWidth={0} imgHeight={0} position={"center"}>
         <CabAnimation />
         <div className="container">
-        <TitleComponent title={"Sewak Travels"} subTitle={"Our Facilities"} span={"Facilities"} titleClass={"title-3"} />
+        <TitleComponent title={"Sewak Travels"} subTitle={"Efficient and Affordable Cab Solutions!"} span={"Facilities"} titleClass={"title-3"} />
           <div className="row service-section">
             {serviceCabData.map((data,index) => (
               <div className="col-lg-4" key={index}>

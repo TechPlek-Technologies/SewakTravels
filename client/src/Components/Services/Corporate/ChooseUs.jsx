@@ -5,31 +5,31 @@ const ChooseUs= () => {
     const startData = [
         {
           svg: <Capa2 />,
-          title: "4500 + exclusive hotels",
-          desc: "4500 + exclusive hotels are included in rica hotel.",
+          title: "Reliable Fleet",
+          desc: "Our meticulously maintained vehicles ensure a safe and comfortable journey for every passenger.",
         },
         {
           svg: <HappyClient />,
-          title: "3,00,000 happy client",
-          desc: "rica cab has more than 3 lakhs happy customer",
+          title: "Seamless Booking",
+          desc: "With easy online booking options and responsive customer support, planning your outstation trip with Sewak is effortless.",
         },
         {
           svg: <Location />,
-          title: "4500 + exclusive hotels",
-          desc: "rica cab has more than 45k location at different countries",
+          title: "Professional Drivers",
+          desc: "Our experienced and courteous drivers prioritize your safety and satisfaction, guaranteeing a smooth and enjoyable ride.",
         },
         {
           svg: <Booking />,
-          title: "1.5m bookings",
-          desc: "rica hotels has more than 1.5 hotel bookings.",
+          title: "Competitive Pricing",
+          desc: "Enjoy cost-effective outstation travel without compromising on quality service, thanks to our competitive pricing and transparent billing.",
         },
       ];
     return (
       <section className="about-section pt-0 section-b-space bg-white">
         <div className="container">
           <div className="title-1 detail-title">
-            <h2>why choose sewak Outstation services?</h2>
-            <p>{"Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Adipisci Alias Aperiam At, Aut Commodi Corporis Dolorum Ducimus Labore Magnam Mollitia Natus Porro Possimus Quae Sit Tenetur Veniam Veritatis Voluptate Voluptatem!"}</p>
+            <h2>Why Choose Sewak Outstation Services?</h2>
+            <p>{"Revolutionize your workforce commute with Sewak Travels' dedicated Employee Transport Cab services. Ensuring reliable and safe rides for your employees, we offer a seamless transport solution tailored to your company's needs. From background-verified drivers to sanitized vehicles, prioritize your team's comfort and safety with every ride."}</p>
           </div>
           <div className="highlight-section">
             <div className="row">
