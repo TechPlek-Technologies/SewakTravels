@@ -587,3 +587,11 @@ li.nav-item {
 section.small-section{
   margin-bottom: 40px;
 }
+
+.col h6,h4,li{
+  font-weight: bold;
+}
+
+.col h2{
+  margin-bottom: 10px;
+}
