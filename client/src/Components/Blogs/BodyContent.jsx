@@ -16,7 +16,6 @@ const BodyContent= ({ data, view }) => {
     return date.toLocaleDateString('en-US', options);
   }
   
-  console.log("data",data)
     return (
       <>
         <div className={`blog-wrap wow fadeInUp`}>

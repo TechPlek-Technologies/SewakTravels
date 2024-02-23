@@ -60,11 +60,9 @@ function CabListProducts({ data,isValid }) {
     );
     setPaymentData({...paymentData, ...fareCalculation})
    
-    console.log("fareCalculation", fareCalculation);
   };
 
   useEffect(()=>{
-    console.log(paymentData)
     if(travelDistance===""){
       // window.location.href = "/";
     }

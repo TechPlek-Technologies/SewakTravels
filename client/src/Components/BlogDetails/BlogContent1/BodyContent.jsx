@@ -5,7 +5,6 @@ import PostDetail from "./PostDetails";
 
 function BodyContent ({blogsData, side,data}) {
 
-  console.log(data)
     return (
       <section className="section-b-space bg-white">
         <div className="container">

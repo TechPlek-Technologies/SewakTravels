@@ -28,7 +28,6 @@ function BlogDetails() {
     (blog) => blog?.slug === param.blog_title
   );
 
-  console.log(desiredBlog);
 
   return (
     <>
