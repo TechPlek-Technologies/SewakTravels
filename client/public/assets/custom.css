@@ -588,10 +588,35 @@ section.small-section{
   margin-bottom: 40px;
 }
 
-.col h6,h4,li{
+.col li{
   font-weight: bold;
+}
+
+.col h6{
+  font-weight: bold;
+  margin-bottom: 6px;
 }
 
 .col h2{
   margin-bottom: 10px;
+}
+
+.full-banner1{
+    padding: 200px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.pages-bg{
+  background-color: rgb(241, 241, 241);
+  padding: 0px 140px;
+}
+
+.col h4{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.col p{
+  font-size: 14px;
 }

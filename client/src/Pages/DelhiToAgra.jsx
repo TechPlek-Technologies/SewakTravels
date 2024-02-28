@@ -1,7 +1,21 @@
-const DelhiToAgra = ({type}) => {
+import BackgroundSection from "../Components/Common/BackgroundSection";
+import React, { useState } from 'react';
 
+const DelhiToAgra = ({type}) => {
+  const [isOpen, setIsOpen] = useState({});
+
+  // Function to toggle the visibility of the answer
+  const toggleAnswer = (id) => {
+    setIsOpen({
+      ...isOpen,
+      [id]: !isOpen[id]
+    });
+  };
 
     return (
+   
+     
+      <div className="col-lg-12 pages-bg">
       <section className="flight-detail-sec cab-detail-sec">
         <div className="detail-bar">
           
@@ -9,10 +23,12 @@ const DelhiToAgra = ({type}) => {
             <div className="col">
               <h4>Book Delhi To Agra Cabs with Sewak Travels</h4>
               <p>Agra, a captivating tourist spot in India, offers ample opportunities for delightful experiences with loved ones. Discover its diverse attractions by booking a Delhi to Agra taxi and relish the scenic drive. Whether opting for private or public transportation, numerous options facilitate your journey to Agra.
-            Embark on a picturesque road trip from Delhi to Agra cab booking, soaking in the mesmerizing landscapes along the way. Conveniently, Delhi Airport to Agra cab is also available, ensuring a comfortable and affordable travel experience. Delhi to Agra taxi services offer the convenience of door-to-door pick-up and drop-off, ensuring travelers can effortlessly reach their desired destinations. Choose Sewak Travels for hassle-free Delhi to Agra taxi services, easily accessible through online booking.
+              Embark on a picturesque road trip from Delhi to Agra cab booking, soaking in the mesmerizing landscapes along the way. Conveniently, Delhi Airport to Agra cab is also available, ensuring a comfortable and affordable travel experience. Delhi to Agra taxi services offer the convenience of door-to-door pick-up and drop-off, ensuring travelers can effortlessly reach their desired destinations. Choose Sewak Travels for hassle-free Delhi to Agra taxi services, easily accessible through online booking.
+
             </p>
             <h4>Delhi To Agra Distance By Cab</h4>
               <p>The distance covered by Delhi To Agra Cabs spans approximately 225 km, subject to route alterations. The duration of the trip may differ based on the route selected. Travel duration varies based on driving speed and duration of stoppages. Throughout the journey, you'll encounter several resting stops to rejuvenate.</p>
+
               <h4>Delhi to Agra Cab Price</h4>
               <p>Sewak Travels provides economical Delhi to Agra cab prices. You can choose from a range of air-conditioned cabs in Agra that align with your budget and requirements, ensuring the best deals on Delhi to Agra cab costs in the city. Various options exist for Delhi to Agra taxi booking, offering diverse services, and deals, and Delhi to Agra cab packages. Opting for Sewak Travels for your Delhi to Agra taxi service booking can unlock enticing discounts and offers. Pricing for outstation cab bookings may vary based on factors such as journey date, time, and vehicle type selected for traveling from Delhi to Agra. Additionally, Sewak Travels facilitates bookings for Agra to Delhi cabs as well, ensuring a seamless travel experience.
             </p>
@@ -23,7 +39,7 @@ const DelhiToAgra = ({type}) => {
             </p>
             </div>
           </div>
-          <div className="detail-wrap wow fadeInUp">
+          {/* <div className="detail-wrap wow fadeInUp" style={{backgroundColor:"#f1f1f1"}}>
             <div className="col">
             <h4>Why Choose Sewak Travels for Booking Delhi to Agra Cabs?</h4>
               <p>Sewak Travels takes the hassle out of booking intercity cabs by offering premium services at affordable rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Airport, outstation, or hourly), choose your destination and date, select the car and rates according to your preference, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Delhi to Agra cab booking service, why wait any longer?
@@ -36,7 +52,35 @@ const DelhiToAgra = ({type}) => {
             Our Delhi to Agra taxis are fully air-conditioned, and our skilled drivers ensure maximum safety by adhering to all standard sanitization procedures.
             </p>
                 </div>
+          </div> */}
+        </div>
+      </section>
+      
+      <section><BackgroundSection img="/assets/img/Locations/agra.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section>
+
+          <section className="flight-detail-sec cab-detail-sec">
+          <div className="detail-bar"> 
+          <div className="detail-wrap wow fadeInUp">
+            <div className="col">
+            <h4>Why Choose Sewak Travels for Booking Delhi to Agra Cabs?</h4>
+              <p>Sewak Travels takes the hassle out of booking intercity cabs by offering premium services at affordable rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit <a href="https://sewaktravels.com/">https://sewaktravels.com/</a>, click on the cabs icon, select your preference (Airport, outstation, or hourly), choose your destination and date, select the car and rates according to your preference, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Delhi to Agra cab booking service, why wait any longer?
+            </p>
+            <h4>Book your Delhi to Agra Cabs effortlessly on Sewak Travels:</h4>
+              <p>If you're considering a trip from Delhi to Agra, secure your online cab services reliably through Sewak Travels. We provide adept chauffeurs and various car rental options for a comfortable journey from Delhi to Agra.
+            </p>
+            <h4>Range of Delhi to Agra Taxi Options Offered by Sewak Travels:</h4>
+              <p>Our Delhi to Agra cab choices span from 4-seater hatchbacks and sedans like Tata Indica and Honda City to 6-seater SUVs such as Mahindra Xylo. In the 4-seater hatchback category, you can accommodate a maximum of 2 bags, while with 4-seater sedans, 3 bags are permitted. For larger groups, we recommend booking an SUV taxi from Delhi to Agra, providing greater convenience for carrying more luggage.
+Our Delhi to Agra taxis are fully air-conditioned, and our skilled drivers ensure maximum safety by adhering to all standard sanitization procedures.
+
+            </p>
+                </div>
           </div>
+          </div>
+        </section>
+        
+        <section className="flight-detail-sec cab-detail-sec">
+          <div className="detail-bar"> 
           <div className="detail-wrap wow fadeInUp">
             <div className="col">
               <h4>Reasons to Opt for a Delhi to Agra Cab Road Trip:</h4>
@@ -48,7 +92,7 @@ const DelhiToAgra = ({type}) => {
                 <li>Sights to See Along the Way:</li>
                 <p>While en route from Delhi to Agra, take a short break to visit attractions like the famous Kusum Sarovar in Mathura or the scenic Badkal Lake in Faridabad.</p>
             </ul>
-            <h4>Top Activities in Agra with Our Delhi to Agra Cab Service:</h4>
+            <h4>Top Things To Do in Agra with Our Delhi to Agra Cab Service:</h4>
             <ul>
                 <li>Sightseeing:</li>
                 <p>With our Delhi to Agra taxi services, make your Agra trip memorable by exploring iconic landmarks like the Taj Mahal, Mehtab Bagh, and Itmad-ud-Daulah's Tomb.</p>
@@ -58,6 +102,14 @@ const DelhiToAgra = ({type}) => {
             <p>For a stress-free journey, book our Delhi to Agra taxi services. In addition to transparent and reasonable Delhi to Agra cab fares, you also have the flexibility to cancel your Delhi to Agra cab booking before the departure time if your plans change.</p>
             </div>
           </div>
+          </div>
+        </section>
+
+        <section><BackgroundSection img="/assets/img/Locations/delhi-to-agra.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section>
+
+        <section className="flight-detail-sec cab-detail-sec">
+          <div className="detail-bar"> 
           <div className="detail-wrap wow fadeInUp">
             <div className="col">
               <h4>Things To Know About Delhi and Agra</h4>
@@ -66,30 +118,63 @@ const DelhiToAgra = ({type}) => {
             <p>Sewak Travels extends its cab service from Delhi to Agra, simplifying intercity Delhi to Agra cab bookings with a seamless network and user-friendly process. While Agra is famed for the majestic Taj Mahal, it captivates travelers with its diverse offerings beyond this renowned Wonder of the World. Drawing tourists from across the globe for centuries, Agra promises a rewarding visit. Opting for a cab to Agra, situated just 200 kilometers from New Delhi, ensures a convenient and enjoyable journey. A variety of cab rentals from Delhi to Agra, including luxury, deluxe, and budget options, cater to different preferences, making it advisable to explore the city via cab. From iconic landmarks like the Taj Mahal to the UNESCO World Heritage Site of Agra Fort, cab service from Delhi to Agra ensures effortless commuting to key attractions. With Sewak Travels, you can easily book a cab from Delhi to Agra online, ensuring a cost-effective experience. Your Delhi to Agra cabs facilitate exploration of must-visit sites such as Mumtaz Mahal, Fatehpur Sikri, and Agra Fort, allowing you to soak in the city's allure with the comfort of a private cab. </p>
             </div>
           </div>
+          </div>
+        </section>
+
+        <section className="flight-detail-sec cab-detail-sec">
+          <div className="detail-bar"> 
           <div className="detail-wrap wow fadeInUp">
             <div className="col">
-              <h4>Frequently Asked Questions</h4>
-              <h6>What is the Delhi to Agra One Way duration by cab? </h6>
+              <h4 style={{marginBottom:"20px"}}>Frequently Asked Questions</h4>
+              {/* <h6>What is the Delhi to Agra One Way duration by cab? </h6>
               <p>The journey from Delhi to Agra One Way duration by cab typically takes around 4 hours, subject to traffic and road conditions.
-            </p>
-            <h6>What is the Delhi to Agra distance by cab? </h6>
-            <p>At present, the Delhi to Agra distance by cab is approximately 225 km.</p>
-            <h6>What is the Typical Delhi to Agra cab fare? </h6>
-            <p>The general Delhi to Agra cab prices vary depending on factors such as your preferences, budget, travel distance, and choice of vehicle.</p>
-            <h6>How is the Cab Rental from Delhi to Agra Priced? </h6>
-            <p>Typically, the charges of cab rental from Delhi to Agra route are based on the distance traveled. Additionally, the distance between the starting and returning points is also factored into the calculation.</p>
-            <h6>Is it Essential to Pre-book Delhi to Agra Cabs? </h6>
+            </p> */}
+            <h6 onClick={() => toggleAnswer('q1')}>What is the Delhi to Agra One Way duration by cab? </h6>
+            {isOpen['q1'] && <p>The journey from Delhi to Agra One Way duration by cab typically takes around 4 hours, subject to traffic and road conditions.</p>}
+
+            <h6 onClick={() => toggleAnswer('q2')}>What is the Delhi to Agra distance by cab? </h6>
+            {isOpen['q2'] && <p>At present, the Delhi to Agra distance by cab is approximately 225 km.</p>}
+
+            <h6 onClick={() => toggleAnswer('q3')}>What is the Typical Delhi to Agra cab fare? </h6>
+            {isOpen['q3'] && <p>The general Delhi to Agra cab prices vary depending on factors such as your preferences, budget, travel distance, and choice of vehicle.</p>}
+
+            <h6 onClick={() => toggleAnswer('q4')}>How is the Cab Rental from Delhi to Agra Priced? </h6>
+            {isOpen['q4'] && <p>Typically, the charges of cab rental from Delhi to Agra route are based on the distance traveled. Additionally, the distance between the starting and returning points is also factored into the calculation.</p>}
+
+            <h6 onClick={() => toggleAnswer('q5')}>Is it Essential to Pre-book Delhi to Agra Cabs? </h6>
+            {isOpen['q5'] && <p>It's strongly recommended to pre-book Delhi to Agra Cabs before your journey begins, especially during peak travel seasons. This ensures availability and helps avoid potential price increases that may occur when booking on the spot.</p>}
+
+            <h6 onClick={() => toggleAnswer('q6')}>Can I book a Delhi to Agra One Way cab? </h6>
+            {isOpen['q6'] && <p>Certainly! When booking a cab from Delhi to Agra one way, travelers have the option to pick either a one-way drop or a Delhi to Agra round-trip cab journey.</p>}
+
+            <h6 onClick={() => toggleAnswer('q7')}>Can I Pay Online For a cab service from Delhi to Agra?</h6>
+            {isOpen['q7'] && <p>Certainly! Our platform offers a variety of payment gateways and methods, such as Debit Cards, Credit Cards, GPay, and more. You can conveniently compare Delhi to Agra cab prices across different categories and proceed with the transaction using your preferred payment method.</p>}
+
+            <h6 onClick={() => toggleAnswer('q8')}>What are the Advantages of Booking Cabs Online with Sewak Travels? </h6>
+            {isOpen['q8'] && <p>At Sewak Travels, our goal is to enhance your travel experience. That's why we offer travelers like you a range of benefits, including sanitized cabs, premium vehicles, safe driving practices, and travel advisory services. Additionally, we provide reliable 24/7 customer support, maximum flexibility, diverse payment options, enhanced privacy, and unmatched convenience. So, whenever you're gearing up for a road trip, remember to book your Delhi to Agra taxi with us for an unparalleled journey.</p>}
+
+
+            {/* <h6>What is the Delhi to Agra distance by cab? </h6>
+            <p>At present, the Delhi to Agra distance by cab is approximately 225 km.</p> */}
+            {/* <h6>What is the Typical Delhi to Agra cab fare? </h6>
+            <p>The general Delhi to Agra cab prices vary depending on factors such as your preferences, budget, travel distance, and choice of vehicle.</p> */}
+            {/* <h6>How is the Cab Rental from Delhi to Agra Priced? </h6>
+            <p>Typically, the charges of cab rental from Delhi to Agra route are based on the distance traveled. Additionally, the distance between the starting and returning points is also factored into the calculation.</p> */}
+            {/* <h6>Is it Essential to Pre-book Delhi to Agra Cabs? </h6>
             <p>It's strongly recommended to pre-book Delhi to Agra Cabs before your journey begins, especially during peak travel seasons. This ensures availability and helps avoid potential price increases that may occur when booking on the spot.</p>
             <h6>Can I book a Delhi to Agra One Way cab? </h6>
             <p>Certainly! When booking a cab from Delhi to Agra one way, travelers have the option to pick either a one-way drop or a Delhi to Agra round-trip cab journey.</p>
             <h6>Can I Pay Online For a cab service from Delhi to Agra?</h6>
             <p>Certainly! Our platform offers a variety of payment gateways and methods, such as Debit Cards, Credit Cards, GPay, and more. You can conveniently compare Delhi to Agra cab prices across different categories and proceed with the transaction using your preferred payment method.</p>
             <h6>What are the Advantages of Booking Cabs Online with Sewak Travels? </h6>
-            <p>At Sewak Travels, our goal is to enhance your travel experience. That's why we offer travelers like you a range of benefits, including sanitized cabs, premium vehicles, safe driving practices, and travel advisory services. Additionally, we provide reliable 24/7 customer support, maximum flexibility, diverse payment options, enhanced privacy, and unmatched convenience. So, whenever you're gearing up for a road trip, remember to book your Delhi to Agra taxi with us for an unparalleled journey.</p>
+            <p>At Sewak Travels, our goal is to enhance your travel experience. That's why we offer travelers like you a range of benefits, including sanitized cabs, premium vehicles, safe driving practices, and travel advisory services. Additionally, we provide reliable 24/7 customer support, maximum flexibility, diverse payment options, enhanced privacy, and unmatched convenience. So, whenever you're gearing up for a road trip, remember to book your Delhi to Agra taxi with us for an unparalleled journey.</p> */}
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </div>
+     
+      
     );
   };
   

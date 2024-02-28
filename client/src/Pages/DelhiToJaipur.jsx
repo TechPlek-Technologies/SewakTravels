@@ -1,7 +1,21 @@
+import BackgroundSection from "../Components/Common/BackgroundSection";
+import React, { useState } from 'react';
+
 const DelhiToJaipur = ({type}) => {
+
+  const [isOpen, setIsOpen] = useState({});
+
+  // Function to toggle the visibility of the answer
+  const toggleAnswer = (id) => {
+    setIsOpen({
+      ...isOpen,
+      [id]: !isOpen[id]
+    });
+  };
 
 
     return (
+      <div className="col-lg-12 pages-bg">
       <section className="flight-detail-sec cab-detail-sec">
         <div className="detail-bar">
           
@@ -22,10 +36,18 @@ const DelhiToJaipur = ({type}) => {
             </p>
             </div>
           </div>
-          <div className="detail-wrap wow fadeInUp">
+        </div>
+      </section>
+
+      <section><BackgroundSection img="/assets/img/Locations/Jaipur.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section>
+
+      <section className="flight-detail-sec cab-detail-sec">
+      <div className="detail-bar">
+      <div className="detail-wrap wow fadeInUp">
             <div className="col">
             <h4>Why Choose Sewak Travels for Booking Delhi to Jaipur Cabs?</h4>
-              <p>Sewak Travels takes the hassle out of booking Delhi to Jaipur Cabs by offering premium services at affordable rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Airport, outstation, or hourly), choose your destination and date, select the car and rates according to your preference, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Delhi to Jaipur cab booking service, why wait any longer?
+              <p>Sewak Travels takes the hassle out of booking Delhi to Jaipur Cabs by offering premium services at affordable rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit <a href="https://sewaktravels.com/">https://sewaktravels.com/</a>, click on the cabs icon, select your preference (Airport, outstation, or hourly), choose your destination and date, select the car and rates according to your preference, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Delhi to Jaipur cab booking service, why wait any longer?
             </p>
             <h4>Book a Delhi to Jaipur cab easily on Sewak Travels:</h4>
               <p>To ensure a smooth Delhi to Jaipur taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.
@@ -36,7 +58,12 @@ const DelhiToJaipur = ({type}) => {
             <p>Our Delhi to Jaipur taxis come equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.</p>
                 </div>
           </div>
-          <div className="detail-wrap wow fadeInUp">
+      </div>
+      </section>
+
+      <section className="flight-detail-sec cab-detail-sec">
+      <div className="detail-bar">
+      <div className="detail-wrap wow fadeInUp">
             <div className="col">
               <h4>Reasons to Opt for a Delhi to Jaipur Cab Road Trip:</h4>
               <p>The NH 48 route, spanning 279 km, connects Delhi and Jaipur. Along this highway, our Delhi to Jaipur cab service offers access to various dining and sightseeing spots.
@@ -47,7 +74,7 @@ const DelhiToJaipur = ({type}) => {
                 <li>Sightseeing opportunities along the way </li>
                 <p>One notable attraction between Delhi and Jaipur is the Neemrana Fort Palace. Additionally, you can visit Wonderland Water Park near Jaipur when you choose our Delhi to Jaipur taxi service.</p>
             </ul>
-            <h4>Top Activities in Jaipur with Our Delhi to Jaipur Cab Service:</h4>
+            <h4>Top Things To Do in Jaipur with Our Delhi to Jaipur Cab Service:</h4>
             <ul>
                 <li>Sightseeing: </li>
                 <p>Explore the renowned landmarks in the 'Pink City' with our Delhi to Jaipur cab service, including Hawa Mahal, Amer Fort, and Jantar Mantar.</p>
@@ -57,38 +84,60 @@ const DelhiToJaipur = ({type}) => {
             <p>Rest assured, all Delhi to Jaipur cab charges and fares are transparent with no hidden fees when you choose Sewak Travels cabs. Additionally, our Delhi to Jaipur cab service allows for cancellation up to 6 hours before departure time.</p>
             </div>
           </div>
-          <div className="detail-wrap wow fadeInUp">
+      </div>
+      </section>
+
+      <section><BackgroundSection img="/assets/img/Locations/delhi-to-jaipur.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section>
+
+      <section className="flight-detail-sec cab-detail-sec">
+      <div className="detail-bar">
+      <div className="detail-wrap wow fadeInUp">
             <div className="col">
               <h4>Things To Know About Delhi and Jaipur</h4>
-              <p>Experience seamless travel around Delhi with Sewak Travels Delhi to Jaipur Car Rental Services, offering quick and convenient travel options. Delhi, a sprawling metropolis, boasts a plethora of attractions, dining spots, shopping destinations, and recreational activities. As the captivating national capital of India, Delhi attracts visitors from around the globe with iconic landmarks like the Red Fort, India Gate, and Jama Masjid. Food enthusiasts can indulge in mouth-watering delights such as chaat in Old Delhi and Mughlai cuisine at Karim's. Delhi offers a plethora of dining options, ranging from popular fast-food chains to quaint local sweet shops. Discover the diverse culinary joints by availing of Delhi to Jaipur taxi services from Sewak Travels Delhi to Jaipur car rentals. In addition to its culinary delights, Delhi is a haven for shoppers, boasting a wide array of traditional Indian attire alongside global Western brands. Explore renowned shopping destinations like Connaught Place, Khan Market, Pallika Bazaar, Karol Bagh, Chandni Chowk, and upscale suburban malls for an unparalleled shopping experience. Sewak Travels Delhi to Jaipur taxi services offer swift access to these shopping districts, ensuring a seamless experience. Additionally, travelers can make Delhi to Jaipur cab booking for excursions to nearby cities like Jaipur and Jaipur, as well as for airport and railway station transfers within Delhi. From navigating narrow market lanes to exploring upscale shopping malls, Delhi seamlessly blends modernity with timeless charm. As Delhi evolves into a world-class city, it continues to offer an exceptional standard of living for both tourists and residents alike. Experience the vibrant spirit of Delhi with Sewak Travels' reliable Delhi to Jaipur taxi services. 
+              <p>Experience seamless travel around Delhi with Sewak Travels Delhi to Jaipur Car Rental Services, offering quick and convenient travel options. Delhi, a sprawling metropolis, boasts a plethora of attractions, dining spots, shopping destinations, and recreational activities. As the captivating national capital of India, Delhi attracts visitors from around the globe with iconic landmarks like the Red Fort, India Gate, and Jama Masjid. Food enthusiasts can indulge in mouth-watering delights such as chaat in Old Delhi and Mughlai cuisine at Karim's. Delhi offers a plethora of dining options, ranging from popular fast-food chains to quaint local sweet shops. Discover the diverse culinary joints by availing of Delhi to Jaipur taxi services from Sewak Travels Delhi to Jaipur car rentals. In addition to its culinary delights, Delhi is a haven for shoppers, boasting a wide array of traditional Indian attire alongside global Western brands. Explore renowned shopping destinations like Connaught Place, Khan Market, Pallika Bazaar, Karol Bagh, Chandni Chowk, and upscale suburban malls for an unparalleled shopping experience. Sewak Travels Delhi to Jaipur taxi services offer swift access to these shopping districts, ensuring a seamless experience. Additionally, travelers can make Delhi to Jaipur cab booking for excursions to nearby cities and airport and railway station transfers within Delhi. From navigating narrow market lanes to exploring upscale shopping malls, Delhi seamlessly blends modernity with timeless charm. As Delhi evolves into a world-class city, it continues to offer an exceptional standard of living for both tourists and residents alike. Experience the vibrant spirit of Delhi with Sewak Travels' reliable Delhi to Jaipur taxi services.  
             </p>
             <p>Sewak Travels has introduced its car rental service across major Indian cities, including the vibrant town of Jaipur in Rajasthan. With Sewak Travels, you can conveniently book cabs for local exploration and outstation trips in Jaipur. Opting for local cab services allows you to visit iconic landmarks like Chokhi Dhani, Nahargarh Fort, Jaigarh Fort, Hawa Mahal, Albert Hall Museum, and the picturesque Jal Mahal. A variety of Delhi to Jaipur car rentals, including luxury, deluxe, and budget options, cater to different preferences, making it advisable to explore the city via cab. Additionally, you can book Jaipur cabs for airport and railway station transfers, making your travel hassle-free. Before concluding your trip, make sure to treat yourself to the delectable Pyaz Kachori and Jaipur sweets at the renowned Rawat Kachori Wala. Given Jaipur's typically high temperatures, it's advisable to book an AC cab during summer to ensure a comfortable journey. For outstation travel, you can book cabs to nearby cities such as Ajmer, Pushkar, Bikaner, Jaipur, or Delhi at competitive rates through Sewak Travels. Our car rental service in Jaipur collaborates with major cab vendors in the area to ensure a pleasant travel experience, whether for business or leisure. If you're in Jaipur for business, our Jaipur car rental service also offers convenient transfers to Jaipur International Airport or the railway station.</p>
             </div>
           </div>
+      </div>
+      </section>
+      
+      <section className="flight-detail-sec cab-detail-sec">
+          <div className="detail-bar"> 
           <div className="detail-wrap wow fadeInUp">
             <div className="col">
-              <h4>Frequently Asked Questions</h4>
-              <h6>What is the Delhi to Jaipur One Way duration by cab? </h6>
-              <p>The duration for a one way cab Delhi to Jaipur journey typically ranges from 4 to 5 hours, depending on factors like traffic and road conditions.
-            </p>
-            <h6>What is the Delhi to Jaipur distance by cab?  </h6>
-            <p>The approximate Delhi to Jaipur distance by cab is around 280 to 300 kilometers, depending on the route taken.</p>
-            <h6>What is the Typical Delhi to Jaipur taxi fare? </h6>
-            <p>The typical Delhi to Jaipur taxi price varies based on factors like cab type, distance, and time of booking. Generally, it falls within the range of INR 2500 to INR 4000 for a one-way journey.</p>
-            <h6>How are the Delhi to Jaipur car rentals priced? </h6>
-            <p>Delhi to Jaipur car rentals are priced based on factors such as distance traveled, cab type, and any additional services availed during the journey.</p>
-            <h6>Is it Essential to Pre-book Delhi to Jaipur Cabs? </h6>
-            <p>Yes, it's highly recommended to pre-book Delhi to Jaipur cabs to ensure availability, especially during peak travel seasons. Pre-booking also allows you to plan your journey better and sometimes avail of discounted fares.</p>
-            <h6>Can I book a Delhi to Jaipur One Way cab? </h6>
-            <p>Yes, you can book a one way cab Delhi to Jaipur for a convenient and hassle-free journey. When booking a Delhi to Jaipur one way taxi, travelers have the option to pick either a one-way drop or a Delhi to Jaipur round trip cab journey</p>
-            <h6>Can I Pay Online For a Delhi to Jaipur cab service? </h6>
-            <p>Yes, online payment options are available for Delhi to Jaipur cab services. You can pay securely through various online payment gateways for a seamless booking experience.</p>
-            <h6>What are the Advantages of Booking Cabs Online with Sewak Travels? </h6>
-            <p>Booking cabs online with Sewak Travels offers several advantages, including a convenient booking process, multiple cab options to choose from, transparent pricing, secure online payment options, and reliable customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Delhi to Jaipur taxi with us for an unparalleled journey.</p>
+              <h4 style={{marginBottom:"20px"}}>Frequently Asked Questions</h4>
+            
+            <h6 onClick={() => toggleAnswer('q1')}>What is the Delhi to Jaipur One Way duration by cab? </h6>
+            {isOpen['q1'] && <p>The duration for a one way cab Delhi to Jaipur journey typically ranges from 4 to 5 hours, depending on factors like traffic and road conditions.</p>}
+
+            <h6 onClick={() => toggleAnswer('q2')}>What is the Delhi to Jaipur distance by cab? </h6>
+            {isOpen['q2'] && <p>The approximate Delhi to Jaipur distance by cab is around 280 to 300 kilometers, depending on the route taken.</p>}
+
+            <h6 onClick={() => toggleAnswer('q3')}>What is the Typical Delhi to Jaipur taxi fare? </h6>
+            {isOpen['q3'] && <p>The typical Delhi to Jaipur taxi price varies based on factors like cab type, distance, and time of booking. Generally, it falls within the range of INR 2500 to INR 4000 for a one-way journey.</p>}
+
+            <h6 onClick={() => toggleAnswer('q4')}>How are the Delhi to Jaipur car rentals priced? </h6>
+            {isOpen['q4'] && <p>Delhi to Jaipur car rentals are priced based on factors such as distance traveled, cab type, and any additional services availed during the journey.</p>}
+
+            <h6 onClick={() => toggleAnswer('q5')}>Is it Essential to Pre-book Delhi to Jaipur Cabs? </h6>
+            {isOpen['q5'] && <p>Yes, it's highly recommended to pre-book Delhi to Jaipur cabs to ensure availability, especially during peak travel seasons. Pre-booking also allows you to plan your journey better and sometimes avail of discounted fares.</p>}
+
+            <h6 onClick={() => toggleAnswer('q6')}>Can I book a Delhi to Jaipur One Way cab? </h6>
+            {isOpen['q6'] && <p>Yes, you can book a one way cab Delhi to Jaipur for a convenient and hassle-free journey. When booking a Delhi to Jaipur one way taxi, travelers have the option to pick either a one-way drop or a Delhi to Jaipur round trip cab journey.</p>}
+
+            <h6 onClick={() => toggleAnswer('q7')}>Can I Pay Online For a Delhi to Jaipur cab service? </h6>
+            {isOpen['q7'] && <p>Yes, online payment options are available for Delhi to Jaipur cab services. You can pay securely through various online payment gateways for a seamless booking experience.</p>}
+
+            <h6 onClick={() => toggleAnswer('q8')}>What are the Advantages of Booking Cabs Online with Sewak Travels? </h6>
+            {isOpen['q8'] && <p>Booking cabs online with Sewak Travels offers several advantages, including a convenient booking process, multiple cab options to choose from, transparent pricing, secure online payment options, and reliable customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Delhi to Jaipur taxi with us for an unparalleled journey.</p>}
+
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </div>
     );
   };
   

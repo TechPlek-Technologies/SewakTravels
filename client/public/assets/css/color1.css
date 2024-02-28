@@ -10900,7 +10900,7 @@ section .black-layer:before {
     .flight-detail-sec .selection-bar .details {
       margin-left: auto; }
   .flight-detail-sec .detail-bar .detail-wrap {
-    background-color: white;
+    /* background-color: white; */
     padding: 15px 0;
     border: 1px dashed transparent;
     -webkit-transition: all 0.5s ease;
