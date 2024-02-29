@@ -71,18 +71,29 @@ const SliderSeven = ({ type,slideData }) => {
                   >
                     <h3>{data.title}</h3>
 
-                    {/* <div className="spanSlider1">
-                    <span className="spanSlider">₹{data.price}</span>
-                    <span className="spanSlider1">₹{data.disc}</span>
-                    </div> */}
-
-                    
+                                  
                   </Link>
+{/* to add description */}
+                  {/* <p>{data.desc}</p> */}
                 </div>
+
                 <Rating />
                 <div className="bottom">
-                  
 
+   {/* to add price */}
+                {/* <h3>
+                    <del>
+                      {"₹"}
+                      {data.price.toFixed(0)}
+                    </del>
+                    {"₹"}
+                    {data.disc.toFixed(0)}
+                  </h3> */}
+
+{/* for coupan code */}
+                  {/* <h6 className="coupon-code">
+                    Coupon code: <span>{data.couponCode}</span>
+                  </h6> */}
                   <div className="new-line-container">
                     <Link
                       className={`btn btn-rounded color1 packageButton`}

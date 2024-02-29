@@ -34,6 +34,7 @@ import DelhiToMathuraMeta from "./MetaTags/DelhiToMathuraMeta";
 import DelhiToVrindavanMeta from "./MetaTags/DelhiToVrindavanMeta";
 import DelhiToKulluMeta from "./MetaTags/DelhiToKulluMeta";
 import DelhiToBijnorMeta from "./MetaTags/DelhiToBijnorMeta";
+import DelhiToDesinationMeta from "./MetaTags/DelhiToDestination";
 
 
 function CabListing(){
@@ -55,7 +56,7 @@ function CabListing(){
         <ListingView isValid={isValid}/>
 
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="CHANDIGARH, INDIA" && <div><DelhiToChandigarh/> <DelhiToChandigarhMeta/> </div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="AGRA, UTTAR PRADESH, INDIA" && <div><DelhiToAgra/> <DelhiToAgraMeta/></div>}
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="AGRA, UTTAR PRADESH, INDIA" && <div><DelhiToAgra/> <DelhiToDesinationMeta query={destination}/></div>}
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="DEHRADUN, UTTARAKHAND, INDIA" && <div><DelhiToDehradun/> <DelhiToDehradunMeta/></div> }
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="JAIPUR, RAJASTHAN, INDIA" && <div><DelhiToJaipur/> <DelhiToJaipurMeta/> </div>   }
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="KASAULI, HIMACHAL PRADESH, INDIA" && <div><DelhiToKasauli/> <DelhiToKasauliMeta/></div>   }
