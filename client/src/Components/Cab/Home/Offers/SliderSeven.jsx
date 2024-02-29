@@ -10,7 +10,7 @@ const SliderSeven = ({ type,slideData }) => {
     speed: 300,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -60,7 +60,7 @@ const SliderSeven = ({ type,slideData }) => {
             </div>
             <div className="category-content">
               <div>
-                <div className="top">
+                <div className="top1">
                   <Link
                     to={`/cab/listing/${encodeURIComponent(
                       data.source
@@ -70,6 +70,13 @@ const SliderSeven = ({ type,slideData }) => {
                     }}
                   >
                     <h3>{data.title}</h3>
+
+                    {/* <div className="spanSlider1">
+                    <span className="spanSlider">₹{data.price}</span>
+                    <span className="spanSlider1">₹{data.disc}</span>
+                    </div> */}
+
+                    
                   </Link>
                 </div>
                 <Rating />
@@ -86,9 +93,10 @@ const SliderSeven = ({ type,slideData }) => {
                         searchBetweenPlaces(data.source, data.destination);
                       }}
                     >
-                      {"Book Now"}
+                      {"Book Now"} 
                     </Link>
                   </div>
+
                 </div>
               </div>
             </div>

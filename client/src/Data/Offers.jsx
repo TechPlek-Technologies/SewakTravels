@@ -61,7 +61,7 @@ export const cabOfferData = [
   },
   {
     id: 6,
-    img: "/assets/img/offers/jaipur.webp",
+    img: "/assets/img/offers/Kasauli (1).webp",
     source: "Delhi, India",
     destination: "Kasauli, Himachal Pradesh, India",
     title: "Delhi to Kasauli",
@@ -73,7 +73,7 @@ export const cabOfferData = [
   },
   {
     id: 7,
-    img: "/assets/img/offers/jaipur.webp",
+    img: "/assets/img/offers/Kasol (1).webp",
     source: "Delhi, India",
     destination: "Kasol, Himachal Pradesh, India",
     title: "Delhi to Kasol",
@@ -85,7 +85,7 @@ export const cabOfferData = [
   },
   {
     id: 8,
-    img: "/assets/img/offers/jaipur.webp",
+    img: "/assets/img/offers/Manali (1).webp",
     source: "Delhi, India",
     destination: "Manali, Himachal Pradesh, India",
     title: "Delhi to Manali",
@@ -97,7 +97,7 @@ export const cabOfferData = [
   },
   {
     id: 9,
-    img: "/assets/img/offers/haridwar.webp",
+    img: "/assets/img/offers/Rishikesh (1).webp",
     source: "Delhi, India",
     destination: "Rishikesh, Uttarakhand, India",
     title: "Delhi to Rishikesh",
@@ -109,7 +109,7 @@ export const cabOfferData = [
   },
   {
     id: 10,
-    img: "/assets/img/offers/haridwar.webp",
+    img: "/assets/img/offers/Shimla.webp",
     source: "Delhi, India",
     destination: "Shimla, Himachal Pradesh, India",
     title: "Delhi to Shimla",
@@ -121,7 +121,7 @@ export const cabOfferData = [
   },
   {
     id: 11,
-    img: "/assets/img/offers/haridwar.webp",
+    img: "/assets/img/offers/McLeodganj (1).webp",
     source: "Delhi, India",
     destination: "McLeodganj, Himachal Pradesh, India",
     title: "Delhi to McLeodganj",
@@ -133,7 +133,7 @@ export const cabOfferData = [
   },
   {
     id: 12,
-    img: "/assets/img/offers/haridwar.webp",
+    img: "/assets/img/offers/Mathura (1).webp",
     source: "Delhi, India",
     destination: "Mathura, Uttar Pradesh, India",
     title: "Delhi to Mathura",
@@ -145,7 +145,7 @@ export const cabOfferData = [
   },
   {
     id: 13,
-    img: "/assets/img/offers/haridwar.webp",
+    img: "/assets/img/offers/Vrindavan (1).webp",
     source: "Delhi, India",
     destination: "Vrindavan, Uttar Pradesh, India",
     title: "Delhi to Vrindavan",
@@ -157,7 +157,7 @@ export const cabOfferData = [
   },
   {
     id: 14,
-    img: "/assets/img/offers/haridwar.webp",
+    img: "/assets/img/offers/Kullu (1).webp",
     source: "Delhi, India",
     destination: "Kullu, Himachal Pradesh, India",
     title: "Delhi to Kullu",
@@ -169,7 +169,7 @@ export const cabOfferData = [
   },
   {
     id: 15,
-    img: "/assets/img/offers/haridwar.webp",
+    img: "/assets/img/offers/bijnorr.webp",
     source: "Delhi, India",
     destination: "Bijnor, Uttar Pradesh, India",
     title: "Delhi to Bijnor",

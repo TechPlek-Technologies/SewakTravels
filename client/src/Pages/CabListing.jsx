@@ -19,6 +19,21 @@ import DelhiToMathura from "./DelhiToMathura";
 import DelhiToVrindavan from "./DelhiToVrindavan";
 import DelhiToKullu from "./DelhiToKullu";
 import DelhiToBijnor from "./DelhiToBijnor";
+import DelhiToAgraMeta from "./MetaTags/DelhiToAgraMeta";
+import DelhiToChandigarhMeta from "./MetaTags/DelhiToChandigarhMeta";
+import DelhiToDehradunMeta from "./MetaTags/DelhiToDehradunMeta";
+import DelhiToJaipurMeta from "./MetaTags/DelhiToJaipurMeta";
+import DelhiToKasauliMeta from "./MetaTags/DelhiToKasauliMeta";
+import DelhiToKasolMeta from "./MetaTags/DelhiToKasolMeta";
+import DelhiToManaliMeta from "./MetaTags/DelhiToManaliMeta";
+import DelhiToRishikeshMeta from "./MetaTags/DelhiToRishikeshMeta";
+import DelhiToShimlaMeta from "./MetaTags/DelhiToShimlaMeta";
+import DelhiToMcLeodganjMeta from "./MetaTags/DelhiToMcLeodganjMeta";
+import DelhiToHaridwarMeta from "./MetaTags/DelhiToHaridwarMeta";
+import DelhiToMathuraMeta from "./MetaTags/DelhiToMathuraMeta";
+import DelhiToVrindavanMeta from "./MetaTags/DelhiToVrindavanMeta";
+import DelhiToKulluMeta from "./MetaTags/DelhiToKulluMeta";
+import DelhiToBijnorMeta from "./MetaTags/DelhiToBijnorMeta";
 
 
 function CabListing(){
@@ -39,21 +54,21 @@ function CabListing(){
         <ListSearch setisValid={setisValid}/>
         <ListingView isValid={isValid}/>
 
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="CHANDIGARH, INDIA" && <div><DelhiToChandigarh/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="AGRA, UTTAR PRADESH, INDIA" && <div><DelhiToAgra/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="DEHRADUN, UTTARAKHAND, INDIA" && <div><DelhiToDehradun/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="JAIPUR, RAJASTHAN, INDIA" && <div><DelhiToJaipur/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="KASAULI, HIMACHAL PRADESH, INDIA" && <div><DelhiToKasauli/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="KASOL, HIMACHAL PRADESH, INDIA" && <div><DelhiToKasol/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="MANALI, HIMACHAL PRADESH, INDIA" && <div><DelhiToManali/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="RISHIKESH, UTTARAKHAND, INDIA" && <div><DelhiToRishikesh/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="SHIMLA, HIMACHAL PRADESH, INDIA" && <div><DelhiToShimla/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="MCLEODGANJ, HIMACHAL PRADESH, INDIA" && <div><DelhiToMcLeodganj/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="HARIDWAR, UTTARAKHAND, INDIA" && <div><DelhiToHaridwar/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="MATHURA, UTTAR PRADESH, INDIA" && <div><DelhiToMathura/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="VRINDAVAN, UTTAR PRADESH, INDIA" && <div><DelhiToVrindavan/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="KULLU, HIMACHAL PRADESH, INDIA" && <div><DelhiToKullu/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="BIJNOR, UTTAR PRADESH, INDIA" && <div><DelhiToBijnor/></div> }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="CHANDIGARH, INDIA" && <div><DelhiToChandigarh/> <DelhiToChandigarhMeta/> </div> }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="AGRA, UTTAR PRADESH, INDIA" && <div><DelhiToAgra/> <DelhiToAgraMeta/></div>}
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="DEHRADUN, UTTARAKHAND, INDIA" && <div><DelhiToDehradun/> <DelhiToDehradunMeta/></div> }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="JAIPUR, RAJASTHAN, INDIA" && <div><DelhiToJaipur/> <DelhiToJaipurMeta/> </div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="KASAULI, HIMACHAL PRADESH, INDIA" && <div><DelhiToKasauli/> <DelhiToKasauliMeta/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="KASOL, HIMACHAL PRADESH, INDIA" && <div><DelhiToKasol/> <DelhiToKasolMeta/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="MANALI, HIMACHAL PRADESH, INDIA" && <div><DelhiToManali/> <DelhiToManaliMeta/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="RISHIKESH, UTTARAKHAND, INDIA" && <div><DelhiToRishikesh/> <DelhiToRishikeshMeta/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="SHIMLA, HIMACHAL PRADESH, INDIA" && <div><DelhiToShimla/> <DelhiToShimlaMeta/> </div>  }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="MCLEODGANJ, HIMACHAL PRADESH, INDIA" && <div><DelhiToMcLeodganj/> <DelhiToMcLeodganjMeta/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="HARIDWAR, UTTARAKHAND, INDIA" && <div><DelhiToHaridwar/> <DelhiToHaridwarMeta/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="MATHURA, UTTAR PRADESH, INDIA" && <div><DelhiToMathura/> <DelhiToMathuraMeta/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="VRINDAVAN, UTTAR PRADESH, INDIA" && <div><DelhiToVrindavan/> <DelhiToVrindavanMeta/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="KULLU, HIMACHAL PRADESH, INDIA" && <div><DelhiToKullu/> <DelhiToKulluMeta/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="BIJNOR, UTTAR PRADESH, INDIA" && <div><DelhiToBijnor/> <DelhiToBijnorMeta/></div>  }
         
         <FooterComponent/>
       </>

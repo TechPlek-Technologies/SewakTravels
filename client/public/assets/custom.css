@@ -592,31 +592,67 @@ section.small-section{
   font-weight: bold;
 }
 
-.col h6{
-  font-weight: bold;
-  margin-bottom: 6px;
+.col h3{
+  font-weight: bolder;
+  /* margin-bottom: 6px; */
+  color: #363636;
+  font-size: 16px;
+  margin: 2px 0px ;
 }
 
-.col h2{
+/* .col h2{
   margin-bottom: 10px;
-}
+} */
 
 .full-banner1{
     padding: 200px 0;
     position: relative;
     overflow: hidden;
+    margin: 0px 16px;
 }
 
 .pages-bg{
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(255 255 255 / 42%);
   padding: 0px 140px;
 }
 
-.col h4{
+.col h2{
   font-weight: bold;
-  font-size: 18px;
+    font-size: 16px;
+    font-family: helvetica;
+    color: #525252;
 }
 
 .col p{
-  font-size: 14px;
+    font-size: 14px;
+    font-family: helvetica;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.h1Header[_ngcontent-taw-c63] {
+  font-size: 25px;
+  padding: 5px 20px;
+  border-bottom: 2px solid #ffb824;
+  border-top: 2px solid #ffb824;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.spanSlider{
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.spanSlider1{
+  font-size: 22px;
+  margin-left: 8px;
+  color: #3e83ef;
+  font-weight: 800;
+}
+
+.spanSlider1{
+margin-top: 10px;
+margin-bottom: 10px;
 }

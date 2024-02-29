@@ -494,8 +494,8 @@ section,
     font-weight: 600; }
   .title-3 h2 {
     font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
-    margin-top: 20px;
-    margin-bottom: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-weight: 800;
     position: relative; }
     .title-3 h2 span {
@@ -1365,7 +1365,8 @@ section .black-layer:before {
 
     background-position: center;
     background-size: cover;
-    height: 70vh;
+    /* height: 70vh; */
+    height: 55vh;
     overflow: hidden; }
     .home_section .home.black-layer:before {
       content: "";
@@ -4871,7 +4872,7 @@ section .black-layer:before {
       margin-left: 55px;
       background-color: white;
       border-radius: 25px;
-      padding: 55px 30px 55px 220px;
+      padding: 24px 30px 24px 156px;
       -webkit-box-shadow: 2.5px 4.33px 20px 0px rgba(0, 0, 0, 0.05);
               box-shadow: 2.5px 4.33px 20px 0px rgb(0 0 0 / 25%);
       -webkit-transition: all 0.5s ease;
@@ -4890,6 +4891,11 @@ section .black-layer:before {
           text-transform: capitalize;
           font-weight: 800;
           margin-bottom: 0; }
+          .category-wrapper .category-wrap .category-content .top1 h3 {
+            text-transform: capitalize;
+            font-size: 21px;
+            font-weight: 800;
+            margin-bottom: 0; }
         .category-wrapper .category-wrap .category-content .top h6 {
           font-size: 14px;
           color: #ef3f3e;
