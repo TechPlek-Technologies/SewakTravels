@@ -653,6 +653,7 @@ section.small-section{
   .col h2{
     font-size: 13px;
     font-weight: bold;
+    line-height: 18px;
   }
  }
 
@@ -705,4 +706,16 @@ section.small-section{
 .spanSlider1{
 margin-top: 10px;
 margin-bottom: 10px;
+}
+ 
+.demo{
+  @media (max-width: 767px) {
+   padding: 0px 12px;
+  }
+}
+
+.demo1{
+  width: 100%;
+  height: auto;
+  padding: 0px 16px;
 }

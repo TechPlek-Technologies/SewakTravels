@@ -40,7 +40,10 @@ const DelhiToRishikesh = ({type}) => {
       
       {/* <section><BackgroundSection img="/assets/img/Locations/rishikesh.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/rishikesh.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/rishikesh.webp" className="demo1"></img>
+          </section>
 
           <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
@@ -90,7 +93,9 @@ Our Delhi to Rishikesh taxi comes equipped with full air conditioning, and our e
 
         {/* <section><BackgroundSection img="/assets/img/Locations/delhi-to-rishikesh.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/delhi-to-rishikesh.webp" style={{width:"100%", height:"auto"}}></img>
+          <section className="demo">
+          <img src="/assets/img/Locations/delhi-to-rishikesh.webp" className="demo1"></img>
+          </section>
 
         <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 

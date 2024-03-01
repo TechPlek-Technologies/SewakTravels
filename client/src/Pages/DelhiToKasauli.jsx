@@ -38,7 +38,10 @@ const DelhiToKasauli = ({type}) => {
       
       {/* <section><BackgroundSection img="/assets/img/Locations/kasauli.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/kasauli.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/kasauli.webp" className="demo1"></img>
+          </section>
 
           <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
@@ -91,7 +94,10 @@ Our Delhi to Kasauli taxi comes equipped with full air conditioning, and our exp
 
         {/* <section><BackgroundSection img="/assets/img/Locations/delhi-to-kasauli.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/delhi-to-kasauli.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/delhi-to-kasauli.webp" className="demo1"></img>
+          </section>
 
         <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 

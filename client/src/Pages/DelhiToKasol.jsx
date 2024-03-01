@@ -40,7 +40,10 @@ const DelhiToKasol = ({type}) => {
       
       {/* <section><BackgroundSection img="/assets/img/Locations/kasol.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/kasol.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/kasol.webp" className="demo1"></img>
+          </section>
 
           <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
@@ -92,7 +95,10 @@ Our Delhi to Kasol taxi comes equipped with full air conditioning, and our exper
 
         {/* <section><BackgroundSection img="/assets/img/Locations/delhi-to-kasol.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/delhi-to-kasol.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/delhi-to-kasol.webp" className="demo1"></img>
+          </section>
 
         <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 

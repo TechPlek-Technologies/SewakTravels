@@ -38,7 +38,10 @@ const DelhiToAgra = ({type}) => {
       
       {/* <section><BackgroundSection img="/assets/img/Locations/agra.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center" className="img-fluid">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/agra.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/agra.webp" className="demo1"></img>
+          </section>
 
           <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
@@ -88,7 +91,10 @@ Our Delhi to Agra taxis are fully air-conditioned, and our skilled drivers ensur
 
         {/* <section><BackgroundSection img="/assets/img/Locations/delhi-to-agra.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center" className="img-fluid">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/delhi-to-agra.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/delhi-to-agra.webp" className="demo1"></img>
+          </section>
 
         <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 

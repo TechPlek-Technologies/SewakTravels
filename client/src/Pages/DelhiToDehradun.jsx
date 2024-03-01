@@ -40,7 +40,10 @@ const DelhiToDehradun = ({type}) => {
       
       {/* <section><BackgroundSection img="/assets/img/Locations/dehradun.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/dehradun.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/dehradun.webp" className="demo1"></img>
+          </section>
 
           <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
@@ -92,7 +95,11 @@ const DelhiToDehradun = ({type}) => {
 
         {/* <section><BackgroundSection img="/assets/img/Locations/delhi-to-dehradun.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/delhi-to-dehradun.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/delhi-to-dehradun.webp" className="demo1"></img>
+          </section>
+
 
         <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 

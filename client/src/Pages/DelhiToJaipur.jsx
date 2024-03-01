@@ -31,7 +31,10 @@ const DelhiToJaipur = ({type}) => {
 
       {/* <section><BackgroundSection img="/assets/img/Locations/Jaipur.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/Jaipur.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/Jaipur.webp" className="demo1"></img>
+          </section>
 
       <section className="flight-detail-sec cab-detail-sec">
       <div className="detail-bar">
@@ -80,7 +83,10 @@ const DelhiToJaipur = ({type}) => {
 
       {/* <section><BackgroundSection img="/assets/img/Locations/delhi-to-jaipur.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/delhi-to-jaipur.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/delhi-to-jaipur.webp" className="demo1"></img>
+          </section>
 
       <section className="flight-detail-sec cab-detail-sec">
       <div className="detail-bar">

@@ -39,7 +39,10 @@ const DelhiToBijnor = ({type}) => {
       
       {/* <section><BackgroundSection img="/assets/img/Locations/bijnor.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/bijnor.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/bijnor.webp" className="demo1"></img>
+          </section>
 
           <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
@@ -91,7 +94,10 @@ Our Delhi to Bijnor taxi comes equipped with full air conditioning, and our expe
 
         {/* <section><BackgroundSection img="/assets/img/Locations/delhi-to-bijnor.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
           </BackgroundSection></section> */}
-          <img src="/assets/img/Locations/delhi-to-bijnor.webp" style={{width:"100%", height:"auto"}}></img>
+
+          <section className="demo">
+          <img src="/assets/img/Locations/delhi-to-bijnor.webp" className="demo1"></img>
+          </section>
 
         <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
