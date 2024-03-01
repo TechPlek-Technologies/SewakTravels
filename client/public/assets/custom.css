@@ -600,6 +600,14 @@ section.small-section{
   margin: 2px 0px ;
 }
 
+/*for mobile*/
+@media (max-width: 767px) {
+  .col h3{
+    font-size: 12px;
+    font-weight: bold;
+}
+ }
+
 /* .col h2{
   margin-bottom: 10px;
 } */
@@ -616,6 +624,23 @@ section.small-section{
   padding: 0px 108px;
 }
 
+/*for mobile*/
+@media (max-width: 767px) {
+  .pages-bg{
+   background-color: rgb(255 255 255 / 42%);
+   padding: 0px 10px;
+ }
+ }
+
+ /*for tablet*/
+ @media (min-width: 768px) and (max-width: 991px) {
+  .pages-bg{
+   background-color: rgb(255 255 255 / 42%);
+   padding: 0px 40px;
+ }
+ }
+
+
 .col h2{
   font-weight: bold;
     font-size: 16px;
@@ -623,12 +648,30 @@ section.small-section{
     color: #525252;
 }
 
+/*for mobile*/
+@media (max-width: 767px) {
+  .col h2{
+    font-size: 13px;
+    font-weight: bold;
+  }
+ }
+
 .col p{
     font-size: 14px;
     font-family: helvetica;
     line-height: 1.5;
     text-align: justify;
 }
+
+/*for mobile*/
+@media (max-width: 767px) {
+  .col p{
+    font-size: 12px;
+    font-family: helvetica;
+    line-height: 1.5;
+    text-align: justify;
+}
+ }
 
 .h1Header[_ngcontent-taw-c63] {
   font-size: 25px;
@@ -639,6 +682,13 @@ section.small-section{
   text-align: center;
   margin-top: 24px;
 }
+
+/*for mobile*/
+@media (max-width: 767px) {
+  .h1Header[_ngcontent-taw-c63] {
+    font-size: 16px;
+  }
+ }
 
 .spanSlider{
   font-size: 12px;

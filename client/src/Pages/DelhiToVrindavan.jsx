@@ -37,8 +37,9 @@ const DelhiToVrindavan = ({type}) => {
         </div>
       </section>
       
-      <section><BackgroundSection img="/assets/img/Locations/vrindavan.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
-          </BackgroundSection></section>
+      {/* <section><BackgroundSection img="/assets/img/Locations/vrindavan.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section> */}
+          <img src="/assets/img/Locations/vrindavan.webp" style={{width:"100%", height:"auto"}}></img>
 
           <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
@@ -88,8 +89,9 @@ Our Delhi to Vrindavan taxi comes equipped with full air conditioning, and our e
           </div>
         </section>
 
-        <section><BackgroundSection img="/assets/img/Locations/delhi-to-vrindavan.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
-          </BackgroundSection></section>
+        {/* <section><BackgroundSection img="/assets/img/Locations/delhi-to-vrindavan.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section> */}
+          <img src="/assets/img/Locations/delhi-to-vrindavan.webp" style={{width:"100%", height:"auto"}}></img>
 
         <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 

@@ -36,8 +36,9 @@ const DelhiToChandigarh = ({type}) => {
         </div>
       </section>
       
-      <section><BackgroundSection img="/assets/img/Locations/chandigarh.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
-          </BackgroundSection></section>
+      {/* <section><BackgroundSection img="/assets/img/Locations/chandigarh.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section> */}
+          <img src="/assets/img/Locations/chandigarh.webp" style={{width:"100%", height:"auto"}}></img>
 
           <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
@@ -86,8 +87,9 @@ Our Delhi to Chandigarh taxi comes equipped with full air conditioning, and our 
           </div>
         </section>
 
-        <section><BackgroundSection img="/assets/img/Locations/delhi-to-chandigarh.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
-          </BackgroundSection></section>
+        {/* <section><BackgroundSection img="/assets/img/Locations/delhi-to-chandigarh.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section> */}
+          <img src="/assets/img/Locations/delhi-to-chandigarh.webp" style={{width:"100%", height:"auto"}}></img>
 
         <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 

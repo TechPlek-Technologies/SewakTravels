@@ -37,8 +37,9 @@ const DelhiToManali = ({type}) => {
         </div>
       </section>
       
-      <section><BackgroundSection img="/assets/img/Locations/Manali.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
-          </BackgroundSection></section>
+      {/* <section><BackgroundSection img="/assets/img/Locations/Manali.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section> */}
+          <img src="/assets/img/Locations/Manali.webp" style={{width:"100%", height:"auto"}}></img>
 
           <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
@@ -88,8 +89,9 @@ Our Delhi to Manali taxi comes equipped with full air conditioning, and our expe
           </div>
         </section>
 
-        <section><BackgroundSection img="/assets/img/Locations/delhi-to-manali.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
-          </BackgroundSection></section>
+        {/* <section><BackgroundSection img="/assets/img/Locations/delhi-to-manali.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section> */}
+          <img src="/assets/img/Locations/delhi-to-manali.webp" style={{width:"100%", height:"auto"}}></img>
 
         <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 

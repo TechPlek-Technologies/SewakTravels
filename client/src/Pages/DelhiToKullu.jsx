@@ -38,8 +38,9 @@ const DelhiToKullu = ({type}) => {
         </div>
       </section>
       
-      <section><BackgroundSection img="/assets/img/Locations/kullu.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
-          </BackgroundSection></section>
+      {/* <section><BackgroundSection img="/assets/img/Locations/kullu.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section> */}
+          <img src="/assets/img/Locations/kullu.webp" style={{width:"100%", height:"auto"}}></img>
 
           <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
@@ -88,8 +89,9 @@ Our Delhi to Kullu taxi comes equipped with full air conditioning, and our exper
           </div>
         </section>
 
-        <section><BackgroundSection img="/assets/img/Locations/delhi-to-kullu.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
-          </BackgroundSection></section>
+        {/* <section><BackgroundSection img="/assets/img/Locations/delhi-to-kullu.webp" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
+          </BackgroundSection></section> */}
+          <img src="/assets/img/Locations/delhi-to-kullu.webp" style={{width:"100%", height:"auto"}}></img>
 
         <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 

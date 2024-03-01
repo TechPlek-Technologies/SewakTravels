@@ -37,9 +37,7 @@ const DelhiToShimla = ({type}) => {
         </div>
       </section>
       
-      <section><BackgroundSection img="/assets/img/Locations/Shimla.jpg" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
-          </BackgroundSection></section>
-
+          <img src="/assets/img/Locations/Shimla.jpg" style={{width:"100%", height:"auto"}}></img>
           <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
           <div className="detail-wrap wow fadeInUp">
@@ -86,8 +84,8 @@ Our Delhi to Shimla taxi comes equipped with full air conditioning, and our expe
           </div>
         </section>
 
-        <section><BackgroundSection img="/assets/img/Locations/delhi-to-shimla.jpg" imgWidth={1920} imgHeight={600} titleClass="full-banner1" position="center">
-          </BackgroundSection></section>
+        
+          <img src="/assets/img/Locations/delhi-to-shimla.jpg" style={{width:"100%", height:"auto"}}></img>
 
         <section className="flight-detail-sec cab-detail-sec">
           <div className="detail-bar"> 
