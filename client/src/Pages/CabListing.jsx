@@ -40,7 +40,7 @@ function CabListing(){
         <ListSearch setisValid={setisValid}/>
         <ListingView isValid={isValid}/>
 
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="CHANDIGARH, INDIA" && <div><DelhiToChandigarh/> <DelhiToDesinationMeta query={destination}/></div> }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="CHANDIGARH INDIA" && <div><DelhiToChandigarh/> <DelhiToDesinationMeta query={destination}/></div> }
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="AGRA, UTTAR PRADESH, INDIA" && <div><DelhiToAgra/> <DelhiToDesinationMeta query={destination}/></div>}
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="DEHRADUN, UTTARAKHAND, INDIA" && <div><DelhiToDehradun/> <DelhiToDesinationMeta query={destination}/></div> }
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="JAIPUR, RAJASTHAN, INDIA" && <div><DelhiToJaipur/> <DelhiToDesinationMeta query={destination}/></div>   }
