@@ -784,7 +784,7 @@ header {
   header.overlay-white {
     background-color: rgba(255, 255, 255, 0.08); }
     header.overlay1-white {
-      background-color: rgba(255, 255, 255, 0.42); }
+      background-color: rgba(255, 255, 255, 0.50); }
   header.overlay-black {
     background-color: rgba(0, 0, 0, 0.18); }
   header.inner-page {
@@ -793,7 +793,9 @@ header {
     background-color: white;
     position: relative; }
     header.light_header .main-navbar .nav-menu > li > a {
-      color: #222222; }
+      color: #222222; 
+    }
+      
     header.light_header .menu .header-right .front-setting {
       background-color: #f3f3f5; }
       header.light_header .menu .header-right .front-setting select {
@@ -15312,7 +15314,8 @@ header {
         padding-bottom: 10px; }
         header .main-navbar .nav-menu > li > a {
           display: block;
-          color: white;
+          /* color: white; */
+          color: black;
           font-size: 14px;
           font-weight: 900;
           line-height: 23px;
