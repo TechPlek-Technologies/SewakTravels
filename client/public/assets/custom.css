@@ -395,6 +395,12 @@ li.nav-item {
   }
 }
 
+@media (min-width: 360px) and (max-width: 375px){
+  .selectBox {
+    padding: 0px;
+  }
+}
+
 .selectBox:hover {
   scale: 1.1;
 }

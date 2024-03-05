@@ -25,7 +25,7 @@ function Home() {
 
   return (
     <>
-      <Layout title="overlay-black" />
+      <Layout title="overlay1-white" />
       <Helmet>
       <title> Sewak Travels: Travel Website for Booking Hotels, Flights, Cabs. </title>
         <meta

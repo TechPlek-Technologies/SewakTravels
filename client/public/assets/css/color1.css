@@ -783,6 +783,8 @@ header {
         margin-left: 15px; }
   header.overlay-white {
     background-color: rgba(255, 255, 255, 0.08); }
+    header.overlay1-white {
+      background-color: rgba(255, 255, 255, 0.42); }
   header.overlay-black {
     background-color: rgba(0, 0, 0, 0.18); }
   header.inner-page {
@@ -1370,7 +1372,7 @@ section .black-layer:before {
     overflow: hidden; }
 
 
-    @media (min-width: 1500px) {
+    @media (min-width: 1500px) and (max-width:1600px) {
         .home_section .home {
           height: 65vh;
         }
