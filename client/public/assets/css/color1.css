@@ -1368,6 +1368,15 @@ section .black-layer:before {
     /* height: 70vh; */
     height: 55vh;
     overflow: hidden; }
+
+
+    @media (min-width: 1500px) {
+        .home_section .home {
+          height: 65vh;
+        }
+     }
+
+
     .home_section .home.black-layer:before {
       content: "";
       position: absolute;

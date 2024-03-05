@@ -53,7 +53,7 @@ const Popup = ({ selectedValue, travelDistance, car, modal, toggle }) => {
                 <div>
                  250
                 </div>
-                <div>Per KM Charges </div>
+                <div>Extra Per KM Charges </div>
                 <div> {selectedValue === "Outstation One-Way"
                     ? car.outstationOneWay
                     : selectedValue === "Outstation One-Way"
