@@ -33,6 +33,7 @@ Sewak Travels is a user-friendly cab booking application designed to streamline 
 * Razorpay payment gateway integration
 * Automatic Invoice generation 
 * Fully Responsive
+* CI/CD for quick Integration and deployment via githu workflow
 * Condtional Rendering
   - Different Homepages for different bookings.
 * Backend Api Integration
