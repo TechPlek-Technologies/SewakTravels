@@ -16,6 +16,8 @@ import Airline from "../Components/FlightPackage/Airline";
 import ImportantLinks from "../Components/Common/ImportantLinks";
 import OfferComponent from "../Components/HotelPackage/OfferComponent";
 import { Helmet } from "react-helmet";
+import FactsContent1 from "../Components/Cab/Home/FactsContent/FactsContent1";
+import FactsContent2 from "../Components/Cab/Home/FactsContent/FactsContent2";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("1");
@@ -24,14 +26,14 @@ function Home() {
   }, []);
 
   return (
+    <div className="home-bg">
     <>
       <Layout title="overlay1-white" />
       <Helmet>
       <title> Sewak Travels: Travel Website for Booking Hotels, Flights, Cabs. </title>
         <meta
           name="description"
-          content=" Get best deals on all your online travel bookings. Book  
-Online flights, hotels, cabs & Taxi services. Make your travel dreams a reality with Sewak Travels!"
+          content=" Get best deals on all your online travel bookings. Book Online flights, hotels, cabs & Taxi services. Make your travel dreams a reality with Sewak Travels!"
         />
         <meta
           name="keywords"
@@ -53,7 +55,7 @@ Online flights, hotels, cabs & Taxi services. Make your travel dreams a reality 
       {activeTab === "4" && <ExplorePackages type="Tour Offers" />}
       {activeTab === "4" && <ImportantLinks />}
       {<VideoBanner />}
-      {<FactsContent />}
+      {<FactsContent2/>}
       {<Testimonials />}
       {activeTab === "1" && <FullBanner />}
       {<ServicesComponent />}
@@ -62,6 +64,7 @@ Online flights, hotels, cabs & Taxi services. Make your travel dreams a reality 
       {/* <Instagram /> */}
       {<FooterComponent />}
     </>
+    </div>
   );
 }
 

@@ -27,6 +27,13 @@ const SliderSeven = ({ type,slideData }) => {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 586,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
 
@@ -70,8 +77,7 @@ const SliderSeven = ({ type,slideData }) => {
                     }}
                   >
                     <h3>{data.title}</h3>
-
-                                  
+            
                   </Link>
 {/* to add description */}
                   {/* <p>{data.desc}</p> */}
@@ -83,11 +89,11 @@ const SliderSeven = ({ type,slideData }) => {
    {/* to add price */}
                 {/* <h3>
                     <del>
-                      {"₹"}
-                      {data.price.toFixed(0)}
+                      
+                      {data.price}
                     </del>
-                    {"₹"}
-                    {data.disc.toFixed(0)}
+                   
+                    {data.disc}
                   </h3> */}
 
 {/* for coupan code */}

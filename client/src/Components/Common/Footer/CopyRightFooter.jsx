@@ -13,7 +13,7 @@ const CopyRightFooter= () => {
             <div className="col-xl-6 col-md-6 col-sm-12">
               <div className="copy-right">
                 <p>
-                  Copyright 2023 SewakTravels by <i className="fas fa-heart"></i> TechPlek Technologies
+                © Copyright 2023 <a href='https://sewaktravels.com/'>SewakTravels</a>. By <a href='https://www.techplek.com/'>TechPlek Technologies</a>
                 </p>
               </div>
             </div>
