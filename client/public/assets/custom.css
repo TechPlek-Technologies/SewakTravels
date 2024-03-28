@@ -262,6 +262,12 @@ header .menu {
   /* padding-bottom: 0px; */
 }
 
+.small-section1 {
+  padding-top: 10px;
+  /* padding-bottom: 0px; */
+}
+
+
 /* Video Banner Home Page */
 .video_section .offer-text h6 span {
   margin-right: 7px;
