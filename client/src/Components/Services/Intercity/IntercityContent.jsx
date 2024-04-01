@@ -2,27 +2,28 @@ import { Link } from "react-router-dom";
 import Animation from "../../Common/Animation";
 import TitleComponent from "../../Common/TitleComponent";
 
-const AirportContent = ({ side }) => {
+const IntercityContent = ({ side }) => {
+  
     const imageData = [
+      {
+        src: "/assets/img/about/1.webp",
+        title: "OutStation",
+        subTitle: "OutStation",
+        path:"/outstation-cab-taxi-service"
+      },
+      {
+        src: "/assets/img/about/2.webp",
+        title: "Airport",
+        subTitle: "Airport",
+        path:"/airport-cab-taxi-transport-service"
+      },
+      {
+        src: "/assets/img/about/3.webp",
+        title: "Corporate",
+        subTitle: "Corporate",
+        path:"/employee-cab-taxi-transport-service"
+      },
         {
-            src: "/assets/img/about/1.webp",
-            title: "OutStation",
-            subTitle: "OutStation",
-            path:"/outstation-cab-taxi-service"
-          },
-          {
-            src: "/assets/img/about/2.webp",
-            title: "Airport",
-            subTitle: "Airport",
-            path:"/airport-cab-taxi-transport-service"
-          },
-          {
-            src: "/assets/img/about/3.webp",
-            title: "Corporate",
-            subTitle: "Corporate",
-            path:"/employee-cab-taxi-transport-service"
-          },
-          {
             src: "/assets/img/about/4.webp",
             title: "Intercity",
             subTitle: "Intercity",
@@ -35,7 +36,7 @@ const AirportContent = ({ side }) => {
           <div className="container">
             <TitleComponent
               title={"Sewak Travels"}
-              subTitle={"Airport Transport Services"}
+              subTitle={"Intercity Taxi Transport Services"}
               span={"Services"}
               titleClass={"title-3"}
             />
@@ -67,10 +68,11 @@ const AirportContent = ({ side }) => {
               <div className="col-xl-4">
                 <div className="about-text">
                   <div>
-                  <h1 className="service-h1">Affordable Airport Transportation & Cab/Taxi Service</h1>
+                    <h1 className="service-h1">Discover Our Intercity Taxi Service for Smooth Journey</h1>
                     <p>
-                    Say goodbye to the worries of navigating through the chaos of airports, and let us take you on a seamless ride from takeoff to touchdown. Experience hassle-free traveling with our captivating airport transportation service!
+                    At Sewak Travels, we redefine your intercity ride experience with our unparalleled intercity cab services and commitment to your satisfaction. As your premier travel partner, we redefine intercity taxi service experiences with convenience, comfort, and reliability. From online taxi service and intercity cab services to outstation trips, we've got you covered. Explore our comprehensive range of intercity cab services designed to cater to all your travel needs.
                     </p>
+                   
                     {/* <img
                       src="/assets/images/mix/signature.png"
                       className="img-fluid"
@@ -96,5 +98,5 @@ const AirportContent = ({ side }) => {
       );
   };
   
-  export default AirportContent;
+  export default IntercityContent;
   

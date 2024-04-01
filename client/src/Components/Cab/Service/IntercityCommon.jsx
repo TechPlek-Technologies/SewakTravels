@@ -1,8 +1,8 @@
-const AboutCommon= ({ aboutData }) => {
+const IntercityCommon= ({ intercityData }) => {
   
     return (
       <>
-        {aboutData.map((data,index) => (
+        {intercityData.map((data,index) => (
           <div className="col-xl-4 col-4" key={index}>
             <div className="highlight-box wow fadeInUp">
               <div>{data.svg}</div>
@@ -17,4 +17,4 @@ const AboutCommon= ({ aboutData }) => {
     );
   };
   
-  export default AboutCommon;
+  export default IntercityCommon;

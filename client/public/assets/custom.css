@@ -579,7 +579,8 @@ li.nav-item {
 @media (max-width: 480px) {
  
   .home_section .home {
-    height: 78vh !important;
+    /* height: 78vh !important; */
+    height: 99vh !important;
   }
 }
 
@@ -1003,4 +1004,60 @@ margin-bottom: 10px;
   .coupon{
     margin-left: 80px;
   }
+}
+
+.service-h1{
+  font-weight: 800;
+    letter-spacing: 0.03em;
+    line-height: 1.1;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #ef2f3e;
+}
+
+@media (max-width:576px){
+  .service-h1{
+    font-weight: 800;
+      letter-spacing: 0.03em;
+      line-height: 1.1;
+      font-size: 20px;
+      text-transform: capitalize;
+      color: #ef2f3e;
+  }
+  .service-h2{
+    font-size: 16px;
+}
+
+}
+
+.service-h2{
+    font-size: 18px;
+}
+
+.service-h3{
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  color: black;
+  font-size: 18px;
+}
+
+.services-h3{
+  font-family: cursive;
+    color: #ef3f3e;
+}
+
+.services-h4{
+  font-size: 16px;
+}
+
+@media (max-width:576px){
+  .search-section .search-box .left-part{
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width:576px){
+  .about-section.three-image .about-text p {
+   font-size: 14px; }
 }

@@ -1,5 +1,5 @@
 import CallService from "../Components/Cab/Home/CallService";
-import FactsContent from "../Components/Cab/Home/FactsContent/FactsContent";
+// import FactsContent from "../Components/Cab/Home/FactsContent/FactsContent";
 import NewHomeBanner from "../Components/Cab/Home/NewHomeBanner";
 import ServicesComponent from "../Components/Cab/Home/Service/ServicesComponent";
 import Testimonials from "../Components/Cab/Home/Testimonials/Testimonials";
@@ -16,7 +16,7 @@ import Airline from "../Components/FlightPackage/Airline";
 import ImportantLinks from "../Components/Common/ImportantLinks";
 import OfferComponent from "../Components/HotelPackage/OfferComponent";
 import { Helmet } from "react-helmet";
-import FactsContent1 from "../Components/Cab/Home/FactsContent/FactsContent1";
+// import FactsContent1 from "../Components/Cab/Home/FactsContent/FactsContent1";
 import FactsContent2 from "../Components/Cab/Home/FactsContent/FactsContent2";
 
 function Home() {

@@ -154,7 +154,9 @@ section,
   padding-top: calc(30px + (100 - 30) * ((100vw - 320px) / (1920 - 320))); }
 
 .section-b-space {
-  padding-bottom: 100px; }
+  /* padding-bottom: 100px;  */
+  padding-bottom: 20px;
+}
 
 .medium-section {
   padding-top: 80px;
@@ -162,7 +164,9 @@ section,
 
 .small-section {
   padding-top: 70px;
-  padding-bottom: 70px; }
+  /* padding-bottom: 70px; */
+  padding-bottom: 30px;
+ }
 
 /* .xs-section {
   padding: 30px 0; } */
@@ -497,11 +501,13 @@ section,
   .title-1.detail-title h2 {
     padding-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320))); }
   .title-1.detail-title p {
-    max-width: 60%;
+    /* max-width: 60%; */
+    max-width: 80%;
     margin: 0 auto;
     color: #505050;
     text-transform: capitalize;
-    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+    /* font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))); */
+    font-size: 16px;
     line-height: 1.7; }
   .title-1.rounded .title-label {
     border-radius: 12px; }
@@ -2621,7 +2627,8 @@ section .black-layer:before {
   .service-section .service-box h3 {
     text-align: center;
     color: black;
-    font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
+    /* font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320))); */
+    font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
     margin-bottom: 15px; }
@@ -2930,10 +2937,6 @@ section .black-layer:before {
     color: #ef3f3e;
     position: absolute;
     top: -4px;
-    border: 1px solid;
-    border-radius: 30px;
-    padding: 5px;
-    background-color: #fdeaea;
   }
 
 .testimonial-section .slick-prev {
@@ -2985,7 +2988,8 @@ section .black-layer:before {
     text-align: center;
     position: relative; }
     .testimonial_section .testimonial .bottom-part p {
-      font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+      /* font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320))); */
+      font-size: 16px;
       color: #646464;
       font-weight: 500;
       line-height: 1.5;
@@ -3289,7 +3293,7 @@ section .black-layer:before {
   .about-section .about-text p {
     font-size: calc(14px + (22 - 14) * ((100vw - 320px) / (1920 - 320)));
     line-height: 1.5;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-bottom: 25px; }
 
 .about-section.three-image .image-section .img-box + .img-box {
@@ -3302,7 +3306,8 @@ section .black-layer:before {
     margin-bottom: 30px; }
   .about-section.three-image .about-text h2 {
     color: black;
-    font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (1920 - 320)));
+    /* font-size: calc(18px + (40 - 18) * ((100vw - 320px) / (1920 - 320))); */
+    font-size: 20px;
     margin-bottom: 10px; }
     .about-section.three-image .about-text h2 span {
       font-size: calc(16px + (30 - 16) * ((100vw - 320px) / (1920 - 320)));
@@ -3313,7 +3318,9 @@ section .black-layer:before {
       font-weight: 400;
       color: rgba(0, 0, 0, 0.6); }
   .about-section.three-image .about-text p {
-    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320))); }
+    /* font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));  */
+    font-size: 15px;
+  }
 
 .about-section.about_page .image-section .img-box:nth-child(odd) {
   margin-bottom: 40px; }
@@ -9244,7 +9251,9 @@ section .black-layer:before {
       color: black; }
     .single-section .description-section .description-details .menu-part.about .about-sec p {
       color: rgba(0, 0, 0, 0.7);
-      font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))); }
+      /* font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));  */
+      font-size: 16px;
+    }
       .single-section .description-section .description-details .menu-part.about .about-sec p.top-space {
         margin-top: -6px; }
       .single-section .description-section .description-details .menu-part.about .about-sec p.bottom-space {
@@ -9254,9 +9263,10 @@ section .black-layer:before {
       .single-section .description-section .description-details .menu-part.about .about-sec ul li {
         list-style-type: square;
         display: list-item;
-        text-transform: capitalize;
+        /* text-transform: capitalize; */
         color: rgba(0, 0, 0, 0.7);
-        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+        /* font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))); */
+        font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.04em; }
     .single-section .description-section .description-details .menu-part.about .about-sec + .about-sec {
@@ -15773,7 +15783,9 @@ header {
     padding-top: 20px;
     padding-bottom: 20px; }
     .toggle-nav i {
-      font-size: 20px; } }
+      font-size: 20px;
+      color: black;
+     } }
 
 @media (max-width: 480px) {
   header .menu .coupon-box {
@@ -22120,7 +22132,9 @@ body.dark {
         padding-left: 5px !important;
         padding-right: 5px !important; }
   .home_section .home.home-mobile .home-content.smaller-content {
-    padding-top: 30px; }
+    /* padding-top: 30px;  */
+    padding-top: 20px;
+  }
     .home_section .home.home-mobile .home-content.smaller-content h1 {
       font-size: calc(14px + (60 - 14) * ((100vw - 320px) / (1920 - 320))); }
   .home_section .slick-prev,
@@ -22644,7 +22658,9 @@ body.dark {
     margin-bottom: 20px;
     padding: 15px; }
     .single-section .description-section .description-details .menu-part.about .about-sec p {
-      line-height: 1.3; }
+      line-height: 1.3; 
+    font-size: 14px;
+    }
     .single-section .description-section .description-details .menu-part.about .about-sec ul li {
       line-height: 1.3; }
     .single-section .description-section .description-details .menu-part.review .review-box p {
@@ -22849,7 +22865,9 @@ body.dark {
 @media (max-width: 480px) {
   section,
   .section-t-space {
-    padding-top: 20px; }
+    /* padding-top: 20px;  */
+    padding-top: 0px; 
+  }
   .section-b-space {
     padding-bottom: 30px; }
   .top-category .top_box {
@@ -22963,7 +22981,9 @@ body.dark {
   .about-section .about-text h2 {
     margin-bottom: 4px; }
   .about-section.three-image .about-text h2 {
-    line-height: 20px; }
+    line-height: 20px; 
+    font-size: 16px;
+  }
   .about-section.three-image .image-section .img-box + .img-box {
     margin-left: 10px; }
   .ticket-section .ticket-box .content {

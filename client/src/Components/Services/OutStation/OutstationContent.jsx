@@ -22,6 +22,12 @@ const OutstationContent = ({ side }) => {
       subTitle: "River Front",
       path:"/employee-cab-taxi-transport-service"
     },
+    {
+      src: "/assets/img/about/4.webp",
+      title: "Intercity",
+      subTitle: "Intercity",
+      path:"/intercity-cab-taxi-service"
+    },
   ];
   return (
     <section className="about-section three-image about_page animated-section section-b-space">
