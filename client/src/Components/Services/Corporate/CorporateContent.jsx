@@ -4,30 +4,30 @@ import TitleComponent from "../../Common/TitleComponent";
 
 const CorporateContent = ({ side }) => {
     const imageData = [
-        {
-            src: "/assets/img/about/1.webp",
-            title: "OutStation",
-            subTitle: "water fall",
-            path:"/outstation-cab-taxi-service"
-          },
-          {
-            src: "/assets/img/about/2.webp",
-            title: "Airport",
-            subTitle: "paragliding",
-            path:"/airport-cab-taxi-transport-service"
-          },
-          {
-            src: "/assets/img/about/3.webp",
-            title: "Corporate",
-            subTitle: "River Front",
-            path:"/employee-cab-taxi-transport-service"
-          },
-          {
-            src: "/assets/img/about/4.webp",
-            title: "Intercity",
-            subTitle: "Intercity",
-            path:"/intercity-cab-taxi-service"
-          },
+      {
+        src: "/assets/img/about/1.webp",
+        title: "OutStation",
+        subTitle: "OutStation",
+        path:"/outstation-cab-taxi-service"
+      },
+      {
+        src: "/assets/img/about/2.webp",
+        title: "Airport",
+        subTitle: "Airport",
+        path:"/airport-cab-taxi-transport-service"
+      },
+      {
+        src: "/assets/img/about/3.webp",
+        title: "Corporate",
+        subTitle: "Corporate",
+        path:"/employee-cab-taxi-transport-service"
+      },
+      {
+        src: "/assets/img/about/4.webp",
+        title: "Intercity",
+        subTitle: "Intercity",
+        path:"/intercity-cab-taxi-service"
+      },
       ];
       return (
         <section className="about-section three-image about_page animated-section section-b-space">
@@ -35,12 +35,12 @@ const CorporateContent = ({ side }) => {
           <div className="container">
             <TitleComponent
               title={"Sewak Travels"}
-              subTitle={"Services"}
+              subTitle={"Employee Transport Services"}
               span={"Services"}
               titleClass={"title-3"}
             />
             <div className="row">
-              <div className={`col-xl-7 ${side === "right" ? "order-xl-1" : ""}`}>
+              <div className={`col-xl-8 ${side === "right" ? "order-xl-1" : ""}`}>
                 <div className="image-section">
                   {imageData.map((image, index) => (
                     
@@ -64,29 +64,18 @@ const CorporateContent = ({ side }) => {
                   ))}
                 </div>
               </div>
-              <div className="col-xl-5">
+              <div className="col-xl-4">
                 <div className="about-text">
                   <div>
-                    <h2> Corporate Services</h2>
+                  <h1 className="service-h1">Advanced Employee Transport Service: Seamless & Stress-Free Commutes</h1>
                     <p>
-                    Sewak Travels offers efficient employee transport solutions for businesses. With our reliable corporate cab services, ensure punctual and comfortable transportation for your employees, fostering productivity and convenience. Reach out to us for tailored employee transport services!
+                    Our goal is to deliver impeccable Transportation services and tailor-made mobility solutions specifically designed for corporate needs, catering to the daily pickup and drop services for employees commuting between their homes and offices.
                     </p>
                     {/* <img
                       src="/assets/images/mix/signature.png"
                       className="img-fluid"
                       alt=""
                     /> */}
-                    <div className="buttons-about">
-                      <Link to="/employee-cab-taxi-transport-service/#corporate-booking" className="btn btn-lower btn-curve">
-                        Book Now
-                      </Link>
-                      <Link
-                        to={"/contact"}
-                        className="btn btn-lower black-btn btn-curve"
-                      >
-                        Contact Us
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </div>

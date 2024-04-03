@@ -1,6 +1,5 @@
 import { services } from "../../../../Data/Service";
 import Animation from "../../../Common/Animation";
-import TitleComponent from "../../../Common/TitleComponent";
 import ServiceOne from "./ServiceOne";
 
 const ServicesComponent = () => {

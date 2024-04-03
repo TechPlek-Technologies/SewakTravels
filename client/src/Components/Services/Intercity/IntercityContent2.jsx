@@ -33,7 +33,7 @@ const IntercityContent2 = ({ side }) => {
                                         <p>Experience a peaceful and comforting ride with our local cab company in Gurgaon & Delhi NCR. Begin an extraordinary journey by booking with us today and discover a world of tranquillity.</p>
                                     </div>
                                     <div class="detail-img">
-                                        <img src="/assets/img/banner/intercity.jpg" class="img-fluid lazyload"
+                                        <img src="/assets/img/banner/intercity.webp" class="img-fluid lazyload"
                                             alt=""/>
                                     </div>
                                     <div class="about-sec">

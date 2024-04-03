@@ -76,17 +76,6 @@ const AirportContent = ({ side }) => {
                       className="img-fluid"
                       alt=""
                     /> */}
-                    {/* <div className="buttons-about">
-                      <Link to="/cab/listing" className="btn btn-lower btn-curve">
-                        Book Now
-                      </Link>
-                      <Link
-                        to={"/contact"}
-                        className="btn btn-lower black-btn btn-curve"
-                      >
-                        Contact Us
-                      </Link>
-                    </div> */}
                   </div>
                 </div>
               </div>

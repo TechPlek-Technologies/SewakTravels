@@ -1,10 +1,12 @@
 import { useEffect } from "react";
-import Testimonials from "../../Components/Cab/Home/Testimonials/Testimonials";
+// import Testimonials from "../../Components/Cab/Home/Testimonials/Testimonials";
 import FooterComponent from "../../Components/Common/FooterComponent";
 import ChooseUs from "../../Components/Services/OutStation/ChooseUs";
 import OutstationContent from "../../Components/Services/OutStation/OutstationContent";
 import Layout from "../../Layout/Layout";
 import { Helmet } from "react-helmet";
+import OutstationContent2 from "../../Components/Services/OutStation/OutstationContent2";
+import Faq from "../../Components/Services/OutStation/Faq";
 
 const Outstation = () => {
   useEffect(() => {
@@ -29,8 +31,10 @@ const Outstation = () => {
 
       <Layout title="light_header" userBgClass="user user-light" />
       <OutstationContent />
+      <OutstationContent2/>
       <ChooseUs />
-      <Testimonials />
+      <Faq/>
+      {/* <Testimonials /> */}
       <FooterComponent />
     </>
   );

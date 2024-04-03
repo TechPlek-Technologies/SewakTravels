@@ -7,19 +7,19 @@ const OutstationContent = ({ side }) => {
     {
       src: "/assets/img/about/1.webp",
       title: "OutStation",
-      subTitle: "water fall",
+      subTitle: "OutStation",
       path:"/outstation-cab-taxi-service"
     },
     {
       src: "/assets/img/about/2.webp",
       title: "Airport",
-      subTitle: "paragliding",
+      subTitle: "Airport",
       path:"/airport-cab-taxi-transport-service"
     },
     {
       src: "/assets/img/about/3.webp",
       title: "Corporate",
-      subTitle: "River Front",
+      subTitle: "Corporate",
       path:"/employee-cab-taxi-transport-service"
     },
     {
@@ -35,12 +35,12 @@ const OutstationContent = ({ side }) => {
       <div className="container">
         <TitleComponent
           title={"Sewak Travels"}
-          subTitle={"Services"}
+          subTitle={"Outstation Cab Services"}
           span={"Services"}
           titleClass={"title-3"}
         />
         <div className="row">
-          <div className={`col-xl-7 ${side === "right" ? "order-xl-1" : ""}`}>
+          <div className={`col-xl-8 ${side === "right" ? "order-xl-1" : ""}`}>
             <div className="image-section">
               {imageData.map((image, index) => (
                 
@@ -64,29 +64,18 @@ const OutstationContent = ({ side }) => {
               ))}
             </div>
           </div>
-          <div className="col-xl-5">
+          <div className="col-xl-4">
             <div className="about-text">
               <div>
-                <h2> Outstation Services</h2>
-                <p>
-                Explore hassle-free outstation cab services with Sewak Travels. Whether it's a weekend getaway or a business trip, our diverse fleet of vehicles and reliable rides ensure a smooth journey to your destination. Book now for an unforgettable travel experience!
-                </p>
+              <h1 className="service-h1">Solution for Outstation Cab & Taxi service in Delhi/Gurugram </h1>
+                    <p>
+                    Embark on a journey of comfort, reliability, and convenience with Sewak Travels, your trusted companion for outstation travel. Whether you're planning a weekend getaway, a business trip, or a family vacation, our comprehensive range of outstation cab services caters to all your travel needs. From outstation cab booking to experienced driver for outstation and top-notch taxi service in Delhi for outstation, Sewak Travels ensures a seamless and memorable journey every time.
+                    </p>
                 {/* <img
                   src="/assets/images/mix/signature.png"
                   className="img-fluid"
                   alt=""
                 /> */}
-                <div className="buttons-about">
-                  <Link to="/#home" className="btn btn-lower btn-curve">
-                    Book Now
-                  </Link>
-                  <Link
-                    to={"/contact"}
-                    className="btn btn-lower black-btn btn-curve"
-                  >
-                    Contact Us
-                  </Link>
-                </div>
               </div>
             </div>
           </div>

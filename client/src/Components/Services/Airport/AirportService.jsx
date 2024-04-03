@@ -29,7 +29,7 @@ const AirportService = ({ side }) => {
                     <div class="col-md-3">
                         <div class="step-box wow zoomIn">
                             <div>
-                                <img src="/assets/svg/cab.svg" class="img-fluid lazyload"
+                                <img src="/assets/images/icon/cab-steps/luggage.png" class="img-fluid lazyload"
                                     alt=""/>
                                 <h4>Luggage Assistance</h4>
                             </div>

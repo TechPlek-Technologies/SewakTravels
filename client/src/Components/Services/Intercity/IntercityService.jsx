@@ -30,7 +30,7 @@ const IntercityService = ({ side }) => {
                     <div class="col-md-3">
                         <div class="step-box wow zoomIn">
                             <div>
-                                <img src="../assets/images/icon/cab-steps/taxi.png" class="img-fluid lazyload"
+                                <img src="/assets/images/icon/cab-steps/taxi-cab.png" class="img-fluid lazyload"
                                     alt=""/>
                                 <h4>On-board Amenities</h4>
                             </div>

@@ -33,7 +33,7 @@ const AirportContent1 = ({ side }) => {
                                       </div>
                                   </div>
                                   <div class="detail-img">
-                                      <img src="/assets/img/banner/intercity-airport.jpg" class="img-fluid lazyload"
+                                      <img src="/assets/img/banner/intercity-airport.webp" class="img-fluid lazyload"
                                           alt=""/>
                                   </div>
                                   

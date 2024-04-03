@@ -1,35 +1,34 @@
-import { Booking, BookingSvg, CabSvg1, CarSvg, HappyClient, HolidaySvg } from "../../../Data/Svg";
 import AboutCommon from "../../Cab/Service/AboutCommon";
 
 const ChooseUs= () => {
     const startData = [
         {
-          svg: <CarSvg />,
+          img:"/assets/images/icon/cab-steps/taxi.png",
           title: "Integrated Fleet Solutions Provider",
           desc: "Unifies vehicle services, providing comprehensive solutions for diverse travel needs.",
         },
         {
-          svg: <HappyClient />,
+          img: "/assets/images/icon/cab-steps/rating-stars.png",
           title: "Experienced Car Rental Experts",
           desc: "Expert team ensures seamless rentals, backed by extensive industry knowledge and experience.",
         },
         {
-          svg: <HolidaySvg />,
+          img: "/assets/images/icon/cab-steps/travel.png",
           title: "Served a Thousand+ Travelers",
           desc: "Catered to a vast clientele, exceeding a thousand travelers, ensuring satisfaction and reliability.",
         },
         {
-          svg: <Booking />,
+          img: "/assets/images/icon/cab-steps/geographic.png",
           title: "Extensive Geographical Coverage",
           desc: "Extensive coverage ensures efficient service delivery across diverse regions for client convenience.",
         },
         {
-          svg: <BookingSvg />,
+          img: "/assets/images/icon/cab-steps/operation.png",
           title: "24/7 Operations with Online Integration",
           desc: "Seamless round-the-clock service available through integrated online packages.",
         },
         {
-          svg: <CabSvg1 />,
+          img: "/assets/images/icon/cab-steps/vehicle.png",
           title: "Commitment to Top-Tier Service",
           desc: "Deliver exceptional service, setting a global standard for excellence in customer satisfaction and experiences.",
         },
