@@ -39,7 +39,7 @@ export const dataChandigarh = {
   };
 
 
-  export const dataAmritsar = {
+export const dataAmritsar = {
     "main": "Book Delhi To Chandigarh Cab ",
     "sub":"Book a Delhi to Destination Cab with Sewak Travels",
     "Book a Delhi to Destination Cab with Sewak Travels":
@@ -78,3 +78,4 @@ export const dataChandigarh = {
           "Explore Chandigarh's iconic attractions like Sukhna Lake and Rock Garden with our convenient cab service, maximizing your sightseeing experience.",
       },
   };
+
