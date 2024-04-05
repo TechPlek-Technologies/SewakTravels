@@ -1,45 +1,56 @@
 import Slider from "react-slick";
 import { reviews } from "../../../../Data/Testimonials";
-import Img from "../../../Common/Img";
-import Rating from "./Rating";
 
 const ReviewContent = () => {
-    const slide1 = {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-      };
+  const slide2 = {
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 586,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
     return (
       <div className="slide-1">
-        <Slider {...slide1}>
-          {reviews.map((review,index) => (
-            <div key={index}>
-              <div className="row">
-                <div className="col-xl-8 offset-xl-2">
-                  <div className="testimonial">
-                    <div className="left-part">
-                      <Img src={review.src} className="img-fluid" alt="" />
-                      <div className="design">
-                        <i className="fas fa-comments"></i>
-                        <i className="fas fa-comments light"></i>
-                      </div>
-                    </div>
-                    <div className="right-part">
-                      <p> {review.description}</p>
-                      <div className="detail">
-                        <Rating />
-                        <h6>{review.name}</h6>
-                      </div>
-                    </div>
-                    <div className="quote-icon">
-                      <i className="fas fa-quote-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </Slider>
+       <div>
+          <Slider {...slide2} className="slide-2 arrow-classic">
+                    {reviews.map((reviews,index) => (
+                      <div class="testimonial-box text-center col-lg-10" key={index}>
+											<div class="testimonial-info-wrap">
+												<div class="testimonial-quote d-inline-block">
+													<img src="/assets/img/testimonials/quote.svg" alt="" style={{height:"45px",width:"45px"}}/>
+												</div>
+                        <img class="testimonial-author-img" src={reviews.src} alt=""/>
+												<p>{reviews.description}</p>
+												<h3><strong>{reviews.name}</strong></h3>
+											</div>
+										</div>
+                       ))}
+            </Slider>
+          </div>
       </div>
     );
   };

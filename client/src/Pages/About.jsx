@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import AboutUsContent from "../Components/AboutUs/AboutUsContent";
 import ServicesComponent from "../Components/Cab/Home/Service/ServicesComponent";
-import Testimonials from "../Components/Cab/Home/Testimonials/Testimonials";
+// import Testimonials from "../Components/Cab/Home/Testimonials/Testimonials";
 import ServiceComponent from "../Components/Cab/Service/ServiceComponent";
 import FooterComponent from "../Components/Common/FooterComponent";
 import Layout from "../Layout/Layout";
 import { Helmet } from "react-helmet";
+import AboutUsContent2 from "../Components/AboutUs/AboutUsContent2";
 
 const About = () => {
   useEffect(() => {
@@ -27,11 +28,12 @@ const About = () => {
 
       <Layout title="light_header" userBgClass="user user-light" />
       <AboutUsContent />
+      <AboutUsContent2 />
       <ServicesComponent />
       {/* <OurTeamContent/> */}
-      <ServiceComponent />
+      {/* <ServiceComponent /> */}
       {/* <ChooseUs/> */}
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <Instagram/> */}
       <FooterComponent />
     </>

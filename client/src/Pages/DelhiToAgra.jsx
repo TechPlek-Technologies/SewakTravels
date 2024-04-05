@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import BackgroundSection from "../Components/Common/BackgroundSection";
 import React, { useState } from 'react';
 
 const DelhiToAgra = ({type}) => {
@@ -7,7 +5,7 @@ const DelhiToAgra = ({type}) => {
 
     return (
    
-      
+      <div>
       <div className="col-lg-12 pages-bg">
       <h1 _ngcontent-taw-c63="" class="h1Header">Book Delhi to Agra Cab </h1>
       <section className="flight-detail-sec cab-detail-sec">
@@ -145,8 +143,8 @@ Our Delhi to Agra taxis are fully air-conditioned, and our skilled drivers ensur
         </section>
 
       </div>
-     
       
+      </div>
     );
   };
   

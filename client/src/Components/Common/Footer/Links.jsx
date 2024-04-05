@@ -20,13 +20,16 @@ const Links= () => {
                 <Link onClick={scrollToTop} to="/service/">Cab Services</Link>
                 </li>
                 <li>
-                  <Link onClick={scrollToTop} to="/service/outstation">Outstation Services</Link>
+                  <Link onClick={scrollToTop} to="/outstation-cab-taxi-service">Outstation Services</Link>
                 </li>
                 <li>
-                  <Link onClick={scrollToTop} to="/service/airport">Airport Services</Link>
+                  <Link onClick={scrollToTop} to="/airport-cab-taxi-transport-service">Airport Services</Link>
                 </li>
                 <li>
-                  <Link onClick={scrollToTop} to="/service/corporate">Corporate Services</Link>
+                  <Link onClick={scrollToTop} to="/employee-cab-taxi-transport-service">Corporate Services</Link>
+                </li>
+                <li>
+                  <Link onClick={scrollToTop} to="/intercity-cab-taxi-service">Intercity Taxi Services</Link>
                 </li>
                 <li>
                   <Link onClick={scrollToTop} to="/contact">Emergency Call</Link>

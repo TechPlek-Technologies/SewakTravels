@@ -46,7 +46,7 @@ function ListSearch({setisValid}) {
   }, [journeyData]);
 
   return (
-    <div className="bg-inner small-section pb-0">
+    <div className="bg-inner small-section1 pb-0">
       <div className="container">
         <div className="flight-search">
           <div className="responsive-detail">

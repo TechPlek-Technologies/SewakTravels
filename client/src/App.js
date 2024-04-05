@@ -6,6 +6,7 @@ import { Suspense, lazy, useEffect, useState } from "react";
 import Img from "./Components/Common/Img";
 import Loader from "./Layout/Loader";
 import axios from "axios";
+import Intercity from "./Pages/Services/Intercity";
 
 
 const Home = lazy(() => import("./Pages/Home"));
@@ -68,6 +69,7 @@ function App() {
             <Route path={"/outstation-cab-taxi-service"} element={<Outstation />} />
             <Route path={"/airport-cab-taxi-transport-service"} element={<Airport />} />
             <Route path={"/employee-cab-taxi-transport-service"} element={<Corporate />} />
+            <Route path={"/intercity-cab-taxi-service"} element={<Intercity/>} />
             <Route path={"/cab/listing/:source/:destination"} element={<CabListing />} />
             <Route path={"/journey-details/:id"} element={<CabDetails />} />
             <Route path={"/FAQ"} element={<Faq />} />

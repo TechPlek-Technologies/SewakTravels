@@ -1,11 +1,14 @@
 import { useEffect } from "react";
-import Testimonials from "../../Components/Cab/Home/Testimonials/Testimonials";
+// import Testimonials from "../../Components/Cab/Home/Testimonials/Testimonials";
 import FooterComponent from "../../Components/Common/FooterComponent";
 import ChooseUs from "../../Components/Services/Corporate/ChooseUs";
-import CompanyForm from "../../Components/Services/Corporate/CompanyForm";
+// import CompanyForm from "../../Components/Services/Corporate/CompanyForm";
 import CorporateContent from "../../Components/Services/Corporate/CorporateContent";
 import Layout from "../../Layout/Layout";
 import { Helmet } from "react-helmet";
+import CorporateContent2 from "../../Components/Services/Corporate/CorporateContent2";
+import Faq from "../../Components/Services/Corporate/Faq";
+// import Testimonial from "../../Components/Services/Corporate/Testimonial";
 
 const Corporate = () => {
   useEffect(() => {
@@ -30,9 +33,12 @@ const Corporate = () => {
 
       <Layout title="light_header" userBgClass="user user-light" />
       <CorporateContent />
+      <CorporateContent2/>
       <ChooseUs />
-      <CompanyForm />
-      <Testimonials />
+      <Faq/>
+      {/* <Testimonial/> */}
+      {/* <CompanyForm /> */}
+      {/* <Testimonials /> */}
       <FooterComponent />
     </>
   );

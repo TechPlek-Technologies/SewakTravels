@@ -68,10 +68,11 @@ const OurVehicleOffers = () => {
                       <img src={data.img} alt="" className="img-fluid   " />
                     </div>
                     <div>
-                      <h6>
+                      <h3>
                         {data.from} <span>{data.to}</span>
-                      </h6>
-                      <h5>{data.desc}</h5>
+                      </h3>
+                
+                      {/* <h5>{data.desc}</h5> */}
                       <div className="offerButton">
                         <Link
                           to={`/cab/listing/${encodeURIComponent(

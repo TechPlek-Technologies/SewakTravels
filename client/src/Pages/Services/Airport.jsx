@@ -1,10 +1,13 @@
 import { useEffect } from "react";
-import Testimonials from "../../Components/Cab/Home/Testimonials/Testimonials";
 import FooterComponent from "../../Components/Common/FooterComponent";
 import AirportContent from "../../Components/Services/Airport/AirportContent";
 import ChooseUs from "../../Components/Services/Airport/ChooseUs";
 import Layout from "../../Layout/Layout";
 import { Helmet } from "react-helmet";
+import AirportContent1 from "../../Components/Services/Airport/AirportContent1";
+import AirportService from "../../Components/Services/Airport/AirportService";
+import Faq from "../../Components/Services/Airport/Faq";
+// import Testimonial from "../../Components/Services/Airport/Testimonial";
 
 const Airport = () => {
   useEffect(() => {
@@ -30,8 +33,11 @@ const Airport = () => {
 
       <Layout title="light_header" userBgClass="user user-light" />
       <AirportContent />
+      <AirportContent1/>
+      <AirportService/>
       <ChooseUs />
-      <Testimonials />
+      <Faq/>
+      {/* <Testimonial/> */}
       <FooterComponent />
     </>
   );

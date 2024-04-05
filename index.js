@@ -43,6 +43,121 @@ app.get('/blogsdata', async (req, res) => {
   }
 });
 
+app.get('/payments', async (req, res) => {
+  try {
+    const connection = await pool.getConnection();
+    // Execute a query to select all data from tbl_blogs
+    const [rows, fields] = await connection.execute('SELECT * FROM payments');
+    console.log(rows)
+    connection.release();
+
+    res.status(200).json({ billingDetails: rows });
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+
+app.post('/payments', async (req, res) => {
+  try {
+    const {
+      transaction_id,
+      invoice_no,
+      pick_type,
+      base_price,
+      car_price,
+      status,
+      billing_name,
+      billing_email,
+      billing_mobile,
+      mode_of_payment,
+      cab_type,
+      min_amount,
+      trip_type,
+      pickup_location,
+      drop_location,
+      pickup_date,
+      pickup_time,
+      return_date,
+      return_time,
+      distance,
+      duration,
+      driver_allowance,
+      night_charges,
+      car_type,
+      discount,
+      sub_total,
+      order_comments,
+      total,
+      min_paid_amount,
+      paid_amount
+    } = req.body;
+
+    // Validate required fields
+    if (
+      !transaction_id ||
+      !billing_name ||
+      !billing_email ||
+      !billing_mobile ||
+      !pickup_location ||
+      !drop_location ||
+      !pickup_date ||
+      !distance ||
+      !duration ||
+      !total
+    ) {
+      return res.status(400).json({ error: 'Missing required fields' });
+    }
+
+    const connection = await pool.getConnection();
+    // Execute a query to insert data into payments table
+    await connection.execute(
+      'INSERT INTO payments (transaction_id, invoice_no, pick_type, base_price, car_price, status, billing_name, billing_email, billing_mobile, mode_of_payment, cab_type, min_amount, trip_type, pickup_location, drop_location, pickup_date, pickup_time, return_date, return_time, distance, duration, driver_allowance, night_charges, car_type, discount, sub_total, order_comments, total, min_paid_amount, paid_amount) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+      [
+        transaction_id,
+        invoice_no,
+        pick_type,
+        base_price,
+        car_price,
+        status,
+        billing_name,
+        billing_email,
+        billing_mobile,
+        mode_of_payment,
+        cab_type,
+        min_amount,
+        trip_type,
+        pickup_location,
+        drop_location,
+        pickup_date,
+        pickup_time,
+        return_date,
+        return_time,
+        distance,
+        duration,
+        driver_allowance,
+        night_charges,
+        car_type,
+        discount,
+        sub_total,
+        order_comments,
+        total,
+        min_paid_amount,
+        paid_amount
+      ]
+    );
+    connection.release();
+
+    res.status(201).json({ message: 'Transaction added successfully' });
+  } catch (error) {
+    console.error('Error adding transaction:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+
+
 // Start the Express server
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);

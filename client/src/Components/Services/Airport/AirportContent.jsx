@@ -7,20 +7,26 @@ const AirportContent = ({ side }) => {
         {
             src: "/assets/img/about/1.webp",
             title: "OutStation",
-            subTitle: "water fall",
+            subTitle: "OutStation",
             path:"/outstation-cab-taxi-service"
           },
           {
             src: "/assets/img/about/2.webp",
             title: "Airport",
-            subTitle: "paragliding",
+            subTitle: "Airport",
             path:"/airport-cab-taxi-transport-service"
           },
           {
             src: "/assets/img/about/3.webp",
             title: "Corporate",
-            subTitle: "River Front",
+            subTitle: "Corporate",
             path:"/employee-cab-taxi-transport-service"
+          },
+          {
+            src: "/assets/img/about/4.webp",
+            title: "Intercity",
+            subTitle: "Intercity",
+            path:"/intercity-cab-taxi-service"
           },
       ];
       return (
@@ -29,12 +35,12 @@ const AirportContent = ({ side }) => {
           <div className="container">
             <TitleComponent
               title={"Sewak Travels"}
-              subTitle={"Services"}
+              subTitle={"Airport Transport Services"}
               span={"Services"}
               titleClass={"title-3"}
             />
             <div className="row">
-              <div className={`col-xl-7 ${side === "right" ? "order-xl-1" : ""}`}>
+              <div className={`col-xl-8 ${side === "right" ? "order-xl-1" : ""}`}>
                 <div className="image-section">
                   {imageData.map((image, index) => (
                     
@@ -58,29 +64,18 @@ const AirportContent = ({ side }) => {
                   ))}
                 </div>
               </div>
-              <div className="col-xl-5">
+              <div className="col-xl-4">
                 <div className="about-text">
                   <div>
-                    <h2>Airport Services</h2>
+                  <h1 className="service-h1">Affordable Airport Transportation & Cab/Taxi Service</h1>
                     <p>
-                    Let Sewak Travels take the stress out of airport transfers. With our dependable and punctual airport cab services, enjoy a seamless journey to and from the airport. Book now for a comfortable and hassle-free travel experience!
+                    Say goodbye to the worries of navigating through the chaos of airports, and let us take you on a seamless ride from takeoff to touchdown. Experience hassle-free traveling with our captivating airport transportation service!
                     </p>
                     {/* <img
                       src="/assets/images/mix/signature.png"
                       className="img-fluid"
                       alt=""
                     /> */}
-                    <div className="buttons-about">
-                      <Link to="/cab/listing" className="btn btn-lower btn-curve">
-                        Book Now
-                      </Link>
-                      <Link
-                        to={"/contact"}
-                        className="btn btn-lower black-btn btn-curve"
-                      >
-                        Contact Us
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </div>

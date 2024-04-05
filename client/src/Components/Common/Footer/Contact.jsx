@@ -1,9 +1,9 @@
 const Contact = () => {
   return (
     <div className="col-xl-3 col-md-6 order-cls">
-      <div className="footer-title mobile-title">
+      {/* <div className="footer-title mobile-title">
         <h5>{"Contact Us"}</h5>
-      </div>
+      </div> */}
       <div className="footer-content">
         <div className="contact-detail">
           <div className="footer-logo">
