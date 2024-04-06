@@ -1,17 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-
 import { Suspense, lazy, useEffect, useState } from "react";
 import Img from "./Components/Common/Img";
 import Loader from "./Layout/Loader";
 import axios from "axios";
 import Intercity from "./Pages/Services/Intercity";
 
-
 const Home = lazy(() => import("./Pages/Home"));
 
 const CabListing = lazy(() => import("./Pages/CabListing"));
+
+const CabListing1 = lazy(() => import("./Pages/CabListing1"));
 
 const CabDetails = lazy(() => import("./Pages/CabDetails"));
 
@@ -43,43 +43,136 @@ const Blogs = lazy(() => import("./Pages/Blogs"));
 
 const BlogDetails = lazy(() => import("./Pages/BlogDetails/BlogDetails"));
 
-
-
-
-
 function App() {
-  
-
   return (
     <BrowserRouter>
-        <Suspense
-          fallback={
-            
-              <Loader loaderTimeout={1000}/>
-             
-          }
-        >
-          <Routes>
-            <Route path={"/"} element={<Home />} />
-            <Route path={"/contact"} element={<Contactus />} />
-            <Route path={"/about"} element={<About />} />
-            <Route path={"/blogs"} element={<Blogs />} />
-            <Route path={"/blogs/:blog_title"} element={<BlogDetails />} />
-            <Route path={"/service"} element={<Service />} />
-            <Route path={"/outstation-cab-taxi-service"} element={<Outstation />} />
-            <Route path={"/airport-cab-taxi-transport-service"} element={<Airport />} />
-            <Route path={"/employee-cab-taxi-transport-service"} element={<Corporate />} />
-            <Route path={"/intercity-cab-taxi-service"} element={<Intercity/>} />
-            <Route path={"/cab/listing/:source/:destination"} element={<CabListing />} />
-            <Route path={"/journey-details/:id"} element={<CabDetails />} />
-            <Route path={"/FAQ"} element={<Faq />} />
-            <Route path={"/payment/:transactionId?"} element={<Payment />} />
-            <Route path={"/terms-and-conditions"} element={<TermsAndCondition />} />
-            <Route path={"/refund-policy"} element={<RefundPolicy />} />
-            <Route path={"/privacy-policy"} element={<PrivacyPolicy/>} />
-            <Route path={"/*"} element={<NotFoundPage/>} />
-          </Routes>
-        </Suspense>
+      <Suspense fallback={<Loader loaderTimeout={1000} />}>
+        <Routes>
+          <Route path={"/"} element={<Home />} />
+          <Route path={"/contact"} element={<Contactus />} />
+          <Route path={"/about"} element={<About />} />
+          <Route path={"/blogs"} element={<Blogs />} />
+          <Route path={"/blogs/:blog_title"} element={<BlogDetails />} />
+          <Route path={"/service"} element={<Service />} />
+          <Route
+            path={"/outstation-cab-taxi-service"}
+            element={<Outstation />}
+          />
+          <Route
+            path={"/airport-cab-taxi-transport-service"}
+            element={<Airport />}
+          />
+          <Route
+            path={"/employee-cab-taxi-transport-service"}
+            element={<Corporate />}
+          />
+          <Route path={"/intercity-cab-taxi-service"} element={<Intercity />} />
+          <Route
+            path={"/cab/listing/:source/:destination"}
+            element={<CabListing />}
+          />
+
+          <Route path={"/journey-details/:id"} element={<CabDetails />} />
+          <Route path={"/FAQ"} element={<Faq />} />
+          <Route path={"/payment/:transactionId?"} element={<Payment />} />
+          <Route
+            path={"/terms-and-conditions"}
+            element={<TermsAndCondition />}
+          />
+          <Route path={"/refund-policy"} element={<RefundPolicy />} />
+          <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
+
+          <Route
+            path={"/cab/delhi-to-agra-cabs"}
+            element={<CabListing1 destination={"Agra, Uttar Pradesh, India"} />}
+          />
+          <Route
+            path={"/cab/delhi-to-jaipur-cab"}
+            element={<CabListing1 destination={"Jaipur, Rajasthan, India"} />}
+          />
+          <Route
+            path={"/cab/delhi-to-chandigarh-cab"}
+            element={<CabListing1 destination={"Chandigarh, India"} />}
+          />
+          <Route
+            path={"/cab/delhi-to-dehradun-cab"}
+            element={
+              <CabListing1 destination={"Dehradun, Uttarakhand, India"} />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-haridwar-cab"}
+            element={
+              <CabListing1 destination={"Haridwar, Uttarakhand, India"} />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-rishikesh-cab"}
+            element={
+              <CabListing1 destination={"Rishikesh, Uttarakhand, India"} />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-manali-cab"}
+            element={
+              <CabListing1 destination={"Manali, Himachal Pradesh, India"} />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-shimla-cab"}
+            element={
+              <CabListing1 destination={"Shimla, Himachal Pradesh, India"} />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-kasol-cab"}
+            element={
+              <CabListing1 destination={"Kasol, Himachal Pradesh, India"} />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-kasauli-cab"}
+            element={
+              <CabListing1 destination={"Kasauli, Himachal Pradesh, India"} />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-mcleodganj-cab"}
+            element={
+              <CabListing1
+                destination={
+                  "McLeod Ganj, Dharamshala, Himachal Pradesh, India"
+                }
+              />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-kullu-cab"}
+            element={
+              <CabListing1 destination={"Kullu, Himachal Pradesh, India"} />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-mathura-cab"}
+            element={
+              <CabListing1 destination={"Mathura, Uttar Pradesh, India"} />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-vrindavan-cab"}
+            element={
+              <CabListing1 destination={"Vrindavan, Uttar Pradesh, India"} />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-bijnor-cabs"}
+            element={
+              <CabListing1 destination={"Bijnor, Uttar Pradesh, India"} />
+            }
+          />
+          <Route path={"/*"} element={<NotFoundPage />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }
