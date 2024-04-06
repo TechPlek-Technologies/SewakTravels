@@ -40,6 +40,8 @@ import DelhiToKarnal from "./DelhiToKarnal";
 import DelhiToJodhpur from "./DelhiToJodhpur";
 import DelhiToGwalior from "./DelhiToGwalior";
 import DelhiToAlwar from "./DelhiToAlwar";
+import DelhiToDestination from "../Components/Cab/Listing/DelhiToDestination";
+import { dataChandigarh } from "./SourceToDestination";
 
 
 function CabListing(){
@@ -60,7 +62,7 @@ function CabListing(){
         <ListSearch setisValid={setisValid}/>
         <ListingView isValid={isValid}/>
 
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="CHANDIGARH, INDIA" && <div><DelhiToChandigarh/> <DelhiToDesinationMeta query={destination}/></div> }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="CHANDIGARH, INDIA" && <div><DelhiToDestination data={dataChandigarh}/> <DelhiToDesinationMeta query={destination}/></div> }
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="AGRA, UTTAR PRADESH, INDIA" && <div><DelhiToAgra/> <DelhiToDesinationMeta query={destination}/></div>}
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="DEHRADUN, UTTARAKHAND, INDIA" && <div><DelhiToDehradun/> <DelhiToDesinationMeta query={destination}/></div> }
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="JAIPUR, RAJASTHAN, INDIA" && <div><DelhiToJaipur/> <DelhiToDesinationMeta query={destination}/></div>   }
