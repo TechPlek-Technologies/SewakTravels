@@ -87,57 +87,57 @@ function App() {
             element={<CabListing1 destination={"Agra, Uttar Pradesh, India"} />}
           />
           <Route
-            path={"/cab/delhi-to-jaipur-cab"}
+            path={"/cab/delhi-to-jaipur-cabs"}
             element={<CabListing1 destination={"Jaipur, Rajasthan, India"} />}
           />
           <Route
-            path={"/cab/delhi-to-chandigarh-cab"}
+            path={"/cab/delhi-to-chandigarh-cabs"}
             element={<CabListing1 destination={"Chandigarh, India"} />}
           />
           <Route
-            path={"/cab/delhi-to-dehradun-cab"}
+            path={"/cab/delhi-to-dehradun-cabs"}
             element={
               <CabListing1 destination={"Dehradun, Uttarakhand, India"} />
             }
           />
           <Route
-            path={"/cab/delhi-to-haridwar-cab"}
+            path={"/cab/delhi-to-haridwar-cabs"}
             element={
               <CabListing1 destination={"Haridwar, Uttarakhand, India"} />
             }
           />
           <Route
-            path={"/cab/delhi-to-rishikesh-cab"}
+            path={"/cab/delhi-to-rishikesh-cabs"}
             element={
               <CabListing1 destination={"Rishikesh, Uttarakhand, India"} />
             }
           />
           <Route
-            path={"/cab/delhi-to-manali-cab"}
+            path={"/cab/delhi-to-manali-cabs"}
             element={
               <CabListing1 destination={"Manali, Himachal Pradesh, India"} />
             }
           />
           <Route
-            path={"/cab/delhi-to-shimla-cab"}
+            path={"/cab/delhi-to-shimla-cabs"}
             element={
               <CabListing1 destination={"Shimla, Himachal Pradesh, India"} />
             }
           />
           <Route
-            path={"/cab/delhi-to-kasol-cab"}
+            path={"/cab/delhi-to-kasol-cabs"}
             element={
               <CabListing1 destination={"Kasol, Himachal Pradesh, India"} />
             }
           />
           <Route
-            path={"/cab/delhi-to-kasauli-cab"}
+            path={"/cab/delhi-to-kasauli-cabs"}
             element={
               <CabListing1 destination={"Kasauli, Himachal Pradesh, India"} />
             }
           />
           <Route
-            path={"/cab/delhi-to-mcleodganj-cab"}
+            path={"/cab/delhi-to-mcleodganj-cabs"}
             element={
               <CabListing1
                 destination={
@@ -147,19 +147,19 @@ function App() {
             }
           />
           <Route
-            path={"/cab/delhi-to-kullu-cab"}
+            path={"/cab/delhi-to-kullu-cabs"}
             element={
               <CabListing1 destination={"Kullu, Himachal Pradesh, India"} />
             }
           />
           <Route
-            path={"/cab/delhi-to-mathura-cab"}
+            path={"/cab/delhi-to-mathura-cabs"}
             element={
               <CabListing1 destination={"Mathura, Uttar Pradesh, India"} />
             }
           />
           <Route
-            path={"/cab/delhi-to-vrindavan-cab"}
+            path={"/cab/delhi-to-vrindavan-cabs"}
             element={
               <CabListing1 destination={"Vrindavan, Uttar Pradesh, India"} />
             }
