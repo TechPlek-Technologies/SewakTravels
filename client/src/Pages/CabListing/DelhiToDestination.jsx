@@ -13,69 +13,17 @@ const DelhiToDestination = ({ data }) => {
           <div className="detail-wrap wow fadeInUp">
             <div className="col">
               <h2>{data.sub}</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              
               <p>
-                Explore the scenic beauty of Chandigarh, a captivating tourist
-                destination in India, and create unforgettable memories with
-                your loved ones. Opt for a Delhi to Chandigarh cab to discover
-                the city's numerous tourist attractions. Whether you prefer
-                private or public transportation, there are abundant options
-                available for reaching Chandigarh. Embark on a delightful road
-                journey from Delhi to Chandigarh, where you'll be treated to
-                picturesque landscapes along the way. Conveniently book a Delhi
-                airport to Chandigarh cab for a comfortable and hassle-free ride
-                at affordable rates. Avail of Delhi to Chandigarh cab service if
-                you're starting your journey from Delhi. Making an online Delhi
-                airport to Chandigarh taxi booking on Sewak Travels is a
-                convenient way to secure your ride from Delhi to Chandigarh.
-                Don’t wait, book the best Delhi airport to Chandigarh taxi
-                service with us.
+               {data.subcontent}
               </p>
-              <h2>Delhi To Chandigarh Distance By Cab</h2>
+              <h2>{data.sub1}</h2>
               <p>
-                The approximate Delhi to Chandigarh distance by cab is about 324
-                km. However, this distance may vary depending on the chosen
-                route. The duration of the journey also relies on your driving
-                speed and the time spent during breaks. During the trip, there
-                are several stopping points where you can take a break and
-                refresh yourself.
+               {data.sub1content}
               </p>
 
-              <h2>Delhi to Chandigarh Cab Price</h2>
+              <h2>{data.sub2}</h2>
               <p>
-                Sewak Travels provides economical Delhi to Chandigarh cab rate.
-                You can choose from a range of air-conditioned cabs in
-                Chandigarh that align with your budget and requirements,
-                ensuring the best deals on cab charges from Delhi to Chandigarh
-                in the city. Various options exist for Delhi to Chandigarh taxi
-                booking, offering diverse services, deals, and Delhi to
-                Chandigarh cab prices. Opting for Sewak Travels for your Delhi
-                to Chandigarh cab service booking can unlock enticing discounts
-                and offers. The Delhi to Chandigarh one way taxi fare may vary
-                based on factors such as journey date, time, and vehicle type
-                selected for traveling from Delhi to Chandigarh. Additionally,
-                Sewak Travels facilitates bookings for Chandigarh to Delhi cabs
-                as well, ensuring a seamless travel experience.
+               {data.sub2content}
               </p>
 
               <h2>Delhi To Chandigarh Car Rental Services</h2>
