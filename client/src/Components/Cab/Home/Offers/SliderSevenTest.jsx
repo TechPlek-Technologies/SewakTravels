@@ -70,12 +70,7 @@ export const SliderSevenTest =({ type,slideData })=> {
           <div className="new-line-container">
                     <Link
                       className={`btn1 btn-rounded1 color1 packageButton`}
-                      to={`/cab/listing/${encodeURIComponent(
-                        data.source
-                      )}/${encodeURIComponent(data.destination)}`}
-                      onClick={() => {
-                        searchBetweenPlaces(data.source, data.destination);
-                      }}
+                      to={`${data.src}`}
                     >
                       {"Book Now"}
                     </Link>
