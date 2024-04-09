@@ -39,7 +39,7 @@ const DelhiToDestination = ({ data }) => {
                                     </div>
                                 </div>
                                 <div class="desc-box" >
-                                    <img className="bimg" src="/assets/img/Locations/chandigarh.webp" />
+                                    <img className="bimg" src={data.img} />
                                 </div>
                                 <div class="desc-box mt-5">
 
@@ -105,6 +105,10 @@ const DelhiToDestination = ({ data }) => {
                                             <p></p>
                                         </div>
                                     </div>
+                                </div>
+
+                                <div class="desc-box" >
+                                    <img className="bimg bimg1" src={data?.img1}/>
                                 </div>
 
                                 {/* ########## faq content####  */}

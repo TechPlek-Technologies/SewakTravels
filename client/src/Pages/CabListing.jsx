@@ -41,7 +41,7 @@ import DelhiToJodhpur from "./DelhiToJodhpur";
 import DelhiToGwalior from "./DelhiToGwalior";
 import DelhiToAlwar from "./DelhiToAlwar";
 import DelhiToDestination from "../Components/Cab/Listing/DelhiToDestination";
-import { dataChandigarh } from "./SourceToDestination";
+import { dataAgra, dataChandigarh, dataDehradun, dataJaipur, dataKasauli, dataKasol, dataManali, dataRishikesh } from "./SourceToDestination";
 
 
 function CabListing(){
@@ -63,14 +63,14 @@ function CabListing(){
         <ListingView isValid={isValid}/>
 
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="CHANDIGARH, INDIA" && <div><DelhiToDestination data={dataChandigarh}/> <DelhiToDesinationMeta query={destination}/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="AGRA, UTTAR PRADESH, INDIA" && <div><DelhiToAgra/> <DelhiToDesinationMeta query={destination}/></div>}
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="DEHRADUN, UTTARAKHAND, INDIA" && <div><DelhiToDehradun/> <DelhiToDesinationMeta query={destination}/></div> }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="JAIPUR, RAJASTHAN, INDIA" && <div><DelhiToJaipur/> <DelhiToDesinationMeta query={destination}/></div>   }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="KASAULI, HIMACHAL PRADESH, INDIA" && <div><DelhiToKasauli/> <DelhiToDesinationMeta query={destination}/></div>   }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="KASOL, HIMACHAL PRADESH, INDIA" && <div><DelhiToKasol/> <DelhiToDesinationMeta query={destination}/></div>   }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="MANALI, HIMACHAL PRADESH, INDIA" && <div><DelhiToManali/><DelhiToDesinationMeta query={destination}/></div>   }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="RISHIKESH, UTTARAKHAND, INDIA" && <div><DelhiToRishikesh/> <DelhiToDesinationMeta query={destination}/></div>   }
-        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="SHIMLA, HIMACHAL PRADESH, INDIA" && <div><DelhiToShimla/> <DelhiToDesinationMeta query={destination}/> </div>  }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="AGRA, UTTAR PRADESH, INDIA" && <div><DelhiToDestination data={dataAgra}/> <DelhiToDesinationMeta query={destination}/></div>}
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="DEHRADUN, UTTARAKHAND, INDIA" && <div><DelhiToDestination data={dataDehradun}/> <DelhiToDesinationMeta query={destination}/></div> }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="JAIPUR, RAJASTHAN, INDIA" && <div><DelhiToDestination data={dataJaipur}/> <DelhiToDesinationMeta query={destination}/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="KASAULI, HIMACHAL PRADESH, INDIA" && <div><DelhiToDestination data={dataKasauli}/> <DelhiToDesinationMeta query={destination}/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="KASOL, HIMACHAL PRADESH, INDIA" && <div><DelhiToDestination data={dataKasol}/> <DelhiToDesinationMeta query={destination}/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="MANALI, HIMACHAL PRADESH, INDIA" && <div><DelhiToDestination data={dataManali}/><DelhiToDesinationMeta query={destination}/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="RISHIKESH, UTTARAKHAND, INDIA" && <div><DelhiToDestination data={dataRishikesh}/> <DelhiToDesinationMeta query={destination}/></div>   }
+        {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="SHIMLA, HIMACHAL PRADESH, INDIA" && <div><DelhiToDestination data={dataShimla}/> <DelhiToDesinationMeta query={destination}/> </div>  }
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="MCLEODGANJ, HIMACHAL PRADESH, INDIA" && <div><DelhiToMcLeodganj/> <DelhiToDesinationMeta query={destination}/></div>   }
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="HARIDWAR, UTTARAKHAND, INDIA" && <div><DelhiToHaridwar/> <DelhiToDesinationMeta query={destination}/></div>   }
         {source.toUpperCase()==="DELHI, INDIA" &&  destination.toUpperCase()==="MATHURA, UTTAR PRADESH, INDIA" && <div><DelhiToMathura/><DelhiToDesinationMeta query={destination}/></div>   }
