@@ -35,7 +35,7 @@ function CabListProducts({ data,isValid }) {
       totalFare = item.Airport * travelDistance + travelTime * item.driverAllowance + travelTime * item.nightCharges;
       farePerKm = item.Airport;
     }
-
+ 
     return { totalFare, farePerKm, totalDistance: travelDistance, totalTime: travelTime,driverAllowance:item.driverAllowance * travelTime,nightCharges: travelTime * item.nightCharges };
   };
 
@@ -68,11 +68,12 @@ function CabListProducts({ data,isValid }) {
         },[paymentData])
 
   return (
+  
     <div className="flight-detail-sec cab-detail-sec">
       <div className="detail-bar">
         {data?.map((item, index) => (
           <div className="detail-wrap wow fadeInUp" key={index}>
-            <div className="row">
+            <div className="row shadow p-3  bg-body rounded" >
               <div className="col-md-3">
                 <div className="logo-sec">
                   <img src={item.img} className="img-fluid" alt="" />
@@ -80,6 +81,8 @@ function CabListProducts({ data,isValid }) {
                   <label>({item.cabType})</label>
                 </div>
               </div>
+              {/* <div className="container" style={{border: "2px solid black"}}> */}
+               
               <div className="col-md-4">
                 <div className="car-details">
                   <ul>
@@ -89,7 +92,7 @@ function CabListProducts({ data,isValid }) {
                         className="img-fluid"
                         alt=""
                       />{" "}
-                      {item.capacity} seater
+                      {item.capacity} Seater
                     </li>
                     <li>
                       <img
@@ -120,16 +123,19 @@ function CabListProducts({ data,isValid }) {
                   </ul>
                 </div>
               </div>
+
               <div className="col-md-2">
                 <div className="price">
                   <div>
                     {journeyData.selectedValue === "Outstation One-Way" && (
                       <>
                         <h4>
-                          ₹
+                          ₹  
+                         
                           {item.outstationOneWay * journeyData?.travelDistance +
                             travelTime * item.driverAllowance +
                             travelTime * item.nightCharges}
+                              
                         </h4>
                         <h6>fare/km:₹{item.outstationOneWay}</h6>
                       </>
@@ -153,16 +159,18 @@ function CabListProducts({ data,isValid }) {
                             travelTime * item.driverAllowance +
                             travelTime * item.nightCharges}
                         </h4>
-                        <h6>fare/km:₹{item.rentals2}</h6>
+                        <h6>fare/km:₹ {item.rentals2}</h6>
                       </>
                     )}
                     {journeyData.selectedValue === "Airport Transfer" && (
                       <>
                         <h4>
                           ₹
+                          
                           {item.Airport * travelDistance +
                             travelTime * item.driverAllowance +
                             travelTime * item.nightCharges}
+                            
                         </h4>
                         <h6>fare/km:₹{item.Airport}</h6>
                       </>
@@ -172,7 +180,7 @@ function CabListProducts({ data,isValid }) {
                       className="viewFairDetails"
                       
                     >
-                      view details
+                      View details
                     </h6>
 
                     {showDetails && selectedItem && (
@@ -186,7 +194,9 @@ function CabListProducts({ data,isValid }) {
                     )}
                   </div>
                 </div>
-              </div>
+                </div>
+               
+              
               <div onClick={() => bookNow(item)} className="col-md-3">
                 <div className="book-flight">
                   <Link  to={`/journey-details/${item.id}`}>
@@ -195,10 +205,13 @@ function CabListProducts({ data,isValid }) {
                 </div>
               </div>
             </div>
-          </div>
+            </div>
+           
+        
         ))}
       </div>
     </div>
+  
     
   );
 }

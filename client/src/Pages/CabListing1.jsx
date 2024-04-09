@@ -40,6 +40,8 @@ function CabListing1({ destination }) {
       data.returnTime,
       data.rentals
     );
+
+    
   }, [journeyData]);
 
   const [isValid, setisValid] = useState("notValid");
@@ -49,10 +51,8 @@ function CabListing1({ destination }) {
       <Layout title="light_header" />
       <ListSearch setisValid={setisValid} />
       <ListingView isValid={isValid} />
-
       <DelhiToChandigarh />
       <DelhiToDesinationMeta query={"Chandigarh"} />
-
       <FooterComponent />
     </>
   );
