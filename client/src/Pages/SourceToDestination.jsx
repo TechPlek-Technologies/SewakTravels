@@ -274,7 +274,7 @@ export const dataJaipur = {
     "sub4content":
     "For Delhi to Jaipur cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Jaipur cabs for your journey. Additionally, you have the flexibility to book your Delhi to Jaipur taxi for either one-way or round trips. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured, all cabs are thoroughly sanitized. The process of booking Delhi to Jaipur cabs is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/jaipur.webp",
+  img: "/assets/img/Locations/Jaipur.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking Delhi to Jaipur Cabs?",
   "sub5content":
@@ -1002,7 +1002,7 @@ export const dataHaridwar   = {
       p2:"For a stress-free journey, book our Delhi to Haridwar taxi service. In addition to transparent and reasonable Delhi to Haridwar cab fare, you also have the flexibility to cancel your Delhi to Haridwar cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/delhi-to-haridwar.jpg",
+    img1: "/assets/img/Locations/delhi-to-haridwar.webp",
 
     "sub10":"Things To Know About Delhi and Haridwar",
     "sub10content":{
@@ -1091,7 +1091,7 @@ export const dataVrindavan    = {
       p2:"For a stress-free journey, book our Delhi to Vrindavan taxi service. In addition to transparent and reasonable Delhi to Mathura Vrindavan taxi fare, you also have the flexibility to cancel your Delhi to Vrindavan cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/delhi-to-vrindavan.jpg",
+    img1: "/assets/img/Locations/delhi-to-vrindavan.webp",
 
     "sub10":"Things To Know About Delhi and Vrindavan",
     "sub10content":{
