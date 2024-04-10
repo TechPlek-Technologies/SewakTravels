@@ -2,9 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import { Suspense, lazy, useEffect, useState } from "react";
-import Img from "./Components/Common/Img";
 import Loader from "./Layout/Loader";
-import axios from "axios";
 import Intercity from "./Pages/Services/Intercity";
 import { dataAgra } from "./Pages/SourceToDestination";
 
