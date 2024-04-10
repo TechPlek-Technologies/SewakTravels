@@ -3,7 +3,6 @@ import CabAnimation from "../CallService/CabAnimation";
 
 const DelhiToDestination = ({ data }) => {
 
-    console.log(data)
     return (
         <section class="single-section animated-section  bg-inner">
             <CabAnimation />
@@ -39,7 +38,7 @@ const DelhiToDestination = ({ data }) => {
                                     </div>
                                 </div>
                                 <div class="desc-box" >
-                                    <img className="bimg" src={data.img} />
+                                    <img className="bimg" src={data.img} alt="destinationn"/>
                                 </div>
                                 <div class="desc-box mt-5">
 
@@ -108,7 +107,7 @@ const DelhiToDestination = ({ data }) => {
                                 </div>
 
                                 <div class="desc-box" >
-                                    <img className="bimg bimg1" src={data?.img1}/>
+                                    {/* <img className="bimg bimg1" src={data?.img1}/> */}
                                 </div>
 
                                 {/* ########## faq content####  */}

@@ -16,13 +16,7 @@ const Package = ({type}) => {
         <div className="row">
           <div className="col">
             <SliderSevenTest type={type} slideData={cabOfferData} /> 
-            {/* <div className="new-line-container">
-                    <Link
-                      className={`btn btn-rounded color1 packageButton`}
-                    >
-                      {"View All"}
-                    </Link>
-                    </div> */}
+         
           </div>
         </div>
       </div>
