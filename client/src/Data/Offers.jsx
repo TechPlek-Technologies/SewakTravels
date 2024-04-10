@@ -1,3 +1,5 @@
+import { dataChandigarh } from "./SouceToDestination";
+
 export const cabOfferData = [
   {
     id: 1,
@@ -11,6 +13,7 @@ export const cabOfferData = [
     disc: "₹3499",
     src:"/cab/delhi-to-chandigarh-cabs",
     couponCode: "EDR45",
+    data:dataChandigarh
   },
   {
     id: 2,

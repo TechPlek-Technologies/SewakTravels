@@ -70,7 +70,14 @@ export const SliderSevenTest =({ type,slideData })=> {
           <div className="new-line-container">
                     <Link
                       className={`btn1 btn-rounded1 color1 packageButton`}
-                      to={`${data.src}`}
+                      to={{
+                        pathname: `${data.src}`,
+                        state: {
+                          // Pass your state data here
+                          destination:`${data.destination}`,
+                          blogdata: `${data.data}`
+                        }
+                      }}
                     >
                       {"Book Now"}
                     </Link>

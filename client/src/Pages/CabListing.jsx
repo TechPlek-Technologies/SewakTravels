@@ -41,7 +41,7 @@ import DelhiToJodhpur from "./DelhiToJodhpur";
 import DelhiToGwalior from "./DelhiToGwalior";
 import DelhiToAlwar from "./DelhiToAlwar";
 import DelhiToDestination from "../Components/Cab/Listing/DelhiToDestination";
-import { dataAgra, dataChandigarh, dataDehradun, dataJaipur, dataKasauli, dataKasol, dataManali, dataRishikesh } from "./SourceToDestination";
+import { dataAgra, dataChandigarh, dataDehradun, dataJaipur, dataKasauli, dataKasol, dataManali, dataRishikesh, dataShimla } from "./SourceToDestination";
 
 
 function CabListing(){

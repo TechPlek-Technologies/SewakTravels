@@ -6,6 +6,7 @@ import Img from "./Components/Common/Img";
 import Loader from "./Layout/Loader";
 import axios from "axios";
 import Intercity from "./Pages/Services/Intercity";
+import { dataAgra } from "./Pages/SourceToDestination";
 
 const Home = lazy(() => import("./Pages/Home"));
 
@@ -84,7 +85,7 @@ function App() {
 
           <Route
             path={"/cab/delhi-to-agra-cabs"}
-            element={<CabListing1 destination={"Agra, Uttar Pradesh, India"} />}
+            element={<CabListing1 destination={"Agra, Uttar Pradesh, India"} blogdata={dataAgra} />}
           />
           <Route
             path={"/cab/delhi-to-jaipur-cabs"}
