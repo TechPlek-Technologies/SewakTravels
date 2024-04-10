@@ -824,7 +824,7 @@ export const dataMcLeodganj  = {
       p2:"For a stress-free journey, book our Delhi to McLeodganj taxi service. In addition to transparent and reasonable Delhi to McLeodganj cab fare, you also have the flexibility to cancel your Delhi to McLeodganj cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/delhi-to-McLeodganj.jpg",
+    img1: "/assets/img/Locations/delhi-to-McLeodganj.webp",
 
     "sub10":"Things To Know About Delhi and McLeodganj",
     "sub10content":{

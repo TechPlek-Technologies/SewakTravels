@@ -107,7 +107,7 @@ const DelhiToDestination = ({ data }) => {
                                 </div>
 
                                 <div class="desc-box" >
-                                    {/* <img className="bimg bimg1" src={data?.img1}/> */}
+                                    <img className="bimg bimg1" src={data?.img1}/>
                                 </div>
 
                                 {/* ########## faq content####  */}
