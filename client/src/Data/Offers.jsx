@@ -1,4 +1,4 @@
-import { dataChandigarh } from "./SouceToDestination";
+import { dataAgra, dataBijnor, dataChandigarh, dataDehradun, dataHaridwar, dataJaipur, dataKasauli, dataKasol, dataKullu, dataManali, dataMathura, dataMcLeodganj, dataRishikesh, dataShimla, dataVrindavan } from "../Pages/SourceToDestination";
 
 export const cabOfferData = [
   {
@@ -13,7 +13,7 @@ export const cabOfferData = [
     disc: "₹3499",
     src:"/cab/delhi-to-chandigarh-cabs",
     couponCode: "EDR45",
-    data:dataChandigarh
+    data:dataChandigarh,
   },
   {
     id: 2,
@@ -24,7 +24,8 @@ export const cabOfferData = [
     badge: "group",
     desc: `Delhi to Haridwar ₹3299/- all included airport parking extra`,
     couponCode: "EDR45",
-    src:"/cab/delhi-to-haridwar-cabs"
+    src:"/cab/delhi-to-haridwar-cabs",
+    data:dataHaridwar,
   },
   {
     id: 3,
@@ -37,7 +38,8 @@ export const cabOfferData = [
     price: "₹4240",
     disc:"₹3499",
     couponCode: "EDR45",
-    src:"/cab/delhi-to-dehradun-cabs"
+    src:"/cab/delhi-to-dehradun-cabs",
+    data:dataDehradun,
   },
   {
     id: 4,
@@ -50,7 +52,8 @@ export const cabOfferData = [
     price:"₹3500",
     disc:"₹3299",
     couponCode: "EDR45",
-    src:"/cab/delhi-to-agra-cabs"
+    src:"/cab/delhi-to-agra-cabs",
+    data:dataAgra,
   },
   {
     id: 5,
@@ -63,7 +66,8 @@ export const cabOfferData = [
     price:"₹4800",
     disc: "₹3499",
     couponCode: "EDR45",
-    src:"/cab/delhi-to-jaipur-cabs"
+    src:"/cab/delhi-to-jaipur-cabs",
+    data:dataJaipur,
   },
   {
     id: 6,
@@ -74,7 +78,8 @@ export const cabOfferData = [
     badge: "group",
     desc: `Delhi to Kasauli ₹3299/- all included airport parking extra`,
     couponCode: "EDR45",
-    src:"/cab/delhi-to-kasauli-cabs"
+    src:"/cab/delhi-to-kasauli-cabs",
+    data:dataKasauli,
   },
   {
     id: 7,
@@ -85,7 +90,8 @@ export const cabOfferData = [
     badge: "group",
     desc: `Delhi to Kasol ₹3299/- all included airport parking extra`,
     couponCode: "EDR45",
-    src:"/cab/delhi-to-kasol-cabs"
+    src:"/cab/delhi-to-kasol-cabs",
+    data:dataKasol,
   },
   {
     id: 8,
@@ -96,7 +102,8 @@ export const cabOfferData = [
     badge: "group",
     desc: `Delhi to Manali ₹3299/- all included airport parking extra`,
     couponCode: "EDR45",
-    src:"/cab/delhi-to-manali-cabs"
+    src:"/cab/delhi-to-manali-cabs",
+    data:dataManali,
   },
   {
     id: 9,
@@ -107,7 +114,8 @@ export const cabOfferData = [
     badge: "group",
     desc: `Delhi to Rishikesh ₹3299/- all included airport parking extra`,
     couponCode: "EDR45",
-    src:"/cab/delhi-to-rishikesh-cabs"
+    src:"/cab/delhi-to-rishikesh-cabs",
+    data:dataRishikesh,
   },
   {
     id: 10,
@@ -118,7 +126,8 @@ export const cabOfferData = [
     badge: "group",
     desc: `Delhi to Shimla ₹3299/- all included airport parking extra`,
     couponCode: "EDR45",
-    src:"/cab/delhi-to-shimla-cabs"
+    src:"/cab/delhi-to-shimla-cabs",
+    data:dataShimla,
   },
   {
     id: 11,
@@ -129,7 +138,8 @@ export const cabOfferData = [
     badge: "group",
     desc: `Delhi to McLeodganj ₹3299/- all included airport parking extra`,
     couponCode: "EDR45",
-    src:"/cab/delhi-to-mcleodganj-cabs"
+    src:"/cab/delhi-to-mcleodganj-cabs",
+    data:dataMcLeodganj,
   },
   {
     id: 12,
@@ -140,7 +150,8 @@ export const cabOfferData = [
     badge: "group",
     desc: `Delhi to Mathura ₹3299/- all included airport parking extra`,
     couponCode: "EDR45",
-    src:"/cab/delhi-to-mathura-cabs"
+    src:"/cab/delhi-to-mathura-cabs",
+    data:dataMathura,
   },
   {
     id: 13,
@@ -151,7 +162,8 @@ export const cabOfferData = [
     badge: "group",
     desc: `Delhi to Vrindavan ₹3299/- all included airport parking extra`,
     couponCode: "EDR45",
-    src:"/cab/delhi-to-vrindavan-cabs"
+    src:"/cab/delhi-to-vrindavan-cabs",
+    data:dataVrindavan,
   },
   {
     id: 14,
@@ -162,7 +174,8 @@ export const cabOfferData = [
     badge: "group",
     desc: `Delhi to Kullu ₹3299/- all included airport parking extra`,
     couponCode: "EDR45",
-    src:"/cab/delhi-to-kullu-cabs"
+    src:"/cab/delhi-to-kullu-cabs",
+    data:dataKullu,
   },
   {
     id: 15,
@@ -173,7 +186,8 @@ export const cabOfferData = [
     badge: "group",
     desc: `Delhi to Bijnor ₹3299/- all included airport parking extra`,
     couponCode: "EDR45",
-    src:"/cab/delhi-to-bijnor-cabs"
+    src:"/cab/delhi-to-bijnor-cabs",
+    data:dataBijnor,
   },
 ];
 
