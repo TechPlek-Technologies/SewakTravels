@@ -50,26 +50,30 @@ const Popup = ({ selectedValue, travelDistance, car, modal, toggle }) => {
                 <div>Journey Type </div>
                 <div>{selectedValue}</div>
                 <div>Package (Per Day KM) </div>
-                <div>
-                 250
-                </div>
+                <div>250</div>
                 <div>Extra Per KM Charges </div>
-                <div> {selectedValue === "Outstation One-Way"
+                <div>
+                  {" "}
+                  {selectedValue === "Outstation One-Way"
                     ? car.outstationOneWay
                     : selectedValue === "Outstation One-Way"
                     ? car.outstattionRoundTrip
                     : selectedValue === "Airport Transfer"
                     ? car.Airport
-                    : car.rentals2}</div>
-                <div>Total Distance</div>{" "}
-                <div>{travelDistance } KM</div>
-                <div>Number of days</div>{" "}
-                <div>{Math.ceil(travelDistance / 250)}</div>
-                <div>Night time allowance (11:00 PM - 06:00 AM) </div>
-                <div> ₹ 300/night</div>
-                <div>Driver Allowances per Day</div>
-                <div> ₹ 300</div>
-           
+                    : car.rentals2}
+                </div>
+                <div>Total Distance</div> <div>{travelDistance} KM</div>
+                {selectedValue === "Outstation One-Way" ? null :
+                selectedValue === "Airport Transfer" ? null : (
+                  <>
+                    <div>Number of days</div>{" "}
+                    <div>{Math.ceil(travelDistance / 250)}</div>
+                    <div>Night time allowance (11:00 PM - 06:00 AM) </div>
+                    <div> ₹ 300/night</div>
+                    <div>Driver Allowances per Day</div>
+                    <div> ₹ 300</div>
+                  </>
+                )}
               </div>
               <ul>
                 {car?.carFeatures?.map((item, index) => (

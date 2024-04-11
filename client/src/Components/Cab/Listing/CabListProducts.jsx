@@ -23,7 +23,7 @@ function CabListProducts({ data,isValid }) {
     let farePerKm = 0;
 
     if (selectedValue === "Outstation One-Way") {
-      totalFare = item.outstationOneWay * travelDistance + travelTime * item.driverAllowance + travelTime * item.nightCharges;
+      totalFare = item.outstationOneWay * travelDistance;
       farePerKm = item.outstationOneWay;
     } else if (selectedValue === "Outstation Round-Trip") {
       totalFare = item.outstattionRoundTrip * travelDistance + travelTime * item.driverAllowance + travelTime * item.nightCharges;
@@ -32,7 +32,7 @@ function CabListProducts({ data,isValid }) {
       totalFare = item.rentals2 * travelDistance + travelTime * item.driverAllowance + travelTime * item.nightCharges;
       farePerKm = item.rentals2;
     } else if (selectedValue === "Airport Transfer") {
-      totalFare = item.Airport * travelDistance + travelTime * item.driverAllowance + travelTime * item.nightCharges;
+      totalFare = item.Airport * travelDistance;
       farePerKm = item.Airport;
     }
  
@@ -112,13 +112,15 @@ function CabListProducts({ data,isValid }) {
                       />{" "}
                       AC
                     </li>
+
+                    {}
                     <li>
                       <img
                         src="/assets/images/cab/icon/settings.png"
                         className="img-fluid"
                         alt=""
                       />{" "}
-                      {travelTime} day
+                      {journeyData.selectedValue === "Outstation One-Way"?"1":journeyData.selectedValue === "Airport Transfer"?"1":travelTime} day
                     </li>
                   </ul>
                 </div>
@@ -132,21 +134,19 @@ function CabListProducts({ data,isValid }) {
                         <h4>
                           ₹  
                          
-                          {item.outstationOneWay * journeyData?.travelDistance +
-                            travelTime * item.driverAllowance +
-                            travelTime * item.nightCharges}
+                          {Math.ceil(item.outstationOneWay * journeyData?.travelDistance) }
                               
                         </h4>
-                        <h6>fare/km:₹{item.outstationOneWay}</h6>
+                        <h6>fare/km:₹{ item.outstationOneWay}</h6>
                       </>
                     )}
                     {journeyData.selectedValue === "Outstation Round-Trip" && (
                       <>
                         <h4>
                           ₹
-                          {item.outstattionRoundTrip * travelDistance +
+                          {Math.ceil(item.outstattionRoundTrip * travelDistance +
                             travelTime * item.driverAllowance +
-                            travelTime * item.nightCharges}
+                            travelTime * item.nightCharges)}
                         </h4>
                         <h6>fare/km:₹{item.outstattionRoundTrip}</h6>
                       </>
@@ -155,9 +155,9 @@ function CabListProducts({ data,isValid }) {
                       <>
                         <h4>
                           ₹
-                          {item.rentals1 * travelDistance +
+                          {Math.ceil(item.rentals1 * travelDistance +
                             travelTime * item.driverAllowance +
-                            travelTime * item.nightCharges}
+                            travelTime * item.nightCharges)}
                         </h4>
                         <h6>fare/km:₹ {item.rentals2}</h6>
                       </>
@@ -167,9 +167,7 @@ function CabListProducts({ data,isValid }) {
                         <h4>
                           ₹
                           
-                          {item.Airport * travelDistance +
-                            travelTime * item.driverAllowance +
-                            travelTime * item.nightCharges}
+                          {Math.ceil(item.Airport * travelDistance) }
                             
                         </h4>
                         <h6>fare/km:₹{item.Airport}</h6>

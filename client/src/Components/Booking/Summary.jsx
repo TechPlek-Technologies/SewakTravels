@@ -100,12 +100,12 @@ const Summary = ({
                 <h6>Source</h6>
                 <h5>{journeyData.source}</h5>
               </div>
-              {journeyData.selectedValue === "Hourly Rentals" && (
+              {(journeyData.selectedValue === "Hourly Rentals" && (
                 <div className="down">
                   <h6>Package</h6>
                   <h5>{journeyData.rentalPackage}</h5>
                 </div>
-              ) || (
+              )) || (
                 <div className="down">
                   <h6>Destination</h6>
                   <h5>{journeyData.destination}</h5>
@@ -134,18 +134,31 @@ const Summary = ({
                   <td>Base price</td>
                   <td>
                     ₹
-                    {pay -
-                      paymentData.driverAllowance -
-                      paymentData.nightCharges}
+                    {journeyData.selectedValue === "Outstation One-Way"
+                      ? pay
+                      : journeyData.selectedValue === "Airport Transfer"
+                      ? pay
+                      : pay -
+                        paymentData.driverAllowance -
+                        paymentData.nightCharges}
+                    {}
                   </td>
                 </tr>
                 <tr>
                   <td>Driver Charges</td>
-                  <td>+ ₹{paymentData.driverAllowance}</td>
+                  <td>+ ₹{journeyData.selectedValue === "Outstation One-Way"
+                      ? 0
+                      : journeyData.selectedValue === "Airport Transfer"
+                      ? 0
+                      :paymentData.driverAllowance}</td>
                 </tr>
                 <tr>
                   <td>Night Charges</td>
-                  <td>+ ₹{paymentData.nightCharges}</td>
+                  <td>+ ₹{journeyData.selectedValue === "Outstation One-Way"
+                      ? 0
+                      : journeyData.selectedValue === "Airport Transfer"
+                      ? 0
+                      :paymentData.nightCharges}</td>
                 </tr>
               </tbody>
             </table>
@@ -168,7 +181,6 @@ const Summary = ({
                         Make Part Payment Now
                       </option>
                       <option value="fullPayment">Make Full Payment Now</option>
-                      
                     </select>
                   </td>
                 </tr>
