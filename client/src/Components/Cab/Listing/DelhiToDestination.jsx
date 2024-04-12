@@ -11,7 +11,7 @@ const DelhiToDestination = ({ data }) => {
                 <div class="row">
                     <div class="col-xl-16 col-lg-16">
                         <div className="title-1 detail-title h1Header" h1 _ngcontent-taw-c63="">
-                        <h1 className="service-h1">{data?.main}</h1>
+                        <h1 className="page-h1">{data?.main}</h1>
                         </div>
                         <div class="description-section tab-section">
                             <div class="description-details">

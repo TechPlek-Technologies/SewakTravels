@@ -1381,3 +1381,12 @@ display: block;
   max-width: 1140px;
   height: 600px;
 }
+
+.page-h1{
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    line-height: 1.1;
+    font-size: 32px;
+    text-transform: capitalize;
+    color: #ef2f3e;
+}
