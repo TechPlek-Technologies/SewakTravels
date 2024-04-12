@@ -711,13 +711,13 @@ section.small-section{
  }
 
 .h1Header[_ngcontent-taw-c63] {
-  font-size: 25px;
-  padding: 5px 20px;
+  /* font-size: 25px; */
+  /* padding: 5px 20px; */
   border-bottom: 2px solid #ffb824;
   border-top: 2px solid #ffb824;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 24px;
+  /* margin-top: 24px; */
 }
 
 /*for mobile*/

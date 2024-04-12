@@ -8,11 +8,11 @@ const DelhiToDestination = ({ data }) => {
             <CabAnimation />
 
             <div class="container">
-                <div className="title-1 detail-title">
-                    <h2>{data?.main}</h2>
-                </div>
                 <div class="row">
                     <div class="col-xl-16 col-lg-16">
+                        <div className="title-1 detail-title h1Header" h1 _ngcontent-taw-c63="">
+                        <h2>{data?.main}</h2>
+                        </div>
                         <div class="description-section tab-section">
                             <div class="description-details">
                                 <div class="desc-box">
