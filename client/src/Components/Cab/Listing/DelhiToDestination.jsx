@@ -11,27 +11,27 @@ const DelhiToDestination = ({ data }) => {
                 <div class="row">
                     <div class="col-xl-16 col-lg-16">
                         <div className="title-1 detail-title h1Header" h1 _ngcontent-taw-c63="">
-                        <h2>{data?.main}</h2>
+                        <h1 className="service-h1">{data?.main}</h1>
                         </div>
                         <div class="description-section tab-section">
                             <div class="description-details">
                                 <div class="desc-box">
                                     <div class="about menu-part" id="policy">
                                         <div class="about-sec">
-                                            <h3 className="service-h3"> {data?.sub} </h3>
+                                            <h2 className="service-h2"> {data?.sub} </h2>
                                             <p> {data?.subcontent}</p>
                                         </div>
                                         <div class="about-sec">
-                                            <h3 className="service-h3">{data?.sub1}</h3>
+                                            <h2 className="service-h2">{data?.sub1}</h2>
                                             <p>{data?.sub1content} </p>
                                         </div>
                                         <div class="about-sec">
-                                            <h3 className="service-h3">{data?.sub2}</h3>
+                                            <h2 className="service-h2">{data?.sub2}</h2>
                                             <p>{data?.sub2content}</p>
-                                            <h3 className="service-h3">{data?.sub3}</h3>
+                                            <h2 className="service-h2">{data?.sub3}</h2>
                                             <p>{data?.sub3content}</p>
 
-                                            <h3 className="service-h3">{data?.sub4}</h3>
+                                            <h2 className="service-h2">{data?.sub4}</h2>
                                             <p>{data?.sub4content}</p>
 
                                         </div>
@@ -43,14 +43,14 @@ const DelhiToDestination = ({ data }) => {
                                 <div class="desc-box mt-5">
 
                                     <div class="about menu-part" id="policy">
-                                        <h3 className="service-h3">{data?.sub5}</h3>
+                                        <h2 className="service-h2">{data?.sub5}</h2>
                                         <p>{data?.sub5content}</p>
                                         <div class="about-sec">
-                                            <h3 className="service-h3">{data?.sub6}</h3>
+                                            <h2 className="service-h2">{data?.sub6}</h2>
                                             <p>{data?.sub6content}</p>
                                         </div>
                                         <div class="about-sec">
-                                            <h3 className="service-h3">{data?.sub7}</h3>
+                                            <h2 className="service-h2">{data?.sub7}</h2>
                                             <p>{data?.sub7content}</p>
                                         </div>
 
@@ -97,11 +97,9 @@ const DelhiToDestination = ({ data }) => {
                                             <p>{data?.sub9content?.p2}</p>
                                         </div>
                                         <div class="about-sec">
-                                            <h3 className="service-h3">{data?.sub10}</h3>
+                                            <h2 className="service-h2">{data?.sub10}</h2>
                                             <p>{data?.sub10content?.p3}</p>
                                             <p>{data?.sub10content?.p4}</p>
-                                            <h3 className="service-h3"></h3>
-                                            <p></p>
                                         </div>
                                     </div>
                                 </div>
@@ -154,8 +152,6 @@ const DelhiToDestination = ({ data }) => {
                                         </div>
                                     </div>
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
