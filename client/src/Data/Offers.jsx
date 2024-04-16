@@ -191,7 +191,6 @@ export const cabOfferData = [
   },
 ];
 
-
 export const flightOffers = [
   {
     id: 1,
