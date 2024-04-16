@@ -508,6 +508,138 @@ function App() {
             path={"/cab/delhi-to-jim-corbett-cabs"}
             element={<CabListing1 destination={"Jim Corbett, Halduchaur, Uttarakhand, India"}/>}
           />
+           <Route
+            path={"/cab/delhi-to-manesar-cabs"}
+            element={<CabListing1 destination={"Manesar, Gurugram, Haryana, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-sohna-cabs"}
+            element={<CabListing1 destination={"Sohna, Haryana, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-bharatpur-cabs"}
+            element={<CabListing1 destination={"Bharatpur, Rajasthan, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-lansdowne-cabs"}
+            element={<CabListing1 destination={"Lansdowne, Uttarakhand, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-sariska-cabs"}
+            element={<CabListing1 destination={"Sariska Tiger Reserve, Rajasthan, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-solan-cabs"}
+            element={<CabListing1 destination={"Solan, Himachal Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-nahan-cabs"}
+            element={<CabListing1 destination={"Nahan, Himachal Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-kanatal-cabs"}
+            element={<CabListing1 destination={"Kanatal, Kaudia Range, Uttarakhand, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-pushkar-cabs"}
+            element={<CabListing1 destination={"Pushkar, Rajasthan, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-chail-cabs"}
+            element={<CabListing1 destination={"Chail, Himachal Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-kufri-cabs"}
+            element={<CabListing1 destination={"Kufri, Himachal Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-bhimtal-cabs"}
+            element={<CabListing1 destination={"Bhimtal, Uttarakhand, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-ranthambore-cabs"}
+            element={<CabListing1 destination={"Ranthambore National Park, Rajasthan, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-mukteshwar-cabs"}
+            element={<CabListing1 destination={"Mukteshwar, Uttarakhand, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-shoghi-cabs"}
+            element={<CabListing1 destination={"Shoghi, Himachal Pradesh, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-kausani-cabs"}
+            element={<CabListing1 destination={"Kausani, Uttarakhand, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-orchha-cabs"}
+            element={<CabListing1 destination={"Orchha, Madhya Pradesh, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-bikaner-cabs"}
+            element={<CabListing1 destination={"Bikaner, Rajasthan, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-ajmer-cabs"}
+            element={<CabListing1 destination={"Ajmer, Rajasthan, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-pangot-cabs"}
+            element={<CabListing1 destination={"Pangot, Uttarakhand, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-ranikhet-cabs"}
+            element={<CabListing1 destination={"Ranikhet, Uttarakhand, India"}/>}
+          />
+           <Route
+            path={"/cab/delhi-to-naldehra-cabs"}
+            element={<CabListing1 destination={"Naldehra, Himachal Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-almora-cabs"}
+            element={<CabListing1 destination={"Almora, Uttarakhand, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-narkanda-cabs"}
+            element={<CabListing1 destination={"Narkanda, Himachal Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-malana-cabs"}
+            element={<CabListing1 destination={"Malana, Himachal Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-manikaran-cabs"}
+            element={<CabListing1 destination={"Manikaran, Himachal Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-kangra-cabs"}
+            element={<CabListing1 destination={"Kangra, Himachal Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-spiti-valley-cabs"}
+            element={<CabListing1 destination={"Spiti Valley, Himachal Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-khajuraho-cabs"}
+            element={<CabListing1 destination={"Khajuraho, Madhya Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-chamba-cabs"}
+            element={<CabListing1 destination={"Chamba, Himachal Pradesh, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-ranakpur-cabs"}
+            element={<CabListing1 destination={"Ranakpur, Rajasthan, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-jaisalmer-cabs"}
+            element={<CabListing1 destination={"Jaisalmer, Rajasthan, India"}/>}
+          />
+          <Route
+            path={"/cab/delhi-to-bir-cabs"}
+            element={<CabListing1 destination={"Bir, Himachal Pradesh, India"}/>}
+          />
 
           <Route path={"/*"} element={<Home />} />
         </Routes>

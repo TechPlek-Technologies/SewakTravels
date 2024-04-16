@@ -1832,7 +1832,7 @@ export const dataPatna   = {
     "sub4content":
     "For Delhi to Patna cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Patna cabs for your journey. Additionally, you can book your Delhi to Patna taxi for either a one-way or Delhi to Patna taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Patna cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey",
 
-  img: "/assets/img/Locations/chandigarh.webp",
+  img: "/assets/img/Locations/Patna.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Patna Cab?",
   "sub5content":
@@ -2087,7 +2087,7 @@ export const dataBasti  = {
     "sub4content":
     "For Delhi to Basti cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Basti cabs for your journey. Additionally, you can book your Delhi to Basti taxi for either a one-way or Delhi to Basti taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Basti cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/basti.webp",
+  img: "/assets/img/Locations/Basti.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Basti Cab?",
   "sub5content":
@@ -2122,7 +2122,7 @@ export const dataBasti  = {
 
     },
 
-    img1: "/assets/img/Locations/delhi-to-basti.webp",
+    img1: "/assets/img/Locations/delhi-to-Basti.webp",
 
 
     "sub10":"Things to Know about Delhi and Basti",
