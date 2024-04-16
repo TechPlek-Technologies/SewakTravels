@@ -1419,7 +1419,7 @@ export const dataLucknow             = {
     "To ensure a smooth Delhi to Lucknow taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Lucknow Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Lucknow cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Lucknow Cab offers ample space for up to four bags. We also offer options for Delhi to Lucknow sharing cab.Our Delhi to Lucknow taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Lucknow cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Lucknow Cab offers ample space for up to four bags. We also offer options for Delhi to Lucknow sharing cab.Our Delhi to Lucknow taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Lucknow Cab Road Trip:",
     "sub8content":
@@ -1504,7 +1504,7 @@ export const dataLudhiana     = {
     "To ensure a smooth Delhi to Ludhiana taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Ludhiana Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Ludhiana cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Ludhiana Cab offers ample space for up to four bags. We also offer options for Delhi to Ludhiana sharing cab.Our Delhi to Ludhiana taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Ludhiana cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Ludhiana Cab offers ample space for up to four bags. We also offer options for Delhi to Ludhiana sharing cab.Our Delhi to Ludhiana taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Ludhiana Cab Road Trip:",
     "sub8content":
@@ -1589,7 +1589,7 @@ export const dataKanpur     = {
     "To ensure a smooth Delhi to Kanpur taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Kanpur Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Kanpur cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Kanpur Cab offers ample space for up to four bags. We also offer options for Delhi to Kanpur sharing cab. Our Delhi to Kanpur taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Kanpur cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Kanpur Cab offers ample space for up to four bags. We also offer options for Delhi to Kanpur sharing cab. Our Delhi to Kanpur taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Kanpur Cab Road Trip:",
     "sub8content":
@@ -1667,14 +1667,14 @@ export const dataMeerut    = {
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Meerut Cab?",
   "sub5content":
-    "Sewak Travels takes the hassle out of booking a Delhi to Patna Cab by offering premium services at affordable Delhi to Patna taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Airport, outstation, or hourly), choose your destination and date, select the car and rates according to your preference, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Delhi to Patna taxi service, why wait any longer?",
+    "Sewak Travels takes the hassle out of booking a Delhi to Meerut Cab by offering premium services at affordable Delhi to Meerut taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Airport, outstation, or hourly), choose your destination and date, select the car and rates according to your preference, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Delhi to Meerut taxi service, why wait any longer?",
 
     "sub6":"Book your Delhi to Meerut Cabs effortlessly on Sewak Travels:",
     "sub6content":
-    "To ensure a smooth Delhi to Patna taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
+    "To ensure a smooth Delhi to Meerut taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Meerut Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Meerut cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Meerut Cab offers ample space for up to four bags. We also offer options for Delhi to Meerut sharing cab.Our Delhi to Meerut taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Meerut cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Meerut Cab offers ample space for up to four bags. We also offer options for Delhi to Meerut sharing cab.Our Delhi to Meerut taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Meerut Cab Road Trip:",
     "sub8content":
@@ -1758,7 +1758,7 @@ export const dataRoorkee    = {
     "To ensure a smooth Delhi to Roorkee taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Roorkee Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Roorkee cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Roorkee Cab offers ample space for up to four bags. We also offer options for Delhi to Roorkee sharing cab.Our Delhi to Roorkee taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Roorkee cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Roorkee Cab offers ample space for up to four bags. We also offer options for Delhi to Roorkee sharing cab.Our Delhi to Roorkee taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Roorkee Cab Road Trip:",
     "sub8content":
@@ -1843,7 +1843,7 @@ export const dataPatna   = {
     "To ensure a smooth Delhi to Patna taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
   
     "sub7":"Range of Delhi to Patna Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Patna cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Patna Cab offers ample space for up to four bags. We also offer options for Delhi to Patna sharing cab.Our Delhi to Patna taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Patna cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Patna Cab offers ample space for up to four bags. We also offer options for Delhi to Patna sharing cab.Our Delhi to Patna taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Patna Cab Road Trip:",
     "sub8content":
@@ -1928,7 +1928,7 @@ export const dataAyodhya   = {
     "To ensure a smooth Delhi to Ayodhya taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Ayodhya Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Ayodhya cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Ayodhya Cab offers ample space for up to four bags. We also offer options for Delhi to Ayodhya sharing cab.Our Delhi to Ayodhya taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Ayodhya cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Ayodhya Cab offers ample space for up to four bags. We also offer options for Delhi to Ayodhya sharing cab.Our Delhi to Ayodhya taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Ayodhya Cab Road Trip:",
     "sub8content":
@@ -2013,7 +2013,7 @@ export const dataGorakhpur       = {
     "To ensure a smooth Delhi to Gorakhpur taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Gorakhpur Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Gorakhpur cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Gorakhpur Cab offers ample space for up to four bags. We also offer options for Delhi to Gorakhpur sharing cab.Our Delhi to Gorakhpur taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Gorakhpur cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Gorakhpur Cab offers ample space for up to four bags. We also offer options for Delhi to Gorakhpur sharing cab.Our Delhi to Gorakhpur taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Gorakhpur Cab Road Trip:",
     "sub8content":
@@ -2098,7 +2098,7 @@ export const dataBasti  = {
     "To ensure a smooth Delhi to Basti taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Basti Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Basti cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Basti Cab offers ample space for up to four bags. We also offer options for Delhi to Basti sharing cab.Our Delhi to Basti taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Basti cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Basti Cab offers ample space for up to four bags. We also offer options for Delhi to Basti sharing cab.Our Delhi to Basti taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Basti Cab Road Trip:",
     "sub8content":
@@ -2268,7 +2268,7 @@ export const dataKatra       = {
     "To ensure a smooth Delhi to Katra taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Katra Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Katra cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Katra Cab offers ample space for up to four bags. We also offer options for Delhi to Katra sharing cab.Our Delhi to Katra taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Katra cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Katra Cab offers ample space for up to four bags. We also offer options for Delhi to Katra sharing cab.Our Delhi to Katra taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Katra Cab Road Trip:",
     "sub8content":
@@ -2353,7 +2353,7 @@ export const dataMumbai     = {
     "To ensure a smooth Delhi to Mumbai taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Mumbai Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Mumbai cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Mumbai Cab offers ample space for up to four bags. We also offer options for Delhi to Mumbai sharing cab.Our Delhi to Mumbai taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Mumbai cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Mumbai Cab offers ample space for up to four bags. We also offer options for Delhi to Mumbai sharing cab.Our Delhi to Mumbai taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Mumbai Cab Road Trip:",
     "sub8content":
@@ -2439,7 +2439,7 @@ export const dataKolkata      = {
     "To ensure a smooth Delhi to Kolkata taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Kolkata Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Kolkata cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Kolkata Cab offers ample space for up to four bags. We also offer options for Delhi to Kolkata sharing cab.Our Delhi to Kolkata taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Kolkata cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Kolkata Cab offers ample space for up to four bags. We also offer options for Delhi to Kolkata sharing cab.Our Delhi to Kolkata taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Kolkata Cab Road Trip:",
     "sub8content":
@@ -2525,7 +2525,7 @@ export const dataHyderabad         = {
     "To ensure a smooth Delhi to Hyderabad taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Hyderabad Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Hyderabad cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Hyderabad Cab offers ample space for up to four bags. We also offer options for Delhi to Hyderabad sharing cab.Our Delhi to Hyderabad taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Hyderabad cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Hyderabad Cab offers ample space for up to four bags. We also offer options for Delhi to Hyderabad sharing cab.Our Delhi to Hyderabad taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Hyderabad Cab Road Trip:",
     "sub8content":
@@ -2610,7 +2610,7 @@ export const dataCoimbatore        = {
     "To ensure a smooth Delhi to Coimbatore taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Coimbatore Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Coimbatore cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Coimbatore Cab offers ample space for up to four bags. We also offer options for Delhi to Coimbatore sharing cab.Our Delhi to Coimbatore taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Coimbatore cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Coimbatore Cab offers ample space for up to four bags. We also offer options for Delhi to Coimbatore sharing cab.Our Delhi to Coimbatore taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Coimbatore Cab Road Trip:",
     "sub8content":
@@ -2695,7 +2695,7 @@ export const dataVisakhapatnam            = {
     "To ensure a smooth Delhi to Visakhapatnam taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Visakhapatnam Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Visakhapatnam cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Visakhapatnam Cab offers ample space for up to four bags. We also offer options for Delhi to Visakhapatnam sharing cab.Our Delhi to Visakhapatnam taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Visakhapatnam cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Visakhapatnam Cab offers ample space for up to four bags. We also offer options for Delhi to Visakhapatnam sharing cab.Our Delhi to Visakhapatnam taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Visakhapatnam Cab Road Trip:",
     "sub8content":
@@ -2780,7 +2780,7 @@ export const dataRameshwaram            = {
     "To ensure a smooth Delhi to Rameshwaram taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Rameshwaram Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Rameshwaram cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Rameshwaram Cab offers ample space for up to four bags. We also offer options for Delhi to Rameshwaram sharing cab.Our Delhi to Rameshwaram taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Rameshwaram cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Rameshwaram Cab offers ample space for up to four bags. We also offer options for Delhi to Rameshwaram sharing cab.Our Delhi to Rameshwaram taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Rameshwaram Cab Road Trip:",
     "sub8content":
@@ -2865,7 +2865,7 @@ export const dataBangalore          = {
     "To ensure a smooth Delhi to Bangalore taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Bangalore Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Bangalore cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Bangalore Cab offers ample space for up to four bags. We also offer options for Delhi to Bangalore sharing cab.Our Delhi to Bangalore taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Bangalore cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Bangalore Cab offers ample space for up to four bags. We also offer options for Delhi to Bangalore sharing cab.Our Delhi to Bangalore taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Bangalore Cab Road Trip:",
     "sub8content":
@@ -2950,7 +2950,7 @@ export const dataGuwahati          = {
     "To ensure a smooth Delhi to Guwahati taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Guwahati Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Guwahati cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Guwahati Cab offers ample space for up to four bags. We also offer options for Delhi to Guwahati sharing cab.Our Delhi to Guwahati taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Guwahati cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Guwahati Cab offers ample space for up to four bags. We also offer options for Delhi to Guwahati sharing cab.Our Delhi to Guwahati taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Guwahati Cab Road Trip:",
     "sub8content":
@@ -3035,7 +3035,7 @@ export const dataBathinda           = {
     "To ensure a smooth Delhi to Bathinda taxi journey, opt for Sewak Travels for a variety of car options and friendly, skilled drivers at budget-friendly prices.",
     
     "sub7":"Range of Delhi to Bathinda Taxi Options Offered by Sewak Travels:",
-    "sub7":"When selecting our Delhi to Bathinda cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Bathinda Cab offers ample space for up to four bags. We also offer options for Delhi to Bathinda sharing cab.Our Delhi to Bathinda taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+    "sub7content":"When selecting our Delhi to Bathinda cab service for your journey, you'll have access to three types of cabs. These include 4-seater hatchbacks like Swift, 4-seater sedans such as Honda City, and 6-seater SUVs like Ertiga. Choose a 4-seater sedan if you need to accommodate three bags. For lighter travel with one or two bags, consider our 4-seater hatchback. Our 6-seater SUV Delhi To Bathinda Cab offers ample space for up to four bags. We also offer options for Delhi to Bathinda sharing cab.Our Delhi to Bathinda taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
 
     "sub8":"Reasons to Opt for a Delhi to Bathinda Cab Road Trip:",
     "sub8content":
@@ -3086,7 +3086,3 @@ export const dataBathinda           = {
       a8:"At Sewak Travels, our goal is to enhance your travel experience. Booking Delhi to Bathinda cab online with Sewak Travels offers several advantages, including a convenient booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Delhi to Bathinda taxi with us for an unparalleled journey.",
     }
 };
-
-
-
-
