@@ -3,7 +3,6 @@ import Layout from "../Layout/Layout";
 import ListSearch from "../Components/Cab/Listing/ListSearch";
 import FooterComponent from "../Components/Common/FooterComponent";
 import { useContext, useEffect, useState } from "react";
-import DelhiToChandigarh from "./DelhiToChandigarh";
 import DelhiToDesinationMeta from "./MetaTags/DelhiToDestination";
 import { AppContext } from "../Context/JourneyContext";
 import { calculateDistanceAndDuration } from "../Utility/DistanceCalculator";
