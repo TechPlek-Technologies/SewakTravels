@@ -4,7 +4,7 @@ import "./App.css";
 import { Suspense, lazy, useEffect, useState } from "react";
 import Loader from "./Layout/Loader";
 import Intercity from "./Pages/Services/Intercity";
-import { dataAgra, dataAmbala, dataAmritsar, dataAuli, dataAyodhya, dataBangalore, dataBareilly, dataBasti, dataBatala, dataBathinda, dataBijnor, dataChandigarh, dataCoimbatore, dataDalhousie, dataDehradun, dataDharamshala, dataGorakhpur, dataGuwahati, dataHaldwani, dataHaridwar, dataHyderabad, dataJaipur, dataJalandhar, dataKanpur, dataKasauli, dataKasol, dataKatra, dataKolkata, dataKullu, dataLucknow, dataLudhiana, dataManali, dataMathura, dataMcLeodganj, dataMeerut, dataMohali, dataMoradabad, dataMumbai, dataMussoorie, dataNainital, dataPatna, dataPune, dataRameshwaram, dataRishikesh, dataRoorkee, dataShimla, dataSrinagar, dataUdaipur, dataVaranasi, dataVisakhapatnam, dataVrindavan } from "./Pages/SourceToDestination";
+import { dataAgra, dataAkola, dataAlwar, dataAmbala, dataAmritsar, dataAuli, dataAyodhya, dataBangalore, dataBareilly, dataBasti, dataBatala, dataBathinda, dataBiharSharif, dataBijnor, dataChandigarh, dataChhindwara, dataCoimbatore, dataDalhousie, dataDehradun, dataDharamshala, dataGorakhpur, dataGuwahati, dataGwalior, dataHaldwani, dataHaridwar, dataHyderabad, dataJaipur, dataJalandhar, dataJodhpur, dataKanpur, dataKarnal, dataKasauli, dataKasol, dataKatra, dataKatraj, dataKolkata, dataKullu, dataLucknow, dataLudhiana, dataManali, dataMathura, dataMcLeodganj, dataMeerut, dataMohali, dataMoradabad, dataMumbai, dataMussoorie, dataMuzaffarpur, dataNainital, dataPatna, dataPune, dataRaipur, dataRajkot, dataRamachandrapuram, dataRameshwaram, dataRanchi, dataRishikesh, dataRoorkee, dataShimla, dataSrinagar, dataSurat, dataUdaipur, dataVaranasi, dataVisakhapatnam, dataVrindavan } from "./Pages/SourceToDestination";
 
 const Home = lazy(() => import("./Pages/Home"));
 
@@ -240,19 +240,19 @@ function App() {
           />
           <Route
             path={"/cab/delhi-to-karnal-cabs"}
-            element={<CabListing1 destination={"Karnal, Haryana, India"}/>}
+            element={<CabListing1 destination={"Karnal, Haryana, India"} blogdata={dataKarnal}/>}
           />
           <Route
             path={"/cab/delhi-to-alwar-cabs"}
-            element={<CabListing1 destination={"Alwar, Rajasthan, India"}/>}
+            element={<CabListing1 destination={"Alwar, Rajasthan, India"} blogdata={dataAlwar}/>}
           />
           <Route
             path={"/cab/delhi-to-gwalior-cabs"}
-            element={<CabListing1 destination={"Gwalior, Madhya Pradesh, India"}/>}
+            element={<CabListing1 destination={"Gwalior, Madhya Pradesh, India"} blogdata={dataGwalior}/>}
           />
           <Route
             path={"/cab/delhi-to-jodhpur-cabs"}
-            element={<CabListing1 destination={"Jodhpur, Rajasthan, India"}/>}
+            element={<CabListing1 destination={"Jodhpur, Rajasthan, India"} blogdata={dataJodhpur}/>}
           />
 
            {/* 50 locations */}
@@ -339,43 +339,43 @@ function App() {
           />
           <Route
             path={"/cab/delhi-to-chhindwara-cabs"}
-            element={<CabListing1 destination={"Chhindwara, Madhya Pradesh, India"}/>}
+            element={<CabListing1 destination={"Chhindwara, Madhya Pradesh, India"} blogdata={dataChhindwara}/>}
           />
           <Route
             path={"/cab/delhi-to-muzaffarpur-cabs"}
-            element={<CabListing1 destination={"Muzaffarpur, Bihar, India"}/>}
+            element={<CabListing1 destination={"Muzaffarpur, Bihar, India"} blogdata={dataMuzaffarpur}/>}
           />
           <Route
             path={"/cab/delhi-to-ranchi-cabs"}
-            element={<CabListing1 destination={"Ranchi, Jharkhand, India"}/>}
+            element={<CabListing1 destination={"Ranchi, Jharkhand, India"} blogdata={dataRanchi}/>}
           />
           <Route
             path={"/cab/delhi-to-bihar-sharif-cabs"}
-            element={<CabListing1 destination={"Bihar Sharif, Bihar, India"}/>}
+            element={<CabListing1 destination={"Bihar Sharif, Bihar, India"} blogdata={dataBiharSharif}/>}
           />
           <Route
             path={"/cab/delhi-to-raipur-cabs"}
-            element={<CabListing1 destination={"Raipur, Chhattisgarh, India"}/>}
+            element={<CabListing1 destination={"Raipur, Chhattisgarh, India"} blogdata={dataRaipur}/>}
           />
           <Route
             path={"/cab/delhi-to-akola-cabs"}
-            element={<CabListing1 destination={"Akola, Maharashtra, India"}/>}
+            element={<CabListing1 destination={"Akola, Maharashtra, India"} blogdata={dataAkola}/>}
           />
           <Route
             path={"/cab/delhi-to-ramachandrapuram-cabs"}
-            element={<CabListing1 destination={"Ramachandrapuram, Andhra Pradesh, India"}/>}
+            element={<CabListing1 destination={"Ramachandrapuram, Andhra Pradesh, India"} blogdata={dataRamachandrapuram}/>}
           />
           <Route
             path={"/cab/delhi-to-katraj-cabs"}
-            element={<CabListing1 destination={"Katraj, Pune, Maharashtra, India"}/>}
+            element={<CabListing1 destination={"Katraj, Pune, Maharashtra, India"} blogdata={dataKatraj}/>}
           />
           <Route
             path={"/cab/delhi-to-rajkot-cabs"}
-            element={<CabListing1 destination={"Rajkot, Gujarat, India"}/>}
+            element={<CabListing1 destination={"Rajkot, Gujarat, India"} blogdata={dataRajkot}/>}
           />
           <Route
             path={"/cab/delhi-to-surat-cabs"}
-            element={<CabListing1 destination={"Surat, Gujarat, India"}/>}
+            element={<CabListing1 destination={"Surat, Gujarat, India"} blogdata={dataSurat}/>}
           />
           <Route
             path={"/cab/delhi-to-jabalpur-cabs"}
