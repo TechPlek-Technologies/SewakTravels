@@ -12,7 +12,7 @@ const useAutocomplete = (inputRef, onChangeCallback) => {
       const options = {
         componentRestrictions: { country: "in" },
         fields: ["address_components", "geometry", "icon", "name"],
-        types: ["geocode"],
+        types: ["geocode","establishment"],
       };
 
       const autocomplete = new window.google.maps.places.Autocomplete(
