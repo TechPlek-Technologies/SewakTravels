@@ -8,7 +8,7 @@ export const SendMail = async (
     try {
   
       const response = await axios.post(
-        "http://localhost:5000/sms",
+        "https://new.sewaktravels.com/sms",
         {
           toClient:mailTo,
             text:mailText,
