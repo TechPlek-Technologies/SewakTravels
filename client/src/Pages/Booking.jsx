@@ -53,7 +53,7 @@ const Booking = ({desiredcar}) => {
       name: "Sewak Travels",
       description: "Purchase Description",
       image: "/assets/img/logo.png",
-      handler: function (response) {
+      handler: async function (response) {
         sendSmsWithDynamicSchedule()
 
         const paymentsData = {
@@ -85,12 +85,13 @@ const Booking = ({desiredcar}) => {
           invoice_no:response.razorpay_payment_id,
           pick_type:journeyData.selectedValue,
           status:"success",
+          send_email:1,
           base_price:totalFare,
           car_price:params.id==="1"?22:params.id==="2"?23.5:28,
         };
       
-        addBillingData(paymentsData);
-        sendMail(paymentsData)
+        await addBillingData(paymentsData);
+        await sendMail(paymentsData)
 
         window.location.href = `/payment/${response.razorpay_payment_id}`
       },
