@@ -8,7 +8,7 @@ const AboutDetails = () => {
             <span>new</span> offer...
           </h5>
           <h3>call us to Book a taxi</h3>
-          <h2>(+91)837-782-8828</h2>
+          <h2>+91-8377-828-828</h2>
           <p>The operator will call back immediately and report the cost of travel.. </p>
           <Link to="contact" className="btn btn-curve btn-lower">
             {"Discover"}

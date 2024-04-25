@@ -1,15 +1,19 @@
 const express = require('express');
 const mysql = require('mysql2/promise');
-
+const nodemailer = require("nodemailer");
+const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
+
+app.use(cors());
+app.use(express.json());
 
 // Using pool instead of createConnection
 const pool = mysql.createPool({
   host: 'localhost',
-  user: 'sewaznyn_trvls',
-  password: 'A*z$!RNghfvA',
-  database: 'sewaznyn_swtravles',
+  user: 'root',
+  password: 'deepak@123',
+  database: 'eecom',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
@@ -155,6 +159,50 @@ app.post('/payments', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+
+
+app.post('/sms', async (req,res)=>{
+
+  const {
+    toClient,
+    text,
+    html,
+    // attachment
+  } = req.body;
+
+
+  const transporter = nodemailer.createTransport({
+    host: "sewaktravels.com",
+    port: 587,
+    secure: false, // Use `true` for port 465, `false` for all other ports
+    auth: {
+      user: "booking@sewaktravels.com",
+      pass: "gzdeqXSJyMKr8zj",
+    },
+    tls: {
+        rejectUnauthorized: false
+    }
+  });
+
+  async function main() {
+    // send mail with defined transport object
+    const info = await transporter.sendMail({
+      from: '"Sewak Travels 🚕" <booking@sewaktravels.com>', // sender address
+      to: toClient, // list of receivers
+      subject: "Booking Confirmation ✔", // Subject line
+      text: text, // plain text body
+      html: html, // html body
+      // attachments:attachment
+    });
+  
+    console.log("Message sent: %s", info.messageId);
+    res.status(200).json({ message: 'Email sent Successfully' });
+    // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
+  }
+  
+  main().catch(console.error);
+
+})
 
 
 
