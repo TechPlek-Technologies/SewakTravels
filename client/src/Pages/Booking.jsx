@@ -33,7 +33,8 @@ const Booking = ({desiredcar}) => {
 
   const [payableAmount,setpayableAmount]= useState(Math.ceil((totalFare * 15) / 100))
 
-
+  const [night,setNight]=useState(0);
+  const [driverAllowance,setDriverAllowance]=useState(0);
 
   const firstNameRef = useRef(null);
   const lastNameRef = useRef(null);
@@ -156,8 +157,8 @@ const Booking = ({desiredcar}) => {
       const mailText="Demo Text Area";
       const currentDate=getFormattedDate();
       const formattedDate = paymentsData.pickup_date.toDateString() + " " + paymentsData.pickup_date.getFullYear();
-      console.log("paymentsData.pickup_date",formattedDate)
-      const mailHtml=HtmlEmailTemplate(paymentsData.billing_name,paymentsData.billing_mobile,paymentsData.trip_type,formattedDate,paymentsData.pickup_time,paymentsData.pickup_location,paymentsData.drop_location,paymentsData.car_type,paymentsData.total,paymentsData.paid_amount,currentDate,paymentsData.transaction_id);
+      
+      const mailHtml=HtmlEmailTemplate(paymentsData.billing_name,paymentsData.billing_mobile,paymentsData.trip_type,formattedDate,paymentsData.pickup_time,paymentsData.pickup_location,paymentsData.drop_location,paymentsData.car_type,paymentsData.total,paymentsData.paid_amount,currentDate,paymentsData.transaction_id,paymentsData.billing_email,paymentsData.night_charges,paymentsData.driver_allowance,paymentsData.car_price);
 
   
       // Use the authToken to send SMS
@@ -170,6 +171,49 @@ const Booking = ({desiredcar}) => {
   
 
   // Call the function to send SMS with dynamic schedule
+
+  const handleButtonClick1 = () => {
+    // Validation logic for GuestDetailPage
+    const paymentsData = {
+      transaction_id:"razorpay_payment_id",
+      billing_name:firstNameRef.current.value+" "+lastNameRef.current.value,
+      billing_email:emailRef.current.value,
+      billing_mobile:contactRef.current.value,
+      mode_of_payment:"RazaorPay",
+      cab_type:journeyData.selectedValue,
+      min_amount:payableAmount,
+      trip_type:journeyData.selectedValue,
+      pickup_location:journeyData.source,
+      drop_location:journeyData.destination,
+      pickup_date:journeyData.startDate,
+      pickup_time:journeyData.startTime,
+      return_date:journeyData.returnDate,
+      return_time:journeyData.returnTime,
+      distance:journeyData.travelDistance,
+      duration:journeyData.travelTime,
+      driver_allowance: paymentData.driverAllowance,
+      night_charges:paymentData.nightCharges,
+      car_type:params==="1"?"Sedan":params==="2"?"SUV":"prime SUV",
+      discount:paymentData?.discount||null,
+      sub_total:totalFare,
+      order_comments:requestRef.current.value||"",
+      total:totalFare,
+      min_paid_amount:payableAmount,
+      paid_amount:payableAmount,
+      invoice_no:"razorpay_payment_id",
+      pick_type:journeyData.selectedValue,
+      status:"success",
+      base_price:totalFare,
+      car_price:params==="1"?22:params==="2"?23.5:28,
+    };
+    
+    // Function call
+    sendMail(paymentsData);
+
+  };
+
+
+
 
   const handleButtonClick = () => {
     // Validation logic for GuestDetailPage
@@ -235,10 +279,14 @@ const Booking = ({desiredcar}) => {
           <Summary
           paymentData={paymentData}
             isValid={isValid}
-            handleButtonClick={handleButtonClick}
+            handleButtonClick={handleButtonClick1}
             desiredcar={desiredcar}
             payableAmount={payableAmount}
             setpayableAmount={setpayableAmount}
+            setDriverAllowance={setDriverAllowance}
+            driverAllowance={driverAllowance}
+            setNight={setNight}
+            night={night}
           />
         </div>
       </div>
