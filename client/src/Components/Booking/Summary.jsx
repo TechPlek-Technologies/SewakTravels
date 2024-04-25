@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Img from "../Common/Img";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../../Context/JourneyContext";
 
 const Summary = ({
@@ -9,6 +9,10 @@ const Summary = ({
   payableAmount,
   setpayableAmount,
   paymentData,
+  setDriverAllowance,
+  driverAllowance,
+  setNight,
+  night,
 }) => {
   const { journeyData } = useContext(AppContext);
 
@@ -69,6 +73,25 @@ const Summary = ({
       setpayableAmount(pay);
     }
   };
+
+  useEffect(() => {
+    const driver =
+      journeyData.selectedValue === "Outstation One-Way" ||
+      journeyData.selectedValue === "Airport Transfer"
+        ? 0
+        : paymentData.driverAllowance;
+
+    setDriverAllowance(driver);
+
+    const night =
+      journeyData.selectedValue === "Outstation One-Way"
+        ? 0
+        : journeyData.selectedValue === "Airport Transfer"
+        ? 0
+        : paymentData.nightCharges;
+
+    setNight(night);
+  }, []);
 
   return (
     <div className="col-lg-5 booking-order">
@@ -146,19 +169,17 @@ const Summary = ({
                 </tr>
                 <tr>
                   <td>Driver Charges</td>
-                  <td>+ ₹{journeyData.selectedValue === "Outstation One-Way"
-                      ? 0
-                      : journeyData.selectedValue === "Airport Transfer"
-                      ? 0
-                      :paymentData.driverAllowance}</td>
+                  <td>
+                    + ₹
+                    {driverAllowance}
+                  </td>
                 </tr>
                 <tr>
                   <td>Night Charges</td>
-                  <td>+ ₹{journeyData.selectedValue === "Outstation One-Way"
-                      ? 0
-                      : journeyData.selectedValue === "Airport Transfer"
-                      ? 0
-                      :paymentData.nightCharges}</td>
+                  <td>
+                    + ₹
+                    {night}
+                  </td>
                 </tr>
               </tbody>
             </table>

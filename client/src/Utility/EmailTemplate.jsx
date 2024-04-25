@@ -1,4 +1,21 @@
-export const HtmlEmailTemplate = (billing_name,billing_mobile,trip_type,pickup_date,pickup_time,pickup_location,drop_location,car_type,total,paid_amount,currentDate,transaction_id) => {
+export const HtmlEmailTemplate = (
+  billing_name,
+  billing_mobile,
+  trip_type,
+  pickup_date,
+  pickup_time,
+  pickup_location,
+  drop_location,
+  car_type,
+  total,
+  paid_amount,
+  currentDate,
+  transaction_id,
+  billing_email,
+  night_charges,
+  driver_allowance,
+  car_price
+) => {
   return `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
    <head>
@@ -68,7 +85,7 @@ export const HtmlEmailTemplate = (billing_name,billing_mobile,trip_type,pickup_d
                     <td class="es-m-p0r" valign="top" align="center" style="padding:0;Margin:0;width:560px">
                      <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                        <tr>
-                        <td align="center" style="padding:0;Margin:0;padding-bottom:10px;font-size:0px"><a target="_blank" href="https://sewaktravels.com/" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#666666;font-size:14px"><img src="https://sewaktravels.com/assets/img/logo.png" alt="Logo" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="200" title="Logo"></a></td>
+                        <td align="center" style="padding:0;Margin:0;padding-bottom:10px;font-size:0px"><a target="_blank" href="https://sewaktravels.com/" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#666666;font-size:14px"><img src="https://sewaktravels.com/assets/img/logo.png" alt="SEWAK TRAVELS PRIVATED LIMITED" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="200" title="Logo"></a></td>
                        </tr>
                      </table></td>
                    </tr>
@@ -136,11 +153,12 @@ export const HtmlEmailTemplate = (billing_name,billing_mobile,trip_type,pickup_d
                         <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">Contact:&nbsp;<strong>${billing_mobile}</strong></p></td>
                        </tr>
                        <tr>
-                        <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">Trip Type:&nbsp;<strong>${trip_type}</strong></p></td>
+                        <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">Email:&nbsp;<strong>${billing_email}</strong></p></td>
                        </tr>
                        <tr>
-                        <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">Journey Date &amp; Time:&nbsp;<strong>${pickup_date} ${pickup_time} </strong></p></td>
+                        <td align="left" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">Car Type:&nbsp;<strong>${car_type}</strong></p></td>
                        </tr>
+                    
                      </table></td>
                    </tr>
                  </table><!--[if mso]></td><td style="width:20px"></td><td style="width:270px" valign="top"><![endif]-->
@@ -148,6 +166,12 @@ export const HtmlEmailTemplate = (billing_name,billing_mobile,trip_type,pickup_d
                    <tr>
                     <td align="left" style="padding:0;Margin:0;width:270px">
                      <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                     
+                     <tr>
+                     <td align="right" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">Trip Type:&nbsp;<strong>${trip_type}</strong></p></td>
+                    </tr>
+                    <tr>
+                    
                        <tr>
                         <td align="right" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">Pickup Location:&nbsp;<strong>${pickup_location}</strong></p></td>
                        </tr>
@@ -155,6 +179,10 @@ export const HtmlEmailTemplate = (billing_name,billing_mobile,trip_type,pickup_d
                        <tr>
                         <td align="right" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">Drop Location:&nbsp;<strong>${drop_location}</strong></p></td>
                        </tr>
+                      
+                       <tr>
+                       <td align="right" style="padding:0;Margin:0"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">Journey Date &amp; Time:&nbsp;<strong>${pickup_date} ${pickup_time} </strong></p></td>
+                      </tr>
                       
                      </table></td>
                    </tr>
@@ -167,7 +195,7 @@ export const HtmlEmailTemplate = (billing_name,billing_mobile,trip_type,pickup_d
                     <td class="es-m-p0r" align="center" style="padding:0;Margin:0;width:560px">
                      <table cellpadding="0" cellspacing="0" width="100%" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px;border-top:2px solid #efefef;border-bottom:2px solid #efefef" role="presentation">
                        <tr>
-                        <td align="right" class="es-m-txt-r" style="padding:0;Margin:0;padding-top:10px;padding-bottom:20px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">Vehicle Type:&nbsp;<strong>${car_type}</strong><br>Total Amout:&nbsp;<strong>${total}</strong><br>Paid Amount:&nbsp;<strong>${paid_amount}</strong><br>Total Remaining:&nbsp;<strong>${total-paid_amount}</strong></p></td>
+                        <td align="right" class="es-m-txt-r" style="padding:0;Margin:0;padding-top:10px;padding-bottom:20px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333;font-size:14px">Total Amout:&nbsp;<strong>${total}</strong><br>Paid Amount:&nbsp;<strong>${paid_amount}</strong><br>Per KM Charge:&nbsp;<strong>${car_price}</strong><br>Night Charges:&nbsp;<strong>${night_charges}</strong><br>Driver Allownces:&nbsp;<strong>${driver_allowance}</strong><br>Total Remaining:&nbsp;<strong>${total - paid_amount}</strong></p></td>
                        </tr>
                      </table></td>
                    </tr>
