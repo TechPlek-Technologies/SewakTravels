@@ -7,12 +7,12 @@ import { getAuthToken, sendSMS } from "../Utility/SendSMS";
 import { PaymentContext } from "../Context/PaymentContext";
 import { useParams } from "react-router-dom";
 import { addBillingData } from "../Utility/ca_admin";
-
+import { SendMail } from "../Utility/SendMail";
+import { HtmlEmailTemplate } from "../Utility/EmailTemplate";
 
 const Booking = ({desiredcar}) => {
   const { journeyData } = useContext(AppContext);
   const {paymentData,setPaymentData}=useContext(PaymentContext);
-  console.log("data",journeyData,paymentData)
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
@@ -44,9 +44,6 @@ const Booking = ({desiredcar}) => {
   const [isValid, setIsValid] = useState(false);
 
   const params=useParams();
-  console.log(params)
-  
-
 
   async function displayRazorpay() {
     const options = {
@@ -92,6 +89,7 @@ const Booking = ({desiredcar}) => {
         };
       
         addBillingData(paymentsData);
+        sendMail(paymentsData)
 
         window.location.href = `/payment/${response.razorpay_payment_id}`
       },
@@ -133,7 +131,44 @@ const Booking = ({desiredcar}) => {
       console.error('Error:', error);
     }
   }
+
+
+  function getFormattedDate() {
+    // Get today's date
+    const today = new Date();
   
+    // Define options for date formatting
+    const options = {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    };
+  
+    // Format the date using toLocaleDateString
+    const formattedDate = today.toLocaleDateString('en-US', options);
+  
+    return formattedDate;
+  }
+  
+  async function sendMail(paymentsData){
+    try {
+      const mailTO=paymentsData.billing_email;
+      const mailText="Demo Text Area";
+      const currentDate=getFormattedDate();
+      const formattedDate = paymentsData.pickup_date.toDateString() + " " + paymentsData.pickup_date.getFullYear();
+      console.log("paymentsData.pickup_date",formattedDate)
+      const mailHtml=HtmlEmailTemplate(paymentsData.billing_name,paymentsData.billing_mobile,paymentsData.trip_type,formattedDate,paymentsData.pickup_time,paymentsData.pickup_location,paymentsData.drop_location,paymentsData.car_type,paymentsData.total,paymentsData.paid_amount,currentDate,paymentsData.transaction_id);
+
+  
+      // Use the authToken to send SMS
+    const response=await SendMail(mailTO,mailText,mailHtml)
+      console.log('Email sent successfully:', response);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+  
+
   // Call the function to send SMS with dynamic schedule
 
   const handleButtonClick = () => {
