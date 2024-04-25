@@ -75,7 +75,7 @@ const Booking = ({desiredcar}) => {
           duration:journeyData.travelTime,
           driver_allowance: paymentData.driverAllowance,
           night_charges:paymentData.nightCharges,
-          car_type:params==="1"?"Sedan":params==="2"?"SUV":"prime SUV",
+          car_type:params.id==="1"?"Sedan":params.id==="2"?"SUV":"prime SUV",
           discount:paymentData?.discount||null,
           sub_total:totalFare,
           order_comments:requestRef.current.value||"",
@@ -86,7 +86,7 @@ const Booking = ({desiredcar}) => {
           pick_type:journeyData.selectedValue,
           status:"success",
           base_price:totalFare,
-          car_price:params==="1"?22:params==="2"?23.5:28,
+          car_price:params.id==="1"?22:params.id==="2"?23.5:28,
         };
       
         addBillingData(paymentsData);
@@ -170,51 +170,6 @@ const Booking = ({desiredcar}) => {
   }
   
 
-  // Call the function to send SMS with dynamic schedule
-
-  const handleButtonClick1 = () => {
-    // Validation logic for GuestDetailPage
-    const paymentsData = {
-      transaction_id:"razorpay_payment_id",
-      billing_name:firstNameRef.current.value+" "+lastNameRef.current.value,
-      billing_email:emailRef.current.value,
-      billing_mobile:contactRef.current.value,
-      mode_of_payment:"RazaorPay",
-      cab_type:journeyData.selectedValue,
-      min_amount:payableAmount,
-      trip_type:journeyData.selectedValue,
-      pickup_location:journeyData.source,
-      drop_location:journeyData.destination,
-      pickup_date:journeyData.startDate,
-      pickup_time:journeyData.startTime,
-      return_date:journeyData.returnDate,
-      return_time:journeyData.returnTime,
-      distance:journeyData.travelDistance,
-      duration:journeyData.travelTime,
-      driver_allowance: paymentData.driverAllowance,
-      night_charges:paymentData.nightCharges,
-      car_type:params==="1"?"Sedan":params==="2"?"SUV":"prime SUV",
-      discount:paymentData?.discount||null,
-      sub_total:totalFare,
-      order_comments:requestRef.current.value||"",
-      total:totalFare,
-      min_paid_amount:payableAmount,
-      paid_amount:payableAmount,
-      invoice_no:"razorpay_payment_id",
-      pick_type:journeyData.selectedValue,
-      status:"success",
-      base_price:totalFare,
-      car_price:params==="1"?22:params==="2"?23.5:28,
-    };
-    
-    // Function call
-    sendMail(paymentsData);
-
-  };
-
-
-
-
   const handleButtonClick = () => {
     // Validation logic for GuestDetailPage
     const missingFields = [
@@ -279,7 +234,7 @@ const Booking = ({desiredcar}) => {
           <Summary
           paymentData={paymentData}
             isValid={isValid}
-            handleButtonClick={handleButtonClick1}
+            handleButtonClick={handleButtonClick}
             desiredcar={desiredcar}
             payableAmount={payableAmount}
             setpayableAmount={setpayableAmount}
