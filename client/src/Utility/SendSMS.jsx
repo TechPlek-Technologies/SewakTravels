@@ -1,17 +1,16 @@
-import axios from "axios";
+import axios from 'axios';
 
-// Function to get authentication token
 export const getAuthToken = async () => {
   try {
-    const response = await fetch(
-      "https://messaging.charteredinfo.com/AuthTokenV1/AuthToken?UserId=sewakcabs@gmail.com&Password=Shriganesh@991152"
+    const response = await axios.get(
+      "https://messaging.charteredinfo.com/AuthTokenV1/AuthToken?UserId=sewakcabs@gmail.com&Password=Shriganesh@991152",
+      { withCredentials: true }
     );
-    const data = await response.json();
+    const data = response.data;
     console.log(data);
     return data.TxnOutcome;
   } catch (error) {
     console.error("Error fetching authentication token:", error);
-    throw error;
   }
 };
 
@@ -34,6 +33,7 @@ export const sendSMS = async (
         templateId: "1007224836469319852",
       },
       {
+        withCredentials: true,
         headers: {
           Authorization: `Bearer ${authToken}`,
           "Content-Type": "application/json",
@@ -45,6 +45,5 @@ export const sendSMS = async (
     return response.data;
   } catch (error) {
     console.error("Error sending SMS:", error);
-    throw error;
   }
 };
