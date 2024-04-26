@@ -4,7 +4,7 @@ import axios from "axios";
 export const getAuthToken = async () => {
   try {
     const response = await fetch(
-      "https://messaging.charteredinfo.com/AuthTokenV1/AuthToken?UserId=sewakcabs%40gmail.com&Password=Shriganesh%40991152"
+      "https://messaging.charteredinfo.com/AuthTokenV1/AuthToken?UserId=sewakcabs@gmail.com&Password=Shriganesh@991152"
     );
     const data = await response.json();
     console.log(data);
@@ -17,35 +17,27 @@ export const getAuthToken = async () => {
 
 // Function to send SMS
 export const sendSMS = async (
-  phoneNumber,
-  text,
-  senderID,
-  dlrUrl,
-  scheduleAt,
-  pe,
-  templateId
+  PhNo,
+  Text,
 ) => {
   try {
     const authToken = await getAuthToken();
 
     const response = await axios.post(
-      "https://businesssms.co.in/proxy/SMSV1/SubmitSMS",
+      "https://messaging.charteredinfo.com/SMSV1/SubmitSMS",
       {
-        phNo: phoneNumber,
-        text,
-        senderID,
-        dlrUrl,
-        scheduleAt,
-        pe,
-        templateId,
+        ID: "sewakcabs@gmail.com",
+        Pwd: "Shriganesh@991152",
+        SenderID:"SEWAKT",
+        PhNo: PhNo,
+        Text: Text,
+        templateId: "1007224836469319852",
       },
       {
         headers: {
           Authorization: `Bearer ${authToken}`,
           "Content-Type": "application/json",
-        },
-        withCredentials: false, // Enable CORS credentials
-        crossDomain: true, // Enable cross-domain requests
+        }
       }
     );
 
