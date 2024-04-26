@@ -6,8 +6,15 @@ const axios= require("axios")
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(cors());
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3000'); // Allow requests from any origin
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  res.header('Access-Control-Allow-Credentials', true);
+  next();
+});
 app.use(express.json());
+
 
 // Using pool instead of createConnection
 const pool = mysql.createPool({
@@ -217,7 +224,7 @@ app.post('/get-auth-token', async (req, res) => {
     res.json(response.data);
   } catch (error) {
     console.error("Error fetching authentication token:", error);
-    res.status(500).json({ error: error });
+    res.status(500).json({ error: "Error fetching authentication token" });
   }
 });
 

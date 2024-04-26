@@ -3,7 +3,7 @@ import axios from 'axios';
 export const getAuthToken = async () => {
   try {
     const response = await axios.post(
-      "http://localhost:5000/get-auth-token",
+      "https://new.sewaktravels.com/get-auth-token",
       {
         UserId:"sewakcabs@gmail.com",
         Password:"Shriganesh@991152"
@@ -24,10 +24,12 @@ export const sendSMS = async (
   Text,
 ) => {
   try {
+
+    console.log(PhNo)
     const authToken = await getAuthToken();
 
     const response = await axios.post(
-      "http://localhost:5000/submit-sms",
+      "https://new.sewaktravels.com/submit-sms",
       {
         ID: "sewakcabs@gmail.com",
         Pwd: "Shriganesh@991152",

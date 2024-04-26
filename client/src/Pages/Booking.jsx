@@ -111,7 +111,7 @@ const Booking = ({ desiredcar }) => {
         Website: https://sewaktravels.com/
         `;
         await sendMail(paymentsData);
-        await sendSMS(paymentData.billing_mobile,text);
+        await sendSMS(paymentsData.billing_mobile,text);
         await addBillingData(paymentsData);
 
         window.location.href = `/payment/${response.razorpay_payment_id}`;
@@ -154,7 +154,7 @@ const Booking = ({ desiredcar }) => {
       const mailTO = paymentsData.billing_email;
       const mailText = "Demo Text Area";
       const currentDate = getFormattedDate();
-      const formattedDate = paymentsData.pickup_date.toDateString();
+      const formattedDate = paymentsData.pickup_date?.toDateString();
 
       const mailHtml = HtmlEmailTemplate(
         paymentsData.billing_name,
@@ -229,8 +229,8 @@ const Booking = ({ desiredcar }) => {
       transaction_id: "response.razorpay_payment_id",
       billing_name:
         firstNameRef.current.value + " " + lastNameRef.current.value,
-      billing_email: emailRef.current.value,
-      billing_mobile: contactRef.current.value,
+      billing_email: "deepaksharmaa.39@gmail.com",
+      billing_mobile: "9993557535",
       mode_of_payment: "RazaorPay",
       cab_type: journeyData.selectedValue,
       min_amount: payableAmount,
@@ -283,7 +283,8 @@ const Booking = ({ desiredcar }) => {
     Website: https://sewaktravels.com/
     `;
 
-    await sendSMS(paymentData.billing_mobile,text);
+    await sendSMS(paymentsData?.billing_mobile,text);
+    await sendMail(paymentsData);
   }
 
   return (
