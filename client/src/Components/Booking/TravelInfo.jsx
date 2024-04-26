@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 
-const TravelInfo = ({isValid,contactRef,emailRef,lastNameRef,firstNameRef,requestRef,desiredcar}) => {
+const TravelInfo = ({isValid,contactRef,emailRef,lastNameRef,firstNameRef,requestRef,desiredcar,handleButtonClick,}) => {
 
   
   return (
@@ -79,6 +80,17 @@ const TravelInfo = ({isValid,contactRef,emailRef,lastNameRef,firstNameRef,reques
         </div>
       </div>
     </form>
+    <div className="submit-btn">
+              <Link>
+                <button
+                  className="btn btn-solid App-link"
+                  type="submit"
+                  onClick={handleButtonClick}
+                >
+                  {"Book Now"}
+                </button>
+              </Link>
+      </div>
   </div>
 </div>
 

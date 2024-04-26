@@ -191,7 +191,7 @@ const Summary = ({
                 </tr>
               </tbody>
             </table>
-            <div className="submit-btn">
+            {/* <div className="submit-btn">
               <Link>
                 <button
                   className="btn btn-solid App-link"
@@ -201,7 +201,7 @@ const Summary = ({
                   {"Book Now"}
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

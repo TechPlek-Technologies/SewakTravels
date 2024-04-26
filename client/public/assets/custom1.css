@@ -1,0 +1,29 @@
+
+@media (max-width: 576px) {
+  .single-section .description-section .description-details .menu-part {
+      margin-bottom: 20px;
+      padding: 35px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .single-section .description-section .description-details .menu-part {
+      margin-bottom: 20px;
+      padding: 25px !important;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .title-1.detail-title h2 {
+      font-size: 20px;
+  }
+}
+
+.page-h1-new{
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+  text-transform: capitalize;
+  color: #ef2f3e;
+}

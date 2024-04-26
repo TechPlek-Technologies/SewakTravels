@@ -15,7 +15,7 @@ const DatePickerComponent = ({startDate,setStartDate,newClass}) => {
       selected={startDate}
       onChange={(date) => setStartDate(new Date(date.setUTCHours(0, 0, 0, 0)))}
       id={`datepicker`}
-      className={`datepicker-main ${newClass? "dateClass":""}`}
+      className={`datepicker-main pickup-date ${newClass? "dateClass":""}`}
       dateFormat="dd MMMM"
       placeholderText="Select Date"
       popperPlacement={isMobile ? 'bottom' : 'left'}
