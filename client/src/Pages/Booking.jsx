@@ -304,7 +304,7 @@ const Booking = ({ desiredcar }) => {
           <Summary
             paymentData={paymentData}
             isValid={isValid}
-            handleButtonClick={handleButtonClick}
+            handleButtonClick={handleButtonClick1}
             desiredcar={desiredcar}
             payableAmount={payableAmount}
             setpayableAmount={setpayableAmount}
