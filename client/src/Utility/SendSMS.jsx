@@ -2,8 +2,12 @@ import axios from 'axios';
 
 export const getAuthToken = async () => {
   try {
-    const response = await axios.get(
-      "https://messaging.charteredinfo.com/AuthTokenV1/AuthToken?UserId=sewakcabs@gmail.com&Password=Shriganesh@991152",
+    const response = await axios.post(
+      "https://messaging.charteredinfo.com/AuthTokenV1/AuthToken",
+      {
+        UserId:"sewakcabs@gmail.com",
+        Password:"Shriganesh@991152"
+    },
       { withCredentials: true }
     );
     const data = response.data;
