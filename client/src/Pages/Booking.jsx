@@ -7,12 +7,12 @@ import { getAuthToken, sendSMS } from "../Utility/SendSMS";
 import { PaymentContext } from "../Context/PaymentContext";
 import { useParams } from "react-router-dom";
 import { addBillingData } from "../Utility/ca_admin";
-
+import { SendMail } from "../Utility/SendMail";
+import { HtmlEmailTemplate } from "../Utility/EmailTemplate";
 
 const Booking = ({desiredcar}) => {
   const { journeyData } = useContext(AppContext);
   const {paymentData,setPaymentData}=useContext(PaymentContext);
-  console.log("data",journeyData,paymentData)
 
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
@@ -33,7 +33,8 @@ const Booking = ({desiredcar}) => {
 
   const [payableAmount,setpayableAmount]= useState(Math.ceil((totalFare * 15) / 100))
 
-
+  const [night,setNight]=useState(0);
+  const [driverAllowance,setDriverAllowance]=useState(0);
 
   const firstNameRef = useRef(null);
   const lastNameRef = useRef(null);
@@ -44,9 +45,6 @@ const Booking = ({desiredcar}) => {
   const [isValid, setIsValid] = useState(false);
 
   const params=useParams();
-  console.log(params)
-  
-
 
   async function displayRazorpay() {
     const options = {
@@ -55,7 +53,7 @@ const Booking = ({desiredcar}) => {
       name: "Sewak Travels",
       description: "Purchase Description",
       image: "/assets/img/logo.png",
-      handler: function (response) {
+      handler: async function (response) {
         sendSmsWithDynamicSchedule()
 
         const paymentsData = {
@@ -75,9 +73,9 @@ const Booking = ({desiredcar}) => {
           return_time:journeyData.returnTime,
           distance:journeyData.travelDistance,
           duration:journeyData.travelTime,
-          driver_allowance: paymentData.driverAllowance,
-          night_charges:paymentData.nightCharges,
-          car_type:params==="1"?"Sedan":params==="2"?"SUV":"prime SUV",
+          driver_allowance: driverAllowance,
+          night_charges:night,
+          car_type:params.id==="1"?"Sedan":params.id==="2"?"SUV":"prime SUV",
           discount:paymentData?.discount||null,
           sub_total:totalFare,
           order_comments:requestRef.current.value||"",
@@ -87,11 +85,13 @@ const Booking = ({desiredcar}) => {
           invoice_no:response.razorpay_payment_id,
           pick_type:journeyData.selectedValue,
           status:"success",
+          send_email:1,
           base_price:totalFare,
-          car_price:params==="1"?22:params==="2"?23.5:28,
+          car_price:params.id==="1"?22:params.id==="2"?23.5:28,
         };
       
-        addBillingData(paymentsData);
+        await addBillingData(paymentsData);
+        await sendMail(paymentsData)
 
         window.location.href = `/payment/${response.razorpay_payment_id}`
       },
@@ -133,8 +133,43 @@ const Booking = ({desiredcar}) => {
       console.error('Error:', error);
     }
   }
+
+
+  function getFormattedDate() {
+    // Get today's date
+    const today = new Date();
   
-  // Call the function to send SMS with dynamic schedule
+    // Define options for date formatting
+    const options = {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric'
+    };
+  
+    // Format the date using toLocaleDateString
+    const formattedDate = today.toLocaleDateString('en-US', options);
+  
+    return formattedDate;
+  }
+  
+  async function sendMail(paymentsData){
+    try {
+      const mailTO=paymentsData.billing_email;
+      const mailText="Demo Text Area";
+      const currentDate=getFormattedDate();
+      const formattedDate = paymentsData.pickup_date.toDateString() + " " + paymentsData.pickup_date.getFullYear();
+      
+      const mailHtml=HtmlEmailTemplate(paymentsData.billing_name,paymentsData.billing_mobile,paymentsData.trip_type,formattedDate,paymentsData.pickup_time,paymentsData.pickup_location,paymentsData.drop_location,paymentsData.car_type,paymentsData.total,paymentsData.paid_amount,currentDate,paymentsData.transaction_id,paymentsData.billing_email,paymentsData.night_charges,paymentsData.driver_allowance,paymentsData.car_price);
+
+  
+      // Use the authToken to send SMS
+    const response=await SendMail(mailTO,mailText,mailHtml)
+      console.log('Email sent successfully:', response);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+  
 
   const handleButtonClick = () => {
     // Validation logic for GuestDetailPage
@@ -204,6 +239,10 @@ const Booking = ({desiredcar}) => {
             desiredcar={desiredcar}
             payableAmount={payableAmount}
             setpayableAmount={setpayableAmount}
+            setDriverAllowance={setDriverAllowance}
+            driverAllowance={driverAllowance}
+            setNight={setNight}
+            night={night}
           />
         </div>
       </div>
