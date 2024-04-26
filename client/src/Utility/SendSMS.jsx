@@ -3,7 +3,7 @@ import axios from 'axios';
 export const getAuthToken = async () => {
   try {
     const response = await axios.post(
-      "https://messaging.charteredinfo.com/AuthTokenV1/AuthToken",
+      "http://localhost:5000/get-auth-token",
       {
         UserId:"sewakcabs@gmail.com",
         Password:"Shriganesh@991152"
@@ -27,22 +27,14 @@ export const sendSMS = async (
     const authToken = await getAuthToken();
 
     const response = await axios.post(
-      "https://messaging.charteredinfo.com/SMSV1/SubmitSMS",
+      "http://localhost:5000/submit-sms",
       {
         ID: "sewakcabs@gmail.com",
         Pwd: "Shriganesh@991152",
-        SenderID:"SEWAKT",
         PhNo: PhNo,
         Text: Text,
-        templateId: "1007224836469319852",
+        authToken:authToken
       },
-      {
-        withCredentials: true,
-        headers: {
-          Authorization: `Bearer ${authToken}`,
-          "Content-Type": "application/json",
-        }
-      }
     );
 
     console.log("SMS sent successfully:", response.data);

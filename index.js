@@ -2,6 +2,7 @@ const express = require('express');
 const mysql = require('mysql2/promise');
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+const axios= require("axios")
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -161,7 +162,7 @@ app.post('/payments', async (req, res) => {
 });
 
 
-app.post('/sms', async (req,res)=>{
+app.post('/email', async (req,res)=>{
 
   const {
     toClient,
@@ -204,6 +205,59 @@ app.post('/sms', async (req,res)=>{
 
 })
 
+app.post('/get-auth-token', async (req, res) => {
+  try {
+    const response = await axios.post(
+      "https://messaging.charteredinfo.com/AuthTokenV1/AuthToken",
+      {
+        UserId: "sewakcabs@gmail.com",
+        Password: "Shriganesh@991152"
+      }
+    );
+    res.json(response.data);
+  } catch (error) {
+    console.error("Error fetching authentication token:", error);
+    res.status(500).json({ error: error });
+  }
+});
+
+
+app.post('/submit-sms', async (req, res) => {
+  try {
+    const {
+      
+      PhNo,
+      Text,
+      authToken
+
+      // attachment
+    } = req.body;
+  
+
+    const response = await axios.post(
+      "https://messaging.charteredinfo.com/SMSV1/SubmitSMS",
+      {
+        ID: "sewakcabs@gmail.com",
+        Pwd: "Shriganesh@991152",
+        SenderID:"SEWAKT",
+        PhNo: PhNo,
+        Text: Text,
+        templateId: "1007224836469319852",
+      },
+      {
+        withCredentials: true,
+        headers: {
+          Authorization: `Bearer ${authToken}`,
+          "Content-Type": "application/json",
+        }
+      }
+    );
+    res.json(response.data);
+  } catch (error) {
+    console.error("Error fetching authentication token:", error);
+    res.status(500).json({ error: error });
+  }
+});
 
 
 // Start the Express server
