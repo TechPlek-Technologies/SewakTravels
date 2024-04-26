@@ -19,7 +19,7 @@ export const SendMail = async (
       console.log("Mail sent successfully:", response.data);
       return response.data;
     } catch (error) {
-      console.error("Error sending SMS:", error);
+      console.error("Error sending Email:", error);
       throw error;
     }
   };
