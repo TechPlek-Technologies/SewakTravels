@@ -8,7 +8,7 @@ export const SendMail = async (
     try {
   
       const response = await axios.post(
-        "https://new.sewaktravels.com/sms",
+        "https://new.sewaktravels.com/email",
         {
           toClient:mailTo,
             text:mailText,
@@ -19,8 +19,9 @@ export const SendMail = async (
       console.log("Mail sent successfully:", response.data);
       return response.data;
     } catch (error) {
-      console.error("Error sending SMS:", error);
+      console.error("Error sending Email:", error);
       throw error;
     }
   };
+  
   

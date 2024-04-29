@@ -1,58 +1,47 @@
-import axios from "axios";
+import axios from 'axios';
 
-// Function to get authentication token
 export const getAuthToken = async () => {
   try {
-    const response = await fetch(
-      "https://messaging.charteredinfo.com/AuthTokenV1/AuthToken?UserId=sewakcabs%40gmail.com&Password=Shriganesh%40991152"
+    const response = await axios.post(
+      "https://new.sewaktravels.com/get-auth-token",
+      {
+        UserId:"sewakcabs@gmail.com",
+        Password:"Shriganesh@991152"
+    },
+      { withCredentials: true }
     );
-    const data = await response.json();
+    const data = response.data;
     console.log(data);
     return data.TxnOutcome;
   } catch (error) {
     console.error("Error fetching authentication token:", error);
-    throw error;
   }
 };
 
 // Function to send SMS
 export const sendSMS = async (
-  phoneNumber,
-  text,
-  senderID,
-  dlrUrl,
-  scheduleAt,
-  pe,
-  templateId
+  PhNo,
+  Text,
 ) => {
   try {
+
+    console.log(PhNo)
     const authToken = await getAuthToken();
 
     const response = await axios.post(
-      "https://businesssms.co.in/proxy/SMSV1/SubmitSMS",
+      "https://new.sewaktravels.com/submit-sms",
       {
-        phNo: phoneNumber,
-        text,
-        senderID,
-        dlrUrl,
-        scheduleAt,
-        pe,
-        templateId,
+        ID: "sewakcabs@gmail.com",
+        Pwd: "Shriganesh@991152",
+        PhNo: PhNo,
+        Text: Text,
+        authToken:authToken
       },
-      {
-        headers: {
-          Authorization: `Bearer ${authToken}`,
-          "Content-Type": "application/json",
-        },
-        withCredentials: false, // Enable CORS credentials
-        crossDomain: true, // Enable cross-domain requests
-      }
     );
 
     console.log("SMS sent successfully:", response.data);
     return response.data;
   } catch (error) {
     console.error("Error sending SMS:", error);
-    throw error;
   }
 };
