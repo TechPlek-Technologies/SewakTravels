@@ -38,7 +38,7 @@ const DelhiToDestination = ({ data }) => {
                                     </div>
                                 </div>
                                 <div class="desc-box" >
-                                    <img className="img-fluid" src={data.img} alt="destinationn"/>
+                                    <img className="img-fluid" src={data?.img} alt="destination"/>
                                 </div>
                                 <div class="desc-box mt-md-4">
 

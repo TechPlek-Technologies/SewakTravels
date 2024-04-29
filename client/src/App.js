@@ -1714,12 +1714,12 @@ function App() {
           />
 
           <Route
-            path={"/cab/pune-to-nashik-cabs"}
+            path={"/cab/pune-to-nasik-cabs"}
             element={
               <CabListing1
                 selectedValue={"Outstation One-Way"}
                 source="Pune, Maharashtra, India"
-                destination={"Nashik, Maharashtra, India"}
+                destination={"Nasik, Maharashtra, India"}
               />
             }
           />
@@ -1749,12 +1749,12 @@ function App() {
           />
 
           <Route
-            path={"/cab/mumbai-to-nashik-cabs"}
+            path={"/cab/mumbai-to-nasik-cabs"}
             element={
               <CabListing1
                 selectedValue={"Outstation One-Way"}
                 source="Mumbai, Maharashtra, India"
-                destination={"Nashik, Maharashtra, India"}
+                destination={"Nasik, Maharashtra, India"}
               />
             }
           />
