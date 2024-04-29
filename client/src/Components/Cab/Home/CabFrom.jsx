@@ -36,23 +36,23 @@ const CabFrom = ({ type }) => {
       links: [
         {
           name: "New Delhi",
-          src: "/",
+          src: "/cab/agra-to-delhi-cabs",
         },
         {
           name: "Gurgaon",
-          src: "/",
+          src: "/cab/agra-to-gurgaon-cabs",
         },
         {
           name: "Noida",
-          src: "/",
+          src: "/cab/agra-to-noida-cabs",
         },
         {
           name: "Faridabad",
-          src: "/",
+          src: "/cab/agra-to-faridabad-cabs",
         },
         {
           name: "Ghaziabad",
-          src: "/",
+          src: "/cab/agra-to-ghaziabad-cabs",
         },
       ],
     },
@@ -63,23 +63,23 @@ const CabFrom = ({ type }) => {
       links: [
         {
           name: "New Delhi",
-          src: "/",
+          src: "/cab/jaipur-to-delhi-cabs",
         },
         {
           name: "Gurgaon",
-          src: "/",
+          src: "/cab/jaipur-to-gurgaon-cabs",
         },
         {
           name: "Noida",
-          src: "/",
+          src: "/cab/jaipur-to-noida-cabs",
         },
         {
           name: "Faridabad",
-          src: "/",
+          src: "/cab/jaipur-to-faridabad-cabs",
         },
         {
           name: "Ghaziabad",
-          src: "/",
+          src: "/cab/jaipur-to-ghaziabad-cabs",
         },
       ],
     },
@@ -90,23 +90,23 @@ const CabFrom = ({ type }) => {
       links: [
         {
           name: "Mumbai",
-          src: "/",
+          src: "/cab/pune-to-mumbai-cabs",
         },
         {
           name: "Shirdi",
-          src: "/",
+          src: "/cab/pune-to-shirdi-cabs",
         },
         {
           name: "Mahabaleshwar",
-          src: "/",
+          src: "/cab/pune-to-mahabaleshwar-cabs",
         },
         {
           name: "Nasik",
-          src: "/",
+          src: "/cab/pune-to-nashik-cabs",
         },
         {
           name: "Aurangabad",
-          src: "/",
+          src: "/cab/pune-to-aurangabad-cabs",
         },
       ],
     },
@@ -117,23 +117,23 @@ const CabFrom = ({ type }) => {
       links: [
         {
           name: "Pune",
-          src: "/",
+          src: "/cab/mumbai-to-pune-cabs",
         },
         {
           name: "Nasik",
-          src: "/",
+          src: "/cab/mumbai-to-nashik-cabs",
         },
         {
           name: "Shirdi",
-          src: "/",
+          src: "/cab/mumbai-to-shirdi-cabs",
         },
         {
           name: "Lonavala",
-          src: "/",
+          src: "/cab/mumbai-to-lonavala-cabs",
         },
         {
           name: "Mahabaleshwar",
-          src: "/",
+          src: "/cab/mumbai-to-mahabaleshwar-cabs",
         },
       ],
     },
@@ -144,23 +144,23 @@ const CabFrom = ({ type }) => {
       links: [
         {
           name: "New Delhi",
-          src: "/",
+          src: "/cab/chandigarh-to-delhi-cabs",
         },
         {
           name: "Shimla",
-          src: "/",
+          src: "/cab/chandigarh-to-shimla-cabs",
         },
         {
           name: "Manali",
-          src: "/",
+          src: "/cab/chandigarh-to-manali-cabs",
         },
         {
           name: "Gurgaon",
-          src: "/",
+          src: "/cab/chandigarh-to-gurgaon-cabs",
         },
         {
           name: "Noida",
-          src: "/",
+          src: "/cab/chandigarh-to-noida-cabs",
         },
       ],
     },
@@ -171,19 +171,19 @@ const CabFrom = ({ type }) => {
       links: [
         {
           name: "Ooty",
-          src: "/",
+          src: "/cab/bangalore-to-ooty-cabs",
         },
         {
           name: "Madikeri",
-          src: "/",
+          src: "/cab/bangalore-to-madikeri-cabs",
         },
         {
           name: "Coorg",
-          src: "/",
+          src: "/cab/bangalore-to-coorg-cabs",
         },
         {
           name: "Vellore",
-          src: "/",
+          src: "/cab/bangalore-to-vellore-cabs",
         },
       ],
     },
@@ -194,19 +194,19 @@ const CabFrom = ({ type }) => {
       links: [
         {
           name: "Vellore",
-          src: "/",
+          src: "/cab/chennai-to-vellore-cabs",
         },
         {
           name: "Pondicherry",
-          src: "/",
+          src: "/cab/chennai-to-pondicherry-cabs",
         },
         {
           name: "Bangalore",
-          src: "/",
+          src: "/cab/chennai-to-bangalore-cabs",
         },
         {
           name: "Tirupati",
-          src: "/",
+          src: "/cab/chennai-to-tirupati-cabs",
         },
       ],
     },
@@ -217,23 +217,23 @@ const CabFrom = ({ type }) => {
       links: [
         {
           name: "Mussoorie",
-          src: "/",
+          src: "/cab/dehradun-to-mussoorie-cabs",
         },
         {
           name: "New Delhi",
-          src: "/",
+          src: "/cab/dehradun-to-delhi-cabs",
         },
         {
           name: "Gurgaon",
-          src: "/",
+          src: "/cab/dehradun-to-gurgaon-cabs",
         },
         {
           name: "Noida",
-          src: "/",
+          src: "/cab/dehradun-to-noida-cabs",
         },
         {
           name: "Faridabad",
-          src: "/",
+          src: "/cab/dehradun-to-faridabad-cabs",
         },
       ],
     },
