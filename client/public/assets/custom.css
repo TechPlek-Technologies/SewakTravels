@@ -458,7 +458,7 @@ li.nav-item {
 
 
 .menu-box{
-  width: 400px;
+  /* width: 400px; */
 
 }
 
@@ -490,7 +490,7 @@ li.nav-item {
     
   }
   video{
-    display: none;
+    /* display: none; */
   }
   .bg-transparent {
   
@@ -501,7 +501,7 @@ li.nav-item {
     margin-top: 50px;
   }
   .home_section .home {
-    height: 90vh !important;
+    /* height: 90vh !important; */
     /* position: fixed; */
 
   }
@@ -544,7 +544,7 @@ li.nav-item {
     text-align: center !important;
   }
   .react-datepicker__input-container > input {
-    text-align: center !important;
+    /* text-align: center !important; */
   }
 
   .journeyType {
@@ -580,7 +580,7 @@ li.nav-item {
  
   .home_section .home {
     /* height: 78vh !important; */
-    height: 99vh !important;
+    /* height: 99vh !important; */
   }
 }
 
@@ -1255,6 +1255,7 @@ color: #000;
   padding-left: 5px;
   padding-top: -15px;
   display:flex;
+  margin-top: 4px;
 }
 
 
@@ -1389,4 +1390,38 @@ display: block;
     font-size: 32px;
     text-transform: capitalize;
     color: #ef2f3e;
+}
+
+@media (max-width:360px){
+  .home_section .home.home-mobile{
+    height:92vh !important
+  }
+  .flight-search .responsive-detail .destination span{
+    font-size: 13px;
+  }
+  .flight-search .responsive-detail .modify-search .btn{
+    font-size: 13px;
+  }
+}
+
+@media (max-width : 767px){
+  .home_section .home .home-content.mix-layout > div.bg-transparent{
+    opacity: 0.90;
+  }
+  .journeyType{
+    border-radius: 0rem;
+  }
+}
+
+.modify-search{
+  margin-bottom: 10px;
+}
+
+@media (max-width:440px){
+  .modify-select{
+    font-size: 12px;
+  }
+  .pickup-date{
+    text-align: center !important;
+  }
 }

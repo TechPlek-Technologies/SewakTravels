@@ -67,10 +67,10 @@ const CabSearch = ({
         <form className="row m-0">
           <div className="col">
             <div className="form-group">
-              <label className="font-xs-white">Trip Type</label>
+              <label>Trip Type</label>
 
               <select
-                className="form-control open-select"
+                className="form-control open-select modify-select"
                 onChange={handleTripTypeChange}
                 value={selectedValue}
                 style={{ width: "180px" }}
@@ -90,7 +90,7 @@ const CabSearch = ({
           </div>
           <div className="col">
             <div className="form-group">
-              <label className="font-xs-white">Source</label>
+              <label>Source</label>
               <input
                 type="text"
                 className="form-control open-select"
@@ -109,7 +109,7 @@ const CabSearch = ({
           </div>
           {selectedValue==="Hourly Rentals"? <div className="col">
             <div className="form-group">
-              <label className="font-xs-white">Package</label>
+              <label>Package</label>
 
               <select
                 className="form-control open-select"
@@ -129,7 +129,7 @@ const CabSearch = ({
             </div>
           </div>:<div className="col">
             <div className="form-group">
-              <label className="font-xs-white">Destination</label>
+              <label>Destination</label>
               <input
                 type="text"
                 className="form-control open-select"
@@ -146,7 +146,7 @@ const CabSearch = ({
           </div>}
           <div className="col">
             <div className="form-group">
-              <label className="font-xs-white">Pickup Date</label>
+              <label>Pickup Date</label>
               <div className="input-group customdate">
                 <DatePickerComponent
                   startDate={startDate}
@@ -160,7 +160,7 @@ const CabSearch = ({
           {selectedValue === "Outstation Round-Trip" ? (
             <div className="col">
               <div className="form-group">
-                <label className="font-xs-white">Return Date</label>
+                <label>Return Date</label>
                 <div className="input-group customdate">
                   <DatePickerComponent
                     startDate={returnDate}
@@ -173,7 +173,7 @@ const CabSearch = ({
           ) : null}
           <div id="dropdate" className="col">
             <div className="form-group">
-              <label className="font-xs-white">Pickup Time</label>
+              <label>Pickup Time</label>
               <div className="input-group">
                 {/* <DatePickerComponent setStart={setStartDate} start={startDate} />
                  */}
@@ -183,7 +183,7 @@ const CabSearch = ({
           </div>
 
           <div className="col search-col">
-            <div className="search-btn">
+            <div className="search-btn modify-search">
               <Link
                 href="/cab/listing/list-view/left-sidebar"
                 className="btn btn-solid color1"

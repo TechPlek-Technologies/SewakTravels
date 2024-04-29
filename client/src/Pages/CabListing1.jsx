@@ -8,7 +8,7 @@ import { AppContext } from "../Context/JourneyContext";
 import { calculateDistanceAndDuration } from "../Utility/DistanceCalculator";
 import DelhiToDestination from "../Components/Cab/Listing/DelhiToDestination";
 
-function CabListing1({ destination,blogdata }) {
+function CabListing1({source, destination,blogdata }) {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   const dayAfterTomorrow = new Date();
@@ -16,7 +16,7 @@ function CabListing1({ destination,blogdata }) {
 
   const { journeyData, setJourneyData } = useContext(AppContext);
   const data = {
-    source: "Delhi, India",
+    source:source,
     destination: destination,
     startDate: tomorrow,
     returnDate: dayAfterTomorrow,
