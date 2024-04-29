@@ -6334,7 +6334,7 @@ export const dataHoshangabad     = {
     "sub4content":
     "For Delhi to Hoshangabad cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Hoshangabad cabs for your journey. Additionally, you can book your Delhi to Hoshangabad taxi for either a one-way or Delhi to Hoshangabad taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Hoshangabad cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Allahabad.webp",
+  img: "/assets/img/Locations/Hoshangabad.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Hoshangabad Cab?",
   "sub5content":
@@ -6368,7 +6368,7 @@ export const dataHoshangabad     = {
       p2:"For a stress-free journey, book our Delhi to Hoshangabad taxi service. In addition to transparent and reasonable Delhi to Hoshangabad cab fare, you also have the flexibility to cancel your Delhi to Hoshangabad cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/Delhi-to-Allahabad.webp",
+    img1: "/assets/img/Locations/Delhi-to-Hoshangabad.webp",
 
     "sub10":"Things To Know About Delhi and Hoshangabad",
     "sub10content":{
@@ -6418,7 +6418,7 @@ export const dataUnnatNagar   = {
     "sub4content":
     "For Delhi to Unnat Nagar cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Unnat Nagar cabs for your journey. Additionally, you can book your Delhi to Unnat Nagar taxi for either a one-way or Delhi to Unnat Nagar taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Unnat Nagar cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Allahabad.webp",
+  img: "/assets/img/Locations/Unnatnagar.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Unnat Nagar Cab?",
   "sub5content":
@@ -6452,7 +6452,7 @@ export const dataUnnatNagar   = {
       p2:"For a stress-free journey, book our Delhi to Unnat Nagar taxi service. In addition to transparent and reasonable Delhi to Unnat Nagar cab fare, you also have the flexibility to cancel your Delhi to Unnat Nagar cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/Delhi-to-Allahabad.webp",
+    img1: "/assets/img/Locations/Delhi-to-Unnatnagar.webp",
 
     "sub10":"Things To Know About Delhi and Unnat Nagar",
     "sub10content":{
@@ -6502,7 +6502,7 @@ export const dataAhmedabad   = {
     "sub4content":
     "For Delhi to Ahmedabad cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Ahmedabad cabs for your journey. Additionally, you can book your Delhi to Ahmedabad taxi for either a one-way or Delhi to Ahmedabad taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Ahmedabad cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Allahabad.webp",
+  img: "/assets/img/Locations/Ahmedabad.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Ahmedabad Cab?",
   "sub5content":
@@ -6536,7 +6536,7 @@ export const dataAhmedabad   = {
       p2:"For a stress-free journey, book our Delhi to Ahmedabad taxi service. In addition to transparent and reasonable Delhi to Ahmedabad cab fare, you also have the flexibility to cancel your Delhi to Ahmedabad cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/Delhi-to-Allahabad.webp",
+    img1: "/assets/img/Locations/delhi-to-Ahmedabad.webp",
 
     "sub10":"Things To Know About Delhi and Ahmedabad",
     "sub10content":{
@@ -6586,7 +6586,7 @@ export const dataDwarka   = {
     "sub4content":
     "For Delhi to Dwarka cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Dwarka cabs for your journey. Additionally, you can book your Delhi to Dwarka taxi for either a one-way or Delhi to Dwarka taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Dwarka cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Allahabad.webp",
+  img: "/assets/img/Locations/Dwarka.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Dwarka Cab?",
   "sub5content":
@@ -6620,7 +6620,7 @@ export const dataDwarka   = {
       p2:"For a stress-free journey, book our Delhi to Dwarka taxi service. In addition to transparent and reasonable Delhi to Dwarka cab fare, you also have the flexibility to cancel your Delhi to Dwarka cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/Delhi-to-Allahabad.webp",
+    img1: "/assets/img/Locations/delhi-to-Dwarka.webp",
 
     "sub10":"Things To Know About Delhi and Dwarka",
     "sub10content":{
@@ -6670,7 +6670,7 @@ export const dataItarsi   = {
     "sub4content":
     "For Delhi to Itarsi cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Itarsi cabs for your journey. Additionally, you can book your Delhi to Itarsi taxi for either a one-way or Delhi to Itarsi taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Itarsi cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Allahabad.webp",
+  img: "/assets/img/Locations/Itarsi.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Itarsi Cab?",
   "sub5content":
@@ -6704,7 +6704,7 @@ export const dataItarsi   = {
       p2:"For a stress-free journey, book our Delhi to Itarsi taxi service. In addition to transparent and reasonable Delhi to Itarsi cab fare, you also have the flexibility to cancel your Delhi to Itarsi cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/Delhi-to-Allahabad.webp",
+    img1: "/assets/img/Locations/dekhi-to-Itarsi.webp",
 
     "sub10":"Things To Know About Delhi and Itarsi",
     "sub10content":{
@@ -6754,7 +6754,7 @@ export const dataRaisen   = {
     "sub4content":
     "For Delhi to Raisen cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Raisen cabs for your journey. Additionally, you can book your Delhi to Raisen taxi for either a one-way or Delhi to Raisen taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Raisen cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Allahabad.webp",
+  img: "/assets/img/Locations/Raisen.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Raisen Cab?",
   "sub5content":
@@ -6788,7 +6788,7 @@ export const dataRaisen   = {
       p2:"For a stress-free journey, book our Delhi to Raisen taxi service. In addition to transparent and reasonable Delhi to Raisen cab fare, you also have the flexibility to cancel your Delhi to Raisen cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/Delhi-to-Allahabad.webp",
+    img1: "/assets/img/Locations/delhi-to-Raisen.webp",
 
     "sub10":"Things To Know About Delhi and Raisen",
     "sub10content":{
@@ -6838,7 +6838,7 @@ export const dataSamastipur   = {
     "sub4content":
     "For Delhi to Samastipur cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Samastipur cabs for your journey. Additionally, you can book your Delhi to Samastipur taxi for either a one-way or Delhi to Samastipur taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Samastipur cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Allahabad.webp",
+  img: "/assets/img/Locations/Samastipur.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Samastipur Cab??",
   "sub5content":
@@ -6872,9 +6872,9 @@ export const dataSamastipur   = {
       p2:"For a stress-free journey, book our Delhi to Samastipur taxi service. In addition to transparent and reasonable Delhi to Samastipur cab fare, you also have the flexibility to cancel your Delhi to Samastipur cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/Delhi-to-Allahabad.webp",
+    img1: "/assets/img/Locations/delhi-to-Samastipur.webp",
 
-    "sub10":"Things To Know About Delhi and Samastipurn",
+    "sub10":"Things To Know About Delhi and Samastipur",
     "sub10content":{
       p3:"Experience seamless travel around Delhi with Sewak Travels cab service from Delhi to Samastipur, offering quick and convenient travel options. Delhi, a sprawling metropolis, boasts a plethora of attractions, dining spots, shopping destinations, and recreational activities. As the captivating national capital of India, Delhi attracts visitors from around the globe with iconic landmarks like the Red Fort, India Gate, and Jama Masjid. Food enthusiasts can indulge in mouth-watering delights such as chaat in Old Delhi and Mughlai cuisine at Karim's. Delhi offers many dining options, ranging from popular fast-food chains to quaint local sweet shops. Discover the diverse culinary joints by availing of Delhi to Samastipur taxi services from Sewak Travels cab rental from Delhi to Samastipur. In addition to its culinary delights, Delhi is a haven for shoppers, boasting a wide array of traditional Indian attire alongside global Western brands. Explore renowned shopping destinations like Connaught Place, Khan Market, Pallika Bazaar, Karol Bagh, Chandni Chowk, and upscale suburban malls for an unparalleled shopping experience. Sewak Travels Delhi to Samastipur taxi service offers swift access to these shopping districts, ensuring a seamless experience. Additionally, travelers can make Delhi to Samastipur cab booking for excursions to nearby cities, airports, and railway station transfers within Delhi. From navigating narrow market lanes to exploring upscale shopping malls, Delhi seamlessly blends modernity with timeless charm. As Delhi evolves into a world-class city, it continues to offer an exceptional standard of living for both tourists and residents alike. Experience the vibrant spirit of Delhi with Sewak Travels' reliable Delhi to Samastipur taxi service. ",
       p4:"Sewak Travels extends its Delhi to Samastipur taxi service, simplifying intercity Delhi to Samastipur cab bookings with a seamless network and user-friendly process. Nestled in the heart of Bihar, Samastipur beckons travelers with its rich cultural heritage and historical significance. As you explore this quaint town with our Delhi to Samastipur cab service, you'll encounter a tapestry of experiences that blend tradition, spirituality, and architectural splendor. Samastipur boasts an array of iconic attractions that offer glimpses into its illustrious past. The Shahi Qila stands tall as a testament to the region's regal history, inviting visitors to marvel at its majestic architecture and delve into tales of bygone eras. The Kali Temple, a revered spiritual site, exudes tranquility and devotion, drawing pilgrims seeking blessings and solace. Amidst the historical landmarks, Samastipur also offers vibrant markets and bustling streets that pulse with energy. The Samastipur Haat bustles with activity, offering a kaleidoscope of traditional handicrafts, textiles, and souvenirs that reflect the town's artistic heritage. But it's not just about sightseeing—Samastipur is also a culinary delight. Authentic Bihari cuisine awaits at local eateries, where you can savor specialties like Litti Chokha and Bihari thali, tantalizing your taste buds with flavors unique to the region. With its blend of history, spirituality, and gastronomy, Samastipur promises a memorable journey for travelers seeking an authentic slice of Bihar's cultural tapestry. A variety of Delhi to Samastipur taxi services, including luxury, deluxe, and budget options, cater to different preferences, making it advisable to explore the city via taxi. Delhi to Samastipur taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book a cheap taxi from Delhi to Samastipur online, ensuring a Delhi to Samastipur cab cost-effective experience. Your Delhi to Samastipur cab facilitates exploration of top landmarks, allowing you to soak in the city's allure with the comfort of a private cab.  "
@@ -6922,7 +6922,7 @@ export const dataVadodara   = {
     "sub4content":
     "For Delhi to Vadodara cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Vadodara cabs for your journey. Additionally, you can book your Delhi to Vadodara taxi for either a one-way or Delhi to Vadodara taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Vadodara cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Allahabad.webp",
+  img: "/assets/img/Locations/Vadodara.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Vadodara Cab?",
   "sub5content":
@@ -6956,7 +6956,7 @@ export const dataVadodara   = {
       p2:"For a stress-free journey, book our Delhi to Vadodara taxi service. In addition to transparent and reasonable Delhi to Vadodara cab fare, you also have the flexibility to cancel your Delhi to Vadodara cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/Delhi-to-Allahabad.webp",
+    img1: "/assets/img/Locations/delhi-to-Vadodara.webp",
 
     "sub10":"Things To Know About Delhi and Vadodara",
     "sub10content":{
@@ -7006,7 +7006,7 @@ export const dataBilaspur   = {
     "sub4content":
     "For Delhi to Bilaspur cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Bilaspur cabs for your journey. Additionally, you can book your Delhi to Bilaspur taxi for either a one-way or Delhi to Bilaspur taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Bilaspur cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Allahabad.webp",
+  img: "/assets/img/Locations/Bilaspur.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Bilaspur Cab?",
   "sub5content":
@@ -7040,7 +7040,7 @@ export const dataBilaspur   = {
       p2:"For a stress-free journey, book our Delhi to Bilaspur taxi service. In addition to transparent and reasonable Delhi to Bilaspur cab fare, you also have the flexibility to cancel your Delhi to Bilaspur cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/Delhi-to-Allahabad.webp",
+    img1: "/assets/img/Locations/delhi-to-Bilaspur.webp",
 
     "sub10":"Things To Know About Delhi and Bilaspur",
     "sub10content":{
@@ -7090,7 +7090,7 @@ export const dataFaridabad   = {
     "sub4content":
     "For Delhi to Faridabad cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Faridabad cabs for your journey. Additionally, you can book your Delhi to Faridabad taxi for either a one-way or Delhi to Faridabad taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Faridabad cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Allahabad.webp",
+  img: "/assets/img/Locations/Faridabad.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Faridabad Cab?",
   "sub5content":
@@ -7124,7 +7124,7 @@ export const dataFaridabad   = {
       p2:"For a stress-free journey, book our Delhi to Faridabad taxi service. In addition to transparent and reasonable Delhi to Faridabad cab fare, you also have the flexibility to cancel your Delhi to Faridabad cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/Delhi-to-Allahabad.webp",
+    img1: "/assets/img/Locations/delhi-to-Faridabad.webp",
 
     "sub10":"Things To Know About Delhi and Faridabad",
     "sub10content":{
@@ -7174,7 +7174,7 @@ export const dataNoida   = {
     "sub4content":
     "For Delhi to Noida cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Delhi to Noida cabs for your journey. Additionally, you can book your Delhi to Noida taxi for either a one-way or Delhi to Noida taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Delhi to Noida cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Allahabad.webp",
+  img: "/assets/img/Locations/Noida.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Delhi to Noida Cab?",
   "sub5content":
@@ -7208,7 +7208,7 @@ export const dataNoida   = {
       p2:"For a stress-free journey, book our Delhi to Noida taxi service. In addition to transparent and reasonable Delhi to Noida cab fare, you also have the flexibility to cancel your Delhi to Noida cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/Locations/Delhi-to-Allahabad.webp",
+    img1: "/assets/img/Locations/Delhit-to-Noida.webp",
 
     "sub10":"Things To Know About Delhi and Noida",
     "sub10content":{
