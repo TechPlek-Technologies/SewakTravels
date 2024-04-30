@@ -7,6 +7,7 @@ import DelhiToDesinationMeta from "./MetaTags/DelhiToDestination";
 import { AppContext } from "../Context/JourneyContext";
 import { calculateDistanceAndDuration } from "../Utility/DistanceCalculator";
 import DelhiToDestination from "../Components/Cab/Listing/DelhiToDestination";
+import CabOptions from "./CabListing/CabOptions";
 
 function CabListing1({ destination,blogdata }) {
   const tomorrow = new Date();
@@ -51,6 +52,7 @@ function CabListing1({ destination,blogdata }) {
       <Layout title="light_header" />
       <ListSearch setisValid={setisValid} />
       <ListingView isValid={isValid} />
+      {/* <CabOptions/> */}
       <DelhiToDestination data={blogdata} />
       <DelhiToDesinationMeta query={destination} />
       <FooterComponent />
