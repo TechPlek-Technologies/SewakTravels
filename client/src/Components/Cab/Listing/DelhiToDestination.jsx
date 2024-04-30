@@ -8,10 +8,10 @@ const DelhiToDestination = ({ data }) => {
             <CabAnimation />
 
             <div class="container">
-                <div class="row">
+                <div>
                     <div class="col-xl-16 col-lg-16">
                         <div className="title-1 detail-title h1Header" h1 _ngcontent-taw-c63="">
-                        <h1 className="page-h1">{data?.main}</h1>
+                        <h1 className="page-h1-new">{data?.main}</h1>
                         </div>
                         <div class="description-section tab-section">
                             <div class="description-details">
@@ -38,9 +38,9 @@ const DelhiToDestination = ({ data }) => {
                                     </div>
                                 </div>
                                 <div class="desc-box" >
-                                    <img className="bimg" src={data.img} alt="destinationn"/>
+                                    <img className="img-fluid" src={data?.img} alt="destination"/>
                                 </div>
-                                <div class="desc-box mt-5">
+                                <div class="desc-box mt-md-4">
 
                                     <div class="about menu-part" id="policy">
                                         <h2 className="service-h2">{data?.sub5}</h2>
@@ -105,7 +105,7 @@ const DelhiToDestination = ({ data }) => {
                                 </div>
 
                                 <div class="desc-box" >
-                                    <img className="bimg bimg1" src={data?.img1}/>
+                                    <img className="img-fluid" src={data?.img1}/>
                                 </div>
 
                                 {/* ########## faq content####  */}

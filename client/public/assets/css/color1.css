@@ -1585,7 +1585,8 @@ section .black-layer:before {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 60px; }
         .home_section .home .home-content.mix-layout > div.bg-transparent {
-          padding: 0; }
+          padding: 0;
+         }
       .home_section .home .home-content.mix-layout h1 {
         font-size: calc(18px + (60 - 18) * ((100vw - 320px) / (1920 - 320)));
         font-family: Nunito, Nunito;
@@ -6474,7 +6475,7 @@ section .black-layer:before {
         .menu-section .menu-box .bottom-bar .menu-bar:after {
           content: "";
           border-bottom: 1px dashed #e8e8e8;
-          position: absolute;
+          /* position: absolute; */
           bottom: 0;
           width: 78%;
           left: 0;

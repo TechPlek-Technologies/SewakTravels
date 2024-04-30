@@ -55,8 +55,7 @@ const NewHomeBanner = ({activeTab,callback}) => {
           className="home home-mobile"
           id="block"
           style={{ width: "100%" }}
-          data-vide-bg="/assets/video/city.mp4"
-          data-vide-options="position: 0% 50%, loop: true"
+          data-vide-bg="/assets/video/city.jpg"
         >
           <video
             width="100%"

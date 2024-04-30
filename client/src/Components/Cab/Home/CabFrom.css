@@ -1,0 +1,51 @@
+.cab-menu{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+  }
+
+  .menu-content{
+    display: grid;
+    grid-template-columns: 0.6fr 3fr;
+  }
+
+  .link-space{
+    margin-right: 2px;
+  }
+
+  .h5-style{
+    margin-top: 4px;
+    margin-bottom: -2px !important;
+    font-weight: 800;
+    font-size: 18px;
+  }
+
+  .cab-li span a{
+    font-weight: 600;
+    color:#000000;
+    font-size: 15px;
+  }
+
+  .cab-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+  }
+
+  @media (max-width:440px){
+    .cab-menu{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: none;
+      row-gap: 2rem;
+      }
+      .menu-content {
+        display: grid;
+        grid-template-columns: 0.7fr 3fr;
+      }
+      .menu-section .menu-box .bottom-bar {
+        padding: 20px;
+        margin-top: 20px;
+      }
+  }

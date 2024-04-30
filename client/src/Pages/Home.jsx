@@ -18,6 +18,7 @@ import OfferComponent from "../Components/HotelPackage/OfferComponent";
 import { Helmet } from "react-helmet";
 // import FactsContent1 from "../Components/Cab/Home/FactsContent/FactsContent1";
 import FactsContent2 from "../Components/Cab/Home/FactsContent/FactsContent2";
+import CabFrom from "../Components/Cab/Home/CabFrom";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("1");
@@ -46,7 +47,7 @@ function Home() {
       <NewHomeBanner activeTab={activeTab} callback={callback} />
       {/* <OurVehicleOffers/> */}
       {/* <TopCategory titleClass="top-category margin-cls radius-cls" /> */}
-      {/* <FleetCars /> */}
+      {/* <FleetCars/> */}
       {/* <CabOffers/> */}
       {/* <CabGallery /> */}
       {activeTab === "1" && <Package type="Cab Offers" />}
@@ -55,6 +56,7 @@ function Home() {
       {activeTab === "4" && <ExplorePackages type="Tour Offers" />}
       {activeTab === "4" && <ImportantLinks />}
       {<VideoBanner />}
+      {activeTab === "1" && <CabFrom />}
       {<FactsContent2/>}
       {<Testimonials />}
       {activeTab === "1" && <FullBanner />}

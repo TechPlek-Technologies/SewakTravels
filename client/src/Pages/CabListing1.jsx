@@ -9,7 +9,7 @@ import { calculateDistanceAndDuration } from "../Utility/DistanceCalculator";
 import DelhiToDestination from "../Components/Cab/Listing/DelhiToDestination";
 import CabOptions from "./CabListing/CabOptions";
 
-function CabListing1({ destination,blogdata }) {
+function CabListing1({source, destination,blogdata,selectedValue }) {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   const dayAfterTomorrow = new Date();
@@ -17,12 +17,12 @@ function CabListing1({ destination,blogdata }) {
 
   const { journeyData, setJourneyData } = useContext(AppContext);
   const data = {
-    source: "Delhi, India",
+    source:source,
     destination: destination,
     startDate: tomorrow,
     returnDate: dayAfterTomorrow,
     rentals: "4hrs 40km",
-    selectedValue: "Outstation One-Way",
+    selectedValue: selectedValue,
     startTime: "12:00 PM",
     returnTime: "12:00 PM",
   };
@@ -53,7 +53,7 @@ function CabListing1({ destination,blogdata }) {
       <ListSearch setisValid={setisValid} />
       <ListingView isValid={isValid} />
       {/* <CabOptions/> */}
-      <DelhiToDestination data={blogdata} />
+     { blogdata? <DelhiToDestination data={blogdata} />:null}
       <DelhiToDesinationMeta query={destination} />
       <FooterComponent />
     </>
