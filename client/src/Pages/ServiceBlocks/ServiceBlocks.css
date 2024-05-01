@@ -1,0 +1,48 @@
+.cab-menu1{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    }
+
+    .cabService {
+        border: 1px solid #cecece;
+        padding: 1.5rem;
+        padding-left:3rem;
+        min-height: 300px;
+        max-height: 300px;
+        overflow-y: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        background-color: #fff;
+    }
+   .cab-li1{
+    display: list-item;
+    padding:0.5rem;
+   }
+  
+    .cab-li1 span a{
+      font-weight: 600;
+      color: #000;
+      font-size: 15px;
+    }
+    .cab-li1 span a:hover{
+        color:#ef3f3e; ;
+    }
+
+    .cab-h2{
+        font-weight: 700 !important;
+        font-size: 22px !important;
+        font-family: helvetica;
+        color: #000 !important;
+     }
+  
+    @media (max-width:440px){
+      .cab-menu1{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+        row-gap: 2rem;
+        }
+    }

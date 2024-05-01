@@ -6461,7 +6461,8 @@ section .black-layer:before {
         height: 100%; }
     .menu-section .menu-box .bottom-bar {
       background-color: white;
-      padding: 40px; }
+      padding: 40px; 
+    }
       .menu-section .menu-box .bottom-bar .menu-bar {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -22741,7 +22742,7 @@ body.dark {
     .guest-detail form .form-control {
       padding: 5px; }
     .guest-detail form #mobile-no {
-      padding: 5px 5px 5px 48px; }
+      padding: 5px 5px 5px 5px; }
     .guest-detail form .submit-btn .btn {
       width: 100%;
       margin-top: 10px; }

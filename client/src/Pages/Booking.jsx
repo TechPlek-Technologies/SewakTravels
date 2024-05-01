@@ -231,6 +231,7 @@ const Booking = ({ desiredcar }) => {
         <div className="row">
           <TravelInfo
             isValid={isValid}
+            handleButtonClick={handleButtonClick}
             contactRef={contactRef}
             emailRef={emailRef}
             lastNameRef={lastNameRef}
