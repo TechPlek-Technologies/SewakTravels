@@ -33,7 +33,7 @@ function ListingView({isValid,data,rentals}) {
                 alt=""
               />
             </a>
-            <ProductLayout data={data} value={filteredData} isValid={isValid} rentals={data.rentals}  />
+            <ProductLayout data={data} value={filteredData} isValid={isValid} rentals={rentals}  />
           </div>
         </div>
       </div>
