@@ -5,7 +5,7 @@ import { SendMail } from "../../../Utility/SendMail";
 const HomePopUp = ({ setPhone_email, isPopupOpen, handlePopupClose,phone_email }) => {
 
   async function sendQueryEmail(){
-    await SendMail("deepaksharmaa.39@gmail.com","Demo",`<h1>New Query From Mobile/Email: ${phone_email}</h1>`);
+    await SendMail("booking@sewaktravels.com","Demo",`<h1>New Query From Mobile/Email: ${phone_email}</h1>`);
   }
   
 
@@ -43,7 +43,7 @@ const HomePopUp = ({ setPhone_email, isPopupOpen, handlePopupClose,phone_email }
                 <div className={`input-group-append ${styles.desktop}`}>
                     <div onClick={()=>{
                       handlePopupClose();
-                        // sendQueryEmail();
+                        sendQueryEmail();
 
                     }} className="btn btn-rounded btn-sm color1">
                       Continue

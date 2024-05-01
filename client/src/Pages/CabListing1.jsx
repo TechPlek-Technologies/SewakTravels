@@ -37,7 +37,7 @@ function CabListing1({source, destination,blogdata,selectedValue }) {
     <>
       <Layout title="light_header" />
       <ListSearch data={data} setisValid={setisValid} rentals={rentals} setRentals={setRentals}/>
-      <ListingView rentals={rentals} data={data} isValid={isValid} />
+      <ListingView  data={data} isValid={isValid} />
       {/* <CabOptions/> */}
      { blogdata? <DelhiToDestination data={blogdata} />:null}
       {/* <CabOptions1/> */}
