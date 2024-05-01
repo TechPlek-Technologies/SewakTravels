@@ -1,6 +1,6 @@
 import CabListProducts from "./CabListProducts";
 
-function ProductLayout({ value,validate,isValid }) {
+function ProductLayout({data, value,validate,isValid,rentals }) {
   const showProduct = value;
   return (
     <>
@@ -8,7 +8,7 @@ function ProductLayout({ value,validate,isValid }) {
         className={`product-wrapper-grid special-section grid-box list-view `}
       >
         <div className={` list-view`}>
-          <CabListProducts data={showProduct} validate={validate} isValid={isValid} />
+          <CabListProducts journey={data} data={showProduct} validate={validate} isValid={isValid} rentals={rentals} />
         </div>
       </div>
     </>

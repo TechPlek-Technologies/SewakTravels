@@ -3,12 +3,11 @@ import Filters from "./Filters";
 import ProductLayout from "./ProductLayout";
 import { carData } from "../../../Data/CabData";
 
-function ListingView({isValid}) {
+function ListingView({isValid,data,rentals}) {
   const [filteredData, setFilteredData] = useState(carData);
   const [showSidebar, setShowSidebar] = useState(false);
 
   
-
   return (
     <section className="xs-section bg-inner">
       <div className="container">
@@ -34,7 +33,7 @@ function ListingView({isValid}) {
                 alt=""
               />
             </a>
-            <ProductLayout value={filteredData} isValid={isValid}  />
+            <ProductLayout data={data} value={filteredData} isValid={isValid} rentals={data.rentals}  />
           </div>
         </div>
       </div>

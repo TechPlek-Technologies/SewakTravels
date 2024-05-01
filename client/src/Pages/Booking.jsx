@@ -13,7 +13,7 @@ import { HtmlEmailTemplate } from "../Utility/EmailTemplate";
 const Booking = ({ desiredcar }) => {
   const { journeyData } = useContext(AppContext);
   const { paymentData, setPaymentData } = useContext(PaymentContext);
-
+const [totalFare,setTotalFare]=useState(paymentData.totalFare)
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
     window.scrollTo(0, 0);
@@ -21,12 +21,15 @@ const Booking = ({ desiredcar }) => {
     // Redirect to home page if source or destination is empty
     if (!paymentData.totalFare) {
       window.location.href = "/"; // Replace "/" with the actual path of your home page
+    }else{
+      setTotalFare(paymentData.totalFare)
     }
+    
   }, [journeyData.source, journeyData.destination]);
 
+  console.log(paymentData.totalFare);
   // const targetId = param.id;
 
-  const totalFare = paymentData.totalFare;
 
   const [payableAmount, setpayableAmount] = useState(
     Math.ceil((totalFare * 15) / 100)

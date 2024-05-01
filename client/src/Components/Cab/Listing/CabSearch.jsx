@@ -46,7 +46,8 @@ const CabSearch = ({
       startDate,
       returnDate,
       startTime,
-      returnTime,rentals
+      returnTime,
+      rentals
     );
     alert("changes Updated")
   };

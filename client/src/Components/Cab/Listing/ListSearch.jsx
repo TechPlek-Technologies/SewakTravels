@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../../../Context/JourneyContext";
 import CabSearch from "./CabSearch";
 
-function ListSearch({setisValid,source1,destination1}) {
+function ListSearch({setisValid,source1,destination1,rentals,setRentals}) {
   const [searchBarOpen, setSearchBarOpen] = useState(false);
 
   const { journeyData } = useContext(AppContext);
@@ -16,7 +16,6 @@ function ListSearch({setisValid,source1,destination1}) {
 
   const [startTime, setStartTime] = useState();
   const [returnTime, setReturnTime] = useState();
-  const [rentals, setRentals] = useState();
 
 
   const [selectedValue, setSelectedValue] = useState();

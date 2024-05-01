@@ -9,14 +9,14 @@ function CabListing(){
     // Scroll to the top of the page when the component mounts
     window.scrollTo(0, 0);
   }, []);
-
+  const [rentals, setRentals] = useState("4hrs40km");
   const [isValid,setisValid]=useState("notValid");
 
     return(
         <>
         <Layout title="light_header"/>
-        <ListSearch setisValid={setisValid}/>
-        <ListingView isValid={isValid}/>
+        <ListSearch setisValid={setisValid} rentals={rentals} setRentals={setRentals}/>
+        <ListingView rentals={rentals} isValid={isValid}/>
         <FooterComponent/>
       </>
     )

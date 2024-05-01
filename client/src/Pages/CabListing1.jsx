@@ -18,43 +18,26 @@ function CabListing1({source, destination,blogdata,selectedValue }) {
   dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 3);
 
   const { journeyData, setJourneyData } = useContext(AppContext);
+  const [rentals, setRentals] = useState("4hrs40km");
   const data = {
     source:source,
     destination: destination,
     startDate: tomorrow,
     returnDate: dayAfterTomorrow,
-    rentals: "4hrs 40km",
+    rentals: rentals,
     selectedValue: selectedValue,
     startTime: "12:00 PM",
     returnTime: "12:00 PM",
   };
-  useEffect(() => {
-    // Scroll to the top of the page when the component mounts
-
-    calculateDistanceAndDuration(
-      data.source,
-      data.destination,
-      data.selectedValue,
-      journeyData,
-      setJourneyData,
-      data.startDate,
-      data.returnDate,
-      data.startTime,
-      data.returnTime,
-      data.rentals
-    );
-
-    window.scrollTo(0, 0);
-
-  }, []);
+ 
 
   const [isValid, setisValid] = useState("notValid");
 
   return (
     <>
       <Layout title="light_header" />
-      <ListSearch setisValid={setisValid} />
-      <ListingView isValid={isValid} />
+      <ListSearch data={data} setisValid={setisValid} rentals={rentals} setRentals={setRentals}/>
+      <ListingView rentals={rentals} data={data} isValid={isValid} />
       {/* <CabOptions/> */}
      { blogdata? <DelhiToDestination data={blogdata} />:null}
       {/* <CabOptions1/> */}

@@ -153,7 +153,7 @@ function App() {
           />
           <Route path={"/intercity-cab-taxi-service"} element={<Intercity />} />
           <Route
-            path={"/cab/listing/:params"}
+            path={"/cabs/listing/:params"}
             element={<CabListing />}
           />
 

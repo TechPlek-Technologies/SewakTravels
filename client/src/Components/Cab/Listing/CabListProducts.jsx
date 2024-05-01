@@ -8,15 +8,14 @@ import { PaymentContext } from "../../../Context/PaymentContext";
 import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 import { SendMail } from "../../../Utility/SendMail";
 
-function CabListProducts({ data, isValid }) {
+function CabListProducts({ journey,data, isValid ,rentals}) {
   const { journeyData, setJourneyData } = useContext(AppContext);
   const [showDetails, setShowDetails] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
+  console.log("journeyData.destination",journeyData.destination)
   const params = useParams();
-  const paramData = JSON.parse(params.params);
-
-  console.log("params", paramData.source, paramData.destination);
+  const paramData = params.params ? JSON.parse(params.params) : null;
 
   let travelDistance = journeyData.travelDistance;
   let travelTime = Math.ceil(travelDistance / 250);
@@ -40,9 +39,7 @@ function CabListProducts({ data, isValid }) {
       farePerKm = item.outstattionRoundTrip;
     } else if (selectedValue === "Hourly Rentals") {
       totalFare =
-        item.rentals2 * travelDistance +
-        travelTime * item.driverAllowance +
-        travelTime * item.nightCharges;
+        rentals==="4hrs40km"? (item.rentals2*40) :(item.rentals1*80);
       farePerKm = item.rentals2;
     } else if (selectedValue === "Airport Transfer") {
       totalFare = item.Airport * travelDistance;
@@ -73,25 +70,47 @@ function CabListProducts({ data, isValid }) {
       travelDistance,
       travelTime
     );
+
+    console.log(rentals)
+    console.log(fareCalculation)
+    
     setPaymentData({ ...paymentData, ...fareCalculation });
   };
 
   useEffect(() => {
-    calculateDistanceAndDuration(
-      paramData.source,
-      paramData.destination,
-      paramData.selectedValue,
-      journeyData,
-      setJourneyData,
-      paramData.startDate,
-      paramData.returnDate,
-      paramData.startTime,
-      paramData.returnTime,
-      paramData.rentalPackage
-    );
+    if (paramData) {
+      calculateDistanceAndDuration(
+        paramData.source,
+        paramData.destination,
+        paramData.selectedValue,
+        journeyData,
+        setJourneyData,
+        paramData.startDate,
+        paramData.returnDate,
+        paramData.startTime,
+        paramData.returnTime,
+        paramData.rentalPackage
+      );
+      console.log("paramData",paramData);
+    }else{
+      if(journey.destination){
+        calculateDistanceAndDuration(
+          journey.source,
+          journey.destination,
+          journey.selectedValue,
+          journeyData,
+          setJourneyData,
+          journey.startDate,
+          journey.returnDate,
+          journey.startTime,
+          journey.returnTime,
+          journey.rentalPackage
+        );
+      }
+     
+      setJourneyData(journey);
 
-   
-
+    }
   }, []);
 
   return (
@@ -150,6 +169,8 @@ function CabListProducts({ data, isValid }) {
                         ? "1"
                         : journeyData.selectedValue === "Airport Transfer"
                         ? "1"
+                        : journeyData.selectedValue === "Hourly Rentals"
+                        ? "1"
                         : travelTime}{" "}
                       day
                     </li>
@@ -164,11 +185,11 @@ function CabListProducts({ data, isValid }) {
                       <>
                         <h4>
                           ₹
-                          {Math.ceil(
+                          {journeyData?.travelDistance?Math.ceil(
                             item.outstationOneWay * journeyData?.travelDistance
-                          )}
+                          ):0}
                         </h4>
-                        <h6>fare/km:₹{item.outstationOneWay}</h6>
+                        {/* <h6>fare/km:₹{item.outstationOneWay}</h6> */}
                       </>
                     )}
                     {journeyData.selectedValue === "Outstation Round-Trip" && (
@@ -181,26 +202,22 @@ function CabListProducts({ data, isValid }) {
                               travelTime * item.nightCharges
                           )}
                         </h4>
-                        <h6>fare/km:₹{item.outstattionRoundTrip}</h6>
+                        {/* <h6>fare/km:₹{item.outstattionRoundTrip}</h6> */}
                       </>
                     )}
                     {journeyData.selectedValue === "Hourly Rentals" && (
                       <>
                         <h4>
                           ₹
-                          {Math.ceil(
-                            item.rentals1 * travelDistance +
-                              travelTime * item.driverAllowance +
-                              travelTime * item.nightCharges
-                          )}
+                          {rentals==="8hrs80km" ? (item.rentals2*80) :(item.rentals1*40)}
                         </h4>
-                        <h6>fare/km:₹ {item.rentals2}</h6>
+                        {/* <h6>fare/km:₹ {item.rentals2}</h6> */}
                       </>
                     )}
                     {journeyData.selectedValue === "Airport Transfer" && (
                       <>
                         <h4>₹{Math.ceil(item.Airport * travelDistance)}</h4>
-                        <h6>fare/km:₹{item.Airport}</h6>
+                        {/* <h6>fare/km:₹{item.Airport}</h6> */}
                       </>
                     )}
                     <h6

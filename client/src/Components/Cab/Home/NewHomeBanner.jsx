@@ -32,7 +32,7 @@ const NewHomeBanner = ({
   const [source, setSource] = useState("Delhi, India");
   const [destination, setDestination] = useState("Chandigarh, India");
 
-  const [rentals, setRentals] = useState("4hrs 40km");
+  const [rentals, setRentals] = useState("4hrs40km");
 
   const { journeyData, setJourneyData } = useContext(AppContext);
 
@@ -66,10 +66,7 @@ const pathParams={
   startTime: startTime,
   returnTime: returnTime,
   rentalPackage: rentals,
-  email_phone: phone_email,
-
-
-
+  email_phone: phone_email
 }
   return (
     <section className="home_section slide-1 p-0" id="home">
@@ -145,7 +142,7 @@ const pathParams={
                           !phone_email
                             ? "#home" // Placeholder link if the button is disabled
                             : {
-                                pathname: `/cab/listing/${JSON.stringify(pathParams)}`,
+                                pathname: `/cabs/listing/${JSON.stringify(pathParams)}`,
                                 state: { journeyData },
                               }
                         }

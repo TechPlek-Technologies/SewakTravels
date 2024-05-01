@@ -33,14 +33,14 @@ const AirportSearch = ({setSource,setDestination,startDate,setStartDate,setStart
           // style={{ width: "170px" }}
           className="form-control"
           value={pickupType}
-          onChange={handlePickupTypeChange}
+          onChange={(e)=>setPickupType(e.target.value)}
         >
           <option value="fromAirport">From Airport</option>
           <option value="toAirport">To Airport</option>
         </select>
       </div>
 
-      {pickupType === "fromAirport" ? (
+      { (
         <>
           <div className="search-body title-hotel col-2">
             <h6>{"Airport"}</h6>
@@ -64,31 +64,7 @@ const AirportSearch = ({setSource,setDestination,startDate,setStartDate,setStart
             />
           </div>
         </>
-      ) : pickupType === "toAirport" ? (
-        <>
-          <div className="search-body title-hotel col-2">
-            <h6>{"City"}</h6>
-            <input
-              type="text"
-              name="text"
-              placeholder="Select City"
-              className="form-control"
-              ref={destinationInputRef}
-            />
-          </div>
-          <div className="search-body title-hotel col-2">
-            <h6>{"Airport"}</h6>
-            <input
-              style={{ width: "160px" }}
-              type="text"
-              name="text"
-              placeholder="Select Airport"
-              className="form-control"
-              ref={sourceInputRef}
-            />
-          </div>
-        </>
-      ) : null}
+      )  }
 
       <div className="search-body col-2 search-input">
         <h6>{"Pickup date"}</h6>
