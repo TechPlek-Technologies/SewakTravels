@@ -19,12 +19,19 @@ import { Helmet } from "react-helmet";
 // import FactsContent1 from "../Components/Cab/Home/FactsContent/FactsContent1";
 import FactsContent2 from "../Components/Cab/Home/FactsContent/FactsContent2";
 import CabFrom from "../Components/Cab/Home/CabFrom";
+import HomePopUp from "../Components/Cab/Home/HomePopUp";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("1");
   const callback = useCallback((tab) => {
     setActiveTab(tab);
   }, []);
+  const [isPopupOpen, setIsPopOpen] = useState(false);
+  const [phone_email,setPhone_email]=useState(null);
+  const handlePopupClose = () => {
+      setIsPopOpen(!isPopupOpen);
+    };
+
 
   return (
     <div className="home-bg">
@@ -44,7 +51,8 @@ function Home() {
         <link rel="canonical" href="https://sewaktravels.com/" />
       </Helmet>
 
-      <NewHomeBanner activeTab={activeTab} callback={callback} />
+      <NewHomeBanner activeTab={activeTab} callback={callback} handlePopupClose={handlePopupClose} phone_email={phone_email} isPopupOpen={isPopupOpen} />
+      <HomePopUp handlePopupClose={handlePopupClose} phone_email={phone_email} setPhone_email={setPhone_email} isPopupOpen={isPopupOpen} />
       {/* <OurVehicleOffers/> */}
       {/* <TopCategory titleClass="top-category margin-cls radius-cls" /> */}
       {/* <FleetCars/> */}

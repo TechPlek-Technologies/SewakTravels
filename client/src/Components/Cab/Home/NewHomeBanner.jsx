@@ -8,8 +8,14 @@ import SearchTabs from "./CabSearch/SearchTabs";
 import FlightSearch from "./FlightSearch/FlightSearch";
 import HotelSearch from "./HotelSearch/HotelSearch";
 import TourSearch from "./TourSearch/TourSearch";
-
-const NewHomeBanner = ({activeTab,callback}) => {
+import { SendMail } from "../../../Utility/SendMail";
+const NewHomeBanner = ({
+  activeTab,
+  callback,
+  phone_email,
+  isPopupOpen,
+  handlePopupClose,
+}) => {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   const dayAfterTomorrow = new Date();
@@ -25,29 +31,46 @@ const NewHomeBanner = ({activeTab,callback}) => {
 
   const [source, setSource] = useState("Delhi, India");
   const [destination, setDestination] = useState("Chandigarh, India");
-  
-  const [rentals,setRentals]= useState("4hrs 40km");
 
+  const [rentals, setRentals] = useState("4hrs 40km");
 
   const { journeyData, setJourneyData } = useContext(AppContext);
-  const handleSearch = () => {
-    // Modify the state using the setJourneyData function
-    calculateDistanceAndDuration(
-      source,
-      destination,
-      selectedValue,
-      journeyData,
-      setJourneyData,
-      startDate,
-      returnDate,
-      startTime,
-      returnTime,
-      rentals
-    );
+
+
+
+
+
+  const handleSearch = async () => {
+  
+
+    const updatedObject = {
+      ...journeyData,
+      source: source,
+      destination: destination,
+      selectedValue: selectedValue,
+      startDate: startDate,
+      returnDate: returnDate,
+      startTime: startTime,
+      returnTime: returnTime,
+      rentalPackage: rentals,
+      email_phone: phone_email,
+    };
+    setJourneyData(updatedObject);
   };
+const pathParams={
+  source: source,
+  destination: destination,
+  selectedValue: selectedValue,
+  startDate: startDate,
+  returnDate: returnDate,
+  startTime: startTime,
+  returnTime: returnTime,
+  rentalPackage: rentals,
+  email_phone: phone_email,
 
-  const isButtonDisabled = source === "" || destination === "";
 
+
+}
   return (
     <section className="home_section slide-1 p-0" id="home">
       <div>
@@ -71,7 +94,6 @@ const NewHomeBanner = ({activeTab,callback}) => {
               <div className="col-xl-10 m-auto">
                 <div className="home-content mix-layout smaller-content">
                   <div className="bg-transparent">
-                
                     <SearchTabs callbackActive={callback} />
                     <TabContent
                       activeTab={activeTab}
@@ -120,19 +142,15 @@ const NewHomeBanner = ({activeTab,callback}) => {
                     <div className="btn-search col-2 searchButton">
                       <Link
                         to={
-                          isButtonDisabled
-                            ? "/" // Link to a placeholder if the button is disabled
+                          !phone_email
+                            ? "#home" // Placeholder link if the button is disabled
                             : {
-                                pathname: `/cab/listing/${encodeURIComponent(
-                                  source
-                                )}/${encodeURIComponent(destination)}`,
+                                pathname: `/cab/listing/${JSON.stringify(pathParams)}`,
                                 state: { journeyData },
                               }
                         }
-                        className={`btn btn-rounded color1 searchButton ${
-                          isButtonDisabled ? "disabled" : ""
-                        }`}
-                        onClick={isButtonDisabled ? "" : handleSearch}
+                        className={`btn btn-rounded color1 searchButton`}
+                        onClick={!phone_email ? handlePopupClose : handleSearch}
                       >
                         {"Search"}
                       </Link>

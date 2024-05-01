@@ -49,8 +49,6 @@ const Popup = ({ selectedValue, travelDistance, car, modal, toggle }) => {
               <div className="tableStructure">
                 <div>Journey Type </div>
                 <div>{selectedValue}</div>
-                <div>Package (Per Day KM) </div>
-                <div>250</div>
                 <div>Extra Per KM Charges </div>
                 <div>
                   {" "}
@@ -63,9 +61,12 @@ const Popup = ({ selectedValue, travelDistance, car, modal, toggle }) => {
                     : car.rentals2}
                 </div>
                 <div>Total Distance</div> <div>{travelDistance} KM</div>
-                {selectedValue === "Outstation One-Way" ? null :
-                selectedValue === "Airport Transfer" ? null : (
+                {selectedValue ===
+                "Outstation One-Way" ? null : selectedValue ===
+                  "Airport Transfer" ? null : (
                   <>
+                    <div>Package (Per Day KM) </div>
+                    <div>250</div>
                     <div>Number of days</div>{" "}
                     <div>{Math.ceil(travelDistance / 250)}</div>
                     <div>Night time allowance (11:00 PM - 06:00 AM) </div>

@@ -175,6 +175,7 @@ app.post('/email', async (req,res)=>{
     toClient,
     text,
     html,
+    subject
     // attachment
   } = req.body;
 
@@ -197,7 +198,7 @@ app.post('/email', async (req,res)=>{
     const info = await transporter.sendMail({
       from: '"Sewak Travels 🚕" <booking@sewaktravels.com>', // sender address
       to: toClient, // list of receivers
-      subject: "Booking Confirmation ✔", // Subject line
+      subject: subject? "Booking Query ✔":"Booking Confirmation ✔", // Subject line
       text: text, // plain text body
       html: html, // html body
       // attachments:attachment
