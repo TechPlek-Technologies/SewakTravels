@@ -8,7 +8,7 @@ import TextSplit from "../../Common/TextSplit";
 import VideoModal from "../../Common/VideoModal";
 
 const VideoBanner = () => {
-  const [days, hours, minutes, seconds] = CountdownComponent(new Date("dec 1, 2023 16:37:52").getTime());
+  const [days, hours, minutes, seconds] = CountdownComponent(new Date("dec 1, 2024 16:37:52").getTime());
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
   return (

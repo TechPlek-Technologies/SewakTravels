@@ -19,6 +19,7 @@ import { Helmet } from "react-helmet";
 // import FactsContent1 from "../Components/Cab/Home/FactsContent/FactsContent1";
 import FactsContent2 from "../Components/Cab/Home/FactsContent/FactsContent2";
 import CabFrom from "../Components/Cab/Home/CabFrom";
+import VideoBanner1 from "../Components/Cab/Home/VideoBanner1";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("1");
@@ -55,8 +56,8 @@ function Home() {
       {activeTab === "3" && <OfferComponent type="Hotel Offers" />}
       {activeTab === "4" && <ExplorePackages type="Tour Offers" />}
       {activeTab === "4" && <ImportantLinks />}
-      {<VideoBanner />}
-      {activeTab === "1" && <CabFrom />}
+      {activeTab === "1" && <VideoBanner1 />}
+      {/* {activeTab === "1" && <CabFrom />} */}
       {<FactsContent2/>}
       {<Testimonials />}
       {activeTab === "1" && <FullBanner />}
