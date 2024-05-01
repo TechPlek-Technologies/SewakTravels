@@ -1425,3 +1425,15 @@ display: block;
     text-align: center !important;
   }
 }
+
+@media (max-width : 767px){
+  .sbmt{
+    display: none;
+  }
+}
+
+@media (min-width : 767px){
+  .sbmt1{
+    display: none;
+  }
+}

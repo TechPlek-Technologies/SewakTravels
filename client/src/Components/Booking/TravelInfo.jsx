@@ -80,7 +80,7 @@ const TravelInfo = ({isValid,contactRef,emailRef,lastNameRef,firstNameRef,reques
         </div>
       </div>
     </form>
-    <div className="submit-btn">
+    <div className="submit-btn sbmt1">
               <Link>
                 <button
                   className="btn btn-solid App-link"
@@ -89,7 +89,7 @@ const TravelInfo = ({isValid,contactRef,emailRef,lastNameRef,firstNameRef,reques
                 >
                   {"Book Now"}
                 </button>
-              </Link>
+      </Link>
       </div>
   </div>
 </div>

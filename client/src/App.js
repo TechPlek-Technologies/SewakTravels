@@ -1998,6 +1998,41 @@ function App() {
             }
           />
 
+          {/* Other Taxi Services */}
+          {/* Delhi */}
+          <Route
+            path={"/cab/delhi-city-cabs"}
+            element={
+              <CabListing1
+                selectedValue={"Outstation One-Way"}
+                source="Delhi, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ghaziabad-city-cabs"}
+            element={
+              <CabListing1
+                selectedValue={"Outstation One-Way"}
+                source={"Ghaziabad, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          {/* Rental Services in Other Cities */}
+          
+          <Route
+            path={"/cab/rental-cabs-in-faridabad"}
+            element={
+              <CabListing1
+                selectedValue={"Hourly Rentals"}
+                source={"Faridabad, Haryana, India"}
+              />
+            }
+          />
+
+
           <Route path={"/*"} element={<Home />} />
         </Routes>
       </Suspense>

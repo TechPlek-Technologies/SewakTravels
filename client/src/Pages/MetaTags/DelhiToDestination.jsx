@@ -4,9 +4,7 @@ function DelhiToDesinationMeta({ query }) {
 
     function getFirstWord(str) {
         // Split the string into an array of words
-        console.log(str)
         let words = str?.split(" ");
-
         // Return the first word (if it exists)
         if (words?.length > 0) {
             return words[0];

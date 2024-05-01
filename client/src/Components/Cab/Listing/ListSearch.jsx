@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../../../Context/JourneyContext";
 import CabSearch from "./CabSearch";
 
-function ListSearch({setisValid}) {
+function ListSearch({setisValid,source1,destination1}) {
   const [searchBarOpen, setSearchBarOpen] = useState(false);
 
   const { journeyData } = useContext(AppContext);
 
 
-  const [source, setSource] = useState("");
-  const [destination, setDestination] = useState("");
+  const [source, setSource] = useState(source1);
+  const [destination, setDestination] = useState(destination1);
   const [startDate, setStartDate] = useState(new Date());
   const [returnDate, setReturnDate] = useState(new Date());
 
@@ -23,8 +23,8 @@ function ListSearch({setisValid}) {
 
   useEffect(() => {
     // Your useEffect code here
-    setSource(journeyData.source);
-    setDestination(journeyData.destination);
+    setSource(source1||journeyData.source);
+    setDestination(destination1|| journeyData.destination);
     setStartDate(new Date(journeyData.startDate));
     setReturnDate(new Date(journeyData.returnDate));
     setStartTime(journeyData.startTime);
