@@ -18,7 +18,7 @@ const HomePopUp = ({
   const { journeyData, setJourneyData } = useContext(AppContext);
   async function sendQueryEmail(phone) {
     const res = await SendMail(
-      "deepaksharmaa.39@gmail.com",
+      "booking@sewaktravels.Com",
       "Demo",
       `<h1>New Query From Search bar:</h1>
       

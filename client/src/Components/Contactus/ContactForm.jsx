@@ -28,7 +28,7 @@ const ContactForm= () => {
 
   async function sendQueryEmail() {
    const res= await SendMail(
-      "deepaksharmaa.39@gmail.com",
+      "booking@sewaktravels.Com",
       "Contact Form",
       `<h1>New Query From Contact Form</h1> 
       <h4>Contact :${contactFormInfo.phoneNumber}</h4>

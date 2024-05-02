@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const SendMail = async (mailTo, mailText, mailHtml,subject) => {
   try {
-    const response = await axios.post("http://localhost:5000/email", {
+    const response = await axios.post("https://new.sewaktravels.com/email", {
       toClient: mailTo,
       text: mailText,
       html: mailHtml,
