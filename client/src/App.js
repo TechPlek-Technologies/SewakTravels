@@ -94,6 +94,7 @@ import {
 import CabListing2 from "./Pages/CabListing2";
 import CabListing3 from "./Pages/CabListing3";
 import CabListing4 from "./Pages/CabListing4";
+import CabListing5 from "./Pages/CabListing5";
 
 const Home = lazy(() => import("./Pages/Home"));
 
@@ -11220,6 +11221,189 @@ function App() {
                 selectedValue={"Airport Transfer"}
                 source={"Dhar, Madhya Pradesh, India"}
                 fromAirport={"Dehradun, Uttarakhand, India"}
+              />
+            }
+          />
+
+          {/*Our Airport Cabs*/}
+          <Route
+            path={"/cab/agra-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Agra Airport, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ahmedabad-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Ahmedabad Airport (AMD), Hansol, Ahmedabad, Gujarat, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ajmer-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Kishangarh Airport (KQH) (Ajmer), Kishangarh, Rajasthan, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/akola-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Akola Airport, Shivani AirPort Area, Akola, Maharashtra, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/allahabad-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Allahabad Airport Terminal, ITBP Rd, Near 18th ITBP Camp, Prayagraj, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/amritsar-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Amritsar, Airport Road, Gumtala Sub Urban, Sahibzada Jujhar Singh Avenue, Gumtala, Amritsar, Punjab, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/aurangabad-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Aurangabad Airport, Jalna Road, MIDC Industrial Area, Chilkalthana, Aurangabad, Maharashtra, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ayodhya-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Maharishi Valmiki International Airport, Ayodhya Dham (AYJ), Faizabad, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bagdogra-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Bagdogra Airport, Distt, Siliguri, Bagdogra, West Bengal, India"}
+              />
+            }
+          />
+          
+          <Route
+            path={"/cab/bareilly-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Bareilly Airport, Airport Area, Bareilly, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/belgaum-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Belgaum Airport, Bagalkote - Belagavi Road, Sambra, Karnataka, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/satna-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Bharhut Airport Satna, Airport Road, Krishna Nagar, Satna, Madhya Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bhubaneswar-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Bhubaneswar Airport, Airport Road, Aerodrome Area, Bhubaneswar, Odisha, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/chandigarh-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Chandigarh Airport, Sahibzada Ajit Singh Nagar, Punjab, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/chennai-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Chennai Domestic Airport, Airport Departures Terminal Link, Meenambakkam, Chennai, Tamil Nadu, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/mumbai-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Mumbai Airport, Chhatrapati Shivaji Maharaj International Airport,Mumbai (BOM), Navpada, Vile Parle East, Vile Parle, Mumbai, Maharashtra, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/cochin-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Cochin International Airport (COK), Airport Road, Nedumbassery, Kochi, Kerala, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/coimbatore-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Coimbatore International Airport, Peelamedu - Pudur Main Road, Coimbatore, Tamil Nadu, India"}
               />
             }
           />
