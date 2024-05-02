@@ -36,13 +36,7 @@ const NewHomeBanner = ({
 
   const { journeyData, setJourneyData } = useContext(AppContext);
 
-
-
-
-
   const handleSearch = async () => {
-  
-
     const updatedObject = {
       ...journeyData,
       source: source,
@@ -57,17 +51,17 @@ const NewHomeBanner = ({
     };
     setJourneyData(updatedObject);
   };
-const pathParams={
-  source: source,
-  destination: destination,
-  selectedValue: selectedValue,
-  startDate: startDate,
-  returnDate: returnDate,
-  startTime: startTime,
-  returnTime: returnTime,
-  rentalPackage: rentals,
-  email_phone: phone_email
-}
+  const pathParams = {
+    source: source,
+    destination: destination,
+    selectedValue: selectedValue,
+    startDate: startDate,
+    returnDate: returnDate,
+    startTime: startTime,
+    returnTime: returnTime,
+    rentalPackage: rentals,
+    email_phone: phone_email,
+  };
   return (
     <section className="home_section slide-1 p-0" id="home">
       <div>
@@ -142,7 +136,9 @@ const pathParams={
                           !phone_email
                             ? "#home" // Placeholder link if the button is disabled
                             : {
-                                pathname: `/cabs/listing/${JSON.stringify(pathParams)}`,
+                                pathname: `/cabs/listing/${JSON.stringify(
+                                  pathParams
+                                )}`,
                                 state: { journeyData },
                               }
                         }

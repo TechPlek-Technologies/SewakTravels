@@ -13,7 +13,10 @@ const DatePickerComponent = ({startDate,setStartDate,newClass}) => {
     <ReactDatePicker
       minDate={tomorrow}
       selected={startDate}
-      onChange={(date) => setStartDate(new Date(date.setUTCHours(0, 0, 0, 0)))}
+      onChange={(date) => {
+        // console.log(date)
+        setStartDate(new Date(date))}
+      }
       id={`datepicker`}
       className={`datepicker-main pickup-date ${newClass? "dateClass":""}`}
       dateFormat="dd MMMM"

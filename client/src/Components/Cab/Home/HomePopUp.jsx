@@ -1,13 +1,23 @@
 import { Dialog, DialogContent } from "@mui/material";
 import styles from'./HomePopUp.module.css'
 import { SendMail } from "../../../Utility/SendMail";
+import { useContext } from "react";
+import { PaymentContext } from "../../../Context/PaymentContext";
 
 const HomePopUp = ({ setPhone_email, isPopupOpen, handlePopupClose,phone_email }) => {
 
+  const { setPaymentData } = useContext(PaymentContext);
   async function sendQueryEmail(){
     await SendMail("booking@sewaktravels.com","Demo",`<h1>New Query From Mobile/Email: ${phone_email}</h1>`);
   }
   
+  const handleChange = (e) => {
+    setPaymentData(prevState => ({
+      ...prevState, // Keep all existing fields
+      contact: e.target.value // Update just the firstName field
+    }));
+    setPhone_email(e.target.value)
+  };
 
   return (
     <>
@@ -28,7 +38,7 @@ const HomePopUp = ({ setPhone_email, isPopupOpen, handlePopupClose,phone_email }
                     placeholder="Enter your Email/Phone to continue"
                     aria-label="Recipient's username"
                     required
-                    onChange={(e)=>setPhone_email(e.target.value)}
+                    onChange={handleChange}
                   />
                   <div className={`input-group-append ${styles.mobile}`} >
                     <div onClick={()=>{

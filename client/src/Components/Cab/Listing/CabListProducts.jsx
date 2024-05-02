@@ -64,6 +64,7 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
   const { paymentData, setPaymentData } = useContext(PaymentContext);
 
   const bookNow = (item) => {
+    console.log("item",item)
     const fareCalculation = calculateFare(
       item,
       journeyData.selectedValue,
@@ -71,8 +72,6 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
       travelTime
     );
 
-    console.log(rentals)
-    console.log(fareCalculation)
     
     setPaymentData({ ...paymentData, ...fareCalculation });
   };
@@ -91,6 +90,7 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
         paramData.returnTime,
         paramData.rentalPackage
       );
+      // setJourneyData(paramData)
       console.log("paramData",paramData);
     }else{
       if(journey.destination){
@@ -107,7 +107,7 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
           journey.rentalPackage
         );
       }
-     
+      console.log("journey",journey);
       setJourneyData(journey);
 
     }

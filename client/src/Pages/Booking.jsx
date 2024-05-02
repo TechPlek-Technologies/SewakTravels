@@ -13,7 +13,22 @@ import { HtmlEmailTemplate } from "../Utility/EmailTemplate";
 const Booking = ({ desiredcar }) => {
   const { journeyData } = useContext(AppContext);
   const { paymentData, setPaymentData } = useContext(PaymentContext);
-const [totalFare,setTotalFare]=useState(paymentData.totalFare)
+const [totalFare,setTotalFare]=useState(paymentData.totalFare);
+
+const formatDate = (startDate) => {
+  if (startDate instanceof Date) {
+      // If startDate is already a Date object, format it based on the locale
+      return startDate.toDateString();
+  } else if (typeof startDate === 'string') {
+      // If startDate is a string, parse it into a Date object and then format it
+      const date = new Date(startDate);
+      return date.toDateString();
+  } else {
+      // Handle other types or invalid inputs
+      return "invalid date";
+  }
+};
+
   useEffect(() => {
     // Scroll to the top of the page when the component mounts
     window.scrollTo(0, 0);
@@ -27,7 +42,7 @@ const [totalFare,setTotalFare]=useState(paymentData.totalFare)
     
   }, [journeyData.source, journeyData.destination]);
 
-  console.log(paymentData.totalFare);
+  console.log(paymentData);
   // const targetId = param.id;
 
 
@@ -51,7 +66,8 @@ const [totalFare,setTotalFare]=useState(paymentData.totalFare)
   async function displayRazorpay() {
     const options = {
       key: "rzp_live_EeRnadU1BUMdxW",
-      amount: payableAmount * 100, // 2000 paise = INR 20, amount in paisa
+      // amount: payableAmount * 100, // 2000 paise = INR 20, amount in paisa
+      amount:  100, // 2000 paise = INR 20, amount in paisa
       name: "Sewak Travels",
       description: "Purchase Description",
       image: "/assets/img/logo.png",
@@ -101,7 +117,7 @@ const [totalFare,setTotalFare]=useState(paymentData.totalFare)
         Car Type: ${paymentsData.car_type}
         
         Pickup Location: ${paymentsData.pickup_location}
-        Pickup Date: ${paymentsData.pickup_date.toDateString()}
+        Pickup Date: ${formatDate(paymentsData.pickup_date)}
         Pickup Time: ${paymentsData.pickup_time}
         
         Transaction ID: ${paymentsData.transaction_id}
@@ -157,7 +173,7 @@ const [totalFare,setTotalFare]=useState(paymentData.totalFare)
       const mailTO = paymentsData.billing_email;
       const mailText = "Demo Text Area";
       const currentDate = getFormattedDate();
-      const formattedDate = paymentsData.pickup_date?.toDateString();
+      const formattedDate = formatDate(paymentsData.pickup_date);
 
       const mailHtml = HtmlEmailTemplate(
         paymentsData.billing_name,
@@ -224,6 +240,7 @@ const [totalFare,setTotalFare]=useState(paymentData.totalFare)
     };
     setPaymentData(updatedObject);
 
+    console.log(formatDate(journeyData?.startDate))
     displayRazorpay();
   };
 
@@ -233,6 +250,7 @@ const [totalFare,setTotalFare]=useState(paymentData.totalFare)
       <div className="container">
         <div className="row">
           <TravelInfo
+          paymentData={paymentData}
             isValid={isValid}
             handleButtonClick={handleButtonClick}
             contactRef={contactRef}
