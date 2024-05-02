@@ -13,7 +13,7 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
   const [showDetails, setShowDetails] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
-  console.log("journeyData.destination",journeyData.destination)
+  // console.log("journeyData.destination",journey)
   const params = useParams();
   const paramData = params.params ? JSON.parse(params.params) : null;
 
