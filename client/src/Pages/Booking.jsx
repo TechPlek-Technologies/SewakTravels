@@ -66,8 +66,7 @@ const formatDate = (startDate) => {
   async function displayRazorpay() {
     const options = {
       key: "rzp_live_EeRnadU1BUMdxW",
-      // amount: payableAmount * 100, // 2000 paise = INR 20, amount in paisa
-      amount:  100, // 2000 paise = INR 20, amount in paisa
+      amount: payableAmount * 100, // 2000 paise = INR 20, amount in paisa
       name: "Sewak Travels",
       description: "Purchase Description",
       image: "/assets/img/logo.png",
@@ -195,7 +194,7 @@ const formatDate = (startDate) => {
       );
 
       // Use the authToken to send SMS
-      const response = await SendMail(mailTO, mailText, mailHtml);
+      const response = await SendMail(mailTO, mailText, mailHtml,"Booking Confirmation ✔");
       console.log("Email sent successfully:", response);
     } catch (error) {
       console.error("Error:", error);
@@ -210,39 +209,50 @@ const formatDate = (startDate) => {
       emailRef,
       contactRef,
     ].filter((ref) => !ref.current || !ref.current.value);
-
-    if (missingFields.length > 0) {
-      setIsValid(false);
-
-      // Focus on the first missing field
-      missingFields[0].current.focus();
-      return;
-    } else {
+  
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const mobileRegex = /^[6-9]\d{9}$/;
+  
+    const emailValid = emailRegex.test(emailRef.current.value);
+    const contactValid = mobileRegex.test(contactRef.current.value);
+  
+    if (missingFields.length > 0 || !emailValid || !contactValid) {
       setIsValid(true);
+  
+      // Focus on the first missing field
+      if (missingFields.length > 0) {
+        missingFields[0].current.focus();
+      } else if (!emailValid) {
+        emailRef.current.focus();
+      } else {
+        contactRef.current.focus();
+      }
+    } else {
+      setIsValid(false);
+  
+      const updatedObject = {
+        firstName: firstNameRef.current.value,
+        lastName: lastNameRef.current.value,
+        email: emailRef.current.value,
+        contact: contactRef.current.value,
+        request: requestRef.current.value || "",
+        source: journeyData.source,
+        destination: journeyData.destination,
+        tripType: journeyData.selectedValue,
+        startDate: journeyData.startDate,
+        returnDate: journeyData.returnDate,
+        startTime: journeyData.startTime,
+        returnTime: journeyData.returnTime,
+        totalPayment: totalFare,
+        paymentDone: payableAmount,
+        paymentRemaining: totalFare - payableAmount,
+      };
+      setPaymentData(updatedObject);
+  
+      displayRazorpay();
     }
-
-    const updatedObject = {
-      firstName: firstNameRef.current.value,
-      lastName: lastNameRef.current.value,
-      email: emailRef.current.value,
-      contact: contactRef.current.value,
-      request: requestRef.current.value || "",
-      source: journeyData.source,
-      destination: journeyData.destination,
-      tripType: journeyData.selectedValue,
-      startDate: journeyData.startDate,
-      returnDate: journeyData.returnDate,
-      startTime: journeyData.startTime,
-      returnTime: journeyData.returnTime,
-      totalPayment: totalFare,
-      paymentDone: payableAmount,
-      paymentRemaining: totalFare - payableAmount,
-    };
-    setPaymentData(updatedObject);
-
-    console.log(formatDate(journeyData?.startDate))
-    displayRazorpay();
   };
+  
 
   return (
     <section className="section-b-space bg-inner animated-section">

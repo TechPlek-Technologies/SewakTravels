@@ -9,7 +9,7 @@ const TravelInfo = ({
   requestRef,
   desiredcar,
   handleButtonClick,
-  paymentData
+  paymentData,
 }) => {
   return (
     <div className="col-lg-7">
@@ -28,13 +28,8 @@ const TravelInfo = ({
                   autoComplete={true}
                   ref={firstNameRef}
                 />
-                {!isValid && (
-                  <div
-                    className={isValid ? "isValidFalse" : ""}
-                    style={{ color: "red", display: "none" }}
-                  >
-                    Required field.
-                  </div>
+                {isValid && (
+                  <div style={{ color: "red" }}>Required field.</div>
                 )}
               </div>
               <div className="col">
@@ -47,13 +42,8 @@ const TravelInfo = ({
                   autoComplete={true}
                   ref={lastNameRef}
                 />
-                {!isValid && (
-                  <div
-                    className={isValid ? "isValidFalse" : ""}
-                    style={{ color: "red", display: "none" }}
-                  >
-                    Required field.
-                  </div>
+                 {isValid && (
+                  <div style={{ color: "red" }}>Required field.</div>
                 )}
               </div>
             </div>
@@ -68,14 +58,9 @@ const TravelInfo = ({
               autoComplete={true}
               ref={emailRef}
             />
-            {!isValid && (
-              <div
-                className={isValid ? "isValidFalse" : ""}
-                style={{ color: "red", display: "none" }}
-              >
-                Required field.
-              </div>
-            )}
+            {isValid && (
+                  <div style={{ color: "red" }}>Enter Valid Email</div>
+                )}
             <small id="emailHelp" className="form-text text-muted">
               Booking confirmation will be sent to this email ID.
             </small>
@@ -91,14 +76,9 @@ const TravelInfo = ({
               ref={contactRef}
               autoComplete={true}
             />
-            {!isValid && (
-              <div
-                className={isValid ? "isValidFalse" : ""}
-                style={{ color: "red", display: "none" }}
-              >
-                Required field.
-              </div>
-            )}
+            {isValid && (
+                  <div style={{ color: "red" }}>Enter Valid Phone Number</div>
+                )}
           </div>
           <div className="form-group">
             <label htmlFor="exampleFormControlTextarea1">
@@ -128,7 +108,7 @@ const TravelInfo = ({
             </div>
           </div>
         </form>
-        <div className="submit-btn sbmt1">
+        <div className="submit-btn">
           <Link>
             <button
               className="btn btn-solid App-link"

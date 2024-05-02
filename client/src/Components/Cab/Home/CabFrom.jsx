@@ -102,7 +102,7 @@ const CabFrom = ({ type }) => {
         },
         {
           name: "Nasik",
-          src: "/cab/pune-to-nashik-cabs",
+          src: "/cab/pune-to-nasik-cabs",
         },
         {
           name: "Aurangabad",
@@ -121,7 +121,7 @@ const CabFrom = ({ type }) => {
         },
         {
           name: "Nasik",
-          src: "/cab/mumbai-to-nashik-cabs",
+          src: "/cab/mumbai-to-nasik-cabs",
         },
         {
           name: "Shirdi",

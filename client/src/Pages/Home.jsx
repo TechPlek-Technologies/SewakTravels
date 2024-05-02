@@ -28,53 +28,100 @@ function Home() {
     setActiveTab(tab);
   }, []);
   const [isPopupOpen, setIsPopOpen] = useState(false);
-  const [phone_email,setPhone_email]=useState(null);
+  const [phone_email, setPhone_email] = useState(null);
   const handlePopupClose = () => {
-      setIsPopOpen(!isPopupOpen);
-    };
+    setIsPopOpen(!isPopupOpen);
+  };
 
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const dayAfterTomorrow = new Date();
+  dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 3);
+
+  const [startDate, setStartDate] = useState(new Date(tomorrow));
+  const [returnDate, setReturnDate] = useState(new Date(dayAfterTomorrow));
+
+  const [startTime, setStartTime] = useState("12:00 PM");
+  const [returnTime, setReturnTime] = useState("12:00 PM");
+
+  const [selectedValue, setSelectedValue] = useState("Outstation One-Way");
+
+  const [source, setSource] = useState("Delhi, India");
+  const [destination, setDestination] = useState("Chandigarh, India");
+
+  const [rentals, setRentals] = useState("4hrs40km");
+
+  const pathParams = {
+    source: source,
+    destination: destination,
+    selectedValue: selectedValue,
+    startDate: startDate,
+    returnDate: returnDate,
+    startTime: startTime,
+    returnTime: returnTime,
+    rentalPackage: rentals,
+    email_phone: phone_email,
+  };
 
   return (
     <div className="home-bg">
-    <>
-      <Layout title="overlay1-white" />
-      <Helmet>
-      <title> Sewak Travels: Travel Website for Booking Hotels, Flights, Cabs. </title>
-        <meta
-          name="description"
-          content=" Get best deals on all your online travel bookings. Book Online flights, hotels, cabs & Taxi services. Make your travel dreams a reality with Sewak Travels!"
-        />
-        <meta
-          name="keywords"
-          content=" India travel, travel in India, cheap air tickets, cheap flights, flight, hotels, hotel, holidays, air travel, air tickets, holiday packages, travel packages, online booking, cab services, taxi services, online cab booking, car rental in delhi with driver, book car rental online, cab service in delhi ncr, sewak travels"
-          
-        />
-        <link rel="canonical" href="https://sewaktravels.com/" />
-      </Helmet>
+      <>
+        <Layout title="overlay1-white" />
+        <Helmet>
+          <title>
+            {" "}
+            Sewak Travels: Travel Website for Booking Hotels, Flights, Cabs.{" "}
+          </title>
+          <meta
+            name="description"
+            content=" Get best deals on all your online travel bookings. Book Online flights, hotels, cabs & Taxi services. Make your travel dreams a reality with Sewak Travels!"
+          />
+          <meta
+            name="keywords"
+            content=" India travel, travel in India, cheap air tickets, cheap flights, flight, hotels, hotel, holidays, air travel, air tickets, holiday packages, travel packages, online booking, cab services, taxi services, online cab booking, car rental in delhi with driver, book car rental online, cab service in delhi ncr, sewak travels"
+          />
+          <link rel="canonical" href="https://sewaktravels.com/" />
+        </Helmet>
 
-      <NewHomeBanner activeTab={activeTab} callback={callback} handlePopupClose={handlePopupClose} phone_email={phone_email} isPopupOpen={isPopupOpen} />
-      <HomePopUp handlePopupClose={handlePopupClose} phone_email={phone_email} setPhone_email={setPhone_email} isPopupOpen={isPopupOpen} />
-      {/* <OurVehicleOffers/> */}
-      {/* <TopCategory titleClass="top-category margin-cls radius-cls" /> */}
-      {/* <FleetCars/> */}
-      {/* <CabOffers/> */}
-      {/* <CabGallery /> */}
-      {activeTab === "1" && <Package type="Cab Offers" />}
-      {activeTab === "2" && <Airline type="Flight Offers" />}
-      {activeTab === "3" && <OfferComponent type="Hotel Offers" />}
-      {activeTab === "4" && <ExplorePackages type="Tour Offers" />}
-      {activeTab === "4" && <ImportantLinks />}
-      {activeTab === "1" && <VideoBanner1 />}
-      {/* {activeTab === "1" && <CabFrom />} */}
-      {<FactsContent2/>}
-      {<Testimonials />}
-      {activeTab === "1" && <FullBanner />}
-      {<ServicesComponent />}
-      {<Video />}
-      {<CallService />}
-      {/* <Instagram /> */}
-      {<FooterComponent />}
-    </>
+        <NewHomeBanner
+          pathParams={pathParams}
+          activeTab={activeTab}
+          callback={callback}
+          handlePopupClose={handlePopupClose}
+          phone_email={phone_email}
+          isPopupOpen={isPopupOpen}
+          setStartDate={setStartDate}
+          setReturnDate={setReturnDate}
+          setStartTime={setStartTime}
+          setReturnTime={setReturnTime}
+          setSelectedValue={setSelectedValue}
+          setSource={setSource}
+          setDestination={setDestination}
+          setRentals={setRentals}
+        />
+
+        <HomePopUp
+          pathParams={pathParams}
+          handlePopupClose={handlePopupClose}
+          phone_email={phone_email}
+          setPhone_email={setPhone_email}
+          isPopupOpen={isPopupOpen}
+        />
+
+        {activeTab === "1" && <Package type="Cab Offers" />}
+        {activeTab === "2" && <Airline type="Flight Offers" />}
+        {activeTab === "3" && <OfferComponent type="Hotel Offers" />}
+        {activeTab === "4" && <ExplorePackages type="Tour Offers" />}
+        {activeTab === "4" && <ImportantLinks />}
+        {activeTab === "1" && <VideoBanner1 />}
+        {<FactsContent2 />}
+        {<Testimonials />}
+        {activeTab === "1" && <FullBanner />}
+        {<ServicesComponent />}
+        {<Video />}
+        {<CallService />}
+        {<FooterComponent />}
+      </>
     </div>
   );
 }

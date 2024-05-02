@@ -13,8 +13,8 @@ function DelhiToDesinationMeta1({ query,query1 }) {
         }
     }
 
-    const destination = getFirstWord(query);
-    const source = getFirstWord(query1);
+    const destination = getFirstWord(query1);
+    const source = getFirstWord(query);
 
     // Replace "Agra" with the dynamic destination value
     const title = `${source} To ${destination} Cab Service| Book ${source} To ${destination} taxi online`;

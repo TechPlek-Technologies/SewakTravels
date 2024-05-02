@@ -1,67 +1,25 @@
-import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { TabContent, TabPane } from "reactstrap";
-import { AppContext } from "../../../Context/JourneyContext";
-import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 import CabSearch from "./CabSearch/CabSearch";
 import SearchTabs from "./CabSearch/SearchTabs";
 import FlightSearch from "./FlightSearch/FlightSearch";
 import HotelSearch from "./HotelSearch/HotelSearch";
 import TourSearch from "./TourSearch/TourSearch";
-import { SendMail } from "../../../Utility/SendMail";
 const NewHomeBanner = ({
   activeTab,
   callback,
-  phone_email,
-  isPopupOpen,
   handlePopupClose,
+  pathParams,
+  setStartDate,
+  setReturnDate,
+  setStartTime,
+  setReturnTime,
+  setSelectedValue,
+  setSource,
+  setDestination,
 }) => {
-  const tomorrow = new Date();
-  tomorrow.setDate(tomorrow.getDate() + 1);
-  const dayAfterTomorrow = new Date();
-  dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 3);
+ 
 
-  const [startDate, setStartDate] = useState(new Date(tomorrow));
-  const [returnDate, setReturnDate] = useState(new Date(dayAfterTomorrow));
-
-  const [startTime, setStartTime] = useState("12:00 PM");
-  const [returnTime, setReturnTime] = useState("12:00 PM");
-
-  const [selectedValue, setSelectedValue] = useState("Outstation One-Way");
-
-  const [source, setSource] = useState("Delhi, India");
-  const [destination, setDestination] = useState("Chandigarh, India");
-
-  const [rentals, setRentals] = useState("4hrs40km");
-
-  const { journeyData, setJourneyData } = useContext(AppContext);
-
-  const handleSearch = async () => {
-    const updatedObject = {
-      ...journeyData,
-      source: source,
-      destination: destination,
-      selectedValue: selectedValue,
-      startDate: startDate,
-      returnDate: returnDate,
-      startTime: startTime,
-      returnTime: returnTime,
-      rentalPackage: rentals,
-      email_phone: phone_email,
-    };
-    setJourneyData(updatedObject);
-  };
-  const pathParams = {
-    source: source,
-    destination: destination,
-    selectedValue: selectedValue,
-    startDate: startDate,
-    returnDate: returnDate,
-    startTime: startTime,
-    returnTime: returnTime,
-    rentalPackage: rentals,
-    email_phone: phone_email,
-  };
   return (
     <section className="home_section slide-1 p-0" id="home">
       <div>
@@ -94,26 +52,26 @@ const NewHomeBanner = ({
                       <TabPane tabId="1">
                         <div className="mix-demo-classic">
                           <CabSearch
-                            source={source}
-                            destination={destination}
+                            source={pathParams.source}
+                            destination={pathParams.destination}
                             setSource={setSource}
                             setDestination={setDestination}
-                            selectedValue={selectedValue}
+                            selectedValue={pathParams.selectedValue}
                             setSelectedValue={setSelectedValue}
-                            startDate={startDate}
+                            startDate={pathParams.startDate}
                             setStartDate={setStartDate}
-                            returnDate={returnDate}
+                            returnDate={pathParams.returnDate}
                             setReturnDate={setReturnDate}
                             setStartTime={setStartTime}
                             setReturnTime={setReturnTime}
-                            setRentals={setRentals}
+                            setRentals={pathParams.setRentals}
                           />
                         </div>
                       </TabPane>
                       <TabPane tabId="2">
                         <div className="mix-demo-flight">
                           <FlightSearch
-                            selectedValue={selectedValue}
+                            selectedValue={pathParams.selectedValue}
                             setSelectedValue={setSelectedValue}
                           />
                         </div>
@@ -132,18 +90,9 @@ const NewHomeBanner = ({
                     </TabContent>
                     <div className="btn-search col-2 searchButton">
                       <Link
-                        to={
-                          !phone_email
-                            ? "#home" // Placeholder link if the button is disabled
-                            : {
-                                pathname: `/cabs/listing/${JSON.stringify(
-                                  pathParams
-                                )}`,
-                                state: { journeyData },
-                              }
-                        }
+                      
                         className={`btn btn-rounded color1 searchButton`}
-                        onClick={!phone_email ? handlePopupClose : handleSearch}
+                        onClick={handlePopupClose}
                       >
                         {"Search"}
                       </Link>
