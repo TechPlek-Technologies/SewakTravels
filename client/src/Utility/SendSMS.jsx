@@ -25,7 +25,6 @@ export const sendSMS = async (
 ) => {
   try {
 
-    console.log(PhNo)
     const authToken = await getAuthToken();
 
     const response = await axios.post(

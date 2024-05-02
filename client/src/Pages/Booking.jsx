@@ -253,6 +253,68 @@ const formatDate = (startDate) => {
     }
   };
   
+  // const handleButtonClick1 = async() => {
+   
+  //   const paymentsData = {
+  //     transaction_id: "response.razorpay_payment_id",
+  //     billing_name:
+  //       firstNameRef.current.value + " " + lastNameRef.current.value,
+  //     billing_email: emailRef.current.value,
+  //     billing_mobile: "9993557535",
+  //     mode_of_payment: "RazaorPay",
+  //     cab_type: journeyData.selectedValue,
+  //     min_amount: payableAmount,
+  //     trip_type: journeyData.selectedValue,
+  //     pickup_location: journeyData.source,
+  //     drop_location: journeyData.destination,
+  //     pickup_date: journeyData.startDate,
+  //     pickup_time: journeyData.startTime,
+  //     return_date: journeyData.returnDate,
+  //     return_time: journeyData.returnTime,
+  //     distance: journeyData.travelDistance,
+  //     duration: journeyData.travelTime,
+  //     driver_allowance: driverAllowance,
+  //     night_charges: night,
+  //     car_type:
+  //       params.id === "1"
+  //         ? "Sedan"
+  //         : params.id === "2"
+  //         ? "SUV"
+  //         : "prime SUV",
+  //     discount: paymentData?.discount || null,
+  //     sub_total: totalFare,
+  //     order_comments: requestRef.current.value || "",
+  //     total: totalFare,
+  //     min_paid_amount: payableAmount,
+  //     paid_amount: payableAmount,
+  //     invoice_no: "response.razorpay_payment_id",
+  //     pick_type: journeyData.selectedValue,
+  //     status: "success",
+  //     send_email: 1,
+  //     base_price: totalFare,
+  //     car_price: params.id === "1" ? 22 : params.id === "2" ? 23.5 : 28,
+  //   };
+
+  //   const text = `Sewak Travels Cab Booking Confirmation 
+  //   Trip Type: ${paymentsData.trip_type}
+  //   Car Type: ${paymentsData.car_type}
+    
+  //   Pickup Location: ${paymentsData.pickup_location}
+  //   Pickup Date: ${formatDate(paymentsData.pickup_date)}
+  //   Pickup Time: ${paymentsData.pickup_time}
+    
+  //   Transaction ID: ${paymentsData.transaction_id}
+  //   Total Amount: ${paymentsData.sub_total}
+  //   Paid Amount: ${paymentsData.paid_amount}
+  //   Remaining Amount: ${paymentsData.sub_total - paymentsData.paid_amount}
+    
+  //   Contact (for queries): +918377828828 
+  //   Email (for queries): booking@sewaktravels.com 
+  //   Website: https://sewaktravels.com/
+  //   `;
+  //   await sendSMS(paymentsData.billing_mobile,text);
+  // };
+  
 
   return (
     <section className="section-b-space bg-inner animated-section">

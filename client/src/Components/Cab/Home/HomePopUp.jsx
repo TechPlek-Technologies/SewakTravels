@@ -14,7 +14,7 @@ const HomePopUp = ({
   pathParams,
 }) => {
   const { setPaymentData } = useContext(PaymentContext);
-  const [isValidPhone, setIsValidPhone] = useState(true);
+  const [isValidPhone, setIsValidPhone] = useState(false);
   const { journeyData, setJourneyData } = useContext(AppContext);
   async function sendQueryEmail(phone) {
     const res = await SendMail(
@@ -44,8 +44,7 @@ const HomePopUp = ({
         ...prevState, // Keep all existing fields
         contact: value, // Update just the firstName field
       }));
-      handleSearch();
-      sendQueryEmail(value);
+      
     }
   };
 
@@ -63,6 +62,7 @@ const HomePopUp = ({
       email_phone: phone_email,
     };
     setJourneyData(updatedObject);
+    sendQueryEmail(phone_email);
   };
 
   return (
@@ -84,7 +84,7 @@ const HomePopUp = ({
                   />
 
                   <div className={`input-group-append ${styles.mobile}`}>
-                    <div className="btn btn-rounded btn-sm color1">
+                    <div className={`btn btn-rounded btn-sm color1`} >
                       <Link
                         to={{
                           pathname: `/cabs/listing/${JSON.stringify(
@@ -92,6 +92,7 @@ const HomePopUp = ({
                           )}`,
                           state: { journeyData },
                         }}
+                        onClick={handleSearch}
                       >
                         Continue
                       </Link>
@@ -107,6 +108,7 @@ const HomePopUp = ({
                           )}`,
                           state: { journeyData },
                         }}
+                        onClick={handleSearch}
                       >
                         Continue
                       </Link>
