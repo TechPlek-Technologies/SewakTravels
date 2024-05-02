@@ -91,6 +91,9 @@ import {
   dataVisakhapatnam,
   dataVrindavan,
 } from "./Pages/SourceToDestination";
+import CabListing2 from "./Pages/CabListing2";
+import CabListing3 from "./Pages/CabListing3";
+import CabListing4 from "./Pages/CabListing4";
 
 const Home = lazy(() => import("./Pages/Home"));
 
@@ -152,10 +155,7 @@ function App() {
             element={<Corporate />}
           />
           <Route path={"/intercity-cab-taxi-service"} element={<Intercity />} />
-          <Route
-            path={"/cabs/listing/:params"}
-            element={<CabListing />}
-          />
+          <Route path={"/cabs/listing/:params"} element={<CabListing />} />
 
           <Route path={"/journey-details/:id"} element={<CabDetails />} />
           <Route path={"/FAQ"} element={<Faq />} />
@@ -2003,7 +2003,7 @@ function App() {
           <Route
             path={"/cab/delhi-city-cabs"}
             element={
-              <CabListing1
+              <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
               />
@@ -2013,21 +2013,2595 @@ function App() {
           <Route
             path={"/cab/ghaziabad-city-cabs"}
             element={
-              <CabListing1
+              <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source={"Ghaziabad, Uttar Pradesh, India"}
               />
             }
           />
 
+          <Route
+            path={"/cab/noida-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Noida, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bahadurgarh-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Bahadurgarh, Haryana, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bagpat-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Bagpat, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/baghpat-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Baghpat, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/gurgaon-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Gurgaon, Haryana, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/gurugram-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Gurugram, Haryana, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/faridabad-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Faridabad, Haryana, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/basai-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Basai, Haryana, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/dadri-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Dadri, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/greater-noida-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Greater Noida, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kharkhoda-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kharkhoda, Haryana, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/modinagar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Modinagar, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/sonipat-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Sonipat, Haryana, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/murthal-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Murthal, Haryana, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/manesar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Manesar, Haryana, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/barau-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Barau, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/baraut-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Baraut, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/gautam-buddha-nagar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Gautam Buddha Nagar, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          {/* Agra */}
+          <Route
+            path={"/cab/shamshabad-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Shamshabad, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kagarol-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kagarol, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/sadabad-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Sadabad, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bisawar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Bisawar, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/tundla-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Tundla, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rajakhera-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Rajakhera, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/fatehpur-sikri-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Fatehpur Sikri, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/firozabad-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Firozabad, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/jalesar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Jalesar, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/hathras-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Hathras, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/mathura-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Mathura, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bharatpur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Bharatpur, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/dholpur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Dholpur, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/vrindavan-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Vrindavan, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ambah-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Ambah, Madhya Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/shikohabad-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Shikohabad, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/holipura-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Holipura, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/sasni-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Sasni, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/iglas-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Iglas, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/govardhan-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Govardhan, Uttar Pradesh, India"
+              />
+            }
+          />
+
+          {/* Jaipur */}
+          <Route
+            path={"/cab/shekhawati-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Shekhawati, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kukas-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kukas, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bhambhoria-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="BHAMBHORIA, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/begas-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Begas, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bassi-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Bassi, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/achrol-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Achrol, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/chomu-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Chomu, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/asalpur-jobner-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Asalpur Jobner, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/chaksu-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Chaksu, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/pawta-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Pawta, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/jobner-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Jobner, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/alila-fort-bishangarh-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Alila Fort Bishangarh, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/mojamabaad-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Mojamabaad, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/renwal-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Renwal, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/mehandipur-balaji-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Mehandipur Balaji, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/dausa-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Dausa, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/virat-nagar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Virat Nagar, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/shahpura-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Shahpura, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ringas-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Ringas, Rajasthan, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/khatu-shyam-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Khatu Shyam, Rajasthan, India"
+              />
+            }
+          />
+
+          {/* Pune */}
+          <Route
+            path={"/cab/pimpri-chinchwad-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Pimpri Chinchwad, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/induri-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Induri, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/talegaon-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Talegaon, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/shikrapur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Shikrapur, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/lavasa-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Lavasa, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bhor-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Bhor, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/jejuri-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Jejuri, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/pawna-lake-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Pawna Lake, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/shirval-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Shirval, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/aamby-valley-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Aamby Valley, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/raigad-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Raigad, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/lonavala-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Lonavala, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/manchar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Manchar, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/khandala-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Khandala, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kedagaon-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kedagaon, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/imagica-adlab-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Imagica Adlab, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/khopoli-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Khopoli, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/shirur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Shirur, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/imagica-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Imagica, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/panchgani-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Panchgani, Maharashtra, India"
+              />
+            }
+          />
+
+          {/* Mumbai */}
+          <Route
+            path={"/cab/ltt-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="LTT, Mumbai, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/andheri-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Andheri, Mumbai, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/navi-mumbai-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Navi Mumbai, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/thane-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Thane, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/mira-bhayandar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Mira Bhayandar, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/new-panvel-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="New Panvel, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/panvel-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Panvel, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/dombivli-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Dombivli, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bhiwandi-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Bhiwandi, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kalyan-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kalyan, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ambernath-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Ambernath, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/vasai-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Vasai, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/badalapur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Badalapur, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/matheran-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Matheran, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/aman-lodge-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Aman Lodge, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/virar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Virar, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/alibag-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Alibag, Maharashtra, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/neral-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Neral, Maharashtra, India"
+              />
+            }
+          />
+
+          {/* Chandigarh */}
+          <Route
+            path={"/cab/mohali-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Mohali, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/sahibzada-ajit-singh-nagar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Sahibzada Ajit Singh Nagar, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/panchkula-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Panchkula, Haryana, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/zira-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Zira, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/zirakpur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Zirakpur, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kharar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kharar, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/darpan-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Darpan, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/dera-bassi-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Dera Bassi, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kalka-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kalka, Haryana, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/parwanoo-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Parwanoo, Himachal Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kurali-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kurali, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/baddi-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Baddi, Himachal Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kasauli-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kasauli, Himachal Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/lalru-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Lalru, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/barog-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Barog, Himachal Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rajpur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Rajpur, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rajpura-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Rajpura, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/nalagarh-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Nalagarh, Himachal Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ropar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Ropar, Punjab, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rupnagar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Rupnagar, Punjab, India"
+              />
+            }
+          />
+
+          {/* Bangalore */}
+          <Route
+            path={"/cab/hoskote-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Hoskote, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/nelamangala-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Nelamangala, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bangalore-rural-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Bangalore Rural, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/hosur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Hosur, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/dodballapur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Dodballapur, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/malur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Malur, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/magadi-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Magadi, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ramanagara-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Ramanagara, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/nandi-hills-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Nandi Hills, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kanakapura-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kanakapura, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/chikballapur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Chikballapur, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/chikkaballapur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Chikkaballapur, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/denkanikottai-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Denkanikottai, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/channapatna-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Channapatna, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/sidlaghatta-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Sidlaghatta, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/shoolagiri-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Shoolagiri, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kodagu-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kodagu, Karnataka, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kolar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kolar, Karnataka, India"
+              />
+            }
+          />
+
+          {/* Chennai */}
+          <Route
+            path={"/cab/anna-road-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Anna Road, Chennai, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ambattur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Ambattur, Chennai, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/tambaram-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Tambaram, Chennai, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/minjur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Minjur, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ponneri-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Ponneri, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/sriperumbudur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Sriperumbudur, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/tiruvallur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Tiruvallur, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/gummidipoondi-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Gummidipoondi, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/uttukottai-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Uttukottai, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/mahabalipuram-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Mahabalipuram, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/chengalpattu-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Chengalpattu, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/chinglepet-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Chinglepet, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/arambakkam-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Arambakkam, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/arakkonam-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Arakkonam, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/varadaiahpalem-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Varadaiahpalem, Andhra Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kanchipuram-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kanchipuram, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/tiruttani-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Tiruttani, Tamil Nadu, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/sullurpeta-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Sullurpeta, Andhra Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/madurantakam-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Madurantakam, Tamil Nadu, India"
+              />
+            }
+          />
+
+          {/* Dehradun  */}
+          <Route
+            path={"/cab/mussoorie-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Mussoorie, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/dhanaulti-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Dhanaulti, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kalsi-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kalsi, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/narendra-nagar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Narendra Nagar, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/vikasnagar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Vikasnagar, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kanatal-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kanatal, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rishikesh-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Rishikesh, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/new-tehri-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="New Tehri, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/tehri-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Tehri, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/neelkanth-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Neelkanth, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/haridwar-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Haridwar, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/paonta-sahib-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Paonta Sahib, Himachal Pradesh, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/chakrata-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Chakrata, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bhagwanpur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Bhagwanpur, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/roorkee-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Roorkee, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/naugaon-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Naugaon, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/uttarkashi-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Uttarkashi, Uttarakhand, India"
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/saharanpur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Saharanpur, Uttar Pradesh, India"
+              />
+            }
+          />
+
           {/* Rental Services in Other Cities */}
-          
+          {/* Delhi to Agra */}
+
           <Route
             path={"/cab/rental-cabs-in-faridabad"}
             element={
-              <CabListing1
+              <CabListing3
                 selectedValue={"Hourly Rentals"}
                 source={"Faridabad, Haryana, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-solapur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Solapur, Maharashtra, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-delhi"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Delhi, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-noida"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Noida, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-ahmedabad"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Ahmedabad, Gujarat, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-vijayawada"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Vijayawada, Andhra Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-hyderabad"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Hyderabad, Telangana, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-kozhikode"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Kozhikode, Kerala, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-kangra"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Kangra, Himachal Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-ludhiana"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Ludhiana, Punjab, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-new-delhi"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"New Delhi, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-kochi"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Kochi, Kerala, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-lucknow"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Lucknow, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-allahabad"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Allahabad, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-bangalore"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Bangalore, Karnataka, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-thiruvananthapuram"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Thiruvananthapuram, Kerala, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-dehradun"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Dehradun, Uttarakhand, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-pondicherry"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Pondicherry, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-shirdi"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Shirdi, Maharashtra, India"}
+              />
+            }
+          />
+
+          {/* Delhi to Jaipur */}
+          <Route
+            path={"/cab/rental-cabs-in-chandigarh"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Chandigarh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-jaipur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Jaipur, Rajasthan, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-mangaluru"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Mangaluru, Karnataka, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-nagpur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Nagpur, Maharashtra, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-belgaum"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Belgaum, Karnataka, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-mysore"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Mysore, Karnataka, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-salem"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Salem, Tamil Nadu, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-asansol"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Asansol, West Bengal, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-goa"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Goa, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-jammu"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Jammu, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-baga"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Baga, Goa, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-surat"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Surat, Gujarat, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-srinagar"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Srinagar, Jammu and Kashmir, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-bareilly"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Bareilly, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-thane"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Thane, Maharashtra, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-ghaziabad"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Ghaziabad, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          {/* Delhi to Dehradun */}
+          <Route
+            path={"/cab/rental-cabs-in-tirupati"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Tirupati, Andhra Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-jabalpur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Jabalpur, Madhya Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-jamshedpur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Jamshedpur, Jharkhand, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-bokaro"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Bokaro, Jharkhand, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-bhuj"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Bhuj, Gujarat, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-gaya"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Gaya, Bihar, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-nashik"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Nashik, Maharashtra, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-ranchi"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Ranchi, Jharkhand, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-gwalior"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Gwalior, Madhya Pradesh, India"}
+              />
+            }
+          />
+
+          {/* Delhi to Haridwar */}
+          <Route
+            path={"/cab/rental-cabs-in-navi-mumbai"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Navi Mumbai, Maharashtra, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-patna"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Patna, Bihar, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-gorakhpur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Gorakhpur, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-coimbatore"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Coimbatore, Tamil Nadu, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-kullu"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Kullu, Himachal Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-bengaluru"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Bengaluru, Karnataka, India"}
+              />
+            }
+          />
+
+          {/* Agra To Delhi */}
+          <Route
+            path={"/cab/rental-cabs-in-chandigarh"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Chandigarh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-pune"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Pune, Maharashtra, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-amritsar"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Amritsar, Punjab, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-raipur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Raipur, Chhattisgarh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-rajkot"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Rajkot, Gujarat, India"}
+              />
+            }
+          />
+
+          {/* Agra To Noida */}
+          <Route
+            path={"/cab/rental-cabs-in-durgapur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Durgapur, West Bengal, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-bhopal"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Bhopal, Madhya Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-kanpur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Kanpur, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-madurai"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Madurai, Tamil Nadu, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-allahabad"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Allahabad, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          {/* Agra To Faridabad  */}
+          <Route
+            path={"/cab/rental-cabs-in-bhubaneswar"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Bhubaneswar, Odisha, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-kolkata"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Kolkata, West Bengal, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-baga"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Baga, Goa, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-mumbai"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Mumbai, Maharashtra, India"}
+              />
+            }
+          />
+
+          {/* Agra To Ghaziabad   */}
+          <Route
+            path={"/cab/rental-cabs-in-jamnagar"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Jamnagar, Gujarat, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-indore"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Indore, Madhya Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-jodhpur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Jodhpur, Rajasthan, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-udaipur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Udaipur, Rajasthan, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-gurgaon"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Gurgaon, Haryana, India"}
+              />
+            }
+          />
+
+          {/* Jaipur To Delhi   */}
+          <Route
+            path={"/cab/rental-cabs-in-chennai"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Chennai, Tamil Nadu, India"}
+              />
+            }
+          />
+
+          {/* Jaipur To Gurgaon   */}
+
+          <Route
+            path={"/cab/rental-cabs-in-agra"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Agra, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-raipur"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Raipur, Chhattisgarh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-varanasi"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Varanasi, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-delhi"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Delhi, India"}
+              />
+            }
+          />
+
+          {/* Jaipur To Noida  */}
+          <Route
+            path={"/cab/rental-cabs-in-srinagar"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Srinagar, Jammu and Kashmir, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-goa"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Goa, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-kozhikode"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Kozhikode, Kerala, India"}
+              />
+            }
+          />
+
+          {/* Jaipur To Faridabad  */}
+          <Route
+            path={"/cab/rental-cabs-in-ghaziabad"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Ghaziabad, Uttar Pradesh, India"}
+              />
+            }
+          />
+
+          {/* Jaipur To Ghaziabad  */}
+          <Route
+            path={"/cab/rental-cabs-in-kochi"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Kochi, Kerala, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-bhubaneswar"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Bhubaneswar, Odisha, India"}
+              />
+            }
+          />
+
+          {/* Pune To Mumbai   */}
+          <Route
+            path={"/cab/rental-cabs-in-kangra"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Kangra, Himachal Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-rajkot"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Rajkot, Gujarat, India"}
+              />
+            }
+          />
+
+          {/* Pune To Shirdi  */}
+          <Route
+            path={"/cab/rental-cabs-in-kullu"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Kullu, Himachal Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-trichy"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Trichy, Tamil Nadu, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rental-cabs-in-bokaro"}
+            element={
+              <CabListing3
+                selectedValue={"Hourly Rentals"}
+                source={"Bokaro, Jharkhand, India"}
               />
             }
           />
