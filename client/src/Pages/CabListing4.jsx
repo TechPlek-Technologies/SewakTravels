@@ -7,7 +7,7 @@ import { AppContext } from "../Context/JourneyContext";
 import DelhiToDestination from "../Components/Cab/Listing/DelhiToDestination";
 import CabsDelhiAirportMeta from "./MetaTags/CabsDelhiAirportMeta";
 
-function CabListing4({source, destination,blogdata,selectedValue}) {
+function CabListing4({source, destination,blogdata,selectedValue,fromAirport}) {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   const dayAfterTomorrow = new Date();
@@ -24,6 +24,7 @@ function CabListing4({source, destination,blogdata,selectedValue}) {
     selectedValue: selectedValue,
     startTime: "12:00 PM",
     returnTime: "12:00 PM",
+    fromAirport:fromAirport,
   };
  
 
@@ -35,7 +36,7 @@ function CabListing4({source, destination,blogdata,selectedValue}) {
       <ListSearch data={data} setisValid={setisValid} rentals={rentals} setRentals={setRentals}/>
       <ListingView  data={data} isValid={isValid} />
      { blogdata? <DelhiToDestination data={blogdata} />:null}
-      <CabsDelhiAirportMeta query={source}/>
+      <CabsDelhiAirportMeta query={source} query1={fromAirport}/>
       <FooterComponent />
     </>
   );
