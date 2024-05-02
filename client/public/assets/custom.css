@@ -1394,7 +1394,7 @@ display: block;
 
 @media (max-width:360px){
   .home_section .home.home-mobile{
-    height:92vh !important
+    height:94vh !important
   }
   .flight-search .responsive-detail .destination span{
     font-size: 13px;
@@ -1426,7 +1426,7 @@ display: block;
   }
 }
 
-@media (max-width : 767px){
+/* @media (max-width : 767px){
   .sbmt{
     display: none;
   }
@@ -1436,4 +1436,4 @@ display: block;
   .sbmt1{
     display: none;
   }
-}
+} */

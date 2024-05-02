@@ -4,15 +4,10 @@ import ListSearch from "../Components/Cab/Listing/ListSearch";
 import FooterComponent from "../Components/Common/FooterComponent";
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../Context/JourneyContext";
-import { calculateDistanceAndDuration } from "../Utility/DistanceCalculator";
 import DelhiToDestination from "../Components/Cab/Listing/DelhiToDestination";
-import CabOptions from "./CabListing/CabOptions";
-import CabOptions1 from "./CabListing/CabOptions1";
-import ServiceBlocks from "./ServiceBlocks/ServiceBlocks";
-import DelhiToDesinationMeta1 from "./MetaTags/DelhiToDestination1";
-import CabPopup from "../Components/Cab/Listing/CabPopup";
+import RentalServiceMeta from "./MetaTags/RentalServiceMeta";
 
-function CabListing1({source, destination,blogdata,selectedValue }) {
+function CabListing3({source, destination,blogdata,selectedValue}) {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   const dayAfterTomorrow = new Date();
@@ -39,14 +34,10 @@ function CabListing1({source, destination,blogdata,selectedValue }) {
       <Layout title="light_header" />
       <ListSearch data={data} setisValid={setisValid} rentals={rentals} setRentals={setRentals}/>
       <ListingView  data={data} isValid={isValid} />
-      {/* <CabPopup/> */}
-      {/* <CabOptions/> */}
      { blogdata? <DelhiToDestination data={blogdata} />:null}
-      {/* <CabOptions1/> */}
-      {/* <ServiceBlocks/> */}
-      <DelhiToDesinationMeta1 query={source} query1={destination}/>
+      <RentalServiceMeta query={source}/>
       <FooterComponent />
     </>
   );
 }
-export default CabListing1;
+export default CabListing3;

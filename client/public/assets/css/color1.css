@@ -10800,7 +10800,8 @@ section .black-layer:before {
   .flight-search .responsive-detail .modify-search {
     position: absolute;
     right: 25px;
-    top: 50%;
+    /* top: 50%; */
+    top: 26%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
     .flight-search .responsive-detail .modify-search .btn {
@@ -21322,7 +21323,7 @@ body.dark {
     .home_section .home.home-padding .home-content {
       padding: 50px 0 50px 0; }
     .home_section .home.home-mobile {
-      height: 80vh; }
+      height: 84vh; }
       .home_section .home.home-mobile .home-content.smaller-content {
         height: 80vh; }
     .home_section .home.home-60 {
