@@ -40,7 +40,7 @@ const RentalSearch = ({setRentals}) => {
             </div>
             <div className="search-body title-hotel col-2">
               <h6>{"Select Package"}</h6>
-              <select onChange={handleChange} className="form-control">
+              <select onChange={handleChange} className="form-control" style={{border:'none !important'}}>
                 <option value="4hrs40km">4hrs 40km</option>
                 <option value="8hrs80km">8hrs 80km</option>
               </select>
