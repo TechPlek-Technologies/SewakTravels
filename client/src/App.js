@@ -134,7 +134,7 @@ const BlogDetails = lazy(() => import("./Pages/BlogDetails/BlogDetails"));
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<Loader loaderTimeout={1000} />}>
+      <Suspense fallback={<Loader loaderTimeout={2000} />}>
         <Routes>
           <Route path={"/"} element={<Home />} />
           <Route path={"/contact"} element={<Contactus />} />

@@ -16,11 +16,10 @@ import Airline from "../Components/FlightPackage/Airline";
 import ImportantLinks from "../Components/Common/ImportantLinks";
 import OfferComponent from "../Components/HotelPackage/OfferComponent";
 import { Helmet } from "react-helmet";
-// import FactsContent1 from "../Components/Cab/Home/FactsContent/FactsContent1";
 import FactsContent2 from "../Components/Cab/Home/FactsContent/FactsContent2";
-import CabFrom from "../Components/Cab/Home/CabFrom";
 import VideoBanner1 from "../Components/Cab/Home/VideoBanner1";
 import HomePopUp from "../Components/Cab/Home/HomePopUp";
+import HomeBanner1 from "../Components/Cab/Home/HomeBanner1";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("1");
@@ -83,7 +82,7 @@ function Home() {
           <link rel="canonical" href="https://sewaktravels.com/" />
         </Helmet>
 
-        <NewHomeBanner
+        {/* <NewHomeBanner
           pathParams={pathParams}
           activeTab={activeTab}
           callback={callback}
@@ -98,6 +97,23 @@ function Home() {
           setSource={setSource}
           setDestination={setDestination}
           setRentals={setRentals}
+        /> */}
+
+        <HomeBanner1
+           pathParams={pathParams}
+           activeTab={activeTab}
+           callback={callback}
+           handlePopupClose={handlePopupClose}
+           phone_email={phone_email}
+           isPopupOpen={isPopupOpen}
+           setStartDate={setStartDate}
+           setReturnDate={setReturnDate}
+           setStartTime={setStartTime}
+           setReturnTime={setReturnTime}
+           setSelectedValue={setSelectedValue}
+           setSource={setSource}
+           setDestination={setDestination}
+           setRentals={setRentals}
         />
 
         <HomePopUp

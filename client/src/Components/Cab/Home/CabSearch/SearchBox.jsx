@@ -16,12 +16,11 @@ const SearchBox = ({
   setReturnDate,
   setStartTime,
   setReturnTime,
-  setRentals
+  setRentals,
 }) => {
   const handleRadioChange = (event) => {
     setSelectedValue(event.target.value);
   };
-
 
   return (
     <>
@@ -133,7 +132,6 @@ const SearchBox = ({
             setSource={setSource}
             setDestination={setDestination}
             setRentals={setRentals}
-            
           />
         )}
       </div>

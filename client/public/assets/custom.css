@@ -209,7 +209,7 @@ input:focus #datepicker {
   display: flex;
   gap: 30px;
   border-radius: 0.5rem;
-  /* justify-content: center; */
+  justify-content: center;
   font-weight: 800;
 }
 
@@ -228,10 +228,44 @@ input:focus #datepicker {
 
 .searchButton {
   margin: auto;
-  margin-top: -10px;
+  margin-top: -36px;
   width: 300px;
   /* height: 100px; */
   font-size: larger;
+}
+
+.home.home-padding.bg-size {
+  margin-top: 50px !important;
+}
+@media (max-width: 770px) {
+  .home_section .home.home-padding {
+      margin-top: 70px !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .searchButton {
+    margin-top: -30px;
+  }
+  .searchBannerWidth{
+    min-width: 80%;
+  }
+  .home_section .home.home-padding{
+    margin-top:50px
+  }
+
+  .search-section .datepicker-main, .home_section .home .home-content.mix-layout.smaller-content .search-section .search-box .left-part .search-body .form-control{
+    text-align: center;
+  }
+  
+}
+
+.searchBannerWidth{
+  min-width: 100%;
+}
+
+.home.home-padding{
+  margin-top: 28px;
 }
 
 .col-xl-10 {

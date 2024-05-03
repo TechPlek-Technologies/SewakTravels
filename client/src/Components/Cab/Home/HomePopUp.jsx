@@ -14,7 +14,7 @@ const HomePopUp = ({
   pathParams,
 }) => {
   const { setPaymentData } = useContext(PaymentContext);
-  const [isValidPhone, setIsValidPhone] = useState(false);
+  const [isValidPhone, setIsValidPhone] = useState(true);
   const { journeyData, setJourneyData } = useContext(AppContext);
   async function sendQueryEmail(phone) {
     const res = await SendMail(
@@ -44,7 +44,6 @@ const HomePopUp = ({
         ...prevState, // Keep all existing fields
         contact: value, // Update just the firstName field
       }));
-      
     }
   };
 
@@ -84,15 +83,27 @@ const HomePopUp = ({
                   />
 
                   <div className={`input-group-append ${styles.mobile}`}>
-                    <div className={`btn btn-rounded btn-sm color1`} >
+                    <div className={`btn btn-rounded btn-sm color1`}>
                       <Link
-                        to={{
-                          pathname: `/cabs/listing/${JSON.stringify(
-                            pathParams
-                          )}`,
-                          state: { journeyData },
-                        }}
-                        onClick={handleSearch}
+                        to={
+                          !phone_email
+                            ? "/#"
+                            : !isValidPhone
+                            ? "/#"
+                            : {
+                                pathname: `/cabs/listing/${JSON.stringify(
+                                  pathParams
+                                )}`,
+                                state: { journeyData },
+                              }
+                        }
+                        onClick={() =>
+                          !phone_email
+                            ? setIsValidPhone(false)
+                            : !isValidPhone
+                            ? setIsValidPhone(false)
+                            : handleSearch
+                        }
                       >
                         Continue
                       </Link>
@@ -101,18 +112,16 @@ const HomePopUp = ({
                 </div>
                 <div className={`input-group-append ${styles.desktop}`}>
                   <div className="btn btn-rounded btn-sm color1">
-                  <Link
-                        to={{
-                          pathname: `/cabs/listing/${JSON.stringify(
-                            pathParams
-                          )}`,
-                          state: { journeyData },
-                        }}
-                        onClick={handleSearch}
-                      >
-                        Continue
-                      </Link>
-                    </div>
+                    <Link
+                      to={{
+                        pathname: `/cabs/listing/${JSON.stringify(pathParams)}`,
+                        state: { journeyData },
+                      }}
+                      onClick={handleSearch}
+                    >
+                      Continue
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

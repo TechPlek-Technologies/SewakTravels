@@ -49,7 +49,7 @@ const NewHomeBanner = ({
                       className="tab-content"
                       id="pills-tabContent"
                     >
-                      <TabPane tabId="1">
+                      <TabPane tabId="1"> 
                         <div className="mix-demo-classic">
                           <CabSearch
                             source={pathParams.source}

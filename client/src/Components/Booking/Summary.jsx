@@ -204,12 +204,10 @@ const Summary = ({
                       <option value="fullPayment">Make Full Payment Now</option>
                     </select>
                   </td>
-                </tr>
-                {/* {<tr>Pay Rest To Driver</tr>}   */}
-                <tr>
-                  <td>payable amount</td>
                   <td className="amount">₹{payableAmount}</td>
                 </tr>
+                {<tr>Make full payment now, or make part payment and pay the rest to the driver.</tr>}  
+              
               </tbody>
             </table>
             {/* <div className="submit-btn sbmt">
