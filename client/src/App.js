@@ -11247,16 +11247,6 @@ function App() {
           />
 
           <Route
-            path={"/cab/ajmer-airport-taxi"}
-            element={
-              <CabListing5
-                selectedValue={"Airport Transfer"}
-                source={"Kishangarh Airport (KQH) (Ajmer), Kishangarh, Rajasthan, India"}
-              />
-            }
-          />
-
-          <Route
             path={"/cab/akola-airport-taxi"}
             element={
               <CabListing5
@@ -11292,16 +11282,6 @@ function App() {
               <CabListing5
                 selectedValue={"Airport Transfer"}
                 source={"Aurangabad Airport, Jalna Road, MIDC Industrial Area, Chilkalthana, Aurangabad, Maharashtra, India"}
-              />
-            }
-          />
-
-          <Route
-            path={"/cab/ayodhya-airport-taxi"}
-            element={
-              <CabListing5
-                selectedValue={"Airport Transfer"}
-                source={"Maharishi Valmiki International Airport, Ayodhya Dham (AYJ), Faizabad, Uttar Pradesh, India"}
               />
             }
           />
