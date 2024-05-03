@@ -2,8 +2,10 @@ import { Helmet } from "react-helmet";
 import Logo from "../Components/Common/Logo/Logo";
 import Navbar from "../Components/Common/Navbar";
 import TapToTop from "../Components/Common/TapToTop";
+import CallToAction from "../Pages/CallToAction";
 
 function Layout({  title }) {
+
   return (
     <>
     <Helmet>
@@ -22,6 +24,7 @@ function Layout({  title }) {
             </div>
           </div>
         </div>
+        <CallToAction/>
        <TapToTop/>
       </header>
       

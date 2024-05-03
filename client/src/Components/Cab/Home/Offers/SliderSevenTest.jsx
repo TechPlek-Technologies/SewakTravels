@@ -1,13 +1,13 @@
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import useSearchBetweenPlaces from "../../../../Utility/SearchFromPlace";
-export const SliderSevenTest =({ type,slideData })=> {
-  
+export const SliderSevenTest = ({ type, slideData }) => {
   const slide4 = {
-    infinite: true,
+    infinite: false,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    rows:2,
     autoplay: false,
     autoplaySpeed: 2000,
     responsive: [
@@ -45,53 +45,43 @@ export const SliderSevenTest =({ type,slideData })=> {
           slidesToShow: 1,
           slidesToScroll: 1,
         },
-      }
+      },
     ],
   };
-      
+
   const searchBetweenPlaces = useSearchBetweenPlaces();
 
   return (
     <Slider {...slide4} className="slider-4 arrow-classic">
-        {slideData.map((data, index) => (
+      {slideData.map((data, index) => (
         <div key={index}>
-      <div className="parentbigslide">
-      <div className="bigslideDiv">
-      {/* <div className="label-offer">Coupon code: {data.couponCode}</div> */}
-        <div>
-          <img src={data.img} alt=""/>
-          
+          <div className="parentbigslide">
+            <div className="bigslideDiv">
+              {/* <div className="label-offer">Coupon code: {data.couponCode}</div> */}
+              <div>
+                <img src={data.img} alt="" />
+              </div>
+              <div className="spacing">
+                {/* <h3>GENERAL </h3> */}
+                <h2>{data.title}</h2>
+                {/* <div className="reddiv"></div> */}
+                <p>{data.desc}</p>
+                <div className="new-line-container">
+                  <a href="tel:+91-837-782-8828" className="btn1 btn-rounded1 color1 packageButton"> 
+                    {"Call Now"}
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="CouponFt">
+              <div className="offertextTC">T&C APPLY</div>
+              <div className="offertext"><h6>STARTS FROM <span>{data?.disc}</span></h6></div>
+              {/* <span className="coupon">Coupon code: {data.couponCode}</span> */}
+            </div>
+          </div>
         </div>
-        <div className="spacing">
-          {/* <h3>GENERAL </h3> */}
-          <h2>{data.title}</h2>
-          {/* <div className="reddiv"></div> */}
-          <p>{data.desc}</p>
-          <div className="new-line-container">
-                    <Link
-                      className={`btn1 btn-rounded1 color1 packageButton`}
-                      to={{
-                        pathname: `${data.src}`,
-                        state: {
-                          // Pass your state data here
-                          destination:`${data.destination}`,
-                          blogdata: `${data.data}`
-                        }
-                      }}
-                    >
-                      {"Book Now"}
-                    </Link>
-                  </div>
-        </div>
-      </div>
-      <div className="CouponFt">
-             <span>T&C'sApply</span>
-             {/* <span className="coupon">Coupon code: {data.couponCode}</span> */}
-        </div>
-      </div>
-      </div>
       ))}
-        </Slider>
+    </Slider>
   );
 };
 
