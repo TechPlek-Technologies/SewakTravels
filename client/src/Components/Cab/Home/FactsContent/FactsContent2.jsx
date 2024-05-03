@@ -1,3 +1,5 @@
+import CabAnimation from "../../CallService/CabAnimation";
+
 const FactsContent2= () => {
     const factsData = [
         { icon: "../assets/images/tour/vector/13.png", counter: 2745, label: "Happy Client" },
@@ -6,7 +8,8 @@ const FactsContent2= () => {
         { icon: "../assets/images/tour/vector/16.png", counter: 29, label: "Tour States" },
       ];
     return (
-        <section class="small-section process-steps icon-large">
+        <section class="small-section process-steps icon-large animated-section">
+             <CabAnimation />
         <div class="container">
             <div class="title-1 detail-title">
                 <h2 class="pt-0">no stories, facts only</h2>
