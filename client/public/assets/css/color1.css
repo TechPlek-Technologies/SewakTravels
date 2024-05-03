@@ -23248,7 +23248,9 @@ body.dark {
       margin-top: -3px;
       font-size: 17px; }
     .tap-top.top {
-      right: 20px; }
+      right: 20px; 
+      bottom: 120px;
+    }
   .highlight-section .row > div {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
