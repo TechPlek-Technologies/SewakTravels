@@ -918,7 +918,7 @@ margin-bottom: 10px;
 
 @media (max-width:480px){
   .parentbigslide{
-    padding: 5px 0px 46px 0px;
+    padding: 5px 0px 24px 0px;
     /* width: 410px; */
     width: auto;
   }
@@ -944,7 +944,7 @@ margin-bottom: 10px;
 
 @media (max-width:380px){
   .parentbigslide{
-    padding: 5px 0px 46px 0px;
+    padding: 5px 0px 20px 0px;
     /* width: 366px; */
     width: auto;
   }
@@ -955,7 +955,7 @@ margin-bottom: 10px;
 
 @media (max-width:320px){
   .parentbigslide{
-    padding: 5px 0px 46px 0px;
+    padding: 5px 0px 20px 0px;
     /* width: 310px; */
     width: auto;
   }
