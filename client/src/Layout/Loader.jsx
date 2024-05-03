@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Img from "../Components/Common/Img";
+import Img from "../Components/Cab/Home/Img.tsx";
 
 const Loader = ({ loaderTimeout }) => {
     const loadingTime = loaderTimeout;
@@ -18,7 +18,7 @@ const Loader = ({ loaderTimeout }) => {
       
       <div className={`loader-wrapper food-loader ${show ? "" : "loaderhide"}`}>
           <div className="loader">
-            <img src={'/assets/images/loader.gif'} alt="Animated GIF" width={300} height={200} />
+            <Img src={'/assets/images/loader.gif'} alt="Animated GIF" width={300} height={200} />
           </div>
         </div>
 

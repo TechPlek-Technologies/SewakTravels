@@ -9,11 +9,13 @@ import { useParams } from "react-router-dom";
 import { addBillingData } from "../Utility/ca_admin";
 import { SendMail } from "../Utility/SendMail";
 import { HtmlEmailTemplate } from "../Utility/EmailTemplate";
+import Loader from "../Layout/Loader";
 
 const Booking = ({ desiredcar }) => {
   const { journeyData } = useContext(AppContext);
   const { paymentData, setPaymentData } = useContext(PaymentContext);
 const [totalFare,setTotalFare]=useState(paymentData.totalFare);
+const [loading,setLoading]=useState(false);
 
 const formatDate = (startDate) => {
   if (startDate instanceof Date) {
@@ -71,6 +73,7 @@ const formatDate = (startDate) => {
       description: "Purchase Description",
       image: "/assets/img/logo.png",
       handler: async function (response) {
+        setLoading(true);
         const paymentsData = {
           transaction_id: response.razorpay_payment_id,
           billing_name:
@@ -131,6 +134,7 @@ const formatDate = (startDate) => {
         await sendMail(paymentsData);
         await sendSMS(paymentsData.billing_mobile,text);
         await addBillingData(paymentsData);
+        setLoading(false);
 
         window.location.href = `/payment/${response.razorpay_payment_id}`;
       },
@@ -315,40 +319,44 @@ const formatDate = (startDate) => {
   //   await sendSMS(paymentsData.billing_mobile,text);
   // };
   
+  
 
   return (
-    <section className="section-b-space bg-inner animated-section">
-      <Animation />
-      <div className="container">
-        <div className="row">
-          <TravelInfo
-          paymentData={paymentData}
-            isValid={isValid}
-            handleButtonClick={handleButtonClick}
-            contactRef={contactRef}
-            emailRef={emailRef}
-            lastNameRef={lastNameRef}
-            firstNameRef={firstNameRef}
-            requestRef={requestRef}
-            desiredcar={desiredcar}
-            payableAmount={payableAmount}
-          />
-          <Summary
-            paymentData={paymentData}
-            isValid={isValid}
-            handleButtonClick={handleButtonClick}
-            desiredcar={desiredcar}
-            payableAmount={payableAmount}
-            setpayableAmount={setpayableAmount}
-            setDriverAllowance={setDriverAllowance}
-            driverAllowance={driverAllowance}
-            setNight={setNight}
-            night={night}
-          />
+    loading ? 
+      <Loader/> : 
+      <section className="section-b-space bg-inner animated-section">
+        <Animation />
+        <div className="container">
+          <div className="row">
+            <TravelInfo
+              paymentData={paymentData}
+              isValid={isValid}
+              handleButtonClick={handleButtonClick}
+              contactRef={contactRef}
+              emailRef={emailRef}
+              lastNameRef={lastNameRef}
+              firstNameRef={firstNameRef}
+              requestRef={requestRef}
+              desiredcar={desiredcar}
+              payableAmount={payableAmount}
+            />
+            <Summary
+              paymentData={paymentData}
+              isValid={isValid}
+              handleButtonClick={handleButtonClick}
+              desiredcar={desiredcar}
+              payableAmount={payableAmount}
+              setpayableAmount={setpayableAmount}
+              setDriverAllowance={setDriverAllowance}
+              driverAllowance={driverAllowance}
+              setNight={setNight}
+              night={night}
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
+  
 };
 
 export default Booking;

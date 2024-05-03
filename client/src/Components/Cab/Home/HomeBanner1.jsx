@@ -16,6 +16,7 @@ const HomeBanner1 = ({
     setSelectedValue,
     setSource,
     setDestination,
+    setRentals
   }) => {
   return (
     <section className="home_section p-0">
@@ -43,7 +44,7 @@ const HomeBanner1 = ({
                   setReturnDate={setReturnDate}
                   setStartTime={setStartTime}
                   setReturnTime={setReturnTime}
-                  setRentals={pathParams.setRentals}
+                  setRentals={setRentals}
                 />
               </div>
             </div>

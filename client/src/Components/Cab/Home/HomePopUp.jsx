@@ -110,8 +110,8 @@ const HomePopUp = ({
                     </div>
                   </div>
                 </div>
-                <div className={`input-group-append ${styles.desktop}`}>
-                  <div className="btn btn-rounded btn-sm color1">
+                <div className={`input-group-append justify-content-center ${styles.desktop}`}>
+                  <div className="btn btn-rounded btn-sm color1 rounded-0 mt-2">
                     <Link
                       to={{
                         pathname: `/cabs/listing/${JSON.stringify(pathParams)}`,
