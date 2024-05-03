@@ -206,7 +206,7 @@ const Summary = ({
                   </td>
                   <td className="amount">₹{payableAmount}</td>
                 </tr>
-                {<tr>Make full payment now, or make part payment and pay the rest to the driver.</tr>}  
+                {<tr>Make full payment now, or make part payment and pay the rest on the trip.</tr>}  
               
               </tbody>
             </table>
