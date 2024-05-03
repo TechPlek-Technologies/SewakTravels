@@ -1,8 +1,10 @@
+import CabAnimation from "../../CallService/CabAnimation";
 import ReviewContent from "./ReviewContent";
 
 const Testimonials= () => {
     return (
-      <section class="testimonial-area bg-color-of-white pt-120 testimonial-padding-bottom">
+      <section class="testimonial-area bg-color-of-white pt-120 testimonial-padding-bottom animated-section">
+         <CabAnimation />
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-9">

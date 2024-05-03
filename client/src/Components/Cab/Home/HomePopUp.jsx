@@ -36,7 +36,7 @@ const HomePopUp = ({
   const handleChange = (e) => {
     const { value } = e.target;
     // Regular expression to validate a phone number
-    const phoneRegex = /^\d{10}$/; // Change this regex according to your phone number format
+    const phoneRegex = /^[6-9]\d{9}$/;
     setIsValidPhone(phoneRegex.test(value));
     if (phoneRegex.test(value)) {
       setPhone_email(value);
