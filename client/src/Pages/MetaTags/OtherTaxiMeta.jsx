@@ -14,8 +14,13 @@ function OtherTaxiMeta({ query }) {
     }
     const source = getFirstWord(query);
 
+    // Convert the first letter of source and destination to lowercase
+    const formattedSource = source.charAt(0).toLowerCase() + source.slice(1);
+
     // Replace "Agra" with the dynamic destination value
     const title = `Taxi Services in ${source} - Book Cab in ${source}, ${source} Cab Booking`;
+
+    const canonicalUrl = `https://sewaktravels.com/cab/${formattedSource}-city-cabs`;
 
     return (
         <>
@@ -25,6 +30,8 @@ function OtherTaxiMeta({ query }) {
                 <meta name="description" content={`Sewak Travels offers Taxi Services In ${source}- Book full day taxi in ${source}, Airport transfer, employee transportation in ${source}. Get best ${source} cab booking deals on Car Rentals from ${source} to any city. Car Rentals in ${source} available for all car types with top car operators.Book your cab now.`} />
                 
                 <meta name="keywords" content={`${source} Cab Booking, ${source} Taxi Booking, Book a Cab in ${source}, Cab Booking in ${source}, Taxi Booking in ${source}, ${source} Cab Booking Service, ${source} Taxi Booking Service, Local Cabs in ${source}, Local Taxi in ${source}, Taxi Fare in ${source}, Cabs in ${source}, Taxi in ${source}, Cab Service in ${source}, Taxi Service in ${source}, ${source} Cabs, ${source} Taxi, ${source} Taxi Service, ${source} Cab Service,Cabs In ${source}, Car Rental ${source}, Taxi Service In ${source} - Cab Booking,${source} cabs, Cabs In ${source}, Car Rental ${source}, Taxi Service In ${source}, Cab Booking`} />
+
+                <link rel="canonical" href={canonicalUrl} />
             </Helmet>
         </>
     );
