@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const CabRoute1 = () => {
+const CabRoute1 = ({source}) => {
 
     const [activeCarType, setActiveCarType] = useState('sedan');
 
@@ -19,7 +19,7 @@ const CabRoute1 = () => {
     <div id="for-md-sm-devices" className="container">
       <div className="row">
         <div className="col">
-          <h1 className="mb-1">Top Cab Routes from Delhi</h1>
+          <h1 className="mb-1">Top Cab Routes from {source}</h1>
         </div>
       </div>
       <div className="row">

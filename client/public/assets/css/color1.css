@@ -357,7 +357,10 @@ section,
     color: white;
     padding: 9px 20px;
     -webkit-box-shadow: 1px 11px 20px 0px rgba(239, 63, 62, 0.12);
-            box-shadow: 1px 11px 20px 0px rgba(239, 63, 62, 0.12); }
+            box-shadow: 1px 11px 20px 0px rgba(239, 63, 62, 0.12); 
+
+    border-radius: 4px;
+          }
     .btn.btn-solid:hover {
       -webkit-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
@@ -487,7 +490,9 @@ section,
     padding-top: 25px;
     margin-bottom: 0;
     padding-bottom: 50px;
-    font-weight: 800; }
+    font-weight: 800; 
+    font-size: 28px !important;
+  }
   .title-1.title-5 .title-label {
     border-radius: 50px; }
   .title-1.title-5 h2 {
@@ -2420,7 +2425,7 @@ section .black-layer:before {
       font-weight: 600;
       text-transform: capitalize;
       font-size: 14px;
-      margin-bottom: 30px;
+      /* margin-bottom: 30px; */
       color: rgba(0, 0, 0, 0.56);
       letter-spacing: 0.05em;
       line-height: 1.5; }
@@ -10047,8 +10052,10 @@ section .black-layer:before {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    margin-top: 12px;
-    padding-top: 15px;
+    /* margin-top: 12px; */
+    margin-top: 11px;
+    /* padding-top: 15px; */
+    padding-top: 10px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -10740,9 +10747,11 @@ section .black-layer:before {
       text-transform: capitalize;
       margin-bottom: 5px;
       font-weight: 700;
-      font-size: 15px; }
+      font-size: 15px;
+      color: #fff;
+     }
     .flight-search .flight-search-detail .form-group .form-control {
-      border-radius: 0;
+      border-radius: 4px;
       text-transform: capitalize;
       border: 1px solid #e5e5e5; }
       .flight-search .flight-search-detail .form-group .form-control:focus {
@@ -11194,7 +11203,9 @@ section .black-layer:before {
     }
       .flight-detail-sec.cab-detail-sec .detail-bar .detail-wrap .car-details ul li img {
         margin-right: 5px;
-        width: 16px; }
+        /* width: 16px;  */
+        width:20px;
+      }
       .flight-detail-sec.cab-detail-sec .detail-bar .detail-wrap .car-details ul li + li {
         margin-top: 10px; }
     .flight-detail-sec.cab-detail-sec .detail-bar .detail-wrap .car-details ul + ul {

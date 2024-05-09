@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CabTableInner = ({ type }) => {
   const data = [
@@ -51,8 +52,9 @@ const CabTableInner = ({ type }) => {
         </p>
       </td>
       <td className="">
-        <p>{item?.price}</p> <p>+ {item?.taxes} (Taxes & Charges)</p>
+        <p>{item?.price}</p>
       </td>
+      <td><div className="cabTypeCol"><Link className="viewCabBtn"> VIEW CABS</Link></div></td>
     </tr>
   ));
 };

@@ -20,8 +20,8 @@ app.use(express.json());
 const pool = mysql.createPool({
   host: 'localhost',
   user: 'root',
-  password: 'deepak@123',
-  database: 'eecom',
+  password: 'abc@123',
+  database: 'newschema',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
