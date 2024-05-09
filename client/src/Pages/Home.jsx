@@ -9,7 +9,7 @@ import Layout from "../Layout/Layout";
 import VideoBanner from "../Components/Cab/Home/VideoBanner";
 import FullBanner from "../Components/Cab/Home/FullBanner";
 import Package from "../Components/Cab/Home/Offers/Package";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useCallback } from "react";
 import ExplorePackages from "../Components/TourPackage/ExplorePackages";
 import Airline from "../Components/FlightPackage/Airline";
@@ -20,8 +20,11 @@ import FactsContent2 from "../Components/Cab/Home/FactsContent/FactsContent2";
 import VideoBanner1 from "../Components/Cab/Home/VideoBanner1";
 import HomePopUp from "../Components/Cab/Home/HomePopUp";
 import HomeBanner1 from "../Components/Cab/Home/HomeBanner1";
+import TestimonialTest from "../Components/Cab/Home/Testimonials/TestimonialTest";
+import HomeBanner2 from "../Components/Cab/Home/HomeBanner2";
 
 function Home() {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 576);
   const [activeTab, setActiveTab] = useState("1");
   const callback = useCallback((tab) => {
     setActiveTab(tab);
@@ -62,6 +65,18 @@ function Home() {
     email_phone: phone_email,
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 576);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className="home-bg">
       <>
@@ -99,23 +114,41 @@ function Home() {
           setRentals={setRentals}
         /> */}
 
-        <HomeBanner1
-           pathParams={pathParams}
-           activeTab={activeTab}
-           callback={callback}
-           handlePopupClose={handlePopupClose}
-           phone_email={phone_email}
-           isPopupOpen={isPopupOpen}
-           setStartDate={setStartDate}
-           setReturnDate={setReturnDate}
-           setStartTime={setStartTime}
-           setReturnTime={setReturnTime}
-           setSelectedValue={setSelectedValue}
-           setSource={setSource}
-           setDestination={setDestination}
-           setRentals={setRentals}
-        />
-
+{isSmallScreen ? (
+          <HomeBanner2
+            pathParams={pathParams}
+            activeTab={activeTab}
+            callback={callback}
+            handlePopupClose={handlePopupClose}
+            phone_email={phone_email}
+            isPopupOpen={isPopupOpen}
+            setStartDate={setStartDate}
+            setReturnDate={setReturnDate}
+            setStartTime={setStartTime}
+            setReturnTime={setReturnTime}
+            setSelectedValue={setSelectedValue}
+            setSource={setSource}
+            setDestination={setDestination}
+            setRentals={setRentals}
+          />
+        ) : (
+          <HomeBanner1
+            pathParams={pathParams}
+            activeTab={activeTab}
+            callback={callback}
+            handlePopupClose={handlePopupClose}
+            phone_email={phone_email}
+            isPopupOpen={isPopupOpen}
+            setStartDate={setStartDate}
+            setReturnDate={setReturnDate}
+            setStartTime={setStartTime}
+            setReturnTime={setReturnTime}
+            setSelectedValue={setSelectedValue}
+            setSource={setSource}
+            setDestination={setDestination}
+            setRentals={setRentals}
+          />
+        )}
         <HomePopUp
           pathParams={pathParams}
           handlePopupClose={handlePopupClose}
@@ -131,7 +164,7 @@ function Home() {
         {activeTab === "4" && <ImportantLinks />}
         {activeTab === "1" && <VideoBanner1 />}
         {<FactsContent2 />}
-        {<Testimonials />}
+        {<TestimonialTest/>}
         {activeTab === "1" && <FullBanner />}
         {<ServicesComponent />}
         {<Video />}

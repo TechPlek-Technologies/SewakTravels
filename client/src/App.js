@@ -15,10 +15,12 @@ import {
   dataAuli,
   dataAyodhya,
   dataBangalore,
+  dataBaraut,
   dataBareilly,
   dataBasti,
   dataBatala,
   dataBathinda,
+  dataBhiwadi,
   dataBiharSharif,
   dataBijnor,
   dataBilaspur,
@@ -35,6 +37,7 @@ import {
   dataGuwahati,
   dataGwalior,
   dataHaldwani,
+  dataHapur,
   dataHaridwar,
   dataHoshangabad,
   dataHyderabad,
@@ -62,10 +65,14 @@ import {
   dataMohali,
   dataMoradabad,
   dataMumbai,
+  dataMurthal,
   dataMussoorie,
   dataMuzaffarpur,
+  dataNaini,
   dataNainital,
+  dataNeemrana,
   dataNoida,
+  dataPalwal,
   dataPatna,
   dataPithampur,
   dataPune,
@@ -1117,7 +1124,7 @@ function App() {
             }
           />
 
-          {/* New locations */}
+          {/* 46 Locations */}
 
           <Route
             path={"/cab/delhi-to-murthal-cabs"}
@@ -1126,6 +1133,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Murthal, Haryana, India"}
+                blogdata={dataMurthal}
               />
             }
           />
@@ -1136,6 +1144,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Hapur, Uttar Pradesh, India"}
+                blogdata={dataHapur}
               />
             }
           />
@@ -1146,6 +1155,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Palwal, Haryana, India"}
+                blogdata={dataPalwal}
               />
             }
           />
@@ -1156,6 +1166,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Baraut, Uttar Pradesh, India"}
+                blogdata={dataBaraut}
               />
             }
           />
@@ -1166,6 +1177,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Neemrana, Rajasthan, India"}
+                blogdata={dataNeemrana}
               />
             }
           />
@@ -1176,6 +1188,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Bhiwadi, Rajasthan, India"}
+                blogdata={dataBhiwadi}
               />
             }
           />
@@ -1566,6 +1579,17 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Bir, Himachal Pradesh, India"}
+              />
+            }
+          />
+          <Route
+            path={"/cab/delhi-to-naini-cabs"}
+            element={
+              <CabListing1
+                selectedValue={"Outstation One-Way"}
+                source="Delhi, India"
+                destination={"Naini, Prayagraj, Uttar Pradesh, India"}
+                blogdata={dataNaini}
               />
             }
           />
@@ -11241,7 +11265,9 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Ahmedabad Airport (AMD), Hansol, Ahmedabad, Gujarat, India"}
+                source={
+                  "Ahmedabad Airport (AMD), Hansol, Ahmedabad, Gujarat, India"
+                }
               />
             }
           />
@@ -11251,7 +11277,9 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Akola Airport, Shivani AirPort Area, Akola, Maharashtra, India"}
+                source={
+                  "Akola Airport, Shivani AirPort Area, Akola, Maharashtra, India"
+                }
               />
             }
           />
@@ -11261,7 +11289,9 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Allahabad Airport Terminal, ITBP Rd, Near 18th ITBP Camp, Prayagraj, Uttar Pradesh, India"}
+                source={
+                  "Allahabad Airport Terminal, ITBP Rd, Near 18th ITBP Camp, Prayagraj, Uttar Pradesh, India"
+                }
               />
             }
           />
@@ -11271,7 +11301,9 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Amritsar, Airport Road, Gumtala Sub Urban, Sahibzada Jujhar Singh Avenue, Gumtala, Amritsar, Punjab, India"}
+                source={
+                  "Amritsar, Airport Road, Gumtala Sub Urban, Sahibzada Jujhar Singh Avenue, Gumtala, Amritsar, Punjab, India"
+                }
               />
             }
           />
@@ -11281,7 +11313,9 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Aurangabad Airport, Jalna Road, MIDC Industrial Area, Chilkalthana, Aurangabad, Maharashtra, India"}
+                source={
+                  "Aurangabad Airport, Jalna Road, MIDC Industrial Area, Chilkalthana, Aurangabad, Maharashtra, India"
+                }
               />
             }
           />
@@ -11291,17 +11325,21 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Bagdogra Airport, Distt, Siliguri, Bagdogra, West Bengal, India"}
+                source={
+                  "Bagdogra Airport, Distt, Siliguri, Bagdogra, West Bengal, India"
+                }
               />
             }
           />
-          
+
           <Route
             path={"/cab/bareilly-airport-taxi"}
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Bareilly Airport, Airport Area, Bareilly, Uttar Pradesh, India"}
+                source={
+                  "Bareilly Airport, Airport Area, Bareilly, Uttar Pradesh, India"
+                }
               />
             }
           />
@@ -11311,7 +11349,9 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Belgaum Airport, Bagalkote - Belagavi Road, Sambra, Karnataka, India"}
+                source={
+                  "Belgaum Airport, Bagalkote - Belagavi Road, Sambra, Karnataka, India"
+                }
               />
             }
           />
@@ -11321,7 +11361,9 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Bharhut Airport Satna, Airport Road, Krishna Nagar, Satna, Madhya Pradesh, India"}
+                source={
+                  "Bharhut Airport Satna, Airport Road, Krishna Nagar, Satna, Madhya Pradesh, India"
+                }
               />
             }
           />
@@ -11331,7 +11373,9 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Bhubaneswar Airport, Airport Road, Aerodrome Area, Bhubaneswar, Odisha, India"}
+                source={
+                  "Bhubaneswar Airport, Airport Road, Aerodrome Area, Bhubaneswar, Odisha, India"
+                }
               />
             }
           />
@@ -11341,7 +11385,9 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Chandigarh Airport, Sahibzada Ajit Singh Nagar, Punjab, India"}
+                source={
+                  "Chandigarh Airport, Sahibzada Ajit Singh Nagar, Punjab, India"
+                }
               />
             }
           />
@@ -11351,7 +11397,9 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Chennai Domestic Airport, Airport Departures Terminal Link, Meenambakkam, Chennai, Tamil Nadu, India"}
+                source={
+                  "Chennai Domestic Airport, Airport Departures Terminal Link, Meenambakkam, Chennai, Tamil Nadu, India"
+                }
               />
             }
           />
@@ -11373,7 +11421,9 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Cochin International Airport (COK), Airport Road, Nedumbassery, Kochi, Kerala, India"}
+                source={
+                  "Cochin International Airport (COK), Airport Road, Nedumbassery, Kochi, Kerala, India"
+                }
               />
             }
           />
@@ -11383,7 +11433,507 @@ function App() {
             element={
               <CabListing5
                 selectedValue={"Airport Transfer"}
-                source={"Coimbatore International Airport, Peelamedu - Pudur Main Road, Coimbatore, Tamil Nadu, India"}
+                source={
+                  "Coimbatore International Airport, Peelamedu - Pudur Main Road, Coimbatore, Tamil Nadu, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/daman-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Daman Airport, Dilip Nagar, Marwad, Dadra And Nagar Haveli And Daman And Diu, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/darbhanga-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Darbhanga Airport, Aerodrome Darbhanga, Ranipur, Darbhanga, Bihar, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/dehradun-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Dehradun Airport - Jolly Grant, Airport Road, Jauligrant, Uttarakhand, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/dimapur-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Dimapur Airport, 3rd Mile, Dimapur, Nagaland, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/diu-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Diu Airport, Diu, Dadra And Nagar Haveli And Daman And Diu, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/goa-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Goa International Airport (GOI), Dabolim, Goa, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/gorakhpur-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Gorakhpur Airport, Airport Area, Gorakhpur, Uttar Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/guwahati-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Guwahati Airport (GAU), Borjhar, Guwahati, Assam, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/hindon-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Hindon Airport, Sikanderpur Road, Sahibabad, Ghaziabad, Uttar Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/gorakhpur-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Gorakhpur Airport, Airport Area, Gorakhpur, Uttar Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/hyderabad-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Hyderabad Old Airport, Begumpet Airport Road, Prakash Nagar, Begumpet, Hyderabad, Telangana, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/delhi-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Indira Gandhi International Airport (DEL), New Delhi, Delhi, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/indore-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Indore Airport, Depalpur Road, Devi Ahillyabai Holkar Airport Area, Indore, Madhya Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/jabalpur-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Jabalpur Airport, Airport Area, Khamaria, Dumna, Madhya Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/jaipur-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Jaipur International Airport (JAI), Airport Road, Sanganer, Jaipur, Rajasthan, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kangra-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Kangra Airport, National Highway 154, Gaggal, Himachal Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kannur-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "KANNUR INTERNATIONAL AIRPORT, Mattannur, Kerala, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kanpur-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Kanpur Airport, Sanjeev Nagar, Chakeri, Kanpur, Uttar Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kazi-nazrul-islam-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Kazi Nazrul Islam Airport, Airport Approach Road, Durgapur, West Bengal, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/bangalore-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Kempegowda International Airport Bengaluru (BLR), KIAL Rd, Devanahalli, Bengaluru, Karnataka, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kolkata-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Netaji Subhash Chandra Bose International Airport (CCU), Airport Service Road, International Airport, Dum Dum, Kolkata, West Bengal, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kozhikode-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Kozhikode International Airport, Airport Rd, Kozhikode, Karipur, Kerala, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/lucknow-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Chaudhary Charan Singh International Airport (LKO), Amausi, Lucknow, Uttar Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ludhiana-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Ludhiana Airport (LUH), Sahnewal, Punjab, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/pakyong-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Pakyong Airport, Dikling Road, Pakyong, Sikkim, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/pathankot-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Pathankot Airport, Pathankot, Punjab, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/patna-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Jayprakash Narayan International Airport, Patna, Shaheed Pir Ali Khan Marg, Bhatpura Village, Sheikhpura, Patna, Bihar, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/pondicherry-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Pondicherry Airport, Lawspet, Puducherry, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/porbandar-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Porbandar Airport (PBD), National Highway 27, Porbandar Airport Area, Porbandar, Gujarat, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/pune-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Pune International Airport (PNQ), New Airport Road, Pune International Airport Area, Lohegaon, Pune, Maharashtra, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rajahmundry-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Rajahmundry Airport, Madhurapudi, Andhra Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/rajkot-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Rajkot International Airport, Hirasar, Garida, Gujarat, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/shimla-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Shimla Airport, Shimla, Himachal Pradesh, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/shirdi-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Shirdi Airport, Kakadi, Shirdi, Maharashtra, India"}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/surat-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Surat International Airport, Surat - Dumas Road, Gaviyer, Surat, Gujarat, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/tiruchirappalli-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Tiruchirappalli International Airport, Thirunagar, Tiruchirappalli, Tamil Nadu, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/udaipur-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Maharana Pratap Airport, Udaipur, NH 76, Dabok, Rajasthan, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/varanasi-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Varanasi Airport, Varanasi, Babatpur, Uttar Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/vishakhapatnam-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Visakhapatnam Airport, Marshalling Yard, Visakhapatnam, Andhra Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ajmer-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Kishangarh Airport (KQH) (Ajmer), Kishangarh, Rajasthan, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/ayodhya-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Maharishi Valmiki International Airport, Ayodhya Dham (AYJ), Faizabad, Uttar Pradesh, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/hubballi-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={
+                  "Hubballi Airport, Gokul Road, Gandhi Nagar, Hubballi, Karnataka, India"
+                }
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/jodhpur-airport-taxi"}
+            element={
+              <CabListing5
+                selectedValue={"Airport Transfer"}
+                source={"Jodhpur Airport, Ratanada, Jodhpur, Rajasthan, India"}
               />
             }
           />

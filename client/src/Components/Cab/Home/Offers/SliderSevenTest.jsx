@@ -66,11 +66,19 @@ export const SliderSevenTest = ({ type, slideData }) => {
                 <h2>{data.title}</h2>
                 {/* <div className="reddiv"></div> */}
                 <p>{data.desc}</p>
-                <div className="new-line-container">
+                {/* <div className="new-line-container">
                   <a href="tel:+91-837-782-8828" className="btn1 btn-rounded1 color1 packageButton"> 
                     {"Call Now"}
                   </a>
-                </div>
+                </div> */}
+                <div className="new-line-container">
+                    <Link
+                      className={`btn1 btn-rounded1 color1 packageButton`}
+                      to={`${data.src}`}
+                    >
+                      {"Book Now"}
+                    </Link>
+                  </div>
               </div>
             </div>
             <div className="CouponFt">

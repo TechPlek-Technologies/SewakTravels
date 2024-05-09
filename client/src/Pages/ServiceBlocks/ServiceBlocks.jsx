@@ -100,6 +100,30 @@ const ServiceBlocks = ({ type }) => {
           name: "Taxi service in Shamshabad",
           src: "",
         },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
       ],
     },
     {
@@ -118,12 +142,59 @@ const ServiceBlocks = ({ type }) => {
           name: "Taxi service in Shamshabad",
           src: "",
         },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        }, {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
       ],
     },
     {
       id: 4,
       title: "Other Taxi Services near Agra",
       links: [
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
         {
           name: "Taxi service in Shamshabad",
           src: "",
@@ -154,6 +225,30 @@ const ServiceBlocks = ({ type }) => {
           name: "Taxi service in Shamshabad",
           src: "",
         },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
       ],
     },
     {
@@ -172,11 +267,35 @@ const ServiceBlocks = ({ type }) => {
           name: "Taxi service in Shamshabad",
           src: "",
         },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "",
+        },
       ],
     },
   ];
   return (
-    <section id='top-cab-routes' className='bg-inner'>
+    <section id='top-cab-routes' className='bg-inner menu-margin'>
       <div class="menu-section ">
         <div class="container">
           <div class="row">

@@ -25,5 +25,50 @@
   letter-spacing: 0.03em;
   line-height: 1.1;
   text-transform: capitalize;
-  color: #ef2f3e;
+  font-size: 40px !important;
+}
+
+.blog-single-detail h2{
+  margin-top: 20px;
+}
+
+/* .blog-single-detail h3{
+  font-size: 20px;
+  font-weight: 600;
+  color: #008cff;
+} */
+
+.blog-single-detail h1{
+  font-family: Verdana, arial, Geneva, sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.blog-single-detail .detail-part p{
+ color: #000 !important;
+}
+
+.testimonial-rating{
+  display: flex !important;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-img{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.menu-margin{
+  margin-bottom: 60px;
+}
+
+.cab-route-mrgn{
+  margin-bottom: 10px;
+}
+
+.bgColor{
+  background-color: #fff;
 }

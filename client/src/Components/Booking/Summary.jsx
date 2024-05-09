@@ -148,7 +148,7 @@ const Summary = ({
             {"Edit"}
           </Link>
         </div>
-        <div className="summery-section">
+        <div className="summery-section summary-pay">
           <div className="payment-details">
             <h5>payment details</h5>
             <table>
@@ -197,6 +197,7 @@ const Summary = ({
                       id="exampleInputEmail1"
                       placeholder="pick up"
                       onChange={updateAmount}
+                      style={{backgroundColor:"#e9ecef"}}
                     >
                       <option value="oneThirdPayment">
                         Make Part Payment Now

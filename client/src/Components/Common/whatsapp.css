@@ -1,0 +1,9 @@
+.wtp1 {
+    z-index: 800000;
+    position: fixed;
+    bottom: 82px;
+   }
+ 
+ .wtp{
+   background-color: #fff !important;
+ }

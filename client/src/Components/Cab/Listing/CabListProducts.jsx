@@ -8,12 +8,12 @@ import { PaymentContext } from "../../../Context/PaymentContext";
 import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
 import { SendMail } from "../../../Utility/SendMail";
 
-function CabListProducts({ journey,data, isValid ,rentals}) {
+function CabListProducts({ journey, data, isValid, rentals, price }) {
   const { journeyData, setJourneyData } = useContext(AppContext);
   const [showDetails, setShowDetails] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
-  // console.log("journeyData.destination",journey)
+  console.log("journeyData.destination", price);
   const params = useParams();
   const paramData = params.params ? JSON.parse(params.params) : null;
 
@@ -27,9 +27,13 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
   const calculateFare = (item, selectedValue, travelDistance, travelTime) => {
     let totalFare = 0;
     let farePerKm = 0;
-
     if (selectedValue === "Outstation One-Way") {
-      totalFare = item.outstationOneWay * travelDistance;
+      if (item.id === 1 && price) {
+        totalFare = price;
+      } else {
+        totalFare = item.outstationOneWay * travelDistance;
+      }
+
       farePerKm = item.outstationOneWay;
     } else if (selectedValue === "Outstation Round-Trip") {
       totalFare =
@@ -39,7 +43,7 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
       farePerKm = item.outstattionRoundTrip;
     } else if (selectedValue === "Hourly Rentals") {
       totalFare =
-        rentals==="4hrs40km"? (item.rentals2*40) :(item.rentals1*80);
+        rentals === "4hrs40km" ? item.rentals2 * 40 : item.rentals1 * 80;
       farePerKm = item.rentals2;
     } else if (selectedValue === "Airport Transfer") {
       totalFare = item.Airport * travelDistance;
@@ -64,7 +68,7 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
   const { paymentData, setPaymentData } = useContext(PaymentContext);
 
   const bookNow = (item) => {
-    console.log("item",item)
+    console.log("item", item);
     const fareCalculation = calculateFare(
       item,
       journeyData.selectedValue,
@@ -72,7 +76,6 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
       travelTime
     );
 
-    
     setPaymentData({ ...paymentData, ...fareCalculation });
   };
 
@@ -91,9 +94,9 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
         paramData.rentalPackage
       );
       // setJourneyData(paramData)
-      console.log("paramData",paramData);
-    }else{
-      if(journey.destination){
+      console.log("paramData", paramData);
+    } else {
+      if (journey.destination) {
         calculateDistanceAndDuration(
           journey.source,
           journey.destination,
@@ -107,9 +110,8 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
           journey.rentalPackage
         );
       }
-      console.log("journey",journey);
+      console.log("journey", journey);
       setJourneyData(journey);
-
     }
   }, []);
 
@@ -118,7 +120,7 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
       <div className="detail-bar">
         {data?.map((item, index) => (
           <div className="detail-wrap wow fadeInUp" key={index}>
-            <div className="row shadow p-3  bg-body rounded">
+            <div className="row shadow p-3  bg-body rounded bgColor">
               <div className="col-md-3">
                 <div className="logo-sec">
                   <img src={item.img} className="img-fluid" alt="" />
@@ -133,7 +135,7 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
                   <ul>
                     <li>
                       <img
-                        src="/assets/images/cab/icon/seat.png"
+                        src="/assets/images/cab/icon/carseat.png"
                         className="img-fluid"
                         alt=""
                       />{" "}
@@ -141,7 +143,7 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
                     </li>
                     <li>
                       <img
-                        src="/assets/images/icon/location.png"
+                        src="/assets/images/cab/icon/destination.png"
                         className="img-fluid"
                         alt=""
                       />{" "}
@@ -161,7 +163,7 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
                     {}
                     <li>
                       <img
-                        src="/assets/images/cab/icon/settings.png"
+                        src="/assets/images/cab/icon/confirm-schedule.png"
                         className="img-fluid"
                         alt=""
                       />{" "}
@@ -179,65 +181,123 @@ function CabListProducts({ journey,data, isValid ,rentals}) {
               </div>
 
               <div className="col-md-2">
-                <div className="price">
-                  <div>
-                    {journeyData.selectedValue === "Outstation One-Way" && (
-                      <>
-                        <h4>
-                          ₹
-                          {journeyData?.travelDistance?Math.ceil(
-                            item.outstationOneWay * journeyData?.travelDistance
-                          ):0}
-                        </h4>
-                        {/* <h6>fare/km:₹{item.outstationOneWay}</h6> */}
-                      </>
-                    )}
-                    {journeyData.selectedValue === "Outstation Round-Trip" && (
-                      <>
-                        <h4>
-                          ₹
-                          {Math.ceil(
-                            item.outstattionRoundTrip * travelDistance +
-                              travelTime * item.driverAllowance +
-                              travelTime * item.nightCharges
+                {
+                  <div className="price">
+                    <div>
+                      {item?.id === 1 && price ? (
+                        <>
+                          {journeyData.selectedValue ===
+                            "Outstation One-Way" && (
+                            <>
+                              <h4>₹{price}</h4>
+                            </>
                           )}
-                        </h4>
-                        {/* <h6>fare/km:₹{item.outstattionRoundTrip}</h6> */}
-                      </>
-                    )}
-                    {journeyData.selectedValue === "Hourly Rentals" && (
-                      <>
-                        <h4>
-                          ₹
-                          {rentals==="8hrs80km" ? (item.rentals2*80) :(item.rentals1*40)}
-                        </h4>
-                        {/* <h6>fare/km:₹ {item.rentals2}</h6> */}
-                      </>
-                    )}
-                    {journeyData.selectedValue === "Airport Transfer" && (
-                      <>
-                        <h4>₹{Math.ceil(item.Airport * travelDistance)}</h4>
-                        {/* <h6>fare/km:₹{item.Airport}</h6> */}
-                      </>
-                    )}
-                    <h6
-                      onClick={() => toggleDetails(item)}
-                      className="viewFairDetails"
-                    >
-                      View details
-                    </h6>
+                          {journeyData.selectedValue ===
+                            "Outstation Round-Trip" && (
+                            <>
+                              <h4>
+                                ₹
+                                {Math.ceil(
+                                  item.outstattionRoundTrip * travelDistance +
+                                    travelTime * item.driverAllowance +
+                                    travelTime * item.nightCharges
+                                )}
+                              </h4>
+                              {/* <h6>fare/km:₹{item.outstattionRoundTrip}</h6> */}
+                            </>
+                          )}
+                          {journeyData.selectedValue === "Hourly Rentals" && (
+                            <>
+                              <h4>
+                                ₹
+                                {rentals === "8hrs80km"
+                                  ? item.rentals2 * 80
+                                  : item.rentals1 * 40}
+                              </h4>
+                              {/* <h6>fare/km:₹ {item.rentals2}</h6> */}
+                            </>
+                          )}
+                          {journeyData.selectedValue === "Airport Transfer" && (
+                            <>
+                              <h4>
+                                ₹{Math.ceil(item.Airport * travelDistance)}
+                              </h4>
+                              {/* <h6>fare/km:₹{item.Airport}</h6> */}
+                            </>
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          {journeyData.selectedValue ===
+                            "Outstation One-Way" && (
+                            <>
+                              <h4>
+                                ₹
+                                {journeyData?.travelDistance
+                                  ? Math.ceil(
+                                      item.outstationOneWay *
+                                        journeyData?.travelDistance
+                                    )
+                                  : 0}
+                              </h4>
+                              {/* <h6>fare/km:₹{item.outstationOneWay}</h6> */}
+                            </>
+                          )}
+                          {journeyData.selectedValue ===
+                            "Outstation Round-Trip" && (
+                            <>
+                              <h4>
+                                ₹
+                                {Math.ceil(
+                                  item.outstattionRoundTrip * travelDistance +
+                                    travelTime * item.driverAllowance +
+                                    travelTime * item.nightCharges
+                                )}
+                              </h4>
+                              {/* <h6>fare/km:₹{item.outstattionRoundTrip}</h6> */}
+                            </>
+                          )}
+                          {journeyData.selectedValue === "Hourly Rentals" && (
+                            <>
+                              <h4>
+                                ₹
+                                {rentals === "8hrs80km"
+                                  ? item.rentals2 * 80
+                                  : item.rentals1 * 40}
+                              </h4>
+                              {/* <h6>fare/km:₹ {item.rentals2}</h6> */}
+                            </>
+                          )}
+                          {journeyData.selectedValue === "Airport Transfer" && (
+                            <>
+                              <h4>
+                                ₹{Math.ceil(item.Airport * travelDistance)}
+                              </h4>
+                              {/* <h6>fare/km:₹{item.Airport}</h6> */}
+                            </>
+                          )}
+                        </>
+                      )}
 
-                    {showDetails && selectedItem && (
-                      <Popup
-                        travelDistance={travelDistance}
-                        selectedValue={journeyData.selectedValue}
-                        car={selectedItem}
-                        modal={showDetails}
-                        toggle={() => toggleDetails(null)}
-                      />
-                    )}
+                      <h6
+                        onClick={() => toggleDetails(item)}
+                        className="viewFairDetails"
+                      >
+                        View details
+                      </h6>
+
+                      {showDetails && selectedItem && (
+                        <Popup
+                          travelDistance={travelDistance}
+                          selectedValue={journeyData.selectedValue}
+                          car={selectedItem}
+                          modal={showDetails}
+                          toggle={() => toggleDetails(null)}
+                        />
+                      )}
+                    </div>
                   </div>
-                </div>
+                }
               </div>
 
               <div onClick={() => bookNow(item)} className="col-md-3">
