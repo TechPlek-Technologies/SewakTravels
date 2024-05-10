@@ -47,6 +47,7 @@ import {
   dataJaipur,
   dataJalandhar,
   dataJamnagar,
+  dataJhajjar,
   dataJodhpur,
   dataKanpur,
   dataKarnal,
@@ -84,10 +85,12 @@ import {
   dataRanchi,
   dataRatlam,
   dataRishikesh,
+  dataRohtak,
   dataRoorkee,
   dataSamastipur,
   dataSanand,
   dataShimla,
+  dataSonipat,
   dataSrinagar,
   dataSurat,
   dataUdaipur,
@@ -1199,6 +1202,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Sonipat, Haryana, India"}
+                blogdata={dataSonipat}
               />
             }
           />
@@ -1209,6 +1213,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Jhajjar, Haryana, India"}
+                blogdata={dataJhajjar}
               />
             }
           />
@@ -1219,6 +1224,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Rohtak, Haryana, India"}
+                blogdata={dataRohtak}
               />
             }
           />
