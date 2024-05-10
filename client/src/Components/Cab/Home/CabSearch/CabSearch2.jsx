@@ -89,6 +89,7 @@ function CabSearch2({
           <div
             onClick={() => {
               setSelectedCabOption("airportCabs");
+              setSelectedValue("Airport Transfer")
             }}
             className={`cabOptionCard ${
               selectedCabOption === "airportCabs" && "active-cab-option-bg"
@@ -124,6 +125,7 @@ function CabSearch2({
           <div
             onClick={() => {
               setSelectedCabOption("hourlyRentals");
+              setSelectedValue("Hourly Rentals")
             }}
             className={`cabOptionCard ${
               selectedCabOption === "hourlyRentals" && "active-cab-option-bg"
@@ -224,6 +226,7 @@ function CabSearch2({
                   }
                   onClick={() => {
                     setSelectedTripType("oneWay");
+                    setSelectedValue("Outstation One-Way");
                   }}
                 >
                   <span className="outerSpan">
@@ -250,6 +253,7 @@ function CabSearch2({
                   }
                   onClick={() => {
                     setSelectedTripType("roundTrip");
+                    setSelectedValue("Outstation Round-Trip")
                   }}
                 >
                   <span className="outerSpan">
