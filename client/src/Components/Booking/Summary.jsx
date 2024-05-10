@@ -17,10 +17,10 @@ const Summary = ({
   const { journeyData } = useContext(AppContext);
 
   const pickupDate = new Date(journeyData?.startDate);
-  // console.log(typeof(journeyData?.travelDistance))
+
 
   const pay = paymentData.totalFare;
-  // console.log(pay)
+
 
   const dateStringConverter = (pickupDate) => {
     const newpickupDate = new Date(pickupDate);

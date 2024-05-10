@@ -22,7 +22,6 @@ const ContactForm= () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission here
-    console.log(contactFormInfo); // You can see the updated state here
     sendQueryEmail();
   };
 

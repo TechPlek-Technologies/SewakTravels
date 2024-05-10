@@ -6,22 +6,41 @@ import { useState } from "react";
 import Popup from "./Popup";
 import { PaymentContext } from "../../../Context/PaymentContext";
 import { calculateDistanceAndDuration } from "../../../Utility/DistanceCalculator";
-import { SendMail } from "../../../Utility/SendMail";
 
 function CabListProducts({ journey, data, isValid, rentals, price }) {
   const { journeyData, setJourneyData } = useContext(AppContext);
   const [showDetails, setShowDetails] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
-  console.log("journeyData.destination", price);
   const params = useParams();
   const paramData = params.params ? JSON.parse(params.params) : null;
 
+  function calculateDaysBetweenDates(date1, date2) {
+    const millisecondsPerDay = 1000 * 60 * 60 * 24;
+    const difference = Math.abs(new Date(date1) - new Date(date2));
+    const daysDifference = Math.ceil(difference / millisecondsPerDay);
+    return daysDifference;
+  }
+
   let travelDistance = journeyData.travelDistance;
   let travelTime = Math.ceil(travelDistance / 250);
+
   if (journeyData.selectedValue === "Outstation Round-Trip") {
     travelDistance = travelDistance * 2;
-    travelTime = Math.ceil(travelDistance / 250);
+
+    travelTime = calculateDaysBetweenDates(
+      journeyData.returnDate,
+      journeyData.startDate
+    );
+  
+    if (
+      travelDistance <
+      (Math.ceil(travelDistance / 250) * 250)
+    ) {
+      travelDistance = (Math.ceil(travelDistance / 250) *250);
+    }
+
+  
   }
 
   const calculateFare = (item, selectedValue, travelDistance, travelTime) => {
@@ -39,7 +58,7 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
       totalFare =
         item.outstattionRoundTrip * travelDistance +
         travelTime * item.driverAllowance +
-        travelTime * item.nightCharges;
+        (travelTime-1) * item.nightCharges;
       farePerKm = item.outstattionRoundTrip;
     } else if (selectedValue === "Hourly Rentals") {
       totalFare =
@@ -56,7 +75,7 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
       totalDistance: travelDistance,
       totalTime: travelTime,
       driverAllowance: item.driverAllowance * travelTime,
-      nightCharges: travelTime * item.nightCharges,
+      nightCharges: (travelTime-1) * item.nightCharges,
     };
   };
 
@@ -68,7 +87,6 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
   const { paymentData, setPaymentData } = useContext(PaymentContext);
 
   const bookNow = (item) => {
-    console.log("item", item);
     const fareCalculation = calculateFare(
       item,
       journeyData.selectedValue,
@@ -94,7 +112,6 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
         paramData.rentalPackage
       );
       // setJourneyData(paramData)
-      console.log("paramData", paramData);
     } else {
       if (journey.destination) {
         calculateDistanceAndDuration(
@@ -110,7 +127,6 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
           journey.rentalPackage
         );
       }
-      console.log("journey", journey);
       setJourneyData(journey);
     }
   }, []);
@@ -200,7 +216,7 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
                                 {Math.ceil(
                                   item.outstattionRoundTrip * travelDistance +
                                     travelTime * item.driverAllowance +
-                                    travelTime * item.nightCharges
+                                    (travelTime-1) * item.nightCharges
                                 )}
                               </h4>
                               {/* <h6>fare/km:₹{item.outstattionRoundTrip}</h6> */}
@@ -248,11 +264,11 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
                             <>
                               <h4>
                                 ₹
-                                {Math.ceil(
+                                {
                                   item.outstattionRoundTrip * travelDistance +
                                     travelTime * item.driverAllowance +
-                                    travelTime * item.nightCharges
-                                )}
+                                    (travelTime-1) * item.nightCharges
+                                }
                               </h4>
                               {/* <h6>fare/km:₹{item.outstattionRoundTrip}</h6> */}
                             </>
@@ -292,7 +308,8 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
                           selectedValue={journeyData.selectedValue}
                           car={selectedItem}
                           modal={showDetails}
-                          toggle={() => toggleDetails(null)}
+                          travelTime={travelTime}
+                          toggle={() => toggleDetails(selectedItem)}
                         />
                       )}
                     </div>

@@ -30,7 +30,6 @@ const HomePopUp = ({
       `,
       "Booking Query"
     );
-    console.log(res);
   }
 
   const handleChange = (e) => {
