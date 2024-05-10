@@ -76,7 +76,7 @@ export const carData = [
 
   {
     id: 1,
-    img: "/assets/img/listing/sedan.webp",
+    img: "/assets/img/listing/Sedan2.webp",
    
     name: "Sedan",
     category: "Sedan",
@@ -96,7 +96,7 @@ export const carData = [
   },
   {
     id: 2,
-    img: "/assets/img/listing/suv.webp",
+    img: "/assets/img/listing/SUV2.webp",
    
     name: "SUV",
     category: "SUV",
@@ -115,7 +115,7 @@ export const carData = [
   },
   {
     id: 3,
-    img: "/assets/img/listing/suv-premium.webp",
+    img: "/assets/img/listing/SUV-premium2.webp",
   
     name: "Prime SUV",
     category: "Prime Suv",

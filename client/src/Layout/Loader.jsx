@@ -18,7 +18,7 @@ const Loader = ({ loaderTimeout }) => {
       
       <div className={`loader-wrapper food-loader ${show ? "" : "loaderhide"}`}>
           <div className="loader">
-            <Img src={'/assets/images/loader.gif'} alt="Animated GIF" width={500} height={400} />
+            <Img src={'/assets/images/cab.gif'} alt="Animated GIF" width={500} height={400} />
           </div>
         </div>
 

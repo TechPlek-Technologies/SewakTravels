@@ -4,7 +4,7 @@ import ServiceOne from "./ServiceOne";
 
 const ServicesComponent = () => {
     return (
-      <section className="section-b-space animated-section">
+      <section className="section-b-space animated-section service-margin">
         <Animation />
         <div className="container">
         <div className="title-1 detail-title">
