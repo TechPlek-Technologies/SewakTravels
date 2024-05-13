@@ -62,9 +62,9 @@ function ListSearch({setisValid,source1,destination1,rentals,setRentals}) {
 
             <div className="modify-search">
               <Link
-                to={"#"}
+                to={"/"}
                 className="btn btn-solid color1"
-                onClick={() => setSearchBarOpen(!searchBarOpen)}
+                // onClick={() => setSearchBarOpen(!searchBarOpen)}
               >
                 Modify search
               </Link>
