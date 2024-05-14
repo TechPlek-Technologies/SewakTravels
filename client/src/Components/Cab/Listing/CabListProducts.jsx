@@ -23,21 +23,24 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
   }
 
   let travelDistance = journeyData.travelDistance;
+  let journeyDistance=journeyData.travelDistance;
+
   let travelTime = Math.ceil(travelDistance / 250);
 
   if (journeyData.selectedValue === "Outstation Round-Trip") {
     travelDistance = travelDistance * 2;
+    journeyDistance=journeyDistance*2
 
     travelTime = calculateDaysBetweenDates(
       journeyData.returnDate,
       journeyData.startDate
-    );
+    ) +1;
   
     if (
       travelDistance <
-      (Math.ceil(travelDistance / 250) * 250)
+      (travelTime*250)
     ) {
-      travelDistance = (Math.ceil(travelDistance / 250) *250);
+      travelDistance = (travelTime*250);
     }
 
   
@@ -57,7 +60,6 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
     } else if (selectedValue === "Outstation Round-Trip") {
       totalFare =
         item.outstattionRoundTrip * travelDistance +
-        travelTime * item.driverAllowance +
         (travelTime-1) * item.nightCharges;
       farePerKm = item.outstattionRoundTrip;
     } else if (selectedValue === "Hourly Rentals") {
@@ -163,7 +165,7 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
                         className="img-fluid"
                         alt=""
                       />{" "}
-                      {travelDistance} km
+                      {journeyDistance} km
                     </li>
                   </ul>
                   <ul>
@@ -266,7 +268,6 @@ function CabListProducts({ journey, data, isValid, rentals, price }) {
                                 ₹
                                 {
                                   item.outstattionRoundTrip * travelDistance +
-                                    travelTime * item.driverAllowance +
                                     (travelTime-1) * item.nightCharges
                                 }
                               </h4>

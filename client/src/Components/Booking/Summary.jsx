@@ -18,9 +18,7 @@ const Summary = ({
 
   const pickupDate = new Date(journeyData?.startDate);
 
-
   const pay = paymentData.totalFare;
-
 
   const dateStringConverter = (pickupDate) => {
     const newpickupDate = new Date(pickupDate);
@@ -161,25 +159,18 @@ const Summary = ({
                       ? pay
                       : journeyData.selectedValue === "Airport Transfer"
                       ? pay
-                      : pay -
-                        paymentData.driverAllowance -
-                        paymentData.nightCharges}
+                      : pay - paymentData.nightCharges}
                     {}
                   </td>
                 </tr>
-                <tr>
-                  <td>Driver Charges</td>
-                  <td>
-                    + ₹
-                    {driverAllowance}
-                  </td>
-                </tr>
+              
                 <tr>
                   <td>Night Charges</td>
-                  <td>
-                    + ₹
-                    {night}
-                  </td>
+                  <td>+ ₹{night}</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td>= ₹{pay}</td>
                 </tr>
               </tbody>
             </table>
@@ -197,7 +188,7 @@ const Summary = ({
                       id="exampleInputEmail1"
                       placeholder="pick up"
                       onChange={updateAmount}
-                      style={{backgroundColor:"#e9ecef"}}
+                      style={{ backgroundColor: "#e9ecef" }}
                     >
                       <option value="oneThirdPayment">
                         Make Part Payment Now
@@ -207,8 +198,12 @@ const Summary = ({
                   </td>
                   <td className="amount">₹{payableAmount}</td>
                 </tr>
-                {<tr>Make full payment now, or make part payment and pay the rest on the trip.</tr>}  
-              
+                {
+                  <tr>
+                    Make full payment now, or make part payment and pay the rest
+                    on the trip.
+                  </tr>
+                }
               </tbody>
             </table>
             {/* <div className="submit-btn sbmt">
