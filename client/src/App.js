@@ -68,6 +68,7 @@ import {
   dataLucknow,
   dataLudhiana,
   dataManali,
+  dataManesar,
   dataMathura,
   dataMcLeodganj,
   dataMeerut,
@@ -77,6 +78,7 @@ import {
   dataMurthal,
   dataMussoorie,
   dataMuzaffarpur,
+  dataNahan,
   dataNaini,
   dataNainital,
   dataNeemrana,
@@ -85,19 +87,25 @@ import {
   dataPatna,
   dataPithampur,
   dataPune,
+  dataPushkar,
   dataRaipur,
   dataRaisen,
   dataRajkot,
   dataRamachandrapuram,
   dataRameshwaram,
   dataRanchi,
+  dataRanthambore,
   dataRatlam,
   dataRishikesh,
   dataRohtak,
   dataRoorkee,
+  dataSahibabad,
   dataSamastipur,
   dataSanand,
+  dataSariska,
   dataShimla,
+  dataSohna,
+  dataSolan,
   dataSonipat,
   dataSrinagar,
   dataSurat,
@@ -1247,6 +1255,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Sahibabad, Ghaziabad, Uttar Pradesh, India"}
+                blogdata={dataSahibabad}
               />
             }
           />
@@ -1279,6 +1288,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Manesar, Gurugram, Haryana, India"}
+                blogdata={dataManesar}
               />
             }
           />
@@ -1289,6 +1299,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Sohna, Haryana, India"}
+                blogdata={dataSohna}
               />
             }
           />
@@ -1321,6 +1332,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Sariska Tiger Reserve, Rajasthan, India"}
+                blogdata={dataSariska}
               />
             }
           />
@@ -1331,6 +1343,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Solan, Himachal Pradesh, India"}
+                blogdata={dataSolan}
               />
             }
           />
@@ -1341,6 +1354,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Nahan, Himachal Pradesh, India"}
+                blogdata={dataNahan}
               />
             }
           />
@@ -1362,6 +1376,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Pushkar, Rajasthan, India"}
+                blogdata={dataPushkar}
               />
             }
           />
@@ -1405,6 +1420,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Ranthambore National Park, Rajasthan, India"}
+                blogdata={dataRanthambore}
               />
             }
           />
