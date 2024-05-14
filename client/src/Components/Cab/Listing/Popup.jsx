@@ -79,14 +79,13 @@ const Popup = ({
                   "Airport Transfer" ? null : selectedValue ===
                   "Hourly Rentals" ? null : (
                   <>
-                    <div>Package Distance</div> <div>{travelDistance} KM</div>
+                    <div>Package Distance</div> <div>{travelTime*250} KM</div>
                     <div>Total Distance</div>{" "}
                     <div>{journeyData.travelDistance * 2} KM</div>
                     <div>Number of Nights</div> <div>{travelTime - 1}</div>
                     <div>Night time allowance (11:00 PM - 06:00 AM) </div>
                     <div> ₹ {car.nightCharges * (travelTime - 1)}</div>
-                    <div>Driver Allowances</div>
-                    <div> ₹ {car.driverAllowance * travelTime}</div>
+                  
                   </>
                 )}
                 <div>
@@ -101,8 +100,7 @@ const Popup = ({
                   "Hourly Rentals" ? null : (
                   <>
                     {travelDistance * perDayprice +
-                      car.nightCharges  * (travelTime - 1) +
-                      car.driverAllowance * travelTime}
+                      car.nightCharges  * (travelTime - 1)}
                   </>
                 )}
                   </b>
