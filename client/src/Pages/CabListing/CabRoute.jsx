@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const CabRoute = () => {
+const CabRoute = ({source}) => {
 
     const [activeCarType, setActiveCarType] = useState('sedan');
 
@@ -19,7 +19,7 @@ const CabRoute = () => {
   return (
     
       <div id="for-md-to-lg-devices" className="mb-4">
-        <h1 className="mb-4">Top Cab Routes from Delhi</h1>
+        <h1 className="mb-4">Top Cab Routes from {source}</h1>
 
         <div className="d-flex align-items-center">
           <div className="d-flex flex-column pr-2">

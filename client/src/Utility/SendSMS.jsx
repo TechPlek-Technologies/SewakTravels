@@ -11,7 +11,6 @@ export const getAuthToken = async () => {
       { withCredentials: true }
     );
     const data = response.data;
-    console.log(data);
     return data.TxnOutcome;
   } catch (error) {
     console.error("Error fetching authentication token:", error);

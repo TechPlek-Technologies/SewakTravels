@@ -3,7 +3,7 @@ import Filters from "./Filters";
 import ProductLayout from "./ProductLayout";
 import { carData } from "../../../Data/CabData";
 
-function ListingView({isValid,data,rentals}) {
+function ListingView({isValid,data,rentals,price}) {
   const [filteredData, setFilteredData] = useState(carData);
   const [showSidebar, setShowSidebar] = useState(false);
 
@@ -33,7 +33,7 @@ function ListingView({isValid,data,rentals}) {
                 alt=""
               />
             </a>
-            <ProductLayout data={data} value={filteredData} isValid={isValid} rentals={rentals}  />
+            <ProductLayout data={data} value={filteredData} isValid={isValid} rentals={rentals}  price={price}/>
           </div>
         </div>
       </div>

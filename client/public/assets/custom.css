@@ -14,6 +14,7 @@
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
+  border-radius: 4px;
 }
 /* 
   tab items
@@ -289,7 +290,6 @@ header .menu {
 .flight-search .flight-search-detail {
   background-color: #1b1b1b;
   padding: 30px 0px;
-  color: #ef3f3e;
 }
 .small-section {
   /* padding-top: 10px; */
@@ -599,7 +599,7 @@ li.nav-item {
   }
 
   .search-body>h6,.search-body>input,.input-group>input{
-    text-align: center !important;
+    /* text-align: center !important; */
   }
   .clickToAdd{
     display: flex;
@@ -1456,7 +1456,7 @@ display: block;
     font-size: 12px;
   }
   .pickup-date{
-    text-align: center !important;
+    /* text-align: center !important; */
   }
 }
 
@@ -1503,4 +1503,9 @@ margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
 
+}
+
+.summary-pay{
+  border-bottom: 1px solid #ced4da;
+  padding-bottom: 15px;
 }

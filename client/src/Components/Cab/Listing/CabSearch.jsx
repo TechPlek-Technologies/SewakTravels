@@ -61,7 +61,7 @@ const CabSearch = ({
   return (
     <div className="flight-search">
       <div
-        className={`flight-search-detail ${searchBarOpen ? "show" : ""} ${
+        className={`flight-search-detail animation-bg ${searchBarOpen ? "show" : ""} ${
           resClass ? resClass : ""
         }`}
       >

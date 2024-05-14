@@ -21,7 +21,6 @@ const CabPopup = ({ onClose }) => {
 
   const handleSubmit = () => {
     // Handle form submission
-    console.log('User info submitted:', userInfo);
     // You can perform further actions like sending the user info to an API, etc.
     onClose();
   };

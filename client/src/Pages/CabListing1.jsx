@@ -11,8 +11,9 @@ import CabOptions1 from "./CabListing/CabOptions1";
 import ServiceBlocks from "./ServiceBlocks/ServiceBlocks";
 import DelhiToDesinationMeta1 from "./MetaTags/DelhiToDestination1";
 import CabPopup from "../Components/Cab/Listing/CabPopup";
+import RentalSection from "./CabListing/RentalSection";
 
-function CabListing1({source, destination,blogdata,selectedValue }) {
+function CabListing1({source, destination,blogdata,selectedValue,price}) {
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   const dayAfterTomorrow = new Date();
@@ -35,18 +36,19 @@ function CabListing1({source, destination,blogdata,selectedValue }) {
   const [isValid, setisValid] = useState("notValid");
 
   return (
-    <>
+    <div style={{backgroundColor:"#fafafa"}}>
       <Layout title="light_header" />
       <ListSearch data={data} setisValid={setisValid} rentals={rentals} setRentals={setRentals}/>
-      <ListingView  data={data} isValid={isValid} />
+      <ListingView  data={data} isValid={isValid} price={blogdata?.price}/>
       {/* <CabPopup/> */}
       {/* <CabOptions/> */}
      { blogdata? <DelhiToDestination data={blogdata} />:null}
-      {/* <CabOptions1/> */}
-      {/* <ServiceBlocks/> */}
+      {/* <CabOptions1 source={source}/>
+      <RentalSection destination={destination}/>
+      <ServiceBlocks/> */}
       <DelhiToDesinationMeta1 query={source} query1={destination}/>
       <FooterComponent />
-    </>
+    </div>
   );
 }
 export default CabListing1;

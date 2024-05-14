@@ -1,7 +1,6 @@
 import BodyContent from "./BodyContent";
 
 const ContentPage = ({ slideData, view }) => {
-  // console.log(slideData)
   return (
     <>
       <div

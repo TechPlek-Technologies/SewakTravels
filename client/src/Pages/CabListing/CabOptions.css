@@ -96,7 +96,7 @@
 
 
 
-#for-md-to-lg-devices>div ul li{
+#for-md-to-lg-devices>div ul li {
     border-radius: 100px;
     display: flex;
     align-items: center;
@@ -110,14 +110,14 @@
 }
 
 
-#for-md-to-lg-devices>div ul li span:nth-child(3){
-  font-size: large;
+#for-md-to-lg-devices>div ul li span:nth-child(3) {
+    font-size: large;
 }
 
 
-#for-md-to-lg-devices>div ul li span img{
-   height: 3.7rem;
-   filter: grayscale(1);
+#for-md-to-lg-devices>div ul li span img {
+    height: 3.7rem;
+    filter: grayscale(1);
 }
 
 
@@ -144,6 +144,7 @@
 }
 
 #for-md-to-lg-devices>div ul li .activeCheck {
+    /* background: #008cff; */
     background: #ef3f3e;
     border-radius: 100%;
     /* display: none; */
@@ -168,51 +169,151 @@
     width: 4px;
 }
 
-#top-cab-routes div table thead tr{
-   font-size: 1.3rem;
-   font-weight: 700;
+#top-cab-routes div table thead tr {
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 
-#top-cab-routes div table tbody tr:hover{
-   background-color: #f4faff;
- }
+/* #top-cab-routes div table tbody tr:hover {
+    background-color: #f4faff;
+} */
 
-@media (max-width: 576px) {
-    #top-cab-routes .container .col {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
+
 
 @media (max-width: 768px) {
 
     #top-cab-routes div div div div.col p {
         font-size: 0.8rem;
     }
+
 }
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    #top-cab-routes div div div h1 {
+        font-size: 1.35rem;
+    }
+
+    #top-cab-routes div div div div.col p {
+        font-size: 0.9rem;
+    }
+
+    #top-cab-routes>div div div div img {
+        height: 2.3rem;
+    }
+
+    #top-cab-routes>div div div div span {
+        font-size: 1rem;
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(1) p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(1) p:nth-child(2) {
+        font-size: 0.8rem;
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(2) p:nth-child(1) {
+        font-size: 0.85rem;
+
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(2) p:nth-child(2) {
+        font-size: 0.75rem;
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(3) p:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(3) p:nth-child(2) {
+        font-size: 0.7rem;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    #top-cab-routes div div div h1 {
+        font-size: 1.4rem;
+    }
+
+    #top-cab-routes div div div div.col p {
+        font-size: 0.95rem;
+    }
+
+    #top-cab-routes>div div div div img {
+        height: 2.5rem;
+    }
+
+    #top-cab-routes>div div div div span {
+        font-size: 1.05rem;
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(1) p:nth-child(1) {
+        font-size: 1.05rem;
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(1) p:nth-child(2) {
+        font-size: 0.82rem;
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(2) p:nth-child(1) {
+        font-size: 0.9rem;
+
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(2) p:nth-child(2) {
+        font-size: 0.78rem;
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(3) p:nth-child(1) {
+        font-size: 1.1rem;
+    }
+
+    #top-cab-routes div.table-responsive tbody td:nth-child(3) p:nth-child(2) {
+        font-size: 0.75rem;
+    }
+
+}
+
 
 @media (max-width: 992px) {
 
     #for-md-to-lg-devices {
-       display: none;
-    }
-
-    #top-cab-routes div table thead{
         display: none;
     }
+
+    #top-cab-routes div table thead {
+        display: none;
+    }
+
+    #top-cab-routes div.table-responsive thead tr th:nth-child(4){
+        display: none;
+    }
+
+    #top-cab-routes div.table-responsive tbody tr td:nth-child(4){
+        display: none;
+    }
+
+    #top-cab-routes {
+        padding-bottom: 30px;
+     }
 }
 
 @media (min-width: 992px) {
 
-    #for-md-sm-devices{
-       display: none;
+    #for-md-sm-devices {
+        display: none;
     }
 
     #top-cab-routes div.table-responsive tbody td:nth-child(1) p:nth-child(1) {
         font-size: 1.05rem;
         color: black;
-        
+
         font-weight: 700;
         letter-spacing: -0.5px;
     }
@@ -237,13 +338,74 @@
     }
 
     #top-cab-routes div.table-responsive tbody td:nth-child(3) p:nth-child(1) {
-        font-size: 1.2rem;
+        font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
         color: black;
-        font-weight: 800;
+        font-weight: 700;
     }
 
     #top-cab-routes div.table-responsive tbody td p {
-       margin-bottom: 0.3rem;
+        margin-bottom: 0.4rem;
     }
 
+    #top-cab-routes div.table-responsive {
+        border: 1px solid #cecece;
+    }
+
+    #top-cab-routes div.table-responsive thead tr th {
+
+        font-weight: 800;
+
+    }
+
+    .cabTypeCol {
+        -ms-flex-pack: center;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+
+    .viewCabBtn {
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+        -ms-flex-item-align: end;
+        align-items: center;
+        align-self: flex-end;
+        /* background-image: linear-gradient(96deg, #53b2fe 1%, #065af3 129%); */
+        background-image: linear-gradient(to right, #ff7e5f, #ff5961);
+        /* background-color: #ef3f3e; */
+        border-radius: 34px;
+        -webkit-box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .2);
+        box-shadow: 0 1px 7px 0 rgba(0, 0, 0, .2);
+        color: #fff;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 12px;
+        font-weight: 700;
+        height: 32px;
+        justify-content: center;
+        width: 120px;
+    }
+
+    .viewCabBtn:hover{
+        color: #000;
+    }
+}
+
+@media (max-width: 576px) {
+    #top-cab-routes .container .col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #top-cab-routes tbody tr td {
+        padding: 1rem;
+    }
+
+    #top-cab-routes {
+       padding-bottom: 20px;
+    }
 }

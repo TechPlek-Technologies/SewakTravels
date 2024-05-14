@@ -14,7 +14,6 @@ const DatePickerComponent = ({startDate,setStartDate,newClass}) => {
       minDate={tomorrow}
       selected={startDate}
       onChange={(date) => {
-        // console.log(date)
         setStartDate(new Date(date))}
       }
       id={`datepicker`}

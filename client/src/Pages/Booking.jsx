@@ -44,9 +44,6 @@ const formatDate = (startDate) => {
     
   }, [journeyData.source, journeyData.destination]);
 
-  console.log(paymentData);
-  // const targetId = param.id;
-
 
   const [payableAmount, setpayableAmount] = useState(
     Math.ceil((totalFare * 15) / 100)
