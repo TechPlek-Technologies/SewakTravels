@@ -8,7 +8,7 @@ const ReviewContentTest = () => {
     slidesToShow: 3,
     row: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {

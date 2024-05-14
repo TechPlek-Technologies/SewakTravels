@@ -20,10 +20,13 @@ import {
   dataBasti,
   dataBatala,
   dataBathinda,
+  dataBharatpur,
+  dataBhimtal,
   dataBhiwadi,
   dataBiharSharif,
   dataBijnor,
   dataBilaspur,
+  dataChail,
   dataChandigarh,
   dataChhindwara,
   dataCoimbatore,
@@ -32,6 +35,7 @@ import {
   dataDharamshala,
   dataDwarka,
   dataFaridabad,
+  dataFirozpurJhirka,
   dataGandhinagar,
   dataGorakhpur,
   dataGuwahati,
@@ -47,7 +51,10 @@ import {
   dataJaipur,
   dataJalandhar,
   dataJamnagar,
+  dataJhajjar,
+  dataJimCorbett,
   dataJodhpur,
+  dataKanatal,
   dataKanpur,
   dataKarnal,
   dataKasauli,
@@ -55,7 +62,9 @@ import {
   dataKatra,
   dataKatraj,
   dataKolkata,
+  dataKufri,
   dataKullu,
+  dataLansdowne,
   dataLucknow,
   dataLudhiana,
   dataManali,
@@ -84,10 +93,12 @@ import {
   dataRanchi,
   dataRatlam,
   dataRishikesh,
+  dataRohtak,
   dataRoorkee,
   dataSamastipur,
   dataSanand,
   dataShimla,
+  dataSonipat,
   dataSrinagar,
   dataSurat,
   dataUdaipur,
@@ -98,16 +109,20 @@ import {
   dataVisakhapatnam,
   dataVrindavan,
 } from "./Pages/SourceToDestination";
-import CabListing2 from "./Pages/CabListing2";
-import CabListing3 from "./Pages/CabListing3";
-import CabListing4 from "./Pages/CabListing4";
-import CabListing5 from "./Pages/CabListing5";
 
 const Home = lazy(() => import("./Pages/Home"));
 
 const CabListing = lazy(() => import("./Pages/CabListing"));
 
 const CabListing1 = lazy(() => import("./Pages/CabListing1"));
+
+const CabListing2 = lazy(() => import("./Pages/CabListing2"));
+
+const CabListing3 = lazy(() => import("./Pages/CabListing3"));
+
+const CabListing4 = lazy(() => import("./Pages/CabListing4"));
+
+const CabListing5 = lazy(() => import("./Pages/CabListing5"));
 
 const CabDetails = lazy(() => import("./Pages/CabDetails"));
 
@@ -1199,6 +1214,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Sonipat, Haryana, India"}
+                blogdata={dataSonipat}
               />
             }
           />
@@ -1209,6 +1225,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Jhajjar, Haryana, India"}
+                blogdata={dataJhajjar}
               />
             }
           />
@@ -1219,6 +1236,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Rohtak, Haryana, India"}
+                blogdata={dataRohtak}
               />
             }
           />
@@ -1239,6 +1257,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Firozpur Jhirka, Haryana, India"}
+                blogdata={dataFirozpurJhirka}
               />
             }
           />
@@ -1249,6 +1268,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Jim Corbett, Halduchaur, Uttarakhand, India"}
+                blogdata={dataJimCorbett}
               />
             }
           />
@@ -1279,6 +1299,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Bharatpur, Rajasthan, India"}
+                blogdata={dataBharatpur}
               />
             }
           />
@@ -1289,6 +1310,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Lansdowne, Uttarakhand, India"}
+                blogdata={dataLansdowne}
               />
             }
           />
@@ -1329,6 +1351,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Kanatal, Kaudia Range, Uttarakhand, India"}
+                blogdata={dataKanatal}
               />
             }
           />
@@ -1349,6 +1372,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Chail, Himachal Pradesh, India"}
+                blogdata={dataChail}
               />
             }
           />
@@ -1359,6 +1383,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Kufri, Himachal Pradesh, India"}
+                blogdata={dataKufri}
               />
             }
           />
@@ -1369,6 +1394,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Bhimtal, Uttarakhand, India"}
+                blogdata={dataBhimtal}
               />
             }
           />

@@ -7,13 +7,13 @@
 }
 
 #cab-search-2>div:nth-child(1)>h1 {
-    font-size: 17.5px;
+    font-size: 22px;
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
     padding: 15px 10px;
     margin-bottom: 0;
-    letter-spacing: normal;
+    letter-spacing: .09em;
 }
 
 
@@ -79,10 +79,11 @@
 #cab-search-2 .cabOptionCard div:nth-child(3) {
 
     color: #4a4a4a;
-    font-weight: 900;
-    line-height: 12px;
+    font-weight: 800;
+    line-height: 18px;
     font-size: 10.5px;
     text-align: center;
+    letter-spacing: 0.06rem;
 }
 
 #cab-search-2>div:nth-child(4) {
