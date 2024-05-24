@@ -599,7 +599,7 @@ export const dataManali = {
 };
 
 export const dataRishikesh = {
-  "price":"3299",
+  "price":"3499",
   "main": "Book Delhi To Rishikesh Cab ",
   "sub":"Book a Delhi To Rishikesh Cab with Sewak Travels",
   "subcontent":
@@ -954,7 +954,7 @@ export const dataDharamshala  = {
 };
 
 export const dataHaridwar   = {
-  "price":"3299",
+  "price":"3499",
   "main": "Book Delhi To Haridwar Cab ",
   "sub":"Book a Delhi To Haridwar Cab with Sewak Travels",
   "subcontent":
@@ -1134,7 +1134,7 @@ export const dataVrindavan    = {
 };
 
 export const dataMathura     = {
-  "price":"3299",
+  "price":"2599",
   "main": "Book Delhi To Mathura  Cab ",
   "sub":"Book a Delhi To Mathura Cab with Sewak Travels",
   "subcontent":
