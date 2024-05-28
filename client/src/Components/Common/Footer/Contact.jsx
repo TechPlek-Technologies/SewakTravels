@@ -17,15 +17,13 @@ const Contact = () => {
               />
             </a>
           </div>
-          <p>
-            SewakTravels.com is an Integrated Travel company with the objective
-            of servicing all Travel verticals through its unmatched spread at
-            most economical price.
-          </p>
           <ul className="contact-list">
             <li>
-              <i className="fas fa-map-marker-alt"></i> FF-10, Spanish Court,
+              <i className="fas fa-map-marker-alt"></i>Corporate Address : FF-10, Spanish Court,
               Bajghera Rd, Sector 2, Palam Vihar, Gurugram, Haryana 122017
+            </li>
+            <li>
+              <i className="fas fa-map-marker-alt"></i>Registered Address : Flat No.-301, Plot No.-804, Gali No.-8,Ashok Vihar 1, Gurugram, Haryana 122001
             </li>
             <li>
               <i className="fas fa-phone-alt"></i>+91-837-782-8828

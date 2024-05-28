@@ -5,7 +5,22 @@ const AddressContent = ({ colClass }) => {
         <div className="contact_wrap">
           <div className="title_bar">
             <i className="fas fa-map-marker-alt"></i>
-            <h4>Address</h4>
+            <h4>Registered Address</h4>
+          </div>
+          <div className="contact_content">
+            <p>
+              Flat No.-301, Plot No.-804, Gali No.-8, Ashok Vihar 1,
+               <br />
+               Gurugram, Haryana 122001
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={colClass}>
+        <div className="contact_wrap">
+          <div className="title_bar">
+            <i className="fas fa-map-marker-alt"></i>
+            <h4>Corporate Address</h4>
           </div>
           <div className="contact_content">
             <p>
@@ -43,7 +58,7 @@ const AddressContent = ({ colClass }) => {
           </div>
         </div>
       </div>
-      <div className={colClass}>
+      {/* <div className={colClass}>
         <div className="contact_wrap">
           <div className="title_bar">
             <i className="fas fa-fax"></i>
@@ -56,7 +71,7 @@ const AddressContent = ({ colClass }) => {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
