@@ -12,24 +12,48 @@ const HomePopUp = ({
   handlePopupClose,
   phone_email,
   pathParams,
+  clickOffers,
+  offerData
 }) => {
   const { setPaymentData } = useContext(PaymentContext);
   const [isValidPhone, setIsValidPhone] = useState(true);
   const { journeyData, setJourneyData } = useContext(AppContext);
+  
   async function sendQueryEmail(phone) {
-    const res = await SendMail(
-      "booking@sewaktravels.Com",
-      "Demo",
-      `<h1>New Query From Search bar:</h1>
-      
-      <h5>Mobile Number : ${phone}</h5>
-      <h5>Source : ${pathParams.source}</h5>
-      <h5>Destination : ${pathParams.destination}</h5>
-      <h5>Trip Type : ${pathParams.selectedValue}</h5>
-      <h5>Start Date : ${pathParams.startDate}</h5>
-      `,
-      "Booking Query"
-    );
+    if(clickOffers){
+
+      const res = await SendMail(
+        "booking@sewaktravels.Com",
+        "Demo",
+        `<h1>New Query From Search bar:</h1>
+        
+        <h5>Mobile Number : ${phone}</h5>
+        <h5>Source : ${offerData.source}</h5>
+        <h5>Destination : ${offerData.destination}</h5>
+        <h5>Trip Type :  One way</h5>
+        <h5>Start Date : ${pathParams.startDate}</h5>
+        `,
+        "Booking Query"
+      );
+    }else{
+
+      const res = await SendMail(
+        "booking@sewaktravels.Com",
+        "Demo",
+        `<h1>New Query From Search bar:</h1>
+        
+        <h5>Mobile Number : ${phone}</h5>
+        <h5>Source : ${pathParams.source}</h5>
+        <h5>Destination : ${pathParams.destination}</h5>
+        <h5>Trip Type : ${pathParams.selectedValue}</h5>
+        <h5>Start Date : ${pathParams.startDate}</h5>
+        `,
+        "Booking Query"
+      );
+      console.log(res);
+
+    }
+   
   }
 
   const handleChange = (e) => {
@@ -88,7 +112,7 @@ const HomePopUp = ({
                           !phone_email
                             ? "/#"
                             : !isValidPhone
-                            ? "/#"
+                            ? "/#": clickOffers? offerData.src
                             : {
                                 pathname: `/cabs/listing/${JSON.stringify(
                                   pathParams
@@ -111,15 +135,29 @@ const HomePopUp = ({
                 </div>
                 <div className={`input-group-append justify-content-center ${styles.desktop}`}>
                   <div className="btn btn-rounded btn-sm color1 rounded-0 mt-2">
-                    <Link
-                      to={{
-                        pathname: `/cabs/listing/${JSON.stringify(pathParams)}`,
-                        state: { journeyData },
-                      }}
-                      onClick={handleSearch}
-                    >
-                      Continue
-                    </Link>
+                  <Link
+                        to={
+                          !phone_email
+                            ? "/#"
+                            : !isValidPhone
+                            ? "/#": clickOffers? offerData.src
+                            : {
+                                pathname: `/cabs/listing/${JSON.stringify(
+                                  pathParams
+                                )}`,
+                                state: { journeyData },
+                              }
+                        }
+                        onClick={() =>
+                          !phone_email
+                            ? setIsValidPhone(false)
+                            : !isValidPhone
+                            ? setIsValidPhone(false)
+                            : handleSearch
+                        }
+                      >
+                        Continue
+                      </Link>
                   </div>
                 </div>
               </div>

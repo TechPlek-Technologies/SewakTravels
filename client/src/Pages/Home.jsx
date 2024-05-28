@@ -64,6 +64,8 @@ function Home() {
     rentalPackage: rentals,
     email_phone: phone_email,
   };
+  const [clickOffers , setClickOffers] = useState(false);
+  const[offerData, setOfferData] = useState(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -96,23 +98,6 @@ function Home() {
           />
           <link rel="canonical" href="https://sewaktravels.com/" />
         </Helmet>
-
-        {/* <NewHomeBanner
-          pathParams={pathParams}
-          activeTab={activeTab}
-          callback={callback}
-          handlePopupClose={handlePopupClose}
-          phone_email={phone_email}
-          isPopupOpen={isPopupOpen}
-          setStartDate={setStartDate}
-          setReturnDate={setReturnDate}
-          setStartTime={setStartTime}
-          setReturnTime={setReturnTime}
-          setSelectedValue={setSelectedValue}
-          setSource={setSource}
-          setDestination={setDestination}
-          setRentals={setRentals}
-        /> */}
 
 {isSmallScreen ? (
           <HomeBanner2
@@ -155,9 +140,11 @@ function Home() {
           phone_email={phone_email}
           setPhone_email={setPhone_email}
           isPopupOpen={isPopupOpen}
+          clickOffers={clickOffers}
+          offerData={offerData}
         />
 
-        {activeTab === "1" && <Package type="Cab Offers" />}
+        {activeTab === "1" && <Package  handlePopupClose={handlePopupClose} type="Cab Offers" setClickOffers={setClickOffers} setOfferData={setOfferData}/>}
         {activeTab === "2" && <Airline type="Flight Offers" />}
         {activeTab === "3" && <OfferComponent type="Hotel Offers" />}
         {activeTab === "4" && <ExplorePackages type="Tour Offers" />}

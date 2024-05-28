@@ -5,7 +5,7 @@ import TitleComponent from "../../../Common/TitleComponent";
 import SliderSevenTest from "./SliderSevenTest";
 import CabAnimation from "../../CallService/CabAnimation";
 
-const Package = ({type}) => {
+const Package = ({type,handlePopupClose,setClickOffers,setOfferData}) => {
 
 
   return (
@@ -17,7 +17,7 @@ const Package = ({type}) => {
          
         <div className="row">
           <div className="col">
-            <SliderSevenTest type={type} slideData={cabOfferData} /> 
+            <SliderSevenTest type={type} slideData={cabOfferData} handlePopupClose={handlePopupClose} setClickOffers={setClickOffers} setOfferData={setOfferData}/> 
          
           </div>
         </div>
