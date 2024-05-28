@@ -7,6 +7,7 @@ import Intercity from "./Pages/Services/Intercity";
 import {
   dataAgra,
   dataAhmedabad,
+  dataAjmer,
   dataAkola,
   dataAllahabad,
   dataAlwar,
@@ -25,6 +26,7 @@ import {
   dataBhiwadi,
   dataBiharSharif,
   dataBijnor,
+  dataBikaner,
   dataBilaspur,
   dataChail,
   dataChandigarh,
@@ -61,6 +63,7 @@ import {
   dataKasol,
   dataKatra,
   dataKatraj,
+  dataKausani,
   dataKolkata,
   dataKufri,
   dataKullu,
@@ -74,6 +77,7 @@ import {
   dataMeerut,
   dataMohali,
   dataMoradabad,
+  dataMukteshwar,
   dataMumbai,
   dataMurthal,
   dataMussoorie,
@@ -83,6 +87,7 @@ import {
   dataNainital,
   dataNeemrana,
   dataNoida,
+  dataOrchha,
   dataPalwal,
   dataPatna,
   dataPithampur,
@@ -104,6 +109,7 @@ import {
   dataSanand,
   dataSariska,
   dataShimla,
+  dataShoghi,
   dataSohna,
   dataSolan,
   dataSonipat,
@@ -1431,6 +1437,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Mukteshwar, Uttarakhand, India"}
+                blogdata={dataMukteshwar}
               />
             }
           />
@@ -1441,6 +1448,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Shoghi, Himachal Pradesh, India"}
+                blogdata={dataShoghi}
               />
             }
           />
@@ -1451,6 +1459,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Kausani, Uttarakhand, India"}
+                blogdata={dataKausani}
               />
             }
           />
@@ -1461,6 +1470,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Orchha, Madhya Pradesh, India"}
+                blogdata={dataOrchha}
               />
             }
           />
@@ -1471,6 +1481,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Bikaner, Rajasthan, India"}
+                blogdata={dataBikaner}
               />
             }
           />
@@ -1481,6 +1492,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Ajmer, Rajasthan, India"}
+                blogdata={dataAjmer}
               />
             }
           />
