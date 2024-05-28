@@ -1,7 +1,7 @@
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useSearchBetweenPlaces from "../../../../Utility/SearchFromPlace";
-export const SliderSevenTest = ({ type, slideData }) => {
+export const SliderSevenTest = ({ type, slideData ,handlePopupClose,setClickOffers,setOfferData}) => {
   const slide4 = {
     infinite: false,
     speed: 300,
@@ -49,7 +49,16 @@ export const SliderSevenTest = ({ type, slideData }) => {
     ],
   };
 
+
   const searchBetweenPlaces = useSearchBetweenPlaces();
+
+  const handleButtonClick = (data) => {
+    setClickOffers(true);
+
+    setOfferData(data);
+    handlePopupClose();
+
+  };
 
   return (
     <Slider {...slide4} className="slider-4 arrow-classic">
@@ -74,7 +83,11 @@ export const SliderSevenTest = ({ type, slideData }) => {
                 <div className="new-line-container">
                     <Link
                       className={`btn1 btn-rounded1 color1 packageButton`}
-                      to={`${data.src}`}
+                      // to={`${data.src}`}
+                      onClick={()=>{
+                        setClickOffers(true);
+                        handleButtonClick(data)
+                      }}
                     >
                       {"Book Now"}
                     </Link>
