@@ -10,6 +10,7 @@ import {
   dataAjmer,
   dataAkola,
   dataAllahabad,
+  dataAlmora,
   dataAlwar,
   dataAmbala,
   dataAmritsar,
@@ -85,10 +86,12 @@ import {
   dataNahan,
   dataNaini,
   dataNainital,
+  dataNaldehra,
   dataNeemrana,
   dataNoida,
   dataOrchha,
   dataPalwal,
+  dataPangot,
   dataPatna,
   dataPithampur,
   dataPune,
@@ -99,6 +102,7 @@ import {
   dataRamachandrapuram,
   dataRameshwaram,
   dataRanchi,
+  dataRanikhet,
   dataRanthambore,
   dataRatlam,
   dataRishikesh,
@@ -1503,6 +1507,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Pangot, Uttarakhand, India"}
+                blogdata={dataPangot}
               />
             }
           />
@@ -1513,6 +1518,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Ranikhet, Uttarakhand, India"}
+                blogdata={dataRanikhet}
               />
             }
           />
@@ -1523,6 +1529,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Naldehra, Himachal Pradesh, India"}
+                blogdata={dataNaldehra}
               />
             }
           />
@@ -1533,6 +1540,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Almora, Uttarakhand, India"}
+                blogdata={dataAlmora}
               />
             }
           />
