@@ -71,6 +71,7 @@ import {
   dataLansdowne,
   dataLucknow,
   dataLudhiana,
+  dataMalana,
   dataManali,
   dataManesar,
   dataMathura,
@@ -87,6 +88,7 @@ import {
   dataNaini,
   dataNainital,
   dataNaldehra,
+  dataNarkanda,
   dataNeemrana,
   dataNoida,
   dataOrchha,
@@ -1551,6 +1553,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Narkanda, Himachal Pradesh, India"}
+                blogdata={dataNarkanda}
               />
             }
           />
@@ -1561,6 +1564,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Malana, Himachal Pradesh, India"}
+                blogdata={dataMalana}
               />
             }
           />
