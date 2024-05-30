@@ -58,6 +58,7 @@ import {
   dataJimCorbett,
   dataJodhpur,
   dataKanatal,
+  dataKangra,
   dataKanpur,
   dataKarnal,
   dataKasauli,
@@ -65,6 +66,7 @@ import {
   dataKatra,
   dataKatraj,
   dataKausani,
+  dataKhajuraho,
   dataKolkata,
   dataKufri,
   dataKullu,
@@ -74,6 +76,7 @@ import {
   dataMalana,
   dataManali,
   dataManesar,
+  dataManikaran,
   dataMathura,
   dataMcLeodganj,
   dataMeerut,
@@ -119,6 +122,7 @@ import {
   dataSohna,
   dataSolan,
   dataSonipat,
+  dataSpitiValley,
   dataSrinagar,
   dataSurat,
   dataUdaipur,
@@ -1575,6 +1579,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Manikaran, Himachal Pradesh, India"}
+                blogdata={dataManikaran}
               />
             }
           />
@@ -1585,6 +1590,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Kangra, Himachal Pradesh, India"}
+                blogdata={dataKangra}
               />
             }
           />
@@ -1595,6 +1601,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Spiti Valley, Himachal Pradesh, India"}
+                blogdata={dataSpitiValley}
               />
             }
           />
@@ -1605,6 +1612,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Khajuraho, Madhya Pradesh, India"}
+                blogdata={dataKhajuraho}
               />
             }
           />
