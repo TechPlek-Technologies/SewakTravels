@@ -29,7 +29,9 @@ import {
   dataBijnor,
   dataBikaner,
   dataBilaspur,
+  dataBir,
   dataChail,
+  dataChamba,
   dataChandigarh,
   dataChhindwara,
   dataCoimbatore,
@@ -52,6 +54,7 @@ import {
   dataItarsi,
   dataJabalpur,
   dataJaipur,
+  dataJaisalmer,
   dataJalandhar,
   dataJamnagar,
   dataJhajjar,
@@ -106,6 +109,7 @@ import {
   dataRajkot,
   dataRamachandrapuram,
   dataRameshwaram,
+  dataRanakpur,
   dataRanchi,
   dataRanikhet,
   dataRanthambore,
@@ -1623,6 +1627,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Chamba, Himachal Pradesh, India"}
+                blogdata={dataChamba}
               />
             }
           />
@@ -1633,6 +1638,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Ranakpur, Rajasthan, India"}
+                blogdata={dataRanakpur}
               />
             }
           />
@@ -1643,6 +1649,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Jaisalmer, Rajasthan, India"}
+                blogdata={dataJaisalmer}
               />
             }
           />
@@ -1653,6 +1660,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Delhi, India"
                 destination={"Bir, Himachal Pradesh, India"}
+                blogdata={dataBir}
               />
             }
           />
