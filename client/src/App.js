@@ -6,6 +6,11 @@ import Loader from "./Layout/Loader";
 import Intercity from "./Pages/Services/Intercity";
 import {
   dataAgra,
+  dataAgraDelhi,
+  dataAgraFaridabad,
+  dataAgraGhaziabad,
+  dataAgraGurgaon,
+  dataAgraNoida,
   dataAhmedabad,
   dataAjmer,
   dataAkola,
@@ -1685,6 +1690,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Agra, Uttar Pradesh, India"
                 destination={"Delhi, India"}
+                blogdata={dataAgraDelhi}
               />
             }
           />
@@ -1695,6 +1701,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Agra, Uttar Pradesh, India"
                 destination={"Noida, Uttar Pradesh, India"}
+                blogdata={dataAgraNoida}
               />
             }
           />
@@ -1705,6 +1712,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Agra, Uttar Pradesh, India"
                 destination={"Faridabad, Haryana, India"}
+                blogdata={dataAgraFaridabad}
               />
             }
           />
@@ -1715,6 +1723,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Agra, Uttar Pradesh, India"
                 destination={"Ghaziabad, Uttar Pradesh, India"}
+                blogdata={dataAgraGhaziabad}
               />
             }
           />
@@ -1725,6 +1734,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Agra, Uttar Pradesh, India"
                 destination={"Gurgaon, Haryana, India"}
+                blogdata={dataAgraGurgaon}
               />
             }
           />
