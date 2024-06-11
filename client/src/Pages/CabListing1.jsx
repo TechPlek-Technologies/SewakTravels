@@ -12,6 +12,9 @@ import ServiceBlocks from "./ServiceBlocks/ServiceBlocks";
 import DelhiToDesinationMeta1 from "./MetaTags/DelhiToDestination1";
 import CabPopup from "../Components/Cab/Listing/CabPopup";
 import RentalSection from "./CabListing/RentalSection";
+import { useParams } from "react-router-dom";
+import { PaymentContext } from "../Context/PaymentContext";
+import { SendMail } from "../Utility/SendMail";
 
 function CabListing1({source, destination,blogdata,selectedValue,price}) {
   const tomorrow = new Date();
@@ -20,6 +23,7 @@ function CabListing1({source, destination,blogdata,selectedValue,price}) {
   dayAfterTomorrow.setDate(dayAfterTomorrow.getDate() + 3);
 
   const { journeyData, setJourneyData } = useContext(AppContext);
+  const { paymentData } = useContext(PaymentContext);
   const [rentals, setRentals] = useState("4hrs40km");
   const data = {
     source:source,
@@ -31,7 +35,32 @@ function CabListing1({source, destination,blogdata,selectedValue,price}) {
     startTime: "12:00 PM",
     returnTime: "12:00 PM",
   };
- 
+
+useEffect(()=>{
+  async function sendQueryEmail() {
+    if (paymentData.contact) {
+      const res = await SendMail(
+        "booking@sewaktravels.Com",
+        "Demo",
+        `<h1>New Query From Search bar:</h1>
+        
+        <h5>Mobile Number : ${paymentData.contact}</h5>
+        <h5>Source : ${journeyData.source}</h5>
+        <h5>Destination : ${journeyData.destination}</h5>
+        <h5>Trip Type :  One way</h5>
+        <h5>Start Date : ${journeyData.startDate}</h5>
+        `,
+        "Booking Query"
+      );
+      console.log(res);
+    } 
+
+  }
+  sendQueryEmail();
+
+},[])
+
+console.log(paymentData.contact);
 
   const [isValid, setisValid] = useState("notValid");
 
