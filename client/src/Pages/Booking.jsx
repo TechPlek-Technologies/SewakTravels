@@ -128,8 +128,8 @@ const formatDate = (startDate) => {
         Email (for queries): booking@sewaktravels.com 
         Website: https://sewaktravels.com/
         `;
-        await sendMail(paymentsData);
         await sendSMS(paymentsData.billing_mobile,text);
+        await sendMail(paymentsData);
         await addBillingData(paymentsData);
         setLoading(false);
 
