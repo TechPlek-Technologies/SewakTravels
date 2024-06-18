@@ -8,7 +8,7 @@ export const reviews = [
     {
       id: 2,
       src: "/assets/img/testimonials/2.jpg",
-      name: "Tanmay Bhatt ",
+      name: "Sunil Bhatt ",
       description: "Great Service! The website is straightforward to use, and the staff were accommodating and very quick to respond. The driver was accommodating, and the vehicle was kept clean. He was wearing a uniform throughout the journey and was a straightforward going person to talk with. Thank You.",
     },
     {
@@ -20,7 +20,7 @@ export const reviews = [
     {
       id: 4,
       src: "/assets/img/testimonials/4.jpg",
-      name: "Tanya Madaan  ",
+      name: "Deepak Madaan  ",
       description: "Excellent service! Once I was stuck in Delhi and called various cab services to book the vehicle in 15-minutes. While searching, I found out Sewak Travels, and call them. They got me the cab in 10 minutes without any surcharge. Fabulous service and excellent customer support.",
     },
   ];

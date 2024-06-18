@@ -5,8 +5,8 @@ import "./CallToAction.css";
 import { useState } from "react";
 
 const CallToAction = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
+  const [isHovered, setIsHovered] = useState(true);
 
   const handleBoxClick = () => {
     setIsExpanded(!isExpanded);
@@ -41,7 +41,11 @@ const CallToAction = () => {
           sx={{ color: "#ef3f3e", width: "30px", height: "30px"}}
         />
        
-          <div className={isExpanded || isHovered ? "callTo-message" : "callTo-message1"}> <h6>Call For Inquiry</h6></div>
+       <div>
+
+          <div style={{textAlign:"left"}}> <span style={{fontSize:"10px"}}>Call For Inquiry</span></div>
+          <div className={isExpanded || isHovered ? "callTo-message" : "callTo-message1"}> <h6>+91-8377-828-828</h6></div>
+       </div>
        
       </Fab>
     </Box>

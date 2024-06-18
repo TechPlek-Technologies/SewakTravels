@@ -511,7 +511,7 @@ section,
     max-width: 80%;
     margin: 0 auto;
     color: #505050;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     /* font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320))); */
     font-size: 16px;
     line-height: 1.7; }
@@ -2423,7 +2423,6 @@ section .black-layer:before {
       margin-bottom: 10px; }
     .blog_section.destination-section .destination-details h6 {
       font-weight: 600;
-      text-transform: capitalize;
       font-size: 14px;
       /* margin-bottom: 30px; */
       color: rgba(0, 0, 0, 0.56);
