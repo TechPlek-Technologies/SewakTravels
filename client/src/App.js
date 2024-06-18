@@ -59,6 +59,7 @@ import {
   dataItarsi,
   dataJabalpur,
   dataJaipur,
+  dataJaipurDelhi,
   dataJaisalmer,
   dataJalandhar,
   dataJamnagar,
@@ -1748,6 +1749,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Jaipur, Rajasthan, India"
                 destination={"Delhi, India"}
+                blogdata={dataJaipurDelhi}
               />
             }
           />
