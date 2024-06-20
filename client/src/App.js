@@ -60,6 +60,10 @@ import {
   dataJabalpur,
   dataJaipur,
   dataJaipurDelhi,
+  dataJaipurFaridabad,
+  dataJaipurGhaziabad,
+  dataJaipurGurgaon,
+  dataJaipurNoida,
   dataJaisalmer,
   dataJalandhar,
   dataJamnagar,
@@ -1760,6 +1764,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Jaipur, Rajasthan, India"
                 destination={"Gurgaon, Haryana, India"}
+                blogdata={dataJaipurGurgaon}
               />
             }
           />
@@ -1771,6 +1776,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Jaipur, Rajasthan, India"
                 destination={"Noida, Uttar Pradesh, India"}
+                blogdata={dataJaipurNoida}
               />
             }
           />
@@ -1782,6 +1788,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Jaipur, Rajasthan, India"
                 destination={"Faridabad, Haryana, India"}
+                blogdata={dataJaipurFaridabad}
               />
             }
           />
@@ -1793,6 +1800,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Jaipur, Rajasthan, India"
                 destination={"Ghaziabad, Uttar Pradesh, India"}
+                blogdata={dataJaipurGhaziabad}
               />
             }
           />
