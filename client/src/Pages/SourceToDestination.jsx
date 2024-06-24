@@ -12826,7 +12826,7 @@ export const dataChandigarhDelhi   = {
     "sub4content":
     "For Chandigarh to Delhi cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Chandigarh to Delhi cabs for your journey. Additionally, you can book your Chandigarh to Delhi taxi for either a one-way or Chandigarh to Delhi taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Chandigarh to Delhi cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/LocationDifferent/Ghaziabad.webp",
+  img: "/assets/img/LocationDifferent/Delhi (1).webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Chandigarh to Delhi Cab?",
   "sub5content":
@@ -12860,7 +12860,7 @@ export const dataChandigarhDelhi   = {
       p2:"With our Chandigarh to Delhi cab service, you can comfortably explore all these attractions and more, making your trip to Delhi a memorable experience. For a stress-free journey, book our Chandigarh to Delhi taxi service. In addition to transparent and reasonable Chandigarh to Delhi cab fare, you also have the flexibility to cancel your Chandigarh to Delhi cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Chandigarh-To-Delhi.webp",
 
     "sub10":"Things To Know About Chandigarh and Delhi",
     "sub10content":{
@@ -12944,7 +12944,7 @@ export const dataChandigarhShimla    = {
       p2:"With our Chandigarh to Shimla cab service, you can comfortably explore all these attractions and more, making your trip to Shimla a memorable experience. For a stress-free journey, book our Chandigarh to Shimla taxi service. In addition to transparent and reasonable Chandigarh to Shimla cab fare, you also have the flexibility to cancel your Chandigarh to Shimla cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Chandigarh-To-Shimla.webp",
 
     "sub10":"Things To Know About Chandigarh and Shimla",
     "sub10content":{
@@ -13028,7 +13028,7 @@ export const dataChandigarhManali     = {
       p2:"With our Chandigarh to Manali cab service, you can comfortably explore all these attractions and more, making your trip to Manali a memorable experience. For a stress-free journey, book our Chandigarh to Manali taxi service. In addition to transparent and reasonable Chandigarh to Manali cab fare, you also have the flexibility to cancel your Chandigarh to Manali cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Chandigarh-To-Manali.webp",
 
     "sub10":"Things To Know About Chandigarh and Manali",
     "sub10content":{
@@ -13112,7 +13112,7 @@ export const dataChandigarhGurgaon     = {
       p2:"With our Chandigarh to Gurgaon cab service, you can comfortably explore all these attractions and more, making your trip to Gurgaon a memorable experience. For a stress-free journey, book our Chandigarh to Gurgaon taxi service. In addition to transparent and reasonable Chandigarh to Gurgaon cab fare, you also have the flexibility to cancel your Chandigarh to Gurgaon cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Chandigarh-To-Gurgaon.webp",
 
     "sub10":"Things To Know About Chandigarh and Gurgaon",
     "sub10content":{
@@ -13196,7 +13196,7 @@ export const dataChandigarhNoida     = {
       p2:"With our Chandigarh to Noida cab service, you can comfortably explore all these attractions and more, making your trip to Noida a memorable experience. For a stress-free journey, book our Chandigarh to Noida taxi service. In addition to transparent and reasonable Chandigarh to Noida cab fare, you also have the flexibility to cancel your Chandigarh to Noida cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Chandigarh-To-Noida.webp",
 
     "sub10":"Things To Know About Chandigarh and Noida",
     "sub10content":{
@@ -13248,7 +13248,7 @@ export const dataBangaloreOoty   = {
     "sub4content":
     "For Bangalore to Ooty cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Bangalore to Ooty cabs for your journey. Additionally, you can book your Bangalore to Ooty taxi for either a one-way or Bangalore to Ooty taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Bangalore to Ooty cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/LocationDifferent/Ghaziabad.webp",
+  img: "/assets/img/LocationDifferent/Ooty.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Bangalore to Ooty Cab?",
   "sub5content":
@@ -13282,7 +13282,7 @@ export const dataBangaloreOoty   = {
       p2:"With our Bangalore to Ooty cab service, you can comfortably explore all these attractions and more, making your trip to Ooty a memorable experience. For a stress-free journey, book our Bangalore to Ooty taxi service. In addition to transparent and reasonable Bangalore to Ooty cab fare, you also have the flexibility to cancel your Bangalore to Ooty cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Bangalore-To-Ooty.webp",
 
     "sub10":"Things To Know About Bangalore and Ooty",
     "sub10content":{
@@ -13332,7 +13332,7 @@ export const dataBangaloreMadikeri    = {
     "sub4content":
     "For Bangalore to Madikeri cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Bangalore to Madikeri cabs for your journey. Additionally, you can book your Bangalore to Madikeri taxi for either a one-way or Bangalore to Madikeri taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Bangalore to Madikeri cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/LocationDifferent/Ghaziabad.webp",
+  img: "/assets/img/LocationDifferent/Madikeri.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Bangalore to Madikeri Cab?",
   "sub5content":
@@ -13366,7 +13366,7 @@ export const dataBangaloreMadikeri    = {
       p2:"With our Bangalore to Madikeri cab service, you can comfortably explore all these attractions and more, making your trip to Madikeri a memorable experience. For a stress-free journey, book our Bangalore to Madikeri taxi service. In addition to transparent and reasonable Bangalore to Madikeri cab fare, you also have the flexibility to cancel your Bangalore to Madikeri cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Bangalore-To-Madikeri.webp",
 
     "sub10":"Things To Know About Bangalore and Madikeri",
     "sub10content":{
@@ -13416,7 +13416,7 @@ export const dataBangaloreCoorg    = {
     "sub4content":
     "For Bangalore to Coorg cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Bangalore to Coorg cabs for your journey. Additionally, you can book your Bangalore to Coorg taxi for either a one-way or Bangalore to Coorg taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Bangalore to Coorg cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/LocationDifferent/Ghaziabad.webp",
+  img: "/assets/img/LocationDifferent/Coorg.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Bangalore to Coorg Cab?",
   "sub5content":
@@ -13450,7 +13450,7 @@ export const dataBangaloreCoorg    = {
       p2:"With our Bangalore to Coorg cab service, you can comfortably explore all these attractions and more, making your trip to Coorg a memorable experience. For a stress-free journey, book our Bangalore to Coorg taxi service. In addition to transparent and reasonable Bangalore to Coorg cab fare, you also have the flexibility to cancel your Bangalore to Coorg cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Bangalore-To-Coorg.webp",
 
     "sub10":"Things To Know About Bangalore and Coorg",
     "sub10content":{
@@ -13500,7 +13500,7 @@ export const dataBangaloreVellore    = {
     "sub4content":
     "For Bangalore to Vellore cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Bangalore to Vellore cabs for your journey. Additionally, you can book your Bangalore to Vellore taxi for either a one-way or Bangalore to Vellore taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Bangalore to Vellore cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/LocationDifferent/Ghaziabad.webp",
+  img: "/assets/img/LocationDifferent/Vellore.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Bangalore to Vellore Cab?",
   "sub5content":
@@ -13534,7 +13534,7 @@ export const dataBangaloreVellore    = {
       p2:"With our Bangalore to Vellore cab service, you can comfortably explore all these attractions and more, making your trip to Vellore a memorable experience. For a stress-free journey, book our Bangalore to Vellore taxi service. In addition to transparent and reasonable Bangalore to Vellore cab fare, you also have the flexibility to cancel your Bangalore to Vellore cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Bangalore-To-Vellore.webp",
 
     "sub10":"Things To Know About Bangalore and Vellore",
     "sub10content":{
@@ -13586,7 +13586,7 @@ export const dataChennaiVellore   = {
     "sub4content":
     "For Chennai to Vellore cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Chennai to Vellore cabs for your journey. Additionally, you can book your Chennai to Vellore taxi for either a one-way or Chennai to Vellore taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Chennai to Vellore cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/LocationDifferent/Ghaziabad.webp",
+  img: "/assets/img/LocationDifferent/Vellore.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Chennai to Vellore Cab?",
   "sub5content":
@@ -13620,7 +13620,7 @@ export const dataChennaiVellore   = {
       p2:"With our Chennai to Vellore cab service, you can comfortably explore all these attractions and more, making your trip to Vellore a memorable experience. For a stress-free journey, book our Chennai to Vellore taxi service. In addition to transparent and reasonable Chennai to Vellore cab fare, you also have the flexibility to cancel your Chennai to Vellore cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Chennai-To-Vellore.webp",
 
     "sub10":"Things To Know About Chennai and Vellore",
     "sub10content":{
@@ -13670,7 +13670,7 @@ export const dataChennaiPondicherry   = {
     "sub4content":
     "For Chennai to Pondicherry cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Chennai to Pondicherry cabs for your journey. Additionally, you can book your Chennai to Pondicherry taxi for either a one-way or Chennai to Pondicherry taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Chennai to Pondicherry cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/LocationDifferent/Ghaziabad.webp",
+  img: "/assets/img/LocationDifferent/Pondicherry.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Chennai to Pondicherry Cab?",
   "sub5content":
@@ -13704,7 +13704,7 @@ export const dataChennaiPondicherry   = {
       p2:"With our Chennai to Pondicherry cab service, you can comfortably explore all these attractions and more, making your trip to Pondicherry a memorable experience. For a stress-free journey, book our Chennai to Pondicherry taxi service. In addition to transparent and reasonable Chennai to Pondicherry cab fare, you also have the flexibility to cancel your Chennai to Pondicherry cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Chennai-To-Pondicherry.webp",
 
     "sub10":"Things To Know About Chennai and Pondicherry",
     "sub10content":{
@@ -13754,7 +13754,7 @@ export const dataChennaiBangalore   = {
     "sub4content":
     "For Chennai to Bangalore cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Chennai to Bangalore cabs for your journey. Additionally, you can book your Chennai to Bangalore taxi for either a one-way or Chennai to Bangalore taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Chennai to Bangalore cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Bangalore.webp",
+  img: "/assets/img/LocationDifferent/Bangalore.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Chennai to Bangalore Cab?",
   "sub5content":
@@ -13788,7 +13788,7 @@ export const dataChennaiBangalore   = {
       p2:"With our Chennai to Bangalore cab service, you can comfortably explore all these attractions and more, making your trip to Bangalore a memorable experience. For a stress-free journey, book our Chennai to Bangalore taxi service. In addition to transparent and reasonable Chennai to Bangalore cab fare, you also have the flexibility to cancel your Chennai to Bangalore cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Chennai-To-Bangalore.webp",
 
     "sub10":"Things To Know About Chennai and Bangalore",
     "sub10content":{
@@ -13838,7 +13838,7 @@ export const dataChennaiTirupati   = {
     "sub4content":
     "For Chennai to Tirupati cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Chennai to Tirupati cabs for your journey. Additionally, you can book your Chennai to Tirupati taxi for either a one-way or Chennai to Tirupati taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Chennai to Tirupati cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/LocationDifferent/Ghaziabad.webp",
+  img: "/assets/img/LocationDifferent/Tirupati.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Chennai to Tirupati Cab?",
   "sub5content":
@@ -13872,7 +13872,7 @@ export const dataChennaiTirupati   = {
       p2:"With our Chennai to Tirupati cab service, you can comfortably explore all these attractions and more, making your trip to Tirupati a memorable experience. For a stress-free journey, book our Chennai to Tirupati taxi service. In addition to transparent and reasonable Chennai to Tirupati cab fare, you also have the flexibility to cancel your Chennai to Tirupati cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Chennai-To-Tirupati.webp",
 
     "sub10":"Things To Know About Chennai and Tirupati",
     "sub10content":{
@@ -13924,7 +13924,7 @@ export const dataDehradunNoida   = {
     "sub4content":
     "For Dehradun to Noida cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Dehradun to Noida cabs for your journey. Additionally, you can book your Dehradun to Noida taxi for either a one-way or Dehradun to Noida taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Dehradun to Noida cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/LocationDifferent/Noida (1).webp",
+  img: "/assets/img/LocationDifferent/Noida (3).webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Dehradun to Noida Cab?",
   "sub5content":
@@ -13958,7 +13958,7 @@ export const dataDehradunNoida   = {
       p2:"With our Dehradun to Noida cab service, you can comfortably explore all these attractions and more, making your trip to Noida a memorable experience. For a stress-free journey, book our Dehradun to Noida taxi service. In addition to transparent and reasonable Dehradun to Noida cab fare, you also have the flexibility to cancel your Dehradun to Noida cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Dehradun-To-Noida.webp",
 
     "sub10":"Things To Know About Dehradun and Noida",
     "sub10content":{
@@ -14008,7 +14008,7 @@ export const dataDehradunMussoorie   = {
     "sub4content":
     "For Dehradun to Mussoorie cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Dehradun to Mussoorie cabs for your journey. Additionally, you can book your Dehradun to Mussoorie taxi for either a one-way or Dehradun to Mussoorie taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Dehradun to Mussoorie cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Mussoorie.webp",
+  img: "/assets/img/LocationDifferent/Mussoorie.webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Dehradun to Mussoorie Cab?",
   "sub5content":
@@ -14042,7 +14042,7 @@ export const dataDehradunMussoorie   = {
       p2:"With our Dehradun to Mussoorie cab service, you can comfortably explore all these attractions and more, making your trip to Mussoorie a memorable experience. For a stress-free journey, book our Dehradun to Mussoorie taxi service. In addition to transparent and reasonable Dehradun to Mussoorie cab fare, you also have the flexibility to cancel your Dehradun to Mussoorie cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Dehradun-To-Mussoorie.webp",
 
     "sub10":"Things To Know About Dehradun and Mussoorie",
     "sub10content":{
@@ -14092,7 +14092,7 @@ export const dataDehradunGurgaon   = {
     "sub4content":
     "For Dehradun to Gurgaon cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Dehradun to Gurgaon cabs for your journey. Additionally, you can book your Dehradun to Gurgaon taxi for either a one-way or Dehradun to Gurgaon taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Dehradun to Gurgaon cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/LocationDifferent/Gurgaon.webp",
+  img: "/assets/img/LocationDifferent/Gurgaon (2).webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Dehradun to Gurgaon Cab?",
   "sub5content":
@@ -14126,7 +14126,7 @@ export const dataDehradunGurgaon   = {
       p2:"With our Dehradun to Gurgaon cab service, you can comfortably explore all these attractions and more, making your trip to Gurgaon a memorable experience. For a stress-free journey, book our Dehradun to Gurgaon taxi service. In addition to transparent and reasonable Dehradun to Gurgaon cab fare, you also have the flexibility to cancel your Dehradun to Gurgaon cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Dehradun-To-Gurgaon.webp",
 
     "sub10":"Things To Know About Dehradun and Gurgaon",
     "sub10content":{
@@ -14176,7 +14176,7 @@ export const dataDehradunDelhi   = {
     "sub4content":
     "For Dehradun to Delhi cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Dehradun to Delhi cabs for your journey. Additionally, you can book your Dehradun to Delhi taxi for either a one-way or Dehradun to Delhi taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Dehradun to Delhi cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/LocationDifferent/Ghaziabad.webp",
+  img: "/assets/img/LocationDifferent/Delhi (3).webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Dehradun to Delhi Cab?",
   "sub5content":
@@ -14210,7 +14210,7 @@ export const dataDehradunDelhi   = {
       p2:"With our Dehradun to Delhi cab service, you can comfortably explore all these attractions and more, making your trip to Delhi a memorable experience. For a stress-free journey, book our Dehradun to Delhi taxi service. In addition to transparent and reasonable Dehradun to Delhi cab fare, you also have the flexibility to cancel your Dehradun to Delhi cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Dehradun-To-Delhi.webp",
 
     "sub10":"Things To Know About Dehradun and Delhi",
     "sub10content":{
@@ -14260,7 +14260,7 @@ export const dataDehradunFaridabad   = {
     "sub4content":
     "For Dehradun to Faridabad cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Dehradun to Faridabad cabs for your journey. Additionally, you can book your Dehradun to Faridabad taxi for either a one-way or Dehradun to Faridabad taxi round trip. For a seamless booking experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Dehradun to Faridabad cab is simple – just log in to Sewak Travels' official portal, provide your details, and choose from a range of available car options at various prices for your travel date. Select your ride and enjoy a smooth journey.",
 
-  img: "/assets/img/Locations/Faridabad.webp",
+  img: "/assets/img/LocationDifferent/Faridabad (2).webp",
 
   "sub5":"Why Choose Sewak Travels for Booking a Dehradun to Faridabad Cab?",
   "sub5content":
@@ -14294,7 +14294,7 @@ export const dataDehradunFaridabad   = {
       p2:"With our Dehradun to Faridabad cab service, you can comfortably explore all these attractions and more, making your trip to Faridabad a memorable experience. For a stress-free journey, book our Dehradun to Faridabad taxi service. In addition to transparent and reasonable Dehradun to Faridabad cab fare, you also have the flexibility to cancel your Dehradun to Faridabad cab booking before the departure time if your plans change."
     },
 
-    img1: "/assets/img/LocationDifferent/Jaipur-To-Ghaziabad.webp",
+    img1: "/assets/img/LocationDifferent/Dehradun-To-Faridabad.webp",
 
     "sub10":"Things To Know About Dehradun and Faridabad",
     "sub10content":{
