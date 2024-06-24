@@ -22,6 +22,10 @@ import {
   dataAuli,
   dataAyodhya,
   dataBangalore,
+  dataBangaloreCoorg,
+  dataBangaloreMadikeri,
+  dataBangaloreOoty,
+  dataBangaloreVellore,
   dataBaraut,
   dataBareilly,
   dataBasti,
@@ -38,10 +42,24 @@ import {
   dataChail,
   dataChamba,
   dataChandigarh,
+  dataChandigarhDelhi,
+  dataChandigarhGurgaon,
+  dataChandigarhManali,
+  dataChandigarhNoida,
+  dataChandigarhShimla,
+  dataChennaiBangalore,
+  dataChennaiPondicherry,
+  dataChennaiTirupati,
+  dataChennaiVellore,
   dataChhindwara,
   dataCoimbatore,
   dataDalhousie,
   dataDehradun,
+  dataDehradunDelhi,
+  dataDehradunFaridabad,
+  dataDehradunGurgaon,
+  dataDehradunMussoorie,
+  dataDehradunNoida,
   dataDharamshala,
   dataDwarka,
   dataFaridabad,
@@ -97,6 +115,11 @@ import {
   dataMoradabad,
   dataMukteshwar,
   dataMumbai,
+  dataMumbaiLonavala,
+  dataMumbaiMahabaleshwar,
+  dataMumbaiNasik,
+  dataMumbaiPune,
+  dataMumbaiShirdi,
   dataMurthal,
   dataMussoorie,
   dataMuzaffarpur,
@@ -113,6 +136,11 @@ import {
   dataPatna,
   dataPithampur,
   dataPune,
+  dataPuneAurangabad,
+  dataPuneMahabaleshwar,
+  dataPuneMumbai,
+  dataPuneNasik,
+  dataPuneShirdi,
   dataPushkar,
   dataRaipur,
   dataRaisen,
@@ -1814,6 +1842,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Pune, Maharashtra, India"
                 destination={"Mumbai, Maharashtra, India"}
+                blogdata={dataPuneMumbai}
               />
             }
           />
@@ -1825,6 +1854,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Pune, Maharashtra, India"
                 destination={"Shirdi, Maharashtra, India"}
+                blogdata={dataPuneShirdi}
               />
             }
           />
@@ -1836,6 +1866,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Pune, Maharashtra, India"
                 destination={"Mahabaleshwar, Maharashtra, India"}
+                blogdata={dataPuneMahabaleshwar}
               />
             }
           />
@@ -1847,6 +1878,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Pune, Maharashtra, India"
                 destination={"Nasik, Maharashtra, India"}
+                blogdata={dataPuneNasik}
               />
             }
           />
@@ -1858,6 +1890,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Pune, Maharashtra, India"
                 destination={"Aurangabad, Maharashtra, India"}
+                blogdata={dataPuneAurangabad}
               />
             }
           />
@@ -1871,6 +1904,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Mumbai, Maharashtra, India"
                 destination={"Pune, Maharashtra, India"}
+                blogdata={dataMumbaiPune}
               />
             }
           />
@@ -1882,6 +1916,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Mumbai, Maharashtra, India"
                 destination={"Nasik, Maharashtra, India"}
+                blogdata={dataMumbaiNasik}
               />
             }
           />
@@ -1893,6 +1928,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Mumbai, Maharashtra, India"
                 destination={"Shirdi, Maharashtra, India"}
+                blogdata={dataMumbaiShirdi}
               />
             }
           />
@@ -1904,6 +1940,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Mumbai, Maharashtra, India"
                 destination={"Lonavala, Maharashtra, India"}
+                blogdata={dataMumbaiLonavala}
               />
             }
           />
@@ -1915,6 +1952,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Mumbai, Maharashtra, India"
                 destination={"Mahabaleshwar, Maharashtra, India"}
+                blogdata={dataMumbaiMahabaleshwar}
               />
             }
           />
@@ -1928,6 +1966,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chandigarh, India"
                 destination={"Delhi, India"}
+                // blogdata={dataChandigarhDelhi}
               />
             }
           />
@@ -1939,6 +1978,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chandigarh, India"
                 destination={"Shimla, Himachal Pradesh, India"}
+                // blogdata={dataChandigarhShimla}
               />
             }
           />
@@ -1950,6 +1990,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chandigarh, India"
                 destination={"Manali, Himachal Pradesh, India"}
+                // blogdata={dataChandigarhManali}
               />
             }
           />
@@ -1961,6 +2002,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chandigarh, India"
                 destination={"Gurgaon, Haryana, India"}
+                // blogdata={dataChandigarhGurgaon}
               />
             }
           />
@@ -1972,6 +2014,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chandigarh, India"
                 destination={"Noida, Uttar Pradesh, India"}
+                // blogdata={dataChandigarhNoida}
               />
             }
           />
@@ -1985,6 +2028,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Bangalore, Karnataka, India"
                 destination={"Ooty, Tamil Nadu, India"}
+                // blogdata={dataBangaloreOoty}
               />
             }
           />
@@ -1996,6 +2040,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Bangalore, Karnataka, India"
                 destination={"Madikeri, Karnataka, India"}
+                // blogdata={dataBangaloreMadikeri}
               />
             }
           />
@@ -2007,6 +2052,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Bangalore, Karnataka, India"
                 destination={"Coorg, Karnataka, India"}
+                // blogdata={dataBangaloreCoorg}
               />
             }
           />
@@ -2018,6 +2064,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Bangalore, Karnataka, India"
                 destination={"Vellore, Tamil Nadu, India"}
+                // blogdata={dataBangaloreVellore}
               />
             }
           />
@@ -2031,6 +2078,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chennai, Tamil Nadu, India"
                 destination={"Vellore, Tamil Nadu, India"}
+                // blogdata={dataChennaiVellore}
               />
             }
           />
@@ -2042,6 +2090,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chennai, Tamil Nadu, India"
                 destination={"Bangalore, Karnataka, India"}
+                // blogdata={dataChennaiBangalore}
               />
             }
           />
@@ -2053,6 +2102,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chennai, Tamil Nadu, India"
                 destination={"Pondicherry, India"}
+                // blogdata={dataChennaiPondicherry}
               />
             }
           />
@@ -2064,6 +2114,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chennai, Tamil Nadu, India"
                 destination={"Tirupati, Andhra Pradesh, India"}
+                // blogdata={dataChennaiTirupati}
               />
             }
           />
@@ -2077,6 +2128,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Dehradun, Uttarakhand, India"
                 destination={"Mussoorie, Uttarakhand, India"}
+                // blogdata={dataDehradunMussoorie}
               />
             }
           />
@@ -2088,6 +2140,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Dehradun, Uttarakhand, India"
                 destination={"Delhi, India"}
+                // blogdata={dataDehradunDelhi}
               />
             }
           />
@@ -2099,6 +2152,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Dehradun, Uttarakhand, India"
                 destination={"Gurgaon, Haryana, India"}
+                // blogdata={dataDehradunGurgaon}
               />
             }
           />
@@ -2110,6 +2164,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Dehradun, Uttarakhand, India"
                 destination={"Noida, Uttar Pradesh, India"}
+                // blogdata={dataDehradunNoida}
               />
             }
           />
@@ -2121,6 +2176,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Dehradun, Uttarakhand, India"
                 destination={"Faridabad, Haryana, India"}
+                // blogdata={dataDehradunFaridabad}
               />
             }
           />
