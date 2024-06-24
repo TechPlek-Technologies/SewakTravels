@@ -1966,7 +1966,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chandigarh, India"
                 destination={"Delhi, India"}
-                // blogdata={dataChandigarhDelhi}
+                blogdata={dataChandigarhDelhi}
               />
             }
           />
@@ -1978,7 +1978,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chandigarh, India"
                 destination={"Shimla, Himachal Pradesh, India"}
-                // blogdata={dataChandigarhShimla}
+                blogdata={dataChandigarhShimla}
               />
             }
           />
@@ -1990,7 +1990,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chandigarh, India"
                 destination={"Manali, Himachal Pradesh, India"}
-                // blogdata={dataChandigarhManali}
+                blogdata={dataChandigarhManali}
               />
             }
           />
@@ -2002,7 +2002,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chandigarh, India"
                 destination={"Gurgaon, Haryana, India"}
-                // blogdata={dataChandigarhGurgaon}
+                blogdata={dataChandigarhGurgaon}
               />
             }
           />
@@ -2014,7 +2014,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chandigarh, India"
                 destination={"Noida, Uttar Pradesh, India"}
-                // blogdata={dataChandigarhNoida}
+                blogdata={dataChandigarhNoida}
               />
             }
           />
@@ -2028,7 +2028,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Bangalore, Karnataka, India"
                 destination={"Ooty, Tamil Nadu, India"}
-                // blogdata={dataBangaloreOoty}
+                blogdata={dataBangaloreOoty}
               />
             }
           />
@@ -2040,7 +2040,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Bangalore, Karnataka, India"
                 destination={"Madikeri, Karnataka, India"}
-                // blogdata={dataBangaloreMadikeri}
+                blogdata={dataBangaloreMadikeri}
               />
             }
           />
@@ -2052,7 +2052,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Bangalore, Karnataka, India"
                 destination={"Coorg, Karnataka, India"}
-                // blogdata={dataBangaloreCoorg}
+                blogdata={dataBangaloreCoorg}
               />
             }
           />
@@ -2064,7 +2064,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Bangalore, Karnataka, India"
                 destination={"Vellore, Tamil Nadu, India"}
-                // blogdata={dataBangaloreVellore}
+                blogdata={dataBangaloreVellore}
               />
             }
           />
@@ -2078,7 +2078,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chennai, Tamil Nadu, India"
                 destination={"Vellore, Tamil Nadu, India"}
-                // blogdata={dataChennaiVellore}
+                blogdata={dataChennaiVellore}
               />
             }
           />
@@ -2090,7 +2090,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chennai, Tamil Nadu, India"
                 destination={"Bangalore, Karnataka, India"}
-                // blogdata={dataChennaiBangalore}
+                blogdata={dataChennaiBangalore}
               />
             }
           />
@@ -2102,7 +2102,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chennai, Tamil Nadu, India"
                 destination={"Pondicherry, India"}
-                // blogdata={dataChennaiPondicherry}
+                blogdata={dataChennaiPondicherry}
               />
             }
           />
@@ -2114,7 +2114,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Chennai, Tamil Nadu, India"
                 destination={"Tirupati, Andhra Pradesh, India"}
-                // blogdata={dataChennaiTirupati}
+                blogdata={dataChennaiTirupati}
               />
             }
           />
@@ -2128,7 +2128,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Dehradun, Uttarakhand, India"
                 destination={"Mussoorie, Uttarakhand, India"}
-                // blogdata={dataDehradunMussoorie}
+                blogdata={dataDehradunMussoorie}
               />
             }
           />
@@ -2140,7 +2140,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Dehradun, Uttarakhand, India"
                 destination={"Delhi, India"}
-                // blogdata={dataDehradunDelhi}
+                blogdata={dataDehradunDelhi}
               />
             }
           />
@@ -2152,7 +2152,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Dehradun, Uttarakhand, India"
                 destination={"Gurgaon, Haryana, India"}
-                // blogdata={dataDehradunGurgaon}
+                blogdata={dataDehradunGurgaon}
               />
             }
           />
@@ -2164,7 +2164,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Dehradun, Uttarakhand, India"
                 destination={"Noida, Uttar Pradesh, India"}
-                // blogdata={dataDehradunNoida}
+                blogdata={dataDehradunNoida}
               />
             }
           />
@@ -2176,7 +2176,7 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Dehradun, Uttarakhand, India"
                 destination={"Faridabad, Haryana, India"}
-                // blogdata={dataDehradunFaridabad}
+                blogdata={dataDehradunFaridabad}
               />
             }
           />
