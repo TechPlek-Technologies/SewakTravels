@@ -9268,7 +9268,7 @@ section .black-layer:before {
     .single-section .description-section .description-details .menu-part.about .about-sec ul {
       padding-left: 25px; }
       .single-section .description-section .description-details .menu-part.about .about-sec ul li {
-        list-style-type: square;
+        /* list-style-type: square; */
         display: list-item;
         /* text-transform: capitalize; */
         color: rgba(0, 0, 0, 0.7);
