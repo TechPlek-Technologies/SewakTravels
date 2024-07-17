@@ -1,6 +1,6 @@
 .cab-menu1{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 2rem;
     column-gap: 2rem;
@@ -23,9 +23,10 @@
    }
   
     .cab-li1 span a{
-      font-weight: 600;
+      font-weight: 400;
       color: #000;
-      font-size: 15px;
+      font-size: 14px;
+      text-wrap: nowrap;
     }
     .cab-li1 span a:hover{
         color:#ef3f3e; ;
@@ -33,7 +34,8 @@
 
     .cab-h2{
         font-weight: 700 !important;
-        font-size: 22px !important;
+        font-size: 20px !important;
+        text-wrap: nowrap;
         font-family: helvetica;
         color: #000 !important;
      }
@@ -45,4 +47,11 @@
         grid-template-columns: none;
         row-gap: 2rem;
         }
+    }
+
+    @media (max-width:767px){
+      .cab-h2{
+        font-size: 18px !important;
+        text-align: center;
+     }
     }
