@@ -14,7 +14,7 @@
         max-height: 300px;
         overflow-y: auto;
         -ms-overflow-style: none;
-        scrollbar-width: none;
+        scrollbar-width: thin;
         background-color: #fff;
     }
    .cab-li1{
@@ -29,7 +29,7 @@
       text-wrap: nowrap;
     }
     .cab-li1 span a:hover{
-        color:#ef3f3e; ;
+        color:#ef3f3e !important ;
     }
 
     .cab-h2{

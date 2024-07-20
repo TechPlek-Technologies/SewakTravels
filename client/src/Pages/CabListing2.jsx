@@ -2,7 +2,7 @@ import ListingView from "../Components/Cab/Listing/ListingView";
 import Layout from "../Layout/Layout";
 import ListSearch from "../Components/Cab/Listing/ListSearch";
 import FooterComponent from "../Components/Common/FooterComponent";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../Context/JourneyContext";
 import OtherTaxiMeta from "./MetaTags/OtherTaxiMeta";
 import OtherTaxi from "../Components/Cab/Listing/OtherTaxi";
@@ -25,6 +25,11 @@ function CabListing2({source, destination,blogdata,selectedValue}) {
     startTime: "12:00 PM",
     returnTime: "12:00 PM",
   };
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
  
 
   const [isValid, setisValid] = useState("notValid");

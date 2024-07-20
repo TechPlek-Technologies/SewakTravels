@@ -129,6 +129,7 @@ import {
   dataNaldehra,
   dataNarkanda,
   dataNeemrana,
+  dataNoida,
   dataOrchha,
   dataPalwal,
   dataPangot,
@@ -174,7 +175,7 @@ import {
   dataVisakhapatnam,
   dataVrindavan,
 } from "./Pages/SourceToDestination";
-import { dataBaghpat, dataBagpat, dataBahadurgarh, dataBarau, dataBaraut1, dataBasai, dataDadri, dataDelhi, dataFaridabad1, dataGautamBuddhaNagar, dataGhaziabad, dataGreaterNoida, dataGurgaon, dataGurugram, dataKharkhoda, dataManesar1, dataModinagar, dataMurthal1, dataNoida, dataSonipat1 } from "./Pages/OtherTaxiData";
+import { dataBaghpat, dataBagpat, dataBahadurgarh, dataBarau, dataBaraut1, dataBasai, dataDadri, dataDelhi, dataFaridabad1, dataGautamBuddhaNagar, dataGhaziabad, dataGreaterNoida, dataGurgaon, dataGurugram, dataKharkhoda, dataManesar1, dataModinagar, dataMurthal1, dataNoida1, dataSonipat1 } from "./Pages/OtherTaxiData";
 
 const Home = lazy(() => import("./Pages/Home"));
 
@@ -2211,7 +2212,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source={"Noida, Uttar Pradesh, India"}
-                blogdata={dataNoida}
+                blogdata={dataNoida1}
               />
             }
           />

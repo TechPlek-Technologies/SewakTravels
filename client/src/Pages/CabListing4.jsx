@@ -26,6 +26,11 @@ function CabListing4({source, destination,blogdata,selectedValue,fromAirport}) {
     returnTime: "12:00 PM",
     fromAirport:fromAirport,
   };
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
  
 
   const [isValid, setisValid] = useState("notValid");
