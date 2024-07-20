@@ -16,7 +16,8 @@ import { useParams } from "react-router-dom";
 import { PaymentContext } from "../Context/PaymentContext";
 import { SendMail } from "../Utility/SendMail";
 
-function CabListing1({source, destination,blogdata,selectedValue,price}) {
+function CabListing1({ source, destination, blogdata, selectedValue, price }) {
+
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   const dayAfterTomorrow = new Date();
@@ -26,7 +27,7 @@ function CabListing1({source, destination,blogdata,selectedValue,price}) {
   const { paymentData } = useContext(PaymentContext);
   const [rentals, setRentals] = useState("4hrs40km");
   const data = {
-    source:source,
+    source: source,
     destination: destination,
     startDate: tomorrow,
     returnDate: dayAfterTomorrow,
@@ -36,13 +37,13 @@ function CabListing1({source, destination,blogdata,selectedValue,price}) {
     returnTime: "12:00 PM",
   };
 
-useEffect(()=>{
-  async function sendQueryEmail() {
-    if (paymentData.contact) {
-      const res = await SendMail(
-        "booking@sewaktravels.Com",
-        "Demo",
-        `<h1>New Query From Search bar:</h1>
+  useEffect(() => {
+    async function sendQueryEmail() {
+      if (paymentData.contact) {
+        const res = await SendMail(
+          "booking@sewaktravels.Com",
+          "Demo",
+          `<h1>New Query From Search bar:</h1>
         
         <h5>Mobile Number : ${paymentData.contact}</h5>
         <h5>Source : ${journeyData.source}</h5>
@@ -50,20 +51,20 @@ useEffect(()=>{
         <h5>Trip Type :  One way</h5>
         <h5>Start Date : ${journeyData.startDate}</h5>
         `,
-        "Booking Query"
-      );
-      console.log(res);
-    } 
+          "Booking Query"
+        );
+        console.log(res);
+      }
+    }
+    sendQueryEmail();
+  }, []);
 
-  }
-  sendQueryEmail();
-
-},[])
-
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   const [isValid, setisValid] = useState("notValid");
-
-
 
   const PagesDetail = {
     Delhi: {
@@ -1062,7 +1063,7 @@ useEffect(()=>{
           {
             name: "Delhi airport to Malda Cab",
             src: "/cab/delhi-airport-to-malda-cabs",
-          }
+          },
         ],
       },
     },
@@ -1090,7 +1091,7 @@ useEffect(()=>{
           {
             name: "Agra to Gurgaon Cab",
             src: "/cab/agra-to-gurgaon-cabs",
-          }
+          },
         ],
       },
       Other: {
@@ -1176,7 +1177,7 @@ useEffect(()=>{
           {
             name: "Taxi service in Govardhan",
             src: "/cab/govardhan-city-cabs",
-          }
+          },
         ],
       },
     },
@@ -1204,7 +1205,7 @@ useEffect(()=>{
           {
             name: "Jaipur To Ghaziabad Cab",
             src: "/cab/jaipur-to-ghaziabad-cabs",
-          }
+          },
         ],
       },
       Other: {
@@ -1290,7 +1291,7 @@ useEffect(()=>{
           {
             name: "Taxi service in Khatu Shyam",
             src: "/cab/khatu-shyam-city-cabs",
-          }
+          },
         ],
       },
       Airport: {
@@ -1696,7 +1697,7 @@ useEffect(()=>{
           {
             name: "Jaipur airport to Indergarh Cab",
             src: "/cab/jaipur-airport-to-indergarh-cabs",
-          }
+          },
         ],
       },
     },
@@ -1724,7 +1725,7 @@ useEffect(()=>{
           {
             name: "Pune to Aurangabad Cab",
             src: "/cab/pune-to-aurangabad-cabs",
-          }
+          },
         ],
       },
       Other: {
@@ -1734,83 +1735,83 @@ useEffect(()=>{
           {
             name: "Taxi service in Pimpri Chinchwad",
             src: "/cab/pimpri-chinchwad-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Induri",
             src: "/cab/induri-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Talegaon",
             src: "/cab/talegaon-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Shikrapur",
             src: "/cab/shikrapur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Lavasa",
             src: "/cab/lavasa-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Bhor",
             src: "/cab/bhor-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Jejuri",
             src: "/cab/jejuri-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Pawna Lake",
             src: "/cab/pawna-lake-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Shirval",
             src: "/cab/shirval-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Aamby Valley",
             src: "/cab/aamby-valley-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Raigad",
             src: "/cab/raigad-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Lonavala",
             src: "/cab/lonavala-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Manchar",
             src: "/cab/manchar-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Khandala",
             src: "/cab/khandala-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kedagaon",
             src: "/cab/kedagaon-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Imagica Adlab",
             src: "/cab/imagica-adlab-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Khopoli",
             src: "/cab/khopoli-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Shirur",
             src: "/cab/shirur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Imagica",
             src: "/cab/imagica-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Panchgani",
             src: "/cab/panchgani-city-cabs",
-        },
+          },
         ],
       },
       Airport: {
@@ -1820,399 +1821,399 @@ useEffect(()=>{
           {
             name: "Pune airport to Bombay Cab",
             src: "/cab/pune-airport-to-bombay-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Cherthala Cab",
             src: "/cab/pune-airport-to-cherthala-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Alwar Cab",
             src: "/cab/pune-airport-to-alwar-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Kanakapura Cab",
             src: "/cab/pune-airport-to-kanakapura-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Giddalur Cab",
             src: "/cab/pune-airport-to-giddalur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Thisayanvilai Cab",
             src: "/cab/pune-airport-to-thisayanvilai-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Sabarimala Cab",
             src: "/cab/pune-airport-to-sabarimala-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Jagraon Cab",
             src: "/cab/pune-airport-to-jagraon-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Madhogarh Cab",
             src: "/cab/pune-airport-to-madhogarh-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Kot Kapura Cab",
             src: "/cab/pune-airport-to-kot-kapura-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Sunabeda Cab",
             src: "/cab/pune-airport-to-sunabeda-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Bhiloda Cab",
             src: "/cab/pune-airport-to-bhiloda-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Mundargi Cab",
             src: "/cab/pune-airport-to-mundargi-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Atmakur Cab",
             src: "/cab/pune-airport-to-atmakur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Nedumangad Cab",
             src: "/cab/pune-airport-to-nedumangad-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Gajendragadh Cab",
             src: "/cab/pune-airport-to-gajendragadh-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Sahibzada Ajit Singh Nagar Cab",
             src: "/cab/pune-airport-to-sahibzada-ajit-singh-nagar-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Sindkhed Raja Cab",
             src: "/cab/pune-airport-to-sindkhed-raja-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Churhat Cab",
             src: "/cab/pune-airport-to-churhat-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Joypur Cab",
             src: "/cab/pune-airport-to-joypur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Dausa Cab",
             src: "/cab/pune-airport-to-dausa-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Barhi Cab",
             src: "/cab/pune-airport-to-barhi-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Pithapuram Cab",
             src: "/cab/pune-airport-to-pithapuram-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Karur Cab",
             src: "/cab/pune-airport-to-karur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Anakapalle Cab",
             src: "/cab/pune-airport-to-anakapalle-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Zirakpur Cab",
             src: "/cab/pune-airport-to-zirakpur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Nilakottai Cab",
             src: "/cab/pune-airport-to-nilakottai-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Benares Cab",
             src: "/cab/pune-airport-to-benares-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Kundapura Cab",
             src: "/cab/pune-airport-to-kundapura-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Tirumala Cab",
             src: "/cab/pune-airport-to-tirumala-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Kandla Cab",
             src: "/cab/pune-airport-to-kandla-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Patti Cab",
             src: "/cab/pune-airport-to-patti-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Rupnagar Cab",
             src: "/cab/pune-airport-to-rupnagar-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Gooty Cab",
             src: "/cab/pune-airport-to-gooty-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Bisauli Cab",
             src: "/cab/pune-airport-to-bisauli-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Navsari Cab",
             src: "/cab/pune-airport-to-navsari-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Junagarh Cab",
             src: "/cab/pune-airport-to-junagarh-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Hosur Cab",
             src: "/cab/pune-airport-to-hosur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Bhadrak Cab",
             src: "/cab/pune-airport-to-bhadrak-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Ashta Cab",
             src: "/cab/pune-airport-to-ashta-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Dabhoi Cab",
             src: "/cab/pune-airport-to-dabhoi-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Sardarpur Cab",
             src: "/cab/pune-airport-to-sardarpur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Tenkasi Cab",
             src: "/cab/pune-airport-to-tenkasi-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Chitrakoot Cab",
             src: "/cab/pune-airport-to-chitrakoot-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Kattumannarkoil Cab",
             src: "/cab/pune-airport-to-kattumannarkoil-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Bilgram Cab",
             src: "/cab/pune-airport-to-bilgram-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Mount Abu Cab",
             src: "/cab/pune-airport-to-mount-abu-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Pindwara Cab",
             src: "/cab/pune-airport-to-pindwara-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Kallakurichi Cab",
             src: "/cab/pune-airport-to-kallakurichi-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Haflong Cab",
             src: "/cab/pune-airport-to-haflong-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Hubballi Cab",
             src: "/cab/pune-airport-to-hubballi-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Khed Cab",
             src: "/cab/pune-airport-to-khed-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Bagalkot Cab",
             src: "/cab/pune-airport-to-bagalkot-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Kutch Cab",
             src: "/cab/pune-airport-to-kutch-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Piduguralla Cab",
             src: "/cab/pune-airport-to-piduguralla-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Mayiladuthurai Cab",
             src: "/cab/pune-airport-to-mayiladuthurai-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Kodinar Cab",
             src: "/cab/pune-airport-to-kodinar-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Calicut Cab",
             src: "/cab/pune-airport-to-calicut-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Karad Cab",
             src: "/cab/pune-airport-to-karad-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Dhar Cab",
             src: "/cab/pune-airport-to-dhar-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Begusarai Cab",
             src: "/cab/pune-airport-to-begusarai-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Bellary Cab",
             src: "/cab/pune-airport-to-bellary-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Pandalam Cab",
             src: "/cab/pune-airport-to-pandalam-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Khajjiar Cab",
             src: "/cab/pune-airport-to-khajjiar-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Keonjhar Cab",
             src: "/cab/pune-airport-to-keonjhar-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Gohad Cab",
             src: "/cab/pune-airport-to-gohad-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Sarmera Cab",
             src: "/cab/pune-airport-to-sarmera-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Yellapur Cab",
             src: "/cab/pune-airport-to-yellapur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Bawal Cab",
             src: "/cab/pune-airport-to-bawal-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Madurantakam Cab",
             src: "/cab/pune-airport-to-madurantakam-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Sheopur Cab",
             src: "/cab/pune-airport-to-sheopur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Chengalpattu Cab",
             src: "/cab/pune-airport-to-chengalpattu-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Binsar Cab",
             src: "/cab/pune-airport-to-binsar-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Perambalur Cab",
             src: "/cab/pune-airport-to-perambalur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Golaghat Cab",
             src: "/cab/pune-airport-to-golaghat-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Jodhpur Cab",
             src: "/cab/pune-airport-to-jodhpur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Khammam Cab",
             src: "/cab/pune-airport-to-khammam-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Bareilly Cab",
             src: "/cab/pune-airport-to-bareilly-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Fatehpur Cab",
             src: "/cab/pune-airport-to-fatehpur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Chikballapur Cab",
             src: "/cab/pune-airport-to-chikballapur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Karaikudi Cab",
             src: "/cab/pune-airport-to-karaikudi-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Jaggayyapet Cab",
             src: "/cab/pune-airport-to-jaggayyapet-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Brahmapur Cab",
             src: "/cab/pune-airport-to-brahmapur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Daudnagar Cab",
             src: "/cab/pune-airport-to-daudnagar-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Ambernath Cab",
             src: "/cab/pune-airport-to-ambernath-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Nohar Cab",
             src: "/cab/pune-airport-to-nohar-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Malkapur Cab",
             src: "/cab/pune-airport-to-malkapur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Narkand Cab",
             src: "/cab/pune-airport-to-narkand-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Valia Cab",
             src: "/cab/pune-airport-to-valia-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Ellora Cab",
             src: "/cab/pune-airport-to-ellora-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Badlapur Cab",
             src: "/cab/pune-airport-to-badlapur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Panaji Cab",
             src: "/cab/pune-airport-to-panaji-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Dharwad Cab",
             src: "/cab/pune-airport-to-dharwad-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Pusad Cab",
             src: "/cab/pune-airport-to-pusad-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Rewari Cab",
             src: "/cab/pune-airport-to-rewari-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Jabalpur Cab",
             src: "/cab/pune-airport-to-jabalpur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Karkal Cab",
             src: "/cab/pune-airport-to-karkal-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Sriperumbudur Cab",
             src: "/cab/pune-airport-to-sriperumbudur-cabs",
-        },
-        {
+          },
+          {
             name: "Pune airport to Trivandrum Cab",
             src: "/cab/pune-airport-to-trivandrum-cabs",
-        },
+          },
         ],
       },
     },
@@ -2224,23 +2225,23 @@ useEffect(()=>{
           {
             name: "Mumbai to Pune Cab",
             src: "/cab/mumbai-to-pune-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai to Nashik Cab",
             src: "/cab/mumbai-to-nashik-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai to Shirdi Cab",
             src: "/cab/mumbai-to-shirdi-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai to Lonavala Cab",
             src: "/cab/mumbai-to-lonavala-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai to Mahabaleshwar Cab",
             src: "/cab/mumbai-to-mahabaleshwar-cabs",
-        },
+          },
         ],
       },
       Other: {
@@ -2250,75 +2251,75 @@ useEffect(()=>{
           {
             name: "Taxi service in LTT",
             src: "/cab/ltt-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Andheri",
             src: "/cab/andheri-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Navi Mumbai",
             src: "/cab/navi-mumbai-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Thane",
             src: "/cab/thane-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Mira Bhayandar",
             src: "/cab/mira-bhayandar-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in New Panvel",
             src: "/cab/new-panvel-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Panvel",
             src: "/cab/panvel-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Dombivli",
             src: "/cab/dombivli-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Bhiwandi",
             src: "/cab/bhiwandi-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kalyan",
             src: "/cab/kalyan-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Ambernath",
             src: "/cab/ambernath-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Vasai",
             src: "/cab/vasai-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Badalapur",
             src: "/cab/badalapur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Matheran",
             src: "/cab/matheran-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Aman Lodge",
             src: "/cab/aman-lodge-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Virar",
             src: "/cab/virar-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Alibag",
             src: "/cab/alibag-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Neral",
             src: "/cab/neral-city-cabs",
-        },
+          },
         ],
       },
       Airport: {
@@ -2328,403 +2329,403 @@ useEffect(()=>{
           {
             name: "Mumbai airport to Gondia Cab",
             src: "/cab/mumbai-airport-to-gondia-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Balod Cab",
             src: "/cab/mumbai-airport-to-balod-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Vangoor Cab",
             src: "/cab/mumbai-airport-to-vangoor-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Kanipakam Cab",
             src: "/cab/mumbai-airport-to-kanipakam-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Bongaigaon Cab",
             src: "/cab/mumbai-airport-to-bongaigaon-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Unchahar Cab",
             src: "/cab/mumbai-airport-to-unchahar-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Khamgaon Cab",
             src: "/cab/mumbai-airport-to-khamgaon-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Kota Cab",
             src: "/cab/mumbai-airport-to-kota-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Ghatkesar Cab",
             src: "/cab/mumbai-airport-to-ghatkesar-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Mahasamund Cab",
             src: "/cab/mumbai-airport-to-mahasamund-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Bondapalli Cab",
             src: "/cab/mumbai-airport-to-bondapalli-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Rohat Cab",
             src: "/cab/mumbai-airport-to-rohat-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Gohad Cab",
             src: "/cab/mumbai-airport-to-gohad-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Kharagpur Cab",
             src: "/cab/mumbai-airport-to-kharagpur-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Ankola Cab",
             src: "/cab/mumbai-airport-to-ankola-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Kashipur Cab",
             src: "/cab/mumbai-airport-to-kashipur-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Bomdila Cab",
             src: "/cab/mumbai-airport-to-bomdila-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Kenjar Cab",
             src: "/cab/mumbai-airport-to-kenjar-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Kausani Cab",
             src: "/cab/mumbai-airport-to-kausani-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Kanyakumari Cab",
             src: "/cab/mumbai-airport-to-kanyakumari-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Medinipur Cab",
             src: "/cab/mumbai-airport-to-medinipur-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Sambhal Cab",
             src: "/cab/mumbai-airport-to-sambhal-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Mahabaleshwar Cab",
             src: "/cab/mumbai-airport-to-mahabaleshwar-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Bardez Cab",
             src: "/cab/mumbai-airport-to-bardez-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Begusarai Cab",
             src: "/cab/mumbai-airport-to-begusarai-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Guruvayoor Cab",
             src: "/cab/mumbai-airport-to-guruvayoor-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Adoor Cab",
             src: "/cab/mumbai-airport-to-adoor-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Sivakasi Cab",
             src: "/cab/mumbai-airport-to-sivakasi-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Gopikandar Cab",
             src: "/cab/mumbai-airport-to-gopikandar-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Tijara Cab",
             src: "/cab/mumbai-airport-to-tijara-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Bilasipara Cab",
             src: "/cab/mumbai-airport-to-bilasipara-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Khatu Cab",
             src: "/cab/mumbai-airport-to-khatu-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Shegaon Cab",
             src: "/cab/mumbai-airport-to-shegaon-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Assandh Cab",
             src: "/cab/mumbai-airport-to-assandh-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Peraiyur Cab",
             src: "/cab/mumbai-airport-to-peraiyur-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Padubidre Cab",
             src: "/cab/mumbai-airport-to-padubidre-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Shrirampur Cab",
             src: "/cab/mumbai-airport-to-shrirampur-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Manachanallur Cab",
             src: "/cab/mumbai-airport-to-manachanallur-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Palavancha Cab",
             src: "/cab/mumbai-airport-to-palavancha-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Kot Kapura Cab",
             src: "/cab/mumbai-airport-to-kot-kapura-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Igatpuri Cab",
             src: "/cab/mumbai-airport-to-igatpuri-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Ranthambhore Cab",
             src: "/cab/mumbai-airport-to-ranthambhore-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Pochampalli Cab",
             src: "/cab/mumbai-airport-to-pochampalli-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Dantiwada Cab",
             src: "/cab/mumbai-airport-to-dantiwada-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Jeypore Cab",
             src: "/cab/mumbai-airport-to-jeypore-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Palamau Cab",
             src: "/cab/mumbai-airport-to-palamau-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Barmer Cab",
             src: "/cab/mumbai-airport-to-barmer-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Etah Cab",
             src: "/cab/mumbai-airport-to-etah-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Tilhar Cab",
             src: "/cab/mumbai-airport-to-tilhar-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Orai Cab",
             src: "/cab/mumbai-airport-to-orai-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Bhatar Cab",
             src: "/cab/mumbai-airport-to-bhatar-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Kolhapur Cab",
             src: "/cab/mumbai-airport-to-kolhapur-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Annavaram Cab",
             src: "/cab/mumbai-airport-to-annavaram-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Jaisalmer Cab",
             src: "/cab/mumbai-airport-to-jaisalmer-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Barsahi Cab",
             src: "/cab/mumbai-airport-to-barsahi-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Chauri Chaura Cab",
             src: "/cab/mumbai-airport-to-chauri-chaura-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Budaun Cab",
             src: "/cab/mumbai-airport-to-budaun-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Pernem Cab",
             src: "/cab/mumbai-airport-to-pernem-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Bhograi Cab",
             src: "/cab/mumbai-airport-to-bhograi-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Panruti Cab",
             src: "/cab/mumbai-airport-to-panruti-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Dahanu Cab",
             src: "/cab/mumbai-airport-to-dahanu-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Pimpri Chinchwad Cab",
             src: "/cab/mumbai-airport-to-pimpri-chinchwad-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Nawalgarh Cab",
             src: "/cab/mumbai-airport-to-nawalgarh-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Bahraich Cab",
             src: "/cab/mumbai-airport-to-bahraich-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Anna Road Cab",
             src: "/cab/mumbai-airport-to-anna-road-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Una Cab",
             src: "/cab/mumbai-airport-to-una-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Banswara Cab",
             src: "/cab/mumbai-airport-to-banswara-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Tawang Cab",
             src: "/cab/mumbai-airport-to-tawang-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Khushkhera Cab",
             src: "/cab/mumbai-airport-to-khushkhera-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Charkhi Dadri Cab",
             src: "/cab/mumbai-airport-to-charkhi-dadri-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Akividu Cab",
             src: "/cab/mumbai-airport-to-akividu-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Lakkavaram Cab",
             src: "/cab/mumbai-airport-to-lakkavaram-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Menhdawal Cab",
             src: "/cab/mumbai-airport-to-menhdawal-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Mathabhanga Cab",
             src: "/cab/mumbai-airport-to-mathabhanga-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Songadh Cab",
             src: "/cab/mumbai-airport-to-songadh-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Hooghly Cab",
             src: "/cab/mumbai-airport-to-hooghly-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Bayad Cab",
             src: "/cab/mumbai-airport-to-bayad-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Bidupur Cab",
             src: "/cab/mumbai-airport-to-bidupur-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Joypur Cab",
             src: "/cab/mumbai-airport-to-joypur-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Guhla Cab",
             src: "/cab/mumbai-airport-to-guhla-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Khunti Cab",
             src: "/cab/mumbai-airport-to-khunti-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Dhubri Cab",
             src: "/cab/mumbai-airport-to-dhubri-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Tonk Cab",
             src: "/cab/mumbai-airport-to-tonk-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Balaghat Cab",
             src: "/cab/mumbai-airport-to-balaghat-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Sarmera Cab",
             src: "/cab/mumbai-airport-to-sarmera-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Osmanabad Cab",
             src: "/cab/mumbai-airport-to-osmanabad-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Kakinada Cab",
             src: "/cab/mumbai-airport-to-kakinada-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Gwalior Cab",
             src: "/cab/mumbai-airport-to-gwalior-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Kottayam Cab",
             src: "/cab/mumbai-airport-to-kottayam-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Gingee Cab",
             src: "/cab/mumbai-airport-to-gingee-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Sivaganga Cab",
             src: "/cab/mumbai-airport-to-sivaganga-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Prathipadu Cab",
             src: "/cab/mumbai-airport-to-prathipadu-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Ramtek Cab",
             src: "/cab/mumbai-airport-to-ramtek-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Ottapalam Cab",
             src: "/cab/mumbai-airport-to-ottapalam-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Veraval Cab",
             src: "/cab/mumbai-airport-to-veraval-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Thasra Cab",
             src: "/cab/mumbai-airport-to-thasra-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Samastipur Cab",
             src: "/cab/mumbai-airport-to-samastipur-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Gangoh Cab",
             src: "/cab/mumbai-airport-to-gangoh-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Pachora Cab",
             src: "/cab/mumbai-airport-to-pachora-cabs",
-        },
-        {
+          },
+          {
             name: "Mumbai airport to Yuksom Cab",
             src: "/cab/mumbai-airport-to-yuksom-cabs",
-        },
+          },
         ],
       },
     },
@@ -2736,23 +2737,23 @@ useEffect(()=>{
           {
             name: "Chandigarh to Delhi Cab",
             src: "/cab/chandigarh-to-delhi-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh to Shimla Cab",
             src: "/cab/chandigarh-to-shimla-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh to Manali Cab",
             src: "/cab/chandigarh-to-manali-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh to Gurgaon Cab",
             src: "/cab/chandigarh-to-gurgaon-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh to Noida Cab",
             src: "/cab/chandigarh-to-noida-cabs",
-        },
+          },
         ],
       },
       Other: {
@@ -2762,83 +2763,83 @@ useEffect(()=>{
           {
             name: "Taxi service in Mohali",
             src: "/cab/mohali-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Sahibzada Ajit Singh Nagar",
             src: "/cab/sahibzada-ajit-singh-nagar-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Panchkula",
             src: "/cab/panchkula-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Zira",
             src: "/cab/zira-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Zirakpur",
             src: "/cab/zirakpur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kharar",
             src: "/cab/kharar-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Darpan",
             src: "/cab/darpan-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Dera Bassi",
             src: "/cab/dera-bassi-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kalka",
             src: "/cab/kalka-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Parwanoo",
             src: "/cab/parwanoo-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kurali",
             src: "/cab/kurali-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Baddi",
             src: "/cab/baddi-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kasauli",
             src: "/cab/kasauli-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Lalru",
             src: "/cab/lalru-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Barog",
             src: "/cab/barog-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Rajpur",
             src: "/cab/rajpur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Rajpura",
             src: "/cab/rajpura-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Nalagarh",
             src: "/cab/nalagarh-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Ropar",
             src: "/cab/ropar-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Rupnagar",
             src: "/cab/rupnagar-city-cabs",
-        },
+          },
         ],
       },
       Airport: {
@@ -2848,400 +2849,399 @@ useEffect(()=>{
           {
             name: "Chandigarh airport to Talegaon Cab",
             src: "/cab/chandigarh-airport-to-talegaon-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Baga Cab",
             src: "/cab/chandigarh-airport-to-baga-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Tilhar Cab",
             src: "/cab/chandigarh-airport-to-tilhar-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Jim Corbett National Park Cab",
             src: "/cab/chandigarh-airport-to-jim-corbett-national-park-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Saputara Cab",
             src: "/cab/chandigarh-airport-to-saputara-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Pilani Cab",
             src: "/cab/chandigarh-airport-to-pilani-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Darjeeling Cab",
             src: "/cab/chandigarh-airport-to-darjeeling-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Tikamgarh Cab",
             src: "/cab/chandigarh-airport-to-tikamgarh-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Haveri Cab",
             src: "/cab/chandigarh-airport-to-haveri-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Guntakal Cab",
             src: "/cab/chandigarh-airport-to-guntakal-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Bishrampur Cab",
             src: "/cab/chandigarh-airport-to-bishrampur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Greater Noida Cab",
             src: "/cab/chandigarh-airport-to-greater-noida-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Tijara Cab",
             src: "/cab/chandigarh-airport-to-tijara-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Latur Cab",
             src: "/cab/chandigarh-airport-to-latur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Danta Cab",
             src: "/cab/chandigarh-airport-to-danta-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Thuraiyur Cab",
             src: "/cab/chandigarh-airport-to-thuraiyur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Pantnagar Cab",
             src: "/cab/chandigarh-airport-to-pantnagar-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Chennai Cab",
             src: "/cab/chandigarh-airport-to-chennai-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Bhavnagar Cab",
             src: "/cab/chandigarh-airport-to-bhavnagar-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Ahmednagar Cab",
             src: "/cab/chandigarh-airport-to-ahmednagar-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Kankroli Cab",
             src: "/cab/chandigarh-airport-to-kankroli-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Hampi Cab",
             src: "/cab/chandigarh-airport-to-hampi-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Modasa Cab",
             src: "/cab/chandigarh-airport-to-modasa-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Sankarankovil Cab",
             src: "/cab/chandigarh-airport-to-sankarankovil-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Ladwa Cab",
             src: "/cab/chandigarh-airport-to-ladwa-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Safipur Cab",
             src: "/cab/chandigarh-airport-to-safipur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Menhdawal Cab",
             src: "/cab/chandigarh-airport-to-menhdawal-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Mundargi Cab",
             src: "/cab/chandigarh-airport-to-mundargi-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Cheyur Cab",
             src: "/cab/chandigarh-airport-to-cheyur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Puranpur Cab",
             src: "/cab/chandigarh-airport-to-puranpur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Piduguralla Cab",
             src: "/cab/chandigarh-airport-to-piduguralla-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Dharampur Cab",
             src: "/cab/chandigarh-airport-to-dharampur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Jangaon Cab",
             src: "/cab/chandigarh-airport-to-jangaon-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Narkanda Cab",
             src: "/cab/chandigarh-airport-to-narkanda-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Aluva Cab",
             src: "/cab/chandigarh-airport-to-aluva-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Surajgarh Cab",
             src: "/cab/chandigarh-airport-to-surajgarh-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Khopoli Cab",
             src: "/cab/chandigarh-airport-to-khopoli-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Tadimarri Cab",
             src: "/cab/chandigarh-airport-to-tadimarri-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Amaravati Cab",
             src: "/cab/chandigarh-airport-to-amaravati-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Jalalpur Cab",
             src: "/cab/chandigarh-airport-to-jalalpur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Tulsipur Cab",
             src: "/cab/chandigarh-airport-to-tulsipur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Sattal Cab",
             src: "/cab/chandigarh-airport-to-sattal-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Kattappana Cab",
             src: "/cab/chandigarh-airport-to-kattappana-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Parwanoo Cab",
             src: "/cab/chandigarh-airport-to-parwanoo-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Hathras Cab",
             src: "/cab/chandigarh-airport-to-hathras-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Kumta Cab",
             src: "/cab/chandigarh-airport-to-kumta-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Kasauli Cab",
             src: "/cab/chandigarh-airport-to-kasauli-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Goa Cab",
             src: "/cab/chandigarh-airport-to-goa-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Coorg Cab",
             src: "/cab/chandigarh-airport-to-coorg-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Palani Cab",
             src: "/cab/chandigarh-airport-to-palani-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Nilakottai Cab",
             src: "/cab/chandigarh-airport-to-nilakottai-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Gadwal Cab",
             src: "/cab/chandigarh-airport-to-gadwal-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Kota Cab",
             src: "/cab/chandigarh-airport-to-kota-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Anantapur Cab",
             src: "/cab/chandigarh-airport-to-anantapur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Jaipur Cab",
             src: "/cab/chandigarh-airport-to-jaipur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Kanatal Cab",
             src: "/cab/chandigarh-airport-to-kanatal-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Chandwa Cab",
             src: "/cab/chandigarh-airport-to-chandwa-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Lateri Cab",
             src: "/cab/chandigarh-airport-to-lateri-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Beawar Cab",
             src: "/cab/chandigarh-airport-to-beawar-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Jaleswar Cab",
             src: "/cab/chandigarh-airport-to-jaleswar-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Imagica Adlab Cab",
             src: "/cab/chandigarh-airport-to-imagica-adlab-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Sultanpur Cab",
             src: "/cab/chandigarh-airport-to-sultanpur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Lachung Cab",
             src: "/cab/chandigarh-airport-to-lachung-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Palwal Cab",
             src: "/cab/chandigarh-airport-to-palwal-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Chandwa Cab",
             src: "/cab/chandigarh-airport-to-chandwa-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Ranavav Cab",
             src: "/cab/chandigarh-airport-to-ranavav-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Nadaun Cab",
             src: "/cab/chandigarh-airport-to-nadaun-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Tumkur Cab",
             src: "/cab/chandigarh-airport-to-tumkur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Silvassa Cab",
             src: "/cab/chandigarh-airport-to-silvassa-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Narsapur Cab",
             src: "/cab/chandigarh-airport-to-narsapur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Dabra Cab",
             src: "/cab/chandigarh-airport-to-dabra-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Lakhimpur Cab",
             src: "/cab/chandigarh-airport-to-lakhimpur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Dera Baba Nanak Cabs Cab",
             src: "/cab/chandigarh-airport-to-dera-baba-nanak-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Patti Cab",
             src: "/cab/chandigarh-airport-to-patti-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Cuttack Cab",
             src: "/cab/chandigarh-airport-to-cuttack-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Gola Cab",
             src: "/cab/chandigarh-airport-to-gola-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Fatehgarh Sahib Cab",
             src: "/cab/chandigarh-airport-to-fatehgarh-sahib-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Bhilai Cab",
             src: "/cab/chandigarh-airport-to-bhilai-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Paonta Sahib Cab",
             src: "/cab/chandigarh-airport-to-paonta-sahib-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Jagadalpur Cab",
             src: "/cab/chandigarh-airport-to-jagadalpur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Palavancha Cab",
             src: "/cab/chandigarh-airport-to-palavancha-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Idar Cab",
             src: "/cab/chandigarh-airport-to-idar-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Chengannur Cab",
             src: "/cab/chandigarh-airport-to-chengannur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Channapatna Cab",
             src: "/cab/chandigarh-airport-to-channapatna-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Ponmudi Cab",
             src: "/cab/chandigarh-airport-to-ponmudi-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Veldanda Cab",
             src: "/cab/chandigarh-airport-to-veldanda-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Medak Cab",
             src: "/cab/chandigarh-airport-to-medak-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Gurh Cab",
             src: "/cab/chandigarh-airport-to-gurh-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Manachanallur Cab",
             src: "/cab/chandigarh-airport-to-manachanallur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Poladpur Cab",
             src: "/cab/chandigarh-airport-to-poladpur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Kodungallur Cab",
             src: "/cab/chandigarh-airport-to-kodungallur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Dungarpur Cab",
             src: "/cab/chandigarh-airport-to-dungarpur-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Arki Cab",
             src: "/cab/chandigarh-airport-to-arki-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Charama Cab",
             src: "/cab/chandigarh-airport-to-charama-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Panhala Cab",
             src: "/cab/chandigarh-airport-to-panhala-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Pedana Cab",
             src: "/cab/chandigarh-airport-to-pedana-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Namchi Cab",
             src: "/cab/chandigarh-airport-to-namchi-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Sidlaghatta Cab",
             src: "/cab/chandigarh-airport-to-sidlaghatta-cabs",
-        },
-        {
+          },
+          {
             name: "Chandigarh airport to Sihor Cab",
             src: "/cab/chandigarh-airport-to-sihor-cabs",
-        }
-        
+          },
         ],
       },
     },
@@ -3253,19 +3253,19 @@ useEffect(()=>{
           {
             name: "Bangalore to Ooty Cab",
             src: "/cab/bangalore-to-ooty-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore to Madikeri Cab",
             src: "/cab/bangalore-to-madikeri-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore to Coorg Cab",
             src: "/cab/bangalore-to-coorg-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore to Vellore Cab",
             src: "/cab/bangalore-to-vellore-cabs",
-        },
+          },
         ],
       },
       Other: {
@@ -3275,75 +3275,75 @@ useEffect(()=>{
           {
             name: "Taxi service in Hoskote",
             src: "/cab/hoskote-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Nelamangala",
             src: "/cab/nelamangala-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Bangalore Rural",
             src: "/cab/bangalore-rural-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Hosur",
             src: "/cab/hosur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Dodballapur",
             src: "/cab/dodballapur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Malur",
             src: "/cab/malur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Magadi",
             src: "/cab/magadi-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Ramanagara",
             src: "/cab/ramanagara-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Nandi Hills",
             src: "/cab/nandi-hills-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kanakapura",
             src: "/cab/kanakapura-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Chikballapur",
             src: "/cab/chikballapur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Chikkaballapur",
             src: "/cab/chikkaballapur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Denkanikottai",
             src: "/cab/denkanikottai-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Channapatna",
             src: "/cab/channapatna-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Sidlaghatta",
             src: "/cab/sidlaghatta-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Shoolagiri",
             src: "/cab/shoolagiri-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kodagu",
             src: "/cab/kodagu-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kolar",
             src: "/cab/kolar-city-cabs",
-        },
+          },
         ],
       },
       Airport: {
@@ -3353,320 +3353,319 @@ useEffect(()=>{
           {
             name: "Bangalore airport to Naharlagun Cab",
             src: "/cab/bangalore-airport-to-naharlagun-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Kishanganj Cab",
             src: "/cab/bangalore-airport-to-kishanganj-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Modinagar Cab",
             src: "/cab/bangalore-airport-to-modinagar-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Vadakkenchery Cab",
             src: "/cab/bangalore-airport-to-vadakkenchery-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Veppanthattai Cab",
             src: "/cab/bangalore-airport-to-veppanthattai-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Sardarpur Cab",
             src: "/cab/bangalore-airport-to-sardarpur-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Munnar Cab",
             src: "/cab/bangalore-airport-to-munnar-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Purulia Cab",
             src: "/cab/bangalore-airport-to-purulia-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Malegaon Cab",
             src: "/cab/bangalore-airport-to-malegaon-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Mahabalipuram Cab",
             src: "/cab/bangalore-airport-to-mahabalipuram-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Vadodara Cab",
             src: "/cab/bangalore-airport-to-vadodara-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Udumbanchola Cab",
             src: "/cab/bangalore-airport-to-udumbanchola-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Bathinda Cab",
             src: "/cab/bangalore-airport-to-bathinda-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Kakinada Cab",
             src: "/cab/bangalore-airport-to-kakinada-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Adra Cab",
             src: "/cab/bangalore-airport-to-adra-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Nagoor Cab",
             src: "/cab/bangalore-airport-to-nagoor-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Kanjirapally Cab",
             src: "/cab/bangalore-airport-to-kanjirapally-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Nakhatrana Cab",
             src: "/cab/bangalore-airport-to-nakhatrana-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Patrasayer Cab",
             src: "/cab/bangalore-airport-to-patrasayer-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Imphal Cab",
             src: "/cab/bangalore-airport-to-imphal-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Ayodhya Cab",
             src: "/cab/bangalore-airport-to-ayodhya-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Bisalpur Cab",
             src: "/cab/bangalore-airport-to-bisalpur-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Udalguri Cab",
             src: "/cab/bangalore-airport-to-udalguri-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Kalimpong Cab",
             src: "/cab/bangalore-airport-to-kalimpong-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Coimbatore Cab",
             src: "/cab/bangalore-airport-to-coimbatore-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Kaveripattinam Cab",
             src: "/cab/bangalore-airport-to-kaveripattinam-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Laluk Cab",
             src: "/cab/bangalore-airport-to-laluk-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Shivamogga Cab",
             src: "/cab/bangalore-airport-to-shivamogga-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Champaran Cab",
             src: "/cab/bangalore-airport-to-champaran-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Ulundurpet Cab",
             src: "/cab/bangalore-airport-to-ulundurpet-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Tumkur Cab",
             src: "/cab/bangalore-airport-to-tumkur-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Trimbak Cab",
             src: "/cab/bangalore-airport-to-trimbak-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Pandavapura Cab",
             src: "/cab/bangalore-airport-to-pandavapura-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Nandura Cab",
             src: "/cab/bangalore-airport-to-nandura-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Miryalaguda Cab",
             src: "/cab/bangalore-airport-to-miryalaguda-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Nalagarh Cab",
             src: "/cab/bangalore-airport-to-nalagarh-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Sohna Cab",
             src: "/cab/bangalore-airport-to-sohna-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Neemrana Cab",
             src: "/cab/bangalore-airport-to-neemrana-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Sendhwa Cab",
             src: "/cab/bangalore-airport-to-sendhwa-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Karaikal Cab",
             src: "/cab/bangalore-airport-to-karaikal-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Zahirabad Cab",
             src: "/cab/bangalore-airport-to-zahirabad-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Ichak Cab",
             src: "/cab/bangalore-airport-to-ichak-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Pantnagar Cab",
             src: "/cab/bangalore-airport-to-pantnagar-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Dehra Gopipur Cab",
             src: "/cab/bangalore-airport-to-dehra-gopipur-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Dhamdha Cab",
             src: "/cab/bangalore-airport-to-dhamdha-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Harda Cab",
             src: "/cab/bangalore-airport-to-harda-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Nagari Cab",
             src: "/cab/bangalore-airport-to-nagari-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Chikmagalur Cab",
             src: "/cab/bangalore-airport-to-chikmagalur-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Theni Cab",
             src: "/cab/bangalore-airport-to-theni-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Zuluk Cab",
             src: "/cab/bangalore-airport-to-zuluk-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Venkatagiri Cab",
             src: "/cab/bangalore-airport-to-venkatagiri-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Sankhavaram Cab",
             src: "/cab/bangalore-airport-to-sankhavaram-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Latur Cab",
             src: "/cab/bangalore-airport-to-latur-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Jhunjhunu Cab",
             src: "/cab/bangalore-airport-to-jhunjhunu-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Sadasivpet Cab",
             src: "/cab/bangalore-airport-to-sadasivpet-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Chidambaram Cab",
             src: "/cab/bangalore-airport-to-chidambaram-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Shiggaon Cab",
             src: "/cab/bangalore-airport-to-shiggaon-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Manbazar Cab",
             src: "/cab/bangalore-airport-to-manbazar-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Rameswaram Cab",
             src: "/cab/bangalore-airport-to-rameswaram-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Rajnagar Cab",
             src: "/cab/bangalore-airport-to-rajnagar-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Nedumangad Cab",
             src: "/cab/bangalore-airport-to-nedumangad-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Vizianagaram Cab",
             src: "/cab/bangalore-airport-to-vizianagaram-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Shahdol Cab",
             src: "/cab/bangalore-airport-to-shahdol-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Haridwar Cab",
             src: "/cab/bangalore-airport-to-haridwar-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Kundapura Cab",
             src: "/cab/bangalore-airport-to-kundapura-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Lateri Cab",
             src: "/cab/bangalore-airport-to-lateri-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Belthangady Cab",
             src: "/cab/bangalore-airport-to-belthangady-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Ajanta Cab",
             src: "/cab/bangalore-airport-to-ajanta-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Sindhudurg Cab",
             src: "/cab/bangalore-airport-to-sindhudurg-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Khopoli Cab",
             src: "/cab/bangalore-airport-to-khopoli-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Kamalpur Cab",
             src: "/cab/bangalore-airport-to-kamalpur-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Bhim Cab",
             src: "/cab/bangalore-airport-to-bhim-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Banswara Cab",
             src: "/cab/bangalore-airport-to-banswara-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Ramgarh Cab",
             src: "/cab/bangalore-airport-to-ramgarh-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Kota Cab",
             src: "/cab/bangalore-airport-to-kota-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Gariaband Cab",
             src: "/cab/bangalore-airport-to-gariaband-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Mannargudi Cab",
             src: "/cab/bangalore-airport-to-mannargudi-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Cumbum Cab",
             src: "/cab/bangalore-airport-to-cumbum-cabs",
-        },
-        {
+          },
+          {
             name: "Bangalore airport to Srirangam Cab",
             src: "/cab/bangalore-airport-to-srirangam-cabs",
-        },
-        
+          },
         ],
       },
     },
@@ -3678,19 +3677,19 @@ useEffect(()=>{
           {
             name: "Chennai to Vellore Cab",
             src: "/cab/chennai-to-vellore-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai to Bangalore Cab",
             src: "/cab/chennai-to-bangalore-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai to Pondicherry Cab",
             src: "/cab/chennai-to-pondicherry-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai to Tirupati Cab",
             src: "/cab/chennai-to-tirupati-cabs",
-        },
+          },
         ],
       },
       Other: {
@@ -3700,79 +3699,79 @@ useEffect(()=>{
           {
             name: "Taxi service in Anna Road",
             src: "/cab/anna-road-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Ambattur",
             src: "/cab/ambattur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Tambaram",
             src: "/cab/tambaram-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Minjur",
             src: "/cab/minjur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Ponneri",
             src: "/cab/ponneri-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Sriperumbudur",
             src: "/cab/sriperumbudur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Tiruvallur",
             src: "/cab/tiruvallur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Gummidipoondi",
             src: "/cab/gummidipoondi-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Uttukottai",
             src: "/cab/uttukottai-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Mahabalipuram",
             src: "/cab/mahabalipuram-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Chengalpattu",
             src: "/cab/chengalpattu-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Chinglepet",
             src: "/cab/chinglepet-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Arambakkam",
             src: "/cab/arambakkam-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Arakkonam",
             src: "/cab/arakkonam-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Varadaiahpalem",
             src: "/cab/varadaiahpalem-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kanchipuram",
             src: "/cab/kanchipuram-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Tiruttani",
             src: "/cab/tiruttani-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Sullurpeta",
             src: "/cab/sullurpeta-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Madurantakam",
             src: "/cab/madurantakam-city-cabs",
-        },
+          },
         ],
       },
       Airport: {
@@ -3782,244 +3781,243 @@ useEffect(()=>{
           {
             name: "Chennai airport to Panaji Cab",
             src: "/cab/chennai-airport-to-panaji-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Ramachandrapuram Cab",
             src: "/cab/chennai-airport-to-ramachandrapuram-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Hilsa Cab",
             src: "/cab/chennai-airport-to-hilsa-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Kausani Cab",
             src: "/cab/chennai-airport-to-kausani-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Yavatmal Cab",
             src: "/cab/chennai-airport-to-yavatmal-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Dhrangadhra Cab",
             src: "/cab/chennai-airport-to-dhrangadhra-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Dhanolti Cab",
             src: "/cab/chennai-airport-to-dhanolti-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Inkollu Cab",
             src: "/cab/chennai-airport-to-inkollu-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Nandghat Cab",
             src: "/cab/chennai-airport-to-nandghat-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Ladwa Cab",
             src: "/cab/chennai-airport-to-ladwa-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Meghalaya Cab",
             src: "/cab/chennai-airport-to-meghalaya-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Salem Cab",
             src: "/cab/chennai-airport-to-salem-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Nurpur Cab",
             src: "/cab/chennai-airport-to-nurpur-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Narwana Cab",
             src: "/cab/chennai-airport-to-narwana-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Nandurbar Cab",
             src: "/cab/chennai-airport-to-nandurbar-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Kalol Cab",
             src: "/cab/chennai-airport-to-kalol-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Ratua Cab",
             src: "/cab/chennai-airport-to-ratua-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Gogamukh Cab",
             src: "/cab/chennai-airport-to-gogamukh-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Lava Lolegaon Cab",
             src: "/cab/chennai-airport-to-lava-lolegaon-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Sakhigopal Cab",
             src: "/cab/chennai-airport-to-sakhigopal-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Narkand Cab",
             src: "/cab/chennai-airport-to-narkand-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Guntakal Cab",
             src: "/cab/chennai-airport-to-guntakal-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Damanjodi Cab",
             src: "/cab/chennai-airport-to-damanjodi-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Mashobra Cab",
             src: "/cab/chennai-airport-to-mashobra-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Khadoor Sahib Cab",
             src: "/cab/chennai-airport-to-khadoor-sahib-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Dhamdha Cab",
             src: "/cab/chennai-airport-to-dhamdha-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Tarana Cab",
             src: "/cab/chennai-airport-to-tarana-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Satara Cab",
             src: "/cab/chennai-airport-to-satara-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Sankarankovil Cab",
             src: "/cab/chennai-airport-to-sankarankovil-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Bharwain Cab",
             src: "/cab/chennai-airport-to-bharwain-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Gaya Cab",
             src: "/cab/chennai-airport-to-gaya-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Rajahmundry Cab",
             src: "/cab/chennai-airport-to-rajahmundry-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Perinthalmanna Cab",
             src: "/cab/chennai-airport-to-perinthalmanna-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Meerut Cab",
             src: "/cab/chennai-airport-to-meerut-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Kolkata Cab",
             src: "/cab/chennai-airport-to-kolkata-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Ujjain Cab",
             src: "/cab/chennai-airport-to-ujjain-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Nagamangala Cab",
             src: "/cab/chennai-airport-to-nagamangala-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Basai Cab",
             src: "/cab/chennai-airport-to-basai-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Lathikata Cab",
             src: "/cab/chennai-airport-to-lathikata-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Siddapur Cab",
             src: "/cab/chennai-airport-to-siddapur-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Nilgiris Cab",
             src: "/cab/chennai-airport-to-nilgiris-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Pauri Cab",
             src: "/cab/chennai-airport-to-pauri-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Idukki Cab",
             src: "/cab/chennai-airport-to-idukki-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Pathanamthitta Cab",
             src: "/cab/chennai-airport-to-pathanamthitta-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Aul Cab",
             src: "/cab/chennai-airport-to-aul-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Barpeta Cab",
             src: "/cab/chennai-airport-to-barpeta-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Laharpur Cab",
             src: "/cab/chennai-airport-to-laharpur-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Birbhum Cab",
             src: "/cab/chennai-airport-to-birbhum-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Anandpur Sahib Cab",
             src: "/cab/chennai-airport-to-anandpur-sahib-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Malda Cab",
             src: "/cab/chennai-airport-to-malda-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Patiyali Cab",
             src: "/cab/chennai-airport-to-patiyali-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Yemmiganur Cab",
             src: "/cab/chennai-airport-to-yemmiganur-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Mandar Cab",
             src: "/cab/chennai-airport-to-mandar-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Fatehgarh Sahib Cab",
             src: "/cab/chennai-airport-to-fatehgarh-sahib-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Bellary Cab",
             src: "/cab/chennai-airport-to-bellary-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Bicholim Cab",
             src: "/cab/chennai-airport-to-bicholim-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Chandragiri Cab",
             src: "/cab/chennai-airport-to-chandragiri-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Chandauli Cab",
             src: "/cab/chennai-airport-to-chandauli-cabs",
-        },
-        {
+          },
+          {
             name: "Chennai airport to Nalgonda Cab",
             src: "/cab/chennai-airport-to-nalgonda-cabs",
-        },
-        
+          },
         ],
       },
     },
-    Dehradun : {
+    Dehradun: {
       Outstation: {
         id: 1,
         title: "Cabs Services From Dehradun",
@@ -4027,23 +4025,23 @@ useEffect(()=>{
           {
             name: "Dehradun to Mussoorie Cab",
             src: "/cab/dehradun-to-mussoorie-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun to Delhi Cab",
             src: "/cab/dehradun-to-delhi-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun to Gurgaon Cab",
             src: "/cab/dehradun-to-gurgaon-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun to Noida Cab",
             src: "/cab/dehradun-to-noida-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun to Faridabad Cab",
             src: "/cab/dehradun-to-faridabad-cabs",
-        },
+          },
         ],
       },
       Other: {
@@ -4053,83 +4051,83 @@ useEffect(()=>{
           {
             name: "Taxi service in Mussoorie",
             src: "/cab/mussoorie-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Dhanaulti",
             src: "/cab/dhanaulti-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Dhanolti",
             src: "/cab/dhanolti-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kalsi",
             src: "/cab/kalsi-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Narendra Nagar",
             src: "/cab/narendra-nagar-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Vikasnagar",
             src: "/cab/vikasnagar-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Kanatal",
             src: "/cab/kanatal-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Rishikesh",
             src: "/cab/rishikesh-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in New Tehri",
             src: "/cab/new-tehri-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Tehri",
             src: "/cab/tehri-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Neelkanth",
             src: "/cab/neelkanth-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Haridwar",
             src: "/cab/haridwar-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Paonta Sahib",
             src: "/cab/paonta-sahib-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Jwalapur",
             src: "/cab/jwalapur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Chakrata",
             src: "/cab/chakrata-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Bhagwanpur",
             src: "/cab/bhagwanpur-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Roorkee",
             src: "/cab/roorkee-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Naugaon",
             src: "/cab/naugaon-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Uttarkashi",
             src: "/cab/uttarkashi-city-cabs",
-        },
-        {
+          },
+          {
             name: "Taxi service in Saharanpur",
             src: "/cab/saharanpur-city-cabs",
-        },
+          },
         ],
       },
       Airport: {
@@ -4139,124 +4137,129 @@ useEffect(()=>{
           {
             name: "Dehradun airport to Bhuj Cab",
             src: "/cab/dehradun-airport-to-bhuj-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Akabarpur Cab",
             src: "/cab/dehradun-airport-to-akabarpur-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Phagwara Cab",
             src: "/cab/dehradun-airport-to-phagwara-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Rajam Cab",
             src: "/cab/dehradun-airport-to-rajam-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Kulithalai Cab",
             src: "/cab/dehradun-airport-to-kulithalai-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Lataguri Cab",
             src: "/cab/dehradun-airport-to-lataguri-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Kalka Cab",
             src: "/cab/dehradun-airport-to-kalka-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Bhogaon Cab",
             src: "/cab/dehradun-airport-to-bhogaon-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Laharpur Cab",
             src: "/cab/dehradun-airport-to-laharpur-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Bobbili Cab",
             src: "/cab/dehradun-airport-to-bobbili-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Unnao Cab",
             src: "/cab/dehradun-airport-to-unnao-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Tindivanam Cab",
             src: "/cab/dehradun-airport-to-tindivanam-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Talcher Cab",
             src: "/cab/dehradun-airport-to-talcher-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Shahabad Cab",
             src: "/cab/dehradun-airport-to-shahabad-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Hapur Cab",
             src: "/cab/dehradun-airport-to-hapur-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Orachha Cab",
             src: "/cab/dehradun-airport-to-orachha-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Karaikudi Cab",
             src: "/cab/dehradun-airport-to-karaikudi-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Gandevi Cab",
             src: "/cab/dehradun-airport-to-gandevi-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Holenarasipur Cab",
             src: "/cab/dehradun-airport-to-holenarasipur-cabs",
-        },
-        {
+          },
+          {
             name: "Dehradun airport to Dhar Cab",
             src: "/cab/dehradun-airport-to-dhar-cabs",
-        },
-        
+          },
         ],
       },
-    }
+    },
   };
 
-  const [sourceData,setSourceData]= useState(null);
-  const [destinationData,setDestinationData]= useState(null);
-
+  const [sourceData, setSourceData] = useState(null);
+  const [destinationData, setDestinationData] = useState(null);
 
   function findWord(text, word) {
-    const words = text.split(',');
+    const words = text.split(",");
     return words.includes(word);
   }
 
-
-  useEffect(()=>{
-
+  useEffect(() => {
     for (let key in PagesDetail) {
-      if(findWord(source,key)){
-        setSourceData(PagesDetail[key])
+      if (findWord(source, key)) {
+        setSourceData(PagesDetail[key]);
       }
-      if(findWord(destination,key)){
-        setDestinationData(PagesDetail[key])
+      if (findWord(destination, key)) {
+        setDestinationData(PagesDetail[key]);
       }
     }
-  },[source,destination])
-
+  }, [source, destination]);
 
   return (
-    <div style={{backgroundColor:"#fafafa"}}>
+    <div style={{ backgroundColor: "#fafafa" }}>
       <Layout title="light_header" />
-      <ListSearch data={data} setisValid={setisValid} rentals={rentals} setRentals={setRentals}/>
-      <ListingView  data={data} isValid={isValid} price={blogdata?.price}/>
+      <ListSearch
+        data={data}
+        setisValid={setisValid}
+        rentals={rentals}
+        setRentals={setRentals}
+      />
+      <ListingView data={data} isValid={isValid} price={blogdata?.price} />
       {/* <CabPopup/> */}
       {/* <CabOptions/> */}
-     { blogdata? <DelhiToDestination data={blogdata} />:null}
+      {blogdata ? <DelhiToDestination data={blogdata} /> : null}
       {/* <CabOptions1 source={source}/> */}
       {/* <RentalSection destination={destination}/> */}
-      {(sourceData || destinationData) &&  <ServiceBlocks sourceData={sourceData} destinationData={destinationData}/>}
-      <DelhiToDesinationMeta1 query={source} query1={destination}/>
+      {(sourceData || destinationData) && (
+        <ServiceBlocks
+          sourceData={sourceData}
+          destinationData={destinationData}
+        />
+      )}
+      <DelhiToDesinationMeta1 query={source} query1={destination} />
       <FooterComponent />
     </div>
   );

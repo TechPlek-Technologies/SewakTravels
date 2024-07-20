@@ -269,7 +269,7 @@ export const dataDelhi   = {
       }
   }
 
-  export const dataNoida   = {
+  export const dataNoida1  = {
     "main": "Book a Cab in Noida",
     "sub":"Book a Cab in Noida with Sewak Travels",
     "subcontent":
