@@ -17,6 +17,10 @@ function Navbar() {
       path:"/service",
       title:"Services"
     },
+    // {
+    //   path: "/luxury-cars",
+    //   title: "Luxury Cars",
+    // },
     {
       path: "/blogs",
       title: "Blogs",

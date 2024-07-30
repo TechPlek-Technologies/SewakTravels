@@ -533,7 +533,170 @@ const FooterLocation = () => {
         },
       ],
     },
-    Agra: {
+    OtherTaxi: {
+      id: 10,
+      title: "Other Taxi Services",
+      links: [
+        {
+          name: "Taxi service in New Delhi",
+          src: "/cab/delhi-city-cabs",
+        },
+        {
+          name: "Taxi service in Ghaziabad",
+          src: "/cab/ghaziabad-city-cabs",
+        },
+        {
+          name: "Taxi service in Noida",
+          src: "/cab/noida-city-cabs",
+        },
+        {
+          name: "Taxi service in Bahadurgarh",
+          src: "/cab/bahadurgarh-city-cabs",
+        },
+        {
+          name: "Taxi service in Bagpat",
+          src: "/cab/bagpat-city-cabs",
+        },
+        {
+          name: "Taxi service in Baghpat",
+          src: "/cab/baghpat-city-cabs",
+        },
+        {
+          name: "Taxi service in Gurgaon",
+          src: "/cab/gurgaon-city-cabs",
+        },
+        {
+          name: "Taxi service in Gurugram",
+          src: "/cab/gurugram-city-cabs",
+        },
+        {
+          name: "Taxi service in Faridabad",
+          src: "/cab/faridabad-city-cabs",
+        },
+        {
+          name: "Taxi service in Basai",
+          src: "/cab/basai-city-cabs",
+        },
+        {
+          name: "Taxi service in Dadri",
+          src: "/cab/dadri-city-cabs",
+        },
+        {
+          name: "Taxi service in Greater Noida",
+          src: "/cab/greater-noida-city-cabs",
+        },
+        {
+          name: "Taxi service in Kharkhoda",
+          src: "/cab/kharkhoda-city-cabs",
+        },
+        {
+          name: "Taxi service in Modinagar",
+          src: "/cab/modinagar-city-cabs",
+        },
+        {
+          name: "Taxi service in Sonipat",
+          src: "/cab/sonipat-city-cabs",
+        },
+        {
+          name: "Taxi service in Murthal",
+          src: "/cab/murthal-city-cabs",
+        },
+        {
+          name: "Taxi service in Manesar",
+          src: "/cab/manesar-city-cabs",
+        },
+        { name: "Taxi service in Barau", src: "/cab/barau-city-cabs" },
+        { name: "Taxi service in Baraut", src: "/cab/baraut-city-cabs" },
+        {
+          name: "Taxi service in Gautam Buddha Nagar",
+          src: "/cab/gautam-buddha-nagar-city-cabs",
+        },
+        {
+          name: "Taxi service in Shamshabad",
+          src: "/cab/shamshabad-city-cabs",
+        },
+        { name: "Taxi service in Kagarol", src: "/cab/kagarol-city-cabs" },
+        { name: "Taxi service in Sadabad", src: "/cab/sadabad-city-cabs" },
+        { name: "Taxi service in Bisawar", src: "/cab/bisawar-city-cabs" },
+        { name: "Taxi service in Tundla", src: "/cab/tundla-city-cabs" },
+        { name: "Taxi service in Rajakhera", src: "/cab/rajakhera-city-cabs" },
+        {
+          name: "Taxi service in Fatehpur Sikri",
+          src: "/cab/fatehpur-sikri-city-cabs",
+        },
+        { name: "Taxi service in Firozabad", src: "/cab/firozabad-city-cabs" },
+        { name: "Taxi service in Jalesar", src: "/cab/jalesar-city-cabs" },
+        { name: "Taxi service in Hathras", src: "/cab/hathras-city-cabs" },
+        { name: "Taxi service in Mathura", src: "/cab/mathura-city-cabs" },
+        { name: "Taxi service in Bharatpur", src: "/cab/bharatpur-city-cabs" },
+        { name: "Taxi service in Dholpur", src: "/cab/dholpur-city-cabs" },
+        { name: "Taxi service in Vrindavan", src: "/cab/vrindavan-city-cabs" },
+        { name: "Taxi service in Ambah", src: "/cab/ambah-city-cabs" },
+        {
+          name: "Taxi service in Shikohabad",
+          src: "/cab/shikohabad-city-cabs",
+        },
+        { name: "Taxi service in Holipura", src: "/cab/holipura-city-cabs" },
+        { name: "Taxi service in Sasni", src: "/cab/sasni-city-cabs" },
+        { name: "Taxi service in Iglas", src: "/cab/iglas-city-cabs" },
+        { name: "Taxi service in Govardhan", src: "/cab/govardhan-city-cabs" },
+        {
+          name: "Taxi service in Shekhawati",
+          src: "/cab/shekhawati-city-cabs",
+        },
+        { name: "Taxi service in Kukas", src: "/cab/kukas-city-cabs" },
+        {
+          name: "Taxi service in Bhambhoria",
+          src: "/cab/bhambhoria-city-cabs",
+        },
+        { name: "Taxi service in Begas", src: "/cab/begas-city-cabs" },
+        { name: "Taxi service in Bassi", src: "/cab/bassi-city-cabs" },
+        { name: "Taxi service in Achrol", src: "/cab/achrol-city-cabs" },
+        { name: "Taxi service in Chomu", src: "/cab/chomu-city-cabs" },
+        {
+          name: "Taxi service in Asalpur Jobner",
+          src: "/cab/asalpur-jobner-city-cabs",
+        },
+        { name: "Taxi service in Chaksu", src: "/cab/chaksu-city-cabs" },
+        { name: "Taxi service in Pawta", src: "/cab/pawta-city-cabs" },
+        { name: "Taxi service in Jobner", src: "/cab/jobner-city-cabs" },
+        {
+          name: "Taxi service in Alila Fort Bishangarh",
+          src: "/cab/alila-fort-bishangarh-city-cabs",
+        },
+        {
+          name: "Taxi service in Mojamabaad",
+          src: "/cab/mojamabaad-city-cabs",
+        },
+        { name: "Taxi service in Renwal", src: "/cab/renwal-city-cabs" },
+        {
+          name: "Taxi service in Mehandipur Balaji",
+          src: "/cab/mehandipur-balaji-city-cabs",
+        },
+        { name: "Taxi service in Dausa", src: "/cab/dausa-city-cabs" },
+        {
+          name: "Taxi service in Virat Nagar",
+          src: "/cab/virat-nagar-city-cabs",
+        },
+        { name: "Taxi service in Shahpura", src: "/cab/shahpura-city-cabs" },
+        { name: "Taxi service in Ringas", src: "/cab/ringas-city-cabs" },
+        {
+          name: "Taxi service in Khatu Shyam",
+          src: "/cab/khatu-shyam-city-cabs",
+        },
+        {
+          name: "Taxi service in Pimpri Chinchwad",
+          src: "/cab/pimpri-chinchwad-city-cabs",
+        },
+        { name: "Taxi service in Induri", src: "/cab/induri-city-cabs" },
+        { name: "Taxi service in Talegaon", src: "/cab/talegaon-city-cabs" },
+        { name: "Taxi service in Shikrapur", src: "/cab/shikrapur-city-cabs" },
+        { name: "Taxi service in Lavasa", src: "/cab/lavasa-city-cabs" },
+        { name: "Taxi service in Bhor", src: "/cab/bhor-city-cabs" },
+        { name: "Taxi service in Jejuri", src: "/cab/jejuri-city-cabs" },
+      ],
+    },
+    OtherCities: {
       id: 2,
       title: "Cabs From Other Cities",
       links: [
@@ -865,80 +1028,7 @@ const FooterLocation = () => {
     //     },
     //   ],
     // },
-    OtherTaxi: {
-      id: 10,
-      title: "Other Taxi Services",
-      links: [
-        {
-          name: "Taxi service in New Delhi",
-          src: "/cab/delhi-city-cabs",
-        },
-        {
-          name: "Taxi service in Ghaziabad",
-          src: "/cab/ghaziabad-city-cabs",
-        },
-        {
-          name: "Taxi service in Noida",
-          src: "/cab/noida-city-cabs",
-        },
-        {
-          name: "Taxi service in Bahadurgarh",
-          src: "/cab/bahadurgarh-city-cabs",
-        },
-        {
-          name: "Taxi service in Bagpat",
-          src: "/cab/bagpat-city-cabs",
-        },
-        {
-          name: "Taxi service in Baghpat",
-          src: "/cab/baghpat-city-cabs",
-        },
-        {
-          name: "Taxi service in Gurgaon",
-          src: "/cab/gurgaon-city-cabs",
-        },
-        {
-          name: "Taxi service in Gurugram",
-          src: "/cab/gurugram-city-cabs",
-        },
-        {
-          name: "Taxi service in Faridabad",
-          src: "/cab/faridabad-city-cabs",
-        },
-        {
-          name: "Taxi service in Basai",
-          src: "/cab/basai-city-cabs",
-        },
-        {
-          name: "Taxi service in Dadri",
-          src: "/cab/dadri-city-cabs",
-        },
-        {
-          name: "Taxi service in Greater Noida",
-          src: "/cab/greater-noida-city-cabs",
-        },
-        {
-          name: "Taxi service in Kharkhoda",
-          src: "/cab/kharkhoda-city-cabs",
-        },
-        {
-          name: "Taxi service in Modinagar",
-          src: "/cab/modinagar-city-cabs",
-        },
-        {
-          name: "Taxi service in Sonipat",
-          src: "/cab/sonipat-city-cabs",
-        },
-        {
-          name: "Taxi service in Murthal",
-          src: "/cab/murthal-city-cabs",
-        },
-        {
-          name: "Taxi service in Manesar",
-          src: "/cab/manesar-city-cabs",
-        },
-      ],
-    },
+   
   };
 
   return (
@@ -951,13 +1041,12 @@ const FooterLocation = () => {
                 <p key={location.id}>
                   <span className="font">{location.title}</span>
                   {location.links.map((link, index) => (
-                   <>
-                    <Link key={index} to={link.src}>
-                      {link.name}
-                    </Link>
-                    {index < location.links.length - 1 && "| "}
+                    <>
+                      <Link key={index} to={link.src}>
+                        {link.name}
+                      </Link>
+                      {index < location.links.length - 1 && "| "}
                     </>
-                    
                   ))}
                 </p>
               ))}
