@@ -8,6 +8,7 @@ function ListingView({isValid,data,rentals,price}) {
   const [showSidebar, setShowSidebar] = useState(false);
 
   
+  
   return (
     <section className="xs-section bg-inner">
       <div className="container">

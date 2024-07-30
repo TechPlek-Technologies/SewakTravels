@@ -175,7 +175,7 @@ import {
   dataVisakhapatnam,
   dataVrindavan,
 } from "./Pages/SourceToDestination";
-import { dataBaghpat, dataBagpat, dataBahadurgarh, dataBarau, dataBaraut1, dataBasai, dataDadri, dataDelhi, dataFaridabad1, dataGautamBuddhaNagar, dataGhaziabad, dataGreaterNoida, dataGurgaon, dataGurugram, dataKharkhoda, dataManesar1, dataModinagar, dataMurthal1, dataNoida1, dataSonipat1 } from "./Pages/OtherTaxiData";
+import { dataAchrol, dataAlilaFortBishangarh, dataAmbah, dataAsalpurJobner, dataBaghpat, dataBagpat, dataBahadurgarh, dataBarau, dataBaraut1, dataBasai, dataBassi, dataBegas, dataBhambhoria, dataBharatpur1, dataBhor, dataBisawar, dataChaksu, dataChomu, dataDadri, dataDausa, dataDelhi, dataDholpur, dataFaridabad1, dataFatehpurSikri, dataFirozabad, dataGautamBuddhaNagar, dataGhaziabad, dataGovardhan, dataGreaterNoida, dataGurgaon, dataGurugram, dataHathras, dataHolipura, dataIglas, dataInduri, dataJalesar, dataJejuri, dataJobner, dataKagarol, dataKharkhoda, dataKhatuShyam, dataKukas, dataLavasa, dataManesar1, dataMathura1, dataMehandipurBalaji, dataModinagar, dataMojamabaad, dataMurthal1, dataNoida1, dataPawta, dataPimpriChinchwad, dataRajakhera, dataRenwal, dataRingas, dataSadabad, dataSasni, dataShahpura, dataShamshabad, dataShekhawati, dataShikohabad, dataShikrapur, dataSonipat1, dataTalegaon, dataTundla, dataViratNagar, dataVrindavan1 } from "./Pages/OtherTaxiData";
 
 const Home = lazy(() => import("./Pages/Home"));
 
@@ -221,6 +221,8 @@ const Blogs = lazy(() => import("./Pages/Blogs"));
 
 const BlogDetails = lazy(() => import("./Pages/BlogDetails/BlogDetails"));
 
+const LuxuryCars = lazy(() => import("./Pages/luxuryCars/LuxuryCars"));
+
 function App() {
   return (
     <BrowserRouter>
@@ -256,6 +258,8 @@ function App() {
           />
           <Route path={"/refund-policy"} element={<RefundPolicy />} />
           <Route path={"/privacy-policy"} element={<PrivacyPolicy />} />
+
+          <Route path={"/luxury-cars"} element={<LuxuryCars />} />
 
           {/* From Delhi */}
           {/* 15 Locations  */}
@@ -2411,6 +2415,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Shamshabad, Uttar Pradesh, India"
+                blogdata={dataShamshabad}
               />
             }
           />
@@ -2421,6 +2426,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Kagarol, Uttar Pradesh, India"
+                blogdata={dataKagarol}
               />
             }
           />
@@ -2431,6 +2437,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Sadabad, Uttar Pradesh, India"
+                blogdata={dataSadabad}
               />
             }
           />
@@ -2441,6 +2448,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Bisawar, Uttar Pradesh, India"
+                blogdata={dataBisawar}
               />
             }
           />
@@ -2451,6 +2459,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Tundla, Uttar Pradesh, India"
+                blogdata={dataTundla}
               />
             }
           />
@@ -2460,7 +2469,8 @@ function App() {
             element={
               <CabListing2
                 selectedValue={"Outstation One-Way"}
-                source="Rajakhera, Rajasthan, India"
+                source="Rajakhera, Uttar Pradesh, India"
+                blogdata={dataRajakhera}
               />
             }
           />
@@ -2471,6 +2481,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Fatehpur Sikri, Uttar Pradesh, India"
+                blogdata={dataFatehpurSikri}
               />
             }
           />
@@ -2481,6 +2492,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Firozabad, Uttar Pradesh, India"
+                blogdata={dataFirozabad}
               />
             }
           />
@@ -2491,6 +2503,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Jalesar, Uttar Pradesh, India"
+                blogdata={dataJalesar}
               />
             }
           />
@@ -2501,6 +2514,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Hathras, Uttar Pradesh, India"
+                blogdata={dataHathras}
               />
             }
           />
@@ -2511,6 +2525,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Mathura, Uttar Pradesh, India"
+                blogdata={dataMathura1}
               />
             }
           />
@@ -2520,7 +2535,8 @@ function App() {
             element={
               <CabListing2
                 selectedValue={"Outstation One-Way"}
-                source="Bharatpur, Rajasthan, India"
+                source="Bharatpur, Uttar Pradesh, India"
+                blogdata={dataBharatpur1}
               />
             }
           />
@@ -2530,7 +2546,8 @@ function App() {
             element={
               <CabListing2
                 selectedValue={"Outstation One-Way"}
-                source="Dholpur, Rajasthan, India"
+                source="Dholpur, Uttar Pradesh, India"
+                blogdata={dataDholpur}
               />
             }
           />
@@ -2541,6 +2558,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Vrindavan, Uttar Pradesh, India"
+                blogdata={dataVrindavan1}
               />
             }
           />
@@ -2551,6 +2569,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Ambah, Madhya Pradesh, India"
+                blogdata={dataAmbah}
               />
             }
           />
@@ -2561,6 +2580,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Shikohabad, Uttar Pradesh, India"
+                blogdata={dataShikohabad}
               />
             }
           />
@@ -2571,6 +2591,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Holipura, Uttar Pradesh, India"
+                blogdata={dataHolipura}
               />
             }
           />
@@ -2581,6 +2602,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Sasni, Uttar Pradesh, India"
+                blogdata={dataSasni}
               />
             }
           />
@@ -2591,6 +2613,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Iglas, Uttar Pradesh, India"
+                blogdata={dataIglas}
               />
             }
           />
@@ -2601,6 +2624,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Govardhan, Uttar Pradesh, India"
+                blogdata={dataGovardhan}
               />
             }
           />
@@ -2612,6 +2636,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Shekhawati, Rajasthan, India"
+                blogdata={dataShekhawati}
               />
             }
           />
@@ -2622,6 +2647,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Kukas, Rajasthan, India"
+                blogdata={dataKukas}
               />
             }
           />
@@ -2632,6 +2658,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="BHAMBHORIA, Rajasthan, India"
+                blogdata={dataBhambhoria}
               />
             }
           />
@@ -2642,6 +2669,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Begas, Rajasthan, India"
+                blogdata={dataBegas}
               />
             }
           />
@@ -2652,6 +2680,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Bassi, Rajasthan, India"
+                blogdata={dataBassi}
               />
             }
           />
@@ -2662,6 +2691,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Achrol, Rajasthan, India"
+                blogdata={dataAchrol}
               />
             }
           />
@@ -2672,6 +2702,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Chomu, Rajasthan, India"
+                blogdata={dataChomu}
               />
             }
           />
@@ -2682,6 +2713,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Asalpur Jobner, Rajasthan, India"
+                blogdata={dataAsalpurJobner}
               />
             }
           />
@@ -2692,6 +2724,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Chaksu, Rajasthan, India"
+                blogdata={dataChaksu}
               />
             }
           />
@@ -2702,6 +2735,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Pawta, Rajasthan, India"
+                blogdata={dataPawta}
               />
             }
           />
@@ -2712,6 +2746,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Jobner, Rajasthan, India"
+                blogdata={dataJobner}
               />
             }
           />
@@ -2722,6 +2757,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Alila Fort Bishangarh, Rajasthan, India"
+                blogdata={dataAlilaFortBishangarh}
               />
             }
           />
@@ -2732,6 +2768,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Mojamabaad, Rajasthan, India"
+                blogdata={dataMojamabaad}
               />
             }
           />
@@ -2742,6 +2779,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Renwal, Rajasthan, India"
+                blogdata={dataRenwal}
               />
             }
           />
@@ -2752,6 +2790,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Mehandipur Balaji, Rajasthan, India"
+                blogdata={dataMehandipurBalaji}
               />
             }
           />
@@ -2762,6 +2801,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Dausa, Rajasthan, India"
+                blogdata={dataDausa}
               />
             }
           />
@@ -2772,6 +2812,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Virat Nagar, Rajasthan, India"
+                blogdata={dataViratNagar}
               />
             }
           />
@@ -2782,6 +2823,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Shahpura, Rajasthan, India"
+                blogdata={dataShahpura}
               />
             }
           />
@@ -2792,6 +2834,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Ringas, Rajasthan, India"
+                blogdata={dataRingas}
               />
             }
           />
@@ -2802,6 +2845,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Khatu Shyam, Rajasthan, India"
+                blogdata={dataKhatuShyam}
               />
             }
           />
@@ -2813,6 +2857,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Pimpri Chinchwad, Maharashtra, India"
+                blogdata={dataPimpriChinchwad}
               />
             }
           />
@@ -2823,6 +2868,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Induri, Maharashtra, India"
+                blogdata={dataInduri}
               />
             }
           />
@@ -2833,6 +2879,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Talegaon, Maharashtra, India"
+                blogdata={dataTalegaon}
               />
             }
           />
@@ -2843,6 +2890,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Shikrapur, Maharashtra, India"
+                blogdata={dataShikrapur}
               />
             }
           />
@@ -2853,6 +2901,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Lavasa, Maharashtra, India"
+                blogdata={dataLavasa}
               />
             }
           />
@@ -2863,6 +2912,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Bhor, Maharashtra, India"
+                blogdata={dataBhor}
               />
             }
           />
@@ -2873,6 +2923,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Jejuri, Maharashtra, India"
+                blogdata={dataJejuri}
               />
             }
           />
