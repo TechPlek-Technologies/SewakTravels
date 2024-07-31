@@ -23,7 +23,7 @@ const Contact = () => {
               Bajghera Rd, Sector 2, Palam Vihar, Gurugram, Haryana 122017
             </li>
             <li>
-              <i className="fas fa-map-marker-alt"></i>Registered Address : Flat No.-301, Plot No.-804, Gali No.-8,Ashok Vihar 1, Gurugram, Haryana 122001
+              <i className="fas fa-map-marker-alt"></i>Registered Address : F-301, Plot No.-804, Gali No.-8,Ashok Vihar 1, Gurugram, Haryana 122001
             </li>
             <li>
               <i className="fas fa-phone-alt"></i>+91-837-782-8828

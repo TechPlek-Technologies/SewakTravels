@@ -4,8 +4,8 @@ import ListSearch from "../Components/Cab/Listing/ListSearch";
 import FooterComponent from "../Components/Common/FooterComponent";
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../Context/JourneyContext";
-import DelhiToDestination from "../Components/Cab/Listing/DelhiToDestination";
 import OtherTaxiMeta from "./MetaTags/OtherTaxiMeta";
+import OtherTaxi from "../Components/Cab/Listing/OtherTaxi";
 
 function CabListing2({source, destination,blogdata,selectedValue}) {
   const tomorrow = new Date();
@@ -25,6 +25,11 @@ function CabListing2({source, destination,blogdata,selectedValue}) {
     startTime: "12:00 PM",
     returnTime: "12:00 PM",
   };
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
  
 
   const [isValid, setisValid] = useState("notValid");
@@ -34,7 +39,7 @@ function CabListing2({source, destination,blogdata,selectedValue}) {
       <Layout title="light_header" />
       <ListSearch data={data} setisValid={setisValid} rentals={rentals} setRentals={setRentals}/>
       <ListingView  data={data} isValid={isValid} />
-     { blogdata? <DelhiToDestination data={blogdata} />:null}
+     { blogdata? <OtherTaxi data={blogdata} />:null}
       <OtherTaxiMeta query={source}/>
       <FooterComponent />
     </>

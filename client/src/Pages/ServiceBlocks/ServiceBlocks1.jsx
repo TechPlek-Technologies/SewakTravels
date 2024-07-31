@@ -1,22 +1,19 @@
 import { Link } from "react-router-dom";
 
-const ServiceBlocks1 = ({ item }) => {
+const ServiceBlocks1 = ({ item,title }) => {
+  console.log("item",item);
   return (
     <div>
-      <h2 className="cab-h2">{item?.title}</h2>
+      <h2 className="cab-h2">{title}</h2>
       <div className="cabService">
         <ul>
-            {item?.links?.map((el) => {
-              return (
-                <li className="cab-li1">
-                  <span>
-
-                  {<Link to={el.src}>{el.name}</Link>}
-                  </span>
-                
-                </li>
-              );
-            })}
+          {item?.map((el,index) => {
+            return (
+              <li className="cab-li1" key={index}>
+                <span>{<Link to={el.src}>{el.name}</Link>}</span>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>
