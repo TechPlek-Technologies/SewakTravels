@@ -7693,7 +7693,7 @@ section .black-layer:before {
 .breadcrumb-section {
   background-position: center;
   background-size: cover;
-  height: 500px;
+  height: 250px;
   position: relative;
   overflow: hidden;
   z-index: 1; }
@@ -7886,7 +7886,8 @@ section .black-layer:before {
           .breadcrumb-section.breadcrumb-cum-header .breadcrumb-content .package-detail li i {
             margin-right: 10px; }
   .breadcrumb-section.flight-sec {
-    height: calc(270px + (330 - 270) * ((100vw - 320px) / (1920 - 320))); }
+    /* height: calc(270px + (330 - 270) * ((100vw - 320px) / (1920 - 320)));  */
+  }
     .breadcrumb-section.flight-sec .breadcrumb-content {
       height: calc(270px + (330 - 270) * ((100vw - 320px) / (1920 - 320))); }
   .breadcrumb-section.small-sec {

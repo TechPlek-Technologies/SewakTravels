@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Banner = ({ title }) => {
   return (
     <section className="breadcrumb-section flight-sec pt-0">
-      <img src="" className="bg-img img-fluid" alt="" />
+      <img src="/assets/img/luxury/Luxury-car-banner.webp" className="bg-img img-fluid" alt="" />
       <div className="container">
         <div className="row">
           <div className="col-12">
