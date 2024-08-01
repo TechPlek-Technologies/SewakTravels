@@ -20,7 +20,7 @@ const OutstationContent2 = ({ side }) => {
                                   </ul>
                                   </div>
                                   <div class="detail-img">
-                                      <img src="/assets/img/banner/outstation.jpg" class="img-fluid lazyload"
+                                      <img src="/assets/img/banner/outstation.webp" class="img-fluid lazyload"
                                           alt=""/>
                                   </div>
                                   
