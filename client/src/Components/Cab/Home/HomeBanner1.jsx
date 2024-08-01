@@ -22,7 +22,7 @@ const HomeBanner1 = ({
     <section className="home_section p-0">
       <div className="home home-padding">
         <Img
-          src="/assets/images/background.jpg"
+          src="/assets/images/background.webp"
           className="bg-img img-fluid"
           alt=""
         />

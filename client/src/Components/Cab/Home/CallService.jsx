@@ -6,12 +6,12 @@ const CallService=() => {
     const aboutImgBoxData = [
   {
     id: 1,
-    img: "/assets/images/mix/emergency/1.jpg",
+    img: "/assets/images/mix/emergency/1.webp",
     title: "01",
   },
   {
     id: 2,
-    img: "/assets/images/mix/emergency/2.jpg",
+    img: "/assets/images/mix/emergency/2.webp",
     title: "02",
   },
 ];

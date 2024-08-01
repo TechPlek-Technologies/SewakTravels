@@ -15,7 +15,7 @@ const CorporateContent2 = ({ side }) => {
                                   </p>
                                   </div>
                                   <div class="detail-img">
-                                      <img src="/assets/img/banner/employee-cabs.jpg" class="img-fluid lazyload"
+                                      <img src="/assets/img/banner/employee-cabs.webp" class="img-fluid lazyload"
                                           alt=""/>
                                   </div>
                                   
