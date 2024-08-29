@@ -64,18 +64,18 @@ function Home() {
     rentalPackage: rentals,
     email_phone: phone_email,
   };
-  const [clickOffers , setClickOffers] = useState(false);
-  const[offerData, setOfferData] = useState(null);
+  const [clickOffers, setClickOffers] = useState(false);
+  const [offerData, setOfferData] = useState(null);
 
   useEffect(() => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 576);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -99,7 +99,7 @@ function Home() {
           <link rel="canonical" href="https://sewaktravels.com/" />
         </Helmet>
 
-{isSmallScreen ? (
+        {isSmallScreen ? (
           <HomeBanner2
             pathParams={pathParams}
             activeTab={activeTab}
@@ -144,14 +144,21 @@ function Home() {
           offerData={offerData}
         />
 
-        {activeTab === "1" && <Package  handlePopupClose={handlePopupClose} type="Cab Offers" setClickOffers={setClickOffers} setOfferData={setOfferData}/>}
+        {activeTab === "1" && (
+          <Package
+            handlePopupClose={handlePopupClose}
+            type="Cab Offers"
+            setClickOffers={setClickOffers}
+            setOfferData={setOfferData}
+          />
+        )}
         {activeTab === "2" && <Airline type="Flight Offers" />}
         {activeTab === "3" && <OfferComponent type="Hotel Offers" />}
         {activeTab === "4" && <ExplorePackages type="Tour Offers" />}
         {activeTab === "4" && <ImportantLinks />}
         {activeTab === "1" && <VideoBanner1 />}
         {<FactsContent2 />}
-        {<TestimonialTest/>}
+        {<TestimonialTest />}
         {activeTab === "1" && <FullBanner />}
         {<ServicesComponent />}
         {<Video />}

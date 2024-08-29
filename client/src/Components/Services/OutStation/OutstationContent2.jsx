@@ -1,14 +1,14 @@
 const OutstationContent2 = ({ side }) => {
     return (
-      <section class="single-section small-section bg-inner">
-      <div class="container">
-          <div class="row">
-              <div class="col-xl-12 col-lg-12">
-                  <div class="description-section tab-section">
-                      <div class="description-details">
-                          <div class="desc-box">
-                              <div class="menu-part mt-0 about" id="highlight">
-                                  <div class="about-sec">
+      <section className="single-section small-section bg-inner">
+      <div className="container">
+          <div className="row">
+              <div className="col-xl-12 col-lg-12">
+                  <div className="description-section tab-section">
+                      <div className="description-details">
+                          <div className="desc-box">
+                              <div className="menu-part mt-0 about" id="highlight">
+                                  <div className="about-sec">
                                   <h2 className="service-h2">Bridge Your Dream Destination: Outstation Cab Booking in Delhi NCR</h2>
                                   <p>
                                   Planning for a weekend trip? If so, traveling by road to major tourist places from Gurgaon & Delhi is highly advisable as you can enjoy the serene beauty of the surroundings. Regarding outstation travel, Sewak Travels is your reliable and professional cab partner.
@@ -19,12 +19,12 @@ const OutstationContent2 = ({ side }) => {
                                            <li>Regarding cab hire for outstation travel, Sewak Travels is your go-to choice. With our easy booking process, ensuring a seamless and stress-free experience.</li>
                                   </ul>
                                   </div>
-                                  <div class="detail-img">
-                                      <img src="/assets/img/banner/outstation.webp" class="img-fluid lazyload"
+                                  <div className="detail-img">
+                                      <img src="/assets/img/banner/outstation.webp" className="img-fluid lazyload"
                                           alt=""/>
                                   </div>
                                   
-                                  <div class="about-sec">
+                                  <div className="about-sec">
                                       <h2 className="service-h2">Exploring Our Comprehensive Outstation Cab Services</h2>
                                       <p>Book cab online outstation with ease and convenience. Our user-friendly online platform allows you to book cab online outstation with just a few clicks, eliminating the hassle of long queues and tedious phone calls. Whether you're planning a one-way trip or a round-trip journey, Sewak Travels has you covered with the best outstation cabs one way and two-way.</p>
                                       <h2 className="service-h2">Reliable Outstation Taxi Service Near You</h2>

@@ -538,6 +538,58 @@ const FooterLocation = () => {
       title: "Other Taxi Services",
       links: [
         {
+          name: "Taxi service in Shirwal",
+          src: "/cab/shirwal-city-cabs",
+        },
+        {
+          name: "Taxi service in Aamby Valley",
+          src: "/cab/aamby-valley-city-cabs",
+        },
+        {
+          name: "Taxi service in Raigad",
+          src: "/cab/raigad-city-cabs",
+        },
+        {
+          name: "Taxi service in Lonavala",
+          src: "/cab/lonavala-city-cabs",
+        },
+        {
+          name: "Taxi service in Manchar",
+          src: "/cab/manchar-city-cabs",
+        },
+        {
+          name: "Taxi service in Khandala",
+          src: "/cab/khandala-city-cabs",
+        },
+        {
+          name: "Taxi service in Kedagaon",
+          src: "/cab/kedagaon-city-cabs",
+        },
+        {
+          name: "Taxi service in Imagica Adlab",
+          src: "/cab/imagica-adlab-city-cabs",
+        },
+        {
+          name: "Taxi service in Khopoli",
+          src: "/cab/khopoli-city-cabs",
+        },
+        {
+          name: "Taxi service in Shirur",
+          src: "/cab/shirur-city-cabs",
+        },
+        {
+          name: "Taxi service in Imagica",
+          src: "/cab/imagica-city-cabs",
+        },
+        {
+          name: "Taxi service in Panchgani",
+          src: "/cab/panchgani-city-cabs",
+        },        
+        {
+          name: "Taxi service in Pawna Lake",
+          src: "/cab/pawna-lake-city-cabs",
+        },
+        {
           name: "Taxi service in New Delhi",
           src: "/cab/delhi-city-cabs",
         },
@@ -1028,7 +1080,6 @@ const FooterLocation = () => {
     //     },
     //   ],
     // },
-   
   };
 
   return (

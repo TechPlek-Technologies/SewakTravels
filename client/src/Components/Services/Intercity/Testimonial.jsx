@@ -9,32 +9,32 @@ const Testimonial = ({ side }) => {
         fade: true,
       };
     return (
-        <section class="testimonial_section pt-0 section-b-space">
-        <div class="container">
-            <div class="title-1 title-5">
+        <section className="testimonial_section pt-0 section-b-space">
+        <div className="container">
+            <div className="title-1 title-5">
                 <h3>Testimonials </h3>
             </div>
             <Slider {...slide1} className="slide-2 arrow-classic">
              {reviews1.map((review1,index) => (
-            <div class="row" key={index}>
-                <div class="offset-lg-1 col-lg-10">
-                    <div class="slide-1 arrow-classic">
+            <div className="row" key={index}>
+                <div className="offset-lg-1 col-lg-10">
+                    <div className="slide-1 arrow-classic">
                         <div>
-                            <div class="testimonial">
-                                <div class="top-part">
-                                    <div class="img-part">
-                                        <div class="animation-circle-inverse"><i></i><i></i><i></i></div>
-                                        <img src={review1.src} class="img-fluid lazyload"
+                            <div className="testimonial">
+                                <div className="top-part">
+                                    <div className="img-part">
+                                        <div className="animation-circle-inverse"><i></i><i></i><i></i></div>
+                                        <img src={review1.src} className="img-fluid lazyload"
                                             alt=""/>
-                                        <i class="fas fa-heart heart-icon"><span class="effect"></span></i>
+                                        <i className="fas fa-heart heart-icon"><span className="effect"></span></i>
                                     </div>
                                 </div>
-                                <div class="bottom-part">
+                                <div className="bottom-part">
                                     <p>{review1.description}</p>
                                     <h6><strong>{review1.name}</strong></h6>
                                     <Rating />
-                                    <div class="quote-icon">
-                                        <i class="fas fa-quote-right"></i>
+                                    <div className="quote-icon">
+                                        <i className="fas fa-quote-right"></i>
                                     </div>
                                 </div>
                             </div>

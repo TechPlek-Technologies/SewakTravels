@@ -38,16 +38,16 @@ const ReviewContent = () => {
       <div>
         <Slider {...slide2} className="slide-2 arrow-classic">
           {reviews.map((reviews, index) => (
-            <div class="testimonial-box text-center col-lg-10" key={index}>
-              <div class="testimonial-info-wrap">
-                <div class="testimonial-quote d-inline-block">
+            <div className="testimonial-box text-center col-lg-10" key={index}>
+              <div className="testimonial-info-wrap">
+                <div className="testimonial-quote d-inline-block">
                   <img
                     src="/assets/img/testimonials/quote.svg"
                     alt=""
                     style={{ height: "45px", width: "45px" }}
                   />
                 </div>
-                <img class="testimonial-author-img" src={reviews.src} alt="" />
+                <img className="testimonial-author-img" src={reviews.src} alt="" />
                 <p>{reviews.description}</p>
                 <h3>
                   <strong>{reviews.name}</strong>

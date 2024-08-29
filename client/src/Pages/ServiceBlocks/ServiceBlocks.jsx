@@ -13,12 +13,12 @@ const ServiceBlocks = ({ sourceData, destinationData }) => {
 
   return (
     <section id="top-cab-routes" className="bg-inner menu-margin">
-      <div class="menu-section ">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="bottom-bar">
-                <div class="cab-menu1">
+      <div className="menu-section ">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="bottom-bar">
+                <div className="cab-menu1">
                   {sourceData &&
                     Object.keys(sourceData).map((category) => (
                       <ServiceBlocks1

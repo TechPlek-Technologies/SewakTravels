@@ -5,7 +5,7 @@ const DelhiToDestination = ({ data }) => {
 
   return (
     <div className="col-lg-12 pages-bg">
-      <h1 _ngcontent-taw-c63="" class="h1Header">
+      <h1 _ngcontent-taw-c63="" className="h1Header">
      {data.main}{" "}
       </h1>
       <section className="flight-detail-sec cab-detail-sec">

@@ -4,11 +4,11 @@ const CabFrom1 = ({ item }) => {
 
   return (
     
-    <div class="menu-content">
+    <div className="menu-content">
       <div>
         <img
           src={item?.imgSrc}
-          class="img-fluid lazyload cab-img"
+          className="img-fluid lazyload cab-img"
           alt=""
         />
       </div>
@@ -19,7 +19,7 @@ const CabFrom1 = ({ item }) => {
         <div className="cab-li">
        {item?.links?.map((el,i)=>{
         return(
-            <span className="cab-span">
+            <span className="cab-span" key={i}>
 
               {
                 i===item?.links.length-1 ? <Link to={el.src}>{el.name} </Link>:   <Link to={el.src}>{el.name}, </Link>
