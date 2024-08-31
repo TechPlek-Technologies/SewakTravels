@@ -176,6 +176,12 @@ import {
   dataVrindavan,
 } from "./Pages/SourceToDestination";
 import {
+  dataLtt,
+  dataVasai,
+  dataAmbernath,
+  dataKalyan,
+  dataBhiwandi,
+  dataNewPanvel,
   dataThane,
   dataShirur,
   dataPanvel,
@@ -3082,93 +3088,6 @@ function App() {
           />
 
           <Route
-            path={"/cab/dombivli-city-cabs"}
-            element={
-              <CabListing2
-                selectedValue={"Outstation One-Way"}
-                source="Khandala, Maharashtra, India"
-                blogdata={dataDombivli}
-              />
-            }
-          />
-
-          <Route
-            path={"/cab/imagica-city-cabs"}
-            element={
-              <CabListing2
-                selectedValue={"Outstation One-Way"}
-                source="Khandala, Maharashtra, India"
-                blogdata={dataImagica}
-              />
-            }
-          />
-
-          <Route
-            path={"/cab/mira-bhayandar-city-cabs"}
-            element={
-              <CabListing2
-                selectedValue={"Outstation One-Way"}
-                source="Khandala, Maharashtra, India"
-                blogdata={dataMiraBhayandar}
-              />
-            }
-          />
-
-          <Route
-            path={"/cab/navi-mumbai-city-cabs"}
-            element={
-              <CabListing2
-                selectedValue={"Outstation One-Way"}
-                source="Khandala, Maharashtra, India"
-                blogdata={dataNaviMumbai}
-              />
-            }
-          />
-
-          <Route
-            path={"/cab/panchgani-city-cabs"}
-            element={
-              <CabListing2
-                selectedValue={"Outstation One-Way"}
-                source="Khandala, Maharashtra, India"
-                blogdata={dataPanchgani}
-              />
-            }
-          />
-
-          <Route
-            path={"/cab/panvel-city-cabs"}
-            element={
-              <CabListing2
-                selectedValue={"Outstation One-Way"}
-                source="Khandala, Maharashtra, India"
-                blogdata={dataPanvel}
-              />
-            }
-          />
-
-          <Route
-            path={"/cab/shirur-city-cabs"}
-            element={
-              <CabListing2
-                selectedValue={"Outstation One-Way"}
-                source="Khandala, Maharashtra, India"
-                blogdata={dataShirur}
-              />
-            }
-          />
-          <Route
-            path={"/cab/thane-city-cabs"}
-            element={
-              <CabListing2
-                selectedValue={"Outstation One-Way"}
-                source="Khandala, Maharashtra, India"
-                blogdata={dataThane}
-              />
-            }
-          />
-
-          <Route
             path={"/cab/khandala-city-cabs"}
             element={
               <CabListing2
@@ -3186,17 +3105,6 @@ function App() {
                 selectedValue={"Outstation One-Way"}
                 source="Kedagaon, Maharashtra, India"
                 blogdata={dataKedagaon}
-              />
-            }
-          />
-
-          <Route
-            path={"/cab/andheri-city-cabs"}
-            element={
-              <CabListing2
-                selectedValue={"Outstation One-Way"}
-                source="Kedagaon, Maharashtra, India"
-                blogdata={dataAndheri}
               />
             }
           />
@@ -3239,6 +3147,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Shirur, Maharashtra, India"
+                blogdata={dataShirur}
               />
             }
           />
@@ -3249,6 +3158,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Imagica, Maharashtra, India"
+                blogdata={dataImagica}
               />
             }
           />
@@ -3259,6 +3169,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Panchgani, Maharashtra, India"
+                blogdata={dataPanchgani}
               />
             }
           />
@@ -3270,6 +3181,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="LTT, Mumbai, Maharashtra, India"
+                // blogdata={dataLtt}
               />
             }
           />
@@ -3280,6 +3192,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Andheri, Mumbai, Maharashtra, India"
+                blogdata={dataAndheri}
               />
             }
           />
@@ -3290,6 +3203,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Navi Mumbai, Maharashtra, India"
+                blogdata={dataNaviMumbai}
               />
             }
           />
@@ -3300,6 +3214,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Thane, Maharashtra, India"
+                blogdata={dataThane}
               />
             }
           />
@@ -3310,6 +3225,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Mira Bhayandar, Maharashtra, India"
+                blogdata={dataMiraBhayandar}
               />
             }
           />
@@ -3320,6 +3236,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="New Panvel, Maharashtra, India"
+                blogdata={dataNewPanvel}
               />
             }
           />
@@ -3330,6 +3247,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Panvel, Maharashtra, India"
+                blogdata={dataPanvel}
               />
             }
           />
@@ -3340,6 +3258,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Dombivli, Maharashtra, India"
+                blogdata={dataDombivli}
               />
             }
           />
@@ -3350,6 +3269,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Bhiwandi, Maharashtra, India"
+                // blogdata={dataBhiwandi}
               />
             }
           />
@@ -3360,6 +3280,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Kalyan, Maharashtra, India"
+                // blogdata={dataKalyan}
               />
             }
           />
@@ -3370,6 +3291,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Ambernath, Maharashtra, India"
+                // blogdata={dataAmbernath}
               />
             }
           />
@@ -3380,6 +3302,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Vasai, Maharashtra, India"
+                // blogdata={dataVasai}
               />
             }
           />

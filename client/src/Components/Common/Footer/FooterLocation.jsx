@@ -538,58 +538,6 @@ const FooterLocation = () => {
       title: "Other Taxi Services",
       links: [
         {
-          name: "Taxi service in Shirwal",
-          src: "/cab/shirwal-city-cabs",
-        },
-        {
-          name: "Taxi service in Aamby Valley",
-          src: "/cab/aamby-valley-city-cabs",
-        },
-        {
-          name: "Taxi service in Raigad",
-          src: "/cab/raigad-city-cabs",
-        },
-        {
-          name: "Taxi service in Lonavala",
-          src: "/cab/lonavala-city-cabs",
-        },
-        {
-          name: "Taxi service in Manchar",
-          src: "/cab/manchar-city-cabs",
-        },
-        {
-          name: "Taxi service in Khandala",
-          src: "/cab/khandala-city-cabs",
-        },
-        {
-          name: "Taxi service in Kedagaon",
-          src: "/cab/kedagaon-city-cabs",
-        },
-        {
-          name: "Taxi service in Imagica Adlab",
-          src: "/cab/imagica-adlab-city-cabs",
-        },
-        {
-          name: "Taxi service in Khopoli",
-          src: "/cab/khopoli-city-cabs",
-        },
-        {
-          name: "Taxi service in Shirur",
-          src: "/cab/shirur-city-cabs",
-        },
-        {
-          name: "Taxi service in Imagica",
-          src: "/cab/imagica-city-cabs",
-        },
-        {
-          name: "Taxi service in Panchgani",
-          src: "/cab/panchgani-city-cabs",
-        },        
-        {
-          name: "Taxi service in Pawna Lake",
-          src: "/cab/pawna-lake-city-cabs",
-        },
-        {
           name: "Taxi service in New Delhi",
           src: "/cab/delhi-city-cabs",
         },
@@ -740,12 +688,142 @@ const FooterLocation = () => {
           name: "Taxi service in Pimpri Chinchwad",
           src: "/cab/pimpri-chinchwad-city-cabs",
         },
-        { name: "Taxi service in Induri", src: "/cab/induri-city-cabs" },
-        { name: "Taxi service in Talegaon", src: "/cab/talegaon-city-cabs" },
-        { name: "Taxi service in Shikrapur", src: "/cab/shikrapur-city-cabs" },
-        { name: "Taxi service in Lavasa", src: "/cab/lavasa-city-cabs" },
-        { name: "Taxi service in Bhor", src: "/cab/bhor-city-cabs" },
-        { name: "Taxi service in Jejuri", src: "/cab/jejuri-city-cabs" },
+        {
+          name: "Taxi service in Induri",
+          src: "/cab/induri-city-cabs",
+        },
+        {
+          name: "Taxi service in Talegaon",
+          src: "/cab/talegaon-city-cabs",
+        },
+        {
+          name: "Taxi service in Shikrapur",
+          src: "/cab/shikrapur-city-cabs",
+        },
+        {
+          name: "Taxi service in Lavasa",
+          src: "/cab/lavasa-city-cabs",
+        },
+        {
+          name: "Taxi service in Bhor",
+          src: "/cab/bhor-city-cabs",
+        },
+        {
+          name: "Taxi service in Jejuri",
+          src: "/cab/jejuri-city-cabs",
+        },
+        {
+          name: "Taxi service in Thane",
+          src: "/cab/thane-city-cabs",
+        },
+        {
+          name: "Taxi service in Shirur",
+          src: "/cab/shirur-city-cabs",
+        },
+        {
+          name: "Taxi service in Panvel",
+          src: "/cab/panvel-city-cabs",
+        },
+        {
+          name: "Taxi service in Panchgani",
+          src: "/cab/panchgani-city-cabs",
+        },
+        {
+          name: "Taxi service in New Panvel",
+          src: "/cab/new-panvel-city-cabs",
+        },
+        {
+          name: "Taxi service in Navi Mumbai",
+          src: "/cab/navi-mumbai-city-cabs",
+        },
+        {
+          name: "Taxi service in Mira Bhayandar",
+          src: "/cab/mira-bhayandar-city-cabs",
+        },
+        {
+          name: "Taxi service in Imagica",
+          src: "/cab/imagica-city-cabs",
+        },
+        {
+          name: "Taxi service in Dombivli",
+          src: "/cab/dombivli-city-cabs",
+        },
+        {
+          name: "Taxi service in Andheri",
+          src: "/cab/andheri-city-cabs",
+        },
+        {
+          name: "Taxi service in Shirwal",
+          src: "/cab/shirwal-city-cabs",
+        },
+        {
+          name: "Taxi service in Aamby Valley",
+          src: "/cab/aamby-valley-city-cabs",
+        },
+        {
+          name: "Taxi service in Raigad",
+          src: "/cab/raigad-city-cabs",
+        },
+        {
+          name: "Taxi service in Lonavala",
+          src: "/cab/lonavala-city-cabs",
+        },
+        {
+          name: "Taxi service in Manchar",
+          src: "/cab/manchar-city-cabs",
+        },
+        {
+          name: "Taxi service in Khandala",
+          src: "/cab/khandala-city-cabs",
+        },
+        {
+          name: "Taxi service in Kedagaon",
+          src: "/cab/kedagaon-city-cabs",
+        },
+        {
+          name: "Taxi service in Imagica Adlab",
+          src: "/cab/imagica-adlab-city-cabs",
+        },
+        {
+          name: "Taxi service in Khopoli",
+          src: "/cab/khopoli-city-cabs",
+        },
+        {
+          name: "Taxi service in Shirur",
+          src: "/cab/shirur-city-cabs",
+        },
+        {
+          name: "Taxi service in Imagica",
+          src: "/cab/imagica-city-cabs",
+        },
+        {
+          name: "Taxi service in Panchgani",
+          src: "/cab/panchgani-city-cabs",
+        },
+        {
+          name: "Taxi service in Pawna Lake",
+          src: "/cab/pawna-lake-city-cabs",
+        },
+        // {
+        //   name: "Taxi service in Bhiwandi",
+        //   src: "/cab/bhiwandi-city-cabs",
+        // },
+        // {
+        //   name: "Taxi service in Kalyan",
+        //   src: "/cab/kalyan-city-cabs",
+        // },
+        // {
+        //   name: "Taxi service in Ambernath",
+        //   src: "/cab/ambernath-city-cabs",
+        // },
+        // {
+        //   name: "Taxi service in Vasai ",
+        //   src: "/cab/vasai-city-cabs",
+        // },
+        // {
+        //   name: "Taxi service in Ltt ",
+        //   src: "/cab/ltt-city-cabs",
+        // },
       ],
     },
     OtherCities: {
