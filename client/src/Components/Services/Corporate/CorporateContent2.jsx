@@ -1,25 +1,25 @@
 const CorporateContent2 = ({ side }) => {
     return (
-      <section class="single-section small-section bg-inner">
-      <div class="container">
-          <div class="row">
-              <div class="col-xl-12 col-lg-12">
-                  <div class="description-section tab-section">
-                      <div class="description-details">
-                          <div class="desc-box">
-                              <div class="menu-part mt-0 about" id="highlight">
-                                  <div class="about-sec">
+      <section className="single-section small-section bg-inner">
+      <div className="container">
+          <div className="row">
+              <div className="col-xl-12 col-lg-12">
+                  <div className="description-section tab-section">
+                      <div className="description-details">
+                          <div className="desc-box">
+                              <div className="menu-part mt-0 about" id="highlight">
+                                  <div className="about-sec">
                                   <h2 className="service-h2">Empower Your Workforce with Seamless Transportation Services</h2>
                                   <p>
                                   In the dynamic landscape of modern businesses, efficient employee transport services are paramount to the success and productivity of any organization. Sewak Travels understands the critical role transportation services play in the daily operations of businesses, particularly in facilitating the commute of employees. With a firm commitment to excellence and innovation, Sewak Travels offers a comprehensive suite of corporate employee transportation services tailored to meet the diverse needs of businesses. From online transport service booking to tailored staff transportation solutions, we're here to ensure your employees reach their destinations safely and on time. 
                                   </p>
                                   </div>
-                                  <div class="detail-img">
-                                      <img src="/assets/img/banner/employee-cabs.webp" class="img-fluid lazyload"
+                                  <div className="detail-img">
+                                      <img src="/assets/img/banner/employee-cabs.webp" className="img-fluid lazyload"
                                           alt=""/>
                                   </div>
                                   
-                                  <div class="about-sec">
+                                  <div className="about-sec">
                                       <h2 className="service-h2">Begin Your Affordable & Convenient Employee Rides with Sewak Travels </h2>
                                       <p>Sewak Travels believe that a great day starts with a great ride. That's why we've crafted a unique and innovative solution to revolutionize your daily commute. Our Employee Transport Service is not your average mode of transportation; it's a seamless blend of convenience, comfort, and camaraderie.</p>
                                       <p>Gone are the days of navigating through traffic, endlessly searching for parking spots, and stressing about reaching your office on time. Our dedicated team of drivers and well-maintained fleet of vehicles are here to take the hassle out of your morning routine. Sit back, relax, and let us handle the logistics, while you enjoy a stress-free journey to work.</p>
@@ -49,15 +49,15 @@ const CorporateContent2 = ({ side }) => {
                                     </ul>
                                   </div>
 
-                                  <div class="about-sec">
+                                  <div className="about-sec">
                                       <h3 className="service-h3">Dedicated Customer Support</h3>
                                       <p>At Sewak Travels, customer satisfaction is at the forefront of everything we do. Our dedicated customer support team is available 24/7 to assist clients with any inquiries or issues related to their transportation needs. Whether you have questions about booking a ride or need assistance during your journey, our team is committed to providing prompt and effective solutions.</p>
                                   </div>
-                                  <div class="about-sec">
+                                  <div className="about-sec">
                                   <h3 className="service-h3">Innovation and Sustainability: Driving the Future of Employee          Transportation</h3>
                                       <p>As a forward-thinking corporate employee transportation provider, Sewak Travels is continuously exploring innovative solutions to enhance the efficiency and sustainability of employee transportation. From investing in eco-friendly vehicles to implementing advanced route optimization technologies, we are dedicated to reducing our environmental footprint while maximizing operational efficiency.</p>
                                   </div>
-                                  <div class="about-sec">
+                                  <div className="about-sec">
                                   <h3 className="service-h3">Your Trusted Partner in Employee Transportation</h3>
                                       <p>Sewak Travels stands as a beacon of excellence in the realm of employee transportation services. With our comprehensive range of services, unwavering commitment to customer satisfaction, and relentless pursuit of innovation, we are poised to revolutionize the way businesses approach transportation for their workforce. </p>
                                       <p>Join the countless businesses that trust Sewak Travels for their employee transportation needs. Contact us today to learn more about our services and discover how we can help streamline transportation for your workforce. With Sewak Travels, your employees' journey is our priority.</p>

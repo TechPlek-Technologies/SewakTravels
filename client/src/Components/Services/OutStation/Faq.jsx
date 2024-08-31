@@ -1,17 +1,17 @@
 const Faq = ({ side }) => {
     return (
-      <section class="single-section small-section bg-inner">
-      <div class="container">
-          <div class="row">
-              <div class="col-xl-12 col-lg-12">
-                  <div class="description-section tab-section">
-                      <div class="description-details">
-                          <div class="desc-box">
-                              <div class="menu-part mt-0 about" id="highlight">
-                                  <div class="about-sec">
+      <section className="single-section small-section bg-inner">
+      <div className="container">
+          <div className="row">
+              <div className="col-xl-12 col-lg-12">
+                  <div className="description-section tab-section">
+                      <div className="description-details">
+                          <div className="desc-box">
+                              <div className="menu-part mt-0 about" id="highlight">
+                                  <div className="about-sec">
                                     <h3>FAQ's</h3>
                                   </div>
-                                  <div class="about-sec">
+                                  <div className="about-sec">
                                       <h6>Q: Which is the best outstation taxi service near me?</h6>
                                       <p>A: Sewak Travels provides the most reliable and affordable taxi service. They provide OutstationTaxi and Cabs at cheap prices in India.</p>
                                       <h6>Q: Are you looking for reliable outstation taxi services from Delhi?</h6>

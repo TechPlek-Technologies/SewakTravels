@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import { Suspense, lazy, useEffect, useState } from "react";
+import { Suspense, lazy } from "react";
 import Loader from "./Layout/Loader";
 import Intercity from "./Pages/Services/Intercity";
 import {
@@ -175,7 +175,100 @@ import {
   dataVisakhapatnam,
   dataVrindavan,
 } from "./Pages/SourceToDestination";
-import { dataAchrol, dataAlilaFortBishangarh, dataAmbah, dataAsalpurJobner, dataBaghpat, dataBagpat, dataBahadurgarh, dataBarau, dataBaraut1, dataBasai, dataBassi, dataBegas, dataBhambhoria, dataBharatpur1, dataBhor, dataBisawar, dataChaksu, dataChomu, dataDadri, dataDausa, dataDelhi, dataDholpur, dataFaridabad1, dataFatehpurSikri, dataFirozabad, dataGautamBuddhaNagar, dataGhaziabad, dataGovardhan, dataGreaterNoida, dataGurgaon, dataGurugram, dataHathras, dataHolipura, dataIglas, dataInduri, dataJalesar, dataJejuri, dataJobner, dataKagarol, dataKharkhoda, dataKhatuShyam, dataKukas, dataLavasa, dataManesar1, dataMathura1, dataMehandipurBalaji, dataModinagar, dataMojamabaad, dataMurthal1, dataNoida1, dataPawta, dataPimpriChinchwad, dataRajakhera, dataRenwal, dataRingas, dataSadabad, dataSasni, dataShahpura, dataShamshabad, dataShekhawati, dataShikohabad, dataShikrapur, dataSonipat1, dataTalegaon, dataTundla, dataViratNagar, dataVrindavan1 } from "./Pages/OtherTaxiData";
+import {
+  dataLtt,
+  dataVasai,
+  dataAmbernath,
+  dataKalyan,
+  dataBhiwandi,
+  dataNewPanvel,
+  dataThane,
+  dataShirur,
+  dataPanvel,
+  dataPanchgani,
+  dataNaviMumbai,
+  dataMiraBhayandar,
+  dataImagica,
+  dataDombivli,
+  dataAndheri,
+  dataAambyValley,
+  dataiMagicaAdlab,
+  dataKhopoli,
+  dataKhandala,
+  dataKedagaon,
+  dataRaigad,
+  dataPawnalake,
+  dataAchrol,
+  dataAlilaFortBishangarh,
+  dataAmbah,
+  dataAsalpurJobner,
+  dataBaghpat,
+  dataBagpat,
+  dataBahadurgarh,
+  dataBarau,
+  dataBaraut1,
+  dataBasai,
+  dataBassi,
+  dataBegas,
+  dataBhambhoria,
+  dataBharatpur1,
+  dataBhor,
+  dataBisawar,
+  dataChaksu,
+  dataChomu,
+  dataDadri,
+  dataDausa,
+  dataDelhi,
+  dataDholpur,
+  dataFaridabad1,
+  dataFatehpurSikri,
+  dataFirozabad,
+  dataGautamBuddhaNagar,
+  dataGhaziabad,
+  dataGovardhan,
+  dataGreaterNoida,
+  dataGurgaon,
+  dataGurugram,
+  dataHathras,
+  dataHolipura,
+  dataIglas,
+  dataInduri,
+  dataJalesar,
+  dataJejuri,
+  dataJobner,
+  dataKagarol,
+  dataKharkhoda,
+  dataKhatuShyam,
+  dataKukas,
+  dataLavasa,
+  dataManesar1,
+  dataMathura1,
+  dataMehandipurBalaji,
+  dataModinagar,
+  dataMojamabaad,
+  dataMurthal1,
+  dataNoida1,
+  dataPawta,
+  dataPimpriChinchwad,
+  dataRajakhera,
+  dataRenwal,
+  dataRingas,
+  dataSadabad,
+  dataSasni,
+  dataShahpura,
+  dataShamshabad,
+  dataShekhawati,
+  dataShikohabad,
+  dataShikrapur,
+  dataSonipat1,
+  dataTalegaon,
+  dataTundla,
+  dataViratNagar,
+  dataVrindavan1,
+  dataLonavala,
+  dataManchar,
+  dataShirwal,
+} from "./Pages/OtherTaxiData";
 
 const Home = lazy(() => import("./Pages/Home"));
 
@@ -2934,16 +3027,18 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Pawna Lake, Maharashtra, India"
+                blogdata={dataPawnalake}
               />
             }
           />
 
           <Route
-            path={"/cab/shirval-city-cabs"}
+            path={"/cab/shirwal-city-cabs"}
             element={
               <CabListing2
                 selectedValue={"Outstation One-Way"}
-                source="Shirval, Maharashtra, India"
+                source="Shirwal, Maharashtra, India"
+                blogdata={dataShirwal}
               />
             }
           />
@@ -2954,6 +3049,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Aamby Valley, Maharashtra, India"
+                blogdata={dataAambyValley}
               />
             }
           />
@@ -2964,6 +3060,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Raigad, Maharashtra, India"
+                blogdata={dataRaigad}
               />
             }
           />
@@ -2974,6 +3071,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Lonavala, Maharashtra, India"
+                blogdata={dataLonavala}
               />
             }
           />
@@ -2984,6 +3082,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Manchar, Maharashtra, India"
+                blogdata={dataManchar}
               />
             }
           />
@@ -2994,6 +3093,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Khandala, Maharashtra, India"
+                blogdata={dataKhandala}
               />
             }
           />
@@ -3002,6 +3102,17 @@ function App() {
             path={"/cab/kedagaon-city-cabs"}
             element={
               <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Kedagaon, Maharashtra, India"
+                blogdata={dataKedagaon}
+              />
+            }
+          />
+
+          <Route
+            path={"/cab/kedagaon-city-cabs"}
+            element={
+              <CabListing2 //SHIRWAL
                 selectedValue={"Outstation One-Way"}
                 source="Kedagaon, Maharashtra, India"
               />
@@ -3014,6 +3125,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Imagica Adlab, Maharashtra, India"
+                blogdata={dataiMagicaAdlab}
               />
             }
           />
@@ -3024,6 +3136,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Khopoli, Maharashtra, India"
+                blogdata={dataKhopoli}
               />
             }
           />
@@ -3034,6 +3147,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Shirur, Maharashtra, India"
+                blogdata={dataShirur}
               />
             }
           />
@@ -3044,6 +3158,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Imagica, Maharashtra, India"
+                blogdata={dataImagica}
               />
             }
           />
@@ -3054,6 +3169,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Panchgani, Maharashtra, India"
+                blogdata={dataPanchgani}
               />
             }
           />
@@ -3065,6 +3181,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="LTT, Mumbai, Maharashtra, India"
+                // blogdata={dataLtt}
               />
             }
           />
@@ -3075,6 +3192,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Andheri, Mumbai, Maharashtra, India"
+                blogdata={dataAndheri}
               />
             }
           />
@@ -3085,6 +3203,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Navi Mumbai, Maharashtra, India"
+                blogdata={dataNaviMumbai}
               />
             }
           />
@@ -3095,6 +3214,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Thane, Maharashtra, India"
+                blogdata={dataThane}
               />
             }
           />
@@ -3105,6 +3225,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Mira Bhayandar, Maharashtra, India"
+                blogdata={dataMiraBhayandar}
               />
             }
           />
@@ -3115,6 +3236,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="New Panvel, Maharashtra, India"
+                blogdata={dataNewPanvel}
               />
             }
           />
@@ -3125,6 +3247,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Panvel, Maharashtra, India"
+                blogdata={dataPanvel}
               />
             }
           />
@@ -3135,6 +3258,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Dombivli, Maharashtra, India"
+                blogdata={dataDombivli}
               />
             }
           />
@@ -3145,6 +3269,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Bhiwandi, Maharashtra, India"
+                // blogdata={dataBhiwandi}
               />
             }
           />
@@ -3155,6 +3280,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Kalyan, Maharashtra, India"
+                // blogdata={dataKalyan}
               />
             }
           />
@@ -3165,6 +3291,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Ambernath, Maharashtra, India"
+                // blogdata={dataAmbernath}
               />
             }
           />
@@ -3175,6 +3302,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Vasai, Maharashtra, India"
+                // blogdata={dataVasai}
               />
             }
           />

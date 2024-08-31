@@ -39,32 +39,32 @@ const ReviewContentTest = () => {
       <div>
         <Slider {...slide2} className="slide-2 arrow-classic">
           {reviews.map((reviews, index) => (
-            <div class="slide-3 no-arrow" key={index}>
+            <div className="slide-3 no-arrow" key={index}>
               <div>
-                <div class="blog-wrap" style={{backgroundColor:"#fff",height:"480px"}}>
-                  <div class="blog-image">
+                <div className="blog-wrap" style={{backgroundColor:"#fff",height:"480px"}}>
+                  <div className="blog-image">
                     <div className="testimonial-img">
                       <img
                         src={reviews.src}
-                        class="img-fluid lazyload bg-img"
+                        className="img-fluid lazyload bg-img"
                         alt=""
                         style={{ height: "150px", width: "150px",borderRadius: "10px"}}
                       />
                     </div>
                   </div>
-                  <div class="destination-details">
+                  <div className="destination-details">
                     <div>
                       <h2>{reviews.name}</h2>
                       <h6>{reviews.description}</h6>
                     </div>
                   </div>
-                  <div class="detail">
-                    <div class="rating testimonial-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
+                  <div className="detail">
+                    <div className="rating testimonial-rating">
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="fas fa-star"></i>
+                      <i className="far fa-star"></i>
                     </div>
                   </div>
                 </div>

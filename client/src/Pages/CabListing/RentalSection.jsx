@@ -104,9 +104,9 @@ function RentalSection({ destination }) {
                 </tr>
               </thead>
               <tbody>
-                {DataList.map((data) => {
+                {DataList.map((data,index) => {
                   return (
-                    <tr className="">
+                    <tr className="" key={index}>
                       <td className="px-2 py-3 align-middle">
                         <div className="d-flex align-items-center">
                           <img

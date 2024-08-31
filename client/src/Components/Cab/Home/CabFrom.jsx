@@ -240,13 +240,13 @@ const CabFrom = ({ type }) => {
   ];
   return (
     <section>
-      <div class="menu-section ">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="menu-box">
-                <div class="bottom-bar">
-                  <div class="cab-menu">
+      <div className="menu-section ">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="menu-box">
+                <div className="bottom-bar">
+                  <div className="cab-menu">
                     {data?.map((item) => {
                       return <CabFrom1 key={item?.id} item={item} />;
                     })}

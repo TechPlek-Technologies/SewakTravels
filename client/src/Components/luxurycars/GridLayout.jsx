@@ -6,8 +6,8 @@ const GridLayout = ({filteredMenu, view,grid }) => {
   return (
     <div className={`product-wrapper-grid special-section grid-box`}>
       <div className={`row content`}>
-        {filteredMenu.map((item) => (
-          <CabGrid data={item} view={view} grid={grid}/>
+        {filteredMenu.map((item,index) => (
+          <CabGrid data={item} view={view} grid={grid} key={index}/>
         ))}
       </div>
     </div>
