@@ -804,26 +804,122 @@ const FooterLocation = () => {
           name: "Taxi service in Pawna Lake",
           src: "/cab/pawna-lake-city-cabs",
         },
-        // {
-        //   name: "Taxi service in Bhiwandi",
-        //   src: "/cab/bhiwandi-city-cabs",
-        // },
-        // {
-        //   name: "Taxi service in Kalyan",
-        //   src: "/cab/kalyan-city-cabs",
-        // },
-        // {
-        //   name: "Taxi service in Ambernath",
-        //   src: "/cab/ambernath-city-cabs",
-        // },
-        // {
-        //   name: "Taxi service in Vasai ",
-        //   src: "/cab/vasai-city-cabs",
-        // },
-        // {
-        //   name: "Taxi service in Ltt ",
-        //   src: "/cab/ltt-city-cabs",
-        // },
+        {
+          name: "Taxi service in Bhiwandi",
+          src: "/cab/bhiwandi-city-cabs",
+        },
+        {
+          name: "Taxi service in Kalyan",
+          src: "/cab/kalyan-city-cabs",
+        },
+        {
+          name: "Taxi service in Ambernath",
+          src: "/cab/ambernath-city-cabs",
+        },
+        {
+          name: "Taxi service in Vasai ",
+          src: "/cab/vasai-city-cabs",
+        },
+        {
+          name: "Taxi service in Ltt ",
+          src: "/cab/ltt-city-cabs",
+        },
+        {
+          name: "Taxi service in Matheran",
+          src: "/cab/matheran-city-cabs",
+        },
+        {
+          name: "Taxi service in Aman Lodge",
+          src: "/cab/aman-lodge-city-cabs",
+        },
+        {
+          name: "Taxi service in Virar",
+          src: "/cab/virar-city-cabs",
+        },
+        {
+          name: "Taxi service in Alibag",
+          src: "/cab/alibag-city-cabs",
+        },
+        {
+          name: "Taxi service in Neral",
+          src: "/cab/neral-city-cabs",
+        },
+        {
+          name: "Taxi service in Mohali",
+          src: "/cab/mohali-city-cabs",
+        },
+        {
+          name: "Taxi service in Sahibzada Ajit Singh Nagar",
+          src: "/cab/sahibzada-ajit-singh-nagar-city-cabs",
+        },
+        {
+          name: "Taxi service in Zira",
+          src: "/cab/zira-city-cabs",
+        },
+        {
+          name: "Taxi service in Zirakpur",
+          src: "/cab/zirakpur-city-cabs",
+        },
+        {
+          name: "Taxi service in Kharar",
+          src: "/cab/kharar-city-cabs",
+        },
+        {
+          name: "Taxi service in Darpan",
+          src: "/cab/darpan-city-cabs",
+        },
+        {
+          name: "Taxi service in Dera Bassi",
+          src: "/cab/dera-bassi-city-cabs",
+        },
+        {
+          name: "Taxi service in Parwanoo",
+          src: "/cab/parwanoo-city-cabs",
+        },
+        {
+          name: "Taxi service in Kurali",
+          src: "/cab/kurali-city-cabs",
+        },
+        {
+          name: "Taxi service in Baddi",
+          src: "/cab/baddi-city-cabs",
+        },
+        {
+          name: "Taxi service in Kasauli",
+          src: "/cab/kasauli-city-cabs",
+        },
+        {
+          name: "Taxi service in Lalru",
+          src: "/cab/lalru-city-cabs"
+      },
+      {
+          name: "Taxi service in Rajpur",
+          src: "/cab/rajpur-city-cabs"
+      },
+      {
+          name: "Taxi service in Rajpura",
+          src: "/cab/rajpura-city-cabs"
+      },
+      {
+          name: "Taxi service in Nalagarh",
+          src: "/cab/nalagarh-city-cabs"
+      },
+      {
+          name: "Taxi service in Ropar",
+          src: "/cab/ropar-city-cabs"
+      },
+      {
+          name: "Taxi service in Badalapur",
+          src: "/cab/badalapur-city-cabs"
+      },
+      {
+          name: "Taxi service in Kalka",
+          src: "/cab/kalka-city-cabs"
+      },
+      {
+          name: "Taxi service in Barog",
+          src: "/cab/barog-city-cabs"
+      }
       ],
     },
     OtherCities: {
