@@ -15,7 +15,7 @@ export const dataLalru = {
   sub4: "Online Lalru Cab Booking with Sewak Travels",
   sub4content:
     "For Lalru cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Lalru cabs for your journey. Additionally, you can book your Lalru taxi for either a one-way cab booking or Lalru taxi round trip. For a seamless online taxi booking Lalru experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Lalru cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
-   img: "/assets/img/LocationDifferent/Lalru.webp",
+  img: "/assets/img/LocationDifferent/Lalru.webp",
   sub5: "Why Choose Sewak Travels to Book a Lalru Cab?",
   sub5content:
     "Sewak Travels takes the hassle out of booking a Lalru Cab by offering premium services at affordable Lalru taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit Sewak Travels, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Lalru taxi service, why wait any longer?",
@@ -48,7 +48,7 @@ export const dataLalru = {
   sub8content: {
     p1: "Outstation cabs from Lalru",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Lalru.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Lalru.",
     p2: "A few of the top places to visit with outstation cabs from Lalru include:",
     h1: "Destination",
     locations: ["Chandigarh", "Ambala", "Patiala", "Mohali", "Panchkula"],
@@ -133,7 +133,7 @@ export const dataRajpur = {
   sub4: "Online Rajpur Cab Booking with Sewak Travels",
   sub4content:
     "For Rajpur cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Rajpur cabs for your journey. Additionally, you can book your Rajpur taxi for either a one way cab booking or Rajpur taxi round trip. For a seamless online taxi booking Rajpur experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Rajpur cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
-   img: "/assets/img/LocationDifferent/Rajpur.webp",
+  img: "/assets/img/LocationDifferent/Rajpur.webp",
   sub5: "Why Choose Sewak Travels to Book a Rajpur Cab?",
   sub5content:
     "Sewak Travels takes the hassle out of booking a Rajpur Cab by offering premium services at affordable Rajpur taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Rajpur taxi service, why wait any longer?",
@@ -166,7 +166,7 @@ export const dataRajpur = {
   sub8content: {
     p1: "Outstation cabs from Rajpur",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Rajpur. ",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Rajpur. ",
     p2: "A few of the top places to visit with outstation cabs from Rajpur include:",
     h1: "Destination",
     locations: ["Dehradun", "Mussoorie", "Haridwar", "Rishikesh", "Roorkee"],
@@ -237,128 +237,202 @@ export const dataRajpur = {
 export const dataRajpura = {
   main: "Book a Cab in Rajpura ",
   sub: "Book a Cab in Rajpura with Sewak Travels",
-  subcontent: "Explore the scenic beauty of Rajpura, a captivating tourist destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Rajpura to discover the city's numerous tourist attractions. Whether you prefer private or public transportation, abundant options are available for reaching Rajpura. Apart from flights and trains, you can easily reach Rajpura by cab, enjoying a picturesque and smooth road trip. Additionally, the taxi service in Rajpura offers convenient travel between tourist spots and for Rajpura Outstation Cabs journeys. When booking a cab service in Rajpura, you'll find a variety of options to book car rental online. You can book a cab in Rajpura for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Rajpura or outstation cabs Rajpura with Sewak for a seamless journey.",
+  subcontent:
+    "Explore the scenic beauty of Rajpura, a captivating tourist destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Rajpura to discover the city's numerous tourist attractions. Whether you prefer private or public transportation, abundant options are available for reaching Rajpura. Apart from flights and trains, you can easily reach Rajpura by cab, enjoying a picturesque and smooth road trip. Additionally, the taxi service in Rajpura offers convenient travel between tourist spots and for Rajpura Outstation Cabs journeys. When booking a cab service in Rajpura, you'll find a variety of options to book car rental online. You can book a cab in Rajpura for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Rajpura or outstation cabs Rajpura with Sewak for a seamless journey.",
   sub1: "Booking Cabs in Rajpura",
-  sub1content: "Finding cabs in Rajpura is effortless and convenient. You can easily hire outstation cabs in Rajpura or local taxi service in Rajpura online. For exploring the various tourist attractions in Rajpura, the best option is to make an online cab booking in Rajpura. Once you have secured a Rajpura taxi, you're all set to discover every nook and cranny of the city. For a comfortable and hassle-free ride at an affordable Rajpura taxi fare, you can also conveniently book a taxi in Rajpura with Sewak Travels. Pre-booking cab service in Rajpura allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Rajpura available on Sewak Travels to find and book a cab in Rajpura for your needs. Don’t wait, book the best taxi service in Rajpura with us.",
+  sub1content:
+    "Finding cabs in Rajpura is effortless and convenient. You can easily hire outstation cabs in Rajpura or local taxi service in Rajpura online. For exploring the various tourist attractions in Rajpura, the best option is to make an online cab booking in Rajpura. Once you have secured a Rajpura taxi, you're all set to discover every nook and cranny of the city. For a comfortable and hassle-free ride at an affordable Rajpura taxi fare, you can also conveniently book a taxi in Rajpura with Sewak Travels. Pre-booking cab service in Rajpura allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Rajpura available on Sewak Travels to find and book a cab in Rajpura for your needs. Don’t wait, book the best taxi service in Rajpura with us.",
   sub2: "Rajpura Cab Price",
-  sub2content: "Sewak Travels provides economical Rajpura cab prices. You can choose from a range of air-conditioned cabs in Rajpura that align with your budget and requirements, ensuring the best deals on Rajpura taxi charges in the city. Various options exist for Rajpura taxi booking, offering diverse services, deals, and Rajpura taxi service prices. Opting for Sewak Travels for your Rajpura cab service booking can unlock enticing discounts and offers. The Rajpura taxi fare may vary based on factors such as journey date, time, and type of vehicle chosen (sedan, SUV, luxury car, etc.), distance/Kms traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
+  sub2content:
+    "Sewak Travels provides economical Rajpura cab prices. You can choose from a range of air-conditioned cabs in Rajpura that align with your budget and requirements, ensuring the best deals on Rajpura taxi charges in the city. Various options exist for Rajpura taxi booking, offering diverse services, deals, and Rajpura taxi service prices. Opting for Sewak Travels for your Rajpura cab service booking can unlock enticing discounts and offers. The Rajpura taxi fare may vary based on factors such as journey date, time, and type of vehicle chosen (sedan, SUV, luxury car, etc.), distance/Kms traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
   sub3: "Car Rental Services in Rajpura",
-  sub3content: "Rajpura cab service is available year-round, offering customizable Rajpura taxi packages to suit your preferences. In addition to cabs, you can explore various Rajpura taxi services at different Rajpura taxi price points. Sewak Travels provides a reliable and cheapest cab service in Rajpura with a wide range of choices to enhance your travel experience. Depending on your needs, you can select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before you book a Taxi Service in Rajpura, you can review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
+  sub3content:
+    "Rajpura cab service is available year-round, offering customizable Rajpura taxi packages to suit your preferences. In addition to cabs, you can explore various Rajpura taxi services at different Rajpura taxi price points. Sewak Travels provides a reliable and cheapest cab service in Rajpura with a wide range of choices to enhance your travel experience. Depending on your needs, you can select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before you book a Taxi Service in Rajpura, you can review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
   sub4: "Online Rajpura Cab Booking with Sewak Travels",
-  sub4content: "For Rajpura cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Rajpura cabs for your journey. Additionally, you can book your Rajpura taxi for either a one-way cab booking or Rajpura taxi round trip. For a seamless online taxi booking Rajpura experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Rajpura cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
-  img: "/assets/img/LocationDifferent/Rajpura.webp",
+  sub4content:
+    "For Rajpura cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Rajpura cabs for your journey. Additionally, you can book your Rajpura taxi for either a one-way cab booking or Rajpura taxi round trip. For a seamless online taxi booking Rajpura experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Rajpura cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
+  img: "",
   sub5: "Why Choose Sewak Travels to Book a Rajpura Cab?",
-  sub5content: "Sewak Travels takes the hassle out of booking a Rajpura Cab by offering premium services at affordable Rajpura taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Rajpura taxi service, why wait any longer?",
+  sub5content:
+    "Sewak Travels takes the hassle out of booking a Rajpura Cab by offering premium services at affordable Rajpura taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Rajpura taxi service, why wait any longer?",
   sub6: "Book your Rajpura Cabs effortlessly:",
-  sub6content: "When you choose Sewak for your cab service in Rajpura, you get:",
+  sub6content:
+    "When you choose Sewak for your cab service in Rajpura, you get:",
   sub6H1: "Professional drivers:",
-  sub6H1inner: "Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Rajpura and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Rajpura taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+  sub6H1inner:
+    "Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Rajpura and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Rajpura taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
   sub6H2: "Budget-friendly prices: ",
-  sub6H2inner: "Sewak offers budget-friendly prices, ensuring the best cab service in Rajpura without compromising quality or comfort.",
+  sub6H2inner:
+    "Sewak offers budget-friendly prices, ensuring the best cab service in Rajpura without compromising quality or comfort.",
   sub6H3: "24/7 Booking & Travel Assistance: ",
-  sub6H3inner: "Sewak's taxi service operates 24/7, offering convenient cab booking Rajpura options for customers whenever transportation is needed.",
+  sub6H3inner:
+    "Sewak's taxi service operates 24/7, offering convenient cab booking Rajpura options for customers whenever transportation is needed.",
   sub6H4: "Diverse Rajpura Taxi Options:",
-  sub6H4inner: "When selecting our Rajpura cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs Rajpura Cab (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV Rajpura Cab offers ample space for up to four bags. We also offer options for Rajpura sharing cab.",
+  sub6H4inner:
+    "When selecting our Rajpura cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs Rajpura Cab (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV Rajpura Cab offers ample space for up to four bags. We also offer options for Rajpura sharing cab.",
   sub7: "Various Rajpura Taxi Services by Sewak Travels",
   sub7content: {
     p1: "At Sewak, we cater to a variety of travel needs with our specialized taxi services in Rajpura, encompassing three distinct categories: outstation cabs Rajpura trips, full day cab in Rajpura, seamless half-day local taxi service in Rajpura excursions.",
     h1: "Local cabs in Rajpura",
-    h1content: "Rajpura is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Rajpura through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab and full day cab in Rajpura. Sewak is the premier choice for finding high-quality yet affordable cabs in Rajpura, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
+    h1content:
+      "Rajpura is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Rajpura through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab and full day cab in Rajpura. Sewak is the premier choice for finding high-quality yet affordable cabs in Rajpura, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
     h2: "Rajpura outstation cab service",
-    h2content: "You can easily travel to nearby cities with cabs from Rajpura and hire an outstation taxi service Rajpura for both round trips and one way cab booking journeys. Outstation taxi service Rajpura is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Rajpura for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
-    h3content: ""
+    h2content:
+      "You can easily travel to nearby cities with cabs from Rajpura and hire an outstation taxi service Rajpura for both round trips and one way cab booking journeys. Outstation taxi service Rajpura is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Rajpura for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
+    h3content: "",
   },
   sub8: "Places to Visit with Rajpura Outstation Cabs",
   sub8content: {
     p1: "Outstation cabs from Rajpura",
-    p1inner: "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Rajpura. ",
+    p1inner:
+      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Rajpura. ",
     p2: "A few of the top places to visit with outstation cabs from Rajpura include:",
     h1: "Destination",
-    locations: [
-      "Chandigarh",
-      "Patiala",
-      "Ambala",
-      "Mohali",
-      "Ludhiana"
+    locations: ["Chandigarh", "Patiala", "Ambala", "Mohali", "Ludhiana"],
+    p3: "If you're traveling to Rajpura from a nearby destination, you can avail of taxi booking in Rajpura services for a few of the routes including:",
+    delhiLoc: [
+      "Chandigarh to Rajpura",
+      "Patiala to Rajpura",
+      "Ambala to Rajpura",
+      "Mohali to Rajpura",
+      "Ludhiana to Rajpura",
     ],
-    p3: "If you're planning to make stops along the way, we recommend opting for a Rajpura outstation round trip. This way, you can plan your stops and explore places before reaching your destination.",
-    p4: "When you book Rajpura Outstation Cabs with Sewak, you enjoy an affordable taxi fare without compromising on comfort. Our taxis are regularly sanitized to ensure passenger safety. Choose from a range of car models including Dzire, Etios, Ertiga, and Innova for your journey. Additionally, we offer convenient one-way cab booking services."
+    p4: "Visit the Sewak Travels’ official website to compare cab fares for various Rajpura Taxi Services.",
   },
-  sub9: "Get the Best Rajpura Outstation Cabs Price with Sewak Travels",
-  sub9content: "With our well-established cab service, we make sure you always get the best Rajpura outstation cab prices. Depending on your needs and budget, you can choose from various car types such as Prime SUVs, Hatchbacks, Sedans, and more to ensure a comfortable and enjoyable ride to your destination. When traveling with Sewak Travels, your safety is our top priority. We follow all COVID-19 protocols, and our cabs are thoroughly sanitized after each trip. Whether you're booking a one-way cab or a round trip, we offer competitive rates and various packages to fit your travel plans.",
-  sub10: "Your Reliable Partner for Rajpura Outstation Cabs",
-  sub10content: "Book your Rajpura outstation cab with Sewak Travels and embark on a journey filled with unforgettable memories. Whether you are traveling for business or leisure, our Rajpura taxi service is designed to cater to your every need, ensuring a smooth and enjoyable experience. Trust Sewak Travels for a reliable and affordable Rajpura outstation taxi service, and let us be your partner in making your journey memorable."
+  sub9: "Top Things to Do in Rajpura with Our Rajpura Cab Service:",
+  sub9content: {
+    h3: "Sightseeing: ",
+    h3content:
+      "Explore Rajpura's iconic attractions such as the Sukhna Lake, Rock Garden, Elante Mall, Chandigarh Rose Garden, Sector 17 Plaza, Pinjore Gardens, Fun City, Government Museum and Art Gallery, ChattBir Zoo, ISKCON Chandigarh, Timber Trail, Zakir Hussain Rose Garden, Punjab University Campus, Morni Hills, Rajpura Fort, Rajpura Clock Tower, Nepli Reserve Forest, Mansa Devi Temple, The Rock Garden of Chandigarh, and the Chandigarh Haat with our Rajpura taxi service. ",
+    h4: "Shopping And Dining: ",
+    h4content:
+      "Rajpura, a bustling town in Punjab, offers a vibrant shopping and dining scene that caters to diverse tastes. For a unique shopping experience, head to the Rajpura Market, known for its lively atmosphere and a variety of shops selling everything from traditional Punjabi attire to local handicrafts. When it comes to dining, Rajpura is renowned for its culinary delights. Visit Punjabi Dhaba for authentic Punjabi fare, where you can savor their famous Butter Chicken and Paneer Tikka. For a more upscale experience, Aangan Restaurant offers a range of gourmet dishes, including their signature Amritsari Macchi and Dal Makhani. Don't miss Kesar Da Dhaba, a local favorite known for its mouthwatering Chole Bhature and Lassi. Whether you're shopping for souvenirs or indulging in delicious local cuisine, Rajpura provides a rich and memorable experience.",
+    p2: "With our Rajpura cab service, you can comfortably explore all these attractions and more, making your trip to Rajpura a memorable experience. For a stress-free journey, book our Rajpura taxi service. In addition to transparent and reasonable Rajpura cab fare, you also have the flexibility to cancel your Raigad cab booking before the departure time if your plans change.",
+  },
+  sub10: "Things To Know About Rajpura",
+  sub10content: {
+    p3: "By offering comprehensive car rental services in Rajpura, Sewak Travels simplifies Rajpura cab booking with an extensive network and user-friendly process. Experience seamless travel around Rajpura with Sewak Travels' Rajpura taxi service, offering quick and convenient travel options.",
+    p4: "Rajpura, located in the Patiala district of Punjab, is a vibrant city known for its rich heritage and bustling atmosphere. The city is a gateway to exploring the cultural and historical landmarks of the region. Nearby, you can visit attractions such as the historic Rajpura Fort and the sacred Gurdwara Sri Guru Hargobind Sahib Ji. Rajpura’s bustling markets and local cuisine offer a taste of Punjabi culture, providing a unique experience for visitors. Rajpura is also well-connected to other prominent destinations in Punjab, making it a convenient base for exploring nearby areas. With its blend of historical significance and local charm, Rajpura offers a rewarding experience for both history enthusiasts and cultural explorers.",
+    p5: "With Rajpura Cab Booking services, you can experience the city's vibrancy, tranquility, and excitement from the comfort and privacy of your cab. Enjoy a hassle-free and enriching journey through Rajpura with Sewak Travels. Various Rajpura taxi services, including luxury, deluxe, and budget options, cater to different preferences, making exploring the city via taxi advisable. Rajpura taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book the cheapest cab service in Rajpura online, ensuring a cost-effective Rajpura cab experience. Your Rajpura cab facilitates the exploration of top landmarks, allowing you to soak in the city's allure with the comfort of a private cab. Experience the vibrant spirit of Rajpura with Sewak Travels' reliable Rajpura taxi service.",
+  },
+  faqhead: "Frequently Asked Questions for Rajpura Cab Booking",
+  faqcontent: {
+    q1: "How are the Rajpura cab rentals priced?",
+    a1: "Rajpura cab rentals are priced based on factors such as journey date, time, type of vehicle chosen (sedan, SUV, luxury car, etc.), distance/kilometers traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
+    q2: "What types of cars are available for pre-booking cab service in Rajpura?",
+    a2: "For pre-booking cab service in Rajpura, the following types of cars are available:",
+    a2inner: [
+      "Sedan (Dzire Etios)",
+      "SUV (Ertiga Innova)",
+      "Prime SUV (Innova Crysta)",
+    ],
+    q3: "Is it essential to pre-book Rajpura cabs?",
+    a3: "Yes, it's highly recommended to pre-book the Rajpura cab to ensure availability, especially during peak travel seasons. Pre-booking cab service in Rajpura also allows you to plan your journey better and sometimes avail of discounted Rajpura taxi fares.",
+    q4: "What are the options available for cab booking in Rajpura?",
+    a4: "SEWAK users have access to the following types of cabs in Rajpura:",
+    a4inner1: {
+      h1: "•\tCar Rentals: ",
+      h1inner:
+        "For both intra-city and intercity cab services, SEWAK provides services to book car rental online with AITP vehicles, provided that the entire vehicle is booked.",
+    },
+    a4inner2: {
+      h1: "• Outstation Cab Booking:",
+      h1inner:
+        "To connect two separate cities, SEWAK provides a taxi service in Rajpura for outstation with All India Tourist Permits (AITP).",
+    },
+    a4inner3: {
+      h1: "• Airport Transfers:",
+      h1inner:
+        "SEWAK provides exclusive airport connectivity to and from the airport, but it's only intra-city and doesn't permit inter-city airport cab service.",
+    },
+    q5: "Can I pay online for a Rajpura cab service?",
+    a5: "Yes, online payment options are available for the Rajpura cab service. You can pay securely through various online payment gateways for a seamless booking experience. You can conveniently compare Rajpura taxi charges across different categories and proceed with the transaction using your preferred payment method.",
+    q6: "What additional charges are typically added when booking a cab?",
+    a6: "When you book a cab in Rajpura, rest assured that the fare displayed at the start will be the same as the amount you pay at the end of your journey. However, it's crucial to review the trip's inclusions and exclusions while booking a taxi in Rajpura. Fuel charges and driver allowances are covered in the fare, but the parking fees and toll charges for local taxi service in Rajpura and outstation cabs Rajpura trips are typically not included. Ensure you check these details to avoid any surprises during your ride.",
+    q7: "What are the advantages of online cab booking in Rajpura with Sewak Travels?",
+    a7: "At Sewak Travels, our goal is to enhance your travel experience. Booking Rajpura cabs online with Sewak Travels offers several advantages, including a convenient Rajpura cab booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Rajpura taxi with us for an unparalleled journey.",
+  },
 };
 export const dataNalagarh = {
   main: "Book a Cab in Nalagarh ",
   sub: "Book a Cab in Nalagarh with Sewak Travels",
-  subcontent: "Explore the scenic beauty of Nalagarh, a captivating tourist destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Nalagarh to discover the city's numerous tourist attractions. Whether you prefer private or public transportation, abundant options are available for reaching Nalagarh. Apart from flights and trains, you can easily reach Nalagarh by cab, enjoying a picturesque and smooth road trip. Additionally, the taxi service in Nalagarh offers convenient travel between tourist spots and for Nalagarh Outstation Cabs journeys. When booking a cab service in Nalagarh, you'll find a variety of options to book car rental online. You can book a cab in Nalagarh for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Nalagarh or outstation cabs Nalagarh with Sewak for a seamless journey.",
+  subcontent:
+    "Explore the scenic beauty of Nalagarh, a captivating tourist destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Nalagarh to discover the city's numerous tourist attractions. Whether you prefer private or public transportation, abundant options are available for reaching Nalagarh. Apart from flights and trains, you can easily reach Nalagarh by cab, enjoying a picturesque and smooth road trip. Additionally, the taxi service in Nalagarh offers convenient travel between tourist spots and for Nalagarh Outstation Cabs journeys. When booking a cab service in Nalagarh, you'll find a variety of options to book car rental online. You can book a cab in Nalagarh for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Nalagarh or outstation cabs Nalagarh with Sewak for a seamless journey.",
   sub1: "Booking Cabs in Nalagarh",
-  sub1content: "Finding cabs in Nalagarh is effortless and convenient. You can easily hire outstation cabs in Nalagarh or local taxi service in Nalagarh online. For exploring the various tourist attractions in Nalagarh, the best option is to make an online cab booking in Nalagarh. Once you have secured a Nalagarh taxi, you're all set to discover every nook and cranny of the city. For a comfortable and hassle-free ride at an affordable Nalagarh taxi fare, you can also conveniently book a taxi in Nalagarh with Sewak Travels. Pre-booking cab service in Nalagarh allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Nalagarh available on Sewak Travels to find and book a cab in Nalagarh for your needs. Don’t wait, book the best taxi service in Nalagarh with us.",
+  sub1content:
+    "Finding cabs in Nalagarh is effortless and convenient. You can easily hire outstation cabs in Nalagarh or local taxi service in Nalagarh online. For exploring the various tourist attractions in Nalagarh, the best option is to make an online cab booking in Nalagarh. Once you have secured a Nalagarh taxi, you're all set to discover every nook and cranny of the city. For a comfortable and hassle-free ride at an affordable Nalagarh taxi fare, you can also conveniently book a taxi in Nalagarh with Sewak Travels. Pre-booking cab service in Nalagarh allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Nalagarh available on Sewak Travels to find and book a cab in Nalagarh for your needs. Don’t wait, book the best taxi service in Nalagarh with us.",
   sub2: "Nalagarh Cab Price",
-  sub2content: "Sewak Travels provides economical Nalagarh cab prices. You can choose from a range of air-conditioned cabs in Nalagarh that align with your budget and requirements, ensuring the best deals on Nalagarh taxi charges in the city. Various options exist for Nalagarh taxi booking, offering diverse services, and deals, and Nalagarh taxi service prices. Opting for Sewak Travels for your Nalagarh cab service booking can unlock enticing discounts and offers. The Nalagarh taxi fare may vary based on factors such as journey date, time, and type of vehicle chosen (sedan, SUV, luxury car, etc.), distance/Kms traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
+  sub2content:
+    "Sewak Travels provides economical Nalagarh cab prices. You can choose from a range of air-conditioned cabs in Nalagarh that align with your budget and requirements, ensuring the best deals on Nalagarh taxi charges in the city. Various options exist for Nalagarh taxi booking, offering diverse services, and deals, and Nalagarh taxi service prices. Opting for Sewak Travels for your Nalagarh cab service booking can unlock enticing discounts and offers. The Nalagarh taxi fare may vary based on factors such as journey date, time, and type of vehicle chosen (sedan, SUV, luxury car, etc.), distance/Kms traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
   sub3: "Car Rental Services in Nalagarh",
-  sub3content: "Nalagarh cab service is available year-round, offering customizable Nalagarh taxi packages to suit your preferences. In addition to cabs, you can explore various Nalagarh taxi services at different Nalagarh taxi price points. Sewak Travels provides a reliable and cheapest cab service in Nalagarh with a wide range of choices to enhance your travel experience. Depending on your needs, you can select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before you book a Taxi Service in Nalagarh, you can review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
+  sub3content:
+    "Nalagarh cab service is available year-round, offering customizable Nalagarh taxi packages to suit your preferences. In addition to cabs, you can explore various Nalagarh taxi services at different Nalagarh taxi price points. Sewak Travels provides a reliable and cheapest cab service in Nalagarh with a wide range of choices to enhance your travel experience. Depending on your needs, you can select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before you book a Taxi Service in Nalagarh, you can review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
   sub4: "Online Nalagarh Cab Booking with Sewak Travels",
-  sub4content: "For Nalagarh cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Nalagarh cabs for your journey. Additionally, you can book your Nalagarh taxi for either a one-way cab booking or Nalagarh taxi round trip. For a seamless online taxi booking Nalagarh experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Nalagarh cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
+  sub4content:
+    "For Nalagarh cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Nalagarh cabs for your journey. Additionally, you can book your Nalagarh taxi for either a one-way cab booking or Nalagarh taxi round trip. For a seamless online taxi booking Nalagarh experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Nalagarh cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
   img: "/assets/img/LocationDifferent/Nalagarh.webp",
   sub5: "Why Choose Sewak Travels to Book a Nalagarh Cab?",
-  sub5content: "Sewak Travels takes the hassle out of booking a Nalagarh Cab by offering premium services at affordable Nalagarh taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit Sewak Travels, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Nalagarh taxi service, why wait any longer?",
+  sub5content:
+    "Sewak Travels takes the hassle out of booking a Nalagarh Cab by offering premium services at affordable Nalagarh taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit Sewak Travels, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Nalagarh taxi service, why wait any longer?",
   sub6: "Book your Nalagarh Cabs effortlessly:",
-  sub6content: "When you choose Sewak for your cab service in Nalagarh, you get: ",
+  sub6content:
+    "When you choose Sewak for your cab service in Nalagarh, you get: ",
   sub6H1: "Professional drivers:",
-  sub6H1inner: " Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Nalagarh and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Nalagarh taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+  sub6H1inner:
+    " Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Nalagarh and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Nalagarh taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
   sub6H2: "Budget-friendly prices: ",
-  sub6H2inner: "Sewak offers budget-friendly prices, ensuring the best cab service in Nalagarh without compromising quality or comfort.",
+  sub6H2inner:
+    "Sewak offers budget-friendly prices, ensuring the best cab service in Nalagarh without compromising quality or comfort.",
   sub6H3: "24/7 Booking & Travel Assistance: ",
-  sub6H3inner: "Sewak's taxi service operates 24/7, offering convenient cab booking Nalagarh options for customers whenever transportation is needed.",
+  sub6H3inner:
+    "Sewak's taxi service operates 24/7, offering convenient cab booking Nalagarh options for customers whenever transportation is needed.",
   sub6H4: "Diverse Nalagarh Taxi Options:",
-  sub6H4inner: "When selecting our Nalagarh cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs Nalagarh Cab (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV Nalagarh Cab offers ample space for up to four bags. We also offer options for Nalagarh sharing cab.",
+  sub6H4inner:
+    "When selecting our Nalagarh cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs Nalagarh Cab (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV Nalagarh Cab offers ample space for up to four bags. We also offer options for Nalagarh sharing cab.",
   sub7: "Various Nalagarh Taxi Services by Sewak Travels",
   sub7content: {
     p1: "At Sewak, we cater to a variety of travel needs with our specialized taxi services in Nalagarh, encompassing three distinct categories: outstation cabs Nalagarh trips, full-day cab in Nalagarh, and seamless half-day local taxi service in Nalagarh excursions.",
     h1: "Local cabs in Nalagarh",
-    h1content: "Nalagarh is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Nalagarh through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab and full-day cab in Nalagarh. Sewak is the premier choice for finding high-quality yet affordable cabs in Nalagarh, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
+    h1content:
+      "Nalagarh is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Nalagarh through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab and full-day cab in Nalagarh. Sewak is the premier choice for finding high-quality yet affordable cabs in Nalagarh, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
     h2: "Nalagarh outstation cab service",
-    h2content: "You can easily travel to nearby cities with cabs from Nalagarh and hire an outstation taxi service Nalagarh for both round trips and one-way cab booking journeys. Outstation taxi service Nalagarh is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Nalagarh for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
-    h3content: ""
+    h2content:
+      "You can easily travel to nearby cities with cabs from Nalagarh and hire an outstation taxi service Nalagarh for both round trips and one-way cab booking journeys. Outstation taxi service Nalagarh is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Nalagarh for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
+    h3content: "",
   },
   sub8: "Places to Visit with Nalagarh Outstation Cabs",
   sub8content: {
     p1: "Outstation cabs from Nalagarh",
-    p1inner: "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Nalagarh.",
+    p1inner:
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Nalagarh.",
     p2: "A few of the top places to visit with outstation cabs from Nalagarh include:",
     h1: "Destination",
-    locations: [
-      "Parwanoo",
-      "Solan",
-      "Chandigarh",
-      "Baddi",
-      "Kasauli"
-    ],
+    locations: ["Parwanoo", "Solan", "Chandigarh", "Baddi", "Kasauli"],
     p3: "If you're traveling to Nalagarh from a nearby destination, you can avail of taxi booking in Nalagarh services for a few of the routes including:",
     delhiLoc: [
       "Parwanoo to Nalagarh",
       "Solan to Nalagarh",
       "Chandigarh to Nalagarh",
       "Baddi to Nalagarh",
-      "Kasauli to Nalagarh"
+      "Kasauli to Nalagarh",
     ],
-    p4: "Visit the Sewak Travels’ official website to compare cab fares for various Nalagarh Taxi Services."
+    p4: "Visit the Sewak Travels’ official website to compare cab fares for various Nalagarh Taxi Services.",
   },
   sub9: "Top Things to Do in Nalagarh with Our Nalagarh Cab Service:",
   sub9content: {
     h3: "Sightseeing: ",
-    h3content: "Explore Nalagarh's iconic attractions such as the Nalagarh Fort, Sujanpur Fort, Bhakra Dam, Gobind Sagar Lake, Shivalik Garden, Nalagarh Palace, Laxmi Narayan Temple, Hanuman Temple, Barog, Naina Devi Temple, Renuka Lake, Sirmaur Palace, Churdhar Peak, Baddi University of Emerging Sciences and Technology, Kalesar National Park, Timber Trail, Shoghi, Pinjore Gardens, Chandigarh Rose Garden, Solan with our Nalagarh taxi service. ",
+    h3content:
+      "Explore Nalagarh's iconic attractions such as the Nalagarh Fort, Sujanpur Fort, Bhakra Dam, Gobind Sagar Lake, Shivalik Garden, Nalagarh Palace, Laxmi Narayan Temple, Hanuman Temple, Barog, Naina Devi Temple, Renuka Lake, Sirmaur Palace, Churdhar Peak, Baddi University of Emerging Sciences and Technology, Kalesar National Park, Timber Trail, Shoghi, Pinjore Gardens, Chandigarh Rose Garden, Solan with our Nalagarh taxi service. ",
     h4: "Shopping And Dining: ",
-    h4content: "Nalagarh offers a delightful blend of shopping and dining experiences that cater to various tastes. For an authentic local shopping experience, head to the bustling Nalagarh Market, where you can explore a range of traditional handicrafts, textiles, and souvenirs. When it comes to dining, Nalagarh doesn’t disappoint. Visit The Royal Castle, known for its delectable Himachali cuisine, where you can savor dishes like Chana Madra and Sidu. For a more contemporary dining experience, Shivalik Retreat offers a range of North Indian and Mughlai dishes, with their Butter Chicken and Dal Makhani being local favorites. Additionally, The Heritage Café is a must-visit for its charming ambiance and delicious bakery items, including freshly baked bread and pastries.",
-    p2: "With our Nalagarh cab service, you can comfortably explore all these attractions and more, making your trip to Nalagarh a memorable experience. For a stress-free journey, book our Nalagarh taxi service. In addition to transparent and reasonable Nalagarh cab fare, you also have the flexibility to cancel your Nalagarh cab booking before the departure time if your plans change."
+    h4content:
+      "Nalagarh offers a delightful blend of shopping and dining experiences that cater to various tastes. For an authentic local shopping experience, head to the bustling Nalagarh Market, where you can explore a range of traditional handicrafts, textiles, and souvenirs. When it comes to dining, Nalagarh doesn’t disappoint. Visit The Royal Castle, known for its delectable Himachali cuisine, where you can savor dishes like Chana Madra and Sidu. For a more contemporary dining experience, Shivalik Retreat offers a range of North Indian and Mughlai dishes, with their Butter Chicken and Dal Makhani being local favorites. Additionally, The Heritage Café is a must-visit for its charming ambiance and delicious bakery items, including freshly baked bread and pastries.",
+    p2: "With our Nalagarh cab service, you can comfortably explore all these attractions and more, making your trip to Nalagarh a memorable experience. For a stress-free journey, book our Nalagarh taxi service. In addition to transparent and reasonable Nalagarh cab fare, you also have the flexibility to cancel your Nalagarh cab booking before the departure time if your plans change.",
   },
   sub10: "Things To Know About Nalagarh",
   sub10content: {
     p3: "By offering comprehensive car rental services in Nalagarh, Sewak Travels simplifies Nalagarh cab booking with an extensive network and user-friendly process. Experience seamless travel around Nalagarh with Sewak Travels' Nalagarh taxi service, offering quick and convenient travel options. Nalagarh, situated in the Solan district of Himachal Pradesh, is a region renowned for its serene landscapes and historical significance. This picturesque town is known for its historical Nalagarh Fort, which offers stunning views of the surrounding hills and valleys. The fort stands as a testament to the region’s rich heritage and architectural style.",
     p4: "In addition to the fort, Nalagarh is surrounded by lush green fields and charming villages, providing a perfect setting for nature lovers and those seeking tranquility. The nearby hill stations, such as Shimla and Kasauli, offer beautiful trekking trails and panoramic vistas. The region is also known for its pleasant climate and friendly atmosphere, making it a popular destination for relaxation.",
-    p5: "With Nalagarh Cab Booking services, you can explore the town’s beauty, tranquility, and excitement from the comfort and privacy of your cab. Enjoy a hassle-free and enriching journey through Nalagarh with Sewak Travels. Various Nalagarh taxi services, including luxury, deluxe, and budget options, cater to different preferences, making exploring the town via taxi advisable. Nalagarh taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book the most cost-effective cab service in Nalagarh online, ensuring a budget-friendly experience. Your Nalagarh cab facilitates the exploration of top landmarks, allowing you to soak in the town’s charm with the comfort of a private cab. Experience the vibrant spirit of Nalagarh with Sewak Travels' reliable Nalagarh taxi service."
+    p5: "With Nalagarh Cab Booking services, you can explore the town’s beauty, tranquility, and excitement from the comfort and privacy of your cab. Enjoy a hassle-free and enriching journey through Nalagarh with Sewak Travels. Various Nalagarh taxi services, including luxury, deluxe, and budget options, cater to different preferences, making exploring the town via taxi advisable. Nalagarh taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book the most cost-effective cab service in Nalagarh online, ensuring a budget-friendly experience. Your Nalagarh cab facilitates the exploration of top landmarks, allowing you to soak in the town’s charm with the comfort of a private cab. Experience the vibrant spirit of Nalagarh with Sewak Travels' reliable Nalagarh taxi service.",
   },
   faqhead: "Frequently Asked Questions for Nalagarh Cab Booking",
   faqcontent: {
@@ -369,7 +443,7 @@ export const dataNalagarh = {
     a2inner: [
       "Sedan (Dzire Etios)",
       "SUV (Ertiga Innova)",
-      "Prime SUV (Innova Crysta)"
+      "Prime SUV (Innova Crysta)",
     ],
     q3: "Is it essential to pre-book Nalagarh cabs?",
     a3: "Yes, it's highly recommended to pre-book the Nalagarh cab to ensure availability, especially during peak travel seasons. Pre-booking cab service in Nalagarh also allows you to plan your journey better and sometimes avail of discounted Nalagarh taxi fares.",
@@ -377,92 +451,103 @@ export const dataNalagarh = {
     a4: "SEWAK users have access to the following types of cabs in Nalagarh:",
     a4inner1: {
       h1: "•\tCar Rentals: ",
-      h1inner: "For both intra-city and intercity cab services, SEWAK provides services to book car rental online with AITP vehicles, provided that the entire vehicle is booked."
+      h1inner:
+        "For both intra-city and intercity cab services, SEWAK provides services to book car rental online with AITP vehicles, provided that the entire vehicle is booked.",
     },
     a4inner2: {
       h1: "• Outstation Cab Booking:",
-      h1inner: "To connect two separate cities, SEWAK provides a taxi service in Nalagarh for outstation with All India Tourist Permits (AITP)."
+      h1inner:
+        "To connect two separate cities, SEWAK provides a taxi service in Nalagarh for outstation with All India Tourist Permits (AITP).",
     },
     a4inner3: {
       h1: "• Airport Transfers:",
-      h1inner: "SEWAK provides exclusive airport connectivity to and from the airport, but it's only intra-city and doesn't permit inter-city airport cab service."
+      h1inner:
+        "SEWAK provides exclusive airport connectivity to and from the airport, but it's only intra-city and doesn't permit inter-city airport cab service.",
     },
     q5: "Can I pay online for a Nalagarh cab service?",
     a5: "Yes, online payment options are available for the Nalagarh cab service. You can pay securely through various online payment gateways for a seamless booking experience. You can conveniently compare Nalagarh taxi charges across different categories and proceed with the transaction using your preferred payment method.",
     q6: "What additional charges are typically added when booking a cab?",
     a6: "When you book a cab in Nalagarh, rest assured that the fare displayed at the start will be the same as the amount you pay at the end of your journey. However, it's crucial to review the trip's inclusions and exclusions while booking a taxi in Nalagarh. Fuel charges and driver allowances are covered in the fare, but the parking fees and toll charges for local taxi service in Nalagarh and outstation cabs Nalagarh trips are typically not included. Ensure you check these details to avoid any surprises during your ride.",
     q7: "What are the advantages of online cab booking in Nalagarh with Sewak Travels?",
-    a7: "At Sewak Travels, our goal is to enhance your travel experience. Booking Nalagarh cabs online with Sewak Travels offers several advantages, including a convenient Nalagarh cab booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Nalagarh taxi with us for an unparalleled journey."
-  }
-}
+    a7: "At Sewak Travels, our goal is to enhance your travel experience. Booking Nalagarh cabs online with Sewak Travels offers several advantages, including a convenient Nalagarh cab booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Nalagarh taxi with us for an unparalleled journey.",
+  },
+};
 export const dataRopar = {
   main: "Book a Cab in Ropar",
   sub: "Book a Cab in Ropar with Sewak Travels",
-  subcontent: "Discover the charm of Ropar, a captivating destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Ropar to explore the city's numerous attractions. Whether you prefer private or public transportation, a variety of options are available for reaching Ropar. Apart from flights and trains, you can easily reach Ropar by cab, enjoying a scenic and smooth road trip. Additionally, the taxi service in Ropar offers convenient travel between tourist spots and for Ropar Outstation Cabs journeys. When booking a cab service in Ropar, you'll find numerous options to book car rentals online. You can book a cab in Ropar for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Ropar or outstation cabs with Sewak for a seamless journey.",
+  subcontent:
+    "Discover the charm of Ropar, a captivating destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Ropar to explore the city's numerous attractions. Whether you prefer private or public transportation, a variety of options are available for reaching Ropar. Apart from flights and trains, you can easily reach Ropar by cab, enjoying a scenic and smooth road trip. Additionally, the taxi service in Ropar offers convenient travel between tourist spots and for Ropar Outstation Cabs journeys. When booking a cab service in Ropar, you'll find numerous options to book car rentals online. You can book a cab in Ropar for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Ropar or outstation cabs with Sewak for a seamless journey.",
   sub1: "Booking Cabs in Ropar",
-  sub1content: "Finding cabs in Ropar is effortless and convenient. You can easily hire outstation cabs in Ropar or local taxi services online. For exploring various attractions in Ropar, making an online cab booking is the best option. Once you have secured a Ropar taxi, you're all set to discover every corner of the city. For a comfortable and hassle-free ride at an affordable Ropar taxi fare, you can conveniently book a taxi in Ropar with Sewak Travels. Pre-booking cab service in Ropar allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Ropar available on Sewak Travels to find and book a cab for your needs. Don’t wait, book the best taxi service in Ropar with us.",
+  sub1content:
+    "Finding cabs in Ropar is effortless and convenient. You can easily hire outstation cabs in Ropar or local taxi services online. For exploring various attractions in Ropar, making an online cab booking is the best option. Once you have secured a Ropar taxi, you're all set to discover every corner of the city. For a comfortable and hassle-free ride at an affordable Ropar taxi fare, you can conveniently book a taxi in Ropar with Sewak Travels. Pre-booking cab service in Ropar allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Ropar available on Sewak Travels to find and book a cab for your needs. Don’t wait, book the best taxi service in Ropar with us.",
   sub2: "Ropar Cab Price",
-  sub2content: "Sewak Travels provides economical Ropar cab prices. You can choose from a range of air-conditioned cabs in Ropar that align with your budget and requirements, ensuring the best deals on Ropar taxi charges. Various options exist for Ropar taxi booking, offering diverse services and deals. Opting for Sewak Travels for your Ropar cab service booking can unlock enticing discounts and offers. The Ropar taxi fare may vary based on factors such as journey date, time, type of vehicle chosen (sedan, SUV, luxury car, etc.), distance traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
+  sub2content:
+    "Sewak Travels provides economical Ropar cab prices. You can choose from a range of air-conditioned cabs in Ropar that align with your budget and requirements, ensuring the best deals on Ropar taxi charges. Various options exist for Ropar taxi booking, offering diverse services and deals. Opting for Sewak Travels for your Ropar cab service booking can unlock enticing discounts and offers. The Ropar taxi fare may vary based on factors such as journey date, time, type of vehicle chosen (sedan, SUV, luxury car, etc.), distance traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
   sub3: "Car Rental Services in Ropar",
-  sub3content: "Ropar cab service is available year-round, offering customizable taxi packages to suit your preferences. In addition to cabs, explore various Ropar taxi services at different price points. Sewak Travels provides a reliable and affordable cab service in Ropar with a wide range of choices to enhance your travel experience. Depending on your needs, select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before booking a taxi service in Ropar, review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
+  sub3content:
+    "Ropar cab service is available year-round, offering customizable taxi packages to suit your preferences. In addition to cabs, explore various Ropar taxi services at different price points. Sewak Travels provides a reliable and affordable cab service in Ropar with a wide range of choices to enhance your travel experience. Depending on your needs, select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before booking a taxi service in Ropar, review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
   sub4: "Online Ropar Cab Booking with Sewak Travels",
-  sub4content: "For Ropar cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information, including your destination and departure date. Browse through the list of available Ropar cabs for your journey. Additionally, you can book your Ropar taxi for either a one-way or round trip. For a seamless online taxi booking experience, you can also reach out to Sewak Travels' customer service. Rest assured, all cabs are thoroughly sanitized. The process of booking a Ropar cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
+  sub4content:
+    "For Ropar cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information, including your destination and departure date. Browse through the list of available Ropar cabs for your journey. Additionally, you can book your Ropar taxi for either a one-way or round trip. For a seamless online taxi booking experience, you can also reach out to Sewak Travels' customer service. Rest assured, all cabs are thoroughly sanitized. The process of booking a Ropar cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
   img: "/assets/img/LocationDifferent/Ropar.webp",
   sub5: "Why Choose Sewak Travels to Book a Ropar Cab?",
-  sub5content: "Sewak Travels takes the hassle out of booking a Ropar Cab by offering premium services at affordable rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Ropar taxi service, why wait any longer?",
+  sub5content:
+    "Sewak Travels takes the hassle out of booking a Ropar Cab by offering premium services at affordable rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Ropar taxi service, why wait any longer?",
   sub6: "Book your Ropar Cabs effortlessly:",
   sub6content: "When you choose Sewak for your cab service in Ropar, you get:",
   sub6H1: "Professional drivers:",
-  sub6H1inner: "Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Ropar and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Ropar taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+  sub6H1inner:
+    "Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Ropar and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Ropar taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
   sub6H2: "Budget-friendly prices:",
-  sub6H2inner: "Sewak offers budget-friendly prices, ensuring the best cab service in Ropar without compromising quality or comfort.",
+  sub6H2inner:
+    "Sewak offers budget-friendly prices, ensuring the best cab service in Ropar without compromising quality or comfort.",
   sub6H3: "24/7 Booking & Travel Assistance:",
-  sub6H3inner: "Sewak's taxi service operates 24/7, offering convenient cab booking options for customers whenever transportation is needed.",
+  sub6H3inner:
+    "Sewak's taxi service operates 24/7, offering convenient cab booking options for customers whenever transportation is needed.",
   sub6H4: "Diverse Ropar Taxi Options:",
-  sub6H4inner: "When selecting our Ropar cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV offers ample space for up to four bags. We also offer options for Ropar sharing cab.",
+  sub6H4inner:
+    "When selecting our Ropar cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV offers ample space for up to four bags. We also offer options for Ropar sharing cab.",
   sub7: "Various Ropar Taxi Services by Sewak Travels",
   sub7content: {
     p1: "At Sewak, we cater to a variety of travel needs with our specialized taxi services in Ropar, encompassing three distinct categories: outstation cabs Ropar trips, full-day cabs in Ropar, and seamless half-day local taxi service in Ropar excursions.",
     h1: "Local cabs in Ropar:",
-    h1content: "Ropar is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Ropar through Sewak. We offer a range of hourly packages to suit your needs, including half-day and full-day cabs in Ropar. Sewak is the premier choice for finding high-quality yet affordable cabs in Ropar, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
+    h1content:
+      "Ropar is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Ropar through Sewak. We offer a range of hourly packages to suit your needs, including half-day and full-day cabs in Ropar. Sewak is the premier choice for finding high-quality yet affordable cabs in Ropar, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
     h2: "Ropar outstation cab service:",
-    h2content: "Travel to nearby cities with cabs from Ropar and hire an outstation taxi service for both round trips and one-way journeys. Outstation taxi service from Ropar is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Ropar with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury vehicles as well as spacious options like Prime SUVs for accommodating larger groups."
+    h2content:
+      "Travel to nearby cities with cabs from Ropar and hire an outstation taxi service for both round trips and one-way journeys. Outstation taxi service from Ropar is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Ropar with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury vehicles as well as spacious options like Prime SUVs for accommodating larger groups.",
   },
   sub8: "Places to Visit with Ropar Outstation Cabs",
   sub8content: {
     p1: "Outstation cabs from Ropar are a popular choice for hassle-free intercity travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Ropar.",
     p2: "A few of the top places to visit with outstation cabs from Ropar include:",
     h1: "Destination",
-    locations: [
-      "Chandigarh",
-      "Patiala",
-      "Mohali",
-      "Anandpur Sahib",
-      "Kasauli"
-    ],
+    locations: ["Chandigarh", "Patiala", "Mohali", "Anandpur Sahib", "Kasauli"],
     p3: "If you're traveling to Ropar from a nearby destination, you can avail of taxi booking in Ropar services for a few of the routes including:",
     delhiLoc: [
       "Chandigarh to Ropar",
       "Patiala to Ropar",
       "Mohali to Ropar",
       "Anandpur Sahib to Ropar",
-      "Kasauli to Ropar"
+      "Kasauli to Ropar",
     ],
-    p4: "Visit the Sewak Travels’ official website to compare cab fares for various Ropar Taxi Services."
+    p4: "Visit the Sewak Travels’ official website to compare cab fares for various Ropar Taxi Services.",
   },
   sub9: "Top Things to Do in Ropar with Our Ropar Cab Service:",
   sub9content: {
     h3: "Sightseeing:",
-    h3content: "Explore Ropar's iconic attractions such as the Raigad Fort, Pratapgad Fort, Murud-Janjira Fort, Kuda Caves, Harishchandragad Fort, Mandwa Beach, Alibaug Beach, Nagaon Beach, Kashid Beach, Kolad, Bhimashankar Wildlife Sanctuary, Matheran, Karjat, Pali, Kondana Caves, Mhasla, Thane Creek, Chinchoti Waterfalls, Dudhsagar Falls, and Tamhini Ghat with our Ropar taxi service.",
+    h3content:
+      "Explore Ropar's iconic attractions such as the Raigad Fort, Pratapgad Fort, Murud-Janjira Fort, Kuda Caves, Harishchandragad Fort, Mandwa Beach, Alibaug Beach, Nagaon Beach, Kashid Beach, Kolad, Bhimashankar Wildlife Sanctuary, Matheran, Karjat, Pali, Kondana Caves, Mhasla, Thane Creek, Chinchoti Waterfalls, Dudhsagar Falls, and Tamhini Ghat with our Ropar taxi service.",
     h4: "Shopping And Dining:",
-    h4content: "Ropar, a bustling town in Punjab, offers a delightful shopping and dining experience. For shoppers, the vibrant markets of Ropar, such as the Ropar Main Bazaar, are a treasure trove of local goods, from traditional Punjabi attire to intricate handicrafts. For a taste of local cuisine, visit Chawla's Restaurant, renowned for its delectable Amritsari Kulcha and spicy Chole Bhature. The Royal Punjab offers a more upscale dining experience with specialties like Butter Chicken and Dal Makhani, while Kesar Da Dhaba is a must-try for its authentic Punjabi Thali and freshly made Parathas. Whether you're exploring the markets or savoring the local flavors, Ropar provides an enriching experience for all visitors.",
-    p2: "With our Ropar cab service, you can comfortably explore all these attractions and more, making your trip to Ropar a memorable experience. For a stress-free journey, book our Ropar taxi service. In addition to transparent and reasonable Ropar cab fare, you also have the flexibility to cancel your Ropar cab booking before the departure time if your plans change."
+    h4content:
+      "Ropar, a bustling town in Punjab, offers a delightful shopping and dining experience. For shoppers, the vibrant markets of Ropar, such as the Ropar Main Bazaar, are a treasure trove of local goods, from traditional Punjabi attire to intricate handicrafts. For a taste of local cuisine, visit Chawla's Restaurant, renowned for its delectable Amritsari Kulcha and spicy Chole Bhature. The Royal Punjab offers a more upscale dining experience with specialties like Butter Chicken and Dal Makhani, while Kesar Da Dhaba is a must-try for its authentic Punjabi Thali and freshly made Parathas. Whether you're exploring the markets or savoring the local flavors, Ropar provides an enriching experience for all visitors.",
+    p2: "With our Ropar cab service, you can comfortably explore all these attractions and more, making your trip to Ropar a memorable experience. For a stress-free journey, book our Ropar taxi service. In addition to transparent and reasonable Ropar cab fare, you also have the flexibility to cancel your Ropar cab booking before the departure time if your plans change.",
   },
   sub10: "Things To Know About Ropar",
   sub10content: {
     p3: "By offering comprehensive car rental services in Ropar, Sewak Travels simplifies Ropar cab booking with an extensive network and user-friendly process. Experience seamless travel around Ropar with Sewak Travels' Ropar taxi service, offering quick and convenient travel options.",
     p4: "Ropar, located in the Rupnagar district of Punjab, is a region known for its historical significance and cultural richness. This district boasts a rich heritage, including the ancient archaeological site of Harappan Civilization at Ropar. The site provides valuable insights into the early urbanization and sophisticated culture of the Indus Valley Civilization. Another highlight is the beautiful Naina Devi Temple, which draws devotees and tourists alike with its serene surroundings and spiritual ambiance. Ropar is also renowned for its lush landscapes and peaceful environment, including the nearby Sukhna Lake, which offers picturesque views and recreational opportunities. The region's vibrant markets and local cuisine add to its appeal, making Ropar a fascinating destination for visitors.",
-    p5: "With Ropar Cab Booking services, you can experience the city's grandeur, tranquility, and excitement from the comfort and privacy of your cab. Enjoy a hassle-free and enriching journey through Ropar with Sewak Travels. Various Ropar taxi services, including luxury, deluxe, and budget options, cater to different preferences, making exploring the city via taxi advisable. Ropar taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book the cheapest cab service in Ropar online, ensuring a cost-effective experience. Your Ropar cab facilitates the exploration of top landmarks, allowing you to soak in the city's allure with the comfort of a private cab. Experience the vibrant spirit of Ropar with Sewak Travels' reliable Ropar taxi service."
+    p5: "With Ropar Cab Booking services, you can experience the city's grandeur, tranquility, and excitement from the comfort and privacy of your cab. Enjoy a hassle-free and enriching journey through Ropar with Sewak Travels. Various Ropar taxi services, including luxury, deluxe, and budget options, cater to different preferences, making exploring the city via taxi advisable. Ropar taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book the cheapest cab service in Ropar online, ensuring a cost-effective experience. Your Ropar cab facilitates the exploration of top landmarks, allowing you to soak in the city's allure with the comfort of a private cab. Experience the vibrant spirit of Ropar with Sewak Travels' reliable Ropar taxi service.",
   },
   faqhead: "Frequently Asked Questions for Ropar Cab Booking",
   faqcontent: {
@@ -473,7 +558,7 @@ export const dataRopar = {
     a2inner: [
       "Sedan (Dzire Etios)",
       "SUV (Ertiga Innova)",
-      "Prime SUV (Innova Crysta)"
+      "Prime SUV (Innova Crysta)",
     ],
     q3: "Is it essential to Pre-book Ropar cabs?",
     a3: "Yes, it's highly recommended to pre-book the Ropar cab to ensure availability, especially during peak travel seasons. Pre-booking cab service in Ropar also allows you to plan your journey better and sometimes avail of discounted Ropar taxi fares.",
@@ -481,94 +566,107 @@ export const dataRopar = {
     a4: "SEWAK users have access to the following types of cabs in Ropar:",
     a4inner1: {
       h1: "• Car Rentals:",
-      h1inner: "For both intra-city and intercity cab services, SEWAK provides services to book car rental online with AITP vehicles, provided that the entire vehicle is booked."
+      h1inner:
+        "For both intra-city and intercity cab services, SEWAK provides services to book car rental online with AITP vehicles, provided that the entire vehicle is booked.",
     },
     a4inner2: {
       h1: "• Outstation Cab Booking:",
-      h1inner: "To connect two separate cities, SEWAK provides a taxi service in Ropar for outstation with All India Tourist Permits (AITP)."
+      h1inner:
+        "To connect two separate cities, SEWAK provides a taxi service in Ropar for outstation with All India Tourist Permits (AITP).",
     },
     a4inner3: {
       h1: "• Airport Transfers:",
-      h1inner: "SEWAK provides exclusive airport connectivity to and from the airport, but it's only intra-city and doesn't permit inter-city airport cab service."
+      h1inner:
+        "SEWAK provides exclusive airport connectivity to and from the airport, but it's only intra-city and doesn't permit inter-city airport cab service.",
     },
     q5: "Can I pay online for a Ropar cab service?",
     a5: "Yes, online payment options are available for the Ropar cab service. You can pay securely through various online payment gateways for a seamless booking experience. You can conveniently compare Ropar taxi charges across different categories and proceed with the transaction using your preferred payment method.",
     q6: "What additional charges are typically added when booking a cab?",
     a6: "When you book a cab in Ropar, rest assured that the fare displayed at the start will be the same as the amount you pay at the end of your journey. However, it's crucial to review the trip's inclusions and exclusions while booking a taxi in Ropar. Fuel charges and driver allowances are covered in the fare, but the parking fees and toll charges for local taxi service in Ropar and outstation cabs Ropar trips are typically not included. Ensure you check these details to avoid any surprises during your ride.",
     q7: "What are the advantages of an online cab booking Ropar with Sewak Travels?",
-    a7: "At Sewak Travels, our goal is to enhance your travel experience. Booking Ropar cabs online with Sewak Travels offers several advantages, including a convenient Ropar cab booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Ropar taxi with us for an unparalleled journey."
-  }
+    a7: "At Sewak Travels, our goal is to enhance your travel experience. Booking Ropar cabs online with Sewak Travels offers several advantages, including a convenient Ropar cab booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Ropar taxi with us for an unparalleled journey.",
+  },
 };
 export const dataBadalapur = {
   main: "Book a Cab in Badalapur",
   sub: "Book a Cab in Badalapur with Sewak Travels",
-  subcontent: "Explore the scenic beauty of Badalapur, a captivating tourist destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Badalapur to discover the city's numerous tourist attractions. Whether you prefer private or public transportation, abundant options are available for reaching Badalapur. Apart from flights and trains, you can easily reach Badalapur by cab, enjoying a picturesque and smooth road trip. Additionally, the taxi service in Badalapur offers convenient travel between tourist spots and for Badalapur Outstation Cabs journeys. When booking a cab service in Badalapur, you'll find a variety of options to book car rental online. You can book a cab in Badalapur for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Badalapur or outstation cabs Badalapur with Sewak for a seamless journey.",
+  subcontent:
+    "Explore the scenic beauty of Badalapur, a captivating tourist destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Badalapur to discover the city's numerous tourist attractions. Whether you prefer private or public transportation, abundant options are available for reaching Badalapur. Apart from flights and trains, you can easily reach Badalapur by cab, enjoying a picturesque and smooth road trip. Additionally, the taxi service in Badalapur offers convenient travel between tourist spots and for Badalapur Outstation Cabs journeys. When booking a cab service in Badalapur, you'll find a variety of options to book car rental online. You can book a cab in Badalapur for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Badalapur or outstation cabs Badalapur with Sewak for a seamless journey.",
   sub1: "Booking Cabs in Badalapur",
-  sub1content: "Finding cabs in Badalapur is effortless and convenient. You can easily hire outstation cabs in Badalapur or local taxi service in Badalapur online. For exploring the various tourist attractions in Badalapur, the best option is to make an online cab booking in Badalapur. Once you have secured a Badalapur taxi, you're all set to discover every nook and cranny of the city. For a comfortable and hassle-free ride at an affordable Badalapur taxi fare, you can also conveniently book a taxi in Badalapur with Sewak Travels. Pre-booking cab service in Badalapur allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Badalapur available on Sewak Travels to find and book a cab in Badalapur for your needs. Don’t wait, book the best taxi service in Badalapur with us.",
+  sub1content:
+    "Finding cabs in Badalapur is effortless and convenient. You can easily hire outstation cabs in Badalapur or local taxi service in Badalapur online. For exploring the various tourist attractions in Badalapur, the best option is to make an online cab booking in Badalapur. Once you have secured a Badalapur taxi, you're all set to discover every nook and cranny of the city. For a comfortable and hassle-free ride at an affordable Badalapur taxi fare, you can also conveniently book a taxi in Badalapur with Sewak Travels. Pre-booking cab service in Badalapur allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Badalapur available on Sewak Travels to find and book a cab in Badalapur for your needs. Don’t wait, book the best taxi service in Badalapur with us.",
   sub2: "Badalapur Cab Price",
-  sub2content: "Sewak Travels provides economical Badalapur cab prices. You can choose from a range of air-conditioned cabs in Badalapur that align with your budget and requirements, ensuring the best deals on Badalapur taxi charges in the city. Various options exist for Badalapur taxi booking, offering diverse services, and deals, and Badalapur taxi service prices. Opting for Sewak Travels for your Badalapur cab service booking can unlock enticing discounts and offers. The Badalapur taxi fare may vary based on factors such as journey date, time, and type of vehicle chosen (sedan, SUV, luxury car, etc.), distance/Kms traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
+  sub2content:
+    "Sewak Travels provides economical Badalapur cab prices. You can choose from a range of air-conditioned cabs in Badalapur that align with your budget and requirements, ensuring the best deals on Badalapur taxi charges in the city. Various options exist for Badalapur taxi booking, offering diverse services, and deals, and Badalapur taxi service prices. Opting for Sewak Travels for your Badalapur cab service booking can unlock enticing discounts and offers. The Badalapur taxi fare may vary based on factors such as journey date, time, and type of vehicle chosen (sedan, SUV, luxury car, etc.), distance/Kms traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
   sub3: "Car Rental Services in Badalapur",
-  sub3content: "Badalapur cab service is available year-round, offering customizable Badalapur taxi packages to suit your preferences. In addition to cabs, you can explore various Badalapur taxi services at different Badalapur taxi price points. Sewak Travels provides a reliable and cheapest cab service in Badalapur with a wide range of choices to enhance your travel experience. Depending on your needs, you can select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before you book a Taxi Service in Badalapur, you can review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
+  sub3content:
+    "Badalapur cab service is available year-round, offering customizable Badalapur taxi packages to suit your preferences. In addition to cabs, you can explore various Badalapur taxi services at different Badalapur taxi price points. Sewak Travels provides a reliable and cheapest cab service in Badalapur with a wide range of choices to enhance your travel experience. Depending on your needs, you can select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before you book a Taxi Service in Badalapur, you can review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
   sub4: "Online Badalapur Cab Booking with Sewak Travels",
-  sub4content: "For Badalapur cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Badalapur cabs for your journey. Additionally, you can book your Badalapur taxi for either a one way cab booking or Badalapur taxi round trip. For a seamless online taxi booking Badalapur experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Badalapur cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
+  sub4content:
+    "For Badalapur cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Badalapur cabs for your journey. Additionally, you can book your Badalapur taxi for either a one way cab booking or Badalapur taxi round trip. For a seamless online taxi booking Badalapur experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Badalapur cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
   img: "/assets/img/LocationDifferent/Badalapur.webp",
   sub5: "Why Choose Sewak Travels to Book a Badalapur Cab?",
-  sub5content: "Sewak Travels takes the hassle out of booking a Badalapur Cab by offering premium services at affordable Badalapur taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Badalapur taxi service, why wait any longer?",
+  sub5content:
+    "Sewak Travels takes the hassle out of booking a Badalapur Cab by offering premium services at affordable Badalapur taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Badalapur taxi service, why wait any longer?",
   sub6: "Book your Badalapur Cabs effortlessly:",
-  sub6content: "When you choose Sewak for your cab service in Badalapur, you get:",
+  sub6content:
+    "When you choose Sewak for your cab service in Badalapur, you get:",
   sub6H1: "Professional drivers:",
-  sub6H1inner: "Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Badalapur and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Badalapur taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+  sub6H1inner:
+    "Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Badalapur and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Badalapur taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
   sub6H2: "Budget-friendly prices:",
-  sub6H2inner: "Sewak offers budget-friendly prices, ensuring the best cab service in Badalapur without compromising quality or comfort.",
+  sub6H2inner:
+    "Sewak offers budget-friendly prices, ensuring the best cab service in Badalapur without compromising quality or comfort.",
   sub6H3: "24/7 Booking & Travel Assistance:",
-  sub6H3inner: "Sewak's taxi service operates 24/7, offering convenient cab booking Badalapur options for customers whenever transportation is needed.",
+  sub6H3inner:
+    "Sewak's taxi service operates 24/7, offering convenient cab booking Badalapur options for customers whenever transportation is needed.",
   sub6H4: "Diverse Badalapur Taxi Options:",
-  sub6H4inner: "When selecting our Badalapur cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs Badalapur Cab (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV Badalapur Cab offers ample space for up to four bags. We also offer options for Badalapur sharing cab.",
+  sub6H4inner:
+    "When selecting our Badalapur cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs Badalapur Cab (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV Badalapur Cab offers ample space for up to four bags. We also offer options for Badalapur sharing cab.",
   sub7: "Various Badalapur Taxi Services by Sewak Travels",
   sub7content: {
     p1: "At Sewak, we cater to a variety of travel needs with our specialized taxi services in Badalapur, encompassing three distinct categories: outstation cabs Badalapur trips, full day cab in Badalapur, seamless half-day local taxi service in Badalapur excursions.",
     h1: "Local cabs in Badalapur",
-    h1content: "Badalapur is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Badalapur through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab, and full day cab in Badalapur. Sewak is the premier choice for finding high-quality yet affordable cabs in Badalapur, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
+    h1content:
+      "Badalapur is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Badalapur through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab, and full day cab in Badalapur. Sewak is the premier choice for finding high-quality yet affordable cabs in Badalapur, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
     h2: "Badalapur outstation cab service",
-    h2content: "You can easily travel to nearby cities with cabs from Badalapur and hire an outstation taxi service Badalapur for both round trips and one way cab booking journeys. Outstation taxi service Badalapur is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Badalapur for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
-    h3content: ""
+    h2content:
+      "You can easily travel to nearby cities with cabs from Badalapur and hire an outstation taxi service Badalapur for both round trips and one way cab booking journeys. Outstation taxi service Badalapur is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Badalapur for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
+    h3content: "",
   },
   sub8: "Places to Visit with Badalapur Outstation Cabs",
   sub8content: {
     p1: "Outstation cabs from Badalapur",
-    p1inner: "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Badalapur.",
+    p1inner:
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Badalapur.",
     p2: "A few of the top places to visit with outstation cabs from Badalapur include:",
     h1: "Destination",
-    locations: [
-      "Thane",
-      "Kalyan",
-      "Navi Mumbai",
-      "Dombivli",
-      "Ulhasnagar"
-    ],
+    locations: ["Thane", "Kalyan", "Navi Mumbai", "Dombivli", "Ulhasnagar"],
     p3: "If you're traveling to Badalapur from a nearby destination, you can avail of taxi booking in Badalapur services for a few of the routes including:",
     delhiLoc: [
       "Thane to Badalapur",
       "Kalyan to Badalapur",
       "Navi Mumbai to Badalapur",
       "Dombivli to Badalapur",
-      "Ulhasnagar to Badalapur"
+      "Ulhasnagar to Badalapur",
     ],
-    p4: "Visit the Sewak Travels’ official website to compare cab fares for various Badalapur Taxi Services."
+    p4: "Visit the Sewak Travels’ official website to compare cab fares for various Badalapur Taxi Services.",
   },
   sub9: "Top Things to Do in Badalapur with Our Badalapur Cab Service:",
   sub9content: {
     h3: "Sightseeing:",
-    h3content: "Explore Badalapur's iconic attractions such as the Kondeshwar Temple, Kondeshwar Lake, Matheran Hill Station, Barvi Dam, Chanderi Fort, Vangani Waterfall, Malanggad Fort, Tansa Wildlife Sanctuary, Murbad Hills, Bhagirath Waterfall, Bhopar Dam, Badlapur Market, Ulhas Valley, Peb Fort (Vikatgad), Mohili Meadows Resort, Ambarnath Temple, Nakhind Hill, Kulang Fort, Chikhloli Dam, Ambernath Shiva Temple with our Badalapur taxi service.",
+    h3content:
+      "Explore Badalapur's iconic attractions such as the Kondeshwar Temple, Kondeshwar Lake, Matheran Hill Station, Barvi Dam, Chanderi Fort, Vangani Waterfall, Malanggad Fort, Tansa Wildlife Sanctuary, Murbad Hills, Bhagirath Waterfall, Bhopar Dam, Badlapur Market, Ulhas Valley, Peb Fort (Vikatgad), Mohili Meadows Resort, Ambarnath Temple, Nakhind Hill, Kulang Fort, Chikhloli Dam, Ambernath Shiva Temple with our Badalapur taxi service.",
     h4: "Shopping And Dining:",
-    h4content: "Badlapur offers a vibrant mix of shopping and dining experiences that cater to diverse tastes. Shoppers can explore local markets like the Badlapur Market and the bustling R. K. Shopping Centre, where a variety of traditional and contemporary goods are available. For dining, the town boasts a selection of restaurants that serve both local and international cuisines. Head to Hotel Sai Deep for a taste of authentic Maharashtrian thalis, or visit Raj Darbar for its famous butter chicken and naan. For a more casual dining experience, Shubham Snacks is a popular spot to enjoy their special vada pav and misal pav, dishes that perfectly capture the flavors of the region. Whether you're shopping for unique local products or indulging in delicious meals, Badlapur has something for everyone.",
-    p2: "With our Badalapur cab service, you can comfortably explore all these attractions and more, making your trip to Badalapur a memorable experience. For a stress-free journey, book our Badalapur taxi service. In addition to transparent and reasonable Badalapur cab fare, you also have the flexibility to cancel your Badalapur cab booking before the departure time if your plans change."
+    h4content:
+      "Badlapur offers a vibrant mix of shopping and dining experiences that cater to diverse tastes. Shoppers can explore local markets like the Badlapur Market and the bustling R. K. Shopping Centre, where a variety of traditional and contemporary goods are available. For dining, the town boasts a selection of restaurants that serve both local and international cuisines. Head to Hotel Sai Deep for a taste of authentic Maharashtrian thalis, or visit Raj Darbar for its famous butter chicken and naan. For a more casual dining experience, Shubham Snacks is a popular spot to enjoy their special vada pav and misal pav, dishes that perfectly capture the flavors of the region. Whether you're shopping for unique local products or indulging in delicious meals, Badlapur has something for everyone.",
+    p2: "With our Badalapur cab service, you can comfortably explore all these attractions and more, making your trip to Badalapur a memorable experience. For a stress-free journey, book our Badalapur taxi service. In addition to transparent and reasonable Badalapur cab fare, you also have the flexibility to cancel your Badalapur cab booking before the departure time if your plans change.",
   },
   sub10: "Things To Know About Badlapur",
   sub10content: {
     p3: "By offering comprehensive car rental services in Badlapur, Sewak Travels simplifies Badalapur cab booking with an extensive network and user-friendly process. Experience seamless travel around Badalapur with Sewak Travels' Badalapur taxi service, offering quick and convenient travel options.",
     p4: "Badlapur, nestled in the Thane district of Maharashtra, is a town that blends the charm of suburban life with the convenience of city amenities. It is known for its serene surroundings and proximity to popular weekend getaways. Badlapur serves as a gateway to several scenic locations, making it a favorite destination for nature lovers and those seeking a peaceful retreat. The nearby hills and waterfalls, such as Kondeshwar and Barvi Dam, are popular spots for trekking and picnics, offering beautiful natural landscapes. The town is also known for its cultural events and vibrant community life, with local festivals celebrated with much enthusiasm. Badlapur's connectivity to Mumbai and other major cities makes it an ideal location for those looking to explore both urban and natural environments.",
-    p5: "With Badlapur Cab Booking services, you can experience the town's tranquility, scenic beauty, and local attractions from the comfort and privacy of your cab. Enjoy a hassle-free and enriching journey through Badlapur with Sewak Travels. Various Badlapur taxi services, including luxury, deluxe, and budget options, cater to different preferences, making exploring the town via taxi advisable. Badlapur taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book the cheapest cab service in Badalapur online, ensuring a cost-effective experience. Your Badlapur cab facilitates the exploration of top landmarks, allowing you to soak in the town's allure with the comfort of a private cab. Experience the vibrant spirit of Badalapur with Sewak Travels' reliable Badalapur taxi service."
+    p5: "With Badlapur Cab Booking services, you can experience the town's tranquility, scenic beauty, and local attractions from the comfort and privacy of your cab. Enjoy a hassle-free and enriching journey through Badlapur with Sewak Travels. Various Badlapur taxi services, including luxury, deluxe, and budget options, cater to different preferences, making exploring the town via taxi advisable. Badlapur taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book the cheapest cab service in Badalapur online, ensuring a cost-effective experience. Your Badlapur cab facilitates the exploration of top landmarks, allowing you to soak in the town's allure with the comfort of a private cab. Experience the vibrant spirit of Badalapur with Sewak Travels' reliable Badalapur taxi service.",
   },
   faqhead: "Frequently Asked Questions for Badlapur Cab Booking",
   faqcontent: {
@@ -579,7 +677,7 @@ export const dataBadalapur = {
     a2inner: [
       "Sedan (Dzire Etios)",
       "SUV (Ertiga Innova)",
-      "Prime SUV (Innova Crysta)"
+      "Prime SUV (Innova Crysta)",
     ],
     q3: "Is it essential to Pre-book Badlapur cabs?",
     a3: "Yes, it's highly recommended to pre-book the Badlapur cab to ensure availability, especially during peak travel seasons. Pre-booking cab service in Badalapur also allows you to plan your journey better and sometimes avail of discounted Badalapur taxi fares.",
@@ -587,94 +685,106 @@ export const dataBadalapur = {
     a4: "SEWAK users have access to the following types of cabs in Badalapur:",
     a4inner1: {
       h1: "• Car Rentals:",
-      h1inner: "For both intra-city and intercity cab services, SEWAK provides services to book car rental online with AITP vehicles, provided that the entire vehicle is booked."
+      h1inner:
+        "For both intra-city and intercity cab services, SEWAK provides services to book car rental online with AITP vehicles, provided that the entire vehicle is booked.",
     },
     a4inner2: {
       h1: "• Outstation Cab Booking:",
-      h1inner: "To connect two separate cities, SEWAK provides a taxi service in Badalapur for outstation with All India Tourist Permits (AITP)."
+      h1inner:
+        "To connect two separate cities, SEWAK provides a taxi service in Badalapur for outstation with All India Tourist Permits (AITP).",
     },
     a4inner3: {
       h1: "• Airport Transfers:",
-      h1inner: "SEWAK provides exclusive airport connectivity to and from the airport, but it's only intra-city and doesn't permit inter-city airport cab service."
+      h1inner:
+        "SEWAK provides exclusive airport connectivity to and from the airport, but it's only intra-city and doesn't permit inter-city airport cab service.",
     },
     q5: "Can I pay online for a Badlapur cab service?",
     a5: "Yes, online payment options are available for the Badlapur cab service. You can pay securely through various online payment gateways for a seamless booking experience. You can conveniently compare Badalapur taxi charges across different categories and proceed with the transaction using your preferred payment method.",
     q6: "What additional charges are typically added when booking a cab?",
     a6: "When you book a cab in Badalapur, rest assured that the fare displayed at the start will be the same as the amount you pay at the end of your journey. However, it's crucial to review the trip's inclusions and exclusions while booking a taxi in Badalapur. Fuel charges and driver allowances are covered in the fare, but the parking fees and toll charges for local taxi service in Badalapur and outstation cabs Badalapur trips are typically not included. Ensure you check these details to avoid any surprises during your ride.",
     q7: "What are the advantages of an online cab booking in Badlapur with Sewak Travels?",
-    a7: "At Sewak Travels, our goal is to enhance your travel experience. Booking Badalapur cabs online with Sewak Travels offers several advantages, including a convenient Badalapur cab booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Badalapur taxi with us for an unparalleled journey."
-  }
-}
+    a7: "At Sewak Travels, our goal is to enhance your travel experience. Booking Badalapur cabs online with Sewak Travels offers several advantages, including a convenient Badalapur cab booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Badalapur taxi with us for an unparalleled journey.",
+  },
+};
 export const dataKalka = {
   main: "Book a Cab in Kalka ",
   sub: "Book a Cab in Kalka with Sewak Travels",
-  subcontent: "Explore the scenic beauty of Kalka, a captivating tourist destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Kalka to discover the city's numerous tourist attractions. Whether you prefer private or public transportation, abundant options are available for reaching Kalka. Apart from flights and trains, you can easily reach Kalka by cab, enjoying a picturesque and smooth road trip. Additionally, the taxi service in Kalka offers convenient travel between tourist spots and for Kalka Outstation Cabs journeys. When booking a cab service in Kalka, you'll find a variety of options to book car rental online. You can book a cab in Kalka for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Kalka or outstation cabs Kalka with Sewak for a seamless journey.",
+  subcontent:
+    "Explore the scenic beauty of Kalka, a captivating tourist destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Kalka to discover the city's numerous tourist attractions. Whether you prefer private or public transportation, abundant options are available for reaching Kalka. Apart from flights and trains, you can easily reach Kalka by cab, enjoying a picturesque and smooth road trip. Additionally, the taxi service in Kalka offers convenient travel between tourist spots and for Kalka Outstation Cabs journeys. When booking a cab service in Kalka, you'll find a variety of options to book car rental online. You can book a cab in Kalka for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Kalka or outstation cabs Kalka with Sewak for a seamless journey.",
   sub1: "Booking Cabs in Kalka ",
-  sub1content: "Finding cabs in Kalka is effortless and convenient. You can easily hire outstation cabs in Kalka or local taxi service in Kalka online. For exploring the various tourist attractions in Kalka, the best option is to make an online cab booking in Kalka. Once you have secured a Kalka taxi, you're all set to discover every nook and cranny of the city. For a comfortable and hassle-free ride at an affordable Kalka taxi fare, you can also conveniently book a taxi in Kalka with Sewak Travels. Pre-booking cab service in Kalka allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Kalka available on Sewak Travels to find and book a cab in Kalka for your needs. Don’t wait, book the best taxi service in Kalka with us.",
+  sub1content:
+    "Finding cabs in Kalka is effortless and convenient. You can easily hire outstation cabs in Kalka or local taxi service in Kalka online. For exploring the various tourist attractions in Kalka, the best option is to make an online cab booking in Kalka. Once you have secured a Kalka taxi, you're all set to discover every nook and cranny of the city. For a comfortable and hassle-free ride at an affordable Kalka taxi fare, you can also conveniently book a taxi in Kalka with Sewak Travels. Pre-booking cab service in Kalka allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Kalka available on Sewak Travels to find and book a cab in Kalka for your needs. Don’t wait, book the best taxi service in Kalka with us.",
   sub2: "Kalka Cab Price ",
-  sub2content: "Sewak Travels provides economical Kalka cab prices. You can choose from a range of air-conditioned cabs in Kalka that align with your budget and requirements, ensuring the best deals on Kalka taxi charges in the city. Various options exist for Kalka taxi booking, offering diverse services, and deals, and Kalka taxi service prices. Opting for Sewak Travels for your Kalka cab service booking can unlock enticing discounts and offers. The Kalka taxi fare may vary based on factors such as journey date, time, and type of vehicle chosen (sedan, SUV, luxury car, etc.), distance/Kms traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
+  sub2content:
+    "Sewak Travels provides economical Kalka cab prices. You can choose from a range of air-conditioned cabs in Kalka that align with your budget and requirements, ensuring the best deals on Kalka taxi charges in the city. Various options exist for Kalka taxi booking, offering diverse services, and deals, and Kalka taxi service prices. Opting for Sewak Travels for your Kalka cab service booking can unlock enticing discounts and offers. The Kalka taxi fare may vary based on factors such as journey date, time, and type of vehicle chosen (sedan, SUV, luxury car, etc.), distance/Kms traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
   sub3: "Car Rental Services in Kalka ",
-  sub3content: "Kalka cab service is available year-round, offering customizable Kalka taxi packages to suit your preferences. In addition to cabs, you can explore various Kalka taxi services at different Kalka taxi price points. Sewak Travels provides a reliable and cheapest cab service in Kalka with a wide range of choices to enhance your travel experience. Depending on your needs, you can select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before you book a Taxi Service in Kalka, you can review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
+  sub3content:
+    "Kalka cab service is available year-round, offering customizable Kalka taxi packages to suit your preferences. In addition to cabs, you can explore various Kalka taxi services at different Kalka taxi price points. Sewak Travels provides a reliable and cheapest cab service in Kalka with a wide range of choices to enhance your travel experience. Depending on your needs, you can select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before you book a Taxi Service in Kalka, you can review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
   sub4: "Online Kalka Cab Booking with Sewak Travels ",
-  sub4content: "For Kalka cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Kalka cabs for your journey. Additionally, you can book your Kalka taxi for either a one way cab booking or Kalka taxi round trip. For a seamless online taxi booking Kalka experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Kalka cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
+  sub4content:
+    "For Kalka cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Kalka cabs for your journey. Additionally, you can book your Kalka taxi for either a one way cab booking or Kalka taxi round trip. For a seamless online taxi booking Kalka experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Kalka cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
   img: "/assets/img/LocationDifferent/Kalka.webp",
   sub5: "Why Choose Sewak Travels to Book a Kalka Cab? ",
-  sub5content: "Sewak Travels takes the hassle out of booking a Kalka Cab by offering premium services at affordable Kalka taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit Sewak Travels' official website, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Kalka taxi service, why wait any longer?",
+  sub5content:
+    "Sewak Travels takes the hassle out of booking a Kalka Cab by offering premium services at affordable Kalka taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit Sewak Travels' official website, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Kalka taxi service, why wait any longer?",
   sub6: "Book your Kalka Cabs effortlessly:",
   sub6content: "When you choose Sewak for your cab service in Kalka, you get:",
   sub6H1: "Professional drivers:",
-  sub6H1inner: "Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Kalka and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Kalka taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+  sub6H1inner:
+    "Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Kalka and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Kalka taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
   sub6H2: "Budget-friendly prices: ",
-  sub6H2inner: "Sewak offers budget-friendly prices, ensuring the best cab service in Kalka without compromising quality or comfort.",
+  sub6H2inner:
+    "Sewak offers budget-friendly prices, ensuring the best cab service in Kalka without compromising quality or comfort.",
   sub6H3: "24/7 Booking & Travel Assistance: ",
-  sub6H3inner: "Sewak's taxi service operates 24/7, offering convenient cab booking Kalka options for customers whenever transportation is needed.",
+  sub6H3inner:
+    "Sewak's taxi service operates 24/7, offering convenient cab booking Kalka options for customers whenever transportation is needed.",
   sub6H4: "Diverse Kalka Taxi Options:",
-  sub6H4inner: "When selecting our Kalka cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs Kalka Cab (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV Kalka Cab offers ample space for up to four bags. We also offer options for Kalka sharing cab.",
+  sub6H4inner:
+    "When selecting our Kalka cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs Kalka Cab (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV Kalka Cab offers ample space for up to four bags. We also offer options for Kalka sharing cab.",
   sub7: "Various Kalka Taxi Services by Sewak Travels ",
   sub7content: {
     p1: "At Sewak, we cater to a variety of travel needs with our specialized taxi services in Kalka, encompassing three distinct categories: outstation cabs Kalka trips, full day cab in Kalka, seamless half-day local taxi service in Kalka excursions.",
     h1: "Local cabs in Kalka",
-    h1content: "Kalka is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Kalka through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab, and full day cab in Kalka. Sewak is the premier choice for finding high-quality yet affordable cabs in Kalka, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
+    h1content:
+      "Kalka is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Kalka through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab, and full day cab in Kalka. Sewak is the premier choice for finding high-quality yet affordable cabs in Kalka, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
     h2: "Kalka outstation cab service ",
-    h2content: "You can easily travel to nearby cities with cabs from Kalka and hire an outstation taxi service Kalka for both round trips and one way cab booking journeys. Outstation taxi service Kalka is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Kalka for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
-    h3content: ""
+    h2content:
+      "You can easily travel to nearby cities with cabs from Kalka and hire an outstation taxi service Kalka for both round trips and one way cab booking journeys. Outstation taxi service Kalka is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Kalka for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
+    h3content: "",
   },
   sub8: "Places to Visit with Kalka Outstation Cabs ",
   sub8content: {
     p1: "Outstation cabs from Kalka",
-    p1inner: "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kalka. ",
+    p1inner:
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kalka. ",
     p2: "A few of the top places to visit with outstation cabs from Kalka include:",
     h1: "Destination",
-    locations: [
-      "Chandigarh",
-      "Panchkula",
-      "Shimla",
-      "Solan",
-      "Ambala"
-    ],
+    locations: ["Chandigarh", "Panchkula", "Shimla", "Solan", "Ambala"],
     p3: "If you're traveling to Kalka from a nearby destination, you can avail of taxi booking in Kalka services for a few of the routes including:",
     delhiLoc: [
       "Chandigarh to Kalka",
       "Panchkula to Kalka",
       "Shimla to Kalka",
       "Solan to Kalka",
-      "Ambala to Kalka"
+      "Ambala to Kalka",
     ],
-    p4: "Visit the Sewak Travels’ official website to compare cab fares for various Kalka Taxi Services."
+    p4: "Visit the Sewak Travels’ official website to compare cab fares for various Kalka Taxi Services.",
   },
   sub9: "Top Things to Do in Kalka with Our Kalka Cab Service:",
   sub9content: {
     h3: "Sightseeing: ",
-    h3content: "Explore Kalka's iconic attractions such as the Kalka Railway Station, Kali Mata Temple, Pinjore Gardens, Mansa Devi Temple, Timber Trail, Chail Sanctuary, Baba Balak Nath Temple, Shri Balaji Temple, Gilbert Trail, Yadvinder Garden, Kaushalya Dam, Solan Brewery, Monkey Point, Sunset Point, Christ Church, Sukhna Lake, Gurudwara Nada Sahib, Chokhi Dhani, Chandigarh Rose Garden, Rock Garden with our Kalka taxi service. ",
+    h3content:
+      "Explore Kalka's iconic attractions such as the Kalka Railway Station, Kali Mata Temple, Pinjore Gardens, Mansa Devi Temple, Timber Trail, Chail Sanctuary, Baba Balak Nath Temple, Shri Balaji Temple, Gilbert Trail, Yadvinder Garden, Kaushalya Dam, Solan Brewery, Monkey Point, Sunset Point, Christ Church, Sukhna Lake, Gurudwara Nada Sahib, Chokhi Dhani, Chandigarh Rose Garden, Rock Garden with our Kalka taxi service. ",
     h4: "Shopping And Dining: ",
-    h4content: "In Kalka, shopping and dining are a delightful experience for locals and visitors alike. The bustling markets, such as the Kalka Main Bazaar and the Sector 4 Market, offer a vibrant mix of traditional goods and modern shopping finds. For a culinary adventure, head to popular eateries like Hotel Ganga, renowned for its delicious Chole Bhature and Aloo Paratha. Another must-visit is Kalka Restaurant, famous for its Paneer Tikka and Butter Chicken. For those seeking a sweet treat, Baker's Junction serves up delectable Rasgulla and Gulab Jamun. Whether you're exploring the markets or indulging in local delicacies, Kalka promises a memorable shopping and dining experience.",
-    p2: "With our Kalka cab service, you can comfortably explore all these attractions and more, making your trip to Kalka a memorable experience. For a stress-free journey, book our Kalka taxi service. In addition to transparent and reasonable Kalka cab fare, you also have the flexibility to cancel your Kalka cab booking before the departure time if your plans change."
+    h4content:
+      "In Kalka, shopping and dining are a delightful experience for locals and visitors alike. The bustling markets, such as the Kalka Main Bazaar and the Sector 4 Market, offer a vibrant mix of traditional goods and modern shopping finds. For a culinary adventure, head to popular eateries like Hotel Ganga, renowned for its delicious Chole Bhature and Aloo Paratha. Another must-visit is Kalka Restaurant, famous for its Paneer Tikka and Butter Chicken. For those seeking a sweet treat, Baker's Junction serves up delectable Rasgulla and Gulab Jamun. Whether you're exploring the markets or indulging in local delicacies, Kalka promises a memorable shopping and dining experience.",
+    p2: "With our Kalka cab service, you can comfortably explore all these attractions and more, making your trip to Kalka a memorable experience. For a stress-free journey, book our Kalka taxi service. In addition to transparent and reasonable Kalka cab fare, you also have the flexibility to cancel your Kalka cab booking before the departure time if your plans change.",
   },
   sub10: "Things To Know About Kalka",
   sub10content: {
     p3: "By offering comprehensive car rental services in Kalka, Sewak Travels simplifies Kalka cab booking with an extensive network and user-friendly process. Experience seamless travel around Kalka with Sewak Travels' Kalka taxi service, offering quick and convenient travel options.",
     p4: "Kalka, located in the Panchkula district of Haryana, is a region known for its scenic beauty and historic charm. The area is rich in heritage and natural attractions, with the iconic Kalka Shimla Railway being one of its notable landmarks. This historic toy train route offers a picturesque journey through the foothills of the Himalayas, providing stunning views and a glimpse into the region's colonial past. The town is also a gateway to the famous hill station of Shimla, which is renowned for its pleasant climate, lush green landscapes, and historical architecture. Kalka serves as an excellent starting point for exploring the surrounding hills and valleys, including popular spots like Pinjore Gardens and the serene town of Chail. Kalka is known for its tranquil environment and picturesque surroundings. The nearby hill stations and natural spots offer beautiful trekking trails and panoramic vistas. Additionally, the town’s proximity to Shimla adds to its appeal, making it a convenient base for exploring the broader region.",
-    p5: "With Kalka Cab Booking services, you can experience the town's charm, tranquility, and excitement from the comfort and privacy of your cab. Enjoy a hassle-free and enriching journey through Kalka with Sewak Travels. Various Kalka taxi services, including luxury, deluxe, and budget options, cater to different preferences, making exploring the town via taxi advisable. Kalka taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book the cheapest cab service in Kalka online, ensuring a cost-effective experience. Your Kalka cab facilitates the exploration of top landmarks, allowing you to soak in the town’s allure with the comfort of a private cab. Experience the vibrant spirit of Kalka with Sewak Travels' reliable Kalka taxi service."
+    p5: "With Kalka Cab Booking services, you can experience the town's charm, tranquility, and excitement from the comfort and privacy of your cab. Enjoy a hassle-free and enriching journey through Kalka with Sewak Travels. Various Kalka taxi services, including luxury, deluxe, and budget options, cater to different preferences, making exploring the town via taxi advisable. Kalka taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book the cheapest cab service in Kalka online, ensuring a cost-effective experience. Your Kalka cab facilitates the exploration of top landmarks, allowing you to soak in the town’s allure with the comfort of a private cab. Experience the vibrant spirit of Kalka with Sewak Travels' reliable Kalka taxi service.",
   },
   faqhead: "Frequently Asked Questions for Kalka Cab Booking",
   faqcontent: {
@@ -685,7 +795,7 @@ export const dataKalka = {
     a2inner: [
       "Sedan (Dzire Etios)",
       "SUV (Ertiga Innova)",
-      "Prime SUV (Innova Crysta)"
+      "Prime SUV (Innova Crysta)",
     ],
     q3: "Is it essential to Pre-book Kalka cabs?",
     a3: "Yes, it's highly recommended to pre-book the Kalka cab to ensure availability, especially during peak travel seasons. Pre-booking cab service in Kalka also allows you to plan your journey better and sometimes avail of discounted Kalka taxi fares.",
@@ -693,94 +803,106 @@ export const dataKalka = {
     a4: "SEWAK users have access to the following types of cabs in Kalka:",
     a4inner1: {
       h1: "• Car Rentals: ",
-      h1inner: "For both intra-city and intercity cab services, SEWAK provides services to book car rental online with AITP vehicles, provided that the entire vehicle is booked."
+      h1inner:
+        "For both intra-city and intercity cab services, SEWAK provides services to book car rental online with AITP vehicles, provided that the entire vehicle is booked.",
     },
     a4inner2: {
       h1: "• Outstation Cab Booking:",
-      h1inner: "To connect two separate cities, SEWAK provides a taxi service in Kalka for outstation with All India Tourist Permits (AITP)."
+      h1inner:
+        "To connect two separate cities, SEWAK provides a taxi service in Kalka for outstation with All India Tourist Permits (AITP).",
     },
     a4inner3: {
       h1: "• Airport Transfers:",
-      h1inner: "SEWAK provides exclusive airport connectivity to and from the airport, but it's only intra-city and doesn't permit inter-city airport cab service."
+      h1inner:
+        "SEWAK provides exclusive airport connectivity to and from the airport, but it's only intra-city and doesn't permit inter-city airport cab service.",
     },
     q5: "Can I pay online for a Kalka cab service?",
     a5: "Yes, online payment options are available for the Kalka cab service. You can pay securely through various online payment gateways for a seamless booking experience. You can conveniently compare Kalka taxi charges across different categories and proceed with the transaction using your preferred payment method.",
     q6: "What additional charges are typically added when booking a cab?",
     a6: "When you book a cab in Kalka, rest assured that the fare displayed at the start will be the same as the amount you pay at the end of your journey. However, it's crucial to review the trip's inclusions and exclusions while booking a taxi in Kalka. Fuel charges and driver allowances are covered in the fare, but the parking fees and toll charges for local taxi service in Kalka and outstation cabs Kalka trips are typically not included. Ensure you check these details to avoid any surprises during your ride.",
     q7: "What are the advantages of an online cab booking Kalka with Sewak Travels?",
-    a7: "At Sewak Travels, our goal is to enhance your travel experience. Booking Kalka cabs online with Sewak Travels offers several advantages, including a convenient Kalka cab booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Kalka taxi with us for an unparalleled journey."
-  }
-}
+    a7: "At Sewak Travels, our goal is to enhance your travel experience. Booking Kalka cabs online with Sewak Travels offers several advantages, including a convenient Kalka cab booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Kalka taxi with us for an unparalleled journey.",
+  },
+};
 export const dataBarog = {
   main: "Book a Cab in Barog",
   sub: "Book a Cab in Barog with Sewak Travels",
-  subcontent: "Explore the scenic beauty of Barog, a captivating tourist destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Barog to discover the city’s numerous tourist attractions. Whether you prefer private or public transportation, abundant options are available for reaching Barog. Apart from flights and trains, you can easily reach Barog by cab, enjoying a picturesque and smooth road trip. Additionally, the taxi service in Barog offers convenient travel between tourist spots and for Barog Outstation Cabs journeys. When booking a cab service in Barog, you'll find a variety of options to book car rental online. You can book a cab in Barog for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Barog or outstation cabs in Barog with Sewak for a seamless journey.",
+  subcontent:
+    "Explore the scenic beauty of Barog, a captivating tourist destination in India, and create unforgettable memories with your loved ones. Opt for the best cab service in Barog to discover the city’s numerous tourist attractions. Whether you prefer private or public transportation, abundant options are available for reaching Barog. Apart from flights and trains, you can easily reach Barog by cab, enjoying a picturesque and smooth road trip. Additionally, the taxi service in Barog offers convenient travel between tourist spots and for Barog Outstation Cabs journeys. When booking a cab service in Barog, you'll find a variety of options to book car rental online. You can book a cab in Barog for any duration that fits your needs, ensuring a flexible and comfortable travel experience. Hire a taxi service in Barog or outstation cabs in Barog with Sewak for a seamless journey.",
   sub1: "Booking Cabs in Barog",
-  sub1content: "Finding cabs in Barog is effortless and convenient. You can easily hire outstation cabs in Barog or local taxi service in Barog online. For exploring the various tourist attractions in Barog, the best option is to make an online cab booking in Barog. Once you have secured a Barog taxi, you're all set to discover every nook and cranny of the city. For a comfortable and hassle-free ride at an affordable Barog taxi fare, you can also conveniently book a taxi in Barog with Sewak Travels. Pre-booking cab service in Barog allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Barog available on Sewak Travels to find and book a cab in Barog for your needs. Don’t wait, book the best taxi service in Barog with us.",
+  sub1content:
+    "Finding cabs in Barog is effortless and convenient. You can easily hire outstation cabs in Barog or local taxi service in Barog online. For exploring the various tourist attractions in Barog, the best option is to make an online cab booking in Barog. Once you have secured a Barog taxi, you're all set to discover every nook and cranny of the city. For a comfortable and hassle-free ride at an affordable Barog taxi fare, you can also conveniently book a taxi in Barog with Sewak Travels. Pre-booking cab service in Barog allows you to plan your journey better and ensure availability, especially during peak travel seasons. Browse the rental cabs in Barog available on Sewak Travels to find and book a cab in Barog for your needs. Don’t wait, book the best taxi service in Barog with us.",
   sub2: "Barog Cab Price",
-  sub2content: "Sewak Travels provides economical Barog cab prices. You can choose from a range of air-conditioned cabs in Barog that align with your budget and requirements, ensuring the best deals on Barog taxi charges in the city. Various options exist for Barog taxi booking, offering diverse services, and deals, and Barog taxi service prices. Opting for Sewak Travels for your Barog cab service booking can unlock enticing discounts and offers. The Barog taxi fare may vary based on factors such as journey date, time, and type of vehicle chosen (sedan, SUV, luxury car, etc.), distance/Kms traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
+  sub2content:
+    "Sewak Travels provides economical Barog cab prices. You can choose from a range of air-conditioned cabs in Barog that align with your budget and requirements, ensuring the best deals on Barog taxi charges in the city. Various options exist for Barog taxi booking, offering diverse services, and deals, and Barog taxi service prices. Opting for Sewak Travels for your Barog cab service booking can unlock enticing discounts and offers. The Barog taxi fare may vary based on factors such as journey date, time, and type of vehicle chosen (sedan, SUV, luxury car, etc.), distance/Kms traveled, duration of the trip, toll charges, driver allowances, and any additional services the customer chooses.",
   sub3: "Car Rental Services in Barog",
-  sub3content: "Barog cab service is available year-round, offering customizable Barog taxi packages to suit your preferences. In addition to cabs, you can explore various Barog taxi services at different Barog taxi price points. Sewak Travels provides a reliable and cheapest cab service in Barog with a wide range of choices to enhance your travel experience. Depending on your needs, you can select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before you book a Taxi Service in Barog, you can review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
+  sub3content:
+    "Barog cab service is available year-round, offering customizable Barog taxi packages to suit your preferences. In addition to cabs, you can explore various Barog taxi services at different Barog taxi price points. Sewak Travels provides a reliable and cheapest cab service in Barog with a wide range of choices to enhance your travel experience. Depending on your needs, you can select from hatchbacks, sedans, SUVs, or Prime SUVs with various car models available on the Sewak Travels platform, including Dzire, Etios, Ertiga, and Innova. Before you book a Taxi Service in Barog, you can review the ratings of each cab and the profiles of individual drivers. All drivers listed on Sewak Travels are courteous, well-trained, and experienced professionals ensuring a smooth journey for passengers.",
   sub4: "Online Barog Cab Booking with Sewak Travels",
-  sub4content: "For Barog cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Barog cabs for your journey. Additionally, you can book your Barog taxi for either a one-way cab booking or Barog taxi round trip. For a seamless online taxi booking Barog experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Barog cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
+  sub4content:
+    "For Barog cab booking, simply navigate to Sewak Travels' official travel portal. Fill in all necessary information including your destination and departure date. Browse through the list of available Barog cabs for your journey. Additionally, you can book your Barog taxi for either a one-way cab booking or Barog taxi round trip. For a seamless online taxi booking Barog experience, you can also reach out to Sewak Travels' customer service. Rest assured all cabs are thoroughly sanitized. The process of booking a Barog cab is simple – just log in to Sewak Travels' official portal, choose your trip type (outstation, local sightseeing, corporate, or airport taxi booking), set your pickup date and time, and select from a range of available car options at various prices for your travel date. Select your ride and enjoy a seamless journey.",
   img: "/assets/img/LocationDifferent/Barog.webp",
   sub5: "Why Choose Sewak Travels to Book a Barog Cab?",
-  sub5content: "Sewak Travels takes the hassle out of booking a Barog Cab by offering premium services at affordable Barog taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Barog taxi service, why wait any longer?",
+  sub5content:
+    "Sewak Travels takes the hassle out of booking a Barog Cab by offering premium services at affordable Barog taxi rates, complete with a pickup-drop facility and prompt customer support. With just a click on Sewak Travels, everything you need is at your fingertips. Simply visit https://sewaktravels.com/, click on the cabs icon, select your preference (Outstation, local or hourly, corporate, and airport cab service), choose your destination and date, select the car and rates according to your needs and budget, fill in the required details, proceed to payment, and you're all set! Now that you're acquainted with our Barog taxi service, why wait any longer?",
   sub6: "Book your Barog Cabs effortlessly:",
   sub6content: "When you choose Sewak for your cab service in Barog, you get:",
   sub6H1: "Professional drivers:",
-  sub6H1inner: "Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Barog and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Barog taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
+  sub6H1inner:
+    "Sewak's drivers are skilled professionals dedicated to passenger safety and comfort. Carefully selected through a rigorous process, they possess extensive knowledge of cab routes from Barog and excel in navigation. Across India, our drivers not only uncover hidden gems but also communicate effectively in the local language, acting as both drivers and friendly trip hosts. Our Barog taxi comes equipped with full air conditioning, and our expert drivers prioritize safety by following all standard sanitization protocols.",
   sub6H2: "Budget-friendly prices:",
-  sub6H2inner: "Sewak offers budget-friendly prices, ensuring the best cab service in Barog without compromising quality or comfort.",
+  sub6H2inner:
+    "Sewak offers budget-friendly prices, ensuring the best cab service in Barog without compromising quality or comfort.",
   sub6H3: "24/7 Booking & Travel Assistance:",
-  sub6H3inner: "Sewak's taxi service operates 24/7, offering convenient cab booking Barog options for customers whenever transportation is needed.",
+  sub6H3inner:
+    "Sewak's taxi service operates 24/7, offering convenient cab booking Barog options for customers whenever transportation is needed.",
   sub6H4: "Diverse Barog Taxi Options",
-  sub6H4inner: "When selecting our Barog cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs Barog Cab (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV Barog Cab offers ample space for up to four bags. We also offer options for Barog sharing cabs.",
+  sub6H4inner:
+    "When selecting our Barog cab service for your journey, you'll access three types of cabs. These include 4-seater sedans (Dzire, Etios), 7-seater SUVs (Ertiga, Innova), and 7-seater Prime SUVs Barog Cab (Innova Crysta). Choose a 4-seater sedan if you need to accommodate three bags. Our 7-seater Prime SUV Barog Cab offers ample space for up to four bags. We also offer options for Barog sharing cabs.",
   sub7: "Various Barog Taxi Services by Sewak Travels",
   sub7content: {
     p1: "At Sewak, we cater to a variety of travel needs with our specialized taxi services in Barog, encompassing three distinct categories: outstation cabs Barog trips, full day cab in Barog, and seamless half-day local taxi service in Barog excursions.",
     h1: "Local cabs in Barog",
-    h1content: "Barog is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Barog through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab and full-day cab in Barog. Sewak is the premier choice for finding high-quality yet affordable cabs in Barog, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
+    h1content:
+      "Barog is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Barog through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab and full-day cab in Barog. Sewak is the premier choice for finding high-quality yet affordable cabs in Barog, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
     h2: "Barog outstation cab service",
-    h2content: "You can easily travel to nearby cities with cabs from Barog and hire an outstation taxi service Barog for both round trips and one-way cab booking journeys. Outstation taxi service Barog is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Barog for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
-    h3content: ""
+    h2content:
+      "You can easily travel to nearby cities with cabs from Barog and hire an outstation taxi service Barog for both round trips and one-way cab booking journeys. Outstation taxi service Barog is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Barog for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
+    h3content: "",
   },
   sub8: "Places to Visit with Barog Outstation Cabs",
   sub8content: {
     p1: "Outstation cabs from Barog",
-    p1inner: "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Barog.",
+    p1inner:
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Barog.",
     p2: "A few of the top places to visit with outstation cabs from Barog include:",
     h1: "Destination",
-    locations: [
-      "Solan",
-      "Shimla",
-      "Chandigarh",
-      "Kasauli",
-      "Nalagarh"
-    ],
+    locations: ["Solan", "Shimla", "Chandigarh", "Kasauli", "Nalagarh"],
     p3: "If you're traveling to Barog from a nearby destination, you can avail of taxi booking in Barog services for a few of the routes including:",
     delhiLoc: [
       "Solan to Barog",
       "Shimla to Barog",
       "Chandigarh to Barog",
       "Kasauli to Barog",
-      "Nalagarh to Barog"
+      "Nalagarh to Barog",
     ],
-    p4: "Visit the Sewak Travels’ official website to compare cab fares for various Barog Taxi Services."
+    p4: "Visit the Sewak Travels’ official website to compare cab fares for various Barog Taxi Services.",
   },
   sub9: "Top Things to Do in Barog with Our Barog Cab Service:",
   sub9content: {
     h3: "Sightseeing:",
-    h3content: "Explore Barog's iconic attractions such as Solan Brewery, Barog Railway Station, Kali Temple, Karol Tibba, Barog Church, Shirdi Sai Baba Temple, Summer Hill, Chail Wildlife Sanctuary, Shoolini Temple, Dagshai Jail Museum, Gurkha Fort, Bon Monastery, Mahiya Temple, Giri River, Bhima Kali Temple, Sukhdev Vihar, Kuthar Fort, Giri Ganga Temple, Darlaghat, and Shili with our Barog taxi service.",
+    h3content:
+      "Explore Barog's iconic attractions such as Solan Brewery, Barog Railway Station, Kali Temple, Karol Tibba, Barog Church, Shirdi Sai Baba Temple, Summer Hill, Chail Wildlife Sanctuary, Shoolini Temple, Dagshai Jail Museum, Gurkha Fort, Bon Monastery, Mahiya Temple, Giri River, Bhima Kali Temple, Sukhdev Vihar, Kuthar Fort, Giri Ganga Temple, Darlaghat, and Shili with our Barog taxi service.",
     h4: "Shopping And Dining:",
-    h4content: "Barog, a quaint hill station nestled in Himachal Pradesh, offers a delightful array of shopping and dining experiences. For shopping enthusiasts, the bustling Barog Market is a haven with its vibrant array of local handicrafts, woolens, and artisanal products. Visitors can explore charming shops like The Hilltop Emporium for unique souvenirs and traditional items. When it comes to dining, Barog boasts some excellent eateries. The charming Chilly Beans Café is known for its hearty breakfast options and freshly brewed coffee. For a taste of local Himachali cuisine, the famous Restaurant Oakwood serves delicious dishes like Chana Madra and Siddu. Another must-visit is the Barog Heights Restaurant, where you can enjoy a cozy ambiance along with specialties such as Himachali-style trout fish and a variety of scrumptious parathas.",
-    p2: "With our Barog cab service, you can comfortably explore all these attractions and more, making your trip to Barog a memorable experience. For a stress-free journey, book our Barog taxi service. In addition to transparent and reasonable Barog cab fare, you also have the flexibility to cancel your Barog cab booking before the departure time if your plans change."
+    h4content:
+      "Barog, a quaint hill station nestled in Himachal Pradesh, offers a delightful array of shopping and dining experiences. For shopping enthusiasts, the bustling Barog Market is a haven with its vibrant array of local handicrafts, woolens, and artisanal products. Visitors can explore charming shops like The Hilltop Emporium for unique souvenirs and traditional items. When it comes to dining, Barog boasts some excellent eateries. The charming Chilly Beans Café is known for its hearty breakfast options and freshly brewed coffee. For a taste of local Himachali cuisine, the famous Restaurant Oakwood serves delicious dishes like Chana Madra and Siddu. Another must-visit is the Barog Heights Restaurant, where you can enjoy a cozy ambiance along with specialties such as Himachali-style trout fish and a variety of scrumptious parathas.",
+    p2: "With our Barog cab service, you can comfortably explore all these attractions and more, making your trip to Barog a memorable experience. For a stress-free journey, book our Barog taxi service. In addition to transparent and reasonable Barog cab fare, you also have the flexibility to cancel your Barog cab booking before the departure time if your plans change.",
   },
   sub10: "Things To Know About Barog",
   sub10content: {
     p3: "By offering comprehensive car rental services in Barog, Sewak Travels simplifies Barog cab booking with an extensive network and user-friendly process. Experience seamless travel around Barog with Sewak Travels’ Barog taxi service, providing quick and convenient travel options. Barog, a charming town in the Solan district of Himachal Pradesh, is known for its picturesque beauty and serene atmosphere. Nestled in the Himalayas, Barog is famous for its lush green landscapes, pleasant weather, and panoramic views. The town is a haven for nature lovers and offers a peaceful retreat from the hustle and bustle of city life.",
     p4: "One of Barog's notable attractions is the Barog Tunnel, a historic railway tunnel built during the British era, offering a glimpse into the region's colonial past. Additionally, the town is surrounded by scenic trails and viewpoints, such as the Karol Tibba and the Shivalik Range, providing excellent opportunities for trekking and photography.",
-    p5: "With Barog Cab Booking services, you can explore the town's beauty and tranquility from the comfort and privacy of your cab. Enjoy a hassle-free and enriching journey through Barog with Sewak Travels. Various Barog taxi services, including luxury, deluxe, and budget options, cater to different preferences, making exploring the town via taxi advisable. Barog taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book the most cost-effective cab service in Barog online, ensuring a budget-friendly experience. Your Barog cab facilitates the exploration of top landmarks, allowing you to enjoy the town's allure with the comfort of a private cab. Experience the serene charm of Barog with Sewak Travels’ reliable Barog taxi service."
+    p5: "With Barog Cab Booking services, you can explore the town's beauty and tranquility from the comfort and privacy of your cab. Enjoy a hassle-free and enriching journey through Barog with Sewak Travels. Various Barog taxi services, including luxury, deluxe, and budget options, cater to different preferences, making exploring the town via taxi advisable. Barog taxi service ensures effortless commuting to key attractions. With Sewak Travels, you can easily book the most cost-effective cab service in Barog online, ensuring a budget-friendly experience. Your Barog cab facilitates the exploration of top landmarks, allowing you to enjoy the town's allure with the comfort of a private cab. Experience the serene charm of Barog with Sewak Travels’ reliable Barog taxi service.",
   },
   faqhead: "Frequently Asked Questions for Barog Cab Booking",
   faqcontent: {
@@ -791,7 +913,7 @@ export const dataBarog = {
     a2inner: [
       "Sedan (Dzire Etios)",
       "SUV (Ertiga Innova)",
-      "Prime SUV (Innova Crysta)"
+      "Prime SUV (Innova Crysta)",
     ],
     q3: "Is it essential to pre-book Barog cabs?",
     a3: "Yes, it's highly recommended to pre-book the Barog cab to ensure availability, especially during peak travel seasons. Pre-booking cab service in Barog also allows you to plan your journey better and sometimes avail of discounted Barog taxi fares.",
@@ -799,24 +921,27 @@ export const dataBarog = {
     a4: "SEWAK users have access to the following types of cabs in Barog:",
     a4inner1: {
       h1: "• Car Rentals:",
-      h1inner: "For both intra-city and intercity cab services, SEWAK provides services to book car rental online with AITP vehicles, provided that the entire vehicle is booked."
+      h1inner:
+        "For both intra-city and intercity cab services, SEWAK provides services to book car rental online with AITP vehicles, provided that the entire vehicle is booked.",
     },
     a4inner2: {
       h1: "• Outstation Cab Booking:",
-      h1inner: "To connect two separate cities, SEWAK provides a taxi service in Barog for outstation with All India Tourist Permits (AITP)."
+      h1inner:
+        "To connect two separate cities, SEWAK provides a taxi service in Barog for outstation with All India Tourist Permits (AITP).",
     },
     a4inner3: {
       h1: "• Airport Transfers:",
-      h1inner: "SEWAK provides exclusive airport connectivity to and from the airport, but it's only intra-city and doesn't permit inter-city airport cab service."
+      h1inner:
+        "SEWAK provides exclusive airport connectivity to and from the airport, but it's only intra-city and doesn't permit inter-city airport cab service.",
     },
     q5: "Can I pay online for a Barog cab service?",
     a5: "Yes, online payment options are available for the Barog cab service. You can pay securely through various online payment gateways for a seamless booking experience. You can conveniently compare Barog taxi charges across different categories and proceed with the transaction using your preferred payment method.",
     q6: "What additional charges are typically added when booking a cab?",
     a6: "When you book a cab in Barog, rest assured that the fare displayed at the start will be the same as the amount you pay at the end of your journey. However, it's crucial to review the trip's inclusions and exclusions while booking a taxi in Barog. Fuel charges and driver allowances are covered in the fare, but the parking fees and toll charges for local taxi service in Barog and outstation cabs Barog trips are typically not included. Ensure you check these details to avoid any surprises during your ride.",
     q7: "What are the advantages of an online cab booking in Barog with Sewak Travels?",
-    a7: "At Sewak Travels, our goal is to enhance your travel experience. Booking Barog cabs online with Sewak Travels offers several advantages, including a convenient Barog cab booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Barog taxi with us for an unparalleled journey."
-  }
-}
+    a7: "At Sewak Travels, our goal is to enhance your travel experience. Booking Barog cabs online with Sewak Travels offers several advantages, including a convenient Barog cab booking process, multiple cab options to choose from, sanitized cabs, transparent pricing, secure online payment options, and reliable 24/7 customer support for any assistance needed during the journey. So, whenever you're gearing up for a road trip, remember to book your Barog taxi with us for an unparalleled journey.",
+  },
+};
 export const dataZira = {
   main: "Book a Cab in Zira ",
   sub: "Book a Cab in Zira with Sewak Travels",
@@ -857,17 +982,17 @@ export const dataZira = {
     p1: "At Sewak, we cater to a variety of travel needs with our specialized taxi services in Zira, encompassing three distinct categories: outstation cabs Zira trips, full day cab in Zira, seamless half-day local taxi service in Zira excursions.",
     h1: "Local Cabs in Zira:",
     h1content:
-      "Explore Zira and its attractions with flexible hourly packages, including half-day and full-day rentals. We offer a range of hourly packages to suit your needs, including half-day cab, and full day cab in Zira. Sewak is the premier choice for finding high-quality yet affordable cabs in Zira, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
+      "Explore Zira and its attractions with flexible hourly packages, including half-day and full-day rentals. We offer a range of hourly packages to suit your needs, including half-day cab, and full day cab in Zira. Sewak is the premier choice for finding high-quality yet affordable cabs in Zira, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
     h2: "Outstation Cabs in Zira:",
     h2content:
-      "You can easily travel to nearby cities with cabs from Zira and hire an outstation taxi service Zira for both round trips and one way cab booking journeys. Outstation taxi service Zira is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Zira for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups. ",
+      "You can easily travel to nearby cities with cabs from Zira and hire an outstation taxi service Zira for both round trips and one way cab booking journeys. Outstation taxi service Zira is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Zira for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups. ",
     h3content: "",
   },
   sub8: "Places to Visit with Zira Outstation Cabs",
   sub8content: {
     p1: "Outstation cabs from Zira ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Zira.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Zira.",
     p2: "A few of the top places to visit with outstation cabs from Zira include:",
     h1: "Destination",
     locations: ["Ferozepur", "Moga", "Faridkot", "Amritsar", "and more."],
@@ -986,7 +1111,7 @@ export const dataPanchkula = {
   sub8content: {
     p1: "Outstation cabs from Panchkula",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Panchkula.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Panchkula.",
     p2: "A few of the top places to visit with outstation cabs from Panchkula include:",
     h1: "Destination",
     locations: ["Chandigarh", "Mohali", "Ambala", "Shimla"],
@@ -1105,7 +1230,7 @@ export const dataZirakpur = {
   sub8content: {
     p1: "Outstation cabs from Zirakpur",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Zirakpur.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Zirakpur.",
     p2: "A few of the top places to visit with outstation cabs from Zirakpur include:",
     h1: "Destination",
     locations: ["Chandigarh", "Panchkula", "Mohali", "Ambala."],
@@ -1224,7 +1349,7 @@ export const dataSahibzadaAjitSinghNagar = {
   sub8content: {
     p1: "Outstation cabs from Sahibzada Ajit Singh Nagar",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Sahibzada Ajit Singh Nagar.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Sahibzada Ajit Singh Nagar.",
     p2: "A few of the top places to visit with outstation cabs from Sahibzada Ajit Singh Nagar include:",
     h1: "Destination",
     locations: ["Chandigarh", "Mohali", "Ludhiana", "Amritsar"],
@@ -1343,7 +1468,7 @@ export const dataMohali1 = {
   sub8content: {
     p1: "Outstation cabs from Mohali ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Mohali.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Mohali.",
     p2: " A few of the top places to visit with outstation cabs from Mohali include:",
     h1: "Destination",
     locations: ["Chandigarh", "Panchkula", "Ludhiana", "Amritsar"],
@@ -1461,7 +1586,7 @@ export const dataKharar = {
   sub8content: {
     p1: "Outstation cabs from Kharar",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kharar.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kharar.",
     p2: "A few of the top places to visit with outstation cabs from Kharar include:",
     h1: "Destination",
     locations: ["Chandigarh", "Mohali", "Panchkula", "Ambala"],
@@ -1569,17 +1694,17 @@ export const dataNeral = {
     p1: "At Sewak, we cater to a variety of travel needs with our specialized taxi services in Neral, encompassing three distinct categories: outstation cabs Neral trips, full day cab in Neral, seamless half-day local taxi service in Neral excursions.",
     h1: "Local cabs in Neral:",
     h1content:
-      "Neral is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Neral through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab, and full day cab in Neral. Sewak is the premier choice for finding high-quality yet affordable cabs in Neral, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
+      "Neral is a vibrant city brimming with iconic attractions to discover. To explore these captivating sites conveniently, consider booking a local cab service in Neral through Sewak. We offer a range of hourly packages to suit your needs, including half-day cab, and full day cab in Neral. Sewak is the premier choice for finding high-quality yet affordable cabs in Neral, providing top-notch service at competitive rates for an unmatched sightseeing experience.",
     h2: "Neral outstation cab service:",
     h2content:
-      "You can easily travel to nearby cities with cabs from Neral and hire an outstation taxi service Neral for both round trips and one way cab booking journeys. Outstation taxi service Neral is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Neral for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
+      "You can easily travel to nearby cities with cabs from Neral and hire an outstation taxi service Neral for both round trips and one way cab booking journeys. Outstation taxi service Neral is incredibly convenient, offering on-time pickups, smart navigation, clean vehicles, and professional chauffeurs to ensure a pleasant journey. Avail of the cheapest taxi service in Neral for outstation with Sewak Travels and choose from a variety of car models to book car rental online, ranging from compact and high-end cars to luxury cars as well as spacious options like Prime SUVs for accommodating larger groups.",
     h3content: "",
   },
   sub8: "Places to Visit with Neral Outstation Cabs",
   sub8content: {
     p1: "Outstation cabs from Neral ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Neral.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Neral.",
     p2: "A few of the top places to visit with outstation cabs from Neral include:",
     h1: "Destination",
     locations: ["Matheran", "Lonavala", "Pune", "Mumbai"],
@@ -1697,7 +1822,7 @@ export const dataAlibag = {
   sub8content: {
     p1: "Outstation cabs from Alibag",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Alibag.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Alibag.",
     p2: "A few of the top places to visit with outstation cabs from Alibag include:",
     h1: "Destination",
     locations: ["Mumbai", "Navi Mumbai", "Lonavala", "Pune", "and more."],
@@ -1816,7 +1941,7 @@ export const dataAmanLodge = {
   sub8content: {
     p1: "Outstation cabs from Aman Lodge ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Aman Lodge. ",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Aman Lodge. ",
     p2: "A few of the top places to visit with outstation cabs from Aman Lodge include:",
     h1: "Destination",
     locations: ["Adamo The Resort", "Matheran"],
@@ -1934,7 +2059,7 @@ export const dataVirar = {
   sub8content: {
     p1: "Outstation cabs from Virar",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Virar. ",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Virar. ",
     p2: "A few of the top places to visit with outstation cabs from Virar include:",
     h1: "Destination",
     locations: ["Alibaug", "Panvel", "Mumbai", "Navi Mumbai", "Lonavala."],
@@ -2053,7 +2178,7 @@ export const dataMatheran = {
   sub8content: {
     p1: "Outstation cabs from Matheran",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Matheran. ",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Matheran. ",
     p2: "A few of the top places to visit with outstation cabs from Matheran include:",
     h1: "Destination",
     locations: ["Alibaug", "Panvel", "Mumbai", "Navi Mumbai", "Lonavala"],
@@ -2171,7 +2296,7 @@ export const dataDarpan = {
   sub8content: {
     p1: "Outstation cabs from Darpan",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Darpan.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Darpan.",
     p2: "A few of the top places to visit with outstation cabs from Darpan include:",
     h1: "Destination",
     locations: ["Alibaug", "Murud", "Khopoli", "Navi Mumbai", "Panvel"],
@@ -2290,7 +2415,7 @@ export const dataParwanoo = {
   sub8content: {
     p1: "Outstation cabs from Parwanoo",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Parwanoo.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Parwanoo.",
     p2: "A few of the top places to visit with outstation cabs from Parwanoo include:",
     h1: "Destination",
     locations: ["Chandigarh", "Shimla", "Solan", "Kasauli", "Pinjore"],
@@ -2409,7 +2534,7 @@ export const dataDeraBassi = {
   sub8content: {
     p1: "Outstation cabs from Dera Bassi ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Dera Bassi.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Dera Bassi.",
     p2: "A few of the top places to visit with outstation cabs from Dera Bassi include:",
     h1: "Destination",
     locations: ["Chandigarh", "Panchkula", "Mohali", "Ambala", "Patiala"],
@@ -2527,7 +2652,7 @@ export const dataKurali = {
   sub8content: {
     p1: "Outstation cabs from Kurali ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kurali.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kurali.",
     p2: "A few of the top places to visit with outstation cabs from Kurali include:",
     h1: "Destination",
     locations: ["Chandigarh", "Panchkula", "Mohali", "Ambala", "Kalka"],
@@ -2645,7 +2770,7 @@ export const dataBaddi = {
   sub8content: {
     p1: "Outstation cabs from Baddi",
     p1inner:
-      "are a popular choice for hassle-free intercity cab travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Baddi.",
+      " are a popular choice for hassle-free intercity cab travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Baddi.",
     p2: " A few of the top places to visit with outstation cabs from Baddi include:",
     h1: "Destination",
     locations: ["Chandigarh", "Shimla", "Solan", "Panchkula"],
@@ -2764,7 +2889,7 @@ export const dataKasauli1 = {
   sub8content: {
     p1: "Outstation cabs from Kasauli ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kasauli. ",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kasauli. ",
     p2: "A few of the top places to visit with outstation cabs from Kasauli include:",
     h1: "Destination",
     locations: ["Chandigarh", "Shimla", "Solan", "Panchkula", "Parwanoo"],
@@ -2883,7 +3008,7 @@ export const dataBhiwandi = {
   sub8content: {
     p1: "Outstation cabs from Bhiwandi",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bhiwandi.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bhiwandi.",
     p2: "A few of the top places to visit with outstation cabs from Bhiwandi include:",
     h1: "Destination",
     locations: ["Thane", "Mumbai", "Navi Mumbai", "Kalyan", "Dombivli"],
@@ -3001,7 +3126,7 @@ export const dataKalyan = {
   sub8content: {
     p1: "Outstation cabs from Kalyan",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kalyan.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kalyan.",
     p2: "A few of the top places to visit with outstation cabs from Kalyan include:",
     h1: "Destination",
     locations: ["Mumbai", "Thane", "Navi Mumbai", "Dombivli", "Bhiwandi"],
@@ -3121,7 +3246,7 @@ export const dataAmbernath = {
   sub8content: {
     p1: "Outstation cabs from Ambernath",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Ambernath.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Ambernath.",
     p2: "A few of the top places to visit with outstation cabs from Ambernath include:",
     h1: "Destination",
     locations: ["Kalyan", "Dombivli", "Thane", "Navi Mumbai", "Panvel"],
@@ -3238,7 +3363,7 @@ export const dataVasai = {
   sub8content: {
     p1: "Outstation cabs from Vasai",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Vasai.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Vasai.",
     p2: "A few of the top places to visit with outstation cabs from Vasai include:",
     h1: "Destination",
     locations: ["Mumbai", "Thane", "Navi Mumbai", "Mira-Bhayandar", "Bhiwandi"],
@@ -3485,7 +3610,7 @@ export const dataDelhi = {
   sub8content: {
     p1: "Outstation cabs from Delhi ",
     p1inner:
-      "are a popular choice for hassle-free intercity travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Delhi.",
+      " are a popular choice for hassle-free intercity travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Delhi.",
     p2: "A few of the top places to visit with Sewak Travels' outstation cabs from Delhi include:",
     h1: "Destination",
     locations: [
@@ -3620,7 +3745,7 @@ export const dataLonavala = {
   sub8content: {
     p1: "Outstation cabs from Lonavala  intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Lonavala.",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Lonavala.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Lonavala.",
     p2: "A few of the top places to visit with outstation cabs from Lonavala include:",
     h1: "Destination",
     locations: ["Pune", "Mumbai", "Navi Mumbai", "Khandala", "Khopoli"],
@@ -3740,7 +3865,7 @@ export const dataPawnalake = {
   sub8content: {
     p1: "Outstation cabs from Pawna Lake",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Pawna Lake.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Pawna Lake.",
     p2: "A few of the top places to visit with outstation cabs from Pawna Lake include:",
     h1: "Destination",
     locations: ["Lonavala", "Kamshet", "Pune", "Talegaon Dabhade", "Khopoli"],
@@ -3860,7 +3985,7 @@ export const dataManchar = {
   sub8content: {
     p1: "Outstation cabs from Manchar",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Manchar.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Manchar.",
     p2: "A few of the top places to visit with outstation cabs from Manchar include:",
     h1: "Destination",
     locations: ["Pune", "Nashik", "Lonavala", "Pimpri-Chinchwad", "Ahmednagar"],
@@ -3979,7 +4104,7 @@ export const dataRaigad = {
   sub8content: {
     p1: "Outstation cabs from Raigad",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Raigad.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Raigad.",
     p2: "A few of the top places to visit with outstation cabs from Raigad include:",
     h1: "Destination",
     locations: ["Alibaug", "Panvel", "Mumbai", "Navi Mumbai", "Lonavala"],
@@ -4099,7 +4224,7 @@ export const dataKedagaon = {
   sub8content: {
     p1: "Outstation cabs from Kedagaon",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kedagaon.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kedagaon.",
     p2: "A few of the top places to visit with outstation cabs from Kedagaon include:",
     h1: "Destination",
     locations: ["Pune", "Solapur", "Baramati", "Saswad", "Daund"],
@@ -4219,7 +4344,7 @@ export const dataShirwal = {
   sub8content: {
     p1: "Outstation cabs from Shirwal",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shirwal.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shirwal.",
     p2: "A few of the top places to visit with outstation cabs from Shirwal include:",
     h1: "Destination",
     locations: ["Pune", "Satara", "Wai", "Baramati", "Phaltan"],
@@ -4339,7 +4464,7 @@ export const dataKhandala = {
   sub8content: {
     p1: "Outstation cabs from Khandala",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Khandala.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Khandala.",
     p2: "A few of the top places to visit with outstation cabs from Khandala include:",
     h1: "Destination",
     locations: ["Pune", "Lonavala", "Khopoli", "Navi Mumbai", "Panvel"],
@@ -4459,7 +4584,7 @@ export const dataKhopoli = {
   sub8content: {
     p1: "Outstation cabs from Khopoli",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Khopoli.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Khopoli.",
     p2: "A few of the top places to visit with outstation cabs from Khopoli include:",
     h1: "Destination",
     locations: ["Mumbai Navi Mumbai", "Pune", "Lonavala Alibaug"],
@@ -4577,7 +4702,7 @@ export const dataThane = {
   sub8content: {
     p1: "Outstation cabs from Thane",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Thane.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Thane.",
     p2: "A few of the top places to visit with outstation cabs from Thane include:",
     h1: "Destination",
     locations: ["Mumbai", "Navi Mumbai", "Kalyan", "Dombivli", "Vasai-Virar"],
@@ -4695,7 +4820,7 @@ export const dataShirur = {
   sub8content: {
     p1: "Outstation cabs from Shirur",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shirur.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shirur.",
     p2: "A few of the top places to visit with outstation cabs from Shirur include:",
     h1: "Destination",
     locations: ["Pune", "Ahmednagar", "Shikrapur", "Daund", "Chakan"],
@@ -4812,7 +4937,7 @@ export const dataPanvel = {
   sub8content: {
     p1: "tstation cabs from Panvel",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Panvel.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Panvel.",
     p2: "A few of the top places to visit with outstation cabs from Panvel include:",
     h1: "Destination",
     locations: ["Navi Mumbai", "Thane", "Mumbai", "Kalyan", "Alibaug"],
@@ -4931,7 +5056,7 @@ export const dataPanchgani = {
   sub8content: {
     p1: "Outstation cabs from Panchgani",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Panchgani.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Panchgani.",
     p2: "A few of the top places to visit with outstation cabs from Panchgani include:",
     h1: "Destination",
     locations: ["Mahabaleshwar", "Satara", "Pune", "Chorla", "Khopoli"],
@@ -5049,7 +5174,7 @@ export const dataNewPanvel = {
   sub8content: {
     p1: "Outstation cabs from New Panvel",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in New Panvel.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in New Panvel.",
     p2: "A few of the top places to visit with outstation cabs from New Panvel include:",
     h1: "Destination",
     locations: ["Mumbai", "Navi Mumbai", "Thane", "Alibaug", "Kalyan"],
@@ -5168,7 +5293,7 @@ export const dataNaviMumbai = {
   sub8content: {
     p1: "Outstation cabs from Navi Mumbai",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Navi Mumbai.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Navi Mumbai.",
     p2: "A few of the top places to visit with outstation cabs from Navi Mumbai include:",
     h1: "Destination",
     locations: ["Mumbai", "Thane", "Kalyan", "Vashi", "Panvel"],
@@ -5287,7 +5412,7 @@ export const dataMiraBhayandar = {
   sub8content: {
     p1: "Outstation cabs from Mira Bhayandar",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Mira Bhayandar.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Mira Bhayandar.",
     p2: "A few of the top places to visit with outstation cabs from Mira Bhayandar include:",
     h1: "Destination",
     locations: [
@@ -5412,7 +5537,7 @@ export const dataImagica = {
   sub8content: {
     p1: "Outstation cabs from Imagica",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Imagica.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Imagica.",
     p2: "A few of the top places to visit with outstation cabs from Imagica include:",
     h1: "Destination",
     locations: ["Lonavala", "Khandala", "Khopoli", "Karjat", "Panvel"],
@@ -5531,7 +5656,7 @@ export const dataDombivli = {
   sub8content: {
     p1: "Outstation cabs from Dombivli ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Dombivli.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Dombivli.",
     p2: "A few of the top places to visit with outstation cabs from Dombivli include:",
     h1: "Destination",
     locations: ["Thane", "Kalyan", "Navi Mumbai", "Mumbai", "Bhiwandi"],
@@ -5769,7 +5894,7 @@ export const dataiMagicaAdlab = {
   sub8content: {
     p1: "Outstation cabs from Imagica Adlab",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Imagica Adlab.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Imagica Adlab.",
     p2: "A few of the top places to visit with outstation cabs from Imagica Adlab include:",
     h1: "Destination",
     locations: ["Mumbai", "Pune", "Thane", "Kalyan", "Navi Mumbai"],
@@ -5889,7 +6014,7 @@ export const dataAambyValley = {
   sub8content: {
     p1: "Outstation cabs from Aamby Valley",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Aamby Valley.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Aamby Valley.",
     p2: "A few of the top places to visit with outstation cabs from Aamby Valley include:",
     h1: "Destination",
     locations: ["Pune", "Lonavala", "Khandala", "Khopoli", "Panvel"],
@@ -6020,7 +6145,7 @@ export const dataGhaziabad = {
   sub8content: {
     p1: "Outstation cabs from Ghaziabad ",
     p1inner:
-      "are a popular choice for hassle-free intercity travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Ghaziabad.",
+      " are a popular choice for hassle-free intercity travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Ghaziabad.",
     p2: "A few of the top places to visit with Sewak Travels' outstation cabs from Ghaziabad include:",
     h1: "Destination",
     locations: [
@@ -6158,7 +6283,7 @@ export const dataNoida1 = {
   sub8content: {
     p1: "Outstation cabs from Noida ",
     p1inner:
-      "are a popular choice for hassle-free intercity travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Noida.",
+      " are a popular choice for hassle-free intercity travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Noida.",
     p2: "A few of the top places to visit with Sewak Travels' outstation cabs from Noida include:",
     h1: "Destination",
     locations: [
@@ -6294,7 +6419,7 @@ export const dataBahadurgarh = {
   sub8content: {
     p1: "Outstation cabs from Bahadurgarh ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bahadurgarh.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bahadurgarh.",
     p2: "A few of the top places to visit with outstation cabs from Bahadurgarh include:",
     h1: "Destination",
     locations: [
@@ -6434,7 +6559,7 @@ export const dataBagpat = {
   sub8content: {
     p1: "Outstation cabs from Bagpat ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bagpat.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bagpat.",
     p2: "A few of the top places to visit with outstation cabs from Bagpat include:",
     h1: "Destination",
     locations: [
@@ -6578,7 +6703,7 @@ export const dataBaghpat = {
   sub8content: {
     p1: "Outstation cabs from Baghpat ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Baghpat.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Baghpat.",
     p2: "A few of the top places to visit with outstation cabs from Baghpat include:",
     h1: "Destination",
     locations: [
@@ -6722,7 +6847,7 @@ export const dataGurgaon = {
   sub8content: {
     p1: "Outstation cabs from Gurgaon ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Gurgaon.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Gurgaon.",
     p2: "A few of the top places to visit with outstation cabs from Gurgaon include:",
     h1: "Destination",
     locations: [
@@ -6864,7 +6989,7 @@ export const dataGurugram = {
   sub8content: {
     p1: "Outstation cabs from Gurugram ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Gurugram.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Gurugram.",
     p2: "A few of the top places to visit with outstation cabs from Gurugram include:",
     h1: "Destination",
     locations: [
@@ -7006,7 +7131,7 @@ export const dataFaridabad1 = {
   sub8content: {
     p1: "Outstation cabs from Faridabad ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Faridabad.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Faridabad.",
     p2: "A few of the top places to visit with outstation cabs from Faridabad include:",
     h1: "Destination",
     locations: [
@@ -7145,7 +7270,7 @@ export const dataBasai = {
   sub8content: {
     p1: "Outstation cabs from Basai ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Basai.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Basai.",
     p2: "A few of the top places to visit with outstation cabs from Basai include:",
     h1: "Destination",
     locations: [
@@ -7278,7 +7403,7 @@ export const dataDadri = {
   sub8content: {
     p1: "Outstation cabs from Dadri ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Dadri.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Dadri.",
     p2: "A few of the top places to visit with outstation cabs from Dadri include:",
     h1: "Destination",
     locations: [
@@ -7418,7 +7543,7 @@ export const dataGreaterNoida = {
   sub8content: {
     p1: "Outstation cabs from Greater Noida ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Greater Noida.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Greater Noida.",
     p2: "A few of the top places to visit with outstation cabs from Greater Noida include:",
     h1: "Destination",
     locations: [
@@ -7558,7 +7683,7 @@ export const dataKharkhoda = {
   sub8content: {
     p1: "Outstation cabs from Kharkhoda ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kharkhoda.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kharkhoda.",
     p2: "A few of the top places to visit with outstation cabs from Kharkhoda include:",
     h1: "Destination",
     locations: [
@@ -7702,7 +7827,7 @@ export const dataModinagar = {
   sub8content: {
     p1: "Outstation cabs from Modinagar ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Modinagar.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Modinagar.",
     p2: "A few of the top places to visit with outstation cabs from Modinagar include:",
     h1: "Destination",
     locations: [
@@ -7848,7 +7973,7 @@ export const dataSonipat1 = {
   sub8content: {
     p1: "Outstation cabs from Sonipat ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Sonipat.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Sonipat.",
     p2: "A few of the top places to visit with outstation cabs from Sonipat include:",
     h1: "Destination",
     locations: [
@@ -7994,7 +8119,7 @@ export const dataMurthal1 = {
   sub8content: {
     p1: "Outstation cabs from Murthal ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Murthal.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Murthal.",
     p2: "A few of the top places to visit with outstation cabs from Murthal include:",
     h1: "Destination",
     locations: [
@@ -8140,7 +8265,7 @@ export const dataManesar1 = {
   sub8content: {
     p1: "Outstation cabs from Manesar ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Manesar.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Manesar.",
     p2: "A few of the top places to visit with outstation cabs from Manesar include:",
     h1: "Destination",
     locations: [
@@ -8285,7 +8410,7 @@ export const dataBarau = {
   sub8content: {
     p1: "Outstation cabs from Barau ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Barau.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Barau.",
     p2: "A few of the top places to visit with outstation cabs from Barau include:",
     h1: "Destination",
     locations: [
@@ -8430,7 +8555,7 @@ export const dataBaraut1 = {
   sub8content: {
     p1: "Outstation cabs from Baraut ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Baraut.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Baraut.",
     p2: "A few of the top places to visit with outstation cabs from Baraut include:",
     locations: [
       "Delhi ",
@@ -8573,7 +8698,7 @@ export const dataGautamBuddhaNagar = {
   sub8content: {
     p1: "Outstation cabs from Gautam Buddha Nagar ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Gautam Buddha Nagar.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Gautam Buddha Nagar.",
     p2: "A few of the top places to visit with outstation cabs from Gautam Buddha Nagar include:",
     locations: [
       "Delhi",
@@ -8709,7 +8834,7 @@ export const dataShamshabad = {
   sub8content: {
     p1: "Outstation cabs from Shamshabad ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shamshabad.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shamshabad.",
     p2: "A few of the top places to visit with outstation cabs from Shamshabad include:",
     h1: "Destination",
     locations: [
@@ -8845,7 +8970,7 @@ export const dataKagarol = {
   sub8content: {
     p1: "Outstation cabs from Kagarol ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kagarol.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kagarol.",
     p2: "A few of the top places to visit with outstation cabs from Kagarol include:",
     h1: "Destination\t",
     locations: [
@@ -8977,7 +9102,7 @@ export const dataSadabad = {
   sub8content: {
     p1: "Outstation cabs from Sadabad ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Sadabad.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Sadabad.",
     p2: "A few of the top places to visit with outstation cabs from Sadabad include:",
     h1: "Destination",
     locations: [
@@ -9113,7 +9238,7 @@ export const dataBisawar = {
   sub8content: {
     p1: "Outstation cabs from Bisawar ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bisawar.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bisawar.",
     p2: "A few of the top places to visit with outstation cabs from Bisawar include:",
     h1: "Destination",
     locations: ["Sadabad", "Mathura", "Agra", "Hathras"],
@@ -9231,7 +9356,7 @@ export const dataTundla = {
   sub8content: {
     p1: "Outstation cabs from Tundla ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Tundla.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Tundla.",
     p2: "A few of the top places to visit with outstation cabs from Tundla include:",
     h1: "Destination",
     locations: [
@@ -9367,7 +9492,7 @@ export const dataRajakhera = {
   sub8content: {
     p1: "Outstation cabs from Rajakhera ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Rajakhera.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Rajakhera.",
     p2: "A few of the top places to visit with outstation cabs from Rajakhera include:",
     h1: "Destination",
     locations: [
@@ -9499,7 +9624,7 @@ export const dataFatehpurSikri = {
   sub8content: {
     p1: "Outstation cabs from Fatehpur Sikri ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Fatehpur Sikri.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Fatehpur Sikri.",
     p2: "A few of the top places to visit with outstation cabs from Fatehpur Sikri include:",
     h1: "Destination",
     locations: [
@@ -9631,7 +9756,7 @@ export const dataFirozabad = {
   sub8content: {
     p1: "Outstation cabs from Firozabad ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Firozabad.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Firozabad.",
     p2: "A few of the top places to visit with outstation cabs from Firozabad include:",
     h1: "Destination",
     locations: [
@@ -9763,7 +9888,7 @@ export const dataJalesar = {
   sub8content: {
     p1: "Outstation cabs from Jalesar ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Jalesar.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Jalesar.",
     p2: "A few of the top places to visit with outstation cabs from Jalesar include:",
     h1: "Destination",
     locations: [
@@ -9895,7 +10020,7 @@ export const dataHathras = {
   sub8content: {
     p1: "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Hathras.",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Hathras.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Hathras.",
     p2: "A few of the top places to visit with outstation cabs from Hathras include:",
     h1: "Destination",
     locations: [
@@ -10031,7 +10156,7 @@ export const dataMathura1 = {
   sub8content: {
     p1: "Outstation cabs from Mathura ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Mathura.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Mathura.",
     p2: "A few of the top places to visit with outstation cabs from Mathura include:",
     h1: "Destination",
     locations: [
@@ -10163,7 +10288,7 @@ export const dataBharatpur1 = {
   sub8content: {
     p1: "Outstation cabs from Bharatpur ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bharatpur.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bharatpur.",
     p2: "A few of the top places to visit with outstation cabs from Bharatpur include:",
     h1: "Destination",
     locations: [
@@ -10295,7 +10420,7 @@ export const dataDholpur = {
   sub8content: {
     p1: "Outstation cabs from Dholpur ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Dholpur.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Dholpur.",
     p2: "A few of the top places to visit with outstation cabs from Dholpur include:",
     h1: "Destination",
     locations: [
@@ -10431,7 +10556,7 @@ export const dataVrindavan1 = {
   sub8content: {
     p1: "Outstation cabs from Vrindavan are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Vrindavan.",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Vrindavan.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Vrindavan.",
     p2: "A few of the top places to visit with outstation cabs from Vrindavan include:",
     h1: "Destination",
     locations: [
@@ -10566,7 +10691,7 @@ export const dataAmbah = {
   sub8content: {
     p1: "Outstation cabs from Ambah ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Ambah.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Ambah.",
     p2: "A few of the top places to visit with outstation cabs from Ambah include:",
     h1: "Destination",
     locations: [
@@ -10702,7 +10827,7 @@ export const dataShikohabad = {
   sub8content: {
     p1: "Outstation cabs from Shikohabad ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shikohabad.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shikohabad.",
     p2: "A few of the top places to visit with outstation cabs from Shikohabad include:",
     h1: "Destination",
     locations: [
@@ -10838,7 +10963,7 @@ export const dataHolipura = {
   sub8content: {
     p1: "Outstation cabs from Holipura ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Holipura.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Holipura.",
     p2: "A few of the top places to visit with outstation cabs from Holipura include:",
     h1: "Destination",
     locations: ["Agra", "Fatehpur Sikri", "Mathura", "Vrindavan", "Bharatpur"],
@@ -10958,7 +11083,7 @@ export const dataSasni = {
   sub8content: {
     p1: "Outstation cabs from Sasni ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Sasni.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Sasni.",
     p2: "A few of the top places to visit with outstation cabs from Sasni include:",
     h1: "Destination",
     locations: [
@@ -11089,7 +11214,7 @@ export const dataIglas = {
   sub8content: {
     p1: "Outstation cabs from Iglas ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Iglas.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Iglas.",
     p2: "A few of the top places to visit with outstation cabs from Iglas include:",
     h1: "Destination",
     locations: [
@@ -11221,7 +11346,7 @@ export const dataGovardhan = {
   sub8content: {
     p1: "Outstation cabs from Govardhan ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Govardhan.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Govardhan.",
     p2: "A few of the top places to visit with outstation cabs from Govardhan include:",
     h1: "Destination",
     locations: [
@@ -11353,7 +11478,7 @@ export const dataShekhawati = {
   sub8content: {
     p1: "Outstation cabs from Shekhawati ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shekhawati.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shekhawati.",
     p2: "A few of the top places to visit with outstation cabs from Shekhawati include:",
     h1: "Destination",
     locations: ["Jhunjhunu", "Nawalgarh", "Fatehpur", "Mandawa", "Churu"],
@@ -11472,7 +11597,7 @@ export const dataKukas = {
   sub8content: {
     p1: "Outstation cabs from Kukas ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kukas.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Kukas.",
     p2: "A few of the top places to visit with outstation cabs from Kukas include:",
     h1: "Destination",
     locations: [
@@ -11598,7 +11723,7 @@ export const dataBhambhoria = {
   sub8content: {
     p1: "Outstation cabs from Bhambhoria ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bhambhoria.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bhambhoria.",
     p2: "A few of the top places to visit with outstation cabs from Bhambhoria include:",
     h1: "Destination",
     locations: [
@@ -11723,7 +11848,7 @@ export const dataBegas = {
   sub8content: {
     p1: "Outstation cabs from Begas ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Begas.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Begas.",
     p2: "A few of the top places to visit with outstation cabs from Begas include:",
     h1: "Destination",
     locations: ["Aligarh", "Hathras", "Mathura", "Agra", "Sikandra"],
@@ -11842,7 +11967,7 @@ export const dataBassi = {
   sub8content: {
     p1: "Outstation cabs from Bassi ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bassi.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bassi.",
     p2: "A few of the top places to visit with outstation cabs from Bassi include:",
     h1: "Destination",
     locations: ["Chittorgarh", "Udaipur", "Bhilwara", "Bundi"],
@@ -11960,7 +12085,7 @@ export const dataAchrol = {
   sub8content: {
     p1: "Outstation cabs from Achrol ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Achrol.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Achrol.",
     p2: "A few of the top places to visit with outstation cabs from Achrol include:",
     h1: "Destination",
     locations: ["Jaipur", "Samode", "Amer", "Sanganer", "Bairath"],
@@ -12079,7 +12204,7 @@ export const dataChomu = {
   sub8content: {
     p1: "Outstation cabs from Chomu ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Chomu.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Chomu.",
     p2: "A few of the top places to visit with outstation cabs from Chomu include:",
     h1: "Destination",
     locations: ["Jaipur", "Samode", "Amer", "Sanganer", "Bairath"],
@@ -12199,7 +12324,7 @@ export const dataAsalpurJobner = {
   sub8content: {
     p1: "Outstation cabs from Asalpur Jobner ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Asalpur Jobner.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Asalpur Jobner.",
     p2: "A few of the top places to visit with outstation cabs from Asalpur Jobner include:",
     h1: "Destination",
     locations: ["Jaipur", "Ajmer", "Alwar", "Bhilwara"],
@@ -12317,7 +12442,7 @@ export const dataChaksu = {
   sub8content: {
     p1: "Outstation cabs from Chaksu ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Chaksu.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Chaksu.",
     p2: "A few of the top places to visit with outstation cabs from Chaksu include:",
     h1: "Destination",
     locations: [
@@ -12446,7 +12571,7 @@ export const dataPawta = {
   sub8content: {
     p1: "Outstation cabs from Pawta ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Pawta.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Pawta.",
     p2: "A few of the top places to visit with outstation cabs from Pawta include:",
     h1: "Destination",
     locations: ["Jaipur", "Amber Fort", "Sanganer"],
@@ -12559,7 +12684,7 @@ export const dataJobner = {
   sub8content: {
     p1: "Outstation cabs from Jobner ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Jobner.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Jobner.",
     p2: "A few of the top places to visit with outstation cabs from Jobner include:",
     h1: "Destination",
     locations: [
@@ -12691,7 +12816,7 @@ export const dataAlilaFortBishangarh = {
   sub8content: {
     p1: "Outstation cabs from Alila Fort Bishangarh ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Alila Fort Bishangarh.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Alila Fort Bishangarh.",
     p2: "A few of the top places to visit with outstation cabs from Alila Fort Bishangarh include:",
     h1: "Destination",
     locations: ["Jaipur", "Ajmer", "Sikar", "Alwar", "Tonk"],
@@ -12811,7 +12936,7 @@ export const dataMojamabaad = {
   sub8content: {
     p1: "Outstation cabs from Mojamabaad ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Mojamabaad.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Mojamabaad.",
     p2: "A few of the top places to visit with outstation cabs from Mojamabaad include:",
     h1: "Destination",
     locations: ["Jaipur", "Ajmer", "Kishangarh", "Sambhar", "Tonk"],
@@ -12930,7 +13055,7 @@ export const dataRenwal = {
   sub8content: {
     p1: "Outstation cabs from Renwal ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Renwal.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Renwal.",
     p2: "A few of the top places to visit with outstation cabs from Renwal include:",
     h1: "Destination",
     locations: ["Jaipur", "Ajmer", "Kishangarh", "Sambhar", "Phulera"],
@@ -13050,7 +13175,7 @@ export const dataMehandipurBalaji = {
   sub8content: {
     p1: "Outstation cabs from Mehandipur Balaji ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Mehandipur Balaji.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Mehandipur Balaji.",
     p2: "A few of the top places to visit with outstation cabs from Mehandipur Balaji include:",
     h1: "Destination",
     locations: ["Jaipur", "Dausa", "Aligarh", "Kishangarh", "Bandikui"],
@@ -13169,7 +13294,7 @@ export const dataDausa = {
   sub8content: {
     p1: "Outstation cabs from Dausa ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Dausa.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Dausa.",
     p2: "A few of the top places to visit with outstation cabs from Dausa include:",
     h1: "Destination",
     locations: ["Jaipur", "Aligarh", "Bandikui", "Sikandra", "Dholpur"],
@@ -13289,7 +13414,7 @@ export const dataViratNagar = {
   sub8content: {
     p1: "Outstation cabs from Virat Nagar ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Virat Nagar.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Virat Nagar.",
     p2: "A few of the top places to visit with outstation cabs from Virat Nagar include:",
     h1: "Destination",
     locations: ["Jaipur", "Aligarh", "Dausa", "Bandikui", "Sikandra"],
@@ -13409,7 +13534,7 @@ export const dataShahpura = {
   sub8content: {
     p1: "Outstation cabs from Shahpura are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shahpura.",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shahpura.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shahpura.",
     p2: "A few of the top places to visit with outstation cabs from Shahpura include:",
     h1: "Destination",
     locations: ["Jaipur", "Alwar", "Sikar", "Jhunjhunu", "Chomu"],
@@ -13528,7 +13653,7 @@ export const dataRingas = {
   sub8content: {
     p1: "Outstation cabs from Ringas ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Ringas.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Ringas.",
     p2: "A few of the top places to visit with outstation cabs from Ringas include:",
     h1: "Destination",
     locations: ["Jaipur", "Sikar", "Aligarh", "Shahpura", "Dausa"],
@@ -13648,7 +13773,7 @@ export const dataKhatuShyam = {
   sub8content: {
     p1: "Outstation cabs from Khatu Shyam ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Khatu Shyam.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Khatu Shyam.",
     p2: "A few of the top places to visit with outstation cabs from Khatu Shyam include:",
     h1: "Destination",
     locations: ["Sikar", "Ringas", "Jaipur", "Fatehpur", "Jhunjhunu"],
@@ -13768,7 +13893,7 @@ export const dataPimpriChinchwad = {
   sub8content: {
     p1: "Outstation cabs from Pimpri Chinchwad ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Pimpri Chinchwad.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Pimpri Chinchwad.",
     p2: "A few of the top places to visit with outstation cabs from Pimpri Chinchwad include:",
     h1: "Destination",
     locations: ["Pune", "Nashik", "Lonavala", "Kalyan", "Thane"],
@@ -13887,7 +14012,7 @@ export const dataInduri = {
   sub8content: {
     p1: "Outstation cabs from Induri ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Induri.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Induri.",
     p2: "A few of the top places to visit with outstation cabs from Induri include:",
     h1: "Destination",
     locations: [
@@ -14013,7 +14138,7 @@ export const dataTalegaon = {
   sub8content: {
     p1: "Outstation cabs from Talegaon ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Talegaon.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Talegaon.",
     p2: "A few of the top places to visit with outstation cabs from Talegaon include:",
     h1: "Destination",
     locations: ["Pune", "Lonavala", "Pimpri-Chinchwad", "Chakan", "Khopoli"],
@@ -14133,7 +14258,7 @@ export const dataShikrapur = {
   sub8content: {
     p1: "Outstation cabs from Shikrapur ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shikrapur.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Shikrapur.",
     p2: "A few of the top places to visit with outstation cabs from Shikrapur include:",
     h1: "Destination",
     locations: ["Pune", "Ahmednagar", "Nashik", "Solapur", "Aurangabad"],
@@ -14252,7 +14377,7 @@ export const dataLavasa = {
   sub8content: {
     p1: "Outstation cabs from Lavasa ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Lavasa.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Lavasa.",
     p2: "A few of the top places to visit with outstation cabs from Lavasa include:",
     h1: "Destination",
     locations: [
@@ -14377,7 +14502,7 @@ export const dataBhor = {
   sub8content: {
     p1: "Outstation cabs from Bhor ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bhor.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Bhor.",
     p2: "A few of the top places to visit with outstation cabs from Bhor include:",
     h1: "Destination",
     locations: ["Pune", "Lonavala", "Khandala", "Karjat", "Mahabaleshwar"],
@@ -14496,7 +14621,7 @@ export const dataJejuri = {
   sub8content: {
     p1: "Outstation cabs from Jejuri ",
     p1inner:
-      "are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Jejuri.",
+      " are a popular choice for hassle-free intercity cab services travel among tourists and locals. Check out the top destinations to visit when you hire outstation cabs in Jejuri.",
     p2: "A few of the top places to visit with outstation cabs from Jejuri include:",
     h1: "Destination",
     locations: ["Pune", "Saswad", "Baramati", "Solapur", "Satara"],
