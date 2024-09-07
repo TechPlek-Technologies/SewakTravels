@@ -16,8 +16,8 @@ function CabListing4({source, destination,blogdata,selectedValue,fromAirport}) {
   const { journeyData, setJourneyData } = useContext(AppContext);
   const [rentals, setRentals] = useState("4hrs40km");
   const data = {
-    source:source,
-    destination: destination,
+    source:fromAirport,
+    destination: source,
     startDate: tomorrow,
     returnDate: dayAfterTomorrow,
     rentals: rentals,

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const FooterLocation = () => {
@@ -890,36 +891,36 @@ const FooterLocation = () => {
         },
         {
           name: "Taxi service in Lalru",
-          src: "/cab/lalru-city-cabs"
-      },
-      {
+          src: "/cab/lalru-city-cabs",
+        },
+        {
           name: "Taxi service in Rajpur",
-          src: "/cab/rajpur-city-cabs"
-      },
-      {
+          src: "/cab/rajpur-city-cabs",
+        },
+        {
           name: "Taxi service in Rajpura",
-          src: "/cab/rajpura-city-cabs"
-      },
-      {
+          src: "/cab/rajpura-city-cabs",
+        },
+        {
           name: "Taxi service in Nalagarh",
-          src: "/cab/nalagarh-city-cabs"
-      },
-      {
+          src: "/cab/nalagarh-city-cabs",
+        },
+        {
           name: "Taxi service in Ropar",
-          src: "/cab/ropar-city-cabs"
-      },
-      {
+          src: "/cab/ropar-city-cabs",
+        },
+        {
           name: "Taxi service in Badalapur",
-          src: "/cab/badalapur-city-cabs"
-      },
-      {
+          src: "/cab/badalapur-city-cabs",
+        },
+        {
           name: "Taxi service in Kalka",
-          src: "/cab/kalka-city-cabs"
-      },
-      {
+          src: "/cab/kalka-city-cabs",
+        },
+        {
           name: "Taxi service in Barog",
-          src: "/cab/barog-city-cabs"
-      }
+          src: "/cab/barog-city-cabs",
+        },
       ],
     },
     OtherCities: {
@@ -1255,6 +1256,15 @@ const FooterLocation = () => {
     //   ],
     // },
   };
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    // window.scrollTo({
+    //   top: 0,
+    //   behavior: "smooth",
+    // });
+  }, [pathname]);
 
   return (
     <div className="footer">

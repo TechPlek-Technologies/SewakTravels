@@ -58,11 +58,7 @@ function CabListing1({ source, destination, blogdata, selectedValue, price }) {
     }
     sendQueryEmail();
   }, []);
-
-  useEffect(() => {
-    // Scroll to the top of the page when the component mounts
-    window.scrollTo(0, 0);
-  }, []);
+  
 
   const [isValid, setisValid] = useState("notValid");
 
@@ -4237,6 +4233,11 @@ function CabListing1({ source, destination, blogdata, selectedValue, price }) {
       }
     }
   }, [source, destination]);
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div style={{ backgroundColor: "#fafafa" }}>
