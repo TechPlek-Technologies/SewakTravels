@@ -824,102 +824,135 @@ const FooterLocation = () => {
           name: "Taxi service in Ltt ",
           src: "/cab/ltt-city-cabs",
         },
+        { name: "Taxi service in Rupnagar", src: "/cab/rupnagar-city-cabs" },
+        { name: "Taxi service in Hoskote", src: "/cab/hoskote-city-cabs" },
         {
-          name: "Taxi service in Matheran",
-          src: "/cab/matheran-city-cabs",
+          name: "Taxi service in Nelamangala",
+          src: "/cab/nelamangala-city-cabs",
         },
         {
-          name: "Taxi service in Aman Lodge",
-          src: "/cab/aman-lodge-city-cabs",
+          name: "Taxi service in Bangalore Rural",
+          src: "/cab/bangalore-rural-city-cabs",
+        },
+        { name: "Taxi service in Hosur", src: "/cab/hosur-city-cabs" },
+        {
+          name: "Taxi service in Doddaballapur",
+          src: "/cab/doddaballapur-city-cabs",
+        },
+        { name: "Taxi service in Malur", src: "/cab/malur-city-cabs" },
+        { name: "Taxi service in Magadi", src: "/cab/magadi-city-cabs" },
+        {
+          name: "Taxi service in Ramanagara",
+          src: "/cab/ramanagara-city-cabs",
         },
         {
-          name: "Taxi service in Virar",
-          src: "/cab/virar-city-cabs",
+          name: "Taxi service in Nandi Hills",
+          src: "/cab/nandi-hills-city-cabs",
         },
         {
-          name: "Taxi service in Alibag",
-          src: "/cab/alibag-city-cabs",
+          name: "Taxi service in Kanakapura",
+          src: "/cab/kanakapura-city-cabs",
         },
         {
-          name: "Taxi service in Neral",
-          src: "/cab/neral-city-cabs",
+          name: "Taxi service in Chikkaballapur",
+          src: "/cab/chikkaballapur-city-cabs",
         },
         {
-          name: "Taxi service in Mohali",
-          src: "/cab/mohali-city-cabs",
+          name: "Taxi service in Denkanikottai",
+          src: "/cab/denkanikottai-city-cabs",
         },
         {
-          name: "Taxi service in Sahibzada Ajit Singh Nagar",
-          src: "/cab/sahibzada-ajit-singh-nagar-city-cabs",
+          name: "Taxi service in Channapatna",
+          src: "/cab/channapatna-city-cabs",
         },
         {
-          name: "Taxi service in Zira",
-          src: "/cab/zira-city-cabs",
+          name: "Taxi service in Sidlaghatta",
+          src: "/cab/sidlaghatta-city-cabs",
         },
         {
-          name: "Taxi service in Zirakpur",
-          src: "/cab/zirakpur-city-cabs",
+          name: "Taxi service in Shoolagiri",
+          src: "/cab/shoolagiri-city-cabs",
+        },
+        { name: "Taxi service in Kodagu", src: "/cab/kodagu-city-cabs" },
+        { name: "Taxi service in Kolar", src: "/cab/kolar-city-cabs" },
+        { name: "Taxi service in Anna Road", src: "/cab/anna-road-city-cabs" },
+        { name: "Taxi service in Ambattur", src: "/cab/ambattur-city-cabs" },
+        { name: "Taxi service in Tambaram", src: "/cab/tambaram-city-cabs" },
+        { name: "Taxi service in Minjur", src: "/cab/minjur-city-cabs" },
+        { name: "Taxi service in Ponneri", src: "/cab/ponneri-city-cabs" },
+        {
+          name: "Taxi service in Sriperumbudur",
+          src: "/cab/sriperumbudur-city-cabs",
         },
         {
-          name: "Taxi service in Kharar",
-          src: "/cab/kharar-city-cabs",
+          name: "Taxi service in Tiruvallur",
+          src: "/cab/tiruvallur-city-cabs",
         },
         {
-          name: "Taxi service in Darpan",
-          src: "/cab/darpan-city-cabs",
+          name: "Taxi service in Gummidipoondi",
+          src: "/cab/gummidipoondi-city-cabs",
         },
         {
-          name: "Taxi service in Dera Bassi",
-          src: "/cab/dera-bassi-city-cabs",
+          name: "Taxi service in Uthukottai",
+          src: "/cab/uthukottai-city-cabs",
         },
         {
-          name: "Taxi service in Parwanoo",
-          src: "/cab/parwanoo-city-cabs",
+          name: "Taxi service in Mahabalipuram",
+          src: "/cab/mahabalipuram-city-cabs",
         },
         {
-          name: "Taxi service in Kurali",
-          src: "/cab/kurali-city-cabs",
+          name: "Taxi service in Chengalpattu",
+          src: "/cab/chengalpattu-city-cabs",
         },
         {
-          name: "Taxi service in Baddi",
-          src: "/cab/baddi-city-cabs",
+          name: "Taxi service in Chinglepet",
+          src: "/cab/chinglepet-city-cabs",
         },
         {
-          name: "Taxi service in Kasauli",
-          src: "/cab/kasauli-city-cabs",
+          name: "Taxi service in Arambakkam",
+          src: "/cab/arambakkam-city-cabs",
+        },
+        { name: "Taxi service in Arakkonam", src: "/cab/arakkonam-city-cabs" },
+        {
+          name: "Taxi service in Varadaiahpalem",
+          src: "/cab/varadaiahpalem-city-cabs",
         },
         {
-          name: "Taxi service in Lalru",
-          src: "/cab/lalru-city-cabs"
-      },
-      {
-          name: "Taxi service in Rajpur",
-          src: "/cab/rajpur-city-cabs"
-      },
-      {
-          name: "Taxi service in Rajpura",
-          src: "/cab/rajpura-city-cabs"
-      },
-      {
-          name: "Taxi service in Nalagarh",
-          src: "/cab/nalagarh-city-cabs"
-      },
-      {
-          name: "Taxi service in Ropar",
-          src: "/cab/ropar-city-cabs"
-      },
-      {
-          name: "Taxi service in Badalapur",
-          src: "/cab/badalapur-city-cabs"
-      },
-      {
-          name: "Taxi service in Kalka",
-          src: "/cab/kalka-city-cabs"
-      },
-      {
-          name: "Taxi service in Barog",
-          src: "/cab/barog-city-cabs"
-      }
+          name: "Taxi service in Kanchipuram",
+          src: "/cab/kanchipuram-city-cabs",
+        },
+        { name: "Taxi service in Tiruttani", src: "/cab/tiruttani-city-cabs" },
+        {
+          name: "Taxi service in Sullurpeta",
+          src: "/cab/sullurpeta-city-cabs",
+        },
+        {
+          name: "Taxi service in Madurantakam",
+          src: "/cab/madurantakam-city-cabs",
+        },
+        { name: "Taxi service in Dehradun", src: "" },
+        { name: "Taxi service in Mussoorie", src: "/cab/mussoorie-city-cabs" },
+        { name: "Taxi service in Dhanaulti", src: "/cab/dhanaulti-city-cabs" },
+        { name: "Taxi service in Dhanolti", src: "/cab/dhanolti-city-cabs" },
+        { name: "Taxi service in Kalsi", src: "/cab/kalsi-city-cabs" },
+        {
+          name: "Taxi service in Narendra Nagar",
+          src: "/cab/narendra-nagar-city-cabs",
+        },
+        {
+          name: "Taxi service in Vikasnagar",
+          src: "/cab/vikasnagar-city-cabs",
+        },
+        { name: "Taxi service in Kanatal", src: "/cab/kanatal-city-cabs" },
+        { name: "Taxi service in Rishikesh", src: "/cab/rishikesh-city-cabs" },
+        { name: "Taxi service in New Tehri", src: "/cab/new-tehri-city-cabs" },
+        { name: "Taxi service in Tehri", src: "/cab/tehri-city-cabs" },
+        { name: "Taxi service in Neelkanth", src: "/cab/neelkanth-city-cabs" },
+        { name: "Taxi service in Haridwar", src: "/cab/haridwar-city-cabs" },
+        {
+          name: "Taxi service in Paonta Sahib",
+          src: "/cab/paonta-sahib-city-cabs",
+        },
       ],
     },
     OtherCities: {
