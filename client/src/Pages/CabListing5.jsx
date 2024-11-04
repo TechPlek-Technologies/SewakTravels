@@ -4,8 +4,9 @@ import ListSearch from "../Components/Cab/Listing/ListSearch";
 import FooterComponent from "../Components/Common/FooterComponent";
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../Context/JourneyContext";
-import DelhiToDestination from "../Components/Cab/Listing/DelhiToDestination";
 import OurAirportMeta from "./MetaTags/OurAirportMeta";
+import AirportCab from "../Components/Cab/Listing/AirportCab";
+
 
 function CabListing5({source, destination,blogdata,selectedValue}) {
   const tomorrow = new Date();
@@ -39,7 +40,7 @@ function CabListing5({source, destination,blogdata,selectedValue}) {
       <Layout title="light_header" />
       <ListSearch data={data} setisValid={setisValid} rentals={rentals} setRentals={setRentals}/>
       <ListingView  data={data} isValid={isValid} />
-     { blogdata? <DelhiToDestination data={blogdata} />:null}
+      {blogdata ? <AirportCab data={blogdata} /> : null}
       <OurAirportMeta query={source}/>
       <FooterComponent />
     </>

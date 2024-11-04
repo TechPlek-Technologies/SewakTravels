@@ -318,7 +318,59 @@ import {
   dataHoskote,
   dataNelamangala,
   dataPonneri,
+  dataChakrata,
+  dataJwalapur,
+  dataBhagwanpur,
+  dataRoorkee1,
+  dataNaugaon,
+  dataUttarkashi,
+  dataSaharanpur,
 } from "./Pages/OtherTaxiData";
+import {
+  agraTaxiData,
+  ahmedabadTaxiData,
+  ajmerTaxiData,
+  akolaTaxiData,
+  allahabadTaxiData,
+  amritsarTaxiData,
+  aurangabadTaxiData,
+  ayodhyaTaxiData,
+  bagdograTaxiData,
+  bareillyTaxiData,
+  belgaumTaxiData,
+  bhubaneswarTaxiData,
+  chandigarhTaxiData,
+  chennaiTaxiData,
+  chhatrapatiTaxiData,
+  cochinTaxiData,
+  coimbatoreTaxiData,
+  damanTaxiData,
+  darbhangaTaxiData,
+  dehradunTaxiData,
+  dimapurTaxiData,
+  diuTaxiData,
+  goaTaxiData,
+  gorakhpurTaxiData,
+  guwahatiTaxiData,
+  hindonTaxiData,
+  hubballiTaxiData,
+  hyderabadTaxiData,
+  indiraGandhiInternationalTaxiData,
+  indoreTaxiData,
+  jabalpurTaxiData,
+  jaipurTaxiData,
+  jodhpurTaxiData,
+  kangraTaxiData,
+  kannurTaxiData,
+  kanpurTaxiData,
+  kaziNazrulIslamTaxiData,
+  kempegowdaTaxiData,
+  kolkataTaxiData,
+  kozhikodeTaxiData,
+  lucknowTaxiData,
+  ludhianaTaxiData1,
+  satnaTaxiData,
+} from "./Pages/AirportCabData";
 
 const Home = lazy(() => import("./Pages/Home"));
 
@@ -4162,11 +4214,23 @@ function App() {
           />
 
           <Route
+            path={"/cab/jwalapur-city-cabs"}
+            element={
+              <CabListing2
+                selectedValue={"Outstation One-Way"}
+                source="Jwalapur, Uttarakhand, India"
+                blogdata={dataJwalapur}
+              />
+            }
+          />
+
+          <Route
             path={"/cab/chakrata-city-cabs"}
             element={
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Chakrata, Uttarakhand, India"
+                blogdata={dataChakrata}
               />
             }
           />
@@ -4177,6 +4241,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Bhagwanpur, Uttarakhand, India"
+                blogdata={dataBhagwanpur}
               />
             }
           />
@@ -4187,6 +4252,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Roorkee, Uttarakhand, India"
+                blogdata={dataRoorkee1}
               />
             }
           />
@@ -4197,6 +4263,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Naugaon, Uttarakhand, India"
+                blogdata={dataNaugaon}
               />
             }
           />
@@ -4207,6 +4274,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Uttarkashi, Uttarakhand, India"
+                blogdata={dataUttarkashi}
               />
             }
           />
@@ -4217,6 +4285,7 @@ function App() {
               <CabListing2
                 selectedValue={"Outstation One-Way"}
                 source="Saharanpur, Uttar Pradesh, India"
+                blogdata={dataSaharanpur}
               />
             }
           />
@@ -11714,10 +11783,10 @@ function App() {
               <CabListing5
                 selectedValue={"Airport Transfer"}
                 source={"Agra Airport, Uttar Pradesh, India"}
+                blogdata={agraTaxiData}
               />
             }
           />
-
           <Route
             path={"/cab/ahmedabad-airport-taxi"}
             element={
@@ -11726,6 +11795,7 @@ function App() {
                 source={
                   "Ahmedabad Airport (AMD), Hansol, Ahmedabad, Gujarat, India"
                 }
+                blogdata={ahmedabadTaxiData}
               />
             }
           />
@@ -11738,6 +11808,7 @@ function App() {
                 source={
                   "Akola Airport, Shivani AirPort Area, Akola, Maharashtra, India"
                 }
+                blogdata={akolaTaxiData}
               />
             }
           />
@@ -11750,6 +11821,7 @@ function App() {
                 source={
                   "Allahabad Airport Terminal, ITBP Rd, Near 18th ITBP Camp, Prayagraj, Uttar Pradesh, India"
                 }
+                blogdata={allahabadTaxiData}
               />
             }
           />
@@ -11762,6 +11834,7 @@ function App() {
                 source={
                   "Amritsar, Airport Road, Gumtala Sub Urban, Sahibzada Jujhar Singh Avenue, Gumtala, Amritsar, Punjab, India"
                 }
+                blogdata={amritsarTaxiData}
               />
             }
           />
@@ -11774,6 +11847,7 @@ function App() {
                 source={
                   "Aurangabad Airport, Jalna Road, MIDC Industrial Area, Chilkalthana, Aurangabad, Maharashtra, India"
                 }
+                blogdata={aurangabadTaxiData}
               />
             }
           />
@@ -11786,6 +11860,7 @@ function App() {
                 source={
                   "Bagdogra Airport, Distt, Siliguri, Bagdogra, West Bengal, India"
                 }
+                blogdata={bagdograTaxiData}
               />
             }
           />
@@ -11798,6 +11873,7 @@ function App() {
                 source={
                   "Bareilly Airport, Airport Area, Bareilly, Uttar Pradesh, India"
                 }
+                blogdata={bareillyTaxiData}
               />
             }
           />
@@ -11810,6 +11886,7 @@ function App() {
                 source={
                   "Belgaum Airport, Bagalkote - Belagavi Road, Sambra, Karnataka, India"
                 }
+                blogdata={belgaumTaxiData}
               />
             }
           />
@@ -11822,6 +11899,7 @@ function App() {
                 source={
                   "Bharhut Airport Satna, Airport Road, Krishna Nagar, Satna, Madhya Pradesh, India"
                 }
+                blogdata={satnaTaxiData}
               />
             }
           />
@@ -11834,6 +11912,7 @@ function App() {
                 source={
                   "Bhubaneswar Airport, Airport Road, Aerodrome Area, Bhubaneswar, Odisha, India"
                 }
+                blogdata={bhubaneswarTaxiData}
               />
             }
           />
@@ -11846,6 +11925,7 @@ function App() {
                 source={
                   "Chandigarh Airport, Sahibzada Ajit Singh Nagar, Punjab, India"
                 }
+                blogdata={chandigarhTaxiData}
               />
             }
           />
@@ -11858,6 +11938,7 @@ function App() {
                 source={
                   "Chennai Domestic Airport, Airport Departures Terminal Link, Meenambakkam, Chennai, Tamil Nadu, India"
                 }
+                blogdata={chennaiTaxiData}
               />
             }
           />
@@ -11870,6 +11951,7 @@ function App() {
                 source={
                   "Mumbai Airport, Chhatrapati Shivaji Maharaj International Airport,Mumbai (BOM), Navpada, Vile Parle East, Vile Parle, Mumbai, Maharashtra, India"
                 }
+                blogdata={chhatrapatiTaxiData}
               />
             }
           />
@@ -11882,6 +11964,7 @@ function App() {
                 source={
                   "Cochin International Airport (COK), Airport Road, Nedumbassery, Kochi, Kerala, India"
                 }
+                blogdata={cochinTaxiData}
               />
             }
           />
@@ -11894,6 +11977,7 @@ function App() {
                 source={
                   "Coimbatore International Airport, Peelamedu - Pudur Main Road, Coimbatore, Tamil Nadu, India"
                 }
+                blogdata={coimbatoreTaxiData}
               />
             }
           />
@@ -11906,6 +11990,7 @@ function App() {
                 source={
                   "Daman Airport, Dilip Nagar, Marwad, Dadra And Nagar Haveli And Daman And Diu, India"
                 }
+                blogdata={damanTaxiData}
               />
             }
           />
@@ -11918,6 +12003,7 @@ function App() {
                 source={
                   "Darbhanga Airport, Aerodrome Darbhanga, Ranipur, Darbhanga, Bihar, India"
                 }
+                blogdata={darbhangaTaxiData}
               />
             }
           />
@@ -11930,6 +12016,7 @@ function App() {
                 source={
                   "Dehradun Airport - Jolly Grant, Airport Road, Jauligrant, Uttarakhand, India"
                 }
+                blogdata={dehradunTaxiData}
               />
             }
           />
@@ -11940,6 +12027,7 @@ function App() {
               <CabListing5
                 selectedValue={"Airport Transfer"}
                 source={"Dimapur Airport, 3rd Mile, Dimapur, Nagaland, India"}
+                blogdata={dimapurTaxiData}
               />
             }
           />
@@ -11952,6 +12040,7 @@ function App() {
                 source={
                   "Diu Airport, Diu, Dadra And Nagar Haveli And Daman And Diu, India"
                 }
+                blogdata={diuTaxiData}
               />
             }
           />
@@ -11962,6 +12051,7 @@ function App() {
               <CabListing5
                 selectedValue={"Airport Transfer"}
                 source={"Goa International Airport (GOI), Dabolim, Goa, India"}
+                blogdata={goaTaxiData}
               />
             }
           />
@@ -11974,6 +12064,7 @@ function App() {
                 source={
                   "Gorakhpur Airport, Airport Area, Gorakhpur, Uttar Pradesh, India"
                 }
+                blogdata={gorakhpurTaxiData}
               />
             }
           />
@@ -11986,6 +12077,7 @@ function App() {
                 source={
                   "Guwahati Airport (GAU), Borjhar, Guwahati, Assam, India"
                 }
+                blogdata={guwahatiTaxiData}
               />
             }
           />
@@ -11998,6 +12090,7 @@ function App() {
                 source={
                   "Hindon Airport, Sikanderpur Road, Sahibabad, Ghaziabad, Uttar Pradesh, India"
                 }
+                blogdata={hindonTaxiData}
               />
             }
           />
@@ -12022,6 +12115,7 @@ function App() {
                 source={
                   "Hyderabad Old Airport, Begumpet Airport Road, Prakash Nagar, Begumpet, Hyderabad, Telangana, India"
                 }
+                blogdata={hyderabadTaxiData}
               />
             }
           />
@@ -12034,6 +12128,7 @@ function App() {
                 source={
                   "Indira Gandhi International Airport (DEL), New Delhi, Delhi, India"
                 }
+                blogdata={indiraGandhiInternationalTaxiData}
               />
             }
           />
@@ -12046,6 +12141,7 @@ function App() {
                 source={
                   "Indore Airport, Depalpur Road, Devi Ahillyabai Holkar Airport Area, Indore, Madhya Pradesh, India"
                 }
+                blogdata={indoreTaxiData}
               />
             }
           />
@@ -12058,6 +12154,7 @@ function App() {
                 source={
                   "Jabalpur Airport, Airport Area, Khamaria, Dumna, Madhya Pradesh, India"
                 }
+                blogdata={jabalpurTaxiData}
               />
             }
           />
@@ -12070,6 +12167,7 @@ function App() {
                 source={
                   "Jaipur International Airport (JAI), Airport Road, Sanganer, Jaipur, Rajasthan, India"
                 }
+                blogdata={jaipurTaxiData}
               />
             }
           />
@@ -12082,6 +12180,7 @@ function App() {
                 source={
                   "Kangra Airport, National Highway 154, Gaggal, Himachal Pradesh, India"
                 }
+                blogdata={kangraTaxiData}
               />
             }
           />
@@ -12094,6 +12193,7 @@ function App() {
                 source={
                   "KANNUR INTERNATIONAL AIRPORT, Mattannur, Kerala, India"
                 }
+                blogdata={kannurTaxiData}
               />
             }
           />
@@ -12106,6 +12206,7 @@ function App() {
                 source={
                   "Kanpur Airport, Sanjeev Nagar, Chakeri, Kanpur, Uttar Pradesh, India"
                 }
+                blogdata={kanpurTaxiData}
               />
             }
           />
@@ -12118,6 +12219,7 @@ function App() {
                 source={
                   "Kazi Nazrul Islam Airport, Airport Approach Road, Durgapur, West Bengal, India"
                 }
+                blogdata={kaziNazrulIslamTaxiData}
               />
             }
           />
@@ -12130,6 +12232,7 @@ function App() {
                 source={
                   "Kempegowda International Airport Bengaluru (BLR), KIAL Rd, Devanahalli, Bengaluru, Karnataka, India"
                 }
+                blogdata={kempegowdaTaxiData}
               />
             }
           />
@@ -12142,6 +12245,7 @@ function App() {
                 source={
                   "Netaji Subhash Chandra Bose International Airport (CCU), Airport Service Road, International Airport, Dum Dum, Kolkata, West Bengal, India"
                 }
+                blogdata={kolkataTaxiData}
               />
             }
           />
@@ -12154,6 +12258,7 @@ function App() {
                 source={
                   "Kozhikode International Airport, Airport Rd, Kozhikode, Karipur, Kerala, India"
                 }
+                blogdata={kozhikodeTaxiData}
               />
             }
           />
@@ -12166,6 +12271,7 @@ function App() {
                 source={
                   "Chaudhary Charan Singh International Airport (LKO), Amausi, Lucknow, Uttar Pradesh, India"
                 }
+                blogdata={lucknowTaxiData}
               />
             }
           />
@@ -12176,6 +12282,7 @@ function App() {
               <CabListing5
                 selectedValue={"Airport Transfer"}
                 source={"Ludhiana Airport (LUH), Sahnewal, Punjab, India"}
+                blogdata={ludhianaTaxiData1}
               />
             }
           />
@@ -12358,6 +12465,7 @@ function App() {
                 source={
                   "Kishangarh Airport (KQH) (Ajmer), Kishangarh, Rajasthan, India"
                 }
+                blogdata={ajmerTaxiData}
               />
             }
           />
@@ -12370,6 +12478,7 @@ function App() {
                 source={
                   "Maharishi Valmiki International Airport, Ayodhya Dham (AYJ), Faizabad, Uttar Pradesh, India"
                 }
+                blogdata={ayodhyaTaxiData}
               />
             }
           />
@@ -12382,6 +12491,7 @@ function App() {
                 source={
                   "Hubballi Airport, Gokul Road, Gandhi Nagar, Hubballi, Karnataka, India"
                 }
+                blogdata={hubballiTaxiData}
               />
             }
           />
@@ -12392,6 +12502,7 @@ function App() {
               <CabListing5
                 selectedValue={"Airport Transfer"}
                 source={"Jodhpur Airport, Ratanada, Jodhpur, Rajasthan, India"}
+                blogdata={jodhpurTaxiData}
               />
             }
           />
