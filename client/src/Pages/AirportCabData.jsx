@@ -24,7 +24,7 @@ export const agraTaxiData = {
       Whether you’re arriving in or departing from Agra, our Agra Airport taxi service ensures a seamless travel experience from start to finish.
       With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Agra.
     `,
-  img: "/assets/img/Locations/agra.webp",
+  //  // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book an Agra Cab?",
   whyChooseSubHeading:
     "Book your Agra Cabs effortlessly: When you choose Sewak for your cab service in Agra, you get:",
@@ -190,7 +190,7 @@ export const ahmedabadTaxiData = {
   bookingHeading: "Online Ahmedabad Airport cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer dependable, comfortable, and timely Ahmedabad Airport cab services tailored to your travel needs. Whether you’re arriving in or departing from Ahmedabad, our Ahmedabad Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we deliver the highest standard of airport cab services in Ahmedabad.",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book an Ahmedabad Cab?",
   whyChooseSubHeading:
     "Book your Ahmedabad Cabs effortlessly: When you choose Sewak for your cab service in Ahmedabad, you get:",
@@ -344,7 +344,7 @@ export const ajmerTaxiData = {
   bookingHeading: "Online Ajmer Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels! We offer dependable, comfortable, and timely online Ajmer Airport cab booking to fit your needs. Whether arriving in or leaving Ajmer, our Ajmer Airport taxi service guarantees a smooth travel experience from start to finish. With a fleet of modern cars and skilled drivers, we provide top-quality airport cab services in Ajmer.",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels for Your Ajmer Cab?",
   whyChooseSubHeading:
     "Booking your Ajmer cabs is easy: When you choose Sewak for your cab service in Ajmer, you get:",
@@ -503,7 +503,7 @@ export const akolaTaxiData = {
   bookingHeading: "Online Akola Airport cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Akola Airport cab booking tailored to your needs. Whether you’re arriving in or departing from Akola, our Akola Airport taxi service ensures a seamless travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Akola.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels for Your Akola Cab Service?",
   whyChooseSubHeading:
     "Book your Akola Cabs effortlessly: When you choose Sewak for your cab service in Akola, you get:",
@@ -659,7 +659,7 @@ export const allahabadTaxiData = {
   bookingHeading: "Online Allahabad Airport cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer trustworthy and comfortable Online Allahabad Airport cab booking. Whether you are arriving or leaving Allahabad, our Allahabad Airport taxi service guarantees a seamless travel experience. We have modern vehicles and skilled drivers to provide the best airport cab services in Allahabad.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book an Allahabad Cab?",
   whyChooseSubHeading:
     "Book your Allahabad Cabs effortlessly: When you choose Sewak for your cab service in Allahabad, you get:",
@@ -816,7 +816,7 @@ export const amritsarTaxiData = {
   bookingHeading: "Online Amritsar Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we provide reliable, comfortable, and timely online Amritsar Airport cab booking designed for you. Whether you’re arriving in or leaving from Amritsar, our Amritsar Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we offer top-quality airport cab services in Amritsar.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book an Amritsar Cab?",
   whyChooseSubHeading:
     "Booking your Amritsar cabs is easy. When you choose Sewak for your cab service in Amritsar, you benefit from:",
@@ -972,7 +972,7 @@ export const aurangabadTaxiData = {
   bookingHeading: "Online Aurangabad Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we provide reliable, comfortable, and timely online Aurangabad Airport cab booking designed for you. Whether you’re arriving in or leaving from Aurangabad, our Aurangabad Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we offer top-quality airport cab services in Aurangabad",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book an Aurangabad Cab?",
   whyChooseSubHeading:
     "Booking your Aurangabad cabs is easy: When you choose Sewak for your cab service in Aurangabad, you benefit from:",
@@ -1130,7 +1130,7 @@ export const ayodhyaTaxiData = {
   bookingHeading: "Online Ayodhya Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Ayodhya Airport cab booking tailored to your needs. Whether you are arriving in or departing from Ayodhya, our Ayodhya Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Ayodhya.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book an Ayodhya Cab?",
   whyChooseSubHeading:
     "Book your Ayodhya Cabs effortlessly: When you choose Sewak for your cab service in Ayodhya, you get:",
@@ -1286,7 +1286,7 @@ export const bagdograTaxiData = {
   bookingHeading: "Online Bagdogra Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Bagdogra Airport cab booking tailored to your needs. Whether you are arriving in or departing from Bagdogra, our Bagdogra Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Bagdogra.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Bagdogra Cab?",
   whyChooseSubHeading:
     "Book your Bagdogra Cabs effortlessly: When you choose Sewak for your cab service in Bagdogra, you get:",
@@ -1441,7 +1441,7 @@ export const bareillyTaxiData = {
   bookingHeading: "Online Bareilly Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "At Sewak Travels we offer reliable, comfortable, and on-time Online Bareilly Airport cab booking. Whether you are arriving in or departing from Bareilly, our Bareilly Airport taxi service ensures a smooth travel experience. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Bareilly.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Bareilly Cab?",
   whyChooseSubHeading:
     "Book your Bareilly Cabs effortlessly: When you choose Sewak for your cab service in Bareilly, you get:",
@@ -1597,7 +1597,7 @@ export const belgaumTaxiData = {
   bookingHeading: "Online Belgaum Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "At Sewak Travels, we offer reliable, comfortable, and on-time Online Belgaum Airport cab booking. Whether you are arriving in or departing from Belgaum, our Belgaum Airport taxi service ensures a smooth travel experience. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Belgaum.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Belgaum Cab?",
   whyChooseSubHeading:
     "Book your Belgaum Cabs  effortlessly: When you choose Sewak Travels for your cab service in Belgaum, you get:",
@@ -1753,7 +1753,7 @@ export const satnaTaxiData = {
   bookingHeading: "Online Satna Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Satna Airport cab booking tailored to your needs. Whether you are arriving in or departing from Satna, our Satna Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Satna.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Satna Cab?",
   whyChooseSubHeading:
     "Book your Satna Cabs effortlessly: When you choose Sewak for your cab service in Satna, you get:",
@@ -1911,7 +1911,7 @@ export const bhubaneswarTaxiData = {
   bookingHeading: "Online Bhubaneswar Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Bhubaneswar Airport cab booking tailored to your needs. Whether you are arriving in or departing from Bhubaneswar, our Bhubaneswar Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Bhubaneswar.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Bhubaneswar Cab?",
   whyChooseSubHeading:
     "Book your Bhubaneswar Cabs effortlessly: When you choose Sewak for your cab service in Bhubaneswar, you get:",
@@ -2069,7 +2069,7 @@ export const chandigarhTaxiData = {
   bookingHeading: "Online Chandigarh Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "We offer reliable, comfortable, and timely online Chandigarh Airport cab booking. Whether you are arriving or leaving Chandigarh, our Chandigarh Airport taxi service ensures smooth travel from start to finish. With modern vehicles and skilled drivers, we provide the best airport cab services in Chandigarh.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Chandigarh Cab? ",
   whyChooseSubHeading:
     "Book your Agra Cabs effortlessly: When you choose Sewak for your cab service in Chandigarh, you get:",
@@ -2228,7 +2228,7 @@ export const chennaiTaxiData = {
   bookingHeading: "Online Chennai Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Chennai Airport cab booking tailored to your needs. Whether you are arriving in or departing from Chennai, our Chennai Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Chennai.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Chennai Cab?",
   whyChooseSubHeading:
     "Book your Chennai Cabs effortlessly: When you choose Sewak for your cab service in Chennai, you get:",
@@ -2387,7 +2387,7 @@ export const chhatrapatiTaxiData = {
     "Online Chhatrapati Shivaji Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "We provide reliable, comfortable, and on-time online cab booking for Chhatrapati Shivaji Airport. Whether you are arriving or leaving Chhatrapati Shivaji, our taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we offer the best airport cab services in Chhatrapati Shivaji.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading:
     "Why Choose Sewak Travels to Book a Chhatrapati Shivaji Cab?",
   whyChooseSubHeading:
@@ -2543,7 +2543,7 @@ export const coimbatoreTaxiData = {
   bookingHeading: "Online Coimbatore Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Coimbatore Airport cab booking tailored to your needs. Whether you are arriving in or departing from Coimbatore, our Coimbatore Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide top-notch airport cab services in Coimbatore.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Coimbatore Cab?",
   whyChooseSubHeading:
     "Book your Coimbatore Cabs effortlessly: When you choose Sewak for your cab service in Coimbatore, you get:",
@@ -2699,7 +2699,7 @@ export const damanTaxiData = {
   bookingHeading: "Online Daman Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Daman Airport cab booking tailored to your needs. Whether you are arriving in or departing from Daman, our Daman Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Daman.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Daman Cab?",
   whyChooseSubHeading:
     "Book your Daman Cabs effortlessly: When you choose Sewak for your cab service in Daman, you get:",
@@ -2856,7 +2856,7 @@ export const darbhangaTaxiData = {
   bookingHeading: "Online Darbhanga Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Darbhanga Airport cab booking tailored to your needs. Whether you are arriving in or departing from Darbhanga, our Darbhanga Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Darbhanga.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Darbhanga Cab?",
   whyChooseSubHeading:
     "Book your Darbhanga Cabs effortlessly: When you choose Sewak for your cab service in Darbhanga, you get:",
@@ -3014,7 +3014,7 @@ export const dehradunTaxiData = {
   bookingHeading: "Online Dehradun Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Dehradun Airport cab booking tailored to your needs. Whether you are arriving in or departing from Dehradun, our Dehradun Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Dehradun.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Dehradun Cab?",
   whyChooseSubHeading:
     "Book your Dehradun Cabs effortlessly: When you choose Sewak for your cab service in Dehradun, you get:",
@@ -3170,7 +3170,7 @@ export const diuTaxiData = {
   bookingHeading: "Online Diu Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Diu Airport cab booking tailored to your needs. Whether you are arriving in or departing from Diu, our Diu Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Diu.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Diu Cab?",
   whyChooseSubHeading:
     "Book your Diu Cabs effortlessly: When you choose Sewak for your cab service in Diu, you get:",
@@ -3325,7 +3325,7 @@ export const goaTaxiData = {
   bookingHeading: "Online Goa Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Goa Airport cab booking tailored to your needs. Whether you are arriving in or departing from Goa, our Goa Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Goa.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Goa Cab?",
   whyChooseSubHeading:
     "Book your Goa Cabs effortlessly: When you choose Sewak for your cab service in Goa, you get:",
@@ -3480,7 +3480,7 @@ export const gorakhpurTaxiData = {
   bookingHeading: "Online Gorakhpur Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Gorakhpur Airport cab booking tailored to your needs. Whether you are arriving in or departing from Gorakhpur, our Gorakhpur Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Gorakhpur.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Gorakhpur Cab?",
   whyChooseSubHeading:
     "Book your Gorakhpur Cabs effortlessly: When you choose Sewak for your cab service in Gorakhpur, you get:",
@@ -3637,7 +3637,7 @@ export const guwahatiTaxiData = {
   bookingHeading: "Online Guwahati Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Guwahati Airport cab booking tailored to your needs. Whether you are arriving in or departing from Guwahati, our Guwahati Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Guwahati.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Guwahati Cab?",
   whyChooseSubHeading:
     "Book your Guwahati Cabs effortlessly: When you choose Sewak for your cab service in Guwahati, you get:",
@@ -3794,7 +3794,7 @@ export const hindonTaxiData = {
   bookingHeading: "Online Hindon Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Hindon Airport cab booking tailored to your needs. Whether you are arriving in or departing from Hindon, our Hindon Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Hindon.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Hindon Cab?",
   whyChooseSubHeading:
     "Book your Hindon Cabs effortlessly: When you choose Sewak for your cab service in Hindon, you get:",
@@ -3950,7 +3950,7 @@ export const hubballiTaxiData = {
   bookingHeading: "Online Hubballi Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Hubballi Airport cab booking tailored to your needs. Whether you are arriving in or departing from Hubballi, our Hubballi Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Hubballi.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Hubballi Cab?",
   whyChooseSubHeading:
     "Book your Hubballi Cabs effortlessly: When you choose Sewak for your cab service in Hubballi, you get:",
@@ -4107,7 +4107,7 @@ export const indiraGandhiInternationalTaxiData = {
     "Online Indira Gandhi International Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Indira Gandhi International Airport cab booking tailored to your needs. Whether you are arriving in or departing from Delhi, our Indira Gandhi International Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Delhi.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Delhi Cab?",
   whyChooseSubHeading:
     "Book your Delhi Cabs effortlessly: When you choose Sewak for your cab service in Delhi, you get:",
@@ -4268,7 +4268,7 @@ export const indoreTaxiData = {
   bookingHeading: "Online Indore Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Indore Airport cab booking tailored to your needs. Whether you are arriving in or departing from Indore, our Indore Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Indore.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book an Indore Cab?",
   whyChooseSubHeading:
     "Book your Indore Cabs effortlessly: When you choose Sewak for your cab service in Indore, you get:",
@@ -4424,7 +4424,7 @@ export const jabalpurTaxiData = {
   bookingHeading: "Online Jabalpur Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Jabalpur Airport cab booking tailored to your needs. Whether you are arriving in or departing from Jabalpur, our Jabalpur Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Jabalpur.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Jabalpur Cab?",
   whyChooseSubHeading:
     "Book your Jabalpur Cabs effortlessly: When you choose Sewak for your cab service in Jabalpur, you get:",
@@ -4580,7 +4580,7 @@ export const jaipurTaxiData = {
   bookingHeading: "Online Jaipur Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Jaipur Airport cab booking tailored to your needs. Whether you are arriving in or departing from Jaipur, our Jaipur Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Jaipur.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Jaipur Cab?",
   whyChooseSubHeading:
     "Book your Jaipur Cabs effortlessly: When you choose Sewak for your cab service in Jaipur, you get:",
@@ -4736,7 +4736,7 @@ export const jodhpurTaxiData = {
   bookingHeading: "Online Jodhpur Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Jodhpur Airport cab booking tailored to your needs. Whether you are arriving in or departing from Jodhpur, our Jodhpur Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Jodhpur.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Jodhpur Cab?",
   whyChooseSubHeading:
     "Book your Jodhpur cabs effortlessly: When you choose Sewak for your cab service in Jodhpur, you get:",
@@ -4893,7 +4893,7 @@ export const kangraTaxiData = {
   bookingHeading: "Online Kangra Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Kangra Airport cab booking tailored to your needs. Whether you are arriving in or departing from Kangra, our Kangra Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Kangra.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Kangra Cab?",
   whyChooseSubHeading:
     "Book your Kangra Cabs effortlessly: When you choose Sewak for your cab service in Kangra, you get:",
@@ -5049,7 +5049,7 @@ export const kannurTaxiData = {
   bookingHeading: "Online Kannur Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Kannur Airport cab booking tailored to your needs. Whether you are arriving in or departing from Kannur, our Kannur Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Kannur.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Kannur Cab?",
   whyChooseSubHeading:
     "Book your Kannur Cabs effortlessly: When you choose Sewak for your cab service in Kannur, you get:",
@@ -5205,7 +5205,7 @@ export const kanpurTaxiData = {
   bookingHeading: "Online Kanpur Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Kanpur Airport cab booking tailored to your needs. Whether you are arriving in or departing from Kanpur, our Kanpur Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Kanpur.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Kanpur Cab?",
   whyChooseSubHeading:
     "Book your Kanpur Cabs effortlessly: When you choose Sewak for your cab service in Kanpur, you get:",
@@ -5364,7 +5364,7 @@ export const kaziNazrulIslamTaxiData = {
     "Online Kazi Nazrul Islam Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Kazi Nazrul Islam Airport cab booking tailored to your needs. Whether you are arriving or departing, our Kazi Nazrul Islam Airport taxi service ensures a seamless travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in the region.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Kazi Nazrul Islam Cab?",
   whyChooseSubHeading:
     "Book your Kazi Nazrul Islam Cabs effortlessly: When you choose Sewak for your cab service in Kazi Nazrul Islam, you get:",
@@ -5524,7 +5524,7 @@ export const kempegowdaTaxiData = {
   bookingHeading: "Online Kempegowda Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time Online Kempegowda Airport cab booking tailored to your needs. Whether you are arriving in or departing from Kempegowda, our Kempegowda Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Bengaluru.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Kempegowda Cab?",
   whyChooseSubHeading:
     "Book your Kempegowda Cabs effortlessly: When you choose Sewak for your cab service in Bengaluru, you get:",
@@ -5681,7 +5681,7 @@ export const kozhikodeTaxiData = {
   bookingHeading: "Online Kozhikode Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels! We provide reliable and comfortable online cab booking for Kozhikode Airport. Whether you are arriving at or leaving from Kozhikode, our taxi service guarantees a smooth journey from start to finish. With modern vehicles and professional drivers, we ensure top-quality airport cab services in Kozhikode.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Kozhikode Cab?",
   whyChooseSubHeading:
     "Book your Kozhikode Cabs effortlessly: When you choose Sewak for your cab service in Kozhikode, you get:",
@@ -5838,7 +5838,7 @@ export const kolkataTaxiData = {
   bookingHeading: "Online Kolkata Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "\nWelcome to Sewak Travels, where we provide reliable, comfortable, and timely Kolkata Airport cab booking tailored to your needs. Whether arriving or departing from Kolkata, our Kolkata Airport taxi service guarantees a hassle-free experience from start to finish. With a fleet of modern vehicles and professional drivers, we deliver the highest standard of airport cab services in Kolkata.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Kolkata Cab?",
   whyChooseSubHeading:
     " Book your Kolkata cabs effortlessly: When you choose Sewak for your cab service in Kolkata, you get:",
@@ -5994,7 +5994,7 @@ export const cochinTaxiData = {
   bookingHeading: "Online Cochin Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Cochin Airport cab booking tailored to your needs. Whether you are arriving in or departing from Cochin, our Cochin Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Cochin.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Cochin Cab?",
   whyChooseSubHeading:
     "Book your Cochin Cabs effortlessly: When you choose Sewak for your cab service in Cochin, you get:",
@@ -6150,7 +6150,7 @@ export const lucknowTaxiData = {
   bookingHeading: "Online Lucknow Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "\nWelcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Lucknow Airport cab booking tailored to your needs. Whether you are arriving in or departing from Lucknow, our Lucknow Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Lucknow.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Lucknow Cab?",
   whyChooseSubHeading:
     " Book your Lucknow Cabs effortlessly: When you choose Sewak for your cab service in Lucknow, you get:",
@@ -6306,7 +6306,7 @@ export const ludhianaTaxiData1 = {
   bookingHeading: "Online Ludhiana Airport Cab Booking with Sewak Travels",
   bookingInfo:
     "Welcome to Sewak Travels, where we offer reliable, comfortable, and on-time online Ludhiana Airport cab booking tailored to your needs. Whether you are arriving in or departing from Ludhiana, our Ludhiana Airport taxi service ensures a smooth travel experience from start to finish. With a fleet of modern vehicles and professional drivers, we provide the highest standard of airport cab services in Ludhiana.\n",
-  img: "/assets/img/Locations/agra.webp",
+   // img: "/assets/img/Locations/agra.webp",
   whyChooseHeading: "Why Choose Sewak Travels to Book a Ludhiana Cab?",
   whyChooseSubHeading:
     "Book your Ludhiana Cabs effortlessly: When you choose Sewak for your cab service in Ludhiana, you get:",
