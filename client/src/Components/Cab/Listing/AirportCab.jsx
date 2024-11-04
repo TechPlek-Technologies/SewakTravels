@@ -40,14 +40,14 @@ const OtherTaxi = ({ data }) => {
                   </div>
                 </div>
 
-                <div className="desc-box">
+                {/* <div className="desc-box">
                   <img
                     className="img-fluid"
                     src={data.img}
                     alt="destination"
                     loading="lazy"
                   />
-                </div>
+                </div> */}
 
                 <div className="desc-box mt-md-4">
                   <div className="about menu-part" id="policy">
