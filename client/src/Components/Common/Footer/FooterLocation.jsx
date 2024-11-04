@@ -953,6 +953,34 @@ const FooterLocation = () => {
           name: "Taxi service in Paonta Sahib",
           src: "/cab/paonta-sahib-city-cabs",
         },
+        {
+          name: "Taxi service in Jwalapur",
+          src: "/cab/jwalapur-city-cabs",
+        },
+        {
+          name: "Taxi service in Chakrata",
+          src: "/cab/chakrata-city-cabs",
+        },
+        {
+          name: "Taxi service in Bhagwanpur",
+          src: "/cab/bhagwanpur-city-cabs",
+        },
+        {
+          name: "Taxi service in Roorkee",
+          src: "/cab/roorkee-city-cabs",
+        },
+        {
+          name: "Taxi service in Naugaon",
+          src: "/cab/naugaon-city-cabs",
+        },
+        {
+          name: "Taxi service in Uttarkashi",
+          src: "/cab/uttarkashi-city-cabs",
+        },
+        {
+          name: "Taxi service in Saharanpur",
+          src: "/cab/saharanpur-city-cabs",
+        },
       ],
     },
     OtherCities: {
@@ -1110,6 +1138,180 @@ const FooterLocation = () => {
         {
           name: "Dehradun to Faridabad Cab",
           src: "/cab/dehradun-to-faridabad-cabs",
+        },
+      ],
+    },
+    AirportTaxis: {
+      id: 3,
+      title: "Our Airport Cabs",
+      links: [
+        {
+          name: "Agra Airport Cabs",
+          src: "/cab/agra-airport-taxi",
+        },
+        {
+          name: "Ahmedabad Airport Cabs",
+          src: "/cab/ahmedabad-airport-taxi",
+        },
+        {
+          name: "Ajmer Airport Cabs",
+          src: "/cab/ajmer-airport-taxi",
+        },
+        {
+          name: "Akola Airport Cabs",
+          src: "/cab/akola-airport-taxi",
+        },
+        {
+          name: "Allahabad Airport Cabs",
+          src: "/cab/allahabad-airport-taxi",
+        },
+        {
+          name: "Amritsar Airport Cabs",
+          src: "/cab/amritsar-airport-taxi",
+        },
+        {
+          name: "Aurangabad Airport Cabs",
+          src: "/cab/aurangabad-airport-taxi",
+        },
+        {
+          name: "Ayodhya Airport Cabs",
+          src: "/cab/ayodhya-airport-taxi",
+        },
+        {
+          name: "Bagdogra Airport Cabs",
+          src: "/cab/bagdogra-airport-taxi",
+        },
+        {
+          name: "Bareilly Airport Cabs",
+          src: "/cab/bareilly-airport-taxi",
+        },
+        {
+          name: "Belgaum Airport Cabs",
+          src: "/cab/belgaum-airport-taxi",
+        },
+        {
+          name: "Satna Airport Cabs",
+          src: "/cab/satna-airport-taxi",
+        },
+        {
+          name: "Bhubaneswar Airport Cabs",
+          src: "/cab/bhubaneswar-airport-taxi",
+        },
+        {
+          name: "Chandigarh Airport Cabs",
+          src: "/cab/chandigarh-airport-taxi",
+        },
+        {
+          name: "Chennai Airport Cabs",
+          src: "/cab/chennai-airport-taxi",
+        },
+        {
+          name: "Chhatrapati Shivaji Airport Cabs",
+          src: "/cab/mumbai-airport-taxi",
+        },
+        {
+          name: "Cochin Airport Cabs",
+          src: "/cab/cochin-airport-taxi",
+        },
+        {
+          name: "Coimbatore Airport Cabs",
+          src: "/cab/coimbatore-airport-taxi",
+        },
+        {
+          name: "Daman Airport Cabs",
+          src: "/cab/daman-airport-taxi",
+        },
+        {
+          name: "Darbhanga Airport Cabs",
+          src: "/cab/darbhanga-airport-taxi",
+        },
+        {
+          name: "Dehradun Airport Cabs",
+          src: "/cab/dehradun-airport-taxi",
+        },
+        {
+          name: "Dimapur Airport Cabs",
+          src: "/cab/dimapur-airport-taxi",
+        },
+        {
+          name: "Diu Airport Cabs",
+          src: "/cab/diu-airport-taxi",
+        },
+        {
+          name: "Gorakhpur Airport Cabs",
+          src: "/cab/gorakhpur-airport-taxi",
+        },
+        {
+          name: "Guwahati Airport Cabs",
+          src: "/cab/guwahati-airport-taxi",
+        },
+        {
+          name: "Hindon Airport Cabs",
+          src: "/cab/hindon-airport-taxi",
+        },
+        {
+          name: "Hubballi Airport Cabs",
+          src: "/cab/hubballi-airport-taxi",
+        },
+        {
+          name: "Hyderabad Airport Cabs",
+          src: "/cab/hyderabad-airport-taxi",
+        },
+        {
+          name: "Indira Gandhi International Airport Cabs",
+          src: "/cab/delhi-airport-taxi",
+        },
+        {
+          name: "Indore Airport Cabs",
+          src: "/cab/indore-airport-taxi",
+        },
+        {
+          name: "Jabalpur Airport Cabs",
+          src: "/cab/jabalpur-airport-taxi",
+        },
+        {
+          name: "Jaipur Airport Cabs",
+          src: "/cab/jabalpur-airport-taxi",
+        },
+        {
+          name: "Jodhpur Airport Cabs",
+          src: "/cab/jodhpur-airport-taxi",
+        },
+        {
+          name: "Kangra Airport Cabs",
+          src: "/cab/kangra-airport-taxi",
+        },
+        {
+          name: "Kannur Airport Cabs",
+          src: "/cab/kannur-airport-taxi",
+        },
+        {
+          name: "Kanpur Airport Cabs",
+          src: "/cab/kanpur-airport-taxi",
+        },
+        {
+          name: "Kazi Nazrul Islam Airport Cabs",
+          src: "/cab/kazi-nazrul-islam-airport-taxi",
+        },
+        {
+          name: "Kempegowda Airport Cabs",
+          src: "/cab/bangalore-airport-taxi",
+        },
+        {
+          name: "Kolkata Airport Cabs",
+          src: "/cab/kolkata-airport-taxi",
+        },
+        {
+          name: "Kozhikode Airport Cabs",
+          src: "/cab/kozhikode-airport-taxi",
+        },
+        {
+          name: "Lucknow Airport Cabs",
+          src: "/cab/lucknow-airport-taxi",
+        },
+        {
+          name: "Ludhiana Airport Cabs",
+          src: "/cab/ludhiana-airport-taxi",
         },
       ],
     },
